@@ -1,0 +1,25 @@
+$c-primary: #e31c79;
+$c-primary-dark: darken($c-primary, 3%);
+$c-primary-light: lighten($c-primary, 3%);
+$c-dark: #0f0f0f;
+$c-light: #9f9f9f;
+
+
+$c-border: $c-primary;
+// $border-color-dark: darken($border-color, 10%) !default;
+// $border-color-light: lighten($border-color, 8%) !default;
+$c-background: $c-dark;
+$c-background-light: lighten($c-background, 6.25%) !default;
+
+$c-link: $c-primary !default;
+$c-link-dark: darken($c-link, 10%) !default;
+$c-link-light: lighten($c-link, 10%) !default;
+
+// Fonts
+$f-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+$f-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$f-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+/* text */
+$t-base-size: 1rem;
+$t-base-line-height: 1.5rem;

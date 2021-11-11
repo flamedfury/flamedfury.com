@@ -1,0 +1,26 @@
+{
+  "name": "flamedfury.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass build:eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flamedfury/flamedfury.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.37.5"
+  }
+}
