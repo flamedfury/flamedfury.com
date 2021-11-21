@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+
+nav li {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 25em) {
+
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  nav li {
+    padding: 0.25rem;
+  }
+}

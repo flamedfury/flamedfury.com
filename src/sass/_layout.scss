@@ -1,38 +1,39 @@
 @use "variables" as *;
 
-header {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 body {
-  max-width: 1000px;
+  max-width: 60em;
   margin: 0 auto;
   display: grid;
+  grid-gap: 10px;
+  padding: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+header {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 25em) {
   body {
     grid-template-areas:
-      "a a a a"
-      "b c c c"
-      "d d d d";
-  }
-
-  .sidebar {
-    grid-area: b;
-  }
-
-  .content {
-    grid-area: c;
+      "hd hd hd hd hd hd"
+      "sd main main main main main"
+      "ft ft ft ft ft ft";
   }
 
   .header {
-    grid-area: a;
+    grid-area: hd;
+  }
+
+  .sidebar {
+    grid-area: sd;
+  }
+
+  .content {
+    grid-area: main;
   }
 
   .footer {
-    grid-area: d;
+    grid-area: ft;
   }
 }
 
@@ -43,15 +44,10 @@ footer {
   border: 2px dashed $c-border;
   border-radius: 5px;
   padding: 20px;
-  margin-top: 10px;
-}
-
-main {
-  margin-left: 10px;
 }
 
 @supports (display: grid) {
-    .wrapper > * {
+    body > * {
         width: auto;
         margin: 0;
     }

@@ -14,21 +14,25 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="shortcut icon" href="/img/favicon.png" />
 </head>
+
 <body>
 
-    <header class="header">
-        <img src="../img/header.png">
+    <header>
+      <img src="../../img/header.png">
+      <nav class="bg-primary border-primary">
+        {% include "partials/_nav.njk" %}
+      </nav>
     </header>
-    <aside class="sidebar">
-      {% include "partials/_nav.njk" %}
-    </aside>
-    <main class="content">
+
+    <main class="bg-primary border-primary padding-sm">
       <h1>{{ title }}</h1>
       {{ content | safe }}
     </main>
-    <footer class="footer f-size-small t-center">
+
+    <footer class="bg-primary border-primary padding-sm t-center">
       <p class="t-bold">public service announcement 2000</p>
       <p>Copyright &copy; 2000 - {% year %} by {% if meta.authorName %} {{ meta.authorName }}{% endif %}. Some rights reserved. Don't jack.</p>
     </footer>
+
   </body>
 </html>
