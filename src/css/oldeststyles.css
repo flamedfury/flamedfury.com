@@ -1,0 +1,158 @@
+:root {
+    /* colour */
+    --fury-pink: #e31c79;
+    --fury-red: #d33a2c;
+    --fury-orange: #fa6413;
+    --fury-gray: #9f9f9f;
+    --fury-black: #0f0f0f;
+    --fury-charcoal: #1f1f1f;
+    --fury-white: #fcf8f7;
+
+    --primary: var(--fury-pink);
+    --secondary: var(--fury-orange);
+    --light-primary: var(--fury-gray);
+    --dark-primary: var(--fury-black);
+    --dark-secondary: var(--fury-charcoal);
+
+    --c-background: var(--dark-primary);
+    --c-background-secondary: var(--dark-secondary);
+    --c-body-text: var(--light-primary);
+    --c-heading: var(--primary);
+    --c-link: var(--primary);
+    --c-link-hover: var(--secondary);
+    --c-border: var(--primary);
+
+    /* font */
+    --f-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+    --f-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+    --f-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+    /* text */
+    --t-base-size: 1rem;
+    --t-base-line-height: 1.5rem;
+
+    /* major third scale progression for desktop- see https://type-scale.com/ */
+    --header-scale: 1.25;
+    --line-height: 1.3;
+    /* typescale ref: https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9092bd */
+    --h1: calc(1rem * var(--header-scale) * var(--header-scale) * var(--header-scale) *
+        var(--header-scale));
+    --h2: calc(1rem * var(--header-scale) * var(--header-scale) * var(--header-scale));
+    --h3: calc(1rem * var(--header-scale) * var(--header-scale));
+    --h4: calc(1rem * var(--header-scale));
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--t-base-size);
+    line-height: var(--t-base-line-height);
+}
+
+body {
+    background-color: var(--c-background);
+    color: var(--c-body-text);
+    font-family: var(--f-serif);
+}
+
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+
+h1 {
+    color: var(--fury-white);
+    font-family: var(--f-sans-serif);
+    background: var(--primary);
+    /* box-shadow: 10px 0 0 var(--pink2), -10px 0 0 var(--pink2); */
+    box-decoration-break: clone;
+    transform: rotate(-1deg);
+    display: inline-block;
+    padding: 16px;
+}
+
+h2, h3, h4 {
+    color: var(--c-heading);
+    font-family: var(--f-sans-serif);
+}
+
+a {
+    color:var(--c-link);
+}
+
+a:focus {
+    outline: 1px dashed currentColor;
+    outline-offset: 0.2em;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 20px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 500px) {
+
+    /* no grid support? */
+    .sidebar {
+      float: left;
+      width: 19.1489%;
+    }
+
+    .content {
+      float: right;
+      width: 79.7872%;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    .header, .footer {
+      grid-column: 1 / -1;
+      /* needed for the floated layout */
+      clear: both;
+    }
+}
+
+.wrapper > * {
+    background-color: var(--c-background-secondary);
+    border: 2px dashed var(--c-border);
+    border-radius: 5px;
+    padding: 20px;
+    /* needed for the floated layout*/
+    /* margin-bottom: 100px; */
+}
+
+.f-size-small {
+    font-size: 0.8rem;
+}
+
+.t-center {
+    text-align: center;
+}
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+    .wrapper > * {
+        width: auto;
+        margin: 0;
+    }
+}

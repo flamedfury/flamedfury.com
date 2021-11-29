@@ -17,19 +17,24 @@
 
 <body>
 
-    <header>
+    <header class="header">
       <img src="../../img/header.png">
-      <nav class="bg-primary border-primary">
-        {% include "partials/_nav.njk" %}
-      </nav>
     </header>
 
-    <main class="bg-primary border-primary padding-sm">
+    <nav class="navigation">
+        {% include "partials/_nav.njk" %}
+    </nav>
+
+    <main class="content">
       <h1>{{ title }}</h1>
       {{ content | safe }}
     </main>
 
-    <footer class="bg-primary border-primary padding-sm t-center">
+    <aside class="sidebar">
+      {% include "partials/_sidebar.njk" %}
+    </aside>
+
+    <footer class="footer">
       <p class="t-bold">public service announcement 2000</p>
       <p>Copyright &copy; 2000 - {% year %} by {% if meta.authorName %} {{ meta.authorName }}{% endif %}. Some rights reserved. Don't jack.</p>
     </footer>
