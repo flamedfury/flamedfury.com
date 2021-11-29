@@ -101,7 +101,18 @@ nav, aside, main, footer {
   color: var(--c-text-primary);
   border: 2px dashed var(--c-border);
 	padding: var(--spacing);
-  margin-left:var(--spacing);
+}
+
+nav, aside {
+  margin-left: var(--spacing);
+}
+
+main {
+  margin-right :var(--spacing);
+}
+
+footer {
+  margin-left: var(--spacing);
   margin-right: var(--spacing);
 }
 
@@ -137,7 +148,7 @@ body > * {
   }
 
   main {
-    grid-column: 4 / span 10;
+    grid-column: 4 / span 9;
     grid-row: 2 / span 6;
   }
 }
@@ -152,7 +163,8 @@ nav ul {
 @media (max-width: 428px) {
 
   nav, main, aside, footer {
-    margin: calc(var(--spacing) / 2);
+    margin-left: calc(var(--spacing) / 2);
+    margin-right: calc(var(--spacing) / 2);
   }
 
   body {
