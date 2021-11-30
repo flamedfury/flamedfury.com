@@ -1,0 +1,44 @@
+{
+  "friends": [
+    {
+      "site": "auzzie jay in the digital world",
+      "url": "https://auzziejay.com/",
+      "button": "../img/buttons/auzzie1.gif"
+    },
+    {
+      "site": "teddybear halo",
+      "url": "https://teddybear-halo.neocities.org",
+      "button": "../img/buttons/teddybear-halo.gif"
+    },
+    {
+      "site": "cinni's dream home",
+      "url": "https://cinni.net/",
+      "button": "../img/buttons/cinni_angelbutton3.gif"
+    },
+    {
+      "site": "sadgrl online",
+      "url": "https://sadgrl.online/",
+      "button": "../img/buttons/sadgrl.gif"
+    },
+    {
+      "site": "bytemoth's brooke",
+      "url": "https://bytemoth.neocities.org/",
+      "button": "../img/buttons/i-brook.png"
+    },
+    {
+      "site": "lets learn together",
+      "url": "https://letslearntogether.neocities.org",
+      "button": "../img/buttons/llt.png"
+    },
+    {
+      "site": "grafo volaverunt",
+      "url": "https://grafovolaverunt.xyz",
+      "button": "../img/buttons/grafo.gif"
+    },
+    {
+      "site": "tonicfunk",
+      "url": "https://tonicfunk.neocities.org/",
+      "button": "../img/buttons/tonicfunk.gif"
+    }
+  ]
+}

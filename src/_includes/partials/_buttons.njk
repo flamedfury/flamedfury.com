@@ -1,0 +1,9 @@
+<ul class="buttons">
+{% for item in buttons.friends %}
+<li>
+<a href="{{ item.url }}">
+<img src="{{ item.button }}" alt="{{ item.site }}"  title="{{ item.site }}" />
+</a>
+</li>
+{% endfor %}
+</ul>

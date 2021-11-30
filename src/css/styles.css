@@ -98,6 +98,18 @@ body {
   background-image: url("../img/bg.png");
 }
 
+nav, main, aside, footer {
+  color: var(--c-text-primary);
+  background-color: var(--c-bg-primary);
+  border: 2px dashed var(--c-primary);
+  border-radius: 5px;
+  padding: var(--spacing);
+}
+
+footer {
+  margin-bottom: var(--spacing);
+}
+
 a {
   color: var(--c-link-primary);
 }
@@ -126,14 +138,6 @@ aside {
 
 footer {
   grid-area: footer;
-}
-
-nav, main, aside, footer {
-  color: var(--c-text-primary);
-  background-color: var(--c-bg-primary);
-  border: 2px dashed var(--c-primary);
-  border-radius: 5px;
-  padding: var(--spacing);
 }
 
 .wrapper {
@@ -189,5 +193,20 @@ h4 {
 }
 
 p {
+  font-size: 1.2rem;
   line-height: 1.5;
+}
+
+/* navigation */
+
+nav li {
+  list-style: none;
+  padding-bottom: 0.5rem;
+}
+
+/* sidebar */
+
+aside li {
+  list-style: none;
+  padding-bottom: 0.5rem;
 }
