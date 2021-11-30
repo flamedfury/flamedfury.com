@@ -85,23 +85,17 @@ html {
 
 img {
 	max-width: 100%;
+  height: auto;
 }
 
 body {
-  max-width: 60em;
-  margin-inline: auto;
+  max-width: 75em;
+  margin: 0 auto;
 }
 
-body {
+/* body {
   background-image: url("../img/bg.png");
-}
-
-nav, aside, main, footer {
-  background-color: var(--c-bg-primary);
-  color: var(--c-text-primary);
-  border: 2px dashed var(--c-border);
-	padding: var(--spacing);
-}
+} */
 
 a {
   color: var(--c-link-primary);
@@ -113,66 +107,66 @@ a:hover, a:focus {
 
 /* layout */
 
-body {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: var(--spacing);
-}
-
 header {
-  margin-bottom: -6%;
+  margin-bottom: -3%;
 }
 
-header img {
-  max-width: 100%;
+nav {
+  grid-area: nav;
 }
 
-body > * {
-  grid-column: 1 / span 12;
+main {
+  grid-area: main;
 }
 
-@media (min-width: 429px) {
-  nav {
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 1;
-    margin-left: var(--spacing);
-  }
-
-  aside {
-    grid-column: 1 /span 3;
-    grid-row: 3 / span 5;
-    margin-left: var(--spacing);
-  }
-
-  main {
-    grid-column: 4 / span 9;
-    grid-row: 2 / span 6;
-    margin-right: var(--spacing);
-  }
+aside {
+  grid-area: aside;
 }
 
-/* navigation */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+footer {
+  grid-area: footer;
 }
 
-@media (max-width: 428px) {
+nav, main, aside, footer {
+  background-color: #333;
+  border: 2px dashed var(--c-primary);
+  border-radius: 5px;
+  padding: var(--spacing);
+}
 
-  nav, main, aside, footer {
-    margin-left: calc(var(--spacing) / 2);
-    margin-right: calc(var(--spacing) / 2);
+.wrapper {
+  max-width: 60em;
+  margin-inline: auto;
+  display: grid;
+  grid-gap: var(--spacing);
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "nav main main"
+  "aside main main"
+  "footer footer footer";
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-areas:
+      "nav"
+      "main"
+      "aside"
+      "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto /* Header */
+      minmax(75px, auto) /* Nav */
+      1fr /* Content */
+      minmax(75px, auto) /* Sidebar */
+      auto; /* Footer */
   }
 
-  body {
-    grid-gap: calc(var(--spacing) / 2);
-  }
-
-  nav ul {
-    display: flex;
-    flex-flow: column wrap;
-    text-align: center;
+  nav, aside, main{
+    margin: 0 0.5rem 0 0.5rem;
   }
 }
 
