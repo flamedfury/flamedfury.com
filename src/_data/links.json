@@ -1,0 +1,112 @@
+{
+  "usefulSites": [
+    {
+      "url": "https://news.ycombinator.com/",
+      "siteName": "hacker news",
+      "siteDescription": "keep up to date with interesting things happening across the web and wider internet."
+    },
+    {
+      "url": "https://discogs.com",
+      "siteName": "discogs",
+      "siteDescription": "album information, largest music database online. huge market place for music reselling, love it for tracking down vinyl."
+    },
+    {
+      "url": "https://genius.com",
+      "siteName": "genius",
+      "siteDescription": "huge lyrics database. used to be just rap music, but now offers all genres. use it for checking out what the actualy lyrics are after singing something completely wrong for days after listening to a song."
+    },
+    {
+      "url": "https://bandcamp.com/",
+      "siteName": "bandcamp",
+      "siteDescription": "an online record store and music community for fans to discover, connect with, and directly support the artists making awesome music."
+    },
+    {
+      "url": "https://themoviedb.org/",
+      "siteName": "the movie database (tmdb)",
+      "siteDescription": "the movie database (tmbd) is a community built movie and television database. this website has superseded the usefulness of the imdb for me. allows users to sign up, contribute data and track what they've watched."
+    },
+    {
+      "url": "https://www.thetvdb.com/",
+      "siteName": "the TVDB",
+      "siteDescription": "another community driven television and movie database. great alternative for the movie database. full of great user curated lists of various movies and television shows."
+    },
+    {
+      "url": "https://fandom.com",
+      "siteName": "fandom",
+      "siteDescription": "huge database of pop culture. large user generated wikis."
+    },
+    {
+      "url": "https://abookapart.com/",
+      "siteName": "a book apart",
+      "siteDescription": "brief books for people who design, write, and code. have been a fan of this crowd ever since first stumbling upon a list apart way back when. these books are fantastic if you're into writing, designing or coding!"
+    },
+    {
+      "url": "https://search.marginalia.nu/",
+      "siteName": "Marginalia Search",
+      "siteDescription": "A search engine that favours text-heavy websites"
+    }
+  ],
+  "codingSites": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Learn",
+      "siteName": "MDN web docs",
+      "siteDescription": "great open source resource to take you from beginner to comfortable in web development. reference this often for my own projects."
+    },
+    {
+      "url": "https://www.internetingishard.com/",
+      "siteName": "interneting is hard",
+      "siteDescription": "friendly web development tutorials for beginners. great resource for current modern practices in web development."
+    },
+    {
+      "url": "https://css-tricks.com/",
+      "siteName": "css tricks",
+      "siteDescription": "a website about building websites and everything in between. great resource full of great tutorials, most likely has an example of something that you want to achieve."
+    },
+    {
+      "url": "https://www.sitepoint.com",
+      "siteName": "sitepoint",
+      "siteDescription": "a mainstay of the web. has existed since 1999 and is full of everything you need for web development."
+    },
+    {
+      "url": "https://11ty.rocks/",
+      "siteName": "11ty rocks!",
+      "siteDescription": "a collection of 11ty starter projects, snippits and other resources to get you up and running with the 11ty static site generator."
+    },
+    {
+      "url": "https://www.netlify.com/",
+      "siteName": "netlify",
+      "siteDescription": "netlify is a cloud hosting service for web apps and static websites. has a great git powered workflow."
+    },
+    {
+      "url": "https://vercel.com",
+      "siteName": "vercel",
+      "siteDescription": "similar to netlify. serverless, cloud hosting platform for web apps."
+    },
+    {
+      "url": "https://cssguidelin.es/",
+      "siteName": "css guidelines",
+      "siteDescription": "high level advice and guidelines for writing sane, manageable, scalable CSS. if you're like me, you tend to have hacked together your CSS file with snippits from all over the place. "
+    }
+  ],
+  "newsLetters": [
+    {
+      "url": "https://thehistoryoftheweb.com/",
+      "siteName": "the history of the web",
+      "siteDescription": "a twice montly dispatch about the web's history, the incredible people that built it, and all the websites, code, and browsers you've never heard of. well researched and well written recounts of early recounts of our beloved web."
+    }
+  ],
+  "podCasts": [
+    {
+      "url": "https://www.joebudden.com/podcasts/",
+      "rss": "http://feeds.soundcloud.com/users/soundcloud:users:138976584/sounds.rss",
+      "podName": "The Joe Budden Podcast",
+      "podDescription": "Tune into Joe Budden and his friends. Follow along the crazy adventures of these very random friends. Hip Hop and R&B orientated, lots of laughs."
+    },
+    {
+      "url": "https://darknetdiaries.com/",
+      "rss": "https://feeds.megaphone.fm/darknetdiaries",
+      "podName": "The Darknet Diaries",
+      "podDescription": "True stories from the dark side of the Internet. This is a podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network."
+    }
+  ]
+}

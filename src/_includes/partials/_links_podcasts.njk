@@ -1,0 +1,11 @@
+<!-- _includes/partials/_links_podcasts.njk -->
+<table>
+<tbody>
+{% for item in links.podCasts %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.podName }}</a> - <a href="{{ item.rss }}" target="_blank">rss</a></td>
+<td>{{ item.podDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

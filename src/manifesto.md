@@ -12,7 +12,7 @@ these days, the internet is smaller, reduced to a smaller number of places that 
 
 it's time to take it back.
 
-## why i have a homepage
+## Why I have a homepage
 
 i believe in taking back control, reclaiming my digital future and contribute to rebuilding a web for everybody.
 
@@ -22,7 +22,7 @@ i miss the personal, do it yourself aspect of everyone having their own homepage
 
 websites and blogs these days are not organically passionate. they're just looking at ways to capitalise on any given subject, and an seo mess dilluting the usefulness of the web!
 
-## the old web
+## The old web
 
 it's hard for me to pin point when or where the old web finished for me. i want to say sometime around 2010...
 
@@ -37,7 +37,7 @@ we posted useful information, information that got straight to the point. we did
 
 we were not confined to the walls of giant tech companies hostile silos of the internet.
 
-## the personal web
+## The personal web
 when i think of the web my first thoughts are of the personal web, and i smile.
 
 the personal web is where everybody owns their own corner of cyber space where they can share what ever they want, and it is displayed how ever they want.
@@ -50,7 +50,7 @@ the medium of choice on the personal web is the personal homepage. with our own 
 
 we can decide what goes where and don't care if it's beautiful or a beautiful mess.
 
-## the simple web
+## The simple web
 do you remember when you went to search the web for something, and you would often come across personal homepages, usually dedicated to a single topic, [full of high quality information](https://sheldonbrown.com/), created by people who absolutely loved the topic?
 
 these days web search results are full of low quality seo'd pages full of adverts, that are not related to what you wear searching for at all. all the old high quality info sites are either non existent, lost to search algorithms as they've not been updated in a number of years, do not support https, or the valuable information is stuffed in between a useless 23 minute video!
@@ -59,7 +59,7 @@ i can't stand the videos either. they're usually long drawn out introductions, i
 
 don't forget to like and subscribe though!
 
-## the commercial web
+## The commercial web
 the web today, social media is easy and people are lazy, or they don't know what more the web can offer them.
 
 for the most part, facebook, twitter, instagram all make it very easy to share what's on peoples minds quickly with no setup.
@@ -80,12 +80,12 @@ i think the discoverability aspect of the web was lost during the time where blo
 
 i loved linking all my web friends sites from my own back in the day, that formed a sense of community within the communities for what ever topic your page was about that particular month.
 
-## final thought
+## Final thought
 having a personal homepage is awesome, if you don't have one already, get one!
 
 *to be continued*
 
-## read more about the personal, small, and open web
+### Read more about the personal, small, and open web
 
 have a read through the archives of my bookmark folders and pocket reading list. some absolute gems in here of others who share similar thoughts.
 

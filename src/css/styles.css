@@ -45,8 +45,8 @@
   --c-primary: #8a1d5c;
   --c-secondary: #007C00;
 	--c-black: #000;
-	--c-dark-gray: #121212;
-	--c-gray: #050505;
+	--c-dark-gray: #050505;
+	--c-gray: #121212;
 	--c-light-gray: #767676;
 
   --c-text-primary: var(--c-light-gray);
@@ -100,7 +100,7 @@ body {
 
 nav, main, aside, footer {
   color: var(--c-text-primary);
-  background-color: var(--c-bg-primary);
+  background-color: var(--c-bg-dark);
   border: 2px dashed var(--c-primary);
   border-radius: 5px;
   padding: var(--spacing);
@@ -182,6 +182,8 @@ h1, h2, h3, h4 {
   font-family: var(--f-heading);
   line-height: 1.5;
   overflow-wrap: break-word;
+  padding-bottom: 0.2rem;
+	margin-bottom: 0.5rem;
 }
 
 h1, h2, h3 {
@@ -192,13 +194,26 @@ h4 {
   font-weight: 400;
 }
 
-nav h4 {
+nav h4, aside h4 {
   color: var(--c-secondary);
 }
 
+h1 {
+  font-size: var(--f-size-h1);
+}
+
+h2 {
+  font-size: var(--f-size-h2);
+}
+
+h3 {
+  font-size: var(--f-size-h3);
+}
+
 p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.5;
+  margin-bottom: .75rem;
 }
 
 /* navigation */
@@ -219,4 +234,41 @@ nav li {
 aside li {
   list-style: none;
   padding-bottom: 0.5rem;
+}
+
+/* tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  /* border: 1px solid var(--c-bg-primary); */
+  text-align: left;
+  padding: 0.75rem;
+}
+
+th {
+  background: var(--c-bg-dark);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  /* Set every other cell slightly darker. Improves readability. */
+  background: var(--c-bg-primary);
+}
+
+
+/* utilities */
+.t-small {
+  font-size: 0.85rem;
+}
+
+.t-bold {
+  font-weight: bolder;
+}
+
+.t-center {
+  text-align: center;
 }

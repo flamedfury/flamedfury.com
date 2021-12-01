@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   return {
+    markdownTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
         input: "src",

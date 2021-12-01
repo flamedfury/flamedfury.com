@@ -1,0 +1,11 @@
+<!-- _includes/partials/_links_codingsites.njk -->
+<table>
+<tbody>
+{% for item in links.codingSites %}
+<tr>
+<td><a href="{{ item.url }}">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

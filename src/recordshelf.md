@@ -4,7 +4,7 @@ description: my collection of music
 layout: page.njk
 ---
 
-music has always been a huge part of my life.
+Music has always been a huge part of my life.
 
 i'm happy listening to almost anything, my number one absolute joy when it comes to music for as long as i can remember has been rap music. the way they take words, twist them, make them fit a scheme, the complete mastery of language is super awesome to me. second to the words are the beats, from the energetic, to the chilling to the haunting, music that moves me.
 
@@ -14,7 +14,7 @@ dance music, i've tasted this over the last few decades with a long affair with 
 
 and don't forget pop music. i love the formulaic construction of a banger, songs that are catchy and fun to sing along to. don't get me wrong, some of it is horrible, but i can find joy in most of it.
 
-## impactful albums
+## Impactful albums
 
 these are the albums that have impacted me in one way or another throughout my life.
 
@@ -28,12 +28,12 @@ these are the albums that have impacted me in one way or another throughout my l
 - BTNHResurrection (2000)
 - The Marshall Mathers LP (2000)
 
-## fan pages
+## Fan pages
 check out my mini fan pages.
 
 - [nothing breaks like a heart](https://miley.flamedfury.com)
 
-## check out my recently played tracks
+### Check out my recently played tracks
 
 it's not often that i'm not listening to music while out and about doing or doing chores around the house. here's a list of tracks i've had playing.
 
