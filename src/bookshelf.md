@@ -38,3 +38,5 @@ Impact wise for the authors above, I'll talk about Feist first. I picked up a bo
 ## Recently Read Books
 
 Here are the last books that I've read.
+
+{% include "partials/_recentlyread.njk" %}
