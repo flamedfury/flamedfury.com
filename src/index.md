@@ -1,5 +1,5 @@
 ---
-title: fLaMEdFury
+title: The Information Super Highway
 layout: base.njk
 ---
 
@@ -14,5 +14,9 @@ I have had a passion for making homepages for a long time. There's always been a
 I chose Neocities as my initial host to step away from the corporate web and to not be surrounded by likes, shares, claps, stars, retweets, or whatevers. However, since then I've gravitated back to Netlify to take advantage of the advanced features that they offer as a static host. fLaMEdFury v2 has moved to Netlify.
 
 I love the Internet, [but not all things about the Internet](manifesto), you can read more over on my [about page](about). If you want to dive deeper, check out my [early web memories page](memories) which detail my earliet memories of getting online and surfing the web, and my [web manifesto](manifesto) where I share my thoughts on the current state of the web.
+
+## Selected writing
+
+
 
 If you've enjoyed your time here, please leave a message in my [guestbook](https://guestbook.flamedfury.com), or send me an [e-mail](mailto:flamed@flamedfury.com).

@@ -69,6 +69,10 @@
 	--f-size-h2: calc(2 * var(--f-size-base));
 	--f-size-h3: calc(1.75 * var(--f-size-base));
 
+  --f-size-mob-h1: calc(1.75 * var(--f-size-base));
+	--f-size-mob-h2: calc(1.55 * var(--f-size-base));
+	--f-size-mob-h3: calc(1.35 * var(--f-size-base));
+
   /* formatting */
   --spacing: 1rem;
 }
@@ -153,7 +157,7 @@ footer {
   "footer footer footer";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .wrapper {
     grid-template-areas:
       "nav"
@@ -182,6 +186,7 @@ h1, h2, h3, h4 {
   font-family: var(--f-heading);
   line-height: 1.5;
   overflow-wrap: break-word;
+  hyphens: auto;
   padding-bottom: 0.2rem;
 	margin-bottom: 0.5rem;
 }
@@ -214,6 +219,20 @@ p {
   font-size: 1.15rem;
   line-height: 1.5;
   margin-bottom: .75rem;
+}
+
+@media screen and (max-width:720px) {
+  h1 {
+    font-size: var(--f-size-mob-h1);
+  }
+
+  h2 {
+    font-size: var(--f-size-mob-h2);
+  }
+
+  h3 {
+    font-size: var(--f-size-mob-h3);
+  }
 }
 
 /* navigation */
@@ -250,15 +269,50 @@ th {
 }
 
 th {
-  background: var(--c-bg-dark);
+  background: var(--c-bg-primary);
   font-weight: bold;
+}
+
+tr {
+  background: var(--c-bg-primary);
 }
 
 tr:nth-child(even) {
   /* Set every other cell slightly darker. Improves readability. */
-  background: var(--c-bg-primary);
+  background: var(--c-bg-dark);
 }
 
+/* flex container for displaying stuff */
+.flex-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.flex-cell img {
+  display: block;
+}
+
+.flex-cell {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .flex-cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .flex-cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
 
 /* utilities */
 .t-small {

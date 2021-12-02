@@ -1,0 +1,16 @@
+<!-- _includes/partials/_recentlyplayed.njk -->
+
+{% set recentlyPlayed = lastfm.recenttracks.track %}
+{% if recentlyPlayed.length %}
+<div class="flex-container">
+<div class="flex-grid">
+{% for item in recentlyPlayed %}
+<div class="flex-cell">
+<a href="{{ item.url }}">
+<img src="{{ item.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}">
+</a>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endif %}

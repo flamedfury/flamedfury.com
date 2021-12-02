@@ -35,5 +35,7 @@ check out my mini fan pages.
 
 ### Check out my recently played tracks
 
-it's not often that i'm not listening to music while out and about doing or doing chores around the house. here's a list of tracks i've had playing.
+It's not often that I'm not listening to music while out and about, walking the dogs or doing chores around the house. Here's a list of tracks I've had playing.
+
+{% include "partials/_recentlyplayed.njk" %}
 
