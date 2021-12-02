@@ -29,7 +29,7 @@ these are the albums that have impacted me in one way or another throughout my l
 - The Marshall Mathers LP (2000)
 
 ## Fan pages
-check out my mini fan pages.
+Check out my mini fan pages.
 
 - [nothing breaks like a heart](https://miley.flamedfury.com)
 
