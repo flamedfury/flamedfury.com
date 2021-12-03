@@ -15,6 +15,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("year", () => `${date.getFullYear()}`);
+  
+  // required for the _recentlyread api call
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   return {
