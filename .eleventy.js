@@ -7,7 +7,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/js");
 
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  // set the date once per build to avoid different results for different calls
+  let date;
+
+  eleventyConfig.on("beforeBuild", () => {
+    date = new Date();
+  });
+
+  eleventyConfig.addShortcode("year", () => `${date.getFullYear()}`);
   
   // required for the _recentlyread api call
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
