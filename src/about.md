@@ -4,7 +4,7 @@ description: Who is fLaMEd?
 layout: page.njk
 ---
 
-Heya 👋, I'm fLaMEd 🔥, and I'm the webmaster of FlamedFury. I have been [a citizen of the Internet since 1996](../memoirs). I love the web (as well as the Internet), but not all things about the web. [I have a huge dislike for the current commercialisation, monitisation, and walled garden silo approach of the modern web](../manifesto/).
+Heya 👋, I'm fLaMEd 🔥, and I'm the webmaster of fLaMEdFURY. I have been [a citizen of the Internet since 1996](../memoirs). I love the web (as well as the Internet), but not all things about the web. [I have a huge dislike for the current commercialisation, monitisation, and walled garden silo approach of the modern web](../manifesto/).
 
 ## Interests
 
@@ -29,6 +29,6 @@ My family is my biggest interest, among all the things listed above, my wife and
 - Built with [Eleventy](https://11ty.dev)
 - Deployed with [Github](https://github.com)
 - Hosted on [Netlify](https://netlify.com)
-- Graphics by [Gothcommissions](http://gothcommissions.tumblr.com]
+- Graphics by [Gothcommissions](http://gothcommissions.tumblr.com)
 
 Please read my [statement of audience](statement-of-audience/).
