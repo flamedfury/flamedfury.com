@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/js");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   return {
     markdownTemplateEngine: "njk",
