@@ -39,4 +39,4 @@ Impact wise for the authors above, I'll talk about Feist first. I picked up a bo
 
 Here are the last books that I've read.
 
-<!-- {% include "partials/_recentlyread.njk" %} -->
+{% include "partials/_recentlyread.njk" %}
