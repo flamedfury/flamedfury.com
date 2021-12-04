@@ -84,7 +84,11 @@ I think the discoverability aspect of the web was lost during the time where blo
 I loved linking all my web friends homepages from my own back in the day, that formed a sense of community within the communities for what ever topic your page was about that particular month. With version 2 of fLaMEdFury I’ve brought this back.
 
 ## Web 3
-Is it all doom and gloom?
+Is it all doom and gloom? Is it really the new web? Is web 3 finally the internet for the people by the people without monetisation as their main driver?
+
+Or is web 3 a solution to a problem that doesn’t exist when you think about it?
+
+Decentralisation has always existed, and still exists in one form or another. Think of community focused forums powered by phpBB or vBulletin.
 
 ## Final thought
 Having a personal homepage is awesome, if you don't have one, get one!
