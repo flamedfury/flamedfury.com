@@ -221,7 +221,7 @@ p {
   margin-bottom: .75rem;
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:820px) {
   h1 {
     font-size: var(--f-size-mob-h1);
   }
@@ -248,7 +248,7 @@ li a {
   display: block;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
   .closebtn {display: block;}
   .nav-h4 {display: block;}
 
@@ -292,7 +292,7 @@ aside li {
   padding-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
   .buttons, .link-me {
     column-count: 2;
   }
