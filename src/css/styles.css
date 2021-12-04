@@ -292,9 +292,15 @@ aside li {
   padding-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 428px) {
   .buttons, .link-me {
     column-count: 2;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .buttons, .link-me {
+    column-count: 3;
   }
 }
 
