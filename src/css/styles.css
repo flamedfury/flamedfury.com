@@ -236,16 +236,53 @@ p {
 }
 
 /* navigation */
+.nav-h4, .closebtn {display: none;}
 
 nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  list-style: none;
-  padding-left: 0.5rem;
-  padding-bottom: 0.5rem
+li a {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .closebtn {display: block;}
+  .nav-h4 {display: block;}
+
+  nav li {
+    text-align: center;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .overlay .closebtn {
+    text-decoration: none;
+    color: var(--c-light-graygray);
+  }
+
+  .nav-h4 {
+    text-align: center;
+    cursor: pointer;
+  }
 }
 
 /* sidebar */
