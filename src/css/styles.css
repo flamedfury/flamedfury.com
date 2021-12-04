@@ -248,7 +248,7 @@ li a {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .closebtn {display: block;}
   .nav-h4 {display: block;}
 
@@ -290,6 +290,12 @@ li a {
 aside li {
   list-style: none;
   padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  .buttons, .link-me {
+    column-count: 2;
+  }
 }
 
 /* tables */
