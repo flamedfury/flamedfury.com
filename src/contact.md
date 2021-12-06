@@ -4,4 +4,6 @@ description: this is my contact page
 layout: page.njk
 ---
 
-Contact me with this form
+Kia ora, you've found my contact page. I still haven't created a fancy contact form, so for now, please send me [e-mail](mailto:flamed@flamedfury.com).
+
+Can't wait to hear from you :)
