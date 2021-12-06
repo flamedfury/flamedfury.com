@@ -1,5 +1,5 @@
 ---
-title: fLaMEd's Homepage
+title: fLaMEds Homepage
 layout: base.njk
 ---
 
