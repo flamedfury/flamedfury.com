@@ -1,10 +1,16 @@
-<h4>Friends</h4>
-
-{% include "partials/_buttons.njk" %}
-
-<h4>Link Me</h4>
+<ul class="buttons">
+  <li class="side-title">Friends</li>
+  {% for item in buttons.friends %}
+  <li>
+    <a href="{{ item.url }}">
+      <img src="{{ item.button }}" alt="{{ item.site }}"  title="{{ item.site }}" width="88px" height="31px">
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 
 <ul class="link-me">
+  <li class="side-title">Link Me</li>
   <li><img src="../img/buttons/fury.gif"></li>
   <li><img src="../img/buttons/flamedfury.gif"></li>
   <li><img src="../img/buttons/flamedfury2.gif"></li>
