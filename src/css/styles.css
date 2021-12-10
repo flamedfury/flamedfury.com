@@ -406,3 +406,16 @@ tr:nth-child(even) {
 .t-center {
   text-align: center;
 }
+
+.ring {
+  font-weight: bold;
+  font-size: 1rem;
+  font-family:var(--link-family);
+  color:var(--f-text-primary);
+  display:flex;
+  justify-content:center;
+}
+
+.ring a {
+  text-decoration: none;
+}
