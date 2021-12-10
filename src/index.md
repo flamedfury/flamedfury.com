@@ -23,3 +23,5 @@ I have had a passion for making homepages for a long time. There's always been a
 
 ***
 If you've enjoyed your time here, please leave a message in my [guestbook](https://guestbook.flamedfury.com), or send me an [e-mail](mailto:flamed@flamedfury.com).
+
+I won’t be able to respond to guestbook entries, I will respond to all e-mails. 

@@ -95,7 +95,8 @@ Having a personal homepage is awesome, if you don't have one, get one!
 
 I’ve curated a set of resources to help everyone to get started, no matter your skill set:
 
-**To-do:** add list of resources.
+### Building your own homepage
+- [Jackie’s guide to making a website zine](https://www.zinesbyjackie.com/shop/jackies-guide-to-making-a-website-by-you--for-you) is a great resource to get you going on on building your own homepage. Jackie will walk you through planning, creating and hosting.
 
 *to be continued*
 
