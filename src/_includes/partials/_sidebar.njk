@@ -3,7 +3,7 @@
   {% for item in buttons.friends %}
   <li>
     <a href="{{ item.url }}">
-      <img src="{{ item.button }}" alt="{{ item.site }}"  title="{{ item.site }}" width="88" height="31">
+      <img src="{{ page | relative }}{{ item.button }}" alt="{{ item.site }}"  title="{{ item.site }}" width="88" height="31">
     </a>
   </li>
   {% endfor %}
@@ -11,10 +11,10 @@
 
 <ul class="link-me">
   <li class="side-title">Link Me</li>
-  <li><img src="../img/buttons/fury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
-  <li><img src="../img/buttons/flamedfury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
-  <li><img src="../img/buttons/flamedfury2.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
-  <li><img src="../img/buttons/flamedfurybutton.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
+  <li><img src="{{ page | relative }}img/buttons/fury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
+  <li><img src="{{ page | relative }}img/buttons/flamedfury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
+  <li><img src="{{ page | relative }}img/buttons/flamedfury2.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
+  <li><img src="{{ page | relative }}img/buttons/flamedfurybutton.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
 </ul>
 
 <ul class="webrings">
