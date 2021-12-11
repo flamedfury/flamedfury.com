@@ -1,0 +1,11 @@
+<!-- _includes/partials/_links_searchengines.njk -->
+<table>
+<tbody>
+{% for item in links.searchEngines %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

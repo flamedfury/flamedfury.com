@@ -41,11 +41,6 @@
       "siteDescription": "Brief books for people who design, write, and code. have been a fan of this crowd ever since first stumbling upon A List Apart way back when. These books are fantastic if you're into writing, designing or coding!"
     },
     {
-      "url": "https://search.marginalia.nu/",
-      "siteName": "Marginalia Search",
-      "siteDescription": "A search engine that favours text-heavy websites"
-    },
-    {
       "url": "https://audioculture.co.nz/",
       "siteName": "Audioculture Iwi Waiata",
       "siteDescription": "The noisy library of New Zealand music"
@@ -56,6 +51,11 @@
       "url": "https://developer.mozilla.org/en-US/docs/Learn",
       "siteName": "MDN Web Docs",
       "siteDescription": "Great open source resource to take you from beginner to comfortable in web development. Reference this often for my own projects."
+    },
+    {
+      "url": "https://www.smashingmagazine.com/",
+      "siteName": "Smashing Magazine",
+      "siteDescription": "Smashing Magazine is a website and eBook publisher that offers editorial content and professional resources for web developers and web designers."
     },
     {
       "url": "https://www.internetingishard.com/",
@@ -84,7 +84,7 @@
     },
     {
       "url": "https://vercel.com",
-      "siteName": "Cercel",
+      "siteName": "Vercel",
       "siteDescription": "Similar to netlify. serverless, cloud hosting platform for web apps from the creators of Next.JS"
     },
     {
@@ -98,6 +98,11 @@
       "url": "https://thehistoryoftheweb.com/",
       "siteName": "The History of the Web",
       "siteDescription": "A twice montly dispatch about the web's history, the incredible people that built it, and all the websites, code, and browsers you've never heard of. Well researched and well written recounts of early recounts of our beloved web."
+    },
+    {
+      "url": "https://www.webworm.co/",
+      "siteName": "Webworm with David Farrier",
+      "siteDescription": "David Farrier's stories from the weird side of the Internet."
     }
   ],
   "podCasts": [
@@ -118,6 +123,33 @@
       "rss": "https://www.omnycontent.com/d/playlist/d5d8b1d2-6c31-48c0-8625-a959004fd8f1/de168ba7-4a6f-42fe-986e-adce001025ce/769d7822-3fb9-4294-a79f-adce001b8351/podcast.rss",
       "podName": "Aotearoa Hip Hop Podacast",
       "podDescription": "I'm a huge music fan, and an even bigger fan of Aotearoa music. In this podcast series, DJ Sir-Vere dives deep into the very beginning of Aotearoa Hip Hop and explores the people and the history."
+    }
+  ],
+  "searchEngines": [
+    {
+      "url": "https://search.marginalia.nu/",
+      "siteName": "Marginalia Search",
+      "siteDescription": "A search engine that favours text-heavy websites."
+    },
+    {
+      "url": "https://spyda.dev/",
+      "siteName": "Spyda.dev",
+      "siteDescription": "A privacy first search engine and web crawler. Work in prgoress, weekend project."
+    },
+    {
+      "url": "https://gibiru.com/",
+      "siteName": "Gibiru",
+      "siteDescription": "Uncensored private search engine. They exist to provide access to information outside of big tech's censorship bubble and do so privately."
+    },
+    {
+      "url": "https://infotiger.com/",
+      "siteName": "infotiger",
+      "siteDescription": "Independent, privacy respecting search engine."
+    },
+    {
+      "url": "https://pinboard.in/",
+      "siteName": "Pinboard",
+      "siteDescription": "A social bookmarking site, users are able to search through other users bookmarks."
     }
   ]
 }

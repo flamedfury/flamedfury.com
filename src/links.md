@@ -18,6 +18,12 @@ A collection of websites that i've found useful for hacking away at my various p
 
 {% include "partials/_links_codingsites.njk" %}
 
+## Search Engines
+
+A collection of independent search engines with varying degress of indexes, results and privacy options.
+
+{% include "partials/_links_searchengines.njk" %}
+
 ## Newsleters
 
 A collection of newsletters that i subscribe to.
