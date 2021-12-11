@@ -320,7 +320,12 @@ aside ul {
 aside li {
   width:100%;
   margin:0 0 1em 0;
-  display:block;
+  display:flex;
+  justify-content:center;
+}
+
+aside li:last-child {
+  margin-bottom: var(--spacing);
 }
 
 /* tables */
