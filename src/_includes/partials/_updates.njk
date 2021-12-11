@@ -1,0 +1,5 @@
+<ul class="updates">
+{% for post in collections.updates | reverse %}
+  <li>{{ post.templateContent | safe }}</li>
+{% endfor %}
+</ul>

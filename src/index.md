@@ -18,8 +18,7 @@ I have had a passion for making homepages for a long time. There's always been a
 
 ## Site updates
 
-* **06 Dec, 2021**: Launched version 2 of my homepage. Long time coming, I hope that you enjoy my new design.
-*  **02 Dec, 2021**: Started exploring my thoughts on Web 3 on [My Web Manifesto](manifesto) page.
+{% include "partials/_updates.njk" %}
 
 ***
 If you've enjoyed your time here, please leave a message in my [guestbook](https://guestbook.flamedfury.com), or send me an [e-mail](mailto:flamed@flamedfury.com).

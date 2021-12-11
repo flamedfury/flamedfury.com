@@ -1,9 +1,16 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/fonts");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/js");
+
+  eleventyConfig.addPlugin(pluginRss);
+
+  // set the collection for site updates
+  eleventyConfig.addCollection("updates", (coll) => coll.getFilteredByGlob("**/updates/*.md"));
 
   // use {{ page | relative }} in hrefs or img src to ensure correct path is used
   eleventyConfig.addFilter(
