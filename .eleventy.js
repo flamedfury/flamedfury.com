@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/js");
 
+  // use {{ page | relative }} in hrefs or img src to ensure correct path is used
   eleventyConfig.addFilter(
     "relative",
     (page, root = "/") =>

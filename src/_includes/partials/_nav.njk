@@ -1,18 +1,18 @@
 <div class="nav-primary">
-  <a href="../" class="home-btn">Home</a>
+  <a href="{{ page | relative }}" class="home-btn">Home</a>
   <ul id="myLinks">
     <li class="side-title">Interests</li>
-    <li><a href="../recordshelf/">Recordshelf</a></li>
-    <li><a href="../bookshelf/">Bookshelf</a></li>
-    <li><a href="../comicbookrack/">Comicbook Rack</a></li>
+    <li><a href="{{ page | relative }}recordshelf/">Recordshelf</a></li>
+    <li><a href="{{ page | relative }}bookshelf/">Bookshelf</a></li>
+    <li><a href="{{ page | relative }}comicbookrack/">Comicbook Rack</a></li>
     <li class="side-title">Writing</li>
-    <li><a href="../manifesto/">Web Manifesto</a></li>
-    <li><a href="../memories/">Web Memories</a></li>
+    <li><a href="{{ page | relative }}manifesto/">Web Manifesto</a></li>
+    <li><a href="{{ page | relative }}memories/">Web Memories</a></li>
     <li class="side-title">Meta</li>
-    <li><a href="../links/">Links</a></li>
-    <li><a href="../about/">About</a></li>
+    <li><a href="{{ page | relative }}links/">Links</a></li>
+    <li><a href="{{ page | relative }}about/">About</a></li>
     <li class="side-title">Contact</li>
-    <li><a href="../contact/">Email Me</a></li>
+    <li><a href="{{ page | relative }}contact/">Email Me</a></li>
     <li><a href="https://guestbook.flamedfury.com/">Guestbook</a></li>
   </ul>
   <a href="javascript:void(0);" id="menu-btn" class="menu-btn" onclick="myFunction()">Menu</a>
