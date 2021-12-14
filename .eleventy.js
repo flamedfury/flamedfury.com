@@ -11,6 +11,8 @@ module.exports = function (eleventyConfig) {
 
   // set the collection for site updates
   eleventyConfig.addCollection("updates", (coll) => coll.getFilteredByGlob("**/updates/*.md"));
+  // set the collection for guides
+  eleventyConfig.addCollection("guides", (coll) => coll.getFilteredByGlob("**/guides/*.md"));
 
   // use {{ page | relative }} in hrefs or img src to ensure correct path is used
   eleventyConfig.addFilter(
