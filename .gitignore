@@ -6,3 +6,6 @@ public
 
 # secrets
 .env
+
+#cache
+.cache
