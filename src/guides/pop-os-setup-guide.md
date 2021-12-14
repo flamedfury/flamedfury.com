@@ -135,8 +135,10 @@ Proton is a compatibility layer tool which enables support for some Windows game
 
 Enable Proton: 
 
+```bash
 Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supported titles" AND "Enable Steam Play for all other 
 titles".
+```
 
 ### Lutris
 
