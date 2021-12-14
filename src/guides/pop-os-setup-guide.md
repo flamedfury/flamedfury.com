@@ -10,7 +10,7 @@ I will update this guide as I add new apps or configure my system further.
 
 ## Things to do after installation
 
-I've taken inspiration from [Pop!_OS: Things to do after installation (Apps, Settings, and Tweaks) | Willi Mutschler](https://mutschler.eu/linux/install-guides/pop-os-post-install/) and have followed some of their configurations and added my own.
+I've taken inspiration from [Willi Mutschler's Pop!_OS Guide](https://mutschler.eu/linux/install-guides/pop-os-post-install/) and added my own.
 
 ### Terminal
 
@@ -23,7 +23,8 @@ hostnamectl set-hostname flamedfury
 Set terminal theme to [One Dark theme for GNOME Terminal](https://github.com/denysdovhan/one-gnome-terminal).
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
+bash -c "$(curl -fsSL 
+https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
 ```
 
 Install Neofetch so you to print your host details in terminal.
@@ -134,10 +135,8 @@ Proton is a compatibility layer tool which enables support for some Windows game
 
 Enable Proton: 
 
-```bash
 Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supported titles" AND "Enable Steam Play for all other 
 titles".
-```
 
 ### Lutris
 

@@ -425,11 +425,6 @@ tr:nth-child(even) {
   text-decoration: none;
 }
 
-pre, code {
-  background-color: var(--c-bg-primary);
-  border-radius: 5px;
-}
-
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -444,15 +439,12 @@ pre, code {
    white-space: pre;
    word-spacing: normal;
    word-break: normal;
-   word-wrap: normal;
+   word-wrap: break-word;
    line-height: 1.5;
-   -moz-tab-size: 4;
-   -o-tab-size: 4;
    tab-size: 4;
-   -webkit-hyphens: none;
-   -moz-hyphens: none;
-   -ms-hyphens: none;
    hyphens: none;
+   display: block;
+   border-radius: .3rem;
  }
  
  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
