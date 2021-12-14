@@ -4,8 +4,6 @@ description: I've recently moved from Windows to Pop!_OS. These are my notes for
 date: 2020-12-14
 ---
 
-{{ post.data.description }}
-
 ## Applications needed
 
 - [Mark Text](https://marktext.app/) for note taking
@@ -51,11 +49,9 @@ In Region Settings open “Manage Installed Languages”, do not update
 these, but first remove the unnecessary ones. Then reopen “languages” 
 and update these.
 
-#### Install updates and reboot
+### Install updates and reboot
 
 ```bash
-Install updates and reboot
-
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
@@ -68,7 +64,7 @@ flatpak update
 sudo reboot now
 ```
 
-#### Gnome-tweaks
+### Gnome-tweaks
 
 ```bash
 sudo apt install gnome-tweak-tool 
@@ -147,4 +143,5 @@ node -v && npm -v
 ***
 
 *First published Dec 14, 2021*
+
 *Last updated Dec 14, 2021*
