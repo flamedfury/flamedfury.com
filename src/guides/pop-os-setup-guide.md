@@ -150,8 +150,30 @@ Lutris is available in the Pop!_Shop or can be installed via the terminal:
 sudo apt install lutris
 ```
 
+### Xbox One Controller
+
+I have the Xbox One Controller + Wireless Adapter for Windows 10 and was pleased to see that I could get this working.
+
+To do this install [xow](https://github.com/medusalix/xow), a Linux user mode driver for the Xbox One wireless dongle.
+
+```bash
+git clone https://github.com/medusalix/xow.git
+
+sudo apt-get install libusb-1.0-0-dev  libusb-1.0-0
+
+cd xow
+
+make BUILD=RELEASE
+
+sudo make install
+
+sudo systemctl enable xow.service
+
+sudo systemctl start xow.service
+```
+
 ***
 
 *First published Dec 14, 2021*
 
-*Last updated Dec 14, 2021*
+*Last updated Dec 19, 2021*
