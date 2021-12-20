@@ -11,14 +11,14 @@
 
     <title>{{ pageTitle }}</title>
 
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="{{ page | relative }}css/styles.css" />
     <link rel="shortcut icon" href="/img/favicon.png" />
 </head>
 
 <body>
 
     <header class="header">
-      <img src="../../img/header.png" width="1200" height="400" alt="welcome to fLaMEdFury!">
+      <img src="{{ page | relative }}img/header.png" width="1200" height="400" alt="welcome to fLaMEdFury!">
     </header>
 
     <div class="wrapper">
@@ -42,7 +42,7 @@
 
     </div>
 
-    <script  src="../js/main.js"></script>
+    <script  src="{{ page | relative }}js/main.js"></script>
 
   </body>
 </html>
