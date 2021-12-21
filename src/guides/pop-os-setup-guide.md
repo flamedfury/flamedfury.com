@@ -140,6 +140,8 @@ Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supp
 titles".
 ```
 
+ProtonUp-QT is a GUI for managing compatibility tools for both Steam and Lutris. I used this to install the latest Glorious Eggroll Proton release to play GTA V. Available as a flatpak on Pop!_Store.
+
 ### Lutris
 
 [Lutris](https://lutris.net/) is a game launcher that enables me to play non Steam Proton games on Linux, like World of Warcraft. Various games have various levels of support.
@@ -159,7 +161,7 @@ To do this install [xow](https://github.com/medusalix/xow), a Linux user mode dr
 ```bash
 git clone https://github.com/medusalix/xow.git
 
-sudo apt-get install libusb-1.0-0-dev  libusb-1.0-0
+sudo apt-get install libusb-1.0-0-dev  libusb-1.0-0 cabextract
 
 cd xow
 
@@ -176,4 +178,4 @@ sudo systemctl start xow.service
 
 *First published Dec 14, 2021*
 
-*Last updated Dec 19, 2021*
+*Last updated Dec 22, 2021*
