@@ -221,6 +221,8 @@ Useful apps, that don't need individual configuration. Can be installed from Pop
 - **Discord** for interacting with my many communities
 - **Solaar** for manging my Logitech devices
 - **Spotify** for listening to music
+- **Librewolf** is a Firefox fork with a focus on security and privacy
+- **Fluent Reader** for RSS feeds
 
 ---
 
