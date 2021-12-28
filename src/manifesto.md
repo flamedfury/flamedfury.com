@@ -105,6 +105,7 @@ I’ve curated a set of resources to help everyone to get started, no matter you
 Have a read through the archives of my bookmark folders and Pocket reading list. There are a number of absolute gems in here of others who share similar thoughts.
 
 {% include "partials/_manifesto_links.njk" %}
+{% include "partials/_links_podcasts.njk" %}
 
 ***
 
