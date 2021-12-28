@@ -391,7 +391,7 @@
     {
       "siteName": "How to bring back the old internet",
       "siteDescription": "Bit of a long read where the author remembers internet forums and how they moderate themselves, and the difference between monstorous platforms like facebook and their refusual to moderate content on that platform.",
-      "url": "https://theweek.com/articles/955798/how-bring-back-old-internet",
+      "url": "https://theweek.com/articles/955798/how-bring-back-old-internet?utm_source=pocket_mylist",
       "archiveURL": "https://web.archive.org/web/20210829220319/https://theweek.com/articles/955798/how-bring-back-old-internet"
     },
     {
@@ -400,5 +400,11 @@
       "url": "https://stackingthebricks.com/how-blogs-broke-the-web/",
       "archiveURL": "https://web.archive.org/web/20210814050839/https://stackingthebricks.com/how-blogs-broke-the-web/"
     },
+    {
+      "siteName": "",
+      "siteDescription": "",
+      "url": "",
+      "archiveURL": ""
+    }
   ]
 }
