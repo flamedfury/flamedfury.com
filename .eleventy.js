@@ -1,5 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const embedSpotify = require("eleventy-plugin-embed-spotify");
 
 module.exports = function (eleventyConfig) {
 
@@ -10,6 +11,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(embedSpotify);
 
   // set the collection for site updates
   eleventyConfig.addCollection("updates", (coll) => coll.getFilteredByGlob("**/updates/*.md"));
