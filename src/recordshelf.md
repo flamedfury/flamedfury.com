@@ -6,22 +6,61 @@ layout: page.njk
 
 Music has always been a huge part of my life.
 
-i'm happy listening to almost anything, my number one absolute joy when it comes to music for as long as i can remember has been rap music. the way they take words, twist them, make them fit a scheme, the complete mastery of language is super awesome to me. second to the words are the beats, from the energetic, to the chilling to the haunting, music that moves me.
+I'm happy listening to almost anything, my number one absolute joy when it comes to music for as long as I can remember has been rap music. The way the artists take words, twist them, make them fit a scheme, the complete mastery of language is super awesome to me. Second to the words are the beats, from the energetic, to the chilling to the haunting, it's music that moves me.
 
-then there's pop-punk, punk rock, alt-rock, whatever it is. you know the songs with that nasely accent and the elongated pronunciation of words? the music that embraces (most of the time) the fun things in life, partying, skating, surfing. especially the ones i can sing along to, but also heartbreak. i'm glad to have recently found a new era of artists following this style of music.
+Then there's pop-punk, punk rock, alt-rock, whatever it is. You know the songs with that nasely accent and the elongated pronunciation of words? The music that embraces (most of the time) the fun things in life, partying, skating, surfing. Especially the ones i can sing along to, but also heartbreak. I'm glad to have recently found a new era of artists following this style of music.
 
-dance music, i've tasted this over the last few decades with a long affair with hard dance, damn what a time to be alive that was. many nights spent form dawn to dawn with smiles, and hugs, and laughs.
+Dance music, I've tasted this over the last few decades with a long affair with hard dance, damn what a time to be alive that was. Many nights spent form dusk to dawn with smiles, hugs, and laughs.
 
-and don't forget pop music. i love the formulaic construction of a banger, songs that are catchy and fun to sing along to. don't get me wrong, some of it is horrible, but i can find joy in most of it.
+And don't forget pop music. I love the formulaic construction of a banger, songs that are catchy and fun to sing along to. Don't get me wrong, some of it is horrible, but i can find joy in most of it.
+
+## Mixtapes & playlists
+
+I like to create mixtapes and playlists.
+
+#### This is: Griselda Records
+
+Aye yo, doot doot doot doot. They don't make them like this anymore. Griselda Records, the home of Westside Gunn, Conway, and Benny the Butcher. Grisalda make the type of music that want you to go outside and ride your bike without a helmet. Salute to the kings of the underground.
+
+Griselda had a huge run between 2018 and 2021 with dozens of releases and additions to their roster to compliment Gunn, Conway and Benny.
+
+These are some of my favourite records from the group, including posse cuts, features and individual records.
+
+https://open.spotify.com/playlist/61zzitaZHZegpeopBwXaw1?si=bc4fb5c9f57b425a
+
+#### Mixtape: DMX
+
+With DMX's passing in 2020 I sat down and put together a list of my favourite DMX records to listen to as I digested the news.
+
+https://open.spotify.com/playlist/4znazXAVg5JzrSztz9QScn?si=a3d44f9ed7a548bb
+
+#### Mixtape: Dipset vs The Lox
+
+The most anticipated Versuz of 2020 where everybody thought that a Dipset victory was a sure thing. However, on the night, The Lox came in and slaughtered. These are my favourite records from both groups.
+
+https://open.spotify.com/playlist/2LzbHSAF6thjVXQQ2srPVH?si=258d2580ec71426f
+
+#### Mixtape: The Game
+
+The Game was at one point Dr Dre's protege and 50 Cent's antagonist, and forever carrying the West Coast on his back. A long career with a huge catelogue of music. This mixtape features my favourite album cuts and features.
+
+https://open.spotify.com/playlist/45FOl0VxnVtt4PQejGitaB?si=943c9ae8c97f4586
+
+#### Mixtape: Miley Cyrus
+
+It isn't a secret that [Miley](https://miley.flamedfury.com) is my favourite musician. From TV star, to music's wild child, in 2020, Miley hit her best self with the release of Plastic Hearts.
+
+These are my favourite Miley records.
+
+https://open.spotify.com/playlist/4zVVZeKGDruP4pfD78AjHz?si=1be0dcce05b744c8
 
 ## Impactful albums
 
 these are the albums that have impacted me in one way or another throughout my life.
 
 - The Chipmunks Rock the House (1991)
-- Totally Krossed Out (1992)
 - Rage Against The Machine (1992)
-- Dangerous Minds, Soundtrack (1995)
+- Gangsta's Paradise (1995)
 - Evil Empire (1996)
 - The Slim Shady LP (1999)
 - 2001 (1999)
@@ -29,13 +68,13 @@ these are the albums that have impacted me in one way or another throughout my l
 - The Marshall Mathers LP (2000)
 
 ## Fan pages
+
 Check out my mini fan pages.
 
-- [nothing breaks like a heart](https://miley.flamedfury.com)
+- [Miley](https://miley.flamedfury.com)
 
 ### Check out my recently played tracks
 
 It's not often that I'm not listening to music while out and about, walking the dogs or doing chores around the house. Here's a list of tracks I've had playing.
 
 {% include "partials/_recentlyplayed.njk" %}
-
