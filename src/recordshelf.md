@@ -16,7 +16,7 @@ And don't forget pop music. I love the formulaic construction of a banger, songs
 
 ## Mixtapes & playlists
 
-I like to create mixtapes and playlists.
+As you can tell, I love music. I also love to create mixtapes and playlists. Below are a selection of my most thoughtout mixtapes and playlists. Give them a listen and let me know what you think.
 
 #### This is: Griselda Records
 
