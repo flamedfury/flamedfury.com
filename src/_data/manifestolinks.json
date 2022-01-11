@@ -1,5 +1,76 @@
 {
-    "manifestoSites": [
+  "manifestoCommunity": [
+    {
+      "siteName": "The Web 1.1 Movement",
+      "siteDescription": "Bytemoth dives into the value of creating your website by hand without waste. I'm not going full Web 1.1 myself as I absolutely love my graphical expression but I love the points made. Contains a great list of links.",
+      "url": "https://bytemoth.neocities.org/dive/web11.htm"
+    },
+    {
+      "siteName": "Sadgrl's Net Manifesto",
+      "siteDescription": "Sadgrls initial dreamwidth post from 2020 inspired this very page. Since then she has expanded her thoughts like many of us and is now the most popular manifesto out there.",
+      "url": "https://sadgrl.online/cybercafe/manifesto_full.html"
+    },
+    {
+      "siteName": "Melon's Manifesto",
+      "siteDescription": "Melon clearly understands what he stands for and what he wants from his homepage.",
+      "url": "https://melonking.net/thoughts/manifesto.html"
+    },
+    {
+      "siteName": "OpenBooks Manifesto",
+      "siteDescription": "I really vibe with Cyote's seperation of homepages and nostalgia and firm view of creating modern and accessible homepages. I believe you can create the asthetic of 20 years ago with modern tooling, I hope that my homepage is an example of this.",
+      "url": "https://openbooks.neocities.org/blog/posts/2022-01-07-OpenBooks-Manifesto.html"
+    },
+    {
+      "siteName": "I'm leaving the corporate web behind",
+      "siteDescription": "Auzzie Jay says goodbye to the corporate web, click through to his manifesto and links to other great manifestos.",
+      "url": "https://yesterweb.org/manifesto/"
+    },
+    {
+      "siteName": "Yesterweb Community Internet Manifestos",
+      "siteDescription": "I'm still working my way through everyone else's manifestos, and I will add them as I do. In the meantime, the Yesterweb provides a nice index of the wider community manifestos. Enjoy.",
+      "url": "https://yesterweb.org/manifesto/"
+    }
+  ],
+  "manifestoResourcesLearn": [
+    {
+      "siteName": "Jackie's guide to making a website zine",
+      "siteDescription": "Want to make your own website, but don't know how to start? Jackie's awesome Zine is a 28-page, Risograph-printed comic guide to help you brainstorm, design, and bring a personal website to life.",
+      "url": "https://www.zinesbyjackie.com/shop/jackies-guide-to-making-a-website-by-you--for-you"
+    },
+    {
+      "siteName": "Web Design in 4 Minutes",
+      "siteDescription": "Learn the basiscs of web design in 4 minutes. A step-by-step interactive tutorial that explains how to use basic CSS styling to make a nice looking homepage.",
+      "url": ""
+    },
+    {
+      "siteName": "MDN: Learn Web Development",
+      "siteDescription": "MDN Web Docs is a popular document repository and learning resource for web developers. This site provides learning resources for open web technologies like HTML and CSS.",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn"
+    },
+    {
+      "siteName": "freeCodeCamp: Responsive Web Design",
+      "siteDescription": "Responsive web design is the practice of designing functioning websites that look good on different devices, screen sizes, orientations and resolutions. This freeCodeCamp course will take you through the basics of how to use CSS to make your homepages look good, no matter what device that they're viewed on.",
+      "url": "https://www.freecodecamp.org/learn/responsive-web-design/"
+    },
+    {
+      "siteName": "Interneting Is Hard",
+      "siteDescription": "Interneting Is Hard provides a comprehensive set of web development tutorials to help take you from beginner to pro. Topics covered include HTML/CSS basics, Flexbox, responsive images, typography and the importance of semantic HTML.",
+      "url": ""
+    }
+  ],
+  "manifestoResourcesHosting": [
+    {
+      "siteName": "Neocities",
+      "SiteDescription": "Neocities is a commercial web hosting service for static pages. It offers 1 GB of storage space for free sites and no server-side scripting for both paid and free subscriptions, the service's expressed goal is to revive the support of free web hosting of the now-defunct GeoCities. Many new and old webmasters come to Neocities to host their new homepages.",
+      "url": "https://neocities.org"
+    },
+    {
+      "siteName": "Netlify",
+      "SiteDescription": "Netlify offers hosting and serverless backend services for web applications and static websites. Netlify is optimised for websites whose source files are stored in the Git source control system and generated into static content files. They also offer a drag and drop functionality for websites that have already been statically generated.",
+      "url": "https://netlify.com"
+    }
+  ],
+  "manifestoSites": [
   {
     "siteName": "Ten Commandments of the Small Internet",
     "siteDescription": "A grassroots internet movement called \"the small Internet\" is afoot. Here are ten commandments that cheapskates would like to see largely obeyed on the small Internet.",
@@ -31,7 +102,7 @@
     "archiveURL": "https://web.archive.org/web/20210530080647/https://september.city/nostalgia/index.html"
   },
   {
-    "siteName": "seven reasons for having a personal website",
+    "siteName": "Seven Reasons for Having a Personal Website",
     "siteDescription": "there are at least seven reasons you should have a personal website.",
     "url": "https://cheapskatesguide.org/articles/why-have-a-personal-website.html",
     "archiveURL": "https://web.archive.org/web/20210520202437/https://cheapskatesguide.org/articles/why-have-a-personal-website.html"

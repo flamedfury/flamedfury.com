@@ -30,7 +30,7 @@ To me, the old web was not an aesthetic, but a community, not just a single comm
 
 Sure there were websites that we lovingly slapped together HTML with textured backgrounds and hard to read text and enough animated gifs to bring your internet connection to a grinding halt, but there were also a lot of beautiful websites, remember this was a time where we were starting to figure out what we could really do on this web thing.
 
-To me, the old web was all about having your own place on the web, lovingly crafting your homepage and tending to it over time, filling it with whatever we felt was interesting. 
+To me, the old web was all about having your own place on the web, lovingly crafting your homepage and tending to it over time, filling it with whatever we felt was interesting.
 
 The old description of a whole genre of E/N websites in the old communities resonate with me to this day. My website means **everything** to me and **nothing** to you.
 
@@ -41,6 +41,7 @@ We posted useful information, information that got straight to the point. We did
 We were not confined to the walls of giant tech companies hostile silos of the Internet.
 
 ## The personal web
+
 When I think of the web my first thoughts are of the personal web, and I smile.
 
 The personal web is where everybody owns their own corner of cyber space where they can share what ever they want, how ever they want.
@@ -54,15 +55,17 @@ The medium of choice on the personal web is the personal homepage. With our own 
 We decide what goes where and don't care if it's beautiful or a beautiful mess.
 
 ## The simple web
+
 Do you remember when you went to search the web for something, and you would often come across personal homepages, dedicated to a single topic, [full of high quality information](https://sheldonbrown.com/), created by people who absolutely loved the topic?
 
 These days web search results are full of low quality seo'd pages full of adverts, that are not related to what you were searching for at all. All the old high quality info sites are either non existent, lost to search algorithms as they've not been updated in a number of years, do not support https, or the valuable information is stuffed in between a useless 23 minute video!
 
-I can't stand the videos either. they're usually long drawn out introductions, irrelevant stories about absolutely nothing, don't forget to check out our sponsor, who also sponsors every other video creator, and then if you're lucky, a couple words about the topic you were after that could have easily been communicated on a simple page of text marked up in good old HTML. The videos are drawn out and created to be a certain length so that they can be  monetised...
+I can't stand the videos either. they're usually long drawn out introductions, irrelevant stories about absolutely nothing, don't forget to check out our sponsor, who also sponsors every other video creator, and then if you're lucky, a couple words about the topic you were after that could have easily been communicated on a simple page of text marked up in good old HTML. The videos are drawn out and created to be a certain length so that they can be monetised...
 
 Don't forget to like and subscribe!
 
 ## The commercial web
+
 The web today, social media is easy and people are lazy, or they don't know what more the web can offer them.
 
 for the most part, Facebook, Twitter, Instagram all make it very easy to share what's on peoples minds quickly with no setup or configuration on the users end, outside of writing a brief bio.
@@ -73,7 +76,7 @@ Not everything has to be monetised, hobbies can be that, hobbies. Making and sha
 
 RSS exists to follow those that you are interested in. however, again the setup experience rules out a lot of people who are either unaware, lazy, or don't care, and want things handed to them (what's my privacy worth for the convenience?).
 
-Now, shitposts, hateposts aside, there is so much awesome content lost amongst the crap on the above platforms. Some examples are super awesome bbq tutorials stuck inside a Facebook group, or super awesome info posts lost forever in someones Instagram stories. Outside these platforms they're  undiscoverable! Even within the platforms they're  undiscoverable as unless you saw the content the day it was posted, otherwise it’s mostly lost forever in a stream of endless crap.
+Now, shitposts, hateposts aside, there is so much awesome content lost amongst the crap on the above platforms. Some examples are super awesome bbq tutorials stuck inside a Facebook group, or super awesome info posts lost forever in someones Instagram stories. Outside these platforms they're undiscoverable! Even within the platforms they're undiscoverable as unless you saw the content the day it was posted, otherwise it’s mostly lost forever in a stream of endless crap.
 
 Similar vein with blogs where the chronological post order came into play. It signified that anything dated old was no irrelevant.
 
@@ -84,6 +87,7 @@ I think the discoverability aspect of the web was lost during the time where blo
 I loved linking all my web friends homepages from my own back in the day, that formed a sense of community within the communities for what ever topic your page was about that particular month. With version 2 of fLaMEdFury I’ve brought this back.
 
 ## Web 3
+
 Is it all doom and gloom? Is it really the new web? Is web 3 finally the internet for the people by the people without monetisation as their main driver?
 
 Or is web 3 a solution to a problem that doesn’t exist when you think about it?
@@ -91,14 +95,28 @@ Or is web 3 a solution to a problem that doesn’t exist when you think about it
 Decentralisation has always existed, and still exists in one form or another. Think of community focused forums powered by phpBB or vBulletin.
 
 ## Final thought
+
 Having a personal homepage is awesome, if you don't have one, get one!
 
 I’ve curated a set of resources to help everyone to get started, no matter your skill set:
 
 ### Building your own homepage
-- [Jackie’s guide to making a website zine](https://www.zinesbyjackie.com/shop/jackies-guide-to-making-a-website-by-you--for-you) is a great resource to get you going on on building your own homepage. Jackie will walk you through planning, creating and hosting.
 
-*to be continued*
+{% include "partials/_manifesto_resources_learn.njk" %}
+
+### Hosting your homepage
+
+{% include "partials/_manifesto_resources_hosting.njk" %}
+
+## Around the Web
+
+Collections of links to others who think the same.
+
+### Community Manifestos
+
+Check out other manifestos written by members of wider community.
+
+{% include "partials/_manifesto_community_links.njk" %}
 
 ### Read more about the personal, small, and open web
 
@@ -106,7 +124,7 @@ Have a read through the archives of my bookmark folders and Pocket reading list.
 
 {% include "partials/_manifesto_links.njk" %}
 
-***
+---
 
-*First published Apr 6, 2021*
-*Last updated Dec 28, 2021*
+_First published Apr 6, 2021_
+_Last updated Jan 12, 2022_
