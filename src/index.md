@@ -20,6 +20,8 @@ This homepage is being constructed in public, it is constantly under constructio
 
 {% include "partials/_updates.njk" %}
 
+All [site updates]({{ page | relative }}updates/).
+
 ---
 
 If you've enjoyed your time here, please leave a message in my [guestbook](https://guestbook.flamedfury.com), or send me an [e-mail](mailto:flamed@flamedfury.com).
