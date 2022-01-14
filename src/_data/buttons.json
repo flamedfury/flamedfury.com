@@ -1,6 +1,11 @@
 {
   "friends": [
     {
+      "site": "bytemoth's brooke",
+      "url": "https://bytemoth.neocities.org/",
+      "button": "../img/buttons/i-brook.png"
+    },
+    {
       "site": "auzzie jay in the digital world",
       "url": "https://auzziejay.com/",
       "button": "../img/buttons/auzzie1.gif"
@@ -19,11 +24,6 @@
       "site": "sadgrl online",
       "url": "https://sadgrl.online/",
       "button": "../img/buttons/sadgrl.gif"
-    },
-    {
-      "site": "bytemoth's brooke",
-      "url": "https://bytemoth.neocities.org/",
-      "button": "../img/buttons/i-brook.png"
     },
     {
       "site": "lets learn together",
