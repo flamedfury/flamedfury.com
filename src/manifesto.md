@@ -114,7 +114,7 @@ Collections of links to others who think the same.
 
 ### Community Manifestos
 
-Check out other manifestos written by members of wider community.
+A selection of my favourite manifestos written .
 
 {% include "partials/_manifesto_community_links.njk" %}
 
