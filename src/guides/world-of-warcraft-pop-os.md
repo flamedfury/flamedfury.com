@@ -1,6 +1,7 @@
 ---
 title: Running World of Warcraft on Pop!_OS Guide
 description: Patch 9.2 is on the horizon and with that the next raid, Sepulcher of the First Ones will be released. These are my notes for getting World of Warcraft up and running on Pop!_OS.
+css: "/css/prisim.css"
 date: 2022-01-26
 ---
 

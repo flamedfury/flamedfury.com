@@ -11,8 +11,14 @@
 
     <title>{{ pageTitle }}</title>
 
-    <link rel="stylesheet" href="{{ page | relative }}css/styles.css" />
     <link rel="shortcut icon" href="{{ page | relative }}img/favicon.png" />
+
+    <link rel="stylesheet" href="{{ page | relative }}css/styles.css" />
+
+    <!-- inject custom css from front matter -->
+    {% if css %}
+      <link rel="stylesheet" href="{{css}}" />
+    {% endif %}
 </head>
 
 <body>
