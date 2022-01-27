@@ -6,6 +6,16 @@
       "button": "../img/buttons/i-brook.png"
     },
     {
+      "site": "Ocean Waves",
+      "url": "https://ocean-waves.xyz/",
+      "button": "../img/buttons/oceanwaves.gif"
+    },
+    {
+      "site": "lets learn together",
+      "url": "https://letslearntogether.neocities.org",
+      "button": "../img/buttons/llt.png"
+    },
+    {
       "site": "auzzie jay in the digital world",
       "url": "https://auzziejay.com/",
       "button": "../img/buttons/auzzie1.gif"
@@ -24,11 +34,6 @@
       "site": "sadgrl online",
       "url": "https://sadgrl.online/",
       "button": "../img/buttons/sadgrl.gif"
-    },
-    {
-      "site": "lets learn together",
-      "url": "https://letslearntogether.neocities.org",
-      "button": "../img/buttons/llt.png"
     },
     {
       "site": "grafo volaverunt",

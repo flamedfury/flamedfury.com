@@ -73,8 +73,16 @@ Check out my mini fan pages.
 
 - [Miley](https://miley.flamedfury.com)
 
-### Check out my recently played tracks
+## What am I listening to?
 
-It's not often that I'm not listening to music while out and about, walking the dogs or doing chores around the house. Here's a list of tracks I've had playing.
+It's not often that I'm not listening to music while out and about, walking the dogs or doing chores around the house.
+
+### Recent tracks
+
+Check out my recently played tracks that I've been listening to:
 
 {% include "partials/_recentlyplayed.njk" %}
+
+### Top albums
+
+These are the top albums as of {% currentDate %}
