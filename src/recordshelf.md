@@ -79,10 +79,12 @@ It's not often that I'm not listening to music while out and about, walking the 
 
 ### Recent tracks
 
-Check out my recently played tracks that I've been listening to:
+Here's a list of the most recent tracks I've been listening to
 
 {% include "partials/_recentlyplayed.njk" %}
 
 ### Top albums
 
-These are the top albums as of {% currentDate %}
+These are my top albums for the last month
+
+{% include "partials/_topalbums.njk" %}

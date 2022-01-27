@@ -7,7 +7,7 @@
 {% for item in recentlyPlayed %}
 <div class="flex-cell">
 <a href="{{ item.url }}">
-<img src="{{ item.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}">
+<img src="{{ item.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
 </a>
 </div>
 {% endfor %}
