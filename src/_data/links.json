@@ -132,6 +132,11 @@
       "siteDescription": "A search engine that favours text-heavy websites."
     },
     {
+      "url": "https://wiby.me/",
+      "siteName": "Wilby",
+      "siteDescription": "Wiby is a search engine for older style pages, lightweight and based on a subject of interest. Building a web more reminiscent of the early internet."
+    },
+    {
       "url": "https://spyda.dev/",
       "siteName": "Spyda.dev",
       "siteDescription": "A privacy first search engine and web crawler. Work in prgoress, weekend project."
