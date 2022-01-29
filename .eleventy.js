@@ -1,6 +1,7 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const embedSpotify = require("eleventy-plugin-embed-spotify");
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
 
@@ -33,6 +34,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("year", () => `${date.getFullYear()}`);
+
+  eleventyConfig.addShortcode("currentDate", () => {
+    var currentDate = DateTime.fromJSDate(new Date(), {
+      zone: 'Pacific/Auckland'
+    });
+
+    return currentDate.toFormat('d LLLL y');
+  })
 
   // required for the _recentlyread api call
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));

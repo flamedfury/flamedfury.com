@@ -79,12 +79,12 @@ It's not often that I'm not listening to music while out and about, walking the 
 
 ### Recent tracks
 
-Here's a list of the most recent tracks I've been listening to
+My last.fm most recently played tracks 3x2 as of {% currentDate %}
 
 {% include "partials/_recentlyplayed.njk" %}
 
 ### Top albums
 
-These are my top albums for the last month
+My last.fm top albums 3x3 for the last month as of {% currentDate %}
 
 {% include "partials/_topalbums.njk" %}
