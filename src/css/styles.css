@@ -436,7 +436,7 @@ tr:nth-child(even) {
 }
 
 .ring {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
   font-family: var(--link-family);
   color: var(--f-text-primary);
