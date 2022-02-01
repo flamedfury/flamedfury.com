@@ -1,7 +1,7 @@
 {
   "friends": [
     {
-      "site": "bytemoth's brooke",
+      "site": "Bytemoth's Brooke",
       "url": "https://bytemoth.neocities.org/",
       "button": "../img/buttons/i-brook.png"
     },
@@ -11,9 +11,14 @@
       "button": "../img/buttons/oceanwaves.gif"
     },
     {
-      "site": "lets learn together",
+      "site": "Lets Learn Together",
       "url": "https://letslearntogether.neocities.org",
       "button": "../img/buttons/llt.png"
+    },
+    {
+      "site": "Cabbage",
+      "url": "https://cabbagesorter.neocities.org/",
+      "button": "../img/buttons/cabbagesorter.gif"
     },
     {
       "site": "auzzie jay in the digital world",
