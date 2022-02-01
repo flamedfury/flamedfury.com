@@ -6,6 +6,11 @@
       "button": "../img/buttons/i-brook.png"
     },
     {
+      "site": "Fairy Trash",
+      "url": "https://fairytrash.neocities.org",
+      "button": "../img/buttons/fairybutton1.png"
+    },
+    {
       "site": "Ocean Waves",
       "url": "https://ocean-waves.xyz/",
       "button": "../img/buttons/oceanwaves.gif"
