@@ -86,13 +86,17 @@ I think the discoverability aspect of the web was lost during the time where blo
 
 I loved linking all my web friends homepages from my own back in the day, that formed a sense of community within the communities for what ever topic your page was about that particular month. With version 2 of fLaMEdFury I’ve brought this back.
 
-## Web 3
+## Web3
 
-Is it all doom and gloom? Is it really the new web? Is web 3 finally the internet for the people by the people without monetisation as their main driver?
+Is it all doom and gloom? Is it really the new web? Is web3 finally the internet for the people by the people without monetisation as their main driver?
 
-Or is web 3 a solution to a problem that doesn’t exist when you think about it?
+Or is web33 a solution to a problem that doesn’t exist when you think about it?
 
 Decentralisation has always existed, and still exists in one form or another. Think of community focused forums powered by phpBB or vBulletin.
+
+Do we need web3 to prove that we own our content on the blockchain? I have made this point many times on this very page.
+
+Owning your own content has always been fairly easy on the web3 with a bit of effort.
 
 ## Final thought
 

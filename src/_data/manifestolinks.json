@@ -84,22 +84,16 @@
     "archiveURL": "https://web.archive.org/web/20201101102647/http://misc-stuff.terraaeon.com/articles/miss-old-internet.html"
   },
   {
-    "siteName": "What I Learned about the Internet by Creating My Own Website",
-    "siteDescription": "Here are some things Cheapskates learned about the Internet by creating their own website.",
-    "url": "https://cheapskatesguide.org/articles/what-i-learned-about-the-internet.html",
-    "archiveURL": "https://web.archive.org/web/20210520202453/https://cheapskatesguide.org/articles/what-i-learned-about-the-internet.html"
-  },
-  {
-    "siteName": "sadgirl.online internet manifesto",
-    "siteDescription": "we, the people of the internet, have the power to restore it to its former glory.",
-    "url": "https://sadgrl.online/newoldweb/manifesto_full.html",
-    "archiveURL": "https://web.archive.org/web/20210530075325/https://sadgrl.online/newoldweb/manifesto_full.html"
-  },
-  {
     "siteName": "Nostalgia is Bullshit",
     "siteDescription": "Web 1.0 design nostalgia. Like all nostalgia, it's bullshit.",
     "url": "https://september.city/nostalgia/index.html",
     "archiveURL": "https://web.archive.org/web/20210530080647/https://september.city/nostalgia/index.html"
+  },
+  {
+    "siteName": "What I Learned about the Internet by Creating My Own Website",
+    "siteDescription": "Here are some things Cheapskates learned about the Internet by creating their own website.",
+    "url": "https://cheapskatesguide.org/articles/what-i-learned-about-the-internet.html",
+    "archiveURL": "https://web.archive.org/web/20210520202453/https://cheapskatesguide.org/articles/what-i-learned-about-the-internet.html"
   },
   {
     "siteName": "Seven Reasons for Having a Personal Website",
@@ -412,9 +406,9 @@
     "archiveURL": "https://web.archive.org/web/20210116055503/https://dezz.ie/web-history/letting-go-of-the-old-web/"
   },
   {
-    "siteName": "",
-    "siteDescription": "",
-    "url": "",
+    "siteName": "Make Free Stuff",
+    "siteDescription": "Max explores the current state of a monetised data gathering web and makes a call to action to make things for the sake of it and make them free!",
+    "url": "https://mxb.dev/blog/make-free-stuff/",
     "archiveURL": ""
   }
 ]
