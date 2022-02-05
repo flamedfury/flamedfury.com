@@ -10,7 +10,7 @@ Heya 👋, I'm fLaMEd 🔥, and I'm the webmaster of fLaMEdFURY. I have been [a 
 
 My interests are many.
 
-M enjoy keeping fit, either by working out in my garage gym or walking the dogs many times a day.
+I enjoy keeping fit, either by working out in my garage gym or walking the dogs many times a day.
 
 Working out, walking the dogs, or chores around the house, I'm most likley [listening to music](../recordshelf/). it's not often that I'm not!
 
@@ -29,6 +29,7 @@ My family is my biggest interest, among all the things listed above, my wife and
 - Built with [Eleventy](https://11ty.dev)
 - Deployed with [Github](https://github.com)
 - Hosted on [Netlify](https://netlify.com)
-- Graphics by [Gothcommissions](http://gothcommissions.tumblr.com)
+- Mirrored on [Neocities](https://neocities.org)
+- Header & background graphics by [Gothcommissions](http://gothcommissions.tumblr.com)
 
 Please read my [statement of audience](statement-of-audience/).
