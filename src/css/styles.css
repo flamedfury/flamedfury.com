@@ -447,3 +447,21 @@ tr:nth-child(even) {
 .ring a {
   text-decoration: none;
 }
+
+.info-box {
+  background-color: var(--c-primary) !important;
+  border-radius: 5px;
+  color: var(--c-dark-gray);
+  line-height: normal;
+  padding: var(--spacing);
+  margin-top: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.info-box a {
+  color: var(--c-dark-gray);
+}
+
+.info-box a:hover {
+  color: var(--c-light-gray);
+}

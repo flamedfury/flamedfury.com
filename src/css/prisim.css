@@ -3,6 +3,19 @@
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
+
+code:not([class*="language"]) {
+  background: #383e49;
+  color: #abb2bf;
+  display: inline-flex;
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-size: 1.75ex;
+  line-height: 1.5;
+  padding: 0.2em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #abb2bf;
