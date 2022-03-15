@@ -14,6 +14,28 @@ Dance music, I've tasted this over the last few decades with a long affair with 
 
 And don't forget pop music. I love the formulaic construction of a banger, songs that are catchy and fun to sing along to. Don't get me wrong, some of it is horrible, but i can find joy in most of it.
 
+## Vinyl collection
+
+My record collection. Details to come.
+
+- DMX - The Legacy
+- Miley Cyrus - Plastic Hearts
+- Mark Ronson Feat: Miley Cyrus - Nothing Breaks Like A Heart
+- Conway The Machine & The Alchemist - LULU
+- Conway The Machine & Big Ghost LTD - No One Mourns The Wicked
+- Conway The Machine & Big Ghost LTD - If It Bleeds It Can Be Killed
+- Conway The Machine - La Maquina
+- Machine Gun Kelly - Tickets To My Downfall
+- Eminem - The Marshall Mathers LP
+- Eminem - Kamikaze
+- Eminem - Music To Be Murdered By
+- Benny The Butcher - The Plugs I Met
+- Taylor Swift - Fearless (Taylor's Version)
+- Fly My Pretties - The Studio Recordings Part 1
+- Fly My Pretties - The Studio Recordings Part 2
+- Elemeno P - Love & Disrespect
+- Che Fu - Navigator
+
 ## Mixtapes & playlists
 
 As you can tell, I love music. I also love to create mixtapes and playlists. Below are a selection of my most thoughtout mixtapes and playlists. Give them a listen and let me know what you think.
