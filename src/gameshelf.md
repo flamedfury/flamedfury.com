@@ -33,6 +33,9 @@ Games that I've got, and want to play
 - Horizon Zero Dawn
 - Marvel's Guardians of the Galaxy
 
+Games that I want to get, and want to play
+- Mass Effect: Legendary Edition
+
 ### Need to finish
 Games that I've started, but never ended up finishing:
 - Assassian's Creed IV Black Flag
@@ -44,6 +47,8 @@ Games that I've started, but never ended up finishing:
 
 ### Games I loved
 Games that I've played, finished and loved playing:
+
+#### PC
 - Assassin's Creed II
 - Assassin's Creed III
 - Bioshock Inifinite
@@ -52,7 +57,6 @@ Games that I've played, finished and loved playing:
 - Diablo III
 - The Elder Scrolls V: Skyrim
 - Grand Theft Auto IV
-- Grand Theft Auto: San Andreas
 - Kingdom's of Amalur: Reckoning
 - Mass Effect
 - Mass Effect 2
@@ -66,3 +70,17 @@ Games that I've played, finished and loved playing:
 - The Witcher: Enhanced Edition
 - The Witcher 2: Assassins of Kings Edition
 - The Witcher 3: Wild Hunt
+
+#### PS3
+- Grand Theft Auto IV
+- Uncharted: Drake's Fortune
+- Uncharted 2: Among Thieves
+- Uncharted 3: Drake's Deception
+
+#### Xbox
+- Grand Theft Auto: San Andreas
+- Halo
+- Need for Speed Underground
+
+---
+Last updated: {% currentDate %}
