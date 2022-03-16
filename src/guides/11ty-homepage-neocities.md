@@ -121,8 +121,6 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "public",
       includes: "_includes",
-      layouts: "_includes/layouts",
-      partials: "_includes/partials",
     },
   };
 };
@@ -192,7 +190,7 @@ Open the file and add some content:
     <h1>Hello World</h1>
 
     <p>
-      Check out my cool new static site built with
+      Check out your cool new static site built with
       <a href="https://11ty.dev">11ty</a> on
       <a href="https://neocities.org/">Neocities</a>.
     </p>
@@ -236,15 +234,19 @@ Let's checkout templating a layout!
 
 Create a new directory `_includes/` in the `src/` directory and cd into it:
 
-````bash
+```bash
 mkdir _includes && cd _includes
-``
+```
+
+<div class="info-box">
+  <p><strong>INFO:</strong> In a non-demo situation I would create a <code>layouts/</code> directory under <code>_includes/</code> for better organisation. For the sake of simplicity we'll just keep everything in <code>_includes/</code> for now.
+</div>
 
 Create a file `base.njk` in the terminal or VSCode:
 
 ```bash
 touch base.njk
-````
+```
 
 Open the file and add the following:
 
@@ -279,10 +281,21 @@ layout: base.njk
 ---
 
 <p>
-  Check out my cool new static site built with
+  Check out your cool new static site built with
   <a href="https://11ty.dev">11ty</a> on
   <a href="https://neocities.org/">Neocities</a>.
 </p>
+
+<p>This homepage template is perfect for:</p>
+
+<ul>
+  <li>Creating your own space on the web</li>
+  <li>Expressing yourself</li>
+  <li>Displaying all the gifs you've collected</li>
+</ul>
+
+<h2>Why do you want a homepage?</h2>
+<p>The web was made for personal homepages, make this one yours</p>
 ```
 
 If you've kept 11ty running and the broswer running it should look like this:
@@ -321,11 +334,9 @@ layout: base.njk
 <p>These are some of my favourite websites 🔗</p>
 <ul>
   <li><a href="https://flamedfury.com">fLaMEdFury.com</a></li>
+  <li><a href="https://11ty.dev">11ty</a></li>
   <li><a href="https://neocities.org">Neocities</a></li>
-  <li><a href="https://news.ycombinator.com">Hacker News</a></li>
-  <li>
-    <a href="https://www.marvel.com/comics/">Marvel Comics</a>
-  </li>
+  <li><a href="https://yesterweb.org/">The Yesterweb</a></li>
 </ul>
 ```
 
@@ -350,6 +361,10 @@ Great stuff, but that's no use without a navigation! Let's take a look at `parti
 
 ### Creating our partials
 
+<div class="info-box">
+  <p><strong>INFO:</strong> In a non-demo situation I would create a <code>partials/</code> directory under <code>_includes/</code> for better organisation. For the sake of simplicity we'll just keep everything in <code>_includes/</code> for now.
+</div>
+
 In the terminal cd into `_includes/` and create two partial files:
 
 ```bash
@@ -361,20 +376,17 @@ Open each of them up and add some front matter and content:
 header.njk:
 
 ```html
-<span class="heading-title">My Homepage</span>
+<h1>Welcome to my Homepage</h1>
 ```
 
 navigation.njk
 
 ```html
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/links/">Links</a></li>
-    <li><a href="/contact/">Contact</a></li>
-  </ul>
-</nav>
+<a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/links/">Links</a>
+<a href="/blog/">Blog</a>
+<a href="/contact/">Contact</a>
 ```
 
 <div class="info-box">
@@ -384,7 +396,7 @@ navigation.njk
 footer.njk:
 
 ```html
-<p>This is my footer | © 2022 fLaMEd.</p>
+<p>This is my footer | © 2022 Me.</p>
 ```
 
 Once our paritals are created, open `base.njk` again and update to include our new elements and partials:
@@ -394,24 +406,26 @@ base.njk:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
-  </head>
 
-  <body>
-    <header>{% raw %}{% include 'header.njk' %}{% endraw %}</header>
-    <nav>{% raw %}{% include 'navigation.njk' %}{% endraw %}</nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <main>
-      <h1>{{ title }}</h1>
-      {{ content | safe }}
-    </main>
+  <title>{% raw %}{{ title }}{% endraw %}</title>
+</head>
 
-    <footer>{% raw %}{% include 'footer.njk' %}{% endraw %}</footer>
-  </body>
-</html>
+<body>
+  <header>{% raw %}{% include 'header.njk' %}{% endraw %}</header>
+
+  <nav>{% raw %}{% include 'navigation.njk' %}{% endraw %}</nav>
+
+  <main>
+    <h1>{% raw %}{{ title }}{% endraw %}</h1>
+    {% raw %}{{ content | safe }}{% endraw %}
+  </main>
+
+  <footer>{% raw %}{% include 'footer.njk' %}{% endraw %}</footer>
+</body>
 ```
 
 If you've kept 11ty running and the broswer running it should look like this:
@@ -475,7 +489,7 @@ blog.json
 ```
 
 <div class="info-box">
-  <p><strong>INFO:</strong> What we've done here with the directory file `blog.json` is made it so that every `blog post` in the `/blog/` directory has the `post.njk` layout applied without having to include in the post front matter.</p>
+  <p><strong>INFO:</strong> What we've done here with the directory file `blog.json` is made it so that every `blog post` in the `/blog/` directory has the `blog.njk` layout applied without having to include in the post front matter.</p>
 </div>
 
 We better create a blog layout so it renders!
@@ -488,7 +502,7 @@ cd ../_includes && touch blog.njk
 
 Open `blog.njk` up in VSCode and add the following:
 
-post.njk:
+blog.njk:
 
 ```html
 ---
@@ -541,11 +555,11 @@ layout: base.njk
 
 These are all of my amazing blog posts, enjoy!
 <ul>
-  {% for post in collections.blog | reverse %}
+  {% raw %}{% for post in collections.blog | reverse %}{% endraw %}
   <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <a href="{{ post.url }}">{% raw %}{{ post.data.title }}{% endraw %}</a>
   </li>
-  {% endfor %}
+  {% raw %}{% endfor %}{% endraw %}
 </ul>
 ```
 
@@ -553,21 +567,7 @@ If you've kept 11ty running and the broswer running it should look like this:
 
 ![A view of what your blog page should look like]({{ page | relative }}/img/guides/11ty-home-page-neocities/11ty-home-page-neocities-homepage-004.png "A Basic Blog List Page")
 
-Amazing huh? Let's add a `/blog/` navigation item to our `nagivation` partial:
-
-\_includes/navigation.njk:
-
-```html
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/links/">Links</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="/contact/">Contact</a></li>
-  </ul>
-</nav>
-```
+Amazing huh?
 
 ## Add some styles
 
@@ -584,113 +584,152 @@ Open `styles.css` in VSCode and add the following:
 styles.css:
 
 ```css
-/* variables */
-
+/* Global variables. */
 :root {
-  --color-pri: #333;
-  --color-sec: #555;
-  --color-brand: #e81c4f;
-  --color-nav: #fff;
-  --color-light: #ddd;
+  /* Set sans-serif & mono fonts */
+  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+  /* Default (light) theme */
+  --bg: #fff;
+  --accent-bg: #f5f7ff;
+  --text: #333;
+  --text-light: #585858;
+  --border: #d8dae1;
+  --accent: #0d47a1;
 }
 
-/* base */
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #212121;
+    --accent-bg: #2b2b2b;
+    --text: #dcdcdc;
+    --text-light: #ababab;
+    --border: #666;
+    --accent: #ffb300;
+  }
+}
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 1rem;
-  font-family: sans-serf;
+html {
+  /* Set the font globally */
+  font-family: var(--sans-font);
+  scroll-behavior: smooth;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/* layout */
-
+/* Make the body a nice central block */
 body {
+  color: var(--text);
+  background: var(--bg);
+  font-size: 1.15rem;
+  line-height: 1.5;
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 40em;
+  padding: 0 1em;
 }
 
-header {
-  padding: 1.875rem;
+body > header {
   text-align: center;
+  padding: 0 0.5rem 2rem 0.5rem;
+  box-sizing: border-box;
 }
 
-footer {
-  padding: 1rem;
-  text-align: center;
+body > header h1 {
+  max-width: 100%;
+  margin: 1rem auto;
 }
 
-/* nav */
+/* Format navigation */
 nav {
-  overflow: hidden;
-  background-color: #333;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+  line-height: 2;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
 nav a {
-  float: left;
-  display: block;
-  color: var(--color-nav);
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
+  margin: 1rem 1rem 0 0;
+  color: var(--text) !important;
+  padding: 0.1rem 1rem;
 }
 
 nav a:hover {
-  background-color: var(--color-light);
-  color: var(--color-pri);
+  color: var(--accent) !important;
 }
 
-/* spacing */
-body {
-  line-height: 1.5;
+nav a:last-child {
+  margin-right: 0;
 }
 
+/* Reduce nav side on mobile */
+@media only screen and (max-width: 750px) {
+  nav a {
+    border: none;
+    padding: 0;
+    color: var(--accent);
+    text-decoration: underline;
+    line-height: 1;
+  }
+}
+
+/* Add a little padding to ensure spacing is correct between content and nav */
 main {
-  padding: 4em 1em;
+  padding-top: 1.5rem;
 }
 
-p {
-  padding: 1rem 0;
+body > footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
 }
 
-.heading-title {
-  font-size: 3.125rem;
-}
-
-/* colours */
-
-body {
-  color: var(--color-sec);
-}
-
-header {
-  background-color: var(--color-sec);
-}
-
-footer {
-  color: var(--color-light);
-  background-color: var(--color-sec);
-}
+/* Format headers */
 
 h1 {
-  color: var(--color-pri);
+  font-size: 3rem;
 }
 
-a {
-  color: var(--color-brand);
+h2 {
+  font-size: 2.6rem;
+  margin-top: 3rem;
 }
 
-.heading-title {
-  color: var(--color-light);
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+}
+
+/* Format links */
+a,
+a:visited {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: none;
 }
 ```
+This is a stripped down version of <a href="https://simplecss.org/">Simple.css. Thanks <a href="https://kevq.uk/">KevQ</a>.
 
 Now we need to include the style sheet in our `base.njk` layout file. Open it up and add `<link rel="stylesheet" href="/css/styles.css" />`
 
@@ -699,24 +738,26 @@ Now we need to include the style sheet in our `base.njk` layout file. Open it up
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <title>{{ title }}</title>
-  </head>
 
-  <body>
-    <header>{% raw %}{% include 'header.njk' %}{% endraw %}</header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>{% raw %}{{ title }}{% endraw %}</title>
+</head>
 
-    <main>
-      <h1>{{ title }}</h1>
-      {% raw %}{{ content | safe }}{% endraw %}
-    </main>
+<body>
+  <header>{% raw %}{% include 'header.njk' %}{% endraw %}</header>
 
-    <footer>{% raw %}{% include 'footer.njk' %}{% endraw %}</footer>
-  </body>
-</html>
+  <nav>{% raw %}{% include 'navigation.njk' %}{% endraw %}</nav>
+
+  <main>
+    <h1>{% raw %}{{ title }}{% endraw %}</h1>
+    {% raw %}{{ content | safe }}{% endraw %}
+  </main>
+
+  <footer>{% raw %}{% include 'footer.njk' %}{% endraw %}</footer>
+</body>
 ```
 
 You would have noticed that the stylesheet hasn't been applied, we have to a couuple more things in `.elventy.js`, something called file passthrough copy.
@@ -790,4 +831,4 @@ Without these, I wouldn't even know how to write down what I needed to.
 ---
 
 - _First published Feb 06, 2022_
-- _Last updated Feb 06, 2022_
+- _Last updated Mar 16, 2022_
