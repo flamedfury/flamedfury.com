@@ -729,7 +729,7 @@ a:hover {
   text-decoration: none;
 }
 ```
-This is a stripped down version of <a href="https://simplecss.org/">Simple.css. Thanks <a href="https://kevq.uk/">KevQ</a>.
+This is a stripped down version of <a href="https://simplecss.org/">Simple.css</a>. Thanks <a href="https://kevq.uk/">KevQ</a>.
 
 Now we need to include the style sheet in our `base.njk` layout file. Open it up and add `<link rel="stylesheet" href="/css/styles.css" />`
 
