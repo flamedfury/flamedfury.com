@@ -35,6 +35,7 @@ My record collection. Details to come.
 - Fly My Pretties - The Studio Recordings Part 2
 - Elemeno P - Love & Disrespect
 - Che Fu - Navigator
+- Miley Cyrus - The Time of our Lives
 
 ## Mixtapes & playlists
 
