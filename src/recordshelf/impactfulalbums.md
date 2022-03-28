@@ -1,0 +1,20 @@
+---
+title: Impactful Albums 🎧
+description: Comments and thoughts of impactful albums and music throughout my lifetime.
+layout: page.njk
+---
+
+The following is a collection of thoughts about the albums that have impacted me in one way or another throughout my life.
+
+- The Chipmunks Rock the House (1991)
+- Rage Against The Machine (1992)
+- Gangsta's Paradise (1995)
+- Evil Empire (1996)
+- The Slim Shady LP (1999)
+- 2001 (1999)
+- BTNHResurrection (2000)
+- The Marshall Mathers LP (2000)
+
+---
+
+_Last updated {% currentDate %}_
