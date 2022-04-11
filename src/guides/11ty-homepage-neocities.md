@@ -109,7 +109,7 @@ The `packages.json` file should look like this:
 From the terminal (or VSCode), create a new file `.eleventy.js` at the project root:
 
 ```bash
-touch .elventy.js
+touch .eleventy.js
 ```
 
 Open the file in VSCode and add the following and save:
@@ -760,7 +760,7 @@ Now we need to include the style sheet in our `base.njk` layout file. Open it up
 </body>
 ```
 
-You would have noticed that the stylesheet hasn't been applied, we have to a couuple more things in `.elventy.js`, something called file passthrough copy.
+You would have noticed that the stylesheet hasn't been applied, we have to a couuple more things in `.eleventy.js`, something called file passthrough copy.
 
 Open `.eleventy.js` in VSCode and add the following:
 
