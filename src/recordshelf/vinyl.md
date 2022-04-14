@@ -24,6 +24,7 @@ Below is my record collection. I enjoy collecting this medium. The process of se
 - Elemeno P - Love & Disrespect
 - Che Fu - Navigator
 - Miley Cyrus - The Time of our Lives
+- Everything Is Recorded - Friday Forever
 
 ---
 
