@@ -3,4 +3,8 @@ title: Site Updates
 description: All site updates for flamedfury.com
 ---
 
-{% include "partials/_updates.njk" %}
+<ul class="updates">
+  {% for post in collections.updates | reverse | limit(10) %}
+  <li>{{ post.templateContent | safe }}</li>
+  {% endfor %}
+</ul>

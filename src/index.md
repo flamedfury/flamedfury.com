@@ -18,7 +18,11 @@ This homepage is being constructed in public, it is constantly under constructio
 
 ## Site updates
 
-{% include "partials/_updates.njk" %}
+<ul class="updates">
+{% for post in collections.updates | reverse | limit(10) %}
+  <li>{{ post.templateContent | safe }}</li>
+{% endfor %}
+</ul>
 
 All [site updates]({{ page | relative }}updates/).
 
