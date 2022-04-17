@@ -50,11 +50,11 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
-        input: "src",
-        output: "public",
-        includes: "_includes",
-        layouts: "_includes/layouts",
-        partials: "_includes/partials"
+      input: "src",
+      output: "public",
+      includes: "_includes",
+      layouts: "_includes/layouts",
+      partials: "_includes/partials"
     },
   };
 };
