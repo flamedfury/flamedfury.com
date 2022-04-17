@@ -106,11 +106,29 @@ I’ve curated a set of resources to help everyone to get started, no matter you
 
 ### Building your own homepage
 
-{% include "partials/_manifesto_resources_learn.njk" %}
+<table>
+<tbody>
+{% for item in manifestolinks.manifestoResourcesLearn %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 ### Hosting your homepage
 
-{% include "partials/_manifesto_resources_hosting.njk" %}
+<table>
+<tbody>
+{% for item in manifestolinks.manifestoResourcesHosting %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.SiteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 ## Around the Web
 
@@ -120,15 +138,35 @@ Collections of links to others who think the same.
 
 A selection of my favourite manifestos written .
 
-{% include "partials/_manifesto_community_links.njk" %}
+<table>
+<tbody>
+{% for item in manifestolinks.manifestoCommunity %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 ### Read more about the personal, small, and open web
 
 Have a read through the archives of my bookmark folders and Pocket reading list. There are a number of absolute gems in here of others who share similar thoughts.
 
-{% include "partials/_manifesto_links.njk" %}
+<table>
+<tbody>
+{% for item in manifestolinks.manifestoSites %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
 
 ---
 
 _First published Apr 6, 2021_
-_Last updated Jan 12, 2022_
+
+_Last updated {% currentDate %}_
