@@ -39,4 +39,28 @@ Impact wise for the authors above, I'll talk about Feist first. I picked up a bo
 
 Here are the last books that I've read.
 
-{% include "partials/_recentlyread.njk" %}
+{% set recentlyRead = oku.collections[2].books | limit(9) %}
+{% if recentlyRead.length %}
+<div class="flex-container">
+<div class="flex-grid">
+{% for item in recentlyRead %}
+{% if item.thumbnail %}
+<div class="flex-cell">
+<a href="https://oku.club/book/{{ item.slug }}">
+<img src="{{ item.thumbnail }}" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px" height="auto">
+</a>
+</div>
+{% else %}
+<div class="flex-cell">
+<a href="https://oku.club/book/{{ item.slug }}">
+<img src="../img/generic-cover.png" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px" height="auto">
+</a>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+{% endif %}
+
+---
+_Last updated {% currentDate %}_
