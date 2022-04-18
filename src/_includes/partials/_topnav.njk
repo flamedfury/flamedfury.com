@@ -1,0 +1,12 @@
+<nav class="breadcrumb">
+  {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml({
+  listElement: "ul",
+  listItemElement: "li",
+  listClass: "breadcrumb__list",
+  listItemClass: "breadcrumb__item"
+  }) | safe }}
+  <ul class="breadcrumb__list">
+    <li class="breadcrumb__item"></li>
+    <li class="breadcrumb__item">{{ eleventyNavigation.key }}</li>
+  </ul>
+</nav>

@@ -1,0 +1,46 @@
+<!-- page.njk -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ '../../css/page.css' | url }}">
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="{{ page | relative }}img/header.png" width="1200" height="400" alt="welcome to fLaMEdFury!">
+  </header>
+
+  <div class="container">
+    {% include "partials/_topnav.njk" %}
+
+    <main>
+      <h1>{{ title }}</h1>
+      <article>
+        {{ content | safe }}
+      </article>
+    </main>
+
+    <footer>
+      <p>Public Service Announcement 2000</p>
+      <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fflamedfury.com%2F"><img
+            src="{{ page | relative }}img/badges/valid_html5.png" alt="fLaMEdFury is HTML5 valid!" width="88"
+            height="15"></a> <a
+          href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fflamedfury.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css"><img
+            src="{{ page | relative }}img/badges/valid_css3.png" alt="fLaMEdFury is CSS3 valid!" width="88"
+            height="15"></a> <a href="https://validator.w3.org/feed/check.cgi?url=flamedfury.com%2Ffeed"><img
+            src="{{ page | relative }}img/badges/valid_rss.png" alt="fLaMEdFury is a Valid ATOM 1.0 feed!" width="88"
+            height="15"></a></p>
+      <p>Copyright &copy; 2000 - {% year %} by {% if meta.authorName %} {{ meta.authorName }}{% endif
+        %}. Some rights reserved. Don't jack.</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
