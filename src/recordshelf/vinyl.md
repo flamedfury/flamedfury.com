@@ -1,7 +1,10 @@
 ---
 title: Vinyl Collection 🎧
 description: This page details my growing vinyl collection. It includes photos of the cover, sleeves and the vinyl itself along with commentary on my thoughts of the packaging, and the music itself.
-layout: page.njk
+layout: _page.njk
+eleventyNavigation:
+  key: Vinyl Collection
+  parent: Recordshelf
 ---
 
 Below is my record collection. I enjoy collecting this medium. The process of selecting a record from the collection and intentionally listening to it adds so much more than throwing on a selection of songs selected by an algorithm.

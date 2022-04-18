@@ -1,12 +1,15 @@
 ---
 title: Early Web Memories
 description: My recount of my earliest memories of being on the web
-layout: page.njk
+layout: _page.njk
+eleventyNavigation:
+  key: Early Web Memories
+  parent: Home
 ---
 
-these are the unedited notes of my earliest memories of getting online way back when. consider this a work in progress and expect the page to change over time.
+These are the unedited notes of my earliest memories of getting online way back when. Consider this a work in progress and expect the page to change over time.
 
-#### 1995
+### 1995
 
 in 1995 we got our first pentium pc at home. this was shortly after the world wide launch of [windows 95](https://invidious.xyz/watch?v=W9Jn3GIwgCM). we set the pc up one friday afternoon and that was that. we did not have the internet at home yet, and we didn't have any games installed except for those that came with windows 95.
 
@@ -22,7 +25,7 @@ when visiting the family friends one time, i was able to use their computer to s
 
 i didn't spend much time on the internet back at the cafes though. however, my brother and a couple of friends did spend a lot of time down there playing multiplayer command and conquer and warcraft II. so many fun times, creating rules to ensure that we were able to build up our bases and units before having a huge battle before our hour was up.
 
-#### 1996
+### 1996
 
 some time during 96 dad brought home an external 28.8 kbps modem for dialup internet. it was huge, and connected to the pc through a serial cable. he also had a couple of floppy disks 💾 to setup the internet, yes we installed the internet from a floppy disk 💾. well this installed the dialup connection required to connect to the internet through xtra, and included a copy of netscape navigator and netscape chat. this opened up a whole new world to me...
 

@@ -1,7 +1,10 @@
 ---
 title: Mixtapes & Playlists 🎧
 description: A collection of Spotify playlists curated by fLaMEd. Genres include rap, pop, rock, dance.
-layout: page.njk
+layout: _page.njk
+eleventyNavigation:
+  key: Mixtapes
+  parent: Recordshelf
 ---
 
 As you can tell, I love music. I also love to create mixtapes and playlists. Below are a selection of my most thoughtout mixtapes and playlists. Give them a listen and let me know what you think.

@@ -1,6 +1,8 @@
 ---
 title: fLaMEds Homepage
 layout: base.njk
+eleventyNavigation:
+  key: Home
 ---
 
 Your first stop off of the Information Super Highway!

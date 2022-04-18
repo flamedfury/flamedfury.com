@@ -174,11 +174,16 @@ footer {
 
     grid-template-columns: 1fr;
     grid-template-rows:
-      auto /* Header */
-      minmax(75px, auto) /* Nav */
-      1fr /* Content */
-      minmax(75px, auto) /* Sidebar */
-      auto; /* Footer */
+      auto
+      /* Header */
+      minmax(75px, auto)
+      /* Nav */
+      1fr
+      /* Content */
+      minmax(75px, auto)
+      /* Sidebar */
+      auto;
+    /* Footer */
   }
 
   nav,
@@ -283,6 +288,7 @@ nav li:last-child {
 .home-btn a {
   margin-bottom: 1rem;
 }
+
 #menu-btn {
   display: none;
 }

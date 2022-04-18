@@ -1,7 +1,10 @@
 ---
 title: My Web Manifesto
 description: My Web Manifesto is where I dive deep into the current state of the Internet and explore whether it is heading in an ideal direction.
-layout: page.njk
+layout: _page.njk
+eleventyNavigation:
+  key: My Web Manifesto
+  parent: Home
 ---
 
 The following are my raw and unedited thoughts spread over a number of weeks. I add these to the page as I think them through, usually while walking my dogs. once I get to the point where I have shared all my feelings on the subject I will attempt to put some order into the chaos.

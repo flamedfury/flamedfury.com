@@ -1,7 +1,10 @@
 ---
 title: Recordshelf 🎧
 description: my collection of music
-layout: page.njk
+layout: _page.njk
+eleventyNavigation:
+  key: Recordshelf
+  parent: Home
 ---
 
 Music has always been a huge part of my life.

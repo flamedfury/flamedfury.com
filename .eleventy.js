@@ -1,3 +1,4 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const embedSpotify = require("eleventy-plugin-embed-spotify");
@@ -10,6 +11,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/js");
 
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(embedSpotify);
@@ -47,7 +49,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   return {
+    templateFormats: ["md", "njk", "html",],
     markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
       input: "src",

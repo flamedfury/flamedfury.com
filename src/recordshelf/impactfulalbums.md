@@ -1,7 +1,10 @@
 ---
 title: Impactful Albums 🎧
 description: Comments and thoughts of impactful albums and music throughout my lifetime.
-layout: page.njk
+layout: _page.njk
+eleventyNavigation:
+  key: Impactful Albums
+  parent: Recordshelf
 ---
 
 The following is a collection of thoughts about the albums that have impacted me in one way or another throughout my life.
