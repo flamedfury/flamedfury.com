@@ -1,10 +1,10 @@
 ---
 title: About fLaMEd
 description: Who is fLaMEd?
-layout: _page.njk
-eleventyNavigation:
-  key: About
-  parent: Home
+layout: page.njk
+# eleventyNavigation:
+#   key: About
+#   parent: Home
 ---
 
 Heya 👋, I'm fLaMEd 🔥, and I'm the webmaster of fLaMEdFURY. I have been [a citizen of the Internet since 1996](../memories). I love the web (as well as the Internet), but not all things about the web. [I have a huge dislike for the current commercialisation, monitisation, and walled garden silo approach of the modern web](../manifesto/).

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&family=Source+Serif+Pro&display=swap');
+
 *,
 *:before,
 *:after {
@@ -6,11 +9,15 @@
 }
 
 body {
+  --bg: #050505;
+  --accent-bg: #121212;
+  --text: #7d7d7d;
+  --primary: #d74299;
+  --accent: #009400;
   background-image: url("../img/bg.png");
-  font-family: sans-serif;
-
+  font-family: 'Source Serif Pro', sans-serif;
   line-height: 1.5;
-  color: #222;
+  color: var(--text);
 }
 
 header {
@@ -88,8 +95,9 @@ article *+* {
 
 /* Typography */
 :is(h1, h2, h3, h4) {
-  color: #d74299;
+  color: var(--primary);
   line-height: 1.2;
+  font-family: 'Inter', sans-serif;
 }
 
 :is(h1, h2) {
@@ -100,9 +108,31 @@ article *+* {
   margin-top: 2em;
 }
 
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
 a {
-  color: #d74299;
+  color: var(--primary);
   text-underline-offset: 0.08em;
+}
+
+a:hover {
+  color: var(--accent);
 }
 
 a:focus {
@@ -134,11 +164,14 @@ nav,
 main,
 aside,
 footer {
-  color: #7d7d7d;
-  background-color: #050505;
-  border: 2px dashed #d74299;
+  background-color: var(--bg);
+  border: 2px dashed var(--primary);
   border-radius: 5px;
   padding: var(--layout-spacing);
+}
+
+hr {
+  border: 1px dashed var(--primary);
 }
 
 code:not([class*="language"]) {
@@ -153,12 +186,49 @@ code:not([class*="language"]) {
 blockquote {
   margin: 2rem 0;
   padding: 0.5em 1rem;
-  border-left: 3px solid rgba(0, 0, 0, 0.35);
-  background-color: rgba(0, 0, 0, 0.05);
+  border-left: 5px solid var(--primary);
+  background-color: var(--accent-bg);
   border-radius: 0 0.25rem 0.25rem 0;
+  font-style: italic;
 }
 
-/* flex container for displaying stuff in the main content block */
+cite {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+td,
+th {
+  border: 1px solid var(--bg);
+  text-align: left;
+  padding: 0.5rem;
+}
+
+th {
+  background: var(--accent-bg);
+  font-weight: bold;
+}
+
+tr {
+  background: var(--accent-bg);
+}
+
+
+tr:nth-child(even) {
+  /* Set every other cell slightly darker. Improves readability. */
+  background: var(--bg);
+}
+
+/* Flex containers
+ for displaying stuff in the main content block */
 .flex-container {
   margin: 0 auto;
   max-width: 744px;

@@ -1,10 +1,10 @@
 ---
 title: Early Web Memories
 description: My recount of my earliest memories of being on the web
-layout: _page.njk
-eleventyNavigation:
-  key: Early Web Memories
-  parent: Home
+layout: page.njk
+# eleventyNavigation:
+#   key: Early Web Memories
+#   parent: Home
 ---
 
 These are the unedited notes of my earliest memories of getting online way back when. Consider this a work in progress and expect the page to change over time.

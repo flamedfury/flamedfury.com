@@ -1,10 +1,10 @@
 ---
 title: Gameshelf
 description: my collection of games
-layout: _page.njk
-eleventyNavigation:
-  key: Gameshelf
-  parent: Home
+layout: page.njk
+# eleventyNavigation:
+#   key: Gameshelf
+#   parent: Home
 ---
 
 I've always been into computer games and have played them for as long as I can remember in one way or another.

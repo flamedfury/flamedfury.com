@@ -18,6 +18,10 @@ The following is a collection of thoughts about the albums that have impacted me
 - BTNHResurrection (2000)
 - The Marshall Mathers LP (2000)
 
+> Music just affects people's feelings. It brings out emotions in you and makes you happy and sad.
+>
+> <cite>- Selena Gomez</cite>
+
 ---
 
 _Last updated {% currentDate %}_
