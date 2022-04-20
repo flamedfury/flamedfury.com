@@ -1,7 +1,7 @@
 ---
 title: Vinyl Collection 🎧
 description: This page details my growing vinyl collection. It includes photos of the cover, sleeves and the vinyl itself along with commentary on my thoughts of the packaging, and the music itself.
-layout: _page.njk
+layout: page.njk
 eleventyNavigation:
   key: Vinyl Collection
   parent: Recordshelf

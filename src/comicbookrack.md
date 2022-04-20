@@ -2,6 +2,9 @@
 title: Comic Book Pull List 💥
 description: my collection of comicbooks
 layout: page.njk
+eleventyNavigation:
+  key: Comic Book Rack
+  parent: Home
 ---
 
 I enjoy reading comic books. I am a big Marvel fan, and the X-Men are my favourite team, has been since the 90’s when I first started getting into them.

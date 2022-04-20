@@ -1,7 +1,7 @@
 ---
 title: Recordshelf 🎧
 description: my collection of music
-layout: _page.njk
+layout: page.njk
 eleventyNavigation:
   key: Recordshelf
   parent: Home

@@ -2,6 +2,9 @@
 title: Links 🔗
 description: my collection of links
 layout: page.njk
+eleventyNavigation:
+  key: Links
+  parent: Home
 ---
 
 I love surfing the web, these are some of my favourite links.

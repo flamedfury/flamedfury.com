@@ -10,7 +10,9 @@
 body {
   --bg: #050505;
   --accent-bg: #121212;
+  --light-bg: #282c34;
   --text: #7d7d7d;
+  --light-text: #abb2bf;
   --primary: #d74299;
   --accent: #009400;
   background-image: url("../img/bg.png");
@@ -101,6 +103,7 @@ article *+* {
 
 :is(h1, h2) {
   max-width: 40ch;
+  letter-spacing: -2px;
 }
 
 :is(h2, h3):not(:first-child) {
@@ -141,7 +144,7 @@ a:focus {
 
 /* Media */
 
-article img :not(.flex-cell img) {
+article img :not(.flex-grid img) {
   display: block;
   width: 100%;
   min-height: 20rem;
@@ -151,7 +154,7 @@ article img :not(.flex-cell img) {
 }
 
 @supports (aspect-ratio: 1) {
-  article img {
+  article img:not(.flex-grid img) {
     max-height: unset;
     aspect-ratio: 3/2;
   }
@@ -186,7 +189,8 @@ blockquote {
   margin: 2rem 0;
   padding: 0.5em 1rem;
   border-left: 5px solid var(--primary);
-  background-color: var(--accent-bg);
+  background-color: var(--light-bg);
+  color: var(--light-text);
   border-radius: 0 0.25rem 0.25rem 0;
   font-style: italic;
 }
@@ -195,6 +199,20 @@ cite {
   font-size: 0.9rem;
   margin-bottom: 1rem;
   font-style: normal;
+}
+
+.info-box {
+  background-color: var(--primary) !important;
+  border-radius: 5px;
+  color: var(--bg);
+  line-height: normal;
+  padding: var(--layout-spacing);
+  margin-top: var(--layout-spacing);
+  margin-bottom: var(--layout-spacing);
+}
+
+.info-box a:hover {
+  color: var(--accent-bg);
 }
 
 /* Tables */

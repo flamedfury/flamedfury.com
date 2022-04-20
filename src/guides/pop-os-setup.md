@@ -3,6 +3,9 @@ title: Pop!_OS Setup Guide
 description: I've recently moved from Windows to Pop!_OS. These are my notes for first time configuration to get myself up and running and refer back to later.
 css: "/css/prisim.css"
 date: 2020-12-14
+eleventyNavigation:
+  key: Pop!_OS Setup Guide
+  parent: Guides
 ---
 
 In December 2021 I moved from Windows to Pop!\_OS. These are my notes for first time configuration to get myslef up and running and refer back to later.

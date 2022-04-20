@@ -1,7 +1,7 @@
 ---
 title: Impactful Albums 🎧
 description: Comments and thoughts of impactful albums and music throughout my lifetime.
-layout: _page.njk
+layout: page.njk
 eleventyNavigation:
   key: Impactful Albums
   parent: Recordshelf

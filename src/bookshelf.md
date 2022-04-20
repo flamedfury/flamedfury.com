@@ -2,6 +2,9 @@
 title: Bookshelf 📚
 description: my collection of books
 layout: page.njk
+eleventyNavigation:
+  key: Bookshelf
+  parent: Home
 ---
 
 I've always been a big reader. apparently, I was quick to pick up books and was able to read at a level above my age. this really helped me immerse myself and get lost in the stories. I mostly enjoy fiction, sci-fi, and fantasy.
@@ -41,24 +44,22 @@ Here are the last books that I've read.
 
 {% set recentlyRead = oku.collections[2].books | limit(9) %}
 {% if recentlyRead.length %}
-<div class="flex-container">
 <div class="flex-grid">
 {% for item in recentlyRead %}
 {% if item.thumbnail %}
-<div class="flex-cell">
+<div class="flex-grid__cell">
 <a href="https://oku.club/book/{{ item.slug }}">
-<img src="{{ item.thumbnail }}" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px" height="auto">
+<img src="{{ item.thumbnail }}" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px">
 </a>
 </div>
 {% else %}
-<div class="flex-cell">
+<div class="flex-grid__cell">
 <a href="https://oku.club/book/{{ item.slug }}">
-<img src="../img/generic-cover.png" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px" height="auto">
+<img src="../img/generic-cover.png" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px">
 </a>
 </div>
 {% endif %}
 {% endfor %}
-</div>
 </div>
 {% endif %}
 

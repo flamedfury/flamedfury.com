@@ -3,6 +3,9 @@ title: Create A Static Site Using 11ty & Deploy to Neocities Part 2
 description: This is a simple guide to set up a simple static site or homepage using the static site generator 11ty and deploy it to Neocities. This part of the guide focuses on creating a Github repo, comitting your homepage files to it, and using a Github action to deploy them to Neocities.
 css: "/css/prisim.css"
 date: 2022-03-22
+eleventyNavigation:
+  key: Create A Static Site Using 11ty & Deploy to Neocities Part 2
+  parent: Guides
 ---
 
 Kia ora, welcome to part 2 of my Creating A Static Site Using 11ty & Deploy to Neocities guide.

@@ -3,6 +3,9 @@ title: Create A Static Site Using 11ty & Deploy to Neocities
 description: This is a simple guide to set up a simple static site or homepage using the static site generator 11ty and deploy it to Neocities.
 css: "/css/prisim.css"
 date: 2022-02-05
+eleventyNavigation:
+  key: Create A Static Site Using 11ty & Deploy to Neocities
+  parent: Guides
 ---
 
 Kia ora, I'm hoping that this guide is going to provide a great starting point for those of you who have been happily constructing your homepages and hosting them on Neocities but want to take it to the next level.
