@@ -36,16 +36,14 @@ My last.fm most recently played tracks 3x2 as of {% currentDate %}
 
 {% set recentlyPlayed = lastfm.recenttracks.track %}
 {% if recentlyPlayed.length %}
-<div class="flex-container">
 <div class="flex-grid">
 {% for item in recentlyPlayed %}
-<div class="flex-cell">
+<div class="flex-grid__cell">
 <a href="{{ item.url }}">
 <img src="{{ item.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
 </a>
 </div>
 {% endfor %}
-</div>
 </div>
 {% endif %}
 
@@ -55,15 +53,13 @@ My last.fm top albums 3x3 for the last month as of {% currentDate %}
 
 {% set topAlbum = lastfm2.topalbums.album %}
 {% if topAlbum.length %}
-<div class="flex-container">
 <div class="flex-grid">
 {% for item in topAlbum %}
-<div class="flex-cell">
+<div class="flex-grid__cell">
 <a href="{{ item.url }}">
 <img src="{{ item.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.artist.name }} - {{ item.name }}">
 </a>
 </div>
 {% endfor %}
-</div>
 </div>
 {% endif %}

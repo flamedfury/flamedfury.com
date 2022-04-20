@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&family=Source+Serif+Pro&display=swap');
+@import url('fonts.css');
 
 *,
 *:before,
@@ -142,7 +141,7 @@ a:focus {
 
 /* Media */
 
-article img {
+article img :not(.flex-cell img) {
   display: block;
   width: 100%;
   min-height: 20rem;
@@ -227,41 +226,36 @@ tr:nth-child(even) {
   background: var(--bg);
 }
 
-/* Flex containers
- for displaying stuff in the main content block */
-.flex-container {
-  margin: 0 auto;
-  max-width: 744px;
-  padding: 0 1rem;
-}
-
-.flex-cell img {
-  display: block;
-}
+/* Flex containers for displaying stuff in the main content block */
 
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  border: 2px solid red;
 }
 
-.flex-cell {
+.flex-grid__cell {
   width: calc(33.3333% - 2rem);
-}
-
-.flex-cell {
   margin: 1rem;
 }
 
+.flex-grid__cell img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 820px) {
-  .flex-cell {
+  .flex-grid__cell {
     width: calc(50% - 2rem);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .flex-cell {
+  .flex-grid__cell {
     width: calc(100% - 2rem);
   }
 }
