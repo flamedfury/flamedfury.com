@@ -99,6 +99,12 @@ article *+* {
   color: var(--primary);
   line-height: 1.2;
   font-family: 'Inter', sans-serif;
+  margin-bottom: 0.65em;
+  line-height: calc(2px + 2ex + 2px);
+}
+
+:is(h2, h3, h4) {
+  font-weight: 600;
 }
 
 :is(h1, h2) {
@@ -110,22 +116,37 @@ article *+* {
   margin-top: 2em;
 }
 
-h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
+:is(h1) {
   font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* fluid typescale magic, https://codepen.io/5t3ph/pen/rNOgeYv */
+h1 {
+  font-size: 3.1573345183rem;
+  font-size: clamp(2.1154141273rem, 5.041920391vw + 1rem, 3.1573345183rem);
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.368593037rem;
+  font-size: clamp(1.5869573348rem, 4.7816357022vw + 1rem, 2.368593037rem);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.776889rem;
+  font-size: clamp(1.19051563rem, 4.58637337vw + 1rem, 1.776889rem);
 }
 
 h4 {
-  font-size: 1.44rem;
+  font-size: 1.333rem;
+  font-size: clamp(1rem, 4.333vw + 1rem, 1.333rem);
+}
+
+:is(p, li, h1, h2, h3, h4) {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 a {
