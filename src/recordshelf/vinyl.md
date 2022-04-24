@@ -29,6 +29,7 @@ Below is my record collection. I enjoy collecting this medium. The process of se
 - Miley Cyrus - The Time of our Lives
 - Everything Is Recorded - Friday Forever
 - Ghostface Killah - Ironman
+- Czarface - CZARMAGEDDON! [RSD Exclusive]
 
 ---
 
