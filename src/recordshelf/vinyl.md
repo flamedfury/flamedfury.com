@@ -30,6 +30,8 @@ Below is my record collection. I enjoy collecting this medium. The process of se
 - Everything Is Recorded - Friday Forever
 - Ghostface Killah - Ironman
 - Czarface - CZARMAGEDDON! [RSD Exclusive]
+- Czarface - Czarface meets Ghostface
+- Mariah - #1's
 
 ---
 
