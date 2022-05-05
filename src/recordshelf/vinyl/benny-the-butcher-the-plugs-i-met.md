@@ -11,4 +11,4 @@ genre: Hip Hop, Boom Bap
 albumart: https://i.discogs.com/pCqepRjrJAXOfNeI8bMhCyLsQrsD863hhR_OsRTqwFc/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MjA2/NjU3LTE2MzkzOTg3/ODYtMzgyMS5qcGVn.jpeg
 ---
 
-Album released July 2019 while I was traveling Europe. The vinyl pre-sale for went on De Rap Winkel website while I was at the Glastonbury music festival 2019, sitting up by the Glastonbury sign looking over the festival. Was great that I was in the correct time zone when a Griselda project went up for sale and I was able to secure one of the 1500 black pressings.
+Standard black record, numbered 404 / 1500. Album released July 2019 while I was traveling Europe. The vinyl pre-sale for went on De Rap Winkel website while I was at the Glastonbury music festival 2019, sitting up by the Glastonbury sign looking over the festival. Was great that I was in the correct time zone when a Griselda project went up for sale.

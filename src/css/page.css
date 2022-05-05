@@ -297,3 +297,48 @@ tr:nth-child(even) {
     width: calc(100% - 2rem);
   }
 }
+
+/* specifically for vinyl collection */
+
+.vinyl-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vinyl-grid__image {
+  width: calc(40% - 2rem);
+  margin: 1rem;
+}
+
+.vinyl-grid__image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.vinyl-grid__feature {
+  width: calc(60% - 2rem);
+  margin: 1rem;
+}
+
+.vinyl-grid:nth-child(odd) {
+  /* Set every other cell slightly darker. Improves readability. */
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 750px) {
+  .vinyl-grid {
+    flex-direction: column;
+  }
+
+  .vinyl-grid__image {
+    width: 100%;
+  }
+
+  .vinyl-grid__feature {
+    width: 100%;
+  }
+}
