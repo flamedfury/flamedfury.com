@@ -24,6 +24,21 @@ A collection of websites that i find useful for my various interests.
 </tbody>
 </table>
 
+## Vinyl Stores
+
+A collection of online vinyl stores where I hunt for sweet music.
+
+<table>
+<tbody>
+{% for item in links.vinylStores %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
 ## Coding and Hacking
 
 A collection of websites that i've found useful for hacking away at my various projects.
