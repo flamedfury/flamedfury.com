@@ -156,5 +156,52 @@
       "siteName": "Pinboard",
       "siteDescription": "A social bookmarking site, users are able to search through other users bookmarks."
     }
+  ],
+  "vinylStores": [
+    {
+      "url": "https://realgroovy.co.nz/",
+      "siteName": "Real Groovy",
+      "siteDescription": "Local, great for new and second hand."
+    },
+    {
+      "url": "https://getondown.com/",
+      "siteName": "Get On Down",
+      "siteDescription": "Great site for classic hip hop re-issues."
+    },
+    {
+      "url": "https://derapwinkel.nl/",
+      "siteName": "de Rap Winkel Records",
+      "siteDescription": "Independent hip-hop label from the Netherlands. Presses limited release independent hip-hop records from across the world. Lots of Conway the Machine releases."
+    },
+    {
+      "url": "https://www.tuffkongrecords.com/",
+      "siteName": "Tuff Kong Records",
+      "siteDescription": "Independent hip-hop label from Italy. Presses limited release independent hip-hop records."
+    },
+    {
+      "url": "https://www.fatbeats.com/",
+      "siteName": "Fat Beats",
+      "siteDescription": "US Record store, expanded globally, now also a record label. Underground/independent hip-hop."
+    },
+    {
+      "url": "https://gasdrawls.com/",
+      "siteName": "Gas Drawls",
+      "siteDescription": "MF Doom related."
+    },
+    {
+      "url": "https://www.newburycomics.com/collections/vinyl",
+      "siteName": "Newbury Comics",
+      "siteDescription": "Czarface releases."
+    },
+    {
+      "url": "https://goodfelons.biz/",
+      "siteName": "Good Felons",
+      "siteDescription": "Record label, specialises in limited release vinyl."
+    },
+    {
+      "url": "https://urbanoutfitters.com",
+      "siteName": "Urban Outfitters",
+      "siteDescription": "Great place to find sweet releases, sometimes in different colour variations."
+    }
   ]
 }
