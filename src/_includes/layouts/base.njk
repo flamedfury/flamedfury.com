@@ -2,53 +2,55 @@
 <html lang="en">
 {%- set pageTitle %}{% if title %}{{ title }} : {% endif %}{{ meta.siteName }} {{ meta.siteVer }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="{{ pageDescription }}">
+  <meta name="description" content="{{ pageDescription }}">
 
-    <title>{{ pageTitle }}</title>
+  <title>{{ pageTitle }}</title>
 
-    <link rel="shortcut icon" href="{{ page | relative }}img/favicon.png" />
+  <link rel="shortcut icon" href="{{ page | relative }}img/favicon.png" />
 
-    <link rel="stylesheet" href="{{ page | relative }}css/styles.css" />
+  <link rel="stylesheet" href="{{ page | relative }}css/styles.css" />
 
-    <!-- inject custom css from front matter -->
-    {% if css %}
-      <link rel="stylesheet" href="{{css}}" />
-    {% endif %}
+  <!-- inject custom css from front matter -->
+  {% if css %}
+  <link rel="stylesheet" href="{{css}}" />
+  {% endif %}
 </head>
 
 <body>
 
-    <header class="header">
-      <img src="{{ page | relative }}img/header.png" width="1200" height="400" alt="welcome to fLaMEdFury!">
-    </header>
+  <header class="header">
+    <img src="{{ page | relative }}img/header.png" width="1200" height="400" alt="welcome to fLaMEdFury!">
+  </header>
 
-    <div class="wrapper">
+  <div class="wrapper">
 
-      <nav class="navigation">
-          {% include "partials/_nav.njk" %}
-      </nav>
+    <nav class="navigation">
+      {% include "partials/_nav.njk" %}
+    </nav>
 
-      <main class="content">
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
-      </main>
+    <main class="content">
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </main>
 
-      <aside class="sidebar">
-        {% include "partials/_sidebar.njk" %}
-      </aside>
+    <aside class="sidebar">
+      {% include "partials/_sidebar.njk" %}
+    </aside>
 
-      <footer class="t-center">
-        {% include "partials/_footer.njk" %}
-      </footer>
+    <footer class="t-center">
+      {% include "partials/_footer.njk" %}
+    </footer>
 
-    </div>
+  </div>
 
-    <script  src="{{ page | relative }}js/main.js"></script>
+  <script src="{{ page | relative }}js/main.js"></script>
 
-  </body>
+</body>
+
 </html>
