@@ -1,8 +1,12 @@
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+const navToggle = document.querySelector('.primary-nav__toggle');
+const navLinks = document.querySelectorAll('.primary-nav__link')
+
+navToggle.addEventListener('click', () => {
+  document.body.classList.toggle('primary-nav__open');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    document.body.classList.remove('primary-nav__open');
+  })
+})

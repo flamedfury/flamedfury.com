@@ -1,22 +1,26 @@
-<div class="nav-primary">
-  <a href="{{ page | relative }}" class="home-btn">Home</a>
-  <ul id="myLinks">
-    <li class="side-title">Interests</li>
-    <li><a href="{{ page | relative }}recordshelf/">Recordshelf</a></li>
-    <li><a href="{{ page | relative }}bookshelf/">Bookshelf</a></li>
-    <li><a href="{{ page | relative }}gameshelf/">Gameshelf</a></li>
-    <li><a href="{{ page | relative }}comicbookrack/">Comicbook Rack</a></li>
-    <li class="side-title">Writing</li>
-    <li><a href="{{ page | relative }}manifesto/">Web Manifesto</a></li>
-    <li><a href="{{ page | relative }}memories/">Web Memories</a></li>
-    <li><a href="{{ page | relative }}guides/">Guides</a></li>
-    <li class="side-title">Meta</li>
-    <li><a href="#">Bookmarks</a></li>
-    <li><a href="{{ page | relative }}links/">Links</a></li>
-    <li><a href="{{ page | relative }}about/">About</a></li>
-    <li class="side-title">Contact</li>
-    <li><a href="{{ page | relative }}contact/">Contact Me</a></li>
-    <li><a href="https://guestbook.flamedfury.com/">Guestbook</a></li>
+<div class="primary-nav__menu">
+  <p class="primary-nav__subtitle">Interests</p>
+  <ul class="primary-nav__list">
+    <li><a href="{{ page | relative }}recordshelf/" class="primary-nav__link">Recordshelf</a></li>
+    <li><a href="{{ page | relative }}bookshelf/" class="primary-nav__link">Bookshelf</a></li>
+    <li><a href="{{ page | relative }}gameshelf/" class="primary-nav__link">Gameshelf</a></li>
+    <li><a href="{{ page | relative }}comicbookrack/" class="primary-nav__link">Comicbook Rack</a></li>
   </ul>
-  <a href="javascript:void(0);" id="menu-btn" class="menu-btn" onclick="myFunction()">Menu</a>
+  <p class="primary-nav__subtitle">Writing</p>
+  <ul class="primary-nav__list">
+    <li><a href="{{ page | relative }}manifesto/" class="primary-nav__link">Web Manifesto</a></li>
+    <li><a href="{{ page | relative }}memories/" class="primary-nav__link">Web Memories</a></li>
+    <li><a href="{{ page | relative }}guides/" class="primary-nav__link">Guides</a></li>
+  </ul>
+  <p class="primary-nav__subtitle">Meta</p>
+  <ul class="primary-nav__list">
+    <li><a href="{{ page | relative }}bookmarks/" class="primary-nav__link">Bookmarks</a></li>
+    <li><a href="{{ page | relative }}links/" class="primary-nav__link">Links</a></li>
+    <li><a href="{{ page | relative }}about/" class="primary-nav__link">About</a></li>
+  </ul>
+  <p class="primary-nav__subtitle">Contact</p>
+  <ul class="primary-nav__list">
+    <li><a href="{{ page | relative }}contact/" class="primary-nav__link">Contact Me</a></li>
+    <li><a href="https://guestbook.flamedfury.com/" class="primary-nav__link">Guestbook</a></li>
+  </ul>
 </div>

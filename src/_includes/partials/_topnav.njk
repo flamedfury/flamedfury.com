@@ -1,12 +1,18 @@
-<nav class="breadcrumb">
-  {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml({
-  listElement: "ul",
-  listItemElement: "li",
-  listClass: "breadcrumb__list",
-  listItemClass: "breadcrumb__item"
-  }) | safe }}
-  <ul class="breadcrumb__list">
-    <li class="breadcrumb__item"></li>
-    <li class="breadcrumb__item">{{ eleventyNavigation.key }}</li>
-  </ul>
+<nav class="page-nav">
+  <div class="breadcrumb">
+    {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml({
+    listElement: "ul",
+    listItemElement: "li",
+    listClass: "breadcrumb__list",
+    listItemClass: "breadcrumb__item"
+    }) | safe }}
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item"></li>
+      <li class="breadcrumb__item">{{ eleventyNavigation.key }}</li>
+    </ul>
+  </div>
+
+  <button class="primary-nav__toggle" aria-label="toggle navigation">
+    <span class="primary-nav__hamburger"></span>
+  </button>
 </nav>
