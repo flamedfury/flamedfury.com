@@ -284,7 +284,7 @@ a:focus {
 }
 
 /* navigation */
-.btn,
+.main-grid>span,
 .nav-toggle {
 	display: none;
 }
@@ -322,7 +322,7 @@ a:focus {
   	width: 100%;
 	}
 	
-	.nav .btn {
+	.main-grid>span {
     display: inline-block;
   }
 	
@@ -400,7 +400,7 @@ a:focus {
 	text-decoration: none;
 }
 
-.nav-breadcrumb span {
+.nav span {
   font-weight: var(--fw-bold);
   color: var(--clr-accent);
 }
