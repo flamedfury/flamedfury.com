@@ -85,6 +85,78 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+hr {
+  border: 1px dashed var(--clr-primary);
+}
+
+code:not([class*="language"]) {
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-size: 1.75ex;
+  color: #444;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-right: 0.15em;
+  padding-left: 0.15em;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding: 0.5em 1rem;
+  border-left: 5px solid var(--clr-primary);
+  background-color: var(--clr-bg-accent);
+  color: var(--clr-text);
+  border-radius: 0 0.25rem 0.25rem 0;
+  font-style: italic;
+}
+
+cite {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+
+.info-box {
+  background-color: var(--clr-primary) !important;
+  border-radius: 5px;
+  color: var(--clr-bg);
+  line-height: normal;
+  padding: var(--layout-spacing);
+  margin-top: var(--layout-spacing);
+  margin-bottom: var(--layout-spacing);
+}
+
+.info-box a:hover {
+  color: var(--clr-bg-accent);
+}
+
+/* tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+td,
+th {
+  border: 1px solid var(--clr-bg);
+  text-align: left;
+  padding: 0.5rem;
+}
+
+th {
+  background: var(--clr-bg-accent);
+  font-weight: bold
+}
+
+tr {
+  background: var(--clr-bg-accent);
+}
+
+
+tr:nth-child(even) {
+  /* Set every other cell slightly darker. Improves readability. */
+  background: var(--clr-bg);
+}
+
 /* layout */
 
 .container {
