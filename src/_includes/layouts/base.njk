@@ -33,48 +33,47 @@
     <img src="{{ page | relative }}img/header.png" alt="Flamed Fury header image">
   </header>
 
-  <div class="container grid grid-main">
+  <div class="container">
 
-    <nav class="nav">
-      <span aria-current="page" class="span-home">{{ eleventyNavigation.key }}</span>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-      </label>
-      {% include "partials/_nav.njk" %}
-    </nav>
-
-    <main class="main">
-      <article>
-        <h1>{{ title }}</h1>
-        {{ content | safe }}
-      </article>
-    </main>
-
-    <aside class="sidebar">
-      <p class="sidebar__subtitle">Link me</p>
-      <ul>
-        <li><img src="{{ page | relative }}img/buttons/flamedfury22.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
-        <li><img src="{{ page | relative }}img/buttons/fury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
-        <li><img src="{{ page | relative }}img/buttons/flamedfury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!">
-        </li>
-        <li><img src="{{ page | relative }}img/buttons/flamedfury2.gif" width="88" height="31" alt="Visit fLaMEdFury Now!">
-        </li>
-        <li><img src="{{ page | relative }}img/buttons/flamedfurybutton.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
-      </ul>
-    </aside>
-
-    <footer class="footer">
-      <p class="footer__subtitle">Public Service Announcement 2000</p>
-      <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fflamedfury.com%2F"><img src="{{ page | relative }}img/badges/valid_html5.png"
-            alt="fLaMEdFury is HTML5 valid!" width="88" height="15"></a> <a
-          href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fflamedfury.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css"><img
-            src="{{ page | relative }}img/badges/valid_css3.png" alt="fLaMEdFury is CSS3 valid!" width="88" height="15"></a> <a
-          href="https://validator.w3.org/feed/check.cgi?url=flamedfury.com%2Ffeed"><img src="{{ page | relative }}img/badges/valid_rss.png"
-            alt="fLaMEdFury is a Valid ATOM 1.0 feed!" width="88" height="15"></a></p>
-      <p>Copyright &copy; 2000 - {% year %} by {% if meta.authorName %} {{ meta.authorName }}{% endif
-        %}. Some rights reserved. Don't jack.</p>
-    </footer>
+    <div class="grid">
+      <nav class="nav">
+        <span aria-current="page" class="span-home">{{ eleventyNavigation.key }}</span>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        {% include "partials/_nav.njk" %}
+      </nav>
+      <main class="main">
+        <article>
+          <h1>{{ title }}</h1>
+          {{ content | safe }}
+        </article>
+      </main>
+      <aside class="sidebar">
+        <p class="sidebar__subtitle">Link me</p>
+        <ul>
+          <li><img src="{{ page | relative }}img/buttons/flamedfury22.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
+          <li><img src="{{ page | relative }}img/buttons/fury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
+          <li><img src="{{ page | relative }}img/buttons/flamedfury.gif" width="88" height="31" alt="Visit fLaMEdFury Now!">
+          </li>
+          <li><img src="{{ page | relative }}img/buttons/flamedfury2.gif" width="88" height="31" alt="Visit fLaMEdFury Now!">
+          </li>
+          <li><img src="{{ page | relative }}img/buttons/flamedfurybutton.gif" width="88" height="31" alt="Visit fLaMEdFury Now!"></li>
+        </ul>
+      </aside>
+      <footer class="footer">
+        <p class="footer__subtitle">Public Service Announcement 2000</p>
+        <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fflamedfury.com%2F"><img src="{{ page | relative }}img/badges/valid_html5.png"
+              alt="fLaMEdFury is HTML5 valid!" width="88" height="15"></a> <a
+            href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fflamedfury.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css"><img
+              src="{{ page | relative }}img/badges/valid_css3.png" alt="fLaMEdFury is CSS3 valid!" width="88" height="15"></a> <a
+            href="https://validator.w3.org/feed/check.cgi?url=flamedfury.com%2Ffeed"><img src="{{ page | relative }}img/badges/valid_rss.png"
+              alt="fLaMEdFury is a Valid ATOM 1.0 feed!" width="88" height="15"></a></p>
+        <p>Copyright &copy; 2000 - {% year %} by {% if meta.authorName %} {{ meta.authorName }}{% endif
+          %}. Some rights reserved. Don't jack.</p>
+      </footer>
+    </div>
 
   </div>
 
