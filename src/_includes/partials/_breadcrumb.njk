@@ -1,0 +1,10 @@
+<div aria-label="breadcrumb" class="nav-breadcrumb">
+  {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml({
+  listElement: "ul",
+  listItemElement: "li",
+  }) | safe }}
+  <ul>
+    <li></li>
+    <li><span aria-current="page">{{ eleventyNavigation.key }}</span></li>
+  </ul>
+</div>
