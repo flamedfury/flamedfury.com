@@ -387,6 +387,38 @@ a:focus {
   text-align: center;
 }
 
+/* flex grid */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-grid__cell {
+  width: calc(33.3333% - 2rem);
+  margin: 1rem;
+}
+
+.flex-grid__cell img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .flex-grid__cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flex-grid__cell {
+    width: calc(100% - 2rem);
+  }
+}
+
 /* vinyl grid */
 
 .vinyl-grid {
