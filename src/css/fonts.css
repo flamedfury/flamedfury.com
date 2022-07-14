@@ -1,0 +1,29 @@
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/source-sans-pro-regular.woff2') format('woff2'), 
+       url('../fonts/source-sans-pro-regular.woff') format('woff'); 
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/inter-regular.woff2') format('woff2'),
+       url('../fonts/inter-regular.woff') format('woff');
+}
+
+/* inter-900 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/inter-black.woff2') format('woff2'), 
+       url('../fonts/inter-black.woff') format('woff');
+}
