@@ -43,7 +43,7 @@ header img {
 }
 
 .container>* {
-  --layout-spacing: 1rem;
+  --layout-spacing: 2rem;
   --max-width: 1120px;
   width: min(100%, var(--max-width));
   margin-left: auto;
