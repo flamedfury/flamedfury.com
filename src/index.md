@@ -21,7 +21,7 @@ This homepage is being constructed in public, it is constantly under constructio
 ## Site updates
 
 <ul class="updates">
-{% for post in collections.updates | reverse | limit(10) %}
+{% for post in collections.updates | reverse | limit(5) %}
   <li>{{ post.templateContent | safe }}</li>
 {% endfor %}
 </ul>

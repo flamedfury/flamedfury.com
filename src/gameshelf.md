@@ -23,7 +23,8 @@ These are a few of the games that have my attention at the moment.
 
 ### Playing
 Games that I'm currently playing:
-- World of Warcraft: Shadowlands, Patch 9.2
+- Marvel's Guardians of the Galaxy
+- World of Warcraft: Shadowlands, taking a break waiting for Season 4
 
 ### Standbys
 Games that I have installed and like to play when I'm not raiding:
@@ -34,7 +35,6 @@ Games that I have installed and like to play when I'm not raiding:
 Games that I've got, and want to play
 - Forza Horizon 5
 - Horizon Zero Dawn
-- Marvel's Guardians of the Galaxy
 
 Games that I want to get, and want to play
 - Mass Effect: Legendary Edition
