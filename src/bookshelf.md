@@ -38,11 +38,61 @@ There are a few authors who I will go out of my way to read all of their books. 
 
 Impact wise for the authors above, I'll talk about Feist first. I picked up a book from my dads bookshelf one day and was immediately sucked in. I was quick to get immersed in the story and couldn't put it down, even if a lot of it didn't make sense. The book was [Shards of a Broken Crown](https://en.wikipedia.org/wiki/Shards_of_a_Broken_Crown), book 4 of a set of 4 and 12 in the entire series to date. This was great news for me as I quickly picked myself a copy of [Magician](https://en.wikipedia.org/wiki/Magician_(Feist_novel)) and worked my way through all the books he had written. It was only a few years ago that I finished up with the world of Midkemia with [Magician's End](https://en.wikipedia.org/wiki/Magician%27s_End), the last book in the Chaoswar Saga and the final book in the entire Riftwar Cycle.
 
-## Recently Read Books
+## Currently reading
+
+The book(s) that I'm currently reading.
+
+{% set recentlyRead = oku.collections[2].books | limit(9) %}
+{% if recentlyRead.length %}
+<div class="flex-grid">
+{% for item in recentlyRead %}
+{% if item.thumbnail %}
+<div class="flex-grid__cell">
+<a href="https://oku.club/book/{{ item.slug }}">
+<img src="{{ item.thumbnail }}" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px">
+</a>
+</div>
+{% else %}
+<div class="flex-grid__cell">
+<a href="https://oku.club/book/{{ item.slug }}">
+<img src="../img/generic-cover.png" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px">
+</a>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+{% endif %}
+
+## Books I want to read
+
+Books that I have lined up ready to read.
+
+{% set recentlyRead = oku.collections[4].books | limit(9) %}
+{% if recentlyRead.length %}
+<div class="flex-grid">
+{% for item in recentlyRead %}
+{% if item.thumbnail %}
+<div class="flex-grid__cell">
+<a href="https://oku.club/book/{{ item.slug }}">
+<img src="{{ item.thumbnail }}" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px">
+</a>
+</div>
+{% else %}
+<div class="flex-grid__cell">
+<a href="https://oku.club/book/{{ item.slug }}">
+<img src="../img/generic-cover.png" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="150px">
+</a>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+{% endif %}
+
+## Recently read books
 
 Here are the last books that I've read.
 
-{% set recentlyRead = oku.collections[2].books | limit(9) %}
+{% set recentlyRead = oku.collections[3].books | limit(9) %}
 {% if recentlyRead.length %}
 <div class="flex-grid">
 {% for item in recentlyRead %}

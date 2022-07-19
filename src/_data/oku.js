@@ -5,7 +5,7 @@ module.exports = async () => {
     const json = await Cache(
       'https://oku.club/api/users/profile/mxzhdwjg',
       {
-        duration: '2h',
+        duration: '',
         type: 'json',
       }
     );
