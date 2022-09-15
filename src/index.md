@@ -15,8 +15,10 @@ This homepage is being constructed in public, it is constantly under constructio
 
 ## Selected writing
 
-- [My Web Manifesto](manifesto): I love the Internet, but not all things about the Internet. On this page I dive deep into the current state of the Internet and explore whether it is heading in an ideal direction.
-- [Early Web Memories](memories): This page details my earliet memories of getting online and surfing the web, I remember all of the fun times, and the not so fun times.
+- [My Web Manifesto](manifesto): I love the Internet, but not all things about the Internet. On this page, I dive deep into the current state of the Internet and explore whether it is heading in an ideal direction.
+- [Early Web Memories](memories): This page details my earliest memories of getting online and surfing the web; I remember all the fun times and the not-so-fun times.
+
+- [Gaming PC History](computerhistory): I love computer games, and I love building computers. On this page, I take a trip down memory lane and try to remember all the computers I have assembled over the years.
 
 ## Site updates
 
