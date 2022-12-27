@@ -42,7 +42,7 @@ Impact wise for the authors above, I'll talk about Feist first. One day, I picke
 
 The book(s) that I'm currently reading.
 
-{% set recentlyRead = oku.collections[1].books | limit(9) %}
+{% set recentlyRead = oku.collections[2].books | limit(9) %}
 {% if recentlyRead.length %}
 <div class="flex-grid">
 {% for item in recentlyRead %}
@@ -67,7 +67,7 @@ The book(s) that I'm currently reading.
 
 Books that I have lined up ready to read.
 
-{% set recentlyRead = oku.collections[3].books | limit(9) %}
+{% set recentlyRead = oku.collections[4].books | limit(9) %}
 {% if recentlyRead.length %}
 <div class="flex-grid">
 {% for item in recentlyRead %}
@@ -92,7 +92,7 @@ Books that I have lined up ready to read.
 
 Here are the last books that I've read.
 
-{% set recentlyRead = oku.collections[2].books | limit(9) %}
+{% set recentlyRead = oku.collections[3].books | limit(9) %}
 {% if recentlyRead.length %}
 <div class="flex-grid">
 {% for item in recentlyRead %}
