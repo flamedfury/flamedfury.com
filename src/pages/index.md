@@ -13,3 +13,5 @@ blog:
 Kia ora 👋, I'm fLaMEd 🔥 and this is my homepage, a collection of stuff that means everything to me, and probably nothing to you.
 
 I have had a passion for making homepages for a long time. There's always been a time in my life where I have had a homepage in one form or another.
+
+I'm excited to share with you all the new design for Flamed Fury in 2023.
