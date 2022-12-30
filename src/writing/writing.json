@@ -1,0 +1,6 @@
+{
+    "layout": "post",
+    "tags": "writing",
+    "permalink": "//writing/{{ title | slugify }}/index.html"
+  }
+  

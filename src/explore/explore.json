@@ -1,0 +1,6 @@
+{
+    "layout": "page",
+    "tags": "explore",
+    "permalink": "//explore/{{ title | slugify }}/index.html"
+  }
+  

@@ -1,0 +1,6 @@
+{
+    "layout": "page",
+    "tags": "about",
+    "permalink": "//about/{{ title | slugify }}/index.html"
+  }
+  
