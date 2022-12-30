@@ -96,7 +96,7 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
+article [href^='http']:not([href*='flamedfury.com'])::after {
   display: inline-block;
   width: 1em;
   height: 1em;
