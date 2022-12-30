@@ -25,6 +25,10 @@ const {
   
   // module import collections
   const {getAllPosts} = require('./config/collections/index.js');
+  const {getAllAbouts} = require('./config/collections/about.js');
+  const {getAllExplores} = require('./config/collections/explore.js');
+  const {getAllInterests} = require('./config/collections/interests.js');
+  const {getAllWritings} = require('./config/collections/writing.js');
   
   // module import transforms
   
