@@ -17,6 +17,31 @@ layout: base
   </div>
 </article>
 
+<!-- interests. -->
+<article class="wrapper region">
+  <div class="wrapper flow prose">
+    <h2>{{ interests.title }}</h2>
+    <!-- intro text is optional. -->
+    {% if interests.intro %}
+    <p>{{ interests.intro }}</p>
+    {% endif %}
+  </div>
+
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.interests %} {% for post in postslist %}
+
+    <li class="card flow clickable-card overflow-hidden">
+      <h2>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h2>
+      {% set definedDate = post.date %} {% include "partials/date.njk" %}
+      <p>{{ post.data.description }}</p>
+    </li>
+
+    {% endfor %}
+  </ul>
+</article>
+
 <!-- writing. -->
 <article class="wrapper region">
   <div class="wrapper flow prose">
