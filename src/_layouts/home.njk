@@ -17,53 +17,7 @@ layout: base
   </div>
 </article>
 
-<!-- interests. -->
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
-    <h2>{{ interests.title }}</h2>
-    {% if interests.intro %}
-    <p>{{ interests.intro }}</p>
-    {% endif %}
-  </div>
 
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.interests %} {% for post in postslist.slice(0, 4) %}
-
-    <li class="card flow clickable-card overflow-hidden">
-      <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h3>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>
-
-<!-- writing. -->
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
-    <h2>{{ writing.title }}</h2>
-    {% if writing.intro %}
-    <p>{{ writing.intro }}</p>
-    {% endif %}
-  </div>
-
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.writings %} {% for post in postslist.slice(0, 4) %}
-
-    <li class="card flow clickable-card overflow-hidden">
-      <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h3>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>
 
 
 

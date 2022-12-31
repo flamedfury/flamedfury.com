@@ -90,6 +90,7 @@ const {
   
     // 	--------------------- Custom collections -----------------------
     eleventyConfig.addCollection('posts', getAllPosts);
+    eleventyConfig.addCollection('writing', getAllWritings);
   
     // 	--------------------- Plugins ---------------------
     eleventyConfig.addPlugin(EleventyRenderPlugin);
@@ -124,4 +125,3 @@ const {
       htmlTemplateEngine: 'njk'
     };
   };
-  
