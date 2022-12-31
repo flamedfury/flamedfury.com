@@ -90,6 +90,7 @@ const {
   
     // 	--------------------- Custom collections -----------------------
     eleventyConfig.addCollection('posts', getAllPosts);
+    eleventyConfig.addCollection('about', getAllAbouts);
     eleventyConfig.addCollection('writing', getAllWritings);
     eleventyConfig.addCollection('explore', getAllExplores);
   
