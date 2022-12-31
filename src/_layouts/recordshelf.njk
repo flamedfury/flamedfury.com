@@ -1,0 +1,46 @@
+---
+layout: base
+---
+
+<header class="section spot-color-secondary">
+  <div class="section__inner region">
+    <div class="wrapper flow">
+      <section class="prose text-center">
+        <h1 class="fade-in">{{ title }}</h1>
+      </section>
+    </div>
+  </div>
+
+  {% include 'svg/divider-edgy.svg' %}
+</header>
+
+<article class="region">
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+  </div>
+</article>
+
+<article class="wrapper region">
+
+{% set recentlyPlayed = lastfm.recenttracks.track %}
+
+{% if recentlyPlayed.length %}
+<ul class="features grid mt-l-xl" role="list" data-rows="masonry">
+  {% for item in recentlyPlayed %}
+    <li class="card flow clickable-card overflow-hidden">
+      <a href="{{ item.url }}">
+        <div class=" ">
+          <img
+            src="{{ item.image[3]['#text'] }}"
+            alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}"
+            loading="lazy" />
+        </div>
+        <span class="track__name">{{ item.name }}</span><br>
+        <span class="track__artist">{{ item.artist['#text'] }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+</article>
