@@ -1,12 +1,24 @@
 module.exports = {
   top: [
     {
+      text: 'Interests',
+      url: '/interests/'
+    },
+    {
+      text: 'Writing',
+      url: '/writing/'
+    },
+    {
+      text: 'Explore',
+      url: '/explore/'
+    },
+    {
       text: 'About',
       url: '/about/'
     },
     {
-      text: 'Blog',
-      url: '/blog/'
+      text: 'Contact',
+      url: '/Contact/'
     }
   ],
   bottom: [
