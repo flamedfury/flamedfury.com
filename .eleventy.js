@@ -91,6 +91,7 @@ const {
     // 	--------------------- Custom collections -----------------------
     eleventyConfig.addCollection('posts', getAllPosts);
     eleventyConfig.addCollection('writing', getAllWritings);
+    eleventyConfig.addCollection('explore', getAllExplores);
   
     // 	--------------------- Plugins ---------------------
     eleventyConfig.addPlugin(EleventyRenderPlugin);
