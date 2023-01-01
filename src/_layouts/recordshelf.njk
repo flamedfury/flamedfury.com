@@ -27,16 +27,19 @@ layout: base
 {% if recentlyPlayed.length %}
 <ul class="features grid mt-l-xl" role="list" >
   {% for item in recentlyPlayed %}
-    <li class="card flow clickable-card overflow-hidden">
+    <li class="card flow clickable-card overflow-hidden" style="
+    background-image: 
+      linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ),
+      url('{{ item.image[3]['#text'] }}');
+    object-fit: cover;
+    width: 300px;
+    ">
       <a href="{{ item.url }}">
-        <div class=" ">
-          <img
-            src="{{ item.image[3]['#text'] }}"
-            alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}"
-            loading="lazy" />
-        </div>
-        <span class="track__name">{{ item.name }}</span><br>
-        <span class="track__artist">{{ item.artist['#text'] }}</span>
+        <p>{{ item.name }}</p>
+        <p>{{ item.artist['#text'] }}</p>
       </a>
     </li>
   {% endfor %}
