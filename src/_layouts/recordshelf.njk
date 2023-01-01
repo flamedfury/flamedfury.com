@@ -25,7 +25,7 @@ layout: base
 {% set recentlyPlayed = lastfm.recenttracks.track %}
 
 {% if recentlyPlayed.length %}
-<ul class="features grid mt-l-xl" role="list" data-rows="masonry">
+<ul class="features grid mt-l-xl" role="list" >
   {% for item in recentlyPlayed %}
     <li class="card flow clickable-card overflow-hidden">
       <a href="{{ item.url }}">
