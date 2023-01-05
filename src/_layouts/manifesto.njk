@@ -1,0 +1,80 @@
+---
+layout: base
+---
+
+<header class="section spot-color-secondary">
+  <div class="section__inner region">
+    <div class="wrapper flow">
+      <section class="prose text-center">
+        <h1 class="fade-in">{{ title }}</h1>
+      </section>
+    </div>
+  </div>
+
+  {% include 'svg/divider-edgy.svg' %}
+</header>
+
+<article class="region">
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+
+    <!-- generate links outward. -->
+
+    <h3>Building your own homepage</h3>
+
+      <table>
+        <tbody>
+        {% for item in manifesto.manifestoResourcesLearn %}
+          <tr>
+            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+            <td>{{ item.siteDescription }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    <h3>Hosting your own homepage</h3>
+
+      <table>
+        <tbody>
+        {% for item in manifesto.manifestoResourcesHosting %}
+          <tr>
+            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+            <td>{{ item.SiteDescription }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    <h3>Community Manifestos</h3>
+
+    <p>A selection of my favourite Web manifestos.</p>
+
+      <table>
+        <tbody>
+        {% for item in manifesto.manifestoCommunity %}
+          <tr>
+            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+            <td>{{ item.siteDescription }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      
+    <h3>Read more about the personal, small, and open web</h3>
+
+    <p>A collection of bookmarks. There are absolute gems in here of others who share similar thoughts.</p>
+    
+      <table>
+        <tbody>
+        {% for item in manifesto.manifestoSites %}
+          <tr>
+            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+            <td>{{ item.siteDescription }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+  </div>
+</article>
