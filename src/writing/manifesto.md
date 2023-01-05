@@ -4,6 +4,7 @@ layout: manifesto.njk
 permalink: /manifesto/index.html
 description: My Web Manifesto is where I dive deep into the current state of the Internet and explore whether it is heading in an ideal direction.
 date: 2021-04-06
+updated: 2023-01-05
 ---
 
 The following are my raw and unedited thoughts spread over several weeks. I add these to the page as I think them through, usually while walking my dogs. Once I get to the point where I have shared all my feelings on the subject, I will attempt to put some order into the chaos.
