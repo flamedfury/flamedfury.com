@@ -2,7 +2,7 @@
 title: 'Bookshelf'
 description: 'My collection of books.'
 layout: bookshelf.njk
-date: 2022-08-28
+date: 2021-01-12
 updated: 2023-01-06
 ---
 
