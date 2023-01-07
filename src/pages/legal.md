@@ -1,17 +1,23 @@
 ---
-title: Legal notice
+title: Public Service Announcement
 seo:
-  title: Legal notice
+  title: Public Service Announcement
 permalink: /imprint/index.html
 description: Imprint infos
 layout: page
 ---
 
-Edit your details in `_data/meta.js`
+This is a public service announcement brought to you in part by ~~Slim Shady~~ {{ meta.author }}.
 
-{{ meta.address.firma }}
-{{ meta.address.street }}
-{{ meta.address.zip }}, {{ meta.address.city }}
+The views and events expressed here are totally fucked and are not necessarily the views of anyone.
 
-Tel: <a href="tel:{{ meta.address.mobileCall }}">{{ meta.address.mobileDisplay }}</a>
-Mail: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>
+However, the events and suggestions that appear on this ~~album~~ website are not to be taken lightly.
+
+Children should not partake in the ~~listening of this album~~ viewing of this website; With laces in their shoes.
+
+~~Slim Shady~~ {{ meta.author }} is not responsible for your actions.
+
+Upon ~~purchasing this album~~ viewing of this website you have agreed not to try this at home.
+
+Anything else?
+Yeah, don't do drugs.
