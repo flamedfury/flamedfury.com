@@ -15,6 +15,8 @@ These days, the Internet is contained, reduced to a smaller number of places peo
 
 It's time to take it back.
 
+{% include "partials/toc.njk" %}
+
 ## Why I have a homepage
 I believe in taking back control, reclaiming my digital future and contributing to rebuilding a web for everybody.
 

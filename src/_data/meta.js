@@ -10,6 +10,8 @@ module.exports = {
   locale: 'en_EN',
   lang: 'en',
   skipContent: 'Skip to content',
+  toc: 'Table of contents',
+  skipToc: 'Skip table of contents',
   author: 'fLaMEd', // i.e. Lene Saile - author's name. Must be set.
   authorEmail: '', // i.e. hola@lenesaile.com - email of the author
   authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
