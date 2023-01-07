@@ -64,7 +64,7 @@ nav.navbar [aria-expanded='false'] + ul {
 
 /* Basic link styling */
 nav.navbar a {
-  --text-color: var(--color-dark);
+  --text-color: var(--color-light);
   border-block-end: 3px solid var(--border-color, transparent);
   color: var(--text-color);
   padding: 0.1rem;
@@ -73,7 +73,7 @@ nav.navbar a {
 
 /* Change the border-color on :hover and :focus */
 nav.navbar a:where(:hover, :focus) {
-  --border-color: var(--text-color);
+  --border-color: var(--color-primary);
 }
 
 /* Change border-color and color for the active page */

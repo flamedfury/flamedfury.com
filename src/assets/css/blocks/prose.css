@@ -8,7 +8,7 @@
 }
 
 .prose .heading-anchor:is(:hover, :focus) {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .prose .heading-anchor {
   text-decoration: none;

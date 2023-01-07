@@ -5,8 +5,8 @@
   project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-dark);
-  background: var(--color-light);
+  color: var(--color-light);
+  background: var(--color-dark);
   font-size: var(--size-step-1);
   font-family: var(--font-base);
   line-height: 1.4;
@@ -84,7 +84,8 @@ a:hover {
 }
 
 :focus {
-  outline: 3px solid;
+  color: var(--color-light);
+  outline: 3px dashed var(--color-primary);
   outline-offset: 0.3ch;
 }
 
@@ -113,10 +114,22 @@ article [href^='http']:not([href*='flamedfury.com'])::after {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-dark);
-  color: var(--color-light);
+  background: var(--color-light);
+  color: var(--color-dark);
 }
 
 .preload-transitions * {
   transition: none !important;
+}
+
+/* Base heading colours */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-primary);
+}
+
+header h1 {
+  color: var(--color-light);
 }
