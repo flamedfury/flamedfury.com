@@ -1,6 +1,6 @@
 ---
 title: Bookmarks
-description: A collection of links for personal websites that I enjoy reading and have bookmarked over the years.
+description: Bookmarks, also known as favourites, are a way for web surfers to save the addresses of websites that they want to visit again in the future. This page collects my personal bookmarks for you to explore.
 ---
 
 Content
