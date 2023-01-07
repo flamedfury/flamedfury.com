@@ -3,7 +3,7 @@
     <div class="site-foot__inner">
       <nav id="footernav" class="site-foot__inner" aria-label="Footer">
         {% set activePage = page.url | url %}
-        &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>
+        <p>&copy; 1999 - {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a> Some rights reserved. Don't jack.</p>
 
         {% for item in navigation.bottom %}
 

@@ -1,18 +1,8 @@
 [
   {
     "platform": "github",
-    "url": "https://github.com/madrilene/eleventy-excellent",
+    "url": "https://github.com/flamedfury/flamedfury.com",
     "icon": "github.svg"
-  },
-  {
-    "platform": "mastodon",
-    "url": "https://front-end.social/@lene",
-    "icon": "mastodon.svg"
-  },
-  {
-    "platform": "ko-fi",
-    "url": "https://ko-fi.com/lenesaile",
-    "icon": "kofi.svg"
   },
   {
     "platform": "rss",
