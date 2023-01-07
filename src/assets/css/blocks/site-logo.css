@@ -7,3 +7,13 @@
   letter-spacing: -0.08rem;
   padding: var(--space-xs) 0;
 }
+
+.logo-svg { 
+  --fillColorTop: #fbfbfb;
+  --fillColorBot: #f4f4f4;
+}
+
+.logo-svg:hover {
+  --fillColorTop: #F4900C;
+  --fillColorBot: #FFCC4D;
+}
