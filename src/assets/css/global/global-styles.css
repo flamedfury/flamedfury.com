@@ -83,14 +83,17 @@ a:hover {
   text-decoration: none;
   color: transparent;
   background: radial-gradient(rgb(220, 38, 38), rgb(234, 88, 12), rgb(202, 138, 4));
-
   background-size: 50%;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 :focus {
-  color: var(--color-light);
+  color: transparent;
+  background: radial-gradient(rgb(220, 38, 38), rgb(234, 88, 12), rgb(202, 138, 4));
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
   outline: 3px dashed var(--color-primary);
   outline-offset: 0.3ch;
 }

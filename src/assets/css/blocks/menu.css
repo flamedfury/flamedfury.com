@@ -78,7 +78,7 @@ nav.navbar a:where(:hover, :focus) {
 /* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
   --border-color: var(--color-primary);
-  --text-color: var(--color-primary);
+  --text-color: var(--color-text);
 }
 
 nav.navbar span {
