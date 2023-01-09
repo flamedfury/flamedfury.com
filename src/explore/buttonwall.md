@@ -20,11 +20,11 @@ They have made a comeback in recent years thanks to personal homepage creators a
 ### Mutual
 
 <div class="button-wall">
-    {% for item in buttons.mutualSites %}
-      <a href="{{ item.url }}">
-        <img src="{{ item.img }}" alt="{{ item.site }}" title="{{ item.site }}" alt="{{ item.alt }}" width="88px" height="31px">
-      </a>
-    {% endfor %}
+{% for item in buttons.mutualSites %}
+<a href="{{ item.url }}">
+<img src="{{ item.img }}" alt="{{ item.alt }}" title="{{ item.title }}" width="88px" height="31px">
+</a>
+{% endfor %}
 </div>
 
 ### Around the web
