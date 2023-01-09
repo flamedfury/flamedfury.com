@@ -1,70 +1,120 @@
 {
-    "mutualSites": [
-      {
-        "url": "https://bytemoth.neocities.org/",
-        "alt": " Bytemoths Brook 88x31 button",
-        "title": "Bytemoth's Brooke",
-        "img": "/assets/images/explore/buttons/i-brook.png"
-      },
-      {
-        "url": "https://fairytrash.neocities.org",
-        "alt": " Fairy Trash 88x31 button",
-        "title": "Fairy Trash",
-        "img": "/assets/images/explore/buttons/fairybutton1.png"
-      },
-      {
-        "url": "https://ocean-waves.xyz/",
-        "alt": "Ocean Waves 88x31 button",
-        "title": "Ocean Waves",
-        "img": "/assets/images/explore/buttons/oceanwaves.gif"
-      },
-      {
-        "url": "https://letslearntogether.neocities.org",
-        "alt": "Lets Learn Together  88x31 button",
-        "title": "Lets Learn Together",
-        "img": "/assets/images/explore/buttons/llt.png"
-      },
-      {
-        "url": "https://cabbagesorter.neocities.org/",
-        "alt": "Cabbage Sorter 88x31 button",
-        "title": "Cabbage Sorter",
-        "img": "/assets/images/explore/buttons/cabbagesorter.gif"
-      },
-      {
-        "url": "https://auzziejay.com/",
-        "alt": "Auzzie Jay 88x31 button",
-        "title": "Auzzie Jay in the Digital World",
-        "img": "/assets/images/explore/buttons/auzzie1.gif"
-      },
-      {
-        "url": "https://teddybear-halo.neocities.org",
-        "alt": "Teddy Bear Halo 88x31 button",
-        "title": "teddybear halo",
-        "img": "/assets/images/explore/buttons/teddybear-halo.gif"
-      },
-      {
-        "url": "https://cinni.net/",
-        "alt": "Cinnis Dream Home 88x31 button",
-        "title": "Cinni's Dream Home",
-        "img": "/assets/images/explore/buttons/cinni_angelbutton3.gif"
-      },
-      {
-        "url": "https://sadgrl.online/",
-        "alt": "Sadgrl Online 88x31 button",
-        "title": "Sadgrl Online",
-        "img": "/assets/images/explore/buttons/sadgrl.gif"
-      },
-      {
-        "url": "https://grafovolaverunt.xyz",
-        "alt": "Grafo  88x31 button",
-        "title": "Grafo Volaverunt",
-        "img": "/assets/images/explore/buttons/grafo.gif"
-      },
-      {
-        "url": "https://tonicfunk.neocities.org/",
-        "alt": "Tonic Funk 88x31 button",
-        "title": "Tonic Funk",
-        "img": "/assets/images/explore/buttons/tonicfunk.gif"
-      }
-    ]
-  }
+  "mutualSites": [
+    {
+      "url": "https://bytemoth.neocities.org/",
+      "alt": " Bytemoths Brook 88x31 button",
+      "title": "Bytemoth's Brooke",
+      "img": "/assets/images/explore/buttons/i-brook.png"
+    },
+    {
+      "url": "https://fairytrash.neocities.org",
+      "alt": " Fairy Trash 88x31 button",
+      "title": "Fairy Trash",
+      "img": "/assets/images/explore/buttons/fairybutton1.png"
+    },
+    {
+      "url": "https://ocean-waves.xyz/",
+      "alt": "Ocean Waves 88x31 button",
+      "title": "Ocean Waves",
+      "img": "/assets/images/explore/buttons/oceanwaves.gif"
+    },
+    {
+      "url": "https://letslearntogether.neocities.org",
+      "alt": "Lets Learn Together  88x31 button",
+      "title": "Lets Learn Together",
+      "img": "/assets/images/explore/buttons/llt.png"
+    },
+    {
+      "url": "https://cabbagesorter.neocities.org/",
+      "alt": "Cabbage Sorter 88x31 button",
+      "title": "Cabbage Sorter",
+      "img": "/assets/images/explore/buttons/cabbagesorter.gif"
+    },
+    {
+      "url": "https://auzziejay.com/",
+      "alt": "Auzzie Jay 88x31 button",
+      "title": "Auzzie Jay in the Digital World",
+      "img": "/assets/images/explore/buttons/auzzie1.gif"
+    },
+    {
+      "url": "https://teddybear-halo.neocities.org",
+      "alt": "Teddy Bear Halo 88x31 button",
+      "title": "teddybear halo",
+      "img": "/assets/images/explore/buttons/teddybear-halo.gif"
+    },
+    {
+      "url": "https://cinni.net/",
+      "alt": "Cinnis Dream Home 88x31 button",
+      "title": "Cinni's Dream Home",
+      "img": "/assets/images/explore/buttons/cinni_angelbutton3.gif"
+    },
+    {
+      "url": "https://sadgrl.online/",
+      "alt": "Sadgrl Online 88x31 button",
+      "title": "Sadgrl Online",
+      "img": "/assets/images/explore/buttons/sadgrl.gif"
+    },
+    {
+      "url": "https://grafovolaverunt.xyz",
+      "alt": "Grafo  88x31 button",
+      "title": "Grafo Volaverunt",
+      "img": "/assets/images/explore/buttons/grafo.gif"
+    },
+    {
+      "url": "https://tonicfunk.neocities.org/",
+      "alt": "Tonic Funk 88x31 button",
+      "title": "Tonic Funk",
+      "img": "/assets/images/explore/buttons/tonicfunk.gif"
+    },
+    {
+      "url": "https://antikrist.neocities.org/",
+      "alt": "Antikrist 88x31 button",
+      "title": "Antikrist",
+      "img": "/assets/images/explore/buttons/antikrist.png"
+    },
+    {
+      "url": "https://melonking.net/",
+      "alt": "Melon King 88x31 button",
+      "title": "Melon King",
+      "img": "/assets/images/explore/buttons/melongking.gif"
+    },
+    {
+      "url": "https://americasdecline.neocities.org/main",
+      "alt": "Americas Decline 88x31 button",
+      "title": "Americas Decline",
+      "img": "/assets/images/explore/buttons/americasdecline.png"
+    },
+    {
+      "url": "https://sweethard666.neocities.org",
+      "alt": "Sweethards 88x31 button",
+      "title": "Sweethards Space",
+      "img": "/assets/images/explore/buttons/sweethard666.gif"
+    },
+    {
+      "url": "https://rxqueen.neocities.org/",
+      "alt": "RX Queen 88x31 button",
+      "title": "RX Queen",
+      "img": "/assets/images/explore/buttons/rxqueen.png"
+    },
+    {
+      "url": "https://justfluffingaround.neocities.org",
+      "alt": "Just Fluffing Around 88x31 button",
+      "title": "Just Fluffing Around",
+      "img": "/assets/images/explore/buttons/justfluffingaround.png"
+    }
+  ],
+  "poweredBy": [
+    {
+      "url": "https://www.mozilla.org/en-US/firefox/new/",
+      "alt": " Firefox 88x31 button",
+      "title": "Flamed Fury is powered by Firefox",
+      "img": "/assets/images/explore/buttons/firefox.gif"
+    },
+    {
+      "url": "https://11ty.dev/",
+      "alt": " 11ty 88x31 button",
+      "title": "Flamed Fury is powered by 11ty",
+      "img": "/assets/images/explore/buttons/11tybutton.png"
+    }
+  ]
+}

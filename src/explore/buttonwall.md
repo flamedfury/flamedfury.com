@@ -17,8 +17,6 @@ They have made a comeback in recent years thanks to personal homepage creators a
 
 ## My button wall
 
-### Mutual
-
 <div class="button-wall">
 {% for item in buttons.mutualSites %}
 <a href="{{ item.url }}">
@@ -27,9 +25,15 @@ They have made a comeback in recent years thanks to personal homepage creators a
 {% endfor %}
 </div>
 
-### Around the web
-
 ### Powered by
+
+<div class="button-wall">
+{% for item in buttons.poweredBy %}
+<a href="{{ item.url }}">
+<img src="{{ item.img }}" alt="{{ item.alt }}" title="{{ item.title }}" width="88px" height="31px">
+</a>
+{% endfor %}
+</div>
 
 ## 88x31 button resources
 
