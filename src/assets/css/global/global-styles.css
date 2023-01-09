@@ -97,7 +97,7 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='flamedfury.com'])::after {
+article [href^='http']:not([href*='flamedfury.com']):not[img]::after {
   display: inline-block;
   width: 1em;
   height: 1em;
