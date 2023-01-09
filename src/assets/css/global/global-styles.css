@@ -81,6 +81,12 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: transparent;
+  background: radial-gradient(rgb(220, 38, 38), rgb(234, 88, 12), rgb(202, 138, 4));
+
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 :focus {
