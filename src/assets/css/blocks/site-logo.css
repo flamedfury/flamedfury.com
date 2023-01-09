@@ -8,12 +8,28 @@
   padding: var(--space-xs) 0;
 }
 
-.logo-svg { 
+.logo:hover,
+.logo:focus {
+  color: transparent;
+  background: radial-gradient(rgb(220, 38, 38), rgb(234, 88, 12), rgb(202, 138, 4));
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo svg { 
   --fillColorTop: #fbfbfb;
   --fillColorBot: #f4f4f4;
 }
 
-.logo-svg:hover {
-  --fillColorTop: #F4900C;
-  --fillColorBot: #FFCC4D;
+.logo:hover svg,
+.logo:focus svg {
+  --fillColorTop: #f05123;
+  --fillColorBot: #f08323;
+} 
+
+@media (min-width: 85em) {
+  .logo {
+    transform: translateX(var(--gutter));
+  }
 }

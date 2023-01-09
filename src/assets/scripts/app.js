@@ -30,42 +30,6 @@ Array.prototype.forEach.call(cards, card => {
   };
 });
 
-// ------------------- responsive accessible nav
-
-const nav = document.querySelector('nav');
-const list = nav.querySelector('ul');
-const burgerClone = document.querySelector('#burger-template').content.cloneNode(true);
-const svg = nav.querySelector('svg');
-
-const button = burgerClone.querySelector('button');
-button.addEventListener('click', e => {
-  const isOpen = button.getAttribute('aria-expanded') === 'false';
-  button.setAttribute('aria-expanded', isOpen);
-});
-
-// avoid DRY: disabling menu
-const disableMenu = () => {
-  button.setAttribute('aria-expanded', false);
-  button.focus();
-};
-
-//  close on escape
-nav.addEventListener('keyup', e => {
-  if (e.code === 'Escape') {
-    disableMenu();
-  }
-});
-
-// close if clicked outside of event target
-document.addEventListener('click', e => {
-  const isClickInsideElement = nav.contains(e.target);
-  if (!isClickInsideElement) {
-    disableMenu();
-  }
-});
-
-nav.insertBefore(burgerClone, list);
-
 // ----- masonry fallback if CSS masonry not supported, solution by Ana Tudor: https://codepen.io/thebabydino/pen/yLYppjK
 // ----- jacked from https://github.com/madrilene/lenesaile.com/blob/fe1bd383eeb3f1377ac621b1c743581a2bcda71a/src/assets/scripts/app.js#L20-L76
 // ----- enable the layout.css.grid-template-masonry-value.enabled flag in about:config

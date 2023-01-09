@@ -1,42 +1,39 @@
-@media (min-width: 48em) {
-  nav.navbar {
-    --nav-button-display: none;
-    --nav-position: static;
-  }
+nav.navbar {
+  --nav-button-display: none;
+  --nav-position: static;
+}
 
-  nav.navbar ul {
-    --nav-list-background: transparent;
-    --nav-list-layout: row;
-    --nav-list-position: static;
-    --nav-list-padding: 0;
-    --nav-list-height: auto;
-    --nav-list-width: 100%;
-    --nav-list-shadow: none;
-    --nav-list-transform: none;
-    --nav-list-visibility: visible;
-  }
+nav.navbar ul {
+  --nav-list-background: transparent;
+  --nav-list-layout: row;
+  --nav-list-position: static;
+  --nav-list-padding: 0;
+  --nav-list-height: auto;
+  --nav-list-width: 100%;
+  --nav-list-transform: none;
+  --nav-list-visibility: visible;
 }
 
 /* set on parent div to get the right z-index context */
 .ontop {
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 
 nav.navbar {
   position: var(--nav-position, absolute);
-  /* inset-block-start: 0.5rem; */
+  inset-block-start: 0.5rem;
   inset-inline-end: 0.1rem;
 }
 
 /* Remove default list styling and create layout for list */
 nav.navbar ul {
   background: var(--nav-list-background, var(--color-light));
-  box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
   display: flex;
   flex-direction: var(--nav-list-layout, column);
   flex-wrap: wrap;
-  gap: 0.9rem;
+  justify-content: center;
+  gap: 0.75rem 0.3rem;
   height: var(--nav-list-height, 100vh);
   list-style: none;
   margin: 0;
@@ -48,27 +45,29 @@ nav.navbar ul {
   visibility: var(--nav-list-visibility, visible);
 }
 
-nav.navbar [aria-expanded='false'] + ul {
-  transform: var(--nav-list-transform, translateX(100%));
-  visibility: var(--nav-list-visibility, hidden);
-}
-
-/* animates ul only when opening to avoid flash on page load, svg always */
-@media (prefers-reduced-motion: no-preference) {
-  nav.navbar [aria-expanded='true'] + ul,
-  nav.navbar svg {
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
-      visibility 0.05s linear;
-  }
-}
-
 /* Basic link styling */
 nav.navbar a {
   --text-color: var(--color-light);
   border-block-end: 3px solid var(--border-color, transparent);
   color: var(--text-color);
-  padding: 0.1rem;
+  padding: 0.1rem 0.3rem;
   text-decoration: none;
+}
+
+@media (min-width: 50em) {
+  nav.navbar ul {
+    justify-content: flex-end;
+    gap: var(--space-xs);
+  }
+
+  nav.navbar {
+    margin-right: var(--space-l);
+  }
+
+  nav.navbar a {
+    background-color: transparent;
+    border-radius: 0;
+  }
 }
 
 /* Change the border-color on :hover and :focus */
@@ -82,33 +81,9 @@ nav.navbar [aria-current='page'] {
   --text-color: var(--color-primary);
 }
 
-/* Reset button styling */
-nav.navbar button {
-  all: unset;
-  display: var(--nav-button-display, flex);
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-  align-items: center;
-  padding: var(--space-xs) 0;
-}
-
 nav.navbar span {
   font-size: var(--size-step-0);
   font-weight: bold;
   text-transform: uppercase;
   padding-inline-end: var(--space-xs);
-}
-
-nav.navbar svg {
-  height: 100%;
-  width: auto;
-}
-header svg {
-  transform: translateY(-0.1em);
-}
-
-nav.navbar [aria-expanded='true'] svg {
-  transform: var(--nav-list-rotate, rotate(45deg));
 }
