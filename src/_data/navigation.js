@@ -23,8 +23,8 @@ module.exports = {
   ],
   bottom: [
     {
-      text: 'Imprint',
-      url: '/imprint/'
+      text: 'PSA',
+      url: '/psa/'
     },
     {
       text: 'Privacy',

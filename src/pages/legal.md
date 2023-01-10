@@ -2,7 +2,7 @@
 title: Public Service Announcement
 seo:
   title: Public Service Announcement
-permalink: /imprint/index.html
+permalink: /psa/index.html
 description: Imprint infos
 layout: page
 ---
