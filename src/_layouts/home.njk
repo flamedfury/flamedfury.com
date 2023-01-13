@@ -19,6 +19,20 @@ layout: base
   </div>
 </article>
 
+<!--[ what's new? ]-->
+<article class="region" style="--region-space-top: var(--space-s)">
+  <div class="wrapper flow prose">
+    <h2>What's new?</h2>
+  </div>
+
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.posts %} {% for post in postslist %} {%
+    include "partials/siteupdates-loop.njk" %}
+
+    {% endfor %}
+  </ul>
+</article>
+
 <!-- interests. -->
 <article class="wrapper region">
   <div class="wrapper flow prose">
