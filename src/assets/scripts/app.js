@@ -15,7 +15,7 @@
 //   };
 // });
 
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card:not(.note)');
 Array.prototype.forEach.call(cards, card => {
   let down,
     up,
@@ -45,7 +45,7 @@ if (!supportMasonry) {
       gap: parseFloat(getComputedStyle(grid).gridRowGap),
       items: [...grid.childNodes]
         .filter(c => c.nodeType === 1 && +getComputedStyle(c).gridColumnEnd !== -1)
-        .map(c => ({_el: c})),
+        .map(c => ({ _el: c })),
       ncol: 0
     }));
 
@@ -66,8 +66,8 @@ if (!supportMasonry) {
           if (grid.ncol > 1) {
             grid.items.slice(ncol).forEach((c, i) => {
               let prev_fin =
-                  grid.items[i]._el.getBoundingClientRect()
-                    .bottom /* bottom edge of item above */,
+                grid.items[i]._el.getBoundingClientRect()
+                  .bottom /* bottom edge of item above */,
                 curr_ini =
                   c._el.getBoundingClientRect().top; /* top edge of current item */
 
