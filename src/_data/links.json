@@ -1,0 +1,238 @@
+{
+  "usefulSites": [
+    {
+      "url": "https://news.ycombinator.com/",
+      "siteName": "Hacker News",
+      "siteDescription": "Keep up to date with interesting things happening across the web and wider Internet."
+    },
+    {
+      "url": "https://discogs.com",
+      "siteName": "Discogs",
+      "siteDescription": "Album information, largest music database online. Huge market place for music reselling, love it for tracking down vinyl."
+    },
+    {
+      "url": "https://genius.com",
+      "siteName": "Genius",
+      "siteDescription": "Huge lyrics database. used to be just rap music, but now offers all genres. Use it for checking out what the actualy lyrics are after singing something completely wrong for days after listening to a song."
+    },
+    {
+      "url": "https://bandcamp.com/",
+      "siteName": "BandCamp",
+      "siteDescription": "An online record store and music community for fans to discover, connect with, and directly support the artists making awesome music."
+    },
+    {
+      "url": "https://themoviedb.org/",
+      "siteName": "The Movie Database (TMDB)",
+      "siteDescription": "The Movie Database (TMDB) is a community built movie and television database. This website has superseded the usefulness of the IMDB for me. allows users to sign up, contribute data and track what they've watched."
+    },
+    {
+      "url": "https://www.thetvdb.com/",
+      "siteName": "The TVDB",
+      "siteDescription": "Another community driven television and movie database. Great alternative for the movie database. Full of great user curated lists of various movies and television shows."
+    },
+    {
+      "url": "https://fandom.com",
+      "siteName": "Fandom",
+      "siteDescription": "Huge database of pop culture. Large user generated wikis. Question worth asking, how much of effect did this have on killing the average personal homepage?"
+    },
+    {
+      "url": "https://abookapart.com/",
+      "siteName": "A Book Apart",
+      "siteDescription": "Brief books for people who design, write, and code. have been a fan of this crowd ever since first stumbling upon A List Apart way back when. These books are fantastic if you're into writing, designing or coding!"
+    },
+    {
+      "url": "https://audioculture.co.nz/",
+      "siteName": "Audioculture Iwi Waiata",
+      "siteDescription": "The noisy library of New Zealand music"
+    }
+  ],
+  "codingSites": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Learn",
+      "siteName": "MDN Web Docs",
+      "siteDescription": "Great open source resource to take you from beginner to comfortable in web development. Reference this often for my own projects."
+    },
+    {
+      "url": "https://www.smashingmagazine.com/",
+      "siteName": "Smashing Magazine",
+      "siteDescription": "Smashing Magazine is a website and eBook publisher that offers editorial content and professional resources for web developers and web designers."
+    },
+    {
+      "url": "https://www.internetingishard.com/",
+      "siteName": "Interneting is Hard",
+      "siteDescription": "Friendly web development tutorials for beginners. Great resource for current modern practices in web development."
+    },
+    {
+      "url": "https://css-tricks.com/",
+      "siteName": "CSS Tricks",
+      "siteDescription": "A website about building websites and everything in between. Great resource full of great tutorials, most likely has an example of something that you want to achieve."
+    },
+    {
+      "url": "https://www.sitepoint.com",
+      "siteName": "SitePoint",
+      "siteDescription": "A mainstay of the web. has existed since 1999 and is full of everything you need for web development."
+    },
+    {
+      "url": "https://11ty.rocks/",
+      "siteName": "11ty Rocks!",
+      "siteDescription": "A collection of 11ty starter projects, snippits and other resources to get you up and running with the 11ty static site generator."
+    },
+    {
+      "url": "https://www.netlify.com/",
+      "siteName": "Netlify",
+      "siteDescription": "Netlify is a cloud hosting service for web apps and static websites. Has a great git powered workflow. FlamedFury is hosted on Netlify!"
+    },
+    {
+      "url": "https://vercel.com",
+      "siteName": "Vercel",
+      "siteDescription": "Similar to netlify. serverless, cloud hosting platform for web apps from the creators of Next.JS"
+    },
+    {
+      "url": "https://cssguidelin.es/",
+      "siteName": "CSS Guidelines",
+      "siteDescription": "High level advice and guidelines for writing sane, manageable, scalable CSS. If you're like me, you tend to have hacked together your CSS file with snippits from all over the place. "
+    },
+    {
+      "url": "https://tiny-helpers.dev/",
+      "siteName": "Tiny Helpers",
+      "siteDescription": "A collection of free single-purpose online tools for web developers."
+    },
+    {
+      "url": "https://smolcss.dev/",
+      "siteName": "SmolCSS",
+      "siteDescription": "Minimal snippets for modern CSS layouts and components."
+    },
+    {
+      "url": "https://moderncss.dev/",
+      "siteName": "Modern CSS",
+      "siteDescription": "Modern CSS solutions for old CSS problems"
+    },
+    {
+      "url": "https://htmlrecipes.dev/",
+      "siteName": "HTML Recipes",
+      "siteDescription": "A collection of quick copy HTML snippets for a variety of common scenarios such as navigation, heroes, and lists."
+    }
+  ],
+  "newsLetters": [
+    {
+      "url": "https://thehistoryoftheweb.com/",
+      "siteName": "The History of the Web",
+      "siteDescription": "A twice montly dispatch about the web's history, the incredible people that built it, and all the websites, code, and browsers you've never heard of. Well researched and well written recounts of early recounts of our beloved web."
+    },
+    {
+      "url": "https://www.webworm.co/",
+      "siteName": "Webworm with David Farrier",
+      "siteDescription": "David Farrier's stories from the weird side of the Internet."
+    }
+  ],
+  "podCasts": [
+    {
+      "url": "https://www.joebudden.com/podcasts/",
+      "rss": "http://feeds.soundcloud.com/users/soundcloud:users:138976584/sounds.rss",
+      "podName": "The Joe Budden Podcast",
+      "podDescription": "Tune into Joe Budden and his friends. Follow along the crazy adventures of these very random friends. Hip Hop and R&B orientated, lots of laughs."
+    },
+    {
+      "url": "https://darknetdiaries.com/",
+      "rss": "https://feeds.megaphone.fm/darknetdiaries",
+      "podName": "The Darknet Diaries",
+      "podDescription": "True stories from the dark side of the Internet. This is a podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network."
+    },
+    {
+      "url": "https://www.maifm.co.nz/home/podcasts/aotearoa-hip-hop-podcast.html",
+      "rss": "https://www.omnycontent.com/d/playlist/d5d8b1d2-6c31-48c0-8625-a959004fd8f1/de168ba7-4a6f-42fe-986e-adce001025ce/769d7822-3fb9-4294-a79f-adce001b8351/podcast.rss",
+      "podName": "Aotearoa Hip Hop Podacast",
+      "podDescription": "I'm a huge music fan, and an even bigger fan of Aotearoa music. In this podcast series, DJ Sir-Vere dives deep into the very beginning of Aotearoa Hip Hop and explores the people and the history."
+    },
+    {
+      "url": "https://www.comedybutton.com/",
+      "rss": "https://comedybutton.libsyn.com/rss",
+      "podName": "The Comedy Button",
+      "podDescription": "An extremely long-running podcast about five friends navigating adulthood, real life, the Internet, and everything in between. The Comedy Button is the spiritual successor to the old Gamespy Debriefings podcast. If I take listening to the Gamespy Debriefings into account, this is the podcast I've listened to the most. It's funny to note that as the cast has grown up over the last decade, the podcast is sometimes a pseudo-parenting podcast as most hosts have also had children. It's incredible to grow up with a podcast and follow similar life milestones."
+    }
+  ],
+  "searchEngines": [
+    {
+      "url": "https://search.marginalia.nu/",
+      "siteName": "Marginalia Search",
+      "siteDescription": "A search engine that favours text-heavy websites."
+    },
+    {
+      "url": "https://wiby.me/",
+      "siteName": "Wilby",
+      "siteDescription": "Wiby is a search engine for older style pages, lightweight and based on a subject of interest. Building a web more reminiscent of the early internet."
+    },
+    {
+      "url": "https://spyda.dev/",
+      "siteName": "Spyda.dev",
+      "siteDescription": "A privacy first search engine and web crawler. Work in prgoress, weekend project."
+    },
+    {
+      "url": "https://gibiru.com/",
+      "siteName": "Gibiru",
+      "siteDescription": "Uncensored private search engine. They exist to provide access to information outside of big tech's censorship bubble and do so privately."
+    },
+    {
+      "url": "https://infotiger.com/",
+      "siteName": "Infotiger",
+      "siteDescription": "Independent, privacy respecting search engine."
+    },
+    {
+      "url": "https://pinboard.in/",
+      "siteName": "Pinboard",
+      "siteDescription": "A social bookmarking site, users are able to search through other users bookmarks."
+    },
+    {
+      "url": "https://search.brave.com/",
+      "siteName": "Brave Search",
+      "siteDescription": "I am currently using Brave Search as my default search. They claim to be the world's most complete and independent private search enginge. They claim that they do not filter, downrank or censor search results. They are building their own index of the Web so they do not rely on Google or Bing results."
+    }
+  ],
+  "vinylStores": [
+    {
+      "url": "https://realgroovy.co.nz/",
+      "siteName": "Real Groovy",
+      "siteDescription": "Local, great for new and second hand."
+    },
+    {
+      "url": "https://getondown.com/",
+      "siteName": "Get On Down",
+      "siteDescription": "Great site for classic hip hop re-issues."
+    },
+    {
+      "url": "https://derapwinkel.nl/",
+      "siteName": "de Rap Winkel Records",
+      "siteDescription": "Independent hip-hop label from the Netherlands. Presses limited release independent hip-hop records from across the world. Lots of Conway the Machine releases."
+    },
+    {
+      "url": "https://www.tuffkongrecords.com/",
+      "siteName": "Tuff Kong Records",
+      "siteDescription": "Independent hip-hop label from Italy. Presses limited release independent hip-hop records."
+    },
+    {
+      "url": "https://www.fatbeats.com/",
+      "siteName": "Fat Beats",
+      "siteDescription": "US Record store, expanded globally, now also a record label. Underground/independent hip-hop."
+    },
+    {
+      "url": "https://gasdrawls.com/",
+      "siteName": "Gas Drawls",
+      "siteDescription": "MF Doom related."
+    },
+    {
+      "url": "https://www.newburycomics.com/collections/vinyl",
+      "siteName": "Newbury Comics",
+      "siteDescription": "Czarface releases."
+    },
+    {
+      "url": "https://goodfelons.biz/",
+      "siteName": "Good Felons",
+      "siteDescription": "Record label, specialises in limited release vinyl."
+    },
+    {
+      "url": "https://urbanoutfitters.com",
+      "siteName": "Urban Outfitters",
+      "siteDescription": "Great place to find sweet releases, sometimes in different colour variations."
+    }
+  ]
+}
