@@ -6,3 +6,5 @@ layout: page
 ---
 
 I enjoy recieving email from real people. Please don't hesitate to drop me an email, I reply to all that I recieve.
+
+{% include "partials/contact-form.njk" %}

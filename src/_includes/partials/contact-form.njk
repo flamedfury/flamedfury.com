@@ -1,0 +1,27 @@
+<form action="/contact/thank-you" method="POST" name="contact" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
+  <ol class="[ field-list ]">
+    <li class="[ field-list__field-group ]">
+      <label class="question__label" for="field-name">What's your name?</label>
+      <br>
+      <input class="question__field" type="text" name="name" id="field-name" required="" aria-required="true" placeholder="Katherine Johnson"
+        autocomplete="name" autocorrect="off" autocapitalize="off">
+    </li>
+    <li class="[ field-list__field-group ]">
+      <label class="question__label" for="field-email">What's your email address?</label>
+      <br>
+      <input class="question__field" type="email" name="email" id="field-email" required="" aria-required="true" placeholder="katherine@johnson.tld"
+        autocomplete="email">
+    </li>
+    <li class="[ field-list__field-group ]">
+      <label class="question__label" for="field-message">What's on your mind?</label>
+      <br>
+      <textarea id="field-message" name="message" rows="5" cols="100" required="" aria-required="true" spellcheck="true" autocapitalize="sentences"></textarea>
+    </li>
+    <li hidden="">
+      <label>Don't fill this out if you're human: <input name="bot-field">
+      </label>
+    </li>
+  </ol>
+  <button type="submit" class="[ button ] [ font-base text-base weight-bold ]">Send message</button>
+</form>

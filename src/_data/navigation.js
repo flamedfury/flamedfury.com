@@ -18,7 +18,7 @@ module.exports = {
     },
     {
       text: 'Contact',
-      url: '/Contact/'
+      url: '/contact/'
     }
   ],
   bottom: [

@@ -1,1 +1,32 @@
-/* A blank block because there is *always* a button */
+.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button {
+  --border-radius: 8px;
+  color: var(--color-light);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  margin-right: 0.5em;
+  padding: var(--space-xs) var(--space-m-l);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: 220ms all ease-in-out;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--color-primary-glare);
+}
+
+.button:focus {
+  outline-style: dashed;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px var(--color-secondary);
+}
