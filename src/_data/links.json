@@ -186,6 +186,11 @@
       "url": "https://search.brave.com/",
       "siteName": "Brave Search",
       "siteDescription": "I am currently using Brave Search as my default search. They claim to be the world's most complete and independent private search enginge. They claim that they do not filter, downrank or censor search results. They are building their own index of the Web so they do not rely on Google or Bing results."
+    },
+    {
+      "url": "https://searchmysite.net",
+      "siteName": "Search My Site",
+      "siteDescription": "An open source search engine and search as a service. Search My Site is good for searching real content by real people from the indieweb / small web / digital gardens."
     }
   ],
   "vinylStores": [
