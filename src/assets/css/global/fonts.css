@@ -17,22 +17,23 @@
 }
 
 @font-face {
-  font-family: Redhat;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2'),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'RobotoMono';
+  font-family: 'FiraMono';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
   src: local(''),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
+    url(/assets/fonts/firamono/fira-mono-v14-latin-regular.woff2)
       format('woff2'),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+    url(/assets/fonts/firamono/fira-mono-v14-latin-regular.woff) format('woff');
+}
+
+
+@font-face {
+  font-family: Nudge;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local(''),
+    url(/assets/fonts/nudge/NudgeNormal-Bold.woff2) format('woff2'),
+    url(/assets/fonts/nudge/NudgeNormal-Bold.woff) format('woff');
 }
