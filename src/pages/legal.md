@@ -3,7 +3,7 @@ title: Public Service Announcement
 seo:
   title: Public Service Announcement
 permalink: /psa/index.html
-description: Imprint infos
+description: Web surfer beware, this is your only warning
 layout: page
 ---
 
