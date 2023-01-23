@@ -13,3 +13,20 @@
   width: 100%;
   height: auto;
 }
+
+.blog aside,
+.blog .table-of-contents {
+  --border-width: 0.2rem;
+  --border: var(--border-width) dashed var(--color-primary);
+  background-color: var(--color-dark);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding-inline: var(--space-s-m);
+  position: relative;
+  color: var(--color-light);
+}
+
+.blog aside {
+  padding-inline-start: var(--space-l-xl);
+  padding-block: var(--space-s-m);
+}
