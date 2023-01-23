@@ -3,20 +3,13 @@
     <div class="site-foot__inner">
       <nav id="footernav" class="site-foot__inner" aria-label="Footer">
         {% set activePage = page.url | url %}
-        <p>&copy; 1999 - {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a> Some rights reserved. Don't jack.</p>
+        <p>&copy; 1999 - {% year %} <a href="/" {% if activePage==='/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>. Made with HTML, CSS, and ❤
+          powered by 11ty. Some rights reserved. Don't
+          jack.</p>
 
         {% for item in navigation.bottom %}
 
-        <a
-          href="{{ item.url }}"
-          {{
-          helpers.getLinkActiveState(item.url,
-          page.url)
-          |
-          safe
-          }}
-          >{{ item.text }}</a
-        >
+        <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
 
         {% endfor %}
       </nav>
@@ -26,21 +19,18 @@
 
         {% if item.platform == "rss" %}
         <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml">
-        {% else %}
-        <a href="{{ item.url }}" rel="me">
-          {% endif %}
-          <span class="sr-only">{{ item.platform }}</span>
-          <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div>
-          </a
-          >
-        {% endfor %}
+          {% else %}
+          <a href="{{ item.url }}" rel="me">
+            {% endif %}
+            <span class="sr-only">{{ item.platform }}</span>
+            <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div>
+          </a>
+          {% endfor %}
 
 
-        </nav>
+      </nav>
     </div>
   </div>
 
   <!-- lang menu -->
 </footer>
-
-
