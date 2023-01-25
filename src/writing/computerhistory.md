@@ -1,6 +1,7 @@
 ---
 title: Gaming PC History
 layout: page
+category: writing
 permalink: /computerhistory/index.html
 description: "I love computer games, and I love building computers. On this page, I take a trip down memory lane and try to remember all the computers I have assembled over the years."
 category: "gaming"

@@ -29,3 +29,25 @@ I have had a passion for making homepages for a long time. There's always been a
 Think of it as a throwback to the old everything/nothing websites of the early 2000s.
 
 I'm excited to share with you all the new design for Flamed Fury in 2023.
+
+## What's new?
+
+- 2023-01-21: Added new website design.
+- 2023-01-19: Manifesto page updated.
+- 2023-01-17: All pages updated
+
+## Interests
+
+I'm into heaps of different things:
+
+I like to [read books](/interests/bookshelf/).
+
+I like to read and collect [comic books](/interests/comic-rack).
+
+I like to [listen to music](/interests/recordshelf) and collect [vinyl](/interests/recordshelf/vinyl-collection).
+
+I like to play [video games](/interests/gameshelf/) on my PC and Steam Deck.
+
+I like to [skateboard](/interests/skate-park).
+
+I like to [brew beer](/interests/the-brewery).
