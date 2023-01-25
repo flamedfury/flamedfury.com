@@ -5,4 +5,6 @@ layout: writing
 permalink: /writing/index.html
 ---
 
-Content
+This page collects posts marked as writing. They are essay and storytelling posts. They are not site updates or guides. 
+
+One of my long-term goals is to write more. This goal includes learning how to write coherent and understandable essays. 
