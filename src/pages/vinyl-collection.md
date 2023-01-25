@@ -11,7 +11,7 @@ Below is my record collection. I enjoy collecting this medium. Selecting a recor
 
 The record collection is displayed by the release date, not when I purchased it. This may change if I can determine collection dates for the older records in the collection.
 
-<!-- {% for vinyls in collections.vinyl %} 
+{% for vinyls in collections.vinyl %} 
 <div class="vinyl-grid">
 <div class="vinyl-grid__image">
 <img src="{{ vinyls.data.albumart }}" alt="The album cover for {{ vinyls.data.artist }} {{ vinyls.data.albumtitle }}">
@@ -50,4 +50,4 @@ The record collection is displayed by the release date, not when I purchased it.
 </table>
 </div>
 </div>
-{% endfor %} -->
+{% endfor %}
