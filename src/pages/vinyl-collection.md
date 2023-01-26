@@ -8,7 +8,7 @@ updated: 2023-01-23
 ---
 
 
-I am a true enthusiast of vinyl records for their unique sound quality. The warmth and richness of the audio is unparalleled by digital formats, and the smooth conveyance of analog recordings truly immerses me in the music. The added texture of the crackle and pop of the subtle imperfections only adds to the charm of listening to music on vinyl. 
+I am big fan of vinyl records for their unique sound quality. The warmth and richness of the audio is unparalleled by digital formats, and the smooth conveyance of analog recordings truly immerses me in the music. The added texture of the crackle and pop of the subtle imperfections only adds to the charm of listening to music on vinyl. 
 
 It's not just the sound that makes vinyl so unique, but also the physical experience of handling the record, placing it on the turntable, and watching it spin as the music plays. 
 

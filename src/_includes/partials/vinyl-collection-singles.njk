@@ -6,7 +6,12 @@
     <div class="flow">
       <h3>{{ item.title }}</h3>
       <p>
-        <span class="block font-bold uppercase">{{ item.format }} / {{ item.year }}, {{ item.genre }}</span>{{ item.comment }}
+        <span class="block font-bold uppercase">Info: {{ item.format }} / {{ item.year }}, {{ item.genre }}</span>
+        <span class="block font-bold uppercase">Label: {{ item.label }} {{ item.code }}</span>
+        <span class="block font-bold uppercase">Release: {{ item.varient }} {{ item.number }}</span>
+      </p>
+      <p>
+        {{ item.comment }}
       </p>
     </div>
   </div>
