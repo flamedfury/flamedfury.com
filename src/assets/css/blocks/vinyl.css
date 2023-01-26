@@ -14,7 +14,9 @@
 
 .vinyl img {
 	width: 100%;
-	outline: 2px solid var(--color-dark);
+	height: 100%;
+	object-fit:cover;
+	outline: 2px solid var(--color-dark-glare);
 }
 
 .vinyl h3 {
@@ -23,4 +25,8 @@
 
 .vinyl span {
   font-size: var(--size-step-0);
+}
+
+.bg-transparent{
+	background-color:transparent
 }
