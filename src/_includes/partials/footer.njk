@@ -1,11 +1,15 @@
 <footer class="site-foot" role="contentinfo">
   <div class="wrapper">
     <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
-        {% set activePage = page.url | url %}
-        <p>&copy; 1999 - {% year %} <a href="/" {% if activePage==='/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>. Made with HTML, CSS, and ❤
-          powered by 11ty. Some rights reserved. Don't
+
+      {% set activePage = page.url | url %}
+      <div class="site-foot__notes">
+        <p>&copy; 1999 - {% year %} <a href="/" {% if activePage==='/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>. Some rights reserved. Don't
           jack.</p>
+        <p>Made with HTML, CSS, and ❤ powered by 11ty.</p>
+      </div>
+
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
 
         {% for item in navigation.bottom %}
 
@@ -27,10 +31,7 @@
           </a>
           {% endfor %}
 
-
       </nav>
     </div>
   </div>
-
-  <!-- lang menu -->
 </footer>

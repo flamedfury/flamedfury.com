@@ -4,6 +4,11 @@
   color: var(--color-light);
 }
 
+.site-foot__notes {
+  gap: var(--space-xs-s);
+  text-align: center;
+}
+
 .site-foot__inner {
   display: flex;
   gap: var(--space-xs-s);

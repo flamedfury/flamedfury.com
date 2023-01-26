@@ -29,6 +29,10 @@ module.exports = {
     {
       text: 'Privacy',
       url: '/privacy/'
+    },
+    {
+      text: 'Styleguide',
+      url: '/styleguide'
     }
   ]
 };
