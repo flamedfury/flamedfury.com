@@ -1,0 +1,28 @@
+{
+  "albums": [
+    {
+      "title": "If It Bleeds It Can Be Killed",
+      "artist": "Conway The Machine x Big Ghost",
+      "year": 2021,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "varient": "1000 Corpses Black",
+      "number": "412/4880",
+      "image": "./src/assets/images/vinyl/if-it-bleeds-it-can-be-killed.jpg",
+      "alt": "Cover of the album",
+      "comment": "1000 Corpses Black variant. Black record numbered 412 / 480. Second collab between Conway & Big Ghost. Red Beams goes hard."
+    },
+    {
+      "title": "No One Mourns The Wicked",
+      "artist": "Conway The Machine x Big Ghost",
+      "year": 2020,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "varient": "Standard",
+      "number": "220/500",
+      "image": "./src/assets/images/vinyl/no-one-mournes-the-wicked.jpg",
+      "alt": "Cover of the album",
+      "comment": "Black record numbered 220 / 500. First collab between Conway & Big Ghost. Red Beams goes hard."
+    }
+  ]
+}

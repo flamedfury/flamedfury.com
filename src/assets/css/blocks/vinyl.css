@@ -1,0 +1,26 @@
+.vinyl {
+	display: flex;
+	gap: var(--space-s-m);
+	align-items: center;
+	justify-content: space-between;
+	border-top: 2px dashed;
+	border-bottom: 2px dashed;
+	padding: var(--space-s-m) 0;
+}
+
+.vinyl:last-child {
+	border-top: none;
+}
+
+.vinyl img {
+	width: 100%;
+	outline: 2px solid var(--color-dark);
+}
+
+.vinyl h3 {
+  font-size: var(--size-step-1);
+}
+
+.vinyl span {
+  font-size: var(--size-step-0);
+}

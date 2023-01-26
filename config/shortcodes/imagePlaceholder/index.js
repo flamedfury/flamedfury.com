@@ -50,14 +50,13 @@ const imageShortcodePlaceholder = async (src, alt, caption, sizes = '100vw') => 
 				loading = 'lazy'
         decoding="async">
     </picture>
-    ${
-      caption
-        ? `<figcaption class="cluster font-display"><p>${caption}</p>
+    ${caption
+      ? `<figcaption class="cluster font-display"><p>${caption}</p>
 	</figcaption>`
-        : ``
+      : ``
     }
 </figure>`,
-    {collapseWhitespace: true}
+    { collapseWhitespace: true }
   );
 };
 

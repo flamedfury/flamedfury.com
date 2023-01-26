@@ -21,7 +21,11 @@ const {
 } = require('./config/filters/index.js');
 
 // module import shortcodes
-const { imageShortcodePlaceholder, liteYoutube } = require('./config/shortcodes/index.js');
+const {
+  imageShortcode,
+  imageShortcodePlaceholder,
+  liteYoutube
+} = require('./config/shortcodes/index.js');
 
 // module import collections
 const {
@@ -77,6 +81,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('entries', Object.entries);
 
   // 	--------------------- Custom shortcodes ---------------------
+  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
