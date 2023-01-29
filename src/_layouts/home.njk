@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-
+<!--[ comment ]-->
 <header class="section spot-color-primary">
 
   {% include 'svg/divider-waves.svg' %}
@@ -19,125 +19,11 @@ layout: base
   </div>
 </article>
 
-<!--[ what's new? ]-->
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
-    <h2>What's new?</h2>
-  </div>
-
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist %} {%
-    include "partials/siteupdates-loop.njk" %}
-
-    {% endfor %}
-  </ul>
-</article>
-
-<!-- interests. -->
-<article class="wrapper region">
-  <div class="wrapper flow prose">
-    <h2>{{ interests.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if interests.intro %}
-    <p>{{ interests.intro }}</p>
-    {% endif %}
-  </div>
-
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.interests %} {% for post in postslist %}
-
-    <li class="card flow clickable-card overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>
-
-<!-- writing. -->
-<article class="wrapper region">
-  <div class="wrapper flow prose">
-    <h2>{{ writing.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if writing.intro %}
-    <p>{{ writing.intro }}</p>
-    {% endif %}
-  </div>
-
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.writing %} {% for post in postslist %}
-
-    <li class="card flow clickable-card overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>
-
-<!-- explore. -->
-<article class="wrapper region">
-  <div class="wrapper flow prose">
-    <h2>{{ explore.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if explore.intro %}
-    <p>{{ explore.intro }}</p>
-    {% endif %}
-  </div>
-
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.explore %} {% for post in postslist %}
-
-    <li class="card flow clickable-card overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>
-
-<!-- about. -->
-<article class="wrapper region">
-  <div class="wrapper flow prose">
-    <h2>{{ about.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if about.intro %}
-    <p>{{ about.intro }}</p>
-    {% endif %}
-  </div>
-
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.about %} {% for post in postslist %}
-
-    <li class="card flow clickable-card overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>
-
-<!-- blog. -->
+<!--[ post stream. ]-->
 <article class="region" style="--region-space-top: var(--space-s)">
   <div class="wrapper flow prose">
     <h2>{{ blog.title }}</h2>
-    <!-- blog intro text is optional. -->
+    <!-- intro text is optional. -->
     {% if blog.intro %}
     <p>{{ blog.intro }}</p>
     {% endif %}

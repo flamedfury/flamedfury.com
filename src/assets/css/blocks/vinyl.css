@@ -12,11 +12,19 @@
 	border-top: none;
 }
 
+.vinyl p {
+	margin-bottom: var(--flow-space,1em);
+}
+
 .vinyl img {
 	width: 100%;
 	height: 100%;
 	object-fit:cover;
 	outline: 2px solid var(--color-dark-glare);
+}
+
+.vinyl picture {
+	margin-bottom: var(--space-s-m,1em);
 }
 
 .vinyl h3 {
