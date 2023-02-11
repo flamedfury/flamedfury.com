@@ -1,6 +1,18 @@
 {
   "mutualSites": [
     {
+      "url": "https://xandra.cc/",
+      "alt": " Alexandra's 88x31 button",
+      "title": "The Museum Of Alexandra",
+      "img": "/assets/images/explore/buttons/xandra.png"
+    },
+    {
+      "url": "https://imaginarykarin.com/",
+      "alt": " Karins 88x31 button",
+      "title": "Imaginary Karin",
+      "img": "/assets/images/explore/buttons/imaginarykarin.jpg"
+    },
+    {
       "url": "https://bytemoth.neocities.org/",
       "alt": " Bytemoths Brook 88x31 button",
       "title": "Bytemoth's Brooke",
@@ -31,12 +43,6 @@
       "img": "/assets/images/explore/buttons/cabbagesorter.gif"
     },
     {
-      "url": "https://auzziejay.com/",
-      "alt": "Auzzie Jay 88x31 button",
-      "title": "Auzzie Jay in the Digital World",
-      "img": "/assets/images/explore/buttons/auzzie1.gif"
-    },
-    {
       "url": "https://teddybear-halo.neocities.org",
       "alt": "Teddy Bear Halo 88x31 button",
       "title": "teddybear halo",
@@ -47,12 +53,6 @@
       "alt": "Cinnis Dream Home 88x31 button",
       "title": "Cinni's Dream Home",
       "img": "/assets/images/explore/buttons/cinni_angelbutton3.gif"
-    },
-    {
-      "url": "https://sadgrl.online/",
-      "alt": "Sadgrl Online 88x31 button",
-      "title": "Sadgrl Online",
-      "img": "/assets/images/explore/buttons/sadgrl.gif"
     },
     {
       "url": "https://grafovolaverunt.xyz",
@@ -107,6 +107,30 @@
       "alt": "Open Books 88x31 button",
       "title": "Open Books",
       "img": "/assets/images/explore/buttons/openbooks.gif"
+    },
+    {
+      "url": "https://",
+      "alt": "Sukiyaki City 88x31 button",
+      "title": "Sukiyaki City",
+      "img": "/assets/images/explore/buttons/sukiyakicity.png"
+    },
+    {
+      "url": "https://imaginarykarin.com",
+      "alt": "Imaginary Karin 88x31 button",
+      "title": "Imaginary Karin",
+      "img": "/assets/images/explore/buttons/blank.png"
+    },
+    {
+      "url": "https://ziggybeeps.neocities.org/home",
+      "alt": "Ziggy Beeps 88x31 button",
+      "title": "Ziggy Beeps",
+      "img": "/assets/images/explore/buttons/ziggybeeps.gif"
+    },
+    {
+      "url": "https://cranile.neocities.org/",
+      "alt": "Cranile's 88x31 button with the name cranile and a little goblin to the left",
+      "title": "Cranile's Box",
+      "img": "/assets/images/explore/buttons/cranile.gif"
     }
   ],
   "poweredBy": [
