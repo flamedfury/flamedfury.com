@@ -23,6 +23,10 @@ module.exports = {
   ],
   bottom: [
     {
+      text: 'Back to top',
+      url: '#main'
+    },
+    {
       text: 'PSA',
       url: '/psa/'
     },
