@@ -27,13 +27,12 @@
     url(/assets/fonts/firamono/fira-mono-v14-latin-regular.woff) format('woff');
 }
 
-
 @font-face {
-  font-family: Nudge;
+  font-family: Sanfran;
   font-style: normal;
   font-display: swap;
-  font-weight: 700;
+  font-weight: 400;
   src: local(''),
-    url(/assets/fonts/nudge/NudgeNormal-Bold.woff2) format('woff2'),
-    url(/assets/fonts/nudge/NudgeNormal-Bold.woff) format('woff');
+    url(/assets/fonts/sanfran/sanfran-bold.woff2) format('woff2'),
+    url(/assets/fonts/sanfran/sanfran-bold.woff) format('woff');
 }
