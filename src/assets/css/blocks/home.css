@@ -1,0 +1,36 @@
+header h1 {
+  --region-space-top: var(--space-l-2xl); 
+  padding-block: var(--region-space-top)
+}
+
+.home{
+  --sidebar-content-align-items: flex-start;
+  --sidebar-target-width: 25rem;
+}
+
+
+.updates {
+  --skew-angle: -5deg;
+  --background: linear-gradient(
+    45deg, 
+    #dc2626, 
+    #ea580c, 
+    #ca8a04
+  );
+  --region-space-top: var(--space-l-2xl);
+  position: relative;
+  isolation: isolate;
+}
+
+.updates::after {
+  content: '';
+  background: var(--background);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(var(--skew-angle));
+}
+
+.updates h3 {
+  color: var(--color-light);
+}

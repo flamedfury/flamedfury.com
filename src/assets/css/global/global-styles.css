@@ -69,6 +69,11 @@ svg {
   flex: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 [role='list'] {
   padding: 0;
 }

@@ -3,34 +3,55 @@ layout: base
 ---
 <!--[ comment ]-->
 <header class="section spot-color-primary">
-
-  {% include 'svg/divider-waves.svg' %}
   <div class="section__inner">
-    <div class="wrapper flow region">
+    <div class="wrapper flow prose">
       <h1 class="text-center">{{ title }}</h1>
     </div>
   </div>
   {% include 'svg/divider-waves.svg' %}
 </header>
 
-<article class="region">
-  <div class="wrapper flow prose">
-    {{ content | safe }}
+<article class="region home">
+  <div class="wrapper sidebar" data-direction="rtl">
+    <div class="welcome">
+      <div class="wrapper flow prose">
+        <h2>{{ welcome.title }}</h2>
+
+        <div class="flow prose">
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+    <div class="updates region">
+      <div class="wrapper flow prose">
+        <h3>{{ updates.title }}</h3>
+
+        <div class="flow prose">
+          {% include "partials/updates.njk" %}
+        </div>
+      </div>
+    </div>
   </div>
 </article>
 
-<!--[ post stream. ]-->
-<article class="region" style="--region-space-top: var(--space-s)">
+<!-- <article class="region">
   <div class="wrapper flow prose">
-    <h2>{{ blog.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if blog.intro %}
-    <p>{{ blog.intro }}</p>
+    {{ content | safe }}
+  </div>
+</article> -->
+
+<!--[ post stream. ]-->
+<article class="region">
+  <div class="wrapper flow prose">
+    <h2>{{ posts.title }}</h2>
+    <!--[ intro text is optional. ]-->
+    {% if posts.intro %}
+    <p>{{ posts.intro }}</p>
     {% endif %}
   </div>
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 4) %}
+    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 10) %}
 
     <li class="card flow clickable-card overflow-hidden">
       <h3>
