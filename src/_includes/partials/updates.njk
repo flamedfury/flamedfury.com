@@ -1,11 +1,7 @@
 <ul>
+  {% for item in changelog.changeLog.slice(0, 10) %}
   <li>
-    2023-01-21: Added new website design.
+    {{ item.date }}: {{ item.update }}
   </li>
-  <li>
-    2023-01-19: Manifesto page updated.
-  </li>
-  <li>
-    2023-01-17: All pages updated
-  </li>
+  {% endfor %}
 </ul>
