@@ -22,11 +22,11 @@ layout: base
 
 <article class="wrapper region">
 
-{% set recentlyRead = oku.collections[3].books | limit(9) %}
-{% if recentlyRead.length %}
-<ul class="features grid mt-l-xl" role="list" >
-  {% for item in recentlyRead %}
-  {% if item.thumbnail %}
+  {% set recentlyRead = oku.collections[3].books | limit(9) %}
+  {% if recentlyRead.length %}
+  <ul class="features grid mt-l-xl" role="list">
+    {% for item in recentlyRead %}
+    {% if item.thumbnail %}
     <li class="card flow clickable-card overflow-hidden">
       <a href="https://oku.club/book/{{ item.slug }}">
         <img src="{{ item.thumbnail }}" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="300px">
@@ -34,16 +34,15 @@ layout: base
       <p>{{ item.title }} </p>
       <p>by {{ item.authors[0]['name'] }}</p>
     </li>
-  {% else %}
+    {% else %}
     <li class="card flow clickable-card overflow-hidden">
       <a href="https://oku.club/book/{{ item.slug }}">
         <img src="../img/generic-cover.png" alt="book cover for {{ item.title }} by {{ item.authors[0]['name'] }}" width="300px">
       </a>
     </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
   {% endif %}
-  {% endfor %}
-</ul>
-{% endif %}
 
 </article>
-

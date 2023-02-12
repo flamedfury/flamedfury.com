@@ -1,22 +1,4 @@
 @font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-500.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-500.woff) format('woff');
-}
-
-@font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-700.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-700.woff) format('woff');
-}
-
-@font-face {
   font-family: 'FiraMono';
   font-weight: normal;
   font-style: normal;
@@ -35,4 +17,14 @@
   src: local(''),
     url(/assets/fonts/sanfran/sanfran-bold.woff2) format('woff2'),
     url(/assets/fonts/sanfran/sanfran-bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: Londrina;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local(''),
+    url(/assets/fonts/Londrina/londrinasolid-regular-webfont.woff2) format('woff2'),
+    url(/assets/fonts/londrina/londrinasolid-regular-webfont.woff) format('woff');
 }

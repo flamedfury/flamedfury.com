@@ -6,7 +6,7 @@
       "name": "Display",
       "description": "System fonts for body copy and globally set text.",
       "value": [
-        "Sanfran",
+        "Londrina",
         "Segoe UI",
         "Roboto",
         "Helvetica Neue",
@@ -18,7 +18,7 @@
       "name": "Base",
       "description": "System fonts for body copy and globally set text.",
       "value": [
-        "Inter",
+        "Sanfran",
         "Segoe UI",
         "Roboto",
         "Helvetica Neue",
