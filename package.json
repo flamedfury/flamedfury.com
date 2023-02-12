@@ -1,6 +1,6 @@
 {
   "name": "flamedfury.com",
-  "version": "2302",
+  "version": "1.4.2",
   "engines": {
     "node": ">=16.x.x"
   },
