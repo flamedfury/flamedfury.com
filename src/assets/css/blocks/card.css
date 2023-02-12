@@ -25,11 +25,6 @@
   font-size: var(--size-step-0);
 }
 
-.card ::selection {
-  color: var(--color-dark);
-  background: var(--color-secondary);
-}
-
 .card h2,
 .card h3 {
   color: var(--text-light);
