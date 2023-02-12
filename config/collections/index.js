@@ -22,17 +22,9 @@ const getAllInterests = collection => {
   return projects.reverse();
 };
 
-/** Returns all writing posts as a collection. */
-const getAllWritings = collection => {
-  const projects = collection.getFilteredByGlob('./src/writing/*.md');
-  return projects.reverse();
-};
-
-
 module.exports = {
   getAllPosts,
   getAllAbouts,
   getAllExplores,
-  getAllInterests,
-  getAllWritings
+  getAllInterests
 };

@@ -7,9 +7,6 @@ welcome:
   title: What's going on Internet?
 updates:
   title: What’s new?
-posts:
-  title: 'Posts'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
 ---
 
 Kia ora 👋, I'm fLaMEd 🔥 and this is my homepage, a collection of stuff that means everything to me, and probably nothing to you.

@@ -20,9 +20,44 @@ layout: base
   </div>
 </article>
 
+
+<!--[ writing stream. ]-->
 <article class="region">
+  <div class="wrapper flow prose">
+    <h2>{{ writing.title }}</h2>
+    <!-- blog intro text is optional. -->
+    {% if writing.intro %}
+    <p>{{ writing.intro }}</p>
+    {% endif %}
+  </div>
+
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for post in collections.writing %}
+
+    <li id="{{ post.data.title | slugify }}"" class=" card flow clickable-card overflow-hidden">
+      <h2>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h2>
+      {% set definedDate = post.date %} {% include "partials/date.njk" %}
+      <p>{{ post.data.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</article>
+
+
+<!--[ guides stream. ]-->
+<article class="region">
+  <div class="wrapper flow prose">
+    <h2>{{ guides.title }}</h2>
+    <!-- blog intro text is optional. -->
+    {% if guides.intro %}
+    <p>{{ guides.intro }}</p>
+    {% endif %}
+  </div>
+
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for post in collections.guides %}
 
     <li id="{{ post.data.title | slugify }}"" class=" card flow clickable-card overflow-hidden">
       <h2>

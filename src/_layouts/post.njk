@@ -12,7 +12,9 @@ crossorigin: true
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
 
-    {% set definedDate = date %} {% include "partials/date.njk" %}
+    <p>Published: {% set definedDate = date %} {% include "partials/date.njk" %}</p>
+
+    <p>Updated: {% set definedDate = updated %} {% include "partials/date.njk" %}</p>
 
     {{ content | safe }}
   </div>

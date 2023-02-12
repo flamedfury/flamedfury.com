@@ -12,18 +12,18 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="region home">
+<section class="region home">
   <div class="wrapper sidebar" data-direction="rtl">
     <div class="welcome">
-      <div class="wrapper flow prose">
+      <article class="wrapper flow prose">
         <h2>{{ welcome.title }}</h2>
 
         <div class="flow prose">
           {{ content | safe }}
         </div>
-      </div>
+      </article>
     </div>
-    <div class="updates region">
+    <aside class="updates region">
       <div class="wrapper flow prose">
         <h3>{{ updates.title }}</h3>
 
@@ -31,37 +31,6 @@ layout: base
           {% include "partials/updates.njk" %}
         </div>
       </div>
-    </div>
+    </aside>
   </div>
-</article>
-
-<!-- <article class="region">
-  <div class="wrapper flow prose">
-    {{ content | safe }}
-  </div>
-</article> -->
-
-<!--[ post stream. ]-->
-<article class="region">
-  <div class="wrapper flow prose">
-    <h2>{{ posts.title }}</h2>
-    <!--[ intro text is optional. ]-->
-    {% if posts.intro %}
-    <p>{{ posts.intro }}</p>
-    {% endif %}
-  </div>
-
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 10) %}
-
-    <li class="card flow clickable-card overflow-hidden">
-      <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h3>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
-  </ul>
-</article>
+  </article>

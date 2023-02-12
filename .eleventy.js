@@ -32,8 +32,7 @@ const {
   getAllPosts,
   getAllAbouts,
   getAllExplores,
-  getAllInterests,
-  getAllWritings
+  getAllInterests
 } = require('./config/collections/index.js');
 
 // module import transforms
@@ -98,7 +97,6 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('about', getAllAbouts);
-  eleventyConfig.addCollection('writing', getAllWritings);
   eleventyConfig.addCollection('explore', getAllExplores);
 
   // 	--------------------- Plugins ---------------------

@@ -1,7 +1,7 @@
 ---
 title: Pop!_OS Setup Guide
 description: I've recently moved from Windows to Pop!_OS. These are my notes for first time configuration to get myself up and running and refer back to later.
-category: guide
+tags: guides
 layout: post
 permalink: /guides/pop-os-setup/
 date: 2021-12-14
