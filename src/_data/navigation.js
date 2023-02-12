@@ -35,7 +35,7 @@ module.exports = {
       url: '/privacy/'
     },
     {
-      text: 'Styleguide',
+      text: 'Style Guide',
       url: '/styleguide'
     }
   ]

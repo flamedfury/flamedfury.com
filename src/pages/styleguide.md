@@ -1,9 +1,9 @@
 ---
-title: Styleguide
+title: Style Guide
 seo:
-  title: Styleguide
+  title: Flamed Fury Style Guide
 permalink: /styleguide/index.html
-description: Styleguide for flamedfury.com.
+description: This is the documented style guide for flamedfury.com.
 layout: page
 youtube: true
 ---
