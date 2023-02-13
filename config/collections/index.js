@@ -1,29 +1,36 @@
 /** Returns all blog posts as a collection. */
 const getAllPosts = collection => {
-  const projects = collection.getFilteredByGlob('./src/posts/*.md');
-  return projects.reverse();
+  const posts = collection.getFilteredByGlob('./src/posts/*.md');
+  return posts.reverse();
+};
+
+/** Returns all update posts as a collection. */
+const getAllUpdates = collection => {
+  const updates = collection.getFilteredByGlob('./src/posts/*.md');
+  return updates.filter(post => post.data.category === 'update').reverse();
 };
 
 /** Returns all about pages as a collection. */
 const getAllAbouts = collection => {
-  const projects = collection.getFilteredByGlob('./src/about/*.md');
-  return projects.reverse();
+  const abouts = collection.getFilteredByGlob('./src/about/*.md');
+  return abouts.reverse();
 };
 
 /** Returns all explore pages as a collection. */
 const getAllExplores = collection => {
-  const projects = collection.getFilteredByGlob('./src/explore/*.md');
-  return projects.reverse();
+  const explores = collection.getFilteredByGlob('./src/explore/*.md');
+  return explores.reverse();
 };
 
 /** Returns all interests pages as a collection. */
 const getAllInterests = collection => {
-  const projects = collection.getFilteredByGlob('./src/interests/*.md');
-  return projects.reverse();
+  const interests = collection.getFilteredByGlob('./src/interests/*.md');
+  return interests.reverse();
 };
 
 module.exports = {
   getAllPosts,
+  getAllUpdates,
   getAllAbouts,
   getAllExplores,
   getAllInterests

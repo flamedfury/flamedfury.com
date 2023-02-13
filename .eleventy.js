@@ -30,6 +30,7 @@ const {
 // module import collections
 const {
   getAllPosts,
+  getAllUpdates,
   getAllAbouts,
   getAllExplores,
   getAllInterests
@@ -96,8 +97,10 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
+  eleventyConfig.addCollection('updates', getAllUpdates);
   eleventyConfig.addCollection('about', getAllAbouts);
   eleventyConfig.addCollection('explore', getAllExplores);
+  eleventyConfig.addCollection('interests', getAllInterests);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);

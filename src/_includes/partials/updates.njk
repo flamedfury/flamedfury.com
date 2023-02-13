@@ -1,7 +1,13 @@
-<ul>
+<!-- <ul>
   {% for item in changelog.changeLog.slice(0, 10) %}
   <li>
     {{ item.date }}: {{ item.update }}
   </li>
+  {% endfor %}
+</ul> -->
+
+<ul>
+  {% for post in collections.updates | reverse | limit(5) %}
+  <li>{% set definedDate = post.date %} {% include "partials/date.njk" %}: {{ post.data.title }}</li>
   {% endfor %}
 </ul>
