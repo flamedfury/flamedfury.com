@@ -29,3 +29,7 @@
 .updates h3 {
   color: var(--color-light);
 }
+
+.updates li {
+  font-size: var(--size-step-0);
+}
