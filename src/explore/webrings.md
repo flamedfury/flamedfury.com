@@ -1,6 +1,7 @@
 ---
 title: Webrings
 description: Webrings were popular in the early days of the World Wide Web, before search engines became sophisticated, as a way for users to discover new websites and for website owners to promote their sites.
+date: 2023-01-07
 ---
 
 A webring is a collection of websites linked together in a circular structure. Webrings were popular in the early days of the web before search engines became as sophisticated as they are today. Webrings were used to help people find similar websites on a particular topic.
