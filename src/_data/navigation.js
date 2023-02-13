@@ -24,7 +24,7 @@ module.exports = {
   bottom: [
     {
       text: 'Back to top',
-      url: '#main'
+      url: '#top'
     },
     {
       text: 'PSA',
