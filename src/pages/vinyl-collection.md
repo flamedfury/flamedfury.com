@@ -1,7 +1,7 @@
 ---
 title: Vinyl Collection
 description: This page details my growing vinyl collection. It includes photos of the cover, sleeves and the vinyl itself, along with commentary on my thoughts on the packaging and the music itself.
-permalink: /recordshelf/vinyl-collection/index.html
+permalink: /interests/recordshelf/vinyl-collection/index.html
 layout: page
 date: 2022-03-22
 updated: 2023-01-23

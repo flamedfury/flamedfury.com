@@ -9,4 +9,4 @@ permalink: "//updates/{{ title | slugify }}/index.html"
 
 Today I've added the [Webrings](/explore/webrings) page to the [Explore](/explore/) section. Webrings were a big part of Web discovery. On this page, I've written a few paragraphs about what they are and how they work.
 
-The next update to the [Webrings](/explore/webrings) page will include the webrings that Flamed Fury is part of and a list of all current and active webrings that you may be interested in.
+**Future plans** include adding the webrings that Flamed Fury is part of and a list of all current and active webrings you may be interested in.
