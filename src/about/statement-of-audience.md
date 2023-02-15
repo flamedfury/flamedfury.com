@@ -1,8 +1,9 @@
 ---
 title: Statement of Audience
-description: flamedfury.com statement of audience based on the why i fucking hate weblogs essay
+description: The flamedfury.com statement of audience inspired by the essay "Why I Fucking Hate Weblogs".
 layout: page
 permalink: /about/statement-of-audience/index.html
+date: 2021-11-21
 ---
 
 I realise that nothing I say matters to anyone else on the entire planet. My opinions are useless and unfocused. I am an expert in nothing. I know nothing. I am confused about almost everything. I cannot, as an individual, ever possibly know everything, or even enough to make editorial commentary on the vast vast majority of things that exist in my world. 
