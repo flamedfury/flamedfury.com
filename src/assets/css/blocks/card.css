@@ -9,12 +9,12 @@
 
 .card ::selection {
   color: var(--color-dark);
-  background: var(--color-secondary);
+  background: var(--color-primary-glare);
 }
 
 .card.note span {
   font-size: var(--size-step-0);
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   border-radius: var(--border-radius);
   padding: 0.1rem 0.4rem;
   color: var(--color-dark);
@@ -37,10 +37,6 @@
 .card h2 a,
 .card h3 a {
   text-decoration: none;
-}
-
-.card time {
-  opacity: 0.8;
 }
 
 .card:not(.note):hover,
