@@ -4,7 +4,7 @@ description: 'All writing posts can be found here'
 layout: writing
 permalink: /writing/index.html
 writing:
-  title: Writing
+  title: Essays
   intro: One of my long-term goals is to write more. This goal includes learning how to write coherent and understandable essays. 
 guides:
   title: Guides
