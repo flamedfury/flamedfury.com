@@ -2,7 +2,9 @@
 layout: base
 ---
 
-<header class="section spot-color-secondary">
+<header class="section spot-color-primary">
+  {% include 'svg/divider-edgy.svg' %}
+
   <div class="section__inner region">
     <div class="wrapper flow">
       <section class="prose text-center">
@@ -22,59 +24,59 @@ layout: base
 
     <h3>Building your own homepage</h3>
 
-      <table>
-        <tbody>
+    <table>
+      <tbody>
         {% for item in manifesto.manifestoResourcesLearn %}
-          <tr>
-            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
-            <td>{{ item.siteDescription }}</td>
-          </tr>
+        <tr>
+          <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+          <td>{{ item.siteDescription }}</td>
+        </tr>
         {% endfor %}
-        </tbody>
-      </table>
+      </tbody>
+    </table>
 
     <h3>Hosting your own homepage</h3>
 
-      <table>
-        <tbody>
+    <table>
+      <tbody>
         {% for item in manifesto.manifestoResourcesHosting %}
-          <tr>
-            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
-            <td>{{ item.SiteDescription }}</td>
-          </tr>
+        <tr>
+          <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+          <td>{{ item.SiteDescription }}</td>
+        </tr>
         {% endfor %}
-        </tbody>
-      </table>
+      </tbody>
+    </table>
 
     <h3>Community Manifestos</h3>
 
     <p>A selection of my favourite Web manifestos.</p>
 
-      <table>
-        <tbody>
+    <table>
+      <tbody>
         {% for item in manifesto.manifestoCommunity %}
-          <tr>
-            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
-            <td>{{ item.siteDescription }}</td>
-          </tr>
+        <tr>
+          <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+          <td>{{ item.siteDescription }}</td>
+        </tr>
         {% endfor %}
-        </tbody>
-      </table>
-      
+      </tbody>
+    </table>
+
     <h3>Read more about the personal, small, and open web</h3>
 
     <p>A collection of bookmarks. There are absolute gems in here of others who share similar thoughts.</p>
-    
-      <table>
-        <tbody>
+
+    <table>
+      <tbody>
         {% for item in manifesto.manifestoSites %}
-          <tr>
-            <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
-            <td>{{ item.siteDescription }}</td>
-          </tr>
+        <tr>
+          <td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+          <td>{{ item.siteDescription }}</td>
+        </tr>
         {% endfor %}
-        </tbody>
-      </table>
+      </tbody>
+    </table>
 
   </div>
 </article>

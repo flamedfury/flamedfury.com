@@ -2,9 +2,9 @@
 layout: base
 ---
 
-<header class="section spot-color-secondary">
+<header class="section spot-color-primary">
   {% include 'svg/divider-edgy.svg' %}
-  
+
   <div class="section__inner region">
     <div class="wrapper flow">
       <section class="prose text-center">
@@ -20,40 +20,4 @@ layout: base
   <div class="wrapper flow prose">
     {{ content | safe }}
   </div>
-</article>
-
-<article class="wrapper region">
-
-  <div class="wrapper flow prose">
-    <h2>{{ recently.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if recently.intro %}
-    <p>{{ recently.intro }}</p>
-    {% endif %}
-  </div>
-
-  {% set recentlyPlayed = lastfm.recenttracks.track %}
-
-  {% if recentlyPlayed.length %}
-  <ul class="features grid mt-l-xl" role="list" >
-    {% for item in recentlyPlayed %}
-      <li class="card flow clickable-card overflow-hidden" style="
-      background-image: 
-        linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),
-        url('{{ item.image[3]['#text'] }}');
-      object-fit: cover;
-      height: 300px;
-      ">
-        <a href="{{ item.url }}">
-          <p>{{ item.name }}</p>
-          <p>{{ item.artist['#text'] }}</p>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-
 </article>
