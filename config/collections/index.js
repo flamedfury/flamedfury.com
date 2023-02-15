@@ -28,10 +28,17 @@ const getAllInterests = collection => {
   return interests.reverse();
 };
 
+/** Returns all pages with the music category as a collection. */
+const getAllMusic = collection => {
+  const music = collection.getFilteredByGlob('./src/pages/*.md');
+  return music.filter(page => page.data.category === 'music').reverse();
+};
+
 module.exports = {
   getAllPosts,
   getAllUpdates,
   getAllAbouts,
   getAllExplores,
-  getAllInterests
+  getAllInterests,
+  getAllMusic,
 };
