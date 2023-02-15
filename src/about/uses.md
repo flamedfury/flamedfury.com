@@ -1,5 +1,5 @@
 ---
-title: Uses
+title: /uses
 description: A few of the things that I use daily.
 layout: page
 permalink: /uses/index.html
