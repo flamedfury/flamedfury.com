@@ -13,14 +13,14 @@ module.exports = {
   skipContent: 'Skip to content',
   toc: 'Table of contents',
   skipToc: 'Skip table of contents',
-  author: 'fLaMEd', // i.e. Lene Saile - author's name. Must be set.
-  authorEmail: 'flamed@flamedfury.com', // i.e. hola@lenesaile.com - email of the author
-  authorWebsite: 'https://flamedfury.com', // i.e. https.://www.lenesaile.com - the personal site of the author
+  author: 'fLaMEd',
+  authorEmail: 'flamed@flamedfury.com',
+  authorWebsite: 'https://flamedfury.com',
   themeColor: '#f05123', //  Manifest: defines the default theme color for the application
   themeBgColor: '#252525', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.jpg',
-    mastodonProfile: '' // i.e. https://front-end.social/@lene - url to your mastodon instance/profile
+    mastodonProfile: '' // i.e. https://front-end.social/@flamed - url to your mastodon instance/profile
   },
   blog: {
     // this is for the rss feed
