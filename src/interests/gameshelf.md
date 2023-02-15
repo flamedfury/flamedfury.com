@@ -1,6 +1,7 @@
 ---
-title: 'Gameshelf'
-description: 'My collection of video games.'
+title: Gameshelf
+description: I've loved computer games forever. I miss having the time and energy I used to have for them. This section collects all my gaming related pages.
+permalink: /gameshelf/index.html
 date: 2021-02-22
 updated: 2023-01-06
 ---

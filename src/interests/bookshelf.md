@@ -1,7 +1,8 @@
 ---
-title: 'Bookshelf'
-description: 'My collection of books.'
+title: Bookshelf
+description: I've always been a big reader. I'm into audiobooks too. This section collects all my book related pages.
 layout: bookshelf.njk
+permalink: /bookshelf/index.html
 date: 2021-01-12
 updated: 2023-01-06
 ---

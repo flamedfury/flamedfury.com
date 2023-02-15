@@ -1,10 +1,8 @@
 ---
-title: 'Recordshelf'
-description: 'My collection of music.'
+title: Recordshelf
+description: Music has always been a massive part of my life. This section collects all my music related pages.
 layout: recordshelf.njk
-recently:
-  title: "Recently listend to"
-  intro: "It's not often that I'm not listening to music. Check out my most recently listend to tracks from last.fm."
+permalink: /recordshelf/index.html
 date: 2021-01-12
 updated: 2023-01-06
 ---

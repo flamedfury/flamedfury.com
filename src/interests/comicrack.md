@@ -1,6 +1,7 @@
 ---
-title: 'Comic Rack'
-description: 'My collection of comics.'
+title: Comics
+description: I love collecting and reading comics, especially the X-Men. This section collecst all my comic related pages.
+permalink: /comics/index.html
 date: 2021-01-12
 updated: 2023-01-06
 ---
