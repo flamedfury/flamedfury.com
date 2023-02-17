@@ -3,6 +3,7 @@ title: Recordshelf
 description: Music has always been a massive part of my life. This section collects all my music related pages.
 layout: recordshelf.njk
 permalink: /recordshelf/index.html
+category: collections
 date: 2021-01-12
 updated: 2023-01-06
 ---

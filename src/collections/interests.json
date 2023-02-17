@@ -1,0 +1,5 @@
+{
+  "layout": "page",
+  "tags": "collections",
+  "permalink": "//{{ title | slugify }}/index.html"
+}

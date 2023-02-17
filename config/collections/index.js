@@ -22,10 +22,10 @@ const getAllExplores = collection => {
   return explores.reverse();
 };
 
-/** Returns all interests pages as a collection. */
-const getAllInterests = collection => {
-  const interests = collection.getFilteredByGlob('./src/interests/*.md');
-  return interests.reverse();
+/** Returns all collection (lol) pages as a collection. */
+const getAllCollections = collection => {
+  const collections = collection.getFilteredByGlob('./src/pages/*.md');
+  return collections.filter(page => page.data.category === 'collections').reverse();
 };
 
 /** Returns all pages with the music category as a collection. */
@@ -39,6 +39,6 @@ module.exports = {
   getAllUpdates,
   getAllAbouts,
   getAllExplores,
-  getAllInterests,
+  getAllCollections,
   getAllMusic,
 };

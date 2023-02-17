@@ -33,7 +33,7 @@ const {
   getAllUpdates,
   getAllAbouts,
   getAllExplores,
-  getAllInterests,
+  getAllCollections,
   getAllMusic
 } = require('./config/collections/index.js');
 
@@ -101,7 +101,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('updates', getAllUpdates);
   eleventyConfig.addCollection('about', getAllAbouts);
   eleventyConfig.addCollection('explore', getAllExplores);
-  eleventyConfig.addCollection('interests', getAllInterests);
+  eleventyConfig.addCollection('collections', getAllCollections);
   eleventyConfig.addCollection('music', getAllMusic);
 
   // 	--------------------- Plugins ---------------------

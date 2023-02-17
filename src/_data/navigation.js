@@ -1,8 +1,8 @@
 module.exports = {
   top: [
     {
-      text: 'Interests',
-      url: '/interests/'
+      text: 'Collections',
+      url: '/collections/'
     },
     {
       text: 'Writing',
