@@ -84,6 +84,20 @@ img {
 }
 
 /* Base interactive elements */
+article [href^='http']:not([href*='flamedfury.com']):not[img]::after {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('/assets/images/icn-external.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% auto;
+  /* alternative text rules */
+  content: '(external link)';
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 1em; /* the width of the icon */
+}
 
 a {
   color: currentcolor;
@@ -116,20 +130,10 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='flamedfury.com']):not[img]::after {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-image: url('/assets/images/icn-external.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60% auto;
-  /* alternative text rules */
-  content: '(external link)';
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
+article a {
+  color: var(--color-primary);
 }
+
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
