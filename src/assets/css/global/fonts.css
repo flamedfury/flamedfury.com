@@ -25,6 +25,6 @@
   font-display: swap;
   font-weight: 400;
   src: local(''),
-    url(/assets/fonts/Londrina/londrinasolid-regular-webfont.woff2) format('woff2'),
+    url(/assets/fonts/londrina/londrinasolid-regular-webfont.woff2) format('woff2'),
     url(/assets/fonts/londrina/londrinasolid-regular-webfont.woff) format('woff');
 }
