@@ -6,14 +6,11 @@
 	border-top: 2px dashed;
 	border-bottom: 2px dashed;
 	padding: var(--space-s-m) 0;
+	position: relative;
 }
 
 .vinyl:last-child {
 	border-top: none;
-}
-
-.vinyl p {
-	margin-bottom: var(--flow-space,1em);
 }
 
 .vinyl img {

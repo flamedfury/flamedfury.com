@@ -1,11 +1,14 @@
 {%- for item in vinyl.singles -%}
-<article class="content mx-auto">
-  <div class="vinyl sidebar relative">
-    {% image item.image, "bg-transparent", "vinyl.alt", "(max-width: 463px) 400px, (max-width: 718px) 700px,
-    (max-width: 912px) 400px, 700px" %}
-    <div class="flow">
-      <h3>{{ item.title }}</h3>
+<article class="content">
+  <h3 style="font-size: var(--size-step-2); max-width: 50ch;">{{ item.title }}</h3>
+  <div class="vinyl sidebar">
+    <div class="region" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
+      {% image item.image, "bg-transparent", "item.alt", "(max-width: 463px) 400px, (max-width: 718px) 700px,
+      (max-width: 912px) 400px, 700px" %}
+    </div>
+    <div class="flow region" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
       <p>
+        <span class="block upper">Artist: {{ item.artist }}</span>
         <span class="block uppercase">Info: {{ item.format }} / {{ item.year }}, {{ item.genre }}</span>
         <span class="block uppercase">Label: {{ item.label }} {{ item.code }}</span>
         <span class="block uppercase">Release: {{ item.varient }} {{ item.number }}</span>
