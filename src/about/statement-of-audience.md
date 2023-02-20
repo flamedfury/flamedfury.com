@@ -2,7 +2,8 @@
 title: Statement of Audience
 description: The flamedfury.com statement of audience inspired by the essay "Why I Fucking Hate Weblogs".
 layout: page
-permalink: /about/statement-of-audience/index.html
+tags: about
+permalink: /statement-of-audience/index.html
 date: 2021-11-21
 ---
 

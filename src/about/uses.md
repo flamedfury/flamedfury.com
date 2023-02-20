@@ -2,6 +2,7 @@
 title: /uses
 description: A few of the things that I use daily.
 layout: page
+tags: about
 permalink: /uses/index.html
 date: 2023-02-15
 ---
