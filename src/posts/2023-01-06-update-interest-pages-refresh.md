@@ -7,4 +7,4 @@ tags: updates
 permalink: "//updates/{{ title | slugify }}/index.html"
 ---
 
-Today I rewrote and updated the [Comic Rack](/interests/comic-rack), [Bookshelf](/interests/bookshelf/), and [Recordshelf](/interests/recordshelf) pages.
+Today I rewrote and updated the [Comic Rack](/comics/), [Bookshelf](/bookshelf/), and [Recordshelf](/recordshelf) pages.
