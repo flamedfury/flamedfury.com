@@ -11,5 +11,4 @@ guides:
   intro: This is my collection of guides.
 ---
 
-This page collects all written posts and is organised by tag. You can also browse the unfiltered [posts page](/posts/).
-
+This page collects all written posts and is organised by type. 
