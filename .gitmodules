@@ -1,0 +1,3 @@
+[submodule "src/_data/metadata-library"]
+	path = src/_data/metadata-library
+	url = https://github.com/flamedfury/metadata-library

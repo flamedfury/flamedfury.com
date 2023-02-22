@@ -1,0 +1,73 @@
+---
+layout: base
+---
+
+<article class="region">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    {{ content | safe }}
+
+    <style>
+      .collection-page {
+        position: relative;
+        max-width: 1000px;
+
+      }
+
+      .collection-page .collection-items {
+        list-style: none;
+      }
+
+      .collection .collection-items .collection-item {
+        display: block;
+        font-size: 16px;
+        line-height: 1.3;
+        text-decoration: none;
+      }
+
+      .collection-items {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+        margin: 1em auto;
+        list-style: none;
+        padding: 0;
+      }
+
+      .collection-item-img-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 0.25em;
+        margin-bottom: 0.5em;
+      }
+
+      .collection-item-img-book {
+        height: 165px;
+        width: auto;
+        position: relative;
+      }
+    </style>
+
+    <h2>Books</h2>
+
+    <div class="collection-page">
+      <ul class="collection-items" class="collection-item">
+        {% for book in metadata-library._data.read | reverse %}
+        <li>
+          <div>
+            <div class="collection-item-img-wrapper">
+              <img class="collection-item-img-book" alt="" src="{{ book.thumbnail }}">
+            </div>
+            <div>{{ book.title }}</div>
+            <div class="collection-item-meta">
+              <div>{{ book.authors | join(', ') }}</div>
+              {% if not book.dateFinished %}<div><em>(Now reading)</em></div>{% endif %}
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</article>
