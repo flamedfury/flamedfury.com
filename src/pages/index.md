@@ -19,8 +19,6 @@ Think of it as a throwback to the old everything/nothing websites of the early 2
 
 I've made browsing Flamed Fury as simple as it can be and divided it into four main sections that you can find in the top navigation. 
 
-I've made browsing Flamed Fury as simple as it can be and divided it into four main sections that you can find in the top navigation. 
-
 The Collections section collects details about my interests and hobbies. I'm into [books](/bookshelf/), [comics](/comics/), [games](/gameshelf/), [music](/recordshelf/), skateboarding and brewing beer.  Make sure to check out the [Mixtapes](/recordshelf/mixtapes/) and [Vinyl Collection](/recordshelf/vinyl/) pages.
 
 The Writing section collects posts that I've written, essays and guides. My [Web Manifesto](/manifesto/) is an excellent place to start.

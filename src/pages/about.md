@@ -7,8 +7,6 @@ layout: about
 
 Kia ora 👋, I'm fLaMEd 🔥 I'm the webmaster of fLaMEdFURY. I have been a citizen of the Internet since [1996](/memories/). I love the Web (as well as the Internet), but not all things about the Web. I dislike the modern Web's current commercialisation, monetisation, and walled garden silo approach. [I wrote about that](/manifesto/).
 
-I'm the webmaster of fLaMEdFURY. I have been a citizen of the Internet since [1996](/memories/). I love the Web (as well as the Internet), but not all things about the Web. I dislike the modern Web's current commercialisation, monetisation, and walled garden silo approach. [I wrote about that](/manifesto/).
-
 I enjoy keeping fit by lifting weights and riding my spin bike in my garage gym. To ensure I leave the house during the day, I walk our dogs twice daily and take advantage of the beautiful bush walks in the regional park across the road.
 
 Working out, walking the dogs, or doing chores around the house, I'm most likely listening to [music](/recordshelf/) or an [audiobook](/bookshelf/). It's not often that I'm not!
