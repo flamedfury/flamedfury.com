@@ -22,7 +22,6 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
