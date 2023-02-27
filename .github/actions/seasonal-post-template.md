@@ -23,6 +23,6 @@ ${bookMarkdown}
 
 ${playlistMarkdown}
 
-## Recipes
+## Articles
 
 ${bookmarkMarkdown}
