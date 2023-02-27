@@ -1,7 +1,12 @@
 ---
 title: ${year} ${season}
-image: ${image}
+description: The books and articles I read, playlist I made this ${season}.
+image: 2023-summer.png
+tags: post
 category: season
+layout: post
+permalink: "//posts/{{ title | slugify }}/index.html"
+image: ${image}
 layout: post
 ${bookYaml}
 ${bookmarkYaml}
