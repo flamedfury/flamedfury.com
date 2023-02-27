@@ -1,6 +1,6 @@
 ---
 title: ${year} ${season}
-description: The books and articles I read, playlist I made this ${season}.
+description: The books I read, playlist I made, and articles I read this ${season}.
 image: 2023-summer.png
 tags: post
 category: season
@@ -13,7 +13,7 @@ ${bookmarkYaml}
 ${playlistYaml}
 ---
 
-The books I read, playlist I made, and recipes I made this ${season}.
+The books I read, playlist I made, and articles I read this ${season}.
 
 ## Books
 
