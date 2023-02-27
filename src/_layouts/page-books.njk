@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+<article class="region">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    {{ content | safe }}
+  </div>
+</article>
+
+<article class="wrapper region content">
+  <div class="grid breakout" style="--grid-min-item-size: 10rem">
+    {% for book in metadataread | reverse %}
+
+    <div class="flow">
+      <img src="{{ book.thumbnail }}">
+
+      <p>{{ book.title }}</p>
+      <p>{{ book.authors }}</p>
+    </div>
+
+    {% endfor %}
+  </div>
+</article>
