@@ -27,7 +27,7 @@ jobs:
           source-bookmarks: bookmarks|_data/bookmarks.json
           seasonal-post-template: .github/actions/seasonal-post-template.md
         env:
-          TOKEN: ${{ secrets.TOKEN }}f
+          TOKEN: ${{ secrets.TOKEN }}
       - name: Commit files
         run: |
           git pull
