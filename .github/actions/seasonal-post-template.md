@@ -6,7 +6,6 @@ tags: post
 category: season
 layout: post
 permalink: "//posts/{{ title | slugify }}/index.html"
-image: ${image}
 layout: post
 ${bookYaml}
 ${bookmarkYaml}
