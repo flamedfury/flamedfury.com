@@ -23,7 +23,7 @@ jobs:
           github-repository: metadata-library
           season-names: Summer,Autumn,Winter,Spring
           season-emoji: ☀️,🍂,❄️,🌷
-          posts-directory: /src/posts/
+          posts-directory: ./src/posts/
           source-bookmarks: bookmarks|_data/bookmarks.json
           seasonal-post-template: .github/actions/seasonal-post-template.md
         env:
