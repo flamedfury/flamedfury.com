@@ -3,13 +3,14 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog">
+<article class="region post">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
 
-    <p>Published: {% set definedDate = date %} {% include "partials/date.njk" %}</p>
-
-    <p>Updated: {% set definedDate = updated %} {% include "partials/date.njk" %}</p>
+    <p style="font-size: var(--size-step-0)">
+      <span class="block">Published: {% set definedDate = date %} {% include "partials/date.njk" %}</span>
+      <span class="block">Updated: {% set definedDate = updated %} {% include "partials/date.njk" %}</span>
+    </p>
 
     {{ content | safe }}
   </div>
