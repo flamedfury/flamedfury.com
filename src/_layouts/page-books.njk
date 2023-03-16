@@ -10,14 +10,16 @@ layout: base
 </article>
 
 <article class="wrapper region content">
-  <div class="grid breakout" style="--grid-min-item-size: 10rem">
+  <div class="auto-grid breakout" style="--grid-min-item-size: 10rem">
     {% for book in metadataread | reverse %}
 
     <div class="flow">
       <img src="{{ book.thumbnail }}">
 
-      <p>{{ book.title }}</p>
-      <p>{{ book.authors }}</p>
+      <p style="font-size: var(--size-step-0)">
+        <span class="block">{{ book.title }}</span>
+        <span class="block"></span>{{ book.authors }}</span>
+      </p>
     </div>
 
     {% endfor %}
