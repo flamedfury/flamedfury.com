@@ -13,11 +13,19 @@
   grid-column: 2;
 }
 
+.content figure,
 .content .breakout {
   width: 100%;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 }
 
 .content :is(h2, h3, h4) + * {
   --flow-space: var(--space-s-m);
+}
+
+.content .heading-anchor:is(:hover, :focus) {
+  text-decoration: none;
+}
+.content .heading-anchor {
+  text-decoration: none;
 }
