@@ -11,7 +11,7 @@ const imageShortcodePlaceholder = async (src, alt, caption, sizes = '100vw') => 
     widths: [400, 700, 1280],
     formats: ['avif', 'webp', 'jpeg'],
     urlPath: '/assets/images/',
-    outputDir: './dist/assets/images/generated',
+    outputDir: './dist/assets/images/',
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
