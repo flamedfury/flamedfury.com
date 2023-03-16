@@ -6,7 +6,7 @@ module.exports = {
     },
     {
       text: 'Writing',
-      url: '/writing/'
+      url: '/posts/'
     },
     {
       text: 'Explore',

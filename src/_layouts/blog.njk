@@ -7,7 +7,7 @@ layout: base
 
   <div class="section__inner region">
     <div class="wrapper flow">
-      <section class="prose text-center">
+      <section class="text-center">
         <h1 class="fade-in">{{ title }}</h1>
       </section>
     </div>
@@ -16,8 +16,46 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+<article class="region">
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+  </div>
+</article>
+
+<!--[ writing stream. ]-->
+<article class="region">
+  <div class="wrapper flow content">
+    <h2>{{ writing.title }}</h2>
+    <!-- intro text is optional. -->
+    {% if writing.intro %}
+    <p>{{ writing.intro }}</p>
+    {% endif %}
+  </div>
+
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for post in collections.writing %}
+
+    <li id="{{ post.data.title | slugify }}"" class=" card flow overflow-hidden">
+      <h2>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h2>
+      {% set definedDate = post.date %} {% include "partials/date.njk" %}
+      <p>{{ post.data.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<article class="region">
+  <div class="wrapper flow content">
+    <h2>{{ posts.title }}</h2>
+    <!-- intro text is optional. -->
+    {% if posts.intro %}
+    <p>{{ posts.intro }}</p>
+    {% endif %}
+  </div>
+
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% set postslist = collections.posts %} {% for post in postslist %} {%
     include "partials/post-loop.njk" %}
 
