@@ -23,11 +23,7 @@ excludeFromSitemap: true
     <link href="{{ absolutePostUrl }}" />
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content
-      xml:lang="{{ locale }}"
-      type="html"
-      >{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content
-    >
+    <content xml:lang="{{ locale }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
 </feed>
