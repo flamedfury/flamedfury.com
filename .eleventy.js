@@ -17,7 +17,8 @@ const {
   toAbsoluteUrl,
   stripHtml,
   minifyCss,
-  mdInline
+  mdInline,
+  splitlines
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -37,7 +38,8 @@ const {
   getAllMusic
 } = require('./config/collections/index.js');
 
-// module import transforms
+// module import events
+const { svgToJpeg } = require('./config/events/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -77,6 +79,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('cssmin', minifyCss);
   eleventyConfig.addFilter('md', mdInline);
+  eleventyConfig.addFilter('splitlines', splitlines);
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
@@ -88,11 +91,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
 
   // 	--------------------- Custom transforms ---------------------
-
   eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
 
   // 	--------------------- Custom Template Languages ---------------------
-
   eleventyConfig.addPlugin(require('./config/template-languages/css-config.js'));
   eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
 
@@ -103,6 +104,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('explore', getAllExplores);
   eleventyConfig.addCollection('collections', getAllCollections);
   eleventyConfig.addCollection('music', getAllMusic);
+
+  // 	--------------------- Events ---------------------
+  eleventyConfig.on('afterBuild', svgToJpeg);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
