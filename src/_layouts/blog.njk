@@ -28,20 +28,21 @@ layout: base
     <h2>{{ writing.title }}</h2>
     <!-- intro text is optional. -->
     {% if writing.intro %}
-    <p>{{ writing.intro }}</p>
+      <p>{{ writing.intro }}</p>
     {% endif %}
   </div>
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for post in collections.writing %}
 
-    <li id="{{ post.data.title | slugify }}"" class=" card flow overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
+      <li id="{{ post.data.title | slugify }}"" class=" card flow overflow-hidden">
+        <h2>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h2>
+        {% set definedDate = post.date %}
+        {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </li>
     {% endfor %}
   </ul>
 </article>
@@ -51,14 +52,15 @@ layout: base
     <h2>{{ posts.title }}</h2>
     <!-- intro text is optional. -->
     {% if posts.intro %}
-    <p>{{ posts.intro }}</p>
+      <p>{{ posts.intro }}</p>
     {% endif %}
+    {% include "partials/tag-loop.njk" %}
   </div>
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist %} {%
-    include "partials/post-loop.njk" %}
-
+    {% set postslist = collections.posts %}
+    {% for post in postslist %}
+      {% include "partials/post-loop.njk" %}
     {% endfor %}
   </ul>
 </article>
