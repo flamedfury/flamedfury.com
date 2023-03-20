@@ -1,0 +1,31 @@
+---
+layout: base
+---
+
+<article class="region">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    {{ content | safe }}
+  </div>
+</article>
+
+<article class="wrapper region content">
+  <div class="grid breakout" style="--grid-min-item-size: 20rem">
+
+    {% for article in metadatabookmarks | reverse %}
+      <div class="flow" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
+        <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ article.image }}">
+        <span class="block uppercase" style="font-size: 1rem">
+          <a href="{{ article.url }}">{{ article.site }}</a>
+        </span>
+        <span class="block">
+          <a href="{{ article.url }}">{{ article.title }}</a>
+        </span>
+        <p style="font-size: 1rem">
+          {{ article.notes }}
+        </p>
+      </div>
+    {%- endfor -%}
+
+  </div>
+</article>
