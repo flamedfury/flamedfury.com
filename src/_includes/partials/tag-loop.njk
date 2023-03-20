@@ -1,8 +1,9 @@
-{# <div class="cluster" style="gap: var(--space-s);">
-  {% for tag in collections.all | getAllTags | filterTagList %}
-    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<div class="cluster" style="gap: var(--space-s);">
+  {%- for tag, posts in collections | dictsort -%}
+    {%- if tag != "all" and tag != "posts" %}
 
-    <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
+      <a href="/tags/{{ tag }}/">{{ tag }}</a>
 
-  {% endfor %}
-</div> #}
+    {%- endif -%}
+  {%- endfor %}
+</div>

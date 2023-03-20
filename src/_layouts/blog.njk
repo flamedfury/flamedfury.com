@@ -35,7 +35,7 @@ layout: base
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for post in collections.writing %}
 
-      <li id="{{ post.data.title | slugify }}"" class=" card flow overflow-hidden">
+      <li id="{{ post.data.title | slugify }}" class="card flow overflow-hidden">
         <h2>
           <a href="{{ post.url | url }}">{{ post.data.title }}</a>
         </h2>
