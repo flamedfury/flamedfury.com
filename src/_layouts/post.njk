@@ -8,8 +8,12 @@ schema: blog
     <h1 class="gradient-text">{{ title }}</h1>
 
     <p style="font-size: var(--size-step-0)">
-      <span class="block">Published: {% set definedDate = date %} {% include "partials/date.njk" %}</span>
-      <span class="block">Updated: {% set definedDate = updated %} {% include "partials/date.njk" %}</span>
+      <span class="block">Published: {% set definedDate = date %}
+        {% include "partials/date.njk" %}</span>
+      {% if updated %}
+        <span class="block">Updated: {% set definedDate = updated %}
+          {% include "partials/date.njk" %}</span>
+      {% endif %}
     </p>
 
     {{ content | safe }}

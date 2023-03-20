@@ -1,8 +1,8 @@
-<div class="cluster" style="gap: var(--space-s);">
+{# <div class="cluster" style="gap: var(--space-s);">
   {% for tag in collections.all | getAllTags | filterTagList %}
     {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 
     <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
 
   {% endfor %}
-</div>
+</div> #}
