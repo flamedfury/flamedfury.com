@@ -1,0 +1,45 @@
+---
+layout: base
+schema: blog
+---
+
+<article class="region blog">
+  <div class="wrapper flow content">
+    <h1 class="gradient-text">{{ title }}</h1>
+
+    <p style="font-size: var(--size-step-0)">
+      <span class="block">Published: {% set definedDate = date %}
+        {% include "partials/date.njk" %}</span>
+      {% if updated %}
+        <span class="block">Updated: {% set definedDate = updated %}
+          {% include "partials/date.njk" %}</span>
+      {% endif %}
+    </p>
+
+    {% set media = [] %}
+    {% if page.books %}
+      {% set _ = media.push('books') %}
+    {% endif %}
+    {% if page.tracks %}
+      {% set _ = media.push('playlist') %}
+    {% endif %}
+    {% if page.bookmarks %}
+      {% set _ = media.push('bookmarks') %}
+    {% endif %}
+
+    {{ content | safe }}
+
+    {% if page.books %}
+      <h2 id="books">Books</h2>
+      {% include "post/books.html" %}
+    {% endif %}
+    {% if page.tracks %}
+      <h2 id="playlist">Playlist</h2>
+      {% include "post/playlist.html" %}
+    {% endif %}
+    {% if page.recipes %}
+      <h2 id="recipes">Recipes</h2>
+      {% include "post/recipes.html" %}
+    {% endif %}
+  </div>
+</article>
