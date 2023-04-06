@@ -3,7 +3,6 @@ title: Dragonflight Season One Recap
 description: Dragonflight season one is almost over, so I've spent a few minutes reflecting on my achievements.
 tags: [gaming, warcraft]
 date: 2023-03-26
-
 ---
 
 My World of Warcraft guild [<Ascent>](https://raider.io/guilds/us/amanthul/Ascent) completed our last raid for Dragonflight Season One tonight. 
