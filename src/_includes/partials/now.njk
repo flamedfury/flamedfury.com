@@ -1,0 +1,59 @@
+<article class="">
+  <h2>Reading: books</h2>
+  <ul>
+    {% for book in metadataread | reverse %}
+      {% if book.status == 'started' %}
+        <li>
+          <a href="{{book.link}}">
+            {{ book.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</article>
+
+<article class="">
+  <h2>Listening: artists</h2>
+  {% for artist in artists %}
+    <p>
+      <a href="{{artist.url}}" title="{{artist.name | escape}}">{{artist.name}}</a>: {{artist.playcount}} plays
+  </p>
+  {% endfor %}
+</article>
+
+<article class="">
+  <h2>Listening: tracks</h2>
+  {% for track in tracks %}
+    <p>
+      <a href="{{track.url}}" title="{{track.name | escape}}">{{track.artist.name}} - {{track.name}}</a>: {{track.playcount}} plays
+  </p>
+  {% endfor %}
+</article>
+
+<article class="">
+  <h2>Listening: albums</h2>
+  <div class="grid breakout" style="--grid-min-item-size: 10rem">
+    {% for album in albums %}
+      <div class="flow">
+        <img src="{{album.image[3]['#text']}}" width="150px" height="150px" alt="A photo of the cover art for {{album.name}}">
+        <p style="font-size: 1rem">
+          <a href="{{album.url}}" title="{{album.name}}">{{album.name}} - {{album.artist.name}}</a>
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</article>
+
+<article class="">
+  <h2>Watching: tv</h2>
+  {% for show in tv %}
+    <ul>
+      <li>
+        <a href="{{show.link}}" title="{{show.title | escape}}">
+          {{show.title}}
+        </a>
+      </li>
+    </ul>
+  {% endfor %}
+</article>
