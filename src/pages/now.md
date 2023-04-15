@@ -2,7 +2,7 @@
 title: Now
 permalink: /now/index.html
 description: My now page
-layout: page
+layout: now.njk
 ---
 
-{% include "partials/now.njk" %}
+This is my now page.
