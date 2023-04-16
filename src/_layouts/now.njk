@@ -39,15 +39,18 @@ layout: page
 </article>
 
 <article class="region">
-  <div class="wrapper">
+  <div class="wrapper flow">
     <h2>Listening: tracks</h2>
-    {% for track in tracks %}
-      <ul>
-        <li>
-          <a href="{{track.url}}" title="{{track.name | escape}}">{{track.artist.name}} - {{track.name}}</a>: {{track.playcount}} plays
-        </li>
-      </ul>
-    {% endfor %}
+    <div class="grid breakout" style="--grid-min-item-size: 10rem">
+      {% for track in tracks %}
+        <div class="flow">
+          <img src="{{ track.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
+          <p style="font-size: 1rem">
+            <a href="{{track.url}}" title="{{track.name | escape}}">{{track.artist.name}} - {{track.name}}</a>: {{track.playcount}} plays
+        </p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </article>
 
@@ -75,6 +78,21 @@ layout: page
         <li>
           <a href="{{show.link}}" title="{{show.title | escape}}">
             {{show.title}}
+          </a>
+        </li>
+      </ul>
+    {% endfor %}
+  </div>
+</article>
+
+<article class="region">
+  <div class="wrapper">
+    <h2>Watching: movies</h2>
+    {% for movie in movies %}
+      <ul>
+        <li>
+          <a href="{{movie.link}}" title="{{movie.title | escape}}">
+            {{movie.title}}
           </a>
         </li>
       </ul>
