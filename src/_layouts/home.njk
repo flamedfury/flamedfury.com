@@ -12,7 +12,7 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<section class="region home">
+<article class="region home">
   <div class="wrapper sidebar" data-direction="rtl">
     <div class="welcome">
       <article class="wrapper flow prose">
@@ -23,7 +23,7 @@ layout: base
         </div>
       </article>
     </div>
-    <aside class="updates region">
+    <aside class="region updates">
       <div class="wrapper flow prose">
         <h3>{{ updates.title }}</h3>
 
@@ -31,31 +31,30 @@ layout: base
           {% include "partials/updates.njk" %}
         </div>
       </div>
+
     </aside>
   </div>
-</section>
+</article>
 
-<section>
-  <article class="region" style="--region-space-top: var(--space-s)">
-    <div class="wrapper flow prose">
-      <h2>Recent posts</h2>
-      <p>These are my most recent posts. More are available to read on the <a href="posts">posts page</a>.</p>
-    </div>
+<article class="region" style="--region-space-top: var(--space-s)">
+  <div class="wrapper flow prose">
+    <h2>Recent posts</h2>
+    <p>These are my most recent posts. More are available to read on the <a href="posts">posts page</a>.</p>
+  </div>
 
-    <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-      {% set postslist = collections.posts %}
-      {% for post in postslist.slice(0, 6) %}
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.posts %}
+    {% for post in postslist.slice(0, 6) %}
 
-        <li class="card flow overflow-hidden">
-          <h3>
-            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-          </h3>
-          {% set definedDate = post.date %}
-          {% include "partials/date.njk" %}
-          <p>{{ post.data.description }}</p>
-        </li>
+      <li class="card flow overflow-hidden">
+        <h3>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h3>
+        {% set definedDate = post.date %}
+        {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </li>
 
-      {% endfor %}
-    </ul>
-  </article>
-</section>
+    {% endfor %}
+  </ul>
+</article>
