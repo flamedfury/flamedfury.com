@@ -1,19 +1,21 @@
 {% if post.data.category == "update" %}
 
-<li id="{{ post.data.title | slugify }}" class="card flow overflow-hidden note">
-  <span>Site Update</span>
-  {% set definedDate = post.date %} {% include "partials/date.njk" %}
+  <li id="{{ post.data.title | slugify }}" class="card flow overflow-hidden note">
+    <span>Site Update</span>
+    {% set definedDate = post.date %}
+    {% include "partials/date.njk" %}
 
-  {{ post.data.content | safe }}
-</li>
+    {{ post.data.content | safe }}
+  </li>
 
 {% else %}
 
-<li id="{{ post.data.title | slugify }}"" class=" card flow overflow-hidden">
-  <h2>
-    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-  </h2>
-  {% set definedDate = post.date %} {% include "partials/date.njk" %}
-  <p>{{ post.data.description }}</p>
-</li>
+  <li id="{{ post.data.title | slugify }}" class=" card flow overflow-hidden">
+    <h2>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h2>
+    {% set definedDate = post.date %}
+    {% include "partials/date.njk" %}
+    <p>{{ post.data.description }}</p>
+  </li>
 {% endif %}
