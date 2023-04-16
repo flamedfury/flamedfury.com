@@ -12,7 +12,7 @@ layout: base
 <article class="wrapper region content">
   <div class="grid breakout" style="--grid-min-item-size: 10rem">
 
-    {% for book in metadataread | reverse %}
+    {% for book in metadataread | sort(true, true, 'dateFinished')%}
       <div class="flow">
         <img src="{{ book.thumbnail }}">
 
