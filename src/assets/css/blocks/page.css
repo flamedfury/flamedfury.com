@@ -1,4 +1,5 @@
 .page img {
-  width: 100%;
-  height: auto;
+  max-inline-size: var(--max-img-width, 100%);
+  block-size: auto;
+  border-radius: var(--space-xs, 1rem);
 }
