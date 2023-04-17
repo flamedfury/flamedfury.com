@@ -26,6 +26,19 @@ layout: page
 </article>
 
 <article class="region">
+  <div class="wrapper flow">
+    <h2>Playing: games</h2>
+    <ul>
+      {% for game in games %}
+        <li>
+          {{ game.name }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
+
+<article class="region">
   <div class="wrapper">
     <h2>Listening: artists</h2>
     {% for artist in artists %}
