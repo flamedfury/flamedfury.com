@@ -12,3 +12,13 @@ module.exports = async function () {
   const game = await res
   return game.response.games
 }
+
+// returns
+// appid:
+// name:
+// playtime_2weeks:
+// playtime_forever:
+// img_icon_url:
+// playtime_windows_forever:
+// playtime_mac_forever:
+// playtime_linux_forever:
