@@ -1,16 +1,59 @@
 {
   "changeLog": [
     {
-      "date": "2023-02-12",
-      "update": "Released 2023 website design."
+      "date": "2023-01-05",
+      "tags": "updates",
+      "update": "The Web Manifesto page was rewritten."
     },
     {
-      "date": "2023-01-19",
-      "update": "Manifesto page updated."
+      "date": "2023-01-06",
+      "tags": "updates",
+      "update": " Refreshed the Comics, Bookshelf & Recordshelf pages."
     },
     {
-      "date": "2023-01-17",
-      "update": "All pages updated."
+      "date": "2023-01-07",
+      "tags": "updates",
+      "update": "Added a new page to the Explore section for Webrings."
+    },
+    {
+      "date": "2023-01-10",
+      "tags": "updates",
+      "update": "Added a new page to the Explore section for Buttons."
+    },
+    {
+      "date": "2023-01-27",
+      "tags": "updates",
+      "update": "Updated the Vinyl Collection page."
+    },
+    {
+      "date": "2023-02-11",
+      "tags": "updates",
+      "update": "Added a new page to the Explore section for my Blogroll."
+    },
+    {
+      "date": "2023-02-15",
+      "tags": "updates",
+      "update": "Refreshed the About page and added a /uses page."
+    },
+    {
+      "date": "2023-02-17",
+      "tags": "updates",
+      "update": "Updated the Mixtapes page."
+    },
+    {
+      "date": "2023-02-20",
+      "tags": "updates",
+      "update": "New website design. Weclome to Flamed Fury 2023."
+    },
+    {
+      "date": "2023-03-31",
+      "tags": "updates",
+      "update": "Started writing and posting posts again."
+    },
+    {
+      "date": "2023-04-16",
+      "tags": "updates",
+      "update": "Created an automated /now page."
     }
   ]
 }

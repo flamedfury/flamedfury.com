@@ -1,7 +1,12 @@
-<ul>
-  {% for post in collections.updates | limit(5) %}
-  <li>{% set definedDate = post.date %} {% include "partials/date.njk" %}: {{ post.data.title }}</li>
+<ul class="flow">
+  {% for item in changelog.changeLog | reverse | limit(05) %}
+    <li>
+      {% set definedDate = item.date %}
+      {% include "partials/date.njk" %}: {{ item.update }}
+    </li>
   {% endfor %}
 </ul>
 
-<p class="text-center" style="font-size: var(--size-step-0);"><a href="/updates/">Website changelog</a></p>
+<p class="text-center" style="font-size: var(--size-step-0);">
+  <a href="/updates/">Website changelog</a>
+</p>
