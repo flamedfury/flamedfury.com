@@ -16,11 +16,21 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.updates %} {% for post in postslist %} {%
-    include "partials/post-loop.njk" %}
+<article class="region">
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+  </div>
+</article>
 
-    {% endfor %}
-  </ul>
+<article class="region">
+  <div class="wrapper flow prose">
+    <ul class="flow">
+      {% for item in changelog.changeLog | reverse %}
+        <li>
+          {% set definedDate = item.date %}
+          {% include "partials/date.njk" %}: {{ item.update }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </article>

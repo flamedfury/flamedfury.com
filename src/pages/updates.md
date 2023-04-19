@@ -5,3 +5,4 @@ layout: updates.njk
 permalink: /updates/index.html
 ---
 
+A list of all the changes I've made to Flamed Fury.
