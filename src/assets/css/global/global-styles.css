@@ -46,12 +46,6 @@ blockquote:not([class]) {
   max-width: 50ch;
 }
 
-h1,
-h2,
-h3 {
-  max-width: 20ch;
-}
-
 blockquote {
   border-inline-start: 0.8rem solid var(--color-primary);
   padding: var(--space-m-l);

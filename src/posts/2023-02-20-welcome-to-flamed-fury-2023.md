@@ -1,10 +1,7 @@
 ---
-title: New website design. Weclome to Flamed Fury 2023.
-excludeFromSitemap: true
+title: Weclome to Flamed Fury 2023.
+description: Flamed Fury gets a brand new look for 2023.
 date: 2023-02-20
-category: update
-tags: updates
-permalink: "//updates/{{ title | slugify }}/index.html"
 ---
 
 Welcome to Flamed Fury 2023. I started working on this in late December 2022 and spent a lot of time over the summer break working on it in a lovely little house on [Onetangi beach](https://en.wikipedia.org/wiki/Onetangi). 
