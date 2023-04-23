@@ -13,16 +13,18 @@ layout: base
   <div class="grid breakout" style="--grid-min-item-size: 10rem">
 
     {% for book in metadataread | sort(true, true, 'dateFinished')%}
-      <div class="flow">
-        <img src="{{ book.thumbnail }}">
+      {% if book.status == 'finished' %}
+        <div class="flow">
+          <img src="{{ book.thumbnail }}">
 
-        <p style="font-size: 1.2rem">
-          {{ book.title }}
-        </p>
-        <p style="font-size: 1rem">
-          {{ book.authors }}
-        </p>
-      </div>
+          <p style="font-size: 1.2rem">
+            {{ book.title }}
+          </p>
+          <p style="font-size: 1rem">
+            {{ book.authors }}
+          </p>
+        </div>
+      {% endif %}
     {% endfor %}
 
   </div>
