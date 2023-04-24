@@ -5,12 +5,31 @@ tags: [guide, eleventy]
 date: 2023-04-19
 ---
 
-My now page is built with data from my metadata-library, Steam API, Last.fm API, and the Trakt API/RSS.
-
 I had tried something earlier on the bookshelf and recordshelf pages; they were populated by a similar method that I got off [Timothy Smith](http://web.archive.org/web/20210921075051/https://smithtimmytim.com/blog/2020/how-i-made-my-badass-listening-to-section/).
 
-It looked like this...21(https://www.last.fm/api/account/create). Fill in the details and grab your key.
-* [Trakt User History](https://trakt.tv/users/YOURUSERNAME/history). Click the RSS icon to get a feed from the four available; All Types, Movies, Shows, and Episodes.
+ It looked like this...
+
+ {% imagePlaceholder "./src/assets/images/posts/2023-04-21-flamed-fury-top-albums.png", "A screenshot of the top albums section of flamedfury.com's Recordshelf page from August 2022", "Flamed Fury: Top Albums, July 2022" %}
+
+ This version is inspired by [Corey](https://coryd.dev/) and his recent post [Building my /now page using Eleventy](https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/).
+
+ ## Eleventy Packages
+ * [@11ty/eleventy-fetch](https://www.11ty.dev/docs/plugins/fetch/) allows us to fetch resources and cache them, avoiding hammering an API.
+ * [@extractus/feed-extractor](https://github.com/extractus/feed-extractor) allows us to take an RSS feed and transforms it into JSON.
+ * [dotenv](https://github.com/motdotla/dotenv) allows us to load environment variables from a `.env` file; this keeps them safe and out of public view.
+
+ ``` bash
+ npm install @11ty/eleventy-fetch @extractus/feed-extractor dotenv
+ ```
+
+ ## APIs and RSS feeds
+
+ We need the help of some APIs, and RSS feeds to pull this off.
+
+ * [Steam Web API Key](https://steamcommunity.com/dev/apikey). Fill in the details and grab your key.
+ * [Steam ID](https://steamdb.info/calculator). Enter your username and look at the page for Steam ID.
+ * [Last.fm Create API account](https://www.last.fm/api/account/create). Fill in the details and grab your key.
+ * [Trakt User History](https://trakt.tv/users/YOURUSERNAME/history). Click the RSS icon to get a feed from the four available; All Types, Movies, Shows, and Episodes.
 
 ## Environment Variables
 
