@@ -23,7 +23,7 @@ My family is my greatest joy. My wife and son are my number one priority in life
 
 I build my homepage with the static site generator [Eleventy](https://www.11ty.dev/). 
 
-The current version (2302) used the starter project [Eleventy Excellet](https://github.com/madrilene/eleventy-excellent) by [Lene Saile](https://www.lenesaile.com/en/) as the starting point.
+The current version (2302) used the starter project [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent) by [Lene Saile](https://www.lenesaile.com/en/) as the starting point.
 
 All development is done locally in [VSCode](https://code.visualstudio.com/) and pushed to [Github](https://github.com/flamedfury/flamedfury.com).
 
