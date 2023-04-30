@@ -22,6 +22,21 @@ A collection of websites that i find useful for my various interests.
 </tbody>
 </table>
 
+## Steam & Steam Deck
+
+A collection of websites that offer news, guides, tip, configurations and other stuff for Steam & the Steam Deck.
+
+<table>
+<tbody>
+{% for item in links.steam %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
 ## Vinyl Stores
 
 A collection of online vinyl stores where I hunt for sweet music.

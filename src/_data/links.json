@@ -239,5 +239,72 @@
       "siteName": "Urban Outfitters",
       "siteDescription": "Great place to find sweet releases, sometimes in different colour variations."
     }
+  ],
+  "steam": [
+    {
+      "url": "https://www.steamdeck.com/",
+      "siteName": "Steam Deck",
+      "siteDescription": "Official website for the Steam Deck."
+    },
+    {
+      "url": "https://store.steampowered.com/",
+      "siteName": "Steam Powered",
+      "siteDescription": "Official Steam Store."
+    },
+    {
+      "url": "https://www.protondb.com/",
+      "siteName": "ProtonDB",
+      "siteDescription": "Crowdsourced Linux and Steam Deck game compatibility reports."
+    },
+    {
+      "url": "https://github.com/CryoByte33/steam-deck-utilities/",
+      "siteName": "CryoUtilities",
+      "siteDescription": "Scripts and utilities to improve performance and manage storage on the Steam Deck."
+    },
+    {
+      "url": "https://github.com/mikeroyal/Steam-Deck-Guide/",
+      "siteName": "Steam Deck Guide",
+      "siteDescription": "A guide covering Steam Deck including the applications and tools that will make you a better and more efficient with your Steam Deck device."
+    },
+    {
+      "url": "https://github.com/SteamDeckHomebrew/decky-loader/",
+      "siteName": "Decky Loader",
+      "siteDescription": "Decky Loader is a homebrew plugin launcher for the Steam Deck. It can be used to stylize your menus, change system sounds, adjust your screen saturation, change additional system settings, and more."
+    },
+    {
+      "url": "https://github.com/dragoonDorise/EmuDeck/",
+      "siteName": "EmuDeck",
+      "siteDescription": "EmuDeck is a collection of scripts that allows you to autoconfigure your Steam Deck, it creates your roms directory structure and downloads all of the needed Emulators for you along with the best configurations for each of them."
+    },
+    {
+      "url": "https://steamdeckhq.com/",
+      "siteName": "Steam Deck HQ",
+      "siteDescription": "Steam Deck HQ provides guides, news, and reviews for the Steam Deck."
+    },
+    {
+      "url": "https://www.steamgriddb.com/",
+      "siteName": "SteamGridDB",
+      "siteDescription": "Download and share custom video game assets and personalize your gaming library."
+    },
+    {
+      "url": "https://steamdecklife.com/",
+      "siteName": "Steam Deck Life",
+      "siteDescription": "A Steam Deck blog for the latest news, tips and tricks."
+    },
+    {
+      "url": "https://sharedeck.games/",
+      "siteName": "ShareDeck",
+      "siteDescription": "An unofficial site to find and share Steam Deck performance configurations."
+    },
+    {
+      "url": "https://greatondeck.net/",
+      "siteName": "Great On Deck",
+      "siteDescription": "An unofficial Steam Deck compatibility website. Verification, performance reviews and tweaks for Steam Deck."
+    },
+    {
+      "url": "https://checkmydeck.ofdgn.com/",
+      "siteName": "CheckMyDeck",
+      "siteDescription": "Check Steam Deck compatibility of your Steam library."
+    }
   ]
 }
