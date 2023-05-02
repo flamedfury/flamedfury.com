@@ -1,11 +1,11 @@
 ---
 title: 'Monthly Recap: March 2023'
-description: Hello web surfers, and welcome to February's recap. This month I started writing blog posts again.
+description: Hello web surfers, and welcome to March's recap. This month I started writing blog posts again.
 tags: [monthly recap]
 date: 2023-03-31
 ---
 
-Hello web surfers, and welcome to February's recap. This month I started writing blog posts again.
+Hello web surfers, and welcome to March's recap. This month I started writing blog posts again.
 
 I have spent little time on the website this month, focusing on family and work. I have started trying to write blog posts again and have enjoyed the process. They could be more substantial, but I hope this will get me back into the flow of writing again.
 
