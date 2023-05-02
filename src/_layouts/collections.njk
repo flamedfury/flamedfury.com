@@ -16,23 +16,66 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="region">
+<article class="wrapper region">
   <div class="wrapper flow prose">
     {{ content | safe }}
   </div>
 </article>
 
 <article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.collections %} {% for post in postslist %}
+  <div class="wrapper flow content">
+    <h2>Books read</h2>
+    <div class="grid breakout" style="--grid-min-item-size: 10rem">
+      {% for book in metadataread | reverse %}
 
-    <li class="card flow overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
+        {% if loop.index <= 6 %}
+          <div class="flow">
+            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book+{{ book.isbn }}">
+          </div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+    <p>
+      <a href="/books/">All books</a>
+    </p>
+  </div>
+</article>
+
+<article class="wrapper region">
+  <div class="wrapper flow content">
+    <h2>Bookmarks</h2>
+    <div class="grid breakout" style="--grid-min-item-size: 10rem">
+      {% for article in metadatabookmarks | reverse %}
+        {% if loop.index <= 6 %}
+          <div class="flow">
+            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ article.image }}">
+            <span class="block" style="font-size: 1rem">
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            </span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p>
+      <a href="/bookmarks/">All bookmarks</a>
+    </p>
+  </div>
+</article>
+
+<article class="wrapper region">
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.collections %}
+    {% for post in postslist %}
+
+      <li class="card flow overflow-hidden">
+        <h2>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h2>
+        {% set definedDate = post.date %}
+        {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </li>
 
     {% endfor %}
   </ul>
