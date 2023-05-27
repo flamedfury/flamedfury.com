@@ -64,6 +64,11 @@
       "date": "2023-05-19",
       "tags": "updates",
       "update": "Cleared my backlog of new records and updated the vinyl collection page. Thireteen albums and two singles."
+    },
+    {
+      "date": "2023-05-27",
+      "tags": "updates",
+      "update": "Minor style changes to keep up with upstream."
     }
   ]
 }
