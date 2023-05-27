@@ -1,6 +1,6 @@
 {
   "name": "flamedfury.com",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "engines": {
     "node": ">=16.x.x"
   },
@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@netlify/plugin-a11y": "^1.0.0-beta.1",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.1",

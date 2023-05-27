@@ -10,7 +10,6 @@
 }
 
 .site-foot__inner {
-  font-size: var(--size-step-0);
   display: flex;
   gap: var(--space-xs-s);
   align-items: center;
