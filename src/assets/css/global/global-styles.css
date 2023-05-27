@@ -43,7 +43,13 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-  max-width: 50ch;
+  max-inline-size: 50ch;
+}
+
+h1,
+h2,
+h3 {
+  max-inline-size: 20ch;
 }
 
 blockquote {
@@ -53,7 +59,7 @@ blockquote {
 }
 
 blockquote > * + * {
-  margin-top: var(--space-m-l);
+  margin-block-start: var(--space-m-l);
 }
 
 blockquote :last-child {
@@ -63,14 +69,9 @@ blockquote :last-child {
 }
 
 svg {
-  height: 2ex;
-  width: auto;
+  block-size: 2ex;
+  inline-size: auto;
   flex: none;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 [role='list'] {
@@ -78,10 +79,11 @@ img {
 }
 
 /* Base interactive elements */
+
 article [href^='http']:not([href*='flamedfury.com']):not[img]::after {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  inline-size: 1em;
+  block-size: 1em;
   background-image: url('/assets/images/icn-external.svg');
   background-repeat: no-repeat;
   background-position: center;

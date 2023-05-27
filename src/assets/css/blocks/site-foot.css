@@ -10,6 +10,7 @@
 }
 
 .site-foot__inner {
+  font-size: var(--size-step-0);
   display: flex;
   gap: var(--space-xs-s);
   align-items: center;
@@ -18,6 +19,6 @@
 }
 
 .site-foot svg {
-  height: 1em;
-  width: 1em;
+  block-size: 1em;
+  inline-size: 1em;
 }
