@@ -9,4 +9,4 @@ Welcome to my collections section. This page collects details about my interests
 
 I'm into [books](/bookshelf/), [comics](/comics/), [games](/gameshelf/), [music](/recordshelf/), skateboarding and brewing beer.
 
-Make sure to check out the [Mixtapes](/recordshelf/mixtapes/) and [Vinyl Collection](/recordshelf/vinyl/) pages.
+Make sure to check out the [Mixtapes](/mixtapes/) and [Vinyl Collection](/recordshelf/) pages.
