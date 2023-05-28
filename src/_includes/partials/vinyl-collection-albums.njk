@@ -3,8 +3,8 @@
     <h3 style="font-size: var(--size-step-2); max-width: 50ch;">{{ item.title }}</h3>
     <div class="vinyl sidebar">
       <div class="region" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
-        {% image item.image, "bg-transparent", "item.alt", "(max-width: 463px) 400px, (max-width: 718px) 700px,
-      (max-width: 912px) 400px, 700px" %}
+        {% imagePlaceholder item.image,
+        "the album cover" %}
       </div>
       <div class="flow region" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
         <p>

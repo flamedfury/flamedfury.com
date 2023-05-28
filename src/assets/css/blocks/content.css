@@ -20,12 +20,5 @@
 }
 
 .content :is(h2, h3, h4) + * {
-  --flow-space: var(--space-s-m);
-}
-
-.content .heading-anchor:is(:hover, :focus) {
-  text-decoration: none;
-}
-.content .heading-anchor {
-  text-decoration: none;
+  --flow-space: var(--space-l);
 }

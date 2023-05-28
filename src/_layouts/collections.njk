@@ -22,7 +22,7 @@ layout: base
   </div>
 </article>
 
-<article class="wrapper region">
+<article class="region page">
   <div class="wrapper flow content">
     <h2>Books read</h2>
     <div class="grid breakout" style="--grid-min-item-size: 10rem">
@@ -37,13 +37,24 @@ layout: base
       {% endfor %}
     </div>
     <p>
-      <a href="/books/">All books</a>
+      <a href="/bookshelf/">All books</a>
     </p>
-  </div>
-</article>
 
-<article class="wrapper region">
-  <div class="wrapper flow content">
+    <h2>Vinyls collected</h2>
+    <div class="grid breakout" style="--grid-min-item-size: 10rem">
+      {% for item in vinyl.albums %}
+        {% if loop.index <= 6 %}
+          <div class="flow">
+            {% imagePlaceholder item.image,
+            "the album cover" %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p>
+      <a href="/recordshelf/">All vinyl</a>
+    </p>
+
     <h2>Bookmarks</h2>
     <div class="grid breakout" style="--grid-min-item-size: 10rem">
       {% for article in metadatabookmarks | reverse %}
@@ -63,8 +74,15 @@ layout: base
   </div>
 </article>
 
-<article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+<article class="region">
+  <div class="wrapper flow prose">
+    <h2>{{ page.title }}</h2>
+    {% if page.intro %}
+      <p>{{ page.intro }}</p>
+    {% endif %}
+  </div>
+
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% set postslist = collections.collections %}
     {% for post in postslist %}
 

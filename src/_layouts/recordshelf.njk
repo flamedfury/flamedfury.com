@@ -26,13 +26,14 @@ layout: base
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for post in collections.music %}
 
-    <li class="card flow overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
+      <li class="card flow overflow-hidden">
+        <h2>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h2>
+        {% set definedDate = post.date %}
+        {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </li>
 
     {% endfor %}
   </ul>

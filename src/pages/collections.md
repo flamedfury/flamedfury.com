@@ -1,8 +1,11 @@
 ---
 title: Collections
-description: 'All collections posts can be found here'
-layout: collections.njk
+description: All collections posts can be found here
 permalink: /collections/index.html
+layout: collections.njk
+page:
+  title: Collection pages
+  intro: Quick links to all collection pages.
 ---
 
 Welcome to my collections section. This page collects details about my interests and hobbies.

@@ -69,6 +69,16 @@
       "date": "2023-05-27",
       "tags": "updates",
       "update": "Minor style changes to keep up with upstream."
+    },
+    {
+      "date": "2023-05-28",
+      "tags": "updates",
+      "update": "Retro-created posts out of the old collection pages."
+    },
+    {
+      "date": "2023-05-29",
+      "tags": "updates",
+      "update": "Major updates to the collections page."
     }
   ]
 }
