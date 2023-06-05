@@ -1,6 +1,8 @@
 {%- for item in vinyl.albums -%}
   <article class="content">
-    <h3 style="font-size: var(--size-step-2); max-width: 50ch;">{{ item.title }}</h3>
+    <a class="recordshelf-link" href="#{{ item.title | slug }}">
+      <h3 style="font-size: var(--size-step-2); max-width: 50ch;" id="{{ item.title | slug }}">{{ item.title }}</h3>
+    </a>
     <div class="vinyl sidebar">
       <div class="region" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
         {% imagePlaceholder item.image,
