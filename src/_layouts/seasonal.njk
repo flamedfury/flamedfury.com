@@ -16,30 +16,48 @@ schema: blog
       {% endif %}
     </p>
 
-    {% set media = [] %}
-    {% if page.books %}
-      {% set _ = media.push('books') %}
-    {% endif %}
-    {% if page.tracks %}
-      {% set _ = media.push('playlist') %}
-    {% endif %}
-    {% if page.bookmarks %}
-      {% set _ = media.push('bookmarks') %}
-    {% endif %}
-
     {{ content | safe }}
 
-    {% if page.books %}
-      <h2 id="books">Books</h2>
-      {% include "post/books.html" %}
-    {% endif %}
-    {% if page.tracks %}
-      <h2 id="playlist">Playlist</h2>
-      {% include "post/playlist.html" %}
-    {% endif %}
-    {% if page.recipes %}
-      <h2 id="recipes">Recipes</h2>
-      {% include "post/recipes.html" %}
-    {% endif %}
+    <h2 id="books">Books</h2>
+    <div class="grid" style="--grid-min-item-size: 10rem">
+      {% for book in books %}
+        <div class="flow">
+          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
+        </div>
+      {% endfor %}
+    </div>
+
+    <h2 id="playlist">Playlist</h2>
+    <img class="playlist-cover" src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/playlists/{{ playlist | slugify }}.png">
+    <div class="playlist-meta">
+      <p>
+        <a href="{{ spotify }}">Listen on Spotify</a>
+      </p>
+    </div>
+    <ul class="playlist flow">
+      {% for tracks in tracks %}
+        <li>
+          <div class="track-name">{{ tracks.track }}</div>
+          <div class="track-meta">
+            {% if tracks.album and tracks.album != '' %}
+              <span class="track-artist">{{ tracks.artist }}</span> - <span class="track-album">{{ tracks.album }}</span>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2 id="bookmarks">Bookmarks</h2>
+    <div class="grid" style="--grid-min-item-size: 10rem">
+      {% for bookmark in bookmarks %}
+        <div class="flow">
+          <img src="{% if bookmark.image %}https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ bookmark.image }}{% else %}/assets/images/opengraph-default.png{% endif %}" alt="{{ bookmark.title }}">
+          <span class="block" style="font-size: 1rem">
+            <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
+          </span>
+        </div>
+      {% endfor %}
+    </div>
+
   </div>
 </article>

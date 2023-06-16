@@ -1,0 +1,26 @@
+.playlist {
+  margin-bottom: 2em;
+  columns: 3 14rem;
+  column-gap: var(--space-size-s);
+  column-fill: balance;
+  list-style: none;
+  padding: 0;
+}
+
+.playlist-meta {
+  text-align: center;
+}
+
+.playlist-track {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}
+
+.track-meta {
+  color: var(--color-light-glare);
+  font-size: var(--size-step-min-1);
+}
+
+.track-artist {
+  font-weight: 700;
+}
