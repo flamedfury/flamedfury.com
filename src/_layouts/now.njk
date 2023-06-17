@@ -11,30 +11,31 @@ layout: page
 <article class="region">
   <div class="wrapper flow">
     <h2>Reading: books</h2>
-    <ul>
+    <div class="grid" style="--grid-min-item-size: 10rem">
       {% for book in metadataread | reverse %}
         {% if book.status == 'started' %}
-          <li>
-            <a href="{{book.link}}">
-              {{ book.title }}
-            </a>
-          </li>
+          <div class="flow">
+            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}">
+          </div>
         {% endif %}
       {% endfor %}
-    </ul>
+    </div>
   </div>
 </article>
 
 <article class="region">
   <div class="wrapper flow">
     <h2>Playing: games</h2>
-    <ul>
+    <div class="grid" style="--grid-min-item-size: 20rem">
       {% for game in games %}
-        <li>
+        <div class="flow">
+          {% if game.coverArt %}
+            <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}"/>
+          {% endif %}
           {{ game.name }}
-        </li>
+        </div>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 </article>
 
@@ -54,7 +55,7 @@ layout: page
 <article class="region">
   <div class="wrapper flow">
     <h2>Listening: tracks</h2>
-    <div class="grid breakout" style="--grid-min-item-size: 10rem">
+    <div class="grid" style="--grid-min-item-size: 10rem">
       {% for track in tracks %}
         <div class="flow">
           <img src="{{ track.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
@@ -101,14 +102,14 @@ layout: page
 <article class="region">
   <div class="wrapper">
     <h2>Watching: movies</h2>
-    {% for movie in movies %}
-      <ul>
-        <li>
-          <a href="{{movie.link}}" title="{{movie.title | escape}}">
-            {{movie.title}}
+    <div class="grid" style="--grid-min-item-size: 10rem">
+      {% for movie in movies %}
+        <div class="flow">
+          <a href="{{ movie.link }}" title="{{ movie.title | escape }}">
+            {{ movie.title }}
           </a>
-        </li>
-      </ul>
-    {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </article>
