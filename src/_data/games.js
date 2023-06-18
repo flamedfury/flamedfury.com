@@ -31,6 +31,9 @@ module.exports = async function () {
         game.coverArt = null;
       }
 
+      const steamUrl = `https://store.steampowered.com/app/${game.appid}`;
+      game.steamUrl = steamUrl;
+
       return game;
     })
   );

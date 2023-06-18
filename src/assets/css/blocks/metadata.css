@@ -24,3 +24,8 @@
 .track-artist {
   font-weight: 700;
 }
+
+.game-name {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}

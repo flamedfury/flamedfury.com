@@ -32,7 +32,9 @@ layout: page
           {% if game.coverArt %}
             <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}"/>
           {% endif %}
-          {{ game.name }}
+          <div class="game-name">
+            <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}">{{ game.name }}</a>
+          </div>
         </div>
       {% endfor %}
     </div>
