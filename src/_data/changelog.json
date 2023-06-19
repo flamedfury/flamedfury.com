@@ -79,6 +79,16 @@
       "date": "2023-05-29",
       "tags": "updates",
       "update": "Major updates to the collections page."
+    },
+    {
+      "date": "2023-06-16",
+      "tags": "updates",
+      "update": "Fixed the seasonal post layout. Looks much nicer now."
+    },
+    {
+      "date": "2023-06-17",
+      "tags": "updates",
+      "update": "Added games cover art to the /now page."
     }
   ]
 }
