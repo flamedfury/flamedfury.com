@@ -55,7 +55,7 @@ h3 {
 blockquote {
   border-inline-start: 0.8rem solid var(--color-primary);
   padding: var(--space-m-l);
-  font-size: var(--size-step-2);
+  font-size: var(--size-step-1);
 }
 
 blockquote > * + * {
@@ -65,7 +65,7 @@ blockquote > * + * {
 blockquote :last-child {
   font-family: var(--font-base);
   font-style: normal;
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-2);
 }
 
 svg {
