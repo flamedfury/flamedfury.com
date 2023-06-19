@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+.playlist-cover {
+  display: grid;
+  place-content: center;
+}
+
 .playlist-meta {
   text-align: center;
 }
@@ -28,4 +33,19 @@
 .game-name {
   font-size: var(--size-step-0);
   break-inside: avoid;
+}
+
+.book-meta {
+  padding: 0;
+  list-style: none;
+}
+
+.book-title {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}
+
+.book-authors {
+  color: var(--color-light-glare);
+  font-size: var(--size-step-min-1);
 }

@@ -23,17 +23,24 @@ schema: blog
       {% for book in books %}
         <div class="flow">
           <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
+          <ul class="book-meta">
+            <li class="book-title">{{ book.title }}</li>
+            <li class="book-authors">{{ book.authors }}</li>
+          </ul>
         </div>
       {% endfor %}
     </div>
 
     <h2 id="playlist">Playlist</h2>
-    <img class="playlist-cover" src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/playlists/{{ playlist | slugify }}.png">
+    <div class="playlist-cover">
+      <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/playlists/{{ playlist | slugify }}.png">
+    </div>
     <div class="playlist-meta">
       <p>
         <a href="{{ spotify }}">Listen on Spotify</a>
       </p>
     </div>
+
     <ul class="playlist flow">
       {% for tracks in tracks %}
         <li>
