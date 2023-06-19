@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const EleventyFetch = require('@11ty/eleventy-fetch');
 require('dotenv').config({ systemvars: true });
 
