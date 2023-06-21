@@ -160,3 +160,8 @@ time,
   opacity: 0.8;
   text-align: center;
 }
+
+iframe {
+	width: 100%;
+	aspect-ratio: 4 / 2;
+}
