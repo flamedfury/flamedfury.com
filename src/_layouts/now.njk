@@ -10,130 +10,146 @@ layout: page
 
 <article class="region">
   <div class="wrapper flow">
-    <h2>Reading: books</h2>
-    <div class="grid" style="--grid-min-item-size: 10rem">
-      {% for book in metadataread | reverse %}
-        {% if book.status == 'started' %}
-          <div class="flow">
-            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}">
-          </div>
-        {% endif %}
-      {% endfor %}
+    <h2>Status</h2>
+    <div class="card now-flex">
+      <div class="now-box" style="flex: 0 0 1em; font-size: var(--size-step-3); padding-right: var(--space-s);">
+        <span style="font-size: 200%;">{{ status.emoji }}</span>
+      </div>
+      <div class="now-box">
+        <a href="https://flamed.status.lol/{{ status.id}}">
+          @{{ status.address }}
+        </a>
+        <p>{{ status.content }}</p>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
 
-<article class="region">
-  <div class="wrapper flow">
-    <h2>Playing: games</h2>
-    <div class="grid" style="--grid-min-item-size: 20rem">
-      {% for game in games %}
-        <div class="flow">
-          {% if game.coverArt %}
-            <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}"/>
+  <article class="region">
+    <div class="wrapper flow">
+      <h2>Reading: books</h2>
+      <div class="grid" style="--grid-min-item-size: 10rem">
+        {% for book in metadataread | reverse %}
+          {% if book.status == 'started' %}
+            <div class="flow">
+              <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}">
+            </div>
           {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+
+  <article class="region">
+    <div class="wrapper flow">
+      <h2>Playing: games</h2>
+      <div class="grid" style="--grid-min-item-size: 20rem">
+        {% for game in games %}
+          <div class="flow">
+            {% if game.coverArt %}
+              <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}"/>
+            {% endif %}
+            <div class="game-name">
+              <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}">{{ game.name }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="grid" style="--grid-min-item-size: 20rem">
+        <div class="flow">
+          <img src="../assets/images/pages/now/wow-dragon-flight.png" alt="An image of the cover art for the game World Of Warcraft: Dragonflight"/>
           <div class="game-name">
-            <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}">{{ game.name }}</a>
+            <a href="https://worldofwarcraft.blizzard.com/en-us/" title="World Of Warcraft: Dragonflight">World Of Warcraft: Dragonflight</a>
           </div>
         </div>
-      {% endfor %}
-    </div>
-    <div class="grid" style="--grid-min-item-size: 20rem">
-      <div class="flow">
-        <img src="../assets/images/pages/now/wow-dragon-flight.png" alt="An image of the cover art for the game World Of Warcraft: Dragonflight"/>
-        <div class="game-name">
-          <a href="https://worldofwarcraft.blizzard.com/en-us/" title="World Of Warcraft: Dragonflight">World Of Warcraft: Dragonflight</a>
+        <div class="flow">
+          <img src="../assets/images/pages/now/diablo-iv.png" alt="An image of the cover art for the game Diablo IV"/>
+          <div class="game-name">
+            <a href="https://diablo4.blizzard.com/en-us/" title="Diablo IV">Diablo IV</a>
+          </div>
         </div>
       </div>
-      <div class="flow">
-        <img src="../assets/images/pages/now/diablo-iv.png" alt="An image of the cover art for the game Diablo IV"/>
-        <div class="game-name">
-          <a href="https://diablo4.blizzard.com/en-us/" title="Diablo IV">Diablo IV</a>
-        </div>
-      </div>
-    </div>
-    <div>
-      <iframe id="raiderIO character card"
+      <div>
+        <iframe id="raiderIO character card"
     title="raiderIO character card"
     width="756"
     height="180"
     src="https://raider.io/characters/us/khazgoroth/Lunchcuttah?embed=1&embedmode=summary&embedName=1&classcolors=1&characterBackground=1&itemlevelcolors=1&showtime=10&chromargb=transparent"
     frameborder="0"></iframe>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
 
-<article class="region">
-  <div class="wrapper">
-    <h2>Listening: artists</h2>
-    {% for artist in artists %}
-      <ul>
-        <li>
-          <a href="{{artist.url}}" title="{{artist.name | escape}}">{{artist.name}}</a>: {{artist.playcount}} plays
+  <article class="region">
+    <div class="wrapper">
+      <h2>Listening: artists</h2>
+      {% for artist in artists %}
+        <ul>
+          <li>
+            <a href="{{artist.url}}" title="{{artist.name | escape}}">{{artist.name}}</a>: {{artist.playcount}} plays
       </li>
-      </ul>
-    {% endfor %}
-  </div>
-</article>
+        </ul>
+      {% endfor %}
+    </div>
+  </article>
 
-<article class="region">
-  <div class="wrapper flow">
-    <h2>Listening: tracks</h2>
-    <div class="grid" style="--grid-min-item-size: 10rem">
-      {% for track in tracks %}
-        <div class="flow">
-          <img src="{{ track.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
-          <p style="font-size: 1rem">
-            <a href="{{track.url}}" title="{{track.name | escape}}">{{track.artist.name}} - {{track.name}}</a>: {{track.playcount}} plays
+  <article class="region">
+    <div class="wrapper flow">
+      <h2>Listening: tracks</h2>
+      <div class="grid" style="--grid-min-item-size: 10rem">
+        {% for track in tracks %}
+          <div class="flow">
+            <img src="{{ track.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
+            <p style="font-size: 1rem">
+              <a href="{{track.url}}" title="{{track.name | escape}}">{{track.artist.name}} - {{track.name}}</a>: {{track.playcount}} plays
         </p>
-        </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+
+  <article class="region">
+    <div class="wrapper flow">
+      <h2>Listening: albums</h2>
+      <div class="grid breakout" style="--grid-min-item-size: 10rem">
+        {% for album in albums %}
+          <div class="flow">
+            <img src="{{album.image[3]['#text']}}" width="350" height="350" alt="The cover art for {{album.name}}">
+            <p style="font-size: 1rem">
+              <a href="{{album.url}}" title="{{album.name}}">{{album.name}} - {{album.artist.name}}</a>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+
+  <article class="region">
+    <div class="wrapper">
+      <h2>Watching: tv</h2>
+      {% for show in tv %}
+        <ul>
+          <li>
+            <a href="{{show.link}}" title="{{show.title | escape}}">
+              {{show.title}}
+            </a>
+          </li>
+        </ul>
       {% endfor %}
     </div>
-  </div>
-</article>
+  </article>
 
-<article class="region">
-  <div class="wrapper flow">
-    <h2>Listening: albums</h2>
-    <div class="grid breakout" style="--grid-min-item-size: 10rem">
-      {% for album in albums %}
-        <div class="flow">
-          <img src="{{album.image[3]['#text']}}" width="350" height="350" alt="The cover art for {{album.name}}">
-          <p style="font-size: 1rem">
-            <a href="{{album.url}}" title="{{album.name}}">{{album.name}} - {{album.artist.name}}</a>
-          </p>
-        </div>
-      {% endfor %}
+  <article class="region">
+    <div class="wrapper">
+      <h2>Watching: movies</h2>
+      <div class="grid" style="--grid-min-item-size: 10rem">
+        {% for movie in movies %}
+          <div class="flow">
+            <a href="{{ movie.link }}" title="{{ movie.title | escape }}">
+              {{ movie.title }}
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</article>
-
-<article class="region">
-  <div class="wrapper">
-    <h2>Watching: tv</h2>
-    {% for show in tv %}
-      <ul>
-        <li>
-          <a href="{{show.link}}" title="{{show.title | escape}}">
-            {{show.title}}
-          </a>
-        </li>
-      </ul>
-    {% endfor %}
-  </div>
-</article>
-
-<article class="region">
-  <div class="wrapper">
-    <h2>Watching: movies</h2>
-    <div class="grid" style="--grid-min-item-size: 10rem">
-      {% for movie in movies %}
-        <div class="flow">
-          <a href="{{ movie.link }}" title="{{ movie.title | escape }}">
-            {{ movie.title }}
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</article>
+  </article>
