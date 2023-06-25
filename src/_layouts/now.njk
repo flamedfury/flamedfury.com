@@ -76,80 +76,89 @@ layout: page
     src="https://raider.io/characters/us/khazgoroth/Lunchcuttah?embed=1&embedmode=summary&embedName=1&classcolors=1&characterBackground=1&itemlevelcolors=1&showtime=10&chromargb=transparent"
     frameborder="0"></iframe>
       </div>
-    </div>
-  </article>
+      <div>
+        <h3>RaiderIO</h3>
+        {% for item in raiderio %}
+          <ul>
+            <li>{{ item.name | safe }}</li>
+            <li>{{ item.race }}</li>
+          </ul>
+        {% endfor %}
 
-  <article class="region">
-    <div class="wrapper">
-      <h2>Listening: artists</h2>
-      {% for artist in artists %}
-        <ul>
-          <li>
-            <a href="{{artist.url}}" title="{{artist.name | escape}}">{{artist.name}}</a>: {{artist.playcount}} plays
+      </div>
+    </article>
+
+    <article class="region">
+      <div class="wrapper">
+        <h2>Listening: artists</h2>
+        {% for artist in artists %}
+          <ul>
+            <li>
+              <a href="{{artist.url}}" title="{{artist.name | escape}}">{{artist.name}}</a>: {{artist.playcount}} plays
       </li>
-        </ul>
-      {% endfor %}
-    </div>
-  </article>
+          </ul>
+        {% endfor %}
+      </div>
+    </article>
 
-  <article class="region">
-    <div class="wrapper flow">
-      <h2>Listening: tracks</h2>
-      <div class="grid" style="--grid-min-item-size: 10rem">
-        {% for track in tracks %}
-          <div class="flow">
-            <img src="{{ track.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
-            <p style="font-size: 1rem">
-              <a href="{{track.url}}" title="{{track.name | escape}}">{{track.artist.name}} - {{track.name}}</a>: {{track.playcount}} plays
+    <article class="region">
+      <div class="wrapper flow">
+        <h2>Listening: tracks</h2>
+        <div class="grid" style="--grid-min-item-size: 10rem">
+          {% for track in tracks %}
+            <div class="flow">
+              <img src="{{ track.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}">
+              <p style="font-size: 1rem">
+                <a href="{{track.url}}" title="{{track.name | escape}}">{{track.artist.name}} - {{track.name}}</a>: {{track.playcount}} plays
         </p>
-          </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </article>
+
+    <article class="region">
+      <div class="wrapper flow">
+        <h2>Listening: albums</h2>
+        <div class="grid breakout" style="--grid-min-item-size: 10rem">
+          {% for album in albums %}
+            <div class="flow">
+              <img src="{{album.image[3]['#text']}}" width="350" height="350" alt="The cover art for {{album.name}}">
+              <p style="font-size: 1rem">
+                <a href="{{album.url}}" title="{{album.name}}">{{album.name}} - {{album.artist.name}}</a>
+              </p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </article>
+
+    <article class="region">
+      <div class="wrapper">
+        <h2>Watching: tv</h2>
+        {% for show in tv %}
+          <ul>
+            <li>
+              <a href="{{show.link}}" title="{{show.title | escape}}">
+                {{show.title}}
+              </a>
+            </li>
+          </ul>
         {% endfor %}
       </div>
-    </div>
-  </article>
+    </article>
 
-  <article class="region">
-    <div class="wrapper flow">
-      <h2>Listening: albums</h2>
-      <div class="grid breakout" style="--grid-min-item-size: 10rem">
-        {% for album in albums %}
-          <div class="flow">
-            <img src="{{album.image[3]['#text']}}" width="350" height="350" alt="The cover art for {{album.name}}">
-            <p style="font-size: 1rem">
-              <a href="{{album.url}}" title="{{album.name}}">{{album.name}} - {{album.artist.name}}</a>
-            </p>
-          </div>
-        {% endfor %}
+    <article class="region">
+      <div class="wrapper">
+        <h2>Watching: movies</h2>
+        <div class="grid" style="--grid-min-item-size: 10rem">
+          {% for movie in movies %}
+            <div class="flow">
+              <a href="{{ movie.link }}" title="{{ movie.title | escape }}">
+                {{ movie.title }}
+              </a>
+            </div>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-  </article>
-
-  <article class="region">
-    <div class="wrapper">
-      <h2>Watching: tv</h2>
-      {% for show in tv %}
-        <ul>
-          <li>
-            <a href="{{show.link}}" title="{{show.title | escape}}">
-              {{show.title}}
-            </a>
-          </li>
-        </ul>
-      {% endfor %}
-    </div>
-  </article>
-
-  <article class="region">
-    <div class="wrapper">
-      <h2>Watching: movies</h2>
-      <div class="grid" style="--grid-min-item-size: 10rem">
-        {% for movie in movies %}
-          <div class="flow">
-            <a href="{{ movie.link }}" title="{{ movie.title | escape }}">
-              {{ movie.title }}
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </article>
+    </article>
