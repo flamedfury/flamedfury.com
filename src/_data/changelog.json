@@ -89,6 +89,11 @@
       "date": "2023-06-17",
       "tags": "updates",
       "update": "Added games cover art to the /now page."
+    },
+    {
+      "date": "2023-06-25",
+      "tags": "updates",
+      "update": "Tweaked the menu navigation items."
     }
   ]
 }

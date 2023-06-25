@@ -5,12 +5,16 @@ module.exports = {
       url: '/collections/'
     },
     {
-      text: 'Writing',
+      text: 'Posts',
       url: '/posts/'
     },
     {
       text: 'Explore',
       url: '/explore/'
+    },
+    {
+      text: 'Now',
+      url: '/now/'
     },
     {
       text: 'About',
