@@ -10,6 +10,11 @@
   font-size: var(--size-step-2);
 }
 
+.blog figure {
+  display: grid;
+  place-content: center;
+}
+
 .blog img {
   max-inline-size: var(--max-img-width, 100%);
   block-size: auto;
