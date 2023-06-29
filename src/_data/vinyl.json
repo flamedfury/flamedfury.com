@@ -1,6 +1,34 @@
 {
   "albums": [
     {
+      "title": "Liquid Swords",
+      "artist": "Genius / GZA",
+      "year": 1995,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "Geffen",
+      "code": "B0023742-01",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/liquid-swords.jpg",
+      "alt": "Cover of the album",
+      "comment": "Reissue. I've been after a copy of Liquid Swords for a long time. This is my favourite of the Wu solo releases."
+    },
+    {
+      "title": "Greatest Hits: My Prerogative",
+      "artist": "Britney Spears",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Electronic, Funk / Soul, Pop",
+      "label": "Jive",
+      "code": "",
+      "varient": "Cream",
+      "number": "",
+      "image": "./src/assets/images/vinyl/my-perogative.jpg",
+      "alt": "Cover of the album",
+      "comment": "Limited Edition, Reissue, Cream."
+    },
+    {
       "title": "In The Zone",
       "artist": "Britney Spears",
       "year": 2003,
