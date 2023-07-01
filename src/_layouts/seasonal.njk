@@ -44,10 +44,10 @@ schema: blog
     <ul class="playlist flow">
       {% for tracks in tracks %}
         <li>
-          <div class="track-name">{{ tracks.track }}</div>
-          <div class="track-meta">
+          <div class="playlist-track-name">{{ tracks.track }}</div>
+          <div class="playlist-track-meta">
             {% if tracks.album and tracks.album != '' %}
-              <span class="track-artist">{{ tracks.artist }}</span> - <span class="track-album">{{ tracks.album }}</span>
+              <span class="playlist-track-artist">{{ tracks.artist }}</span> - <span class="track-album">{{ tracks.album }}</span>
             {% endif %}
           </div>
         </li>

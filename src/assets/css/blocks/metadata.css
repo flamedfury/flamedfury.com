@@ -40,12 +40,12 @@
   break-inside: avoid;
 }
 
-.track-meta {
+.playlist-track-meta {
   color: var(--color-light-glare);
   font-size: var(--size-step-min-1);
 }
 
-.track-artist {
+.playlist-track-artist {
   font-weight: 700;
 }
 
@@ -92,6 +92,30 @@
   color: var(--color-light-glare);
   font-size: var(--size-step-min-1);
 }
+
+/* now: tracks */
+.track-name {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}
+
+.track-artist-name, .track-plays {
+  color: var(--color-light-glare);
+  font-size: var(--size-step-min-1);
+}
+
+/* now: albums */
+.album-name {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}
+
+.album-artist-name {
+  color: var(--color-light-glare);
+  font-size: var(--size-step-min-1);
+}
+
+
 
 /* now: trakt tv shows */
 .show-episode-title {
