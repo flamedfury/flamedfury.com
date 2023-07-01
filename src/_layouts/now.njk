@@ -113,11 +113,11 @@ layout: page
       <div class="grid" style="--grid-min-item-size: 10rem">
         {% for track in tracks %}
           <div class="flow">
-            <a href="{{track.url}}" title="{{track.name | escape}}"><img src="{{ track.image[3]['#text'] }}" alt="Album artwork for {{ item.name }} by {{ item.artist['#text'] }}" title="{{ item.name }} by {{ item.artist['#text'] }}"></a>
+            <a href="{{ track.url }}" title="{{ track.name | escape }}"><img src="{{ track.image }}" alt="Album artwork for {{ track.name }} by {{ track.artist.name }}" title="{{ track.name }} by {{ track.artist.name }}"></a>
             <div class="track-meta">
-              <p class="track-name">{{track.name}}</p>
-              <p class="track-artist-name">{{track.artist.name}}</p>
-              <p class="track-plays">{{track.playcount}} plays</p>
+              <p class="track-name">{{ track.name }}</p>
+              <p class="track-artist-name">{{ track.artist.name }}</p>
+              <p class="track-plays">{{ track.playcount }} plays</p>
             </div>
           </div>
         {% endfor %}
