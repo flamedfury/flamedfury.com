@@ -123,9 +123,9 @@ layout: page
         <div class="grid breakout" style="--grid-min-item-size: 10rem">
           {% for album in albums %}
             <div class="flow">
-              <img src="{{album.image[3]['#text']}}" width="350" height="350" alt="The cover art for {{album.name}}">
+              <img src="{% if album.image[0]['#text'] !== '' or album.image[1]['#text'] !== '' or album.image[2]['#text'] !== '' or album.image[3]['#text'] !== '' %}{{ album.image[3]['#text'] }}{% else %}/assets/images/music-placeholder.png{% endif %}" width="350" height="350" alt="The cover art for {{ album.name }}">
               <p style="font-size: 1rem">
-                <a href="{{album.url}}" title="{{album.name}}">{{album.name}} - {{album.artist.name}}</a>
+                <a href="{{ album.url }}" title="{{ album.name }}">{{ album.name }} - {{ album.artist.name }}</a>
               </p>
             </div>
           {% endfor %}
