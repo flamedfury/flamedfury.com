@@ -134,22 +134,26 @@ layout: page
     </article>
 
     <article class="region">
-      <div class="wrapper">
+      <div class="wrapper flow">
         <h2>Watching: tv</h2>
-        {% for show in tv %}
-          <ul>
-            <li>
+        <div class="grid" style="--grid-min-item-size: 10rem">
+          {% for show in tv %}
+            <div class="flow">
               <a href="https://trakt.tv/shows/{{ show.show.ids.slug }}/seasons/{{ show.episode.season }}/episodes/{{ show.episode.number }}" title="{{ show.show.title | escape }}">
-                {{ show.show.title }}
+                <img src="{{ show.posterUrl }}" alt="{{ show.show.title }}"/>
               </a>
-            </li>
-          </ul>
-        {% endfor %}
+              <div class="show-meta">
+                <p class="show-episode-title">{{ show.episode.title }}</p>
+                <p class="show-title">{{ show.show.title }} - S{{ show.episode.season }}E{{ show.episode.number }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </article>
 
     <article class="region">
-      <div class="wrapper">
+      <div class="wrapper flow">
         <h2>Watching: movies</h2>
         <div class="grid" style="--grid-min-item-size: 10rem">
           {% for movie in movies %}
@@ -157,6 +161,10 @@ layout: page
               <a href="https://trakt.tv/movies/{{ movie.movie.ids.slug }}" title="{{ movie.movie.title | escape }}">
                 <img src="{{ movie.posterUrl }}" alt="{{ movie.movie.title }}"/>
               </a>
+              <div class="movie-meta">
+                <p class="movie-title">{{ movie.movie.title }}
+                  <span class="movie-date">({{ movie.movie.year }})</span>j</p>
+              </div>
             </div>
           {% endfor %}
         </div>
