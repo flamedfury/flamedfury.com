@@ -2,11 +2,11 @@
   {% for item in changelog.changeLog | reverse | limit(05) %}
     <li>
       {% set definedDate = item.date %}
-      {% include "partials/date.njk" %}: {{ item.update }}
+      <span class="updates-date">{% include "partials/date.njk" %}</span>: {{ item.update }}
     </li>
   {% endfor %}
 </ul>
 
 <p class="text-center" style="font-size: var(--size-step-0);">
-  <a href="/updates/">Website changelog</a>
+  <a class="updates-link" href="/updates/">Website changelog</a>
 </p>

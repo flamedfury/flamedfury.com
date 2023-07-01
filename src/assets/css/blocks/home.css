@@ -33,3 +33,11 @@
 .updates li {
   font-size: var(--size-step-0);
 }
+
+.updates-date {
+  font-weight: 700;
+}
+
+.updates-link {
+  color: var(--color-light);
+}
