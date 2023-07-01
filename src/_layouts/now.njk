@@ -90,16 +90,17 @@ layout: page
     </article>
 
     <article class="region">
-      <div class="wrapper">
+      <div class="wrapper flow">
         <h2>Listening: artists</h2>
         <div class="grid" style="--grid-min-item-size: 10rem">
           {% for artist in artists %}
             <div class="flow">
-              <img src="/assets/images/music-placeholder.png" alt="Photo of {{ artist.name }}" title="{{ artist.name }}">
+              <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" width="350" height="350">
               <div class="artist-meta">
-                <p>
-                  <a href="{{artist.url}}" title="{{artist.name | escape}}">{{artist.name}}</a>: {{artist.playcount}} plays
+                <p class="artist-name">
+                  <a href="{{artist.url}}" title="{{artist.name | escape}}">{{artist.name}}</a>
                 </p>
+                <p class="artist-plays">{{artist.playcount}} plays</p>
               </div>
             </div>
           {% endfor %}

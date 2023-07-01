@@ -1,3 +1,21 @@
+/* seasonal page */
+
+/* books */
+.book-meta {
+  padding: 0;
+  list-style: none;
+}
+
+.book-title {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}
+
+.book-authors {
+  color: var(--color-light-glare);
+  font-size: var(--size-step-min-1);
+}
+
 /* seasonal playlists */
 .playlist {
   margin-bottom: 2em;
@@ -31,28 +49,7 @@
   font-weight: 700;
 }
 
-/* now: games */
-.game-name {
-  font-size: var(--size-step-0);
-  break-inside: avoid;
-}
-
-/* books */
-
-.book-meta {
-  padding: 0;
-  list-style: none;
-}
-
-.book-title {
-  font-size: var(--size-step-0);
-  break-inside: avoid;
-}
-
-.book-authors {
-  color: var(--color-light-glare);
-  font-size: var(--size-step-min-1);
-}
+/* now page */
 
 /* now: omg.lol status.lol */
 .now-status {
@@ -79,12 +76,24 @@
   padding: var(--space-s);
 }
 
-/* now: trakt tv shows */
-.show-meta {
-  padding: 0;
-  list-style: none;
+/* now: games */
+.game-name {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
 }
 
+/* now: artists */
+.artist-name {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}
+
+.artist-plays {
+  color: var(--color-light-glare);
+  font-size: var(--size-step-min-1);
+}
+
+/* now: trakt tv shows */
 .show-episode-title {
   font-size: var(--size-step-0);
   break-inside: avoid;
@@ -96,11 +105,6 @@
 }
 
 /* now: trakt movies */
-.movie-meta {
-  padding: 0;
-  list-style: none;
-}
-
 .movie-title {
   font-size: var(--size-step-0);
   break-inside: avoid;
