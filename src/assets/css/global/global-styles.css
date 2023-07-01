@@ -9,6 +9,7 @@ body {
   background: var(--color-dark);
   font-size: var(--size-step-1);
   font-family: var(--font-base);
+  font-weight: 400;
   line-height: 1.4;
   letter-spacing: var(--tracking);
 }
@@ -25,6 +26,7 @@ h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
   font-family: var(--font-base);
+  font-weight: 700;
 }
 
 h1 {
@@ -97,6 +99,7 @@ article [href^='http']:not([href*='flamedfury.com']):not[img]::after {
 
 a {
   color: currentcolor;
+  font-weight: bold;
 }
 
 a:hover {

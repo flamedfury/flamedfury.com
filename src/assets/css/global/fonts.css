@@ -13,10 +13,30 @@
   font-family: Sanfran;
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
+  font-weight: 700;
   src: local(''),
     url(/assets/fonts/sanfran/sanfran-bold.woff2) format('woff2'),
     url(/assets/fonts/sanfran/sanfran-bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: Sanfran;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local(''),
+    url(/assets/fonts/sanfran/sanfran-reg.woff2) format('woff2'),
+    url(/assets/fonts/sanfran/sanfran-reg.woff) format('woff');
+}
+
+@font-face {
+  font-family: Sanfran;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local(''),
+    url(/assets/fonts/sanfran/sanfran-thin.woff2) format('woff2'),
+    url(/assets/fonts/sanfran/sanfran-thin.woff) format('woff');
 }
 
 @font-face {
