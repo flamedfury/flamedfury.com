@@ -43,18 +43,6 @@ layout: page
     <div class="wrapper flow">
       <h2>Playing: games</h2>
       <div class="grid" style="--grid-min-item-size: 20rem">
-        {% for game in games %}
-          <div class="flow">
-            {% if game.coverArt %}
-              <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}"/>
-            {% endif %}
-            <div class="game-name">
-              <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}">{{ game.name }}</a>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-      <div class="grid" style="--grid-min-item-size: 20rem">
         <div class="flow">
           <img src="../assets/images/pages/now/wow-dragon-flight.png" alt="An image of the cover art for the game World Of Warcraft: Dragonflight"/>
           <div class="game-name">
@@ -68,6 +56,19 @@ layout: page
           </div>
         </div>
       </div>
+      <div class="grid" style="--grid-min-item-size: 20rem">
+        {% for game in games %}
+          <div class="flow">
+            {% if game.coverArt %}
+              <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}"/>
+            {% endif %}
+            <div class="game-name">
+              <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}">{{ game.name }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
       <div>
         <h3>RaiderIO</h3>
         {% for item in raiderio %}
