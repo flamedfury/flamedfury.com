@@ -23,7 +23,6 @@ module.exports = eleventyConfig => {
           postcssImport,
           tailwindcss,
           autoprefixer,
-          cssnano
         ]).process(content, {
           from: path
         });
