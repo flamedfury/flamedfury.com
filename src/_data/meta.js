@@ -16,6 +16,7 @@ module.exports = {
   author: 'fLaMEd',
   authorEmail: 'flamed@flamedfury.com',
   authorWebsite: 'https://flamedfury.com',
+  authorAvatar: '/assets/images/avatar.jpg',
   themeColor: '#f05123', //  Manifest: defines the default theme color for the application
   themeBgColor: '#252525', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
