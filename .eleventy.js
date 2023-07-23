@@ -1,6 +1,7 @@
 /**
  * I strive to keep the `.eleventy.js` file clean and uncluttered. Most adjustments must be made in:
  *  - `./config/collections/index.js`
+ *  - `./config/events/index.js`
  *  - `./config/filters/index.js`
  *  - `./config/plugins/index.js`
  *  - `./config/shortcodes/index.js`
@@ -49,6 +50,7 @@ const {
 
 // module import events
 const { svgToJpeg } = require('./config/events/index.js');
+const { updateOMGLol } = require('./config/events/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -116,6 +118,10 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);
+  eleventyConfig.on('eleventy.after', async () => {
+    await updateOMGLol();
+  });
+
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);

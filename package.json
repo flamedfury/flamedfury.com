@@ -28,9 +28,11 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@extractus/feed-extractor": "^6.2.1",
     "axios": "^1.4.0",
+    "fs": "^0.0.1-security",
     "html-minifier-terser": "^7.2.0",
     "isomorphic-fetch": "^3.0.0",
     "markdown-it-toc-done-right": "^4.2.0",
+    "node-fetch": "^3.3.1",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
