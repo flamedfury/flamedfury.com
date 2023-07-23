@@ -1,13 +1,11 @@
 ### Reading: books
 
 <div class="now_grid">
-  {% for book in metadataread | reverse %}
-  {% if book.status == 'started' %}
+  {% for book in metadataread | reverse %}{% if book.status == 'started' %}
   <div class="now_item">
     <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="{{ book.title }}">
   </div>
-  {% endif %}
-  {% endfor %}
+  {% endif %}{% endfor %}
 </div>
 
 ### Playing: games
