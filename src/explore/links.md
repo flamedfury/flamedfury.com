@@ -37,6 +37,51 @@ A collection of websites that offer news, guides, tip, configurations and other 
 </tbody>
 </table>
 
+## Comics
+
+A collection of websites for comic books.
+
+<table>
+<tbody>
+{% for item in links.comics %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+## World of Warcraft
+
+A collection of websites that I use to keep up to date with World of Warcraft.
+
+<table>
+<tbody>
+{% for item in links.wow %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+## Diablo
+
+A collection of websites that I use to keep up to date with Diablo.
+
+<table>
+<tbody>
+{% for item in links.diablo %}
+<tr>
+<td><a href="{{ item.url }}" target="_blank">{{ item.siteName }}</a></td>
+<td>{{ item.siteDescription }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
 ## Vinyl Stores
 
 A collection of online vinyl stores where I hunt for sweet music.

@@ -306,5 +306,91 @@
       "siteName": "CheckMyDeck",
       "siteDescription": "Check Steam Deck compatibility of your Steam library."
     }
+  ],
+  "comics": [
+    {
+      "url": "https://www.comicbookherald.com/",
+      "siteName": "Comic Book Herald",
+      "siteDescription": "Comic Book Herald is a site dedicated to guiding enthusiastic comic book readers through the immense amounts of Marvel books and trade paperbacks available."
+    },
+    {
+      "url": "https://www.howtolovecomics.com/",
+      "siteName": "How To Love Comics",
+      "siteDescription": "Helping new comics readers since 2013. Reading recommendations, tips, lists, reading orders, and more."
+    },
+    {
+      "url": "https://www.marvel.com/unlimited",
+      "siteName": "Marvel Unlimited",
+      "siteDescription": "Marvel's digital subscription service that boasts over 30,000 comics from the beginning of the Marvel comic universe. This is my main method of reading comics."
+    },
+    {
+      "url": "https://mk1.co.nz/",
+      "siteName": "Mark1Comics",
+      "siteDescription": "My out of town local comic book store. Has been operating since 1989."
+    },
+    {
+      "url": "https://mk1.co.nz/",
+      "siteName": "Mark1Comics",
+      "siteDescription": "My out of town local comic book store. Has been operating since 1989."
+    },
+    {
+      "url": "https://graphiccomics.co.nz/",
+      "siteName": "Graphic Comics",
+      "siteDescription": "My local comic book store."
+    }
+  ],
+  "wow": [
+    {
+      "url": "https://worldofwarcraft.blizzard.com/en-us/",
+      "siteName": "World of Warcraft",
+      "siteDescription": "The official World of Warcraft website"
+    },
+    {
+      "url": "https://www.raidbots.com/simbot",
+      "siteName": "Raidbots",
+      "siteDescription": "The easiest way to use SimulationCraft. A resource for World of Warcraft players to make decisions on what talents to spec and what gear to equip."
+    },
+    {
+      "url": "https://www.warcraftlogs.com/",
+      "siteName": "Warcraft Logs",
+      "siteDescription": "Combat analysis for World of Warcraft."
+    },
+    {
+      "url": "https://www.wowhead.com/",
+      "siteName": "Wowhead",
+      "siteDescription": "Working as intended. The largest World of Warcraft information site, featuring guides, news, and information on classes, professions, covenants, raids, transmog, etc."
+    },
+    {
+      "url": "https://www.icy-veins.com/wow/",
+      "siteName": "Icy Veins: World of Warcraft",
+      "siteDescription": "Icy Veins provides detailed guides and news for World of Warcraft: class guides, raid guides, event guides, pvp guides, etc."
+    }
+  ],
+  "diablo": [
+    {
+      "url": "https://diablo4.blizzard.com/en-us/",
+      "siteName": "Diablo IV",
+      "siteDescription": "The official Diablo IV website."
+    },
+    {
+      "url": "https://www.icy-veins.com/d4/",
+      "siteName": "Icy Veins: Diablo IV",
+      "siteDescription": "Icy Veins is also a great source for Diablo 4 guides! Unleash your potential in Sanctuary with our best builds, latest news, and guides for Diablo 4."
+    },
+    {
+      "url": "https://www.icy-veins.com/d4/",
+      "siteName": "Icyveins: Diablo IV",
+      "siteDescription": "Welcome to your ultimate source for Diablo 4 guides! Unleash your potential in Sanctuary with our best builds, latest news, and guides for Diablo 4."
+    },
+    {
+      "url": "https://mapgenie.io/diablo-4/maps/sanctuary",
+      "siteName": "Diablo IV Interactive Map",
+      "siteDescription": "Diablo 4 Interactive Map - Find all Waypoints, Altars, Collectibles, Chests, Dungeons, Side Quests, Bosses & more! Use the progress tracker & add notes to personalize your map!"
+    },
+    {
+      "url": "https://maxroll.gg/",
+      "siteName": "Maxroll",
+      "siteDescription": "Maxroll - News, Resources, Character Planners & Build Guides for Diablo 4, Diablo 3, Diablo 2, etc."
+    }
   ]
 }
