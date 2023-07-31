@@ -1,6 +1,34 @@
 {
   "albums": [
     {
+      "title": "Enema Of The State",
+      "artist": "Blink-182",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Pop Punk",
+      "label": "Geffen Records",
+      "code": "602455437471",
+      "varient": "Clear",
+      "number": "",
+      "image": "./src/assets/images/vinyl/enema-of-the-state.jpg",
+      "alt": "Cover of the album",
+      "comment": "Limited edition clear vinyl part of the 'HMV 1921 2021 100th Anniversary' celebration. A classic album to have in the collection."
+    },
+    {
+      "title": "Speak Now (Taylor's Version)",
+      "artist": "Taylor Swift",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Pop, Folk, World, & Country",
+      "label": "Republic Records",
+      "code": "2448438065",
+      "varient": "Violet Marbled",
+      "number": "",
+      "image": "./src/assets/images/vinyl/speak-now-taylors-version.jpg",
+      "alt": "Cover of the album",
+      "comment": "Was supposed to be the Orchid Marbled version but ended up with Violet Marbeled. Oh well."
+    },
+    {
       "title": "Liquid Swords",
       "artist": "Genius / GZA",
       "year": 1995,
