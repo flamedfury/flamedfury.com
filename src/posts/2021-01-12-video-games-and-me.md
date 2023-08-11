@@ -1,7 +1,7 @@
 ---
 title: Video games and me
 description: I've loved computer games forever. I miss having the time and energy I used to have for them.
-tags: [gaming, writing]
+tags: ["gaming"]
 date: 2021-02-22
 updated: 2023-01-06
 ---

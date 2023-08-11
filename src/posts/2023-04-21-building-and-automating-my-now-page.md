@@ -1,7 +1,7 @@
 ---
 title: Building and Automating My Now Page
 description: How I built and automated my now page with Eleventy and APIs.
-tags: [guide, eleventy]
+tags: [guides, eleventy]
 date: 2023-04-19
 ---
 

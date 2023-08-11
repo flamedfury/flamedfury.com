@@ -1,7 +1,7 @@
 ---
 title: 'Now Page: Automatically Syncing My Now Pages'
 description: How I automatically sync my now page with omg.lol
-tags: ["guide", "eleventy"]
+tags: ["guides", "eleventy"]
 date: 2023-07-23
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Network link aggregation on Synology and Unifi
 description: My notes on creating a bonded interface for link aggregation on a Unifi switch and Synology NAS.
-tags: [technology, guide, linux]
+tags: [technology, guides, linux]
 date: 2023-06-30
 ---
 

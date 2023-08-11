@@ -1,7 +1,7 @@
 ---
 title: 'Now page update: poster art for shows and movies'
 description: Combine multiple API calls and eleventy-fetch to enrich Trakt metadata with poster art.
-tags: ["guide", "eleventy"]
+tags: ["guides", "eleventy"]
 date: 2023-07-02
 ---
 

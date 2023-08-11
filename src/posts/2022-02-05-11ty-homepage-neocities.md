@@ -1,7 +1,7 @@
 ---
 title: Create A Static Site Using 11ty & Deploy to Neocities
 description: This is a simple guide to set up a simple static site or homepage using the static site generator 11ty and deploy it to Neocities.
-tags: guides
+tags: ["guides"]
 layout: post
 permalink: /guides/11ty-homepage-neocities/
 date: 2022-01-26

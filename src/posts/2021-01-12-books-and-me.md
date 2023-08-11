@@ -2,7 +2,7 @@
 title: Books and me
 description: I've always been a big reader, let's take a look at how I got here.
 layout: bookshelf.njk
-tags: [books, writing]
+tags: ["books"]
 date: 2021-01-12
 updated: 2023-01-06
 ---

@@ -1,7 +1,7 @@
 ---
 title: Comics and me
 description: I love collecting and reading comics, especially the X-Men.
-tags: [comics, writing]
+tags: ["comics"]
 date: 2021-01-12
 updated: 2023-01-06
 ---

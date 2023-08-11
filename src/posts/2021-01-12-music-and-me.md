@@ -1,7 +1,7 @@
 ---
 title: The music and me
 description: Music has always been a massive part of my life, let's dive into how that came to be.
-tags: [music, writing]
+tags: ["music"]
 date: 2021-01-12
 updated: 2023-05-29
 ---

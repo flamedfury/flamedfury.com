@@ -1,7 +1,7 @@
 ---
 title: Adding game cover art to my /now page
 description: How I'm using Eleventy-Fetch and the Steam API to fetch recently played games, the games cover art and store page URL to display on my /now page.
-tags: ["guide", "eleventy"]
+tags: ["guides", "eleventy"]
 date: 2023-06-19
 ---
 
