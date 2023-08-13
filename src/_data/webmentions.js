@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fetch = require('node-fetch');
+const eleventyFetch = require('@11ty/eleventy-fetch');
 const unionBy = require('lodash/unionBy');
 const domain = require('./meta.js').domain;
 
@@ -29,7 +29,7 @@ async function fetchWebmentions(since, perPage = 10000) {
   let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`;
   if (since) url += `&since=${since}`;
 
-  const response = await fetch(url);
+  const response = await eleventyFetch(url);
   if (response.ok) {
     const feed = await response.json();
     console.log(`>>> ${feed.children.length} new webmentions fetched from ${API}`);
@@ -53,10 +53,8 @@ function writeToCache(data) {
     fs.mkdirSync(CACHE_DIR);
   }
   // write data to cache json file
-  fs.writeFile(filePath, fileContent, err => {
-    if (err) throw err;
-    console.log(`>>> webmentions saved to ${filePath}`);
-  });
+  fs.writeFileSync(filePath, fileContent);
+  console.log(`>>> webmentions saved to ${filePath}`);
 }
 
 // get cache contents from json file
