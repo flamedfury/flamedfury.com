@@ -1,85 +1,22 @@
 form {
-  max-width: 35rem
+  display: grid;
+	padding: 2em 0;
 }
 
-form br {
-  display: none
-}
-
-label {
-  display: block;
-  font-weight: 600
-}
-
-input,
-select {
-  line-height: 1
-}
-
-input,
-select,
-textarea {
+input[type='text'], input[type='email'], textarea {
   background-color: var(--color-dark-glare);
-  color: var(--color-light);
-  font: inherit;
-  border: 1px solid var(--color-light);
-  margin-top: .15rem;
-  padding: .5rem 1rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-text);
+}
+
+input[type='text']::placeholder, input[type='email']::placeholder, textarea::placeholder {
+  opacity: 0.5;
+  font-size: var(--size-step-0);
+}
+
+input,
+textarea,
+button {
   width: 100%;
-}
-
-label input {
-  margin: -.25rem .5rem 0 0;
-  width: auto;
-  vertical-align: middle
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0
-}
-
-legend {
-  display: block;
-  font-weight: 700
-}
-
-.field-list {
-  margin: 0;
-  padding: 0;
-  list-style: none
-}
-
-.field-list__field-group {
-  margin-bottom: 2rem;
-  transition: transform 150ms
-}
-
-.field-list__field-group__description {
-  display: block;
-  margin-top: .3rem;
-  font-size: .875rem;
-  line-height: 1.25
-}
-
-textarea+.field-list__field-group__description {
-  margin-top: 0
-}
-
-.field-list__field-group--confirm {
-  font-weight: 400
-}
-
-.field-list__field-group__list {
-  list-style: none;
-  margin: 0
-}
-
-.field-list__field-group__list label {
-  font-weight: 400
-}
-
-.field-list__field-group__list .field-list__field-group__description {
-  margin: 0 0 0 1.35rem
+  margin-bottom: 1em;
 }

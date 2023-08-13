@@ -1,4 +1,4 @@
-.button {
+/* .button {
   color: var(--color-light);
   text-decoration: none;
   position: relative;
@@ -32,4 +32,20 @@
   position: absolute;
   transition: transform 0.2s ease-in-out;
   box-sizing: content-box;
+} */
+
+.button {
+  color: var(--color-light);
+  background-color: var(--color-bg);
+  border: 3px solid var(--color-primary);
+  padding: var(--space-xs) var(--space-m-l);
+  line-height: 3.5;
+  box-shadow: 6px 6px 0 0 var(--color-primary);
+  transition: all 0.1s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 0 0 var(--color-primary);
 }

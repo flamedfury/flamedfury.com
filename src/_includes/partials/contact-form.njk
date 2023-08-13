@@ -1,27 +1,10 @@
 <form action="/contact/thank-you" method="POST" name="contact" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact"/>
-  <ol class="[ field-list ]">
-    <li class="[ field-list__field-group ]">
-      <label class="question__label" for="field-name">What's your name?</label>
-      <br>
-      <input class="question__field" type="text" name="name" id="field-name" required="" aria-required="true" placeholder="Web Surfer" autocomplete="name"
-        autocorrect="off" autocapitalize="off">
-    </li>
-    <li class="[ field-list__field-group ]">
-      <label class="question__label" for="field-email">What's your email address?</label>
-      <br>
-      <input class="question__field" type="email" name="email" id="field-email" required="" aria-required="true" placeholder="surfing@the.web"
-        autocomplete="email">
-    </li>
-    <li class="[ field-list__field-group ]">
-      <label class="question__label" for="field-message">What's on your mind?</label>
-      <br>
-      <textarea id="field-message" name="message" rows="5" cols="100" required="" aria-required="true" spellcheck="true" autocapitalize="sentences"></textarea>
-    </li>
-    <li hidden="">
-      <label>Don't fill this out if you're human: <input name="bot-field">
-      </label>
-    </li>
-  </ol>
-  <button type="submit" class="[ button ] [ font-base text-base weight-bold ]">Send message</button>
+  <input type="hidden" name="flamedfury-contact" value="contact"/>
+  <label for="name">What's your name?</label>
+  <input type="text" name="name" id="name" autocomplete="name" placeholder="Web Surfer" title="Please enter your name" required="" aria-required="true">
+  <label for="email">What's your email address?</label>
+  <input type="email" name="email" id="email" autocomplete="email" placeholder="surfing@the.web" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required="" aria-required="true">
+  <label for="message">What's on your mind?</label>
+  <textarea name="message" id="message" placeholder="Write your message here" rows="5" required="" aria-required="true" spellcheck="true" autocapitalize="sentences"></textarea>
+  <button class="button" type="submit">Send Message</button>
 </form>

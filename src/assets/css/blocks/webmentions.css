@@ -45,7 +45,7 @@
 
 .webmentions input[type='url'] {
   background-color: var(--color-dark-glare);
-  border: 2px solid #999;
+  border: 2px solid var(--color-primary);
   color: var(--color-text);
 }
 
