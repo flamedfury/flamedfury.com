@@ -121,6 +121,7 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
+// Webmentions
 const getWebmentionsForUrl = (webmentions, url) => {
   return webmentions.children.filter(entry => entry['wm-target'] === url);
 };
