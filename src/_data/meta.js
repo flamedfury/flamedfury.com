@@ -3,6 +3,7 @@ const package = require('../../package.json');
 module.exports = {
   pkv: package.version || 'v1',
   url: process.env.URL || 'http://localhost:8080',
+  domain: 'flamedfury.com',
   siteName: 'Flamed Fury',
   siteVersion: '2302',
   siteDescription:
@@ -21,7 +22,7 @@ module.exports = {
   themeBgColor: '#252525', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.png',
-    mastodonProfile: '' // i.e. https://front-end.social/@flamed - url to your mastodon instance/profile
+    mastodonProfile: 'https://social.lol/@flamed'
   },
   blog: {
     // this is for the rss feed
@@ -31,5 +32,9 @@ module.exports = {
   },
   pagination: {
     itemsPerPage: 20
+  },
+  webmentions: {
+    formTitle: 'Have you published a response? Let me know where:',
+    buttonValue: 'Send Webmention'
   }
 };

@@ -1,5 +1,10 @@
 [
   {
+    "platform": "mastodon",
+    "url": "https://social.lol/@flamed",
+    "icon": "mastodon.svg"
+  },
+  {
     "platform": "github",
     "url": "https://github.com/flamedfury/flamedfury.com",
     "icon": "github.svg"

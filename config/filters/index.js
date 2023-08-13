@@ -121,6 +121,41 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
+const getWebmentionsForUrl = (webmentions, url) => {
+  return webmentions.children.filter(entry => entry['wm-target'] === url);
+};
+
+const webmentionSize = mentions => {
+  return !mentions ? 0 : mentions.length;
+};
+
+const webmentionsByType = (mentions, mentionType) => {
+  return mentions.filter(entry => !!entry[mentionType]);
+};
+
+const isOwnWebmention = webmention => {
+  const urls = [
+    'https://flamedfury.com',
+    'https://social.lol/@flamed'
+  ];
+  const authorUrl = webmention.author ? webmention.author.url : false;
+  // check if a given URL is part of this site.
+  return authorUrl && urls.includes(authorUrl);
+};
+
+const sortWebmentions = mentions => {
+  return mentions.sort((a, b) => {
+    if (a['published'] < b['published']) {
+      return -1;
+    }
+    if (a['published'] > b['published']) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+};
+
 module.exports = {
   limit,
   toHtml,
@@ -132,5 +167,10 @@ module.exports = {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines
+  splitlines,
+  getWebmentionsForUrl,
+  webmentionSize,
+  webmentionsByType,
+  isOwnWebmention,
+  sortWebmentions
 };
