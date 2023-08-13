@@ -1,6 +1,5 @@
 const fs = require('fs');
-// Use a dynamic import for node-fetch
-const fetchModule = import('node-fetch');
+const fetch = require('node-fetch');
 const unionBy = require('lodash/unionBy');
 const domain = require('./meta.js').domain;
 
@@ -8,7 +7,7 @@ const domain = require('./meta.js').domain;
 require('dotenv').config();
 
 // Define Cache Location and API Endpoint
-const CACHE_DIR = '_cache';
+const CACHE_DIR = '.cache';
 const API = 'https://webmention.io/api';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 
@@ -29,9 +28,6 @@ async function fetchWebmentions(since, perPage = 10000) {
 
   let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`;
   if (since) url += `&since=${since}`;
-
-  // Use the fetched fetch function
-  const fetch = await fetchModule;
 
   const response = await fetch(url);
   if (response.ok) {
