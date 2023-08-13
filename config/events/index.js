@@ -29,14 +29,17 @@ const svgToJpeg = function () {
   });
 };
 
+
+const fetch = require('@11ty/eleventy-fetch');
+
 async function updateOMGLol() {
   const omglolkey = process.env.OMG_LOL_KEY;
   const data = fs.readFileSync('./dist/now-omg.txt', 'utf8');
 
   try {
-    const fetch = await import('node-fetch');
-    const response = await fetch.default("https://api.omg.lol/address/flamed/now", {
-      method: 'post',
+    const url = "https://api.omg.lol/address/flamed/now";
+    const options = {
+      method: 'POST',
       headers: {
         Authorization: `Bearer ${omglolkey}`,
         'Content-Type': 'application/json'
@@ -45,6 +48,11 @@ async function updateOMGLol() {
         content: data,
         listed: 1,
       })
+    };
+
+    const response = await fetch(url, {
+      duration: '1h', // Cache duration of 1 hour
+      type: 'json',
     });
 
     if (response.ok) {
