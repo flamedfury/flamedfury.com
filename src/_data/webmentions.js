@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fetch = import('node-fetch');
+const fetch = require('@11ty/eleventy-fetch')
 const unionBy = require('lodash/unionBy');
 const domain = require('./meta.js').domain;
 
