@@ -27,35 +27,44 @@
   <!-- if reactions -->
   {% if combinedMentionsSize > 0 %}
 
-  <div class="flow">
-    <h3>
-      {{ combinedMentionsSize }} Reaction{% if combinedMentionsSize != 1 %}s{% endif %}
-      <span>(Likes, reposts, links and comments)</span>
-    </h3>
+    <div class="flow">
+      <h3>
+        {{ combinedMentionsSize }} Reaction{% if combinedMentionsSize != 1 %}s{% endif %}
+        <span>(Likes, reposts, links and comments)</span>
+      </h3>
 
-    <p>
-      {% for webmention in allMentions %} {% if webmention.author.name != "Lene Saile" %}
-      {% if webmention.url != "" %}
-      <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-        {% endif %} {% if webmention.author.photo %}
-        <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" width="48" height="48" loading="lazy" />
-        {% else %}
-        <img src="{{ meta.webmentions.fallbackAvatar | url }}" alt="" width="48" height="48" />
-        {% endif %} {% if webmention.url != "" %}
-      </a>
-      {% endif %} {% endif %} {% endfor %}
-    </p>
-  </div>
+      <p>
+        {% for webmention in allMentions %}
+          {% if webmention.author.name != "fLaMEd" %}
+            {% if webmention.url != "" %}
+              <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+              {% endif %}
+              {% if webmention.author.photo %}
+                <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" width="48" height="48" loading="lazy"/>
+              {% else %}
+                <img src="{{ meta.webmentions.fallbackAvatar | url }}" alt="" width="48" height="48"/>
+              {% endif %}
+              {% if webmention.url != "" %}
+              </a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
   {% endif %}
 
   <!-- replies -->
   {% if repliesSize > 0 %}
 
-  <div class="webmention-replies flow">
-    <h3>{% if repliesSize == "1" %}Comment{% else %}Comments{% endif %}</h3>
+    <div class="webmention-replies flow">
+      <h3>
+        {% if repliesSize == "1" %}Comment{% else %}Comments{% endif %}
+      </h3>
 
-    {% for webmention in replies %} {% include "partials/webmention.njk" %} {% endfor %}
-  </div>
+      {% for webmention in replies %}
+        {% include "partials/webmention.njk" %}
+      {% endfor %}
+    </div>
   {% endif %}
 
   <section class="region flow">
@@ -65,14 +74,10 @@
 
     <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
       <label for="form-webmention-source">URL</label>
-      <div class="sidebar" style="
-          --sidebar-gap: var(--space-xs);
-          --sidebar-target-width: 60%;
-          --sidebar-content-min-width: 220px;
-        ">
-        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required />
-        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}" />
-        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}" />
+      <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
+        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
+        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
+        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
       </div>
     </form>
   </section>
