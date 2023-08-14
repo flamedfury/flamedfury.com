@@ -35,6 +35,7 @@ module.exports = {
   },
   webmentions: {
     formTitle: 'Have you published a response? Let me know where:',
-    buttonValue: 'Send Webmention'
+    buttonValue: 'Send Webmention',
+    fallbackAvatar: '/assets/images/svg/avatar-fallback.svg'
   }
 };
