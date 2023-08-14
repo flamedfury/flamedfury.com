@@ -53,8 +53,10 @@ function writeToCache(data) {
     fs.mkdirSync(CACHE_DIR);
   }
   // write data to cache json file
-  fs.writeFileSync(filePath, fileContent);
-  console.log(`>>> webmentions saved to ${filePath}`);
+  fs.writeFile(filePath, fileContent, err => {
+    if (err) throw err;
+    console.log(`>>> webmentions saved to ${filePath}`);
+  });
 }
 
 // get cache contents from json file
