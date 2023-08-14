@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fetch = require('@11ty/eleventy-fetch');
+const fetch = require('node-fetch');
 const unionBy = require('lodash/unionBy');
 const domain = require('./meta.js').domain;
 
@@ -29,7 +29,7 @@ async function fetchWebmentions(since, perPage = 10000) {
   let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`;
   if (since) url += `&since=${since}`;
 
-  const response = await fetch(url); // Use the fetch function from @11ty/eleventy-fetch
+  const response = await fetch(url);
   if (response.ok) {
     const feed = await response.json();
     console.log(`>>> ${feed.children.length} new webmentions fetched from ${API}`);
@@ -84,7 +84,7 @@ module.exports = async function () {
 
   // Only fetch new mentions in production
   if (process.env.ELEVENTY_ENV === 'production') {
-    const feed = await fetch.fetchWebmentions(cache.lastFetched); // Use the fetchWebmentions function from @11ty/eleventy-fetch
+    const feed = await fetchWebmentions(cache.lastFetched);
     if (feed) {
       const webmentions = {
         lastFetched: new Date().toISOString(),
