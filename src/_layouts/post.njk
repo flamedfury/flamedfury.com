@@ -3,9 +3,9 @@ layout: base
 schema: blog
 ---
 
-<article class="h-entry region blog">
+<article class="region blog | h-entry">
   <div class="wrapper flow prose">
-    <h1 class="p-name gradient-text">{{ title }}</h1>
+    <h1 class="gradient-text | p-name">{{ title }}</h1>
 
     <p style="font-size: var(--size-step-0)">
       <span class="block">Published: {% set definedDate = date %}
@@ -16,7 +16,7 @@ schema: blog
       {% endif %}
     </p>
 
-    <div class="e-content">
+    <div class="flow e-content">
       {{ content | safe }}
     </div>
 
