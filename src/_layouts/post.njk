@@ -35,6 +35,6 @@ schema: blog
 </article>
 
 <!-- set webmentions url -->
-{% set webmentionUrl %}{{ page.url | url | absoluteUrl(meta.url) }}{% endset %}
+{% set webmentionUrl %}{{ page.url | url }}{% endset %}
 <!-- include webmentions -->
 {% include "partials/webmentions.njk" %}

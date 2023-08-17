@@ -122,40 +122,47 @@ const splitlines = (input, maxCharLength) => {
 };
 
 // Webmentions
-const getWebmentionsForUrl = (webmentions, url) => {
-  return webmentions.children.filter(entry => entry['wm-target'] === url);
-};
+const webmentionsByUrl = (webmentions, url) => {
+  const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of'];
 
-const webmentionSize = mentions => {
-  return !mentions ? 0 : mentions.length;
-};
+  const data = {
+    'like-of': [],
+    'repost-of': [],
+    'in-reply-to': [],
+  };
 
-const webmentionsByType = (mentions, mentionType) => {
-  return mentions.filter(entry => !!entry[mentionType]);
-};
+  const hasRequiredFields = (entry) => {
+    const { author, published, content } = entry;
+    return author.name && published && content;
+  };
 
-const isOwnWebmention = webmention => {
-  const urls = [
-    'https://flamedfury.com',
-    'https://social.lol/@flamed'
-  ];
-  const authorUrl = webmention.author ? webmention.author.url : false;
-  // check if a given URL is part of this site.
-  return authorUrl && urls.includes(authorUrl);
-};
+  const filtered = webmentions
+    .filter((entry) => entry['wm-target'] === `https://flamedfury.com${url}`)
+    .filter((entry) => allowedTypes.includes(entry['wm-property'])) || [];
 
-const sortWebmentions = mentions => {
-  return mentions.sort((a, b) => {
-    if (a['published'] < b['published']) {
-      return -1;
+  filtered.forEach((m) => {
+    if (data[m['wm-property']]) {
+      const isReply = m['wm-property'] === 'in-reply-to';
+      const isValidReply = isReply && hasRequiredFields(m);
+      if (isReply) {
+        if (isValidReply) {
+          m.sanitized = sanitizeHTML(m.content.html);
+          data[m['wm-property']].unshift(m);
+        }
+        return;
+      }
+
+      data[m['wm-property']].unshift(m);
     }
-    if (a['published'] > b['published']) {
-      return 1;
-    }
-    // a must be equal to b
-    return 0;
   });
+
+  data['in-reply-to'].sort((a, b) =>
+    dayjs(a.published) > dayjs(b.published) ? 1 : dayjs(b.published) > dayjs(a.published) ? -1 : 0
+  );
+
+  return data;
 };
+
 
 module.exports = {
   limit,
@@ -169,9 +176,5 @@ module.exports = {
   minifyJs,
   mdInline,
   splitlines,
-  getWebmentionsForUrl,
-  webmentionSize,
-  webmentionsByType,
-  isOwnWebmention,
-  sortWebmentions
+  webmentionsByUrl
 };
