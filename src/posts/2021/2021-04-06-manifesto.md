@@ -1,6 +1,6 @@
 ---
 title: Web Manifesto
-layout: manifesto
+layout: post
 tags:
   - writing
   - web
@@ -106,10 +106,7 @@ A personal homepage is fantastic; if you don't, get one!
 
 To expand upon [@molly0xfff@hachyderm.io](https://front-end.social/@molly0xfff@hachyderm.io/109536577589664928) post to [Front-End Social](https://front-end.social/):
 
-> if you are at all able (or able to learn), i highly recommend:
-> - creating your own website
-> - on your own domain
-> - acquiring copies of your data that you care about that's on third party sites (particularly twitter)
+> if you are at all able (or able to learn), i highly recommend: creating your own website, on your own domain, acquiring copies of your data that you care about that's on third party sites (particularly twitter)
 
 - Learn some basic HTML & CSS. 
 - Purchase your own domain.
@@ -118,7 +115,20 @@ To expand upon [@molly0xfff@hachyderm.io](https://front-end.social/@molly0xfff@h
 
 Own your own content!
 
-## Futher reading
+## Resources
+I've curated a set of resources to help everyone to get started, no matter your skill set.
 
-I've curated a set of resources to help everyone to get started, no matter your skill set:
+### Building your own homepage
 
+- [Jackie's guide to making a website zine](https://www.zinesbyjackie.com/shop/jackies-guide-to-making-a-website-by-you--for-you) - Want to make your own website, but don't know how to start? Jackie's awesome Zine is a 28-page, Risograph-printed comic guide to help you brainstorm, design, and bring a personal website to life.
+- [W3Schools](https://www.w3schools.com/where_to_start.asp) - A great beginner resource with well organised and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.
+- [MDN: Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) - MDN Web Docs is a popular document repository and learning resource for web developers. This site provides learning resources for open web technologies like HTML and CSS. Less beginner tutorials than W3 Schools and more indepth technical documents.
+
+### Hosting your own homepage
+
+- [Neocities](https://neocities.org) - A great place for beginners. Neocities is a commercial web hosting service for static pages. It offers 1 GB of storage space for free sites and no server-side scripting for both paid and free subscriptions, the service's expressed goal is to revive the support of free web hosting of the now-defunct GeoCities. Many new and old webmasters come to Neocities to host their new homepages. Check out [Sadgrl's absolute beginner's guide to Neocities](https://sadgrl.online/learn/articles/beginners-guide-neocities) to get going.
+- [W3Schools Spaces](https://www.w3schools.com/spaces/index.php) - W3Schools offer a wide range of beginner tutorials and now a place to host your projects. Free hosting and an online code editor.
+- [Ichi City](https://ichi.city) - A small independent project by [m15o](m15o.smol.pub/). Ichi is a tiny internet community where people can create their homepages for free. These pages are listed on Ichi's index, allowing everyone to explore, discover, and engage with one another. 
+- [Bear Blog](https://bearblog.dev/) - Want to get your thoughts out there as quick as possible? Bear Blog is a privacy-first, no-nonsense, super-fast blogging platform.
+- [Netlify](https://netlify.com) - Want to level up your static websites? Look no further than Netlify.
+- [Github Pages](https://pages.github.com/) - Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
