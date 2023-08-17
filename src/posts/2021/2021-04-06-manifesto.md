@@ -130,5 +130,6 @@ I've curated a set of resources to help everyone to get started, no matter your 
 - [W3Schools Spaces](https://www.w3schools.com/spaces/index.php) - W3Schools offer a wide range of beginner tutorials and now a place to host your projects. Free hosting and an online code editor.
 - [Ichi City](https://ichi.city) - A small independent project by [m15o](m15o.smol.pub/). Ichi is a tiny internet community where people can create their homepages for free. These pages are listed on Ichi's index, allowing everyone to explore, discover, and engage with one another. 
 - [Bear Blog](https://bearblog.dev/) - Want to get your thoughts out there as quick as possible? Bear Blog is a privacy-first, no-nonsense, super-fast blogging platform.
+- [omg.lol](https://home.omg.lol/) - Treat yourself to an awesome web address, a devastatingly gorgeous profile page, a stellar email address, a weblog, a now page and heaps more.
 - [Netlify](https://netlify.com) - Want to level up your static websites? Look no further than Netlify.
 - [Github Pages](https://pages.github.com/) - Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
