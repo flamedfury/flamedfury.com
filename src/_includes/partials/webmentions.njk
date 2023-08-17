@@ -1,71 +1,49 @@
 <section class="wrapper flow content region | blog webmentions" style="--region-space-top: var(--space-xl)">
   <h2 id="webmentions">Webmentions</h2>
-  <!-- Filter the cached mentions to only include ones matching the post's url -->
-  {% set allMentions = webmentions | getWebmentionsForUrl(webmentionUrl) %}
-  <!-- Set reposts as mentions that are `repost-of`  -->
-  {% set reposts = allMentions | webmentionsByType('repost-of') %}
-  <!-- Count the total reposts -->
-  {% set repostsSize = reposts | webmentionSize %}
-  <!-- Set likes as mentions that are `like-of`  -->
-  {% set likes = allMentions | webmentionsByType('like-of') %}
-  <!-- Count the total likes -->
-  {% set likesSize = likes | webmentionSize %}
-  <!-- Set replies as mentions that are `in-reply-to`  -->
-  {% set replies = allMentions | webmentionsByType('in-reply-to') | sortWebmentions %}
-  <!-- Count the total replies -->
-  {% set repliesSize = replies | webmentionSize %}
-  <!-- Set replies as mentions that are `in-reply-to`  -->
-  {% set mentions = allMentions | webmentionsByType('mention-of') | sortWebmentions %}
-  <!-- Count the total replies -->
-  {% set mentionsSize = mentions | webmentionSize %}
 
-  <!-- Set replies as mentions that are `in-reply-to`  -->
-  {% set combinedMentions = allMentions | sortWebmentions %}
-  <!-- Count the total replies -->
-  {% set combinedMentionsSize = combinedMentions | webmentionSize %}
-
-  <!-- if reactions -->
-  {% if combinedMentionsSize > 0 %}
-
-    <div class="flow">
-      <h3>
-        {{ combinedMentionsSize }} Reaction{% if combinedMentionsSize != 1 %}s{% endif %}
-        <span>(Likes, reposts, links and comments)</span>
-      </h3>
-
-      <p>
-        {% for webmention in allMentions %}
-          {% if webmention.author.name != "fLaMEd" %}
-            {% if webmention.url != "" %}
-              <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-              {% endif %}
-              {% if webmention.author.photo %}
-                <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" width="48" height="48" loading="lazy"/>
-              {% else %}
-                <img src="{{ meta.webmentions.fallbackAvatar | url }}" alt="" width="48" height="48"/>
-              {% endif %}
-              {% if webmention.url != "" %}
-              </a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </p>
-    </div>
+  {% if mentions['like-of']|length %}
+  <h4>Likes</h4>
+  <div class="webmentions--likeboost">
+    {%- for like in mentions['like-of'] %}
+    <a target="_blank" rel="noopener" href="{{like.author.url}}"><img src="{{like.author.photo}}" title="{{like.author.name}}"></a>
+    {% endfor%}
+  </div>
   {% endif %}
 
-  <!-- replies -->
-  {% if repliesSize > 0 %}
-
-    <div class="webmention-replies flow">
-      <h3>
-        {% if repliesSize == "1" %}Comment{% else %}Comments{% endif %}
-      </h3>
-
-      {% for webmention in replies %}
-        {% include "partials/webmention.njk" %}
-      {% endfor %}
-    </div>
+  {% if mentions['repost-of']|length %}
+  <h4>Boosts</h4>
+  <div class="webmentions--likeboost">
+    {%- for repost in mentions['repost-of'] %}
+    <a target="_blank" rel="noopener" href="{{repost.author.url}}"><img src="{{repost.author.photo}}" title="{{repost.author.name}}"></a>
+    {% endfor%}
+  </div>
   {% endif %}
+
+  {% if mentions['in-reply-to']|length %}
+  <h4>Comments</h4>
+  <div class="webmentions--comments">
+    {%- for mention in mentions['in-reply-to'] %}
+    <div class="webmentions--comment">
+      <div class="webmentions--comment--header">
+        <div class="webmentions--comment--header--name">
+          <a target="_blank" rel="noopener" href="{{mention.author.url}}"><img src="{{mention.author.photo}}" title="{{mention.author.name}}"></a>
+          {{mention.author.name}}
+        </div>
+        <div>
+          <a target="_blank" rel="noopener" href="{{mention.url}}">{{ mention.published | isoDateOnly }}</a>
+        </div>
+      </div>
+      <div class="webmentions--comment--content">
+        {{ mention.sanitized | safe }}
+      </div>
+    </div>
+    {% endfor%}
+  </div>
+  {% else %}
+  <h4>No Webmentions Yet</h4>
+  {% endif %}
+
+
 
   <section class="region flow">
     <p>
@@ -75,9 +53,9 @@
     <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
       <label for="form-webmention-source">URL</label>
       <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
-        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
-        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
-        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
+        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required />
+        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}" />
+        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}" />
       </div>
     </form>
   </section>
