@@ -16,6 +16,17 @@ schema: blog
       {% endif %}
     </p>
 
+    <p style="font-size: var(--size-step-0)">
+      Tagged: 
+      {% for tag in tags %}
+        {% if tag != "posts" %}
+          <a href="/tags/{{ tag }}">
+            {{ tag }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </p>
+
     <div class="flow e-content">
       {{ content | safe }}
     </div>
