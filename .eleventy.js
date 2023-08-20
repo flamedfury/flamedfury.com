@@ -28,8 +28,7 @@ const {
   stripHtml,
   minifyCss,
   mdInline,
-  splitlines,
-  webmentionsByUrl
+  splitlines
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -92,7 +91,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('cssmin', minifyCss);
   eleventyConfig.addFilter('md', mdInline);
   eleventyConfig.addFilter('splitlines', splitlines);
-  eleventyConfig.addFilter('webmentionsByUrl', webmentionsByUrl);
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);

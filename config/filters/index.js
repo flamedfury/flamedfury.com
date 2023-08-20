@@ -121,49 +121,6 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
-// Webmentions
-const webmentionsByUrl = (webmentions, url) => {
-  const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of'];
-
-  const data = {
-    'like-of': [],
-    'repost-of': [],
-    'in-reply-to': [],
-  };
-
-  const hasRequiredFields = (entry) => {
-    const { author, published, content } = entry;
-    return author.name && published && content;
-  };
-
-  const filtered = webmentions
-    .filter((entry) => entry['wm-target'] === `https://flamedfury.com${url}`)
-    .filter((entry) => allowedTypes.includes(entry['wm-property'])) || [];
-
-  filtered.forEach((m) => {
-    if (data[m['wm-property']]) {
-      const isReply = m['wm-property'] === 'in-reply-to';
-      const isValidReply = isReply && hasRequiredFields(m);
-      if (isReply) {
-        if (isValidReply) {
-          m.sanitized = sanitizeHTML(m.content.html);
-          data[m['wm-property']].unshift(m);
-        }
-        return;
-      }
-
-      data[m['wm-property']].unshift(m);
-    }
-  });
-
-  data['in-reply-to'].sort((a, b) =>
-    dayjs(a.published) > dayjs(b.published) ? 1 : dayjs(b.published) > dayjs(a.published) ? -1 : 0
-  );
-
-  return data;
-};
-
-
 module.exports = {
   limit,
   toHtml,
@@ -175,6 +132,5 @@ module.exports = {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines,
-  webmentionsByUrl
+  splitlines
 };

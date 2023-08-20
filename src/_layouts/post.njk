@@ -11,19 +11,19 @@ schema: blog
       <span class="block">Published: {% set definedDate = date %}
         {% include "partials/date.njk" %}</span>
       {% if updated %}
-        <span class="block">Updated: {% set definedDate = updated %}
-          {% include "partials/date.njk" %}</span>
+      <span class="block">Updated: {% set definedDate = updated %}
+        {% include "partials/date.njk" %}</span>
       {% endif %}
     </p>
 
     <p style="font-size: var(--size-step-0)">
-      Tagged: 
+      Tagged:
       {% for tag in tags %}
-        {% if tag != "posts" %}
-          <a href="/tags/{{ tag }}">
-            {{ tag }}
-          </a>
-        {% endif %}
+      {% if tag != "posts" %}
+      <a href="/tags/{{ tag }}">
+        {{ tag }}
+      </a>
+      {% endif %}
       {% endfor %}
     </p>
 
@@ -33,8 +33,3 @@ schema: blog
 
   </div>
 </article>
-
-<!-- set webmentions url -->
-{% set webmentionUrl %}{{ page.url | url }}{% endset %}
-<!-- include webmentions -->
-{% include "partials/webmentions.njk" %}
