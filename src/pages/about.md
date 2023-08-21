@@ -19,6 +19,16 @@ I'm a big fan of beer and have tried thousands during my time, but I have settle
 
 My family is my greatest joy. My wife and son are my number one priority in life.
 
+## Contact me
+
+Email ✉️ is the easiest way to contact me. Hit me up [flamed@flamedfury.com](mailto:flamed@flamefury.com?subject=Sup%20fLaMEd?), I’d love to hear from you.
+
+I’m not active on social media, so you won’t find me on any of the corporate silos.
+
+If email isn’t your thing you can fill out the contact form below and I’ll do my best to get back to you.
+
+{% include "partials/contact-form.njk" %}
+
 ## About my homepage
 
 I build my homepage with the static site generator [Eleventy](https://www.11ty.dev/). 

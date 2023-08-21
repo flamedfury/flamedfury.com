@@ -19,10 +19,6 @@ module.exports = {
     {
       text: 'About',
       url: '/about/'
-    },
-    {
-      text: 'Contact',
-      url: '/contact/'
     }
   ],
   bottom: [
@@ -33,6 +29,10 @@ module.exports = {
     {
       text: 'PSA',
       url: '/psa/'
+    },
+    {
+      text: 'SOA',
+      url: '/statement-of-audience/'
     },
     {
       text: 'Privacy',
