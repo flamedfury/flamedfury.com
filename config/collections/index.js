@@ -4,22 +4,30 @@ const getAllPosts = collection => {
   return posts.reverse();
 };
 
-/** Returns all update posts as a collection. */
-const getAllUpdates = collection => {
-  const updates = collection.getFilteredByGlob('./src/posts/*.md');
-  return updates.filter(post => post.data.category === 'update').reverse();
-};
+/** Returns all blog posts as a collection. */
+const getPostsByYear = collection => {
+  const posts = collection.getFilteredByGlob('./src/posts/*/*.md');
+  const postsByYear = {};
 
-/** Returns all about pages as a collection. */
-const getAllAbouts = collection => {
-  const abouts = collection.getFilteredByGlob('./src/about/*.md');
-  return abouts.reverse();
-};
+  // Group posts by year
+  posts.forEach((post) => {
+    const year = post.date.getFullYear();
+    if (!postsByYear[year]) {
+      postsByYear[year] = [];
+    }
+    postsByYear[year].push(post);
+  });
 
-/** Returns all explore pages as a collection. */
-const getAllExplores = collection => {
-  const explores = collection.getFilteredByGlob('./src/explore/*.md');
-  return explores.reverse();
+  // Sort the years in descending order
+  const sortedYears = Object.keys(postsByYear).sort((a, b) => b - a);
+
+  // Create an array with year and posts for rendering
+  const result = sortedYears.map((year) => ({
+    year: year,
+    posts: postsByYear[year],
+  }));
+
+  return result;
 };
 
 /** Returns all collection (lol) pages as a collection. */
@@ -28,17 +36,8 @@ const getAllCollections = collection => {
   return collections.filter(page => page.data.category === 'collections').reverse();
 };
 
-/** Returns all pages with the music category as a collection. */
-const getAllMusic = collection => {
-  const music = collection.getFilteredByGlob('./src/pages/*.md');
-  return music.filter(page => page.data.category === 'music').reverse();
-};
-
 module.exports = {
   getAllPosts,
-  getAllUpdates,
-  getAllAbouts,
-  getAllExplores,
-  getAllCollections,
-  getAllMusic,
+  getPostsByYear,
+  getAllCollections
 };

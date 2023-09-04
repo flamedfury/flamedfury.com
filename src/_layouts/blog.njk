@@ -57,10 +57,16 @@ layout: base
     {% include "partials/tag-loop.njk" %}
   </div>
 
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %}
-    {% for post in postslist %}
-      {% include "partials/post-loop.njk" %}
-    {% endfor %}
-  </ul>
+  {% for year in collections.postsByYear %}
+    <div class="region">
+      <div class="wrapper flow content">
+        <h2 id="{{ year.year }}">{{ year.year }}</h2>
+      </div>
+      <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+        {% for post in year.posts | reverse %}
+          {% include "partials/post-loop.njk" %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
 </article>

@@ -41,11 +41,8 @@ const {
 // module import collections
 const {
   getAllPosts,
-  getAllUpdates,
-  getAllAbouts,
-  getAllExplores,
-  getAllCollections,
-  getAllMusic
+  getPostsByYear,
+  getAllCollections
 } = require('./config/collections/index.js');
 
 // module import events
@@ -110,12 +107,8 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
-  eleventyConfig.addCollection('updates', getAllUpdates);
-  eleventyConfig.addCollection('about', getAllAbouts);
-  eleventyConfig.addCollection('explore', getAllExplores);
+  eleventyConfig.addCollection('postsByYear', getPostsByYear);
   eleventyConfig.addCollection('collections', getAllCollections);
-  eleventyConfig.addCollection('music', getAllMusic);
-
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);
   eleventyConfig.on('eleventy.after', async () => {
