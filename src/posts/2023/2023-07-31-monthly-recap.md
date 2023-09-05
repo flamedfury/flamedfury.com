@@ -1,5 +1,5 @@
 ---
-title: 'Monthly Recap: August 2023'
+title: 'Monthly Recap: July 2023'
 description: Hello web surfers, and welcome to July's recap.
 tags:
   - monthly recap
