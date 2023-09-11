@@ -36,8 +36,8 @@ I've been completing the walk three times a week to complement my exercise routi
 
 {% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-top-of-korokoro-dam-01.jpeg", "Top of the Korokoro Dam", "Looking out across the top of the dam." %}
 
-{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-01.jpeg", "The Historic Korokoro Dam", "The Korokoro Dam waterfall." %}
+{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-01.jpeg", "The Historic Korokoro Dam" %}
 
-{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-02.jpeg", "The Historic Korokoro Dam", "The Korokoro Dam waterfall." %}
+{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-02.jpeg", "The Historic Korokoro Dam" %}
 
-{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-03.jpeg", "The Historic Korokoro Dam", "The Korokoro Dam waterfall." %}
+{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-03.jpeg", "The Historic Korokoro Dam" %}
