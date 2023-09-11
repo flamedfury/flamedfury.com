@@ -19,18 +19,9 @@ I've been completing the walk three times a week to complement my exercise routi
 
 > ### The Korokoro Dam
 >
-> The Petone Borough Council needed to add to it’s existing artesian water
-> supply. In 1902, it settled on the Korokoro Stream as the site for their
-> supply, but had harsh terms placed on its usage from the Woollen
-> Company, who claimed riparian rights over the stream. To facilitate this,
-> not one, but two dams were built. A small concrete dam had to be built 3
-> kilometres downstream by the Petone Borough to store water for the
-> woollen mill. The Korokoro Dam was completed in 1903 and is, as far as is
-> known, New Zealand’s first concrete gravity dam. The crest of the dam is
-> 37 metres long and the maximum height is 8 metres.
+> The Petone Borough Council needed to add to it’s existing artesian water supply. In 1902, it settled on the Korokoro Stream as the site for their supply, but had harsh terms placed on its usage from the Woollen Company, who claimed riparian rights over the stream. To facilitate this, not one, but two dams were built. A small concrete dam had to be built 3 kilometres downstream by the Petone Borough to store water for the woollen mill. The Korokoro Dam was completed in 1903 and is, as far as is known, New Zealand’s first concrete gravity dam. The crest of the dam is 37 metres long and the maximum height is 8 metres.
 >
-> The water supply from the dam was discontinued in 1962 but the dam remains as a focal
-> point in the Belmont Regional Park.
+> The water supply from the dam was discontinued in 1962 but the dam remains as a focal point in the Belmont Regional Park.
 >
 > https://www.gw.govt.nz/assets/Documents/2001/11/Regional-Parks_20011127_163445.pdf
 
