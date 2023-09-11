@@ -39,6 +39,10 @@ module.exports = {
       url: '/privacy/'
     },
     {
+      text: 'Proven',
+      url: 'https://proven.lol/d9f26b'
+    },
+    {
       text: 'Style Guide',
       url: '/styleguide'
     }
