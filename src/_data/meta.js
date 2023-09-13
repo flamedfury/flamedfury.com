@@ -26,9 +26,15 @@ module.exports = {
   },
   blog: {
     // this is for the rss feed
-    name: 'fLaMEdFURY :: my collection of stuff',
+    name: 'Flamed Fury',
     description:
-      'My personal homepage, full of stuff that means everything to me, and nothing to you. You will find my thoughts about the current state of the web, my recollections of my earliest memories of the web, and a bunch of pages detailing some of my interests in records, books, comics, games, movies and tv shows. Come have a read and leave me a message.'
+      'A feed of the latest posts from flamedfury.com.'
+  },
+  bookmarks: {
+    // this is for the rss feed
+    name: 'Flamed Fury',
+    description:
+      'A feed of the latest bookmarks from flamedfury.com.'
   },
   pagination: {
     itemsPerPage: 20
