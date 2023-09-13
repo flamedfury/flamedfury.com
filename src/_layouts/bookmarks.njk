@@ -12,17 +12,17 @@ layout: base
 <article class="wrapper region content">
   <div class="grid breakout" style="--grid-min-item-size: 20rem">
 
-    {% for article in metadatabookmarks | reverse %}
+    {% for bookmark in bookmarks | reverse %}
       <div class="flow" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
-        <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ article.image }}">
+        <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ bookmark.image }}">
         <span class="block uppercase" style="font-size: 1rem">
-          <a href="{{ article.url }}">{{ article.site }}</a>
+          {{ bookmark.site }}
         </span>
         <span class="block">
-          <a href="{{ article.url }}">{{ article.title }}</a>
+          <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
         </span>
         <p style="font-size: 1rem">
-          {{ article.notes }}
+          {{ bookmark.notes }}
         </p>
       </div>
     {%- endfor -%}
