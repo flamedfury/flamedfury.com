@@ -41,8 +41,7 @@ const {
 // module import collections
 const {
   getAllPosts,
-  getPostsByYear,
-  getAllCollections
+  getPostsByYear
 } = require('./config/collections/index.js');
 
 // module import events
@@ -108,7 +107,6 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('postsByYear', getPostsByYear);
-  eleventyConfig.addCollection('collections', getAllCollections);
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);
   eleventyConfig.on('eleventy.after', async () => {

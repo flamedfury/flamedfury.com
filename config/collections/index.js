@@ -30,14 +30,7 @@ const getPostsByYear = collection => {
   return result;
 };
 
-/** Returns all collection (lol) pages as a collection. */
-const getAllCollections = collection => {
-  const collections = collection.getFilteredByGlob('./src/pages/*.md');
-  return collections.filter(page => page.data.category === 'collections').reverse();
-};
-
 module.exports = {
   getAllPosts,
-  getPostsByYear,
-  getAllCollections
+  getPostsByYear
 };
