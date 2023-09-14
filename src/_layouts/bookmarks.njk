@@ -13,16 +13,18 @@ layout: base
   <div class="grid breakout" style="--grid-min-item-size: 20rem">
 
     {% for bookmark in bookmarks | reverse %}
-      <div class="flow" style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)">
+      <div class="flow">
         <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ bookmark.image }}">
-        <span class="block uppercase" style="font-size: 1rem">
-          {{ bookmark.site }}
-        </span>
-        <span class="block">
-          <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
-        </span>
-        <p style="font-size: 1rem">
-          {{ bookmark.notes }}
+        <p>
+          <span class="block">
+            <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
+          </span>
+          <span class="block" style="font-size: 1.2rem">
+            {{ bookmark.notes }}
+          </span>
+          <span class="block" style="font-size: 0.8rem">
+            {{ bookmark.date }}, {{ bookmark.tags }}
+          </span>
         </p>
       </div>
     {%- endfor -%}

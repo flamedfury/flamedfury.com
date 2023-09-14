@@ -57,12 +57,12 @@ layout: base
 
     <h2>Bookmarks</h2>
     <div class="grid breakout" style="--grid-min-item-size: 10rem">
-      {% for article in metadatabookmarks | reverse %}
+      {% for bookmark in bookmarks | reverse %}
         {% if loop.index <= 6 %}
           <div class="flow">
-            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ article.image }}">
+            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ bookmark.image }}">
             <span class="block" style="font-size: 1rem">
-              <a href="{{ article.url }}">{{ article.title }}</a>
+              <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
             </span>
           </div>
         {% endif %}
@@ -72,29 +72,4 @@ layout: base
       <a href="/bookmarks/">All bookmarks</a>
     </p>
   </div>
-</article>
-
-<article class="region">
-  <div class="wrapper flow prose">
-    <h2>{{ page.title }}</h2>
-    {% if page.intro %}
-      <p>{{ page.intro }}</p>
-    {% endif %}
-  </div>
-
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.collections %}
-    {% for post in postslist %}
-
-      <li class="card flow overflow-hidden">
-        <h2>
-          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </h2>
-        {% set definedDate = post.date %}
-        {% include "partials/date.njk" %}
-        <p>{{ post.data.description }}</p>
-      </li>
-
-    {% endfor %}
-  </ul>
 </article>
