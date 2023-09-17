@@ -31,7 +31,7 @@ schema: blog
       {{ content | safe }}
     </div>
 
-    {% include "partials/webmentions.njk" %}
-
   </div>
 </article>
+
+{% include "partials/webmentions.njk" %}

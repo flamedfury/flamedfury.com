@@ -1,20 +1,5 @@
-<section class="wrapper flow content region | blog webmentions">
+<section class="wrapper flow content region | blog webmentions" style="--region-space-top: var(--space-xl)">
   <h2 id="webmentions">Webmentions</h2>
-
-  <section class="region flow">
-    <p>
-      {{ meta.webmentions.formTitle }}
-    </p>
-
-    <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
-      <label for="form-webmention-source">URL</label>
-      <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
-        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
-        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
-        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
-      </div>
-    </form>
-  </section>
 
   {% if webmentions %}
     {% set mentions = webmentions | webmentionsByUrl(aliases) %}
@@ -66,4 +51,19 @@
       {% endif %}
     {% endif %}
   {% endif %}
+
+  <section class="region">
+    <p>
+      {{ meta.webmentions.formTitle }}
+    </p>
+
+    <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
+      <label for="form-webmention-source">URL</label>
+      <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
+        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
+        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
+        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
+      </div>
+    </form>
+  </section>
 </section>
