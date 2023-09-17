@@ -1,0 +1,69 @@
+<section class="wrapper flow content region | blog webmentions">
+  <h2 id="webmentions">Webmentions</h2>
+
+  <section class="region flow">
+    <p>
+      {{ meta.webmentions.formTitle }}
+    </p>
+
+    <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
+      <label for="form-webmention-source">URL</label>
+      <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
+        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
+        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
+        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
+      </div>
+    </form>
+  </section>
+
+  {% if webmentions %}
+    {% set mentions = webmentions | webmentionsByUrl(aliases) %}
+    {% if mentions.likes | length or mentions.reposts | length or mentions.replies | length %}
+
+      {% if mentions.likes | length %}
+        <div class="flow">
+          <h3>Likes</h3>
+          {% for like in mentions.likes %}
+            {% if like.author.url %}
+              <a href="{{ like.author.url }}" rel="noopener" class="no-link-decoration">
+              {% endif %}
+              <img src="{{ like.author.photo}}" alt="{{ like.author.name }}" title="{{ like.author.name }}">
+              {% if like.author.url %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if mentions.reposts | length %}
+        <div class="flow">
+          <h3>Reposts</h3>
+          {% for repost in mentions.reposts %}
+            {% if repost.author.url %}
+              <a href="{{ repost.author.url }}" rel="noopener" class="no-link-decoration">
+              {% endif %}
+              <img src="{{ repost.author.photo}}" alt="{{ repost.author.name }}" title="{{ repost.author.name }}">
+              {% if repost.author.url %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if mentions.replies | length %}
+        <div class="webmention-replies flow">
+          <h3>Comments</h3>
+          {% for repost in mentions.replies %}
+            {% if repost.author.url %}
+              <a href="{{ repost.author.url }}" rel="noopener" class="no-link-decoration">
+              {% endif %}
+              <img src="{{ repost.author.photo}}" alt="{{ repost.author.name }}" title="{{ repost.author.name }}">
+              {% if repost.author.url %}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+</section>

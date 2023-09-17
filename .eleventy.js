@@ -41,7 +41,8 @@ const {
 // module import collections
 const {
   getAllPosts,
-  getPostsByYear
+  getPostsByYear,
+  aliases
 } = require('./config/collections/index.js');
 
 // module import events
@@ -90,6 +91,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
+  eleventyConfig.addFilter(
+    'webmentionsByUrl',
+    require('./config/filters/webmentionsByUrl')
+  );
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
@@ -107,6 +112,8 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('postsByYear', getPostsByYear);
+  eleventyConfig.addCollection('aliases', aliases);
+
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);
   eleventyConfig.on('eleventy.after', async () => {
