@@ -71,5 +71,19 @@ layout: base
     <p>
       <a href="/bookmarks/">All bookmarks</a>
     </p>
+
+    <h2>Mixtapes</h2>
+    <div class="grid breakout" style="--grid-min-item-size: 15rem">
+      {% for item in mixtapes.playlists %}
+        {% if loop.index <= 4 %}
+          <div class="flow">
+            <iframe style="border-radius:12px" src="{{ item.embed }}" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p>
+      <a href="/mixtapes/">All Mixtapes</a>
+    </p>
   </div>
 </article>
