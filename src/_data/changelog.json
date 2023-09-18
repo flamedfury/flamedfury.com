@@ -134,6 +134,16 @@
       "date": "2023-8-22",
       "tags": "updates",
       "update": "Four new vinyls added to the collection."
+    },
+    {
+      "date": "2023-9-17",
+      "tags": "updates",
+      "update": "Added Webmentions. They're mostly working?"
+    },
+    {
+      "date": "2023-9-18",
+      "tags": "updates",
+      "update": "Mixtapes are now featured on the Collections page."
     }
   ]
 }
