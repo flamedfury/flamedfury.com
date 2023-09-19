@@ -121,6 +121,18 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
+//source: https://michelenasti.com/some-tricks-for-11ty-that-i-learned-along-the-way/
+// allows us to create a /tags/ page to list all of our tags
+const sortObjectByKey = (object) => {
+  const keys = Object.keys(object);
+  keys.sort();
+  const sortedObject = {};
+  keys.forEach((key) => {
+    sortedObject[key] = object[key];
+  });
+  return sortedObject;
+};
+
 module.exports = {
   limit,
   toHtml,
@@ -132,5 +144,6 @@ module.exports = {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines
+  splitlines,
+  sortObjectByKey
 };

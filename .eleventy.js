@@ -28,7 +28,8 @@ const {
   stripHtml,
   minifyCss,
   mdInline,
-  splitlines
+  splitlines,
+  sortObjectByKey,
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -91,6 +92,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
+  eleventyConfig.addFilter('sortObjectByKey', sortObjectByKey);
   eleventyConfig.addFilter(
     'webmentionsByUrl',
     require('./config/filters/webmentionsByUrl')

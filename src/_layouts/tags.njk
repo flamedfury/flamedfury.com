@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<article class="region page">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    {{ content | safe }}
+
+    <ul>
+      {% set orderedCollection = collections | sortObjectByKey  %}
+      {%- for tag, posts in orderedCollection %}
+        <li><a href="/tags/{{tag | slugify}}/"><strong>{{ tag }}</strong></a> - {{ posts | length }} posts</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</article>
