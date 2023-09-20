@@ -5,6 +5,7 @@ const markdownLib = require('../plugins/markdown');
 const site = require('../../src/_data/meta');
 const { throwIfNotType } = require('../utils');
 const md = require('markdown-it')();
+const sanitizeHtml = require('sanitize-html');
 
 /** Returns the first `limit` elements of the the given array. */
 const limit = (array, limit) => {
@@ -121,7 +122,7 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
-//source: https://michelenasti.com/some-tricks-for-11ty-that-i-learned-along-the-way/
+// source: https://michelenasti.com/some-tricks-for-11ty-that-i-learned-along-the-way/
 // allows us to create a /tags/ page to list all of our tags
 const sortObjectByKey = (object) => {
   const keys = Object.keys(object);
@@ -132,6 +133,63 @@ const sortObjectByKey = (object) => {
   });
   return sortedObject;
 };
+
+function makePredicate(propValue) {
+  return function (mention) {
+    return mention.type === propValue;
+  }
+}
+
+const isThisUrl = (...urls) => (mention) =>
+  urls.map((u) => `https://flamedfury.com${u}`).includes(mention['wm-target']);
+const isValid = (mention) =>
+  mention.author &&
+  mention.author.name &&
+  mention.published &&
+  mention.content &&
+  !mention['wm-private'];
+const isLike = makePredicate('like-of');
+const isMention = makePredicate('mention-of');
+const isRepost = makePredicate('repost-of');
+const isReply = makePredicate('in-reply-to');
+
+function transform(mention) {
+  const newMention = {
+    author: mention.author,
+    name: mention.name,
+    type: mention['wm-property'],
+  };
+  if (mention.content?.html && mention.content?.html.length > 0) {
+    newMention.content = sanitizeHtml(mention.content.html);
+  } else if (mention.content?.text) {
+    newMention.content = mention.content.text;
+  }
+  return newMention;
+}
+
+function webmentionsByUrl(webmentions, aliases) {
+  aliases = aliases || [];
+  const data = {
+    likes: [],
+    reposts: [],
+    replies: [],
+  };
+
+  if (!webmentions) {
+    return data;
+  }
+
+  const forThisPage = webmentions
+    .filter(isThisUrl(this.page.url, ...aliases))
+    .filter(isValid)
+    .map(transform);
+
+  data.likes = forThisPage.filter(isLike);
+  data.reposts = forThisPage.filter((m) => isRepost(m) || isMention(m));
+  data.replies = forThisPage.filter(isReply);
+
+  return data;
+}
 
 module.exports = {
   limit,
@@ -145,5 +203,6 @@ module.exports = {
   minifyJs,
   mdInline,
   splitlines,
-  sortObjectByKey
+  sortObjectByKey,
+  webmentionsByUrl
 };
