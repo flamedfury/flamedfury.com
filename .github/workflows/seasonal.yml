@@ -24,7 +24,7 @@ jobs:
           season-names: Summer,Autumn,Winter,Spring
           season-emoji: ☀️,🍂,❄️,🌷
           posts-directory: ./src/posts/
-          source-bookmarks: bookmarks|_data/bookmarks.json
+          source-bookmarks: bookmarked|_data/bookmarks.json
           seasonal-post-template: .github/actions/seasonal-post-template.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

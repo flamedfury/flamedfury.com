@@ -56,7 +56,7 @@ schema: blog
 
     <h2 id="bookmarks">Bookmarks</h2>
     <div class="grid" style="--grid-min-item-size: 10rem">
-      {% for bookmark in bookmarks %}
+      {% for bookmark in bookmarked %}
         <div class="flow">
           <img src="{% if bookmark.image %}https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ bookmark.image }}{% else %}/assets/images/opengraph-default.png{% endif %}" alt="{{ bookmark.title }}">
           <span class="block" style="font-size: 1rem">
