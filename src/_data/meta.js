@@ -30,11 +30,10 @@ module.exports = {
     description:
       'A feed of the latest posts from flamedfury.com.'
   },
-  bookmarks: {
+  bookmarksfeed: {
     // this is for the rss feed
     name: 'Flamed Fury',
-    description:
-      'A feed of the latest bookmarks from flamedfury.com.'
+    description: 'A feed of the latest bookmarks from flamedfury.com.'
   },
   pagination: {
     itemsPerPage: 20
