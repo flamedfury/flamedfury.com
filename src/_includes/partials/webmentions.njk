@@ -1,69 +1,80 @@
-<section class="wrapper flow content region | blog webmentions" style="--region-space-top: var(--space-xl)">
-  <h2 id="webmentions">Webmentions</h2>
+{% if webmentions %}
+  {% set mentions = webmentions | webmentionsByUrl(aliases) %}
+  {% if mentions.likes | length or mentions.reposts | length or mentions.replies | length %}
+    {% macro singleMention(mention) %}
+      {% if mention.author.url %}
+        <a href="{{ mention.author.url }}" rel="noopener" class="no-link-decoration u-url">
+        {% endif %}
+        <span class="p-author h-card">
+          <img src="{{ mention.author.photo}}" alt="{{ mention.author.name }}" title="{{ mention.author.name }}" class="u-photo" loading="lazy">
+        </span>
+        {% if mention.author.url %}
+        </a>
+      {% endif %}
+    {% endmacro %}
 
-  {% if webmentions %}
-    {% set mentions = webmentions | webmentionsByUrl(aliases) %}
-    {% if mentions.likes | length or mentions.reposts | length or mentions.replies | length %}
+    <section class="wrapper flow content region | blog webmentions" style="--region-space-top: var(--space-xl)">
+      <h2 id="webmentions">Webmentions</h2>
 
       {% if mentions.likes | length %}
-        <div class="flow">
-          <h3>Likes</h3>
-          {% for like in mentions.likes %}
-            {% if like.author.url %}
-              <a href="{{ like.author.url }}" rel="noopener" class="no-link-decoration">
-              {% endif %}
-              <img src="{{ like.author.photo}}" alt="{{ like.author.name }}" title="{{ like.author.name }}">
-              {% if like.author.url %}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
+        <h3>Likes</h3>
+        {% for like in mentions.likes %}
+          <div class="p-like h-cite">
+            {{ singleMention(like) }}
+          </div>
+        {% endfor %}
       {% endif %}
 
       {% if mentions.reposts | length %}
-        <div class="flow">
-          <h3>Reposts</h3>
-          {% for repost in mentions.reposts %}
-            {% if repost.author.url %}
-              <a href="{{ repost.author.url }}" rel="noopener" class="no-link-decoration">
-              {% endif %}
-              <img src="{{ repost.author.photo}}" alt="{{ repost.author.name }}" title="{{ repost.author.name }}">
-              {% if repost.author.url %}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
+        <h3>Reposts</h3>
+        {% for repost in mentions.reposts %}
+          <div class="p-like h-cite">
+            {{ singleMention(repost) }}
+          </div>
+        {% endfor %}
       {% endif %}
 
       {% if mentions.replies | length %}
-        <div class="webmention-replies flow">
-          <h3>Comments</h3>
-          {% for repost in mentions.replies %}
-            {% if repost.author.url %}
-              <a href="{{ repost.author.url }}" rel="noopener" class="no-link-decoration">
-              {% endif %}
-              <img src="{{ repost.author.photo}}" alt="{{ repost.author.name }}" title="{{ repost.author.name }}">
-              {% if repost.author.url %}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
+        <h3>Comments</h3>
+        {% for reply in mentions.replies %}
+          <article class="webmention u-comment h-cite">
+            <div class="cluster" style="justify-content:space-between;">
+              <div class="webmention__meta e-author h-card" style="align-items:center;">
+                <img src="{{ reply.author.photo }}" alt="Author photo of {{ reply.author.name }}" loading="lazy" class="u-photo">
+                <div>
+                  <a href="{{ reply.author.url }}" rel="noopener noreferrer" class="u-author">
+                    <p class="p-name">{{ reply.author.name }}</p>
+                  </a>
+                </div>
+              </div>
+              <small>
+                <a href="{{ reply.url }}" rel="noopener noreferrer" class="u-url">
+                  <time datetime="{{ reply.published | datetime }}" class="dt-published">{{ reply.published | dateformat }} at {{ reply.published | timeformat }}</time>
+                </a>
+              </small>
+            </div>
+            <p class="webmention-text e-content">
+              {{ reply.content | safe }}
+            </p>
+          </article>
+        {% endfor %}
       {% endif %}
-    {% endif %}
+
+      <section class="region">
+        <p>
+          {{ meta.webmentions.formTitle }}
+        </p>
+
+        <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
+          <label for="form-webmention-source">URL</label>
+          <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
+            <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
+            <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
+            <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
+          </div>
+        </form>
+      </section>
+    </section>
+
   {% endif %}
-
-  <section class="region">
-    <p>
-      {{ meta.webmentions.formTitle }}
-    </p>
-
-    <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
-      <label for="form-webmention-source">URL</label>
-      <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
-        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
-        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
-        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
-      </div>
-    </form>
-  </section>
-</section>
+{% endif %}
