@@ -17,6 +17,10 @@ module.exports = {
       url: '/now/'
     },
     {
+      text: 'Uses',
+      url: '/uses/'
+    },
+    {
       text: 'About',
       url: '/about/'
     }
