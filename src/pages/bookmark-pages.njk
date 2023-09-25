@@ -1,0 +1,17 @@
+---
+layout: bookmark
+pagination:
+    data: bookmarks
+    size: 1
+    alias: bookmark
+    addAllPagesToCollections: true
+permalink: 'bookmarks/{{ bookmark.title | slugify }}/index.html'
+---
+
+<p>
+    Bookmarked <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
+</p>
+
+<p>
+    {{ bookmark.notes }}
+</p>

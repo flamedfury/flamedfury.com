@@ -1,0 +1,22 @@
+---
+layout: base
+schema: blog
+---
+
+<article class="region blog | h-entry">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text | p-name">{{ bookmark.title }}</h1>
+
+    <p style="font-size: var(--size-step-0)">
+      <span class="block">Bookmarked: {% set definedDate = date %}
+        {{ bookmark.date }}</span>
+    </p>
+
+    <div class="flow e-content">
+      {{ content | safe }}
+    </div>
+
+  </div>
+</article>
+
+{% include "partials/webmentions.njk" %}
