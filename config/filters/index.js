@@ -140,6 +140,9 @@ function makePredicate(propValue) {
   }
 }
 
+// source: https://drhayes.io/blog/webmentions-in-11ty/
+// enables webmentions
+
 const isThisUrl = (...urls) => (mention) =>
   urls.map((u) => `https://flamedfury.com${u}`).includes(mention['wm-target']);
 const isValid = (mention) =>
