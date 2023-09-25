@@ -9,7 +9,7 @@ layout: base
   </div>
 </article>
 
-<article class="wrapper region content">
+{# <article class="wrapper region content">
   <div class="grid breakout" style="--grid-min-item-size: 20rem">
 
     {% for bookmark in bookmarks | reverse %}
@@ -28,6 +28,20 @@ layout: base
         </p>
       </div>
     {%- endfor -%}
+
+  </div>
+</article> #}
+
+<article class="wrapper region content">
+  <div class="grid breakout" style="--grid-min-item-size: 20rem">
+
+    <ul>
+      {% for bookmark in collections.allBookmarks %}
+        <li>
+          <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
 
   </div>
 </article>
