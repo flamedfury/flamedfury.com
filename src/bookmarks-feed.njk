@@ -15,14 +15,14 @@ excludeFromSitemap: true
     <name>{{ meta.author }}</name>
     <email>{{ meta.authorEmail }}</email>
   </author>
-  {% for bookmark in bookmarks | reverse %}
+  {% for bookmark in collections.allBookmarks | reverse %}
     {% set absolutePostUrl = bookmark.url | absoluteUrl(metadata.url) %}
     <entry>
       <title>{{ bookmark.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
-      <updated>{{ bookmark.date }}</updated>
+      <updated>{{ bookmark.data.date }}</updated>
       <id>{{ absolutePostUrl }}</id>
-      <content xml:lang="{{ meta.lang }}" type="html">{{ bookmark.notes }}</content>
+      <content xml:lang="{{ meta.lang }}" type="html">{{ bookmark.templateContent }}</content>
     </entry>
   {% endfor %}
 </feed>
