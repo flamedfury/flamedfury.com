@@ -115,8 +115,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('aliases', aliases);
   eleventyConfig.addCollection("allBookmarks", function (collection) {
     const bookmarks = collection.getAll().filter((item) => item.data.isBookmark);
-    console.log("Total bookmarks:", bookmarks.length);
-    console.log("Bookmark titles:", bookmarks.map((bookmark) => bookmark.data.title));
     return bookmarks;
   });
 
