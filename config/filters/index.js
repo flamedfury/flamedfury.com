@@ -157,16 +157,27 @@ const isRepost = makePredicate('repost-of');
 const isReply = makePredicate('in-reply-to');
 
 function transform(mention) {
+  // Convert wm-id to a string
+  const wmId = mention['wm-id'] ? mention['wm-id'].toString() : `fallback-${webmentionCounter++}`;
   const newMention = {
     author: mention.author,
     name: mention.name,
+    url: mention.url,
     type: mention['wm-property'],
+    wmId: wmId,
   };
-  if (mention.content?.html && mention.content?.html.length > 0) {
-    newMention.content = sanitizeHtml(mention.content.html);
-  } else if (mention.content?.text) {
+
+  // Check if plain text content exists
+  if (mention.content?.text) {
     newMention.content = mention.content.text;
+  } else if (mention.content?.html) {
+    // If no plain text content, use sanitized HTML content (optional)
+    newMention.content = sanitizeHtml(mention.content.html);
+  } else {
+    // If neither text nor HTML content is present, you can set a default value or handle it as needed
+    newMention.content = "No content available";
   }
+
   return newMention;
 }
 

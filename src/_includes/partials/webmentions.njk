@@ -1,20 +1,19 @@
-{% if webmentions %}
-  {% set mentions = webmentions | webmentionsByUrl(aliases) %}
-  {% if mentions.likes | length or mentions.reposts | length or mentions.replies | length %}
-    {% macro singleMention(mention) %}
-      {% if mention.author.url %}
-        <a href="{{ mention.author.url }}" rel="noopener" class="no-link-decoration u-url">
-        {% endif %}
-        <span class="p-author h-card">
-          <img src="{{ mention.author.photo}}" alt="{{ mention.author.name }}" title="{{ mention.author.name }}" class="u-photo" loading="lazy">
-        </span>
+<section class="wrapper flow content region | blog webmentions" style="--region-space-top: var(--space-xl)">
+  <h2 id="webmentions">Webmentions</h2>
+  {% if webmentions %}
+    {% set mentions = webmentions | webmentionsByUrl(aliases) %}
+    {% if mentions.likes | length or mentions.reposts | length or mentions.replies | length %}
+      {% macro singleMention(mention) %}
         {% if mention.author.url %}
-        </a>
-      {% endif %}
-    {% endmacro %}
-
-    <section class="wrapper flow content region | blog webmentions" style="--region-space-top: var(--space-xl)">
-      <h2 id="webmentions">Webmentions</h2>
+          <a href="{{ mention.author.url }}" rel="noopener" class="no-link-decoration u-url">
+          {% endif %}
+          <span class="p-author h-card">
+            <img src="{{ mention.author.photo}}" alt="{{ mention.author.name }}" title="{{ mention.author.name }}" class="u-photo" loading="lazy">
+          </span>
+          {% if mention.author.url %}
+          </a>
+        {% endif %}
+      {% endmacro %}
 
       {% if mentions.likes | length %}
         <h3>Likes</h3>
@@ -35,64 +34,58 @@
       {% endif %}
 
       {% if mentions.replies | length %}
-        <h3>Comments</h3>
-        {% for reply in mentions.replies | reverse %}
-          <article class="webmention u-comment h-cite" id="webmention--{{ reply.wm-id }}">
-            <div class="webmention__meta e-author h-card">
-              <div class="cluster" style="justify-content:space-between;">
+        <div class="webmention-replies flow">
+          <h3>Comments</h3>
+          {% for reply in mentions.replies | reverse %}
+            <article class="webmention u-comment h-cite" id="webmention--{{ reply.wmId }}">
+              <div class="webmention__meta e-author h-card">
                 {% if reply.author %}
                   {% if reply.author.photo %}
-                    <div>
-                      <img src="{{ reply.author.photo }}" alt="Author photo of {{ reply.author.name }}" width="48" height="48" loading="lazy" class="u-photo">
-                    </div>
+                    <img src="{{ reply.author.photo }}" alt="Author photo of {{ reply.author.name }}" width="48" height="48" loading="lazy" class="u-photo">
                   {% else %}
-                    <div>
-                      <img src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}" alt="" width="48" height="48">
-                    </div>
+                    <img src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}" alt="" width="48" height="48">
                   {% endif %}
-                  <div>
-                    <a href="{{ reply.url }}" class="h-card u-url" target="_blank" rel="noopener noreferrer">
+                  <span>
+                    <a href="{{ reply.author.url }}" class="h-card u-url" target="_blank" rel="noopener noreferrer">
                       <strong class="p-name">{{ reply.author.name }}</strong>
                     </a>
-                  </div>
+                  </span>
                 {% else %}
-                  <div>
+                  <span>
                     <strong>Anonymous</strong>
-                  </div>
+                  </span>
                 {% endif %}
                 <div>
                   {% set definedDate = reply.published %}
                   {% include "partials/date.njk" %}
                 </div>
               </div>
-            </div>
 
-            <p class="webmention-text e-content">
-              {{ reply.content | truncate | safe }}
+              <p class="webmention-text e-content">
+                {{ reply.content | truncate }}
+                <a href="{{ reply.url }}" rel="noopener noreferrer" class="u-url"> source </a>
+              </p>
 
-              {# <a href="{{ reply.url }}" rel="noopener noreferrer" class="u-url"> source </a> #}
-
-            </p>
-
-          </article>
-        {% endfor %}
+            </article>
+          {% endfor %}
+        </div>
       {% endif %}
 
-      <section class="region">
-        <p>
-          {{ meta.webmentions.formTitle }}
-        </p>
-
-        <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
-          <label for="form-webmention-source">URL</label>
-          <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
-            <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
-            <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
-            <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
-          </div>
-        </form>
-      </section>
-    </section>
-
+    {% endif %}
   {% endif %}
-{% endif %}
+
+  <section class="region">
+    <p>
+      {{ meta.webmentions.formTitle }}
+    </p>
+
+    <form action="https://webmention.io/flamedfury.com/webmention" method="post" class="form-webmention">
+      <label for="form-webmention-source">URL</label>
+      <div class="sidebar" style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;">
+        <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required/>
+        <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}"/>
+        <input type="submit" class="button" value="{{ meta.webmentions.buttonValue }}"/>
+      </div>
+    </form>
+  </section>
+</section>
