@@ -144,6 +144,16 @@
       "date": "2023-9-18",
       "tags": "updates",
       "update": "Mixtapes are now featured on the Collections page."
+    },
+    {
+      "date": "2023-9-26",
+      "tags": "updates",
+      "update": "Published a feed for bookmarks. More on this later"
+    },
+    {
+      "date": "2023-9-27",
+      "tags": "updates",
+      "update": "Webmentions: fixed formatting issues, and comments are showing now."
     }
   ]
 }
