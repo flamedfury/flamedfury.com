@@ -36,26 +36,44 @@
 
       {% if mentions.replies | length %}
         <h3>Comments</h3>
-        {% for reply in mentions.replies %}
-          <article class="webmention u-comment h-cite">
-            <div class="cluster" style="justify-content:space-between;">
-              <div class="webmention__meta e-author h-card" style="align-items:center;">
-                <img src="{{ reply.author.photo }}" alt="Author photo of {{ reply.author.name }}" loading="lazy" class="u-photo">
+        {% for reply in mentions.replies | reverse %}
+          <article class="webmention u-comment h-cite" id="webmention--{{ reply.wm-id }}">
+            <div class="webmention__meta e-author h-card">
+              <div class="cluster" style="justify-content:space-between;">
+                {% if reply.author %}
+                  {% if reply.author.photo %}
+                    <div>
+                      <img src="{{ reply.author.photo }}" alt="Author photo of {{ reply.author.name }}" width="48" height="48" loading="lazy" class="u-photo">
+                    </div>
+                  {% else %}
+                    <div>
+                      <img src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}" alt="" width="48" height="48">
+                    </div>
+                  {% endif %}
+                  <div>
+                    <a href="{{ reply.url }}" class="h-card u-url" target="_blank" rel="noopener noreferrer">
+                      <strong class="p-name">{{ reply.author.name }}</strong>
+                    </a>
+                  </div>
+                {% else %}
+                  <div>
+                    <strong>Anonymous</strong>
+                  </div>
+                {% endif %}
                 <div>
-                  <a href="{{ reply.author.url }}" rel="noopener noreferrer" class="u-author">
-                    <p class="p-name">{{ reply.author.name }}</p>
-                  </a>
+                  {% set definedDate = reply.published %}
+                  {% include "partials/date.njk" %}
                 </div>
               </div>
-              <small>
-                <a href="{{ reply.url }}" rel="noopener noreferrer" class="u-url">
-                  <time datetime="{{ reply.published | datetime }}" class="dt-published">{{ reply.published | dateformat }} at {{ reply.published | timeformat }}</time>
-                </a>
-              </small>
             </div>
+
             <p class="webmention-text e-content">
-              {{ reply.content | safe }}
+              {{ reply.content | truncate | safe }}
+
+              {# <a href="{{ reply.url }}" rel="noopener noreferrer" class="u-url"> source </a> #}
+
             </p>
+
           </article>
         {% endfor %}
       {% endif %}

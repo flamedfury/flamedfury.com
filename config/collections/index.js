@@ -43,7 +43,6 @@ function aliases(collectionApi) {
   return aliasesMap;
 }
 
-
 module.exports = {
   getAllPosts,
   getPostsByYear,

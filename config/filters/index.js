@@ -134,14 +134,14 @@ const sortObjectByKey = (object) => {
   return sortedObject;
 };
 
+// source: https://drhayes.io/blog/webmentions-in-11ty/
+// enables webmentions
+
 function makePredicate(propValue) {
   return function (mention) {
     return mention.type === propValue;
   }
 }
-
-// source: https://drhayes.io/blog/webmentions-in-11ty/
-// enables webmentions
 
 const isThisUrl = (...urls) => (mention) =>
   urls.map((u) => `https://flamedfury.com${u}`).includes(mention['wm-target']);
@@ -188,8 +188,8 @@ function webmentionsByUrl(webmentions, aliases) {
     .map(transform);
 
   data.likes = forThisPage.filter(isLike);
-  data.reposts = forThisPage.filter((m) => isRepost(m) || isMention(m));
-  data.replies = forThisPage.filter(isReply);
+  data.reposts = forThisPage.filter(isRepost);
+  data.replies = forThisPage.filter((m) => isReply(m) || isMention(m));
 
   return data;
 }
