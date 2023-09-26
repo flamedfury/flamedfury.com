@@ -14,10 +14,10 @@ layout: base
 
     <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
       {% for bookmark in collections.allBookmarks | reverse %}
-        <li id="{{ bookmark.data.title }}" class="card flow overflow-hidden">
-          <h3>
+        <li id="{{ bookmark.data.title | slugify }}" class="card flow overflow-hidden">
+          <h2>
             <a href="{{ bookmark.url | url }}">{{ bookmark.data.title }}</a>
-          </h3>
+          </h2>
           {% set definedDate = bookmark.data.date %}
           {% include "partials/date.njk" %}
           <p>{{ bookmark.data.notes }}</p>
