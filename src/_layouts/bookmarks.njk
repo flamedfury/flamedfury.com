@@ -9,36 +9,18 @@ layout: base
   </div>
 </article>
 
-{# <article class="wrapper region content">
-  <div class="grid breakout" style="--grid-min-item-size: 20rem">
+<article class="region">
+  <div>
 
-    {% for bookmark in bookmarks | reverse %}
-      <div class="flow">
-        <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ bookmark.image }}">
-        <p>
-          <span class="block">
-            <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
-          </span>
-          <span class="block" style="font-size: 1.2rem">
-            {{ bookmark.notes }}
-          </span>
-          <span class="block" style="font-size: 0.8rem">
-            {{ bookmark.date }}, {{ bookmark.tags }}
-          </span>
-        </p>
-      </div>
-    {%- endfor -%}
-
-  </div>
-</article> #}
-
-<article class="wrapper region content">
-  <div class="grid breakout" style="--grid-min-item-size: 20rem">
-
-    <ul>
-      {% for bookmark in collections.allBookmarks %}
-        <li>
-          <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
+    <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+      {% for bookmark in collections.allBookmarks | reverse %}
+        <li id="{{ bookmark.data.title }}" class="card flow overflow-hidden">
+          <h3>
+            <a href="{{ bookmark.url | url }}">{{ bookmark.data.title }}</a>
+          </h3>
+          {% set definedDate = bookmark.data.date %}
+          {% include "partials/date.njk" %}
+          <p>{{ bookmark.data.notes }}</p>
         </li>
       {% endfor %}
     </ul>

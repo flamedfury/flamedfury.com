@@ -4,14 +4,24 @@ pagination:
     data: bookmarks
     size: 1
     alias: bookmark
+    addAllPagesToCollections: true
 permalink: 'bookmarks/{{ bookmark.title | slugify }}/index.html'
 isBookmark: true
+eleventyComputed:
+    title: "{{ bookmark.title }}"
+    sourceurl: "{{ bookmark.url }}"
+    notes: "{{ bookmark.notes }}"
+    date: "{{ bookmark.date }}"
 ---
 
-<p>
-    Bookmarked <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
-</p>
+<div class="flow h-entry">
+    <p>
+    Bookmarked <a href="{{ bookmark.url }}" class="u-bookmark-of h-cite">
+            <span class="p-name">{{ bookmark.title }}</span></a>
+    </p>
 
-<p>
-    {{ bookmark.notes }}
-</p>
+    <p class="p-summary">
+        {{ bookmark.notes }}
+    </p>
+
+</div>
