@@ -31,13 +31,13 @@ schema: blog
       <!-- URL -->
       <dt>URL: </dt>
       <dd>
-        <a class="u-url" href="{{ absolutePostUrl }}">Link</a>
+        <a class="u-url" href="{{ absolutePostUrl }}">Permalink</a>
       </dd>
     </dl>
 
     <blockquote>
       <p>
-        Reply to <a class="h-cite u-in-reply-to" href="{{ post.data.reply }}">Permalink</a>
+        Reply to <a class="h-cite u-in-reply-to" href="{{ reply }}">{{ reply }}</a>
       </p>
     </blockquote>
 

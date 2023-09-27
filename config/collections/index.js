@@ -32,7 +32,7 @@ const getPostsByYear = collection => {
 
 //** Creates a collection for indieweb replies */
 const getAllReplies = collection => {
-  const replies = collection.getFilteredByGlob('./src/notes/*.md');
+  const replies = collection.getFilteredByGlob('./src/notes/*.md').filter(item => 'in-reply-to' in item.data);
   return replies.reverse();
 };
 
