@@ -21,11 +21,23 @@ schema: blog
         <dt>{{ meta.updated | capitalize }}</dt>
         <dd>{% include "partials/date.njk" %}</dd>
       {% endif %}
+
+      <!-- author -->
+      <dt>By: </dt>
+      <dd>
+        <a rel="author" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a>
+      </dd>
+
+      <!-- URL -->
+      <dt>URL: </dt>
+      <dd>
+        <a class="u-url" href="{{ absolutePostUrl }}">Link</a>
+      </dd>
     </dl>
 
     <blockquote>
       <p>
-        Reply to <a class="h-cite u-in-reply-to" href="{{ post.data.reply }}">{{ reply }}</a>
+        Reply to <a class="h-cite u-in-reply-to" href="{{ post.data.reply }}">Permalink</a>
       </p>
     </blockquote>
 
