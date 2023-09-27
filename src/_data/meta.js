@@ -20,6 +20,8 @@ module.exports = {
   authorAvatar: '/assets/images/avatar.jpg',
   themeColor: '#f05123', //  Manifest: defines the default theme color for the application
   themeBgColor: '#252525', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
+  published: 'published: ',
+  updated: 'updated: ',
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.png',
     mastodonProfile: 'https://social.lol/@flamed'

@@ -156,9 +156,13 @@ header h1 {
   color: var(--color-light);
 }
 
-figcaption,
 time,
 .meta {
+  font-size: var(--size-step-0);
+  opacity: 0.8;
+}
+
+figcaption {
   font-size: var(--size-step-0);
   opacity: 0.8;
   text-align: center;

@@ -30,6 +30,13 @@ const getPostsByYear = collection => {
   return result;
 };
 
+//** Creates a collection for indieweb replies */
+const getAllReplies = collection => {
+  const replies = collection.getFilteredByGlob('./src/notes/*.md');
+  return replies.reverse();
+};
+
+//** Aliases for Webmentions */
 function aliases(collectionApi) {
   const all = collectionApi.getAll();
   const aliasesMap = {};
@@ -46,5 +53,6 @@ function aliases(collectionApi) {
 module.exports = {
   getAllPosts,
   getPostsByYear,
+  getAllReplies,
   aliases
 };

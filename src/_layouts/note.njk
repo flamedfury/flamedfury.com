@@ -23,16 +23,11 @@ schema: blog
       {% endif %}
     </dl>
 
-    <p style="font-size: var(--size-step-0)">
-      Tagged:
-      {% for tag in tags %}
-        {% if tag != "posts" %}
-          <a href="/tags/{{ tag }}">
-            {{ tag }}
-          </a>
-        {% endif %}
-      {% endfor %}
-    </p>
+    <blockquote>
+      <p>
+        Reply to <a class="h-cite u-in-reply-to" href="{{ post.data.reply }}">{{ reply }}</a>
+      </p>
+    </blockquote>
 
     <div class="flow e-content">
       {{ content | safe }}

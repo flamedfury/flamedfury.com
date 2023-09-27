@@ -44,7 +44,8 @@ const {
 const {
   getAllPosts,
   getPostsByYear,
-  aliases
+  aliases,
+  getAllReplies
 } = require('./config/collections/index.js');
 
 // module import events
@@ -73,6 +74,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('home', 'home.njk');
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
+  eleventyConfig.addLayoutAlias('note', 'note.njk');
   eleventyConfig.addLayoutAlias('now-omg-layout', 'src/_layouts/now-omg-layout.njk');
 
   // 	---------------------  Custom filters -----------------------
@@ -112,6 +114,7 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('postsByYear', getPostsByYear);
+  eleventyConfig.addCollection('replies', getAllReplies);
   eleventyConfig.addCollection('aliases', aliases);
   eleventyConfig.addCollection("allBookmarks", function (collection) {
     const bookmarks = collection.getAll().filter((item) => item.data.isBookmark);
