@@ -1,4 +1,9 @@
-<form action="/contact/thank-you" method="POST" name="contact" data-netlify="true">
+<form action="/contact/thank-you" method="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+  <p class="hidden">
+    <label>
+      Don't fill this out if you're human: <input name="bot-field"/>
+    </label>
+  </p>
   <input type="hidden" name="flamedfury-contact" value="contact"/>
   <label for="name">What's your name?</label>
   <input type="text" name="name" id="name" autocomplete="name" placeholder="Web Surfer" title="Please enter your name" required="" aria-required="true">
