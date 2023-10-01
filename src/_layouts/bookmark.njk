@@ -7,16 +7,17 @@ schema: blog
   <div class="wrapper flow prose">
     <h1 class="gradient-text | p-name">{{ bookmark.title }}</h1>
 
-    <p style="font-size: var(--size-step-0)">
-      <span class="block">Bookmarked: {% set definedDate = date %}
+    <p class="meta">
+      <a rel="author" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a> bookmarked <a href="{{ bookmark.url }}" class="u-bookmark-of h-cite">
+        <span class="p-name">{{ bookmark.title }}</span></a>{% set definedDate = date %} on 
         <span class="dt-published">{{ bookmark.date }}</span></span>
-    </p>
+  </p>
 
-    <div class="flow e-content">
-      {{ content | safe }}
-    </div>
-
+  <div class="flow e-content">
+    {{ content | safe }}
   </div>
+
+</div>
 </article>
 
 {% include "partials/webmentions.njk" %}
