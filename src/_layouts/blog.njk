@@ -4,7 +4,6 @@ layout: base
 
 <header class="section spot-color-primary">
   {% include 'svg/divider-edgy.svg' %}
-
   <div class="section__inner region">
     <div class="wrapper flow">
       <section class="text-center">
@@ -12,51 +11,57 @@ layout: base
       </section>
     </div>
   </div>
-
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
 <article class="region">
   <div class="wrapper flow prose">
     {{ content | safe }}
+
+    <!-- [ tag list. ] -->
+    <details>
+      <summary>Tags</summary>
+      {% include "partials/tag-loop.njk" %}
+    </details>
+  </div>
+
+  <!--[ writing stream. ]-->
+  {% for year in collections.postsByYear %}
+    <div class="region" style="--region-space-bottom: var(--space-m); --region-space-top: var(--space-m)">
+      <div class="wrapper content">
+        <h2 id="{{ year.year }}">{{ year.year }}</h2>
+      </div>
+      <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+        {% for post in year.posts | reverse %}
+          {% include "partials/post-loop.njk" %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+
+</article>
+
+{# <article class="region">
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+
+        <!-- [ tag list. ] -->
+    <details>
+      <summary>Tags</summary>
+      {% include "partials/tag-loop.njk" %}
+    </details>
   </div>
 </article>
 
-<!--[ writing stream. ]-->
 <article class="region">
   <div class="wrapper flow content">
-    <h2>{{ writing.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if writing.intro %}
-      <p>{{ writing.intro }}</p>
-    {% endif %}
+    <!-- [ tag list. ] -->
+    <details>
+      <summary>Tags</summary>
+      {% include "partials/tag-loop.njk" %}
+    </details>
   </div>
-
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% for post in collections.writing %}
-
-      <li id="{{ post.data.title | slugify }}" class="card flow overflow-hidden">
-        <h2>
-          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </h2>
-        {% set definedDate = post.date %}
-        {% include "partials/date.njk" %}
-        <p>{{ post.data.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</article>
-
-<article class="region">
-  <div class="wrapper flow content">
-    <h2>{{ posts.title }}</h2>
-    <!-- intro text is optional. -->
-    {% if posts.intro %}
-      <p>{{ posts.intro }}</p>
-    {% endif %}
-    {% include "partials/tag-loop.njk" %}
-  </div>
-
+  <!--[ writing stream. ]-->
   {% for year in collections.postsByYear %}
     <div class="region">
       <div class="wrapper flow content">
@@ -69,4 +74,4 @@ layout: base
       </ul>
     </div>
   {% endfor %}
-</article>
+</article> #}
