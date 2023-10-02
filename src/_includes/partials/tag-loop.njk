@@ -1,6 +1,6 @@
 <div class="cluster" style="gap: var(--space-s);">
   {% for tag, posts in collections | dictsort %}
-    {%- if tag != "all" and tag != "posts" %}
+    {%- if tag != "all" and tag != "aliases" and tag != "allBookmarks" and tag != "postsByYear" and tag != "replies" and tag != "posts" %}
 
       <a href="/tags/{{ tag }}/">{{ tag }}</a>
 

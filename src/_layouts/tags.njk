@@ -8,9 +8,14 @@ layout: base
     {{ content | safe }}
 
     <ul>
-      {% set orderedCollection = collections | sortObjectByKey  %}
+      {% set orderedCollection = collections | sortObjectByKey %}
       {%- for tag, posts in orderedCollection %}
-        <li><a href="/tags/{{tag | slugify}}/"><strong>{{ tag }}</strong></a> - {{ posts | length }} posts</li>
+        {%- if tag != "all" and tag != "aliases" and tag != "allBookmarks" and tag != "postsByYear" and tag != "replies" and tag != "posts" %}
+          <li>
+            <a href="/tags/{{tag | slugify}}/">
+              <strong>{{ tag }}</strong>
+            </a> - {{ posts | length }} posts</li>
+        {% endif %}
       {%- endfor -%}
     </ul>
   </div>
