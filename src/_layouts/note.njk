@@ -5,39 +5,21 @@ schema: blog
 
 <article class="region blog | h-entry">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text | p-name">{{ title }}</h1>
 
-    <dl class="meta">
-      <!-- date -->
-      {% set definedDate = date %}
-      <dt>
-        {{ meta.published | capitalize }}
-      </dt>
-      <dd>{% include "partials/date.njk" %}</dd>
-
-      {% if updated %}
-        <!-- updated -->
-        {% set definedDate = updated %}
-        <dt>{{ meta.updated | capitalize }}</dt>
-        <dd>{% include "partials/date.njk" %}</dd>
-      {% endif %}
-
-      <!-- author -->
-      <dt>By: </dt>
-      <dd>
-        <a rel="author" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a>
-      </dd>
-
-      <!-- URL -->
-      <dt>URL: </dt>
-      <dd>
-        <a class="u-url" href="{{ absolutePostUrl }}">Permalink</a>
-      </dd>
-    </dl>
+    <details hidden>
+      <h1 class="gradient-text | p-name">&nbsp;</h1>
+      <div class="p-author h-card">
+        <a rel="me" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a>
+        <img class="u-photo" src="{{ meta.authorAvatar }}">
+      </div>
+      <a class="u-url" href="{{ absolutePostUrl }}">
+        {% include "partials/date.njk" %}
+      </a>
+    </details>
 
     <blockquote>
       <p>
-        Reply to <a class="h-cite u-in-reply-to" href="{{ reply }}">{{ reply }}</a>
+        In reply to <a class="h-cite u-in-reply-to" href="{{ reply }}">{{ reply }}</a>
       </p>
     </blockquote>
 
