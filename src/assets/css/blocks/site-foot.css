@@ -24,3 +24,7 @@
   block-size: 0.9em;
   inline-size: 0.9em;
 }
+
+.site-foot table td {
+  border: 0;
+}

@@ -6,7 +6,8 @@
       <div class="site-foot__notes">
         <p>&copy; 1999 - {% year %}
           <a href="/" {% if activePage==='/' %} aria-current="page" {% endif %}>{{ meta.siteName }}</a>. Some rights reserved. Don't
-          jack.</p>
+          jack.
+        </p>
         <p>Made with HTML, CSS, and ❤ powered by 11ty.</p>
       </div>
 
@@ -14,7 +15,7 @@
 
         {% for item in navigation.bottom %}
 
-          <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+        <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
 
         {% endfor %}
       </nav>
@@ -22,17 +23,20 @@
       <nav id="social" class="site-foot__inner" aria-label="Social links">
         {% for item in social %}
 
-          {% if item.platform == "rss" %}
-            <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml">
-            {% else %}
-              <a href="{{ item.url }}" rel="me">
-              {% endif %}
-              <span class="sr-only">{{ item.platform }}</span>
-              <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div>
-            </a>
+        {% if item.platform == "rss" %}
+        <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml">
+          {% else %}
+          <a href="{{ item.url }}" rel="me">
+            {% endif %}
+            <span class="sr-only">{{ item.platform }}</span>
+            <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div>
+          </a>
           {% endfor %}
 
-        </nav>
-      </div>
+      </nav>
     </div>
-  </footer>
+  </div>
+  <div class="region wrapper">
+    {% include "partials/webrings.njk" %}
+  </div>
+</footer>

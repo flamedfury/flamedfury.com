@@ -10,9 +10,5 @@ Here's how they work: A webring consists of a group of related websites with a c
 
 Webrings were created as a way for people to discover new websites on a particular topic and for website owners to promote their sites to a broader audience. Webrings were particularly popular in the late 1990s. They have largely been replaced by search engines and social media as a way to discover new websites. However, webrings are making a resurgence, and many new webrings with modern underlying technology are being created.
 
-## Webrings joined
-
-{% include "partials/webrings.njk" %}
-
 ## Resources
 https://brisray.com/web/webring-history.htm
