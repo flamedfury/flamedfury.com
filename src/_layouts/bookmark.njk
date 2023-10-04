@@ -10,14 +10,14 @@ schema: blog
     <p class="meta">
       <a rel="author" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a> bookmarked <a href="{{ bookmark.url }}" class="u-bookmark-of h-cite">
         <span class="p-name">{{ bookmark.title }}</span></a>{% set definedDate = date %} on 
-        <span class="dt-published">{{ bookmark.date }}</span></span>
-  </p>
+        <time class="dt-published" datetime="{{ bookmark.date }}">{{ bookmark.date }}</time>
+    </p>
 
-  <div class="flow e-content">
-    {{ content | safe }}
+    <div class="flow e-content">
+      {{ content | safe }}
+    </div>
+
   </div>
-
-</div>
 </article>
 
 {% include "partials/webmentions.njk" %}
