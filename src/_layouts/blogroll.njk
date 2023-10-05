@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<header class="section spot-color-primary">
+  {% include 'svg/divider-edgy.svg' %}
+  <div class="section__inner region">
+    <div class="wrapper flow">
+      <section class="text-center">
+        <h1 class="fade-in">{{ title }}</h1>
+      </section>
+    </div>
+  </div>
+  {% include 'svg/divider-edgy.svg' %}
+</header>
+
+<article class="wrapper region">
+
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for blog in blogData %}
+      <li id="{{ blog.name }}" class="card flow overflow-hidden">
+        <h3>
+          <a href="{{ blog.url | url }}">{{ blog.name }}</a>
+        </h3>
+        <p class="blog-url"><img alt="" src="{{ blog.favicon }}" width="24px" height="24px" loading="lazy" decoding="async" style="display: inline;"/>
+          {{ blog.cleansedUrl }}</p>
+        <p class="blog-note">{{ blog.note }}</p>
+        {% if blog.latestPost and blog.latestPost.title %}
+          <p class="latest-post">
+            <b>Latest post:</b>
+            <a href="{{ blog.latestPost.url }}">
+              {{ blog.latestPost.title }}
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+</article>

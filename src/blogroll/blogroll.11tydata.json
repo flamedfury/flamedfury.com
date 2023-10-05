@@ -1,0 +1,52 @@
+{
+  "blogroll": [
+    {
+      "name": "Cory Dransfeldt",
+      "url": "https://coryd.dev/",
+      "feed": "https://feedpress.me/coryd",
+      "note": "Whenever I want to do something on my website, I check to see if Cory has already done it."
+    },
+    {
+      "name": "Robb Knight",
+      "url": "https://rknight.me/",
+      "feed": "https://rknight.me/feed.xml",
+      "note": "If Cory hasn't done what I'm looking to do, then Robb is my next stop."
+    },
+    {
+      "name": "Chris Coyier",
+      "url": "https://chriscoyier.net/",
+      "feed": "https://chriscoyier.net/feed/",
+      "note": "I love what Chris blogs about, everything and anything."
+    },
+    {
+      "name": "The Cheapskates Guide to Computers and the Internet",
+      "url": "http://cheapskatesguide.org/",
+      "feed": "https://cheapskatesguide.org/cheapskates-guide-rss-feed.xml",
+      "note": "Thought provoking articles about the independent web and general purpose computing."
+    },
+    {
+      "name": "Localghost",
+      "url": "https://localghost.dev/",
+      "feed": "https://localghost.dev/feed.xml",
+      "note": "Fun website, sometimes blogs about the old web :)"
+    },
+    {
+      "name": "Jim Nielsen's Blog",
+      "url": "https://blog.jim-nielsen.com/",
+      "feed": "https://blog.jim-nielsen.com/feed.xml",
+      "note": "Filling in text."
+    },
+    {
+      "name": "Manuel Moreale",
+      "url": "https://manuelmoreale.com/",
+      "feed": "https://manuelmoreale.com/feed/rss",
+      "note": "Constant stream of interesting thoughts."
+    },
+    {
+      "name": "11tybundle",
+      "url": "https://11tybundle.dev/",
+      "feed": "https://11tybundle.dev/feed.xml",
+      "note": "Weekly posts full of 11ty resources from across the web."
+    }
+  ]
+}
