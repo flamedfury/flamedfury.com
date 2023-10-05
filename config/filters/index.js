@@ -140,41 +140,54 @@ const sortObjectByKey = (object) => {
 function makePredicate(propValue) {
   return function (mention) {
     return mention.type === propValue;
-  }
+  };
 }
 
 const isThisUrl = (...urls) => (mention) =>
   urls.map((u) => `https://flamedfury.com${u}`).includes(mention['wm-target']);
+
 const isValid = (mention) =>
   mention.author &&
   mention.author.name &&
-  mention.published &&
+  (mention.published || mention['wm-received']) &&
   mention.content &&
   !mention['wm-private'];
+
 const isLike = makePredicate('like-of');
 const isMention = makePredicate('mention-of');
 const isRepost = makePredicate('repost-of');
 const isReply = makePredicate('in-reply-to');
 
+const byPublished = (a, b) => a.published - b.published;
+
 function transform(mention) {
-  // Convert wm-id to a string
-  const wmId = mention['wm-id'] ? mention['wm-id'].toString() : `fallback-${webmentionCounter++}`;
   const newMention = {
     author: mention.author,
     name: mention.name,
     url: mention.url,
     type: mention['wm-property'],
-    wmId: wmId,
   };
 
-  // Check if plain text content exists
+  // Date Handling
+  const published = mention['published'] || mention['wm-received'];
+  if (published) {
+    try {
+      newMention.published = new Date(published);
+      if (isNaN(newMention.published.valueOf())) {
+        throw Error(`Invalid date format: ${published}`);
+      }
+    } catch (e) {
+      console.error('Error parsing published date', e);
+      newMention.published = new Date();
+    }
+  }
+
+  // Content Handling
   if (mention.content?.text) {
     newMention.content = mention.content.text;
   } else if (mention.content?.html) {
-    // If no plain text content, use sanitized HTML content (optional)
     newMention.content = sanitizeHtml(mention.content.html);
   } else {
-    // If neither text nor HTML content is present, you can set a default value or handle it as needed
     newMention.content = "No content available";
   }
 
@@ -196,8 +209,10 @@ function webmentionsByUrl(webmentions, aliases) {
   const forThisPage = webmentions
     .filter(isThisUrl(this.page.url, ...aliases))
     .filter(isValid)
-    .map(transform);
+    .map(transform)
+    .sort(byPublished);
 
+  // Separate by type
   data.likes = forThisPage.filter(isLike);
   data.reposts = forThisPage.filter(isRepost);
   data.replies = forThisPage.filter((m) => isReply(m) || isMention(m));
