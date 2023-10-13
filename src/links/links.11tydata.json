@@ -1,0 +1,146 @@
+{
+  "blogroll": [
+    {
+      "name": "Cory Dransfeldt",
+      "url": "https://coryd.dev/",
+      "feed": "https://feedpress.me/coryd",
+      "note": "Whenever I want to do something on my website, I check to see if Cory has already done it."
+    },
+    {
+      "name": "Robb Knight",
+      "url": "https://rknight.me/",
+      "feed": "https://rknight.me/feed.xml",
+      "note": "If Cory hasn't done what I'm looking to do, then Robb is my next stop."
+    },
+    {
+      "name": "Chris Coyier",
+      "url": "https://chriscoyier.net/",
+      "feed": "https://chriscoyier.net/feed/",
+      "note": "Blogs about blogging, web development and life."
+    },
+    {
+      "name": "The Cheapskates Guide to Computers and the Internet",
+      "url": "http://cheapskatesguide.org/",
+      "note": "Essays about the otherside of the Internet with a focus on low cost computing.",
+      "feed": "https://cheapskatesguide.org/cheapskates-guide-rss-feed.xml"
+    },
+    {
+      "name": "Localghost",
+      "url": "https://localghost.dev/",
+      "feed": "https://localghost.dev/feed.xml",
+      "note": "Fun website. Blogs about tech, web development and mental health"
+    },
+    {
+      "name": "Jim Nielsen's Blog",
+      "url": "https://blog.jim-nielsen.com/",
+      "feed": "https://blog.jim-nielsen.com/feed.xml",
+      "note": "Blogs about interesting things about the web."
+    },
+    {
+      "name": "Manuel Moreale",
+      "url": "https://manuelmoreale.com/",
+      "feed": "https://manuelmoreale.com/feed/rss",
+      "note": "Blogs about tech, the web and disconnecting."
+    },
+    {
+      "name": "Stephanie Eckles",
+      "url": "https://thinkdobecreate.com/",
+      "feed": "https://thinkdobecreate.com/feed/",
+      "note": "Blogs about web development and has a great set of development resources."
+    },
+    {
+      "name": " Kevin Powell ",
+      "url": "https://www.youtube.com/@KevinPowell",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
+      "note": "Helping you learn how to make the web, and make it look good while you're at it."
+    }
+  ],
+  "webDevelopment": [
+    {
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn",
+      "feed": "https://developer.mozilla.org/en-US/blog/rss.xml",
+      "note": "A complete set of articles aims to guide complete beginners to web development with all that they need to start coding websites."
+    },
+    {
+      "name": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/",
+      "feed": "https://www.smashingmagazine.com/feed/",
+      "note": "Magazine on CSS, JavaScript, front-end, accessibility, UX and design. For developers, designers and front-end engineers."
+    },
+    {
+      "name": "CodePen",
+      "url": "https://codepen.io/",
+      "feed": "https://blog.codepen.io/feed/",
+      "note": "An online code editor, learning environment, and community for front-end web development using HTML, CSS and JavaScript code snippets, projects, and web applications."
+    },
+    {
+      "name": "Every Layout",
+      "url": "https://every-layout.dev/",
+      "feed": "https://every-layout.dev/feed.xml",
+      "note": "Through a series of simple, composable layouts, Every Layout will teach you how to better harness the built-in algorithms that power browsers and CSS."
+    },
+    {
+      "name": "Utopia",
+      "url": "https://utopia.fyi/",
+      "feed": "https://utopia.fyi/feed.xml",
+      "note": "Fluid responsive design for your websites."
+    },
+    {
+      "name": "11ty",
+      "url": "https://www.11ty.dev/",
+      "feed": "https://www.11ty.dev/blog/feed.xml",
+      "note": "Eleventy, a simpler static site generator."
+    },
+    {
+      "name": "11tybundle",
+      "url": "https://11tybundle.dev/",
+      "feed": "https://11tybundle.dev/feed.xml",
+      "note": "Weekly posts full of 11ty resources from across the web."
+    },
+    {
+      "name": "11ty Rocks!",
+      "url": "https://11ty.rocks/",
+      "feed": "https://11ty.rocks/feed/",
+      "note": "A collection of Eleventy (11ty) starters, projects, plugins, and resources by Stephanie Eckles."
+    },
+    {
+      "name": "SmolCSS",
+      "url": "https://smolcss.dev/",
+      "feed": "https://smolcss.dev/feed/",
+      "note": "Minimal snippets for modern CSS layouts and components by Stephanie Eckles."
+    },
+    {
+      "name": "Modern CSS",
+      "url": "https://moderncss.dev/",
+      "feed": "https://moderncss.dev/feed/",
+      "note": "A series examining modern CSS solutions to problems by Stephanie Eckles."
+    },
+    {
+      "name": "HTML Recipes",
+      "url": "https://htmlrecipes.dev/",
+      "feed": "",
+      "note": "A collection of quick copy HTML snippets for a variety of common scenarios by Stephanie Eckles."
+    },
+    {
+      "name": "SitePoint",
+      "url": "https://www.sitepoint.com/",
+      "feed": "https://www.sitepoint.com/sitepoint.rss",
+      "note": "Learn Web Design &amp; Development with SitePoint tutorials, courses and books"
+    }
+  ],
+  "newsLetters": [
+    {
+      "name": "The History Of the Web",
+      "url": "https://thehistoryoftheweb.com/",
+      "feed": "https://thehistoryoftheweb.com/feed/",
+      "note": "The best stories from the web's history."
+    },
+    {
+      "name": "Webworm with David Farrier",
+      "url": "https://www.webworm.co/",
+      "feed": "https://www.webworm.co/feed/",
+      "note": "David Farrier's stories from the weird side of the Internet."
+    }
+  ]
+}
