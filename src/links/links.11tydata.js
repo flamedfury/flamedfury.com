@@ -53,6 +53,7 @@ module.exports = {
         if (!links) {
           return [];
         }
+
         return Promise.all(links.map(async (rawLinkInfo) => {
           const encodedUri = encodeURIComponent(rawLinkInfo.url);
           const favicon = `https://v1.indieweb-avatar.11ty.dev/${encodedUri}/`;
