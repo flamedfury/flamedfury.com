@@ -1,6 +1,34 @@
 {
   "albums": [
     {
+      "title": "Bangerz!",
+      "artist": "Miley Cyrus",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Pop, Hip-Hop",
+      "label": "RCA",
+      "code": "",
+      "varient": "Sea Glass",
+      "number": "",
+      "image": "./src/assets/images/vinyl/bangerz.jpg",
+      "alt": "Cover of the album",
+      "comment": "Limited Edition, Reissue, Sea Glass. 10th anniversary edition with updated packaging featuring never before seen photos and the bonus track \"23\""
+    },
+    {
+      "title": "Wasn't Built In A Day",
+      "artist": "Rome Streetz",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "de Rap Winkel Records",
+      "code": "DRW149",
+      "varient": "Standard Black",
+      "number": "694/750",
+      "image": "./src/assets/images/vinyl/wasnt-built-in-a-day.jpg",
+      "alt": "Cover of the album",
+      "comment": "Limited to 750 copies on black vinyl."
+    },
+    {
       "title": "E. 1999 Eternal",
       "artist": "Bone Thugs-N-Harmony",
       "year": 1995,
