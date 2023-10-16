@@ -9,7 +9,7 @@ excludeFromSitemap: true
   <subtitle>{{ meta.bookmarksfeed.description }}</subtitle>
   <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
   <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self"/>
-  <updated>{{ date }}</updated>
+  <updated>{{ bookmark | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ meta.url }}/</id>
   <author>
     <name>{{ meta.author }}</name>
@@ -19,9 +19,9 @@ excludeFromSitemap: true
     {% set absolutePostUrl = bookmark.url | absoluteUrl(metadata.url) %}
     <entry>
       <title>{{ bookmark.data.title }}</title>
-      <link href="{{ absolutePostUrl }}"/>
-      <updated>{{ bookmark.data.date }}</updated>
-      <id>{{ absolutePostUrl }}</id>
+      <link href="{{ meta.authorWebsite }}{{ absolutePostUrl }}"/>
+      <updated>{{ bookmark | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+      <id>{{ meta.authorWebsite }}{{ absolutePostUrl }}</id>
       <content xml:lang="{{ meta.lang }}" type="html">
       <p class="meta">
         <a rel="author" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a> bookmarked <a href="{{ bookmark.data.sourceurl }}" class="u-bookmark-of h-cite">
