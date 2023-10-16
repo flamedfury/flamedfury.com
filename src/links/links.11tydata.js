@@ -72,9 +72,7 @@ module.exports = {
         }));
       };
 
-      const augmentedBlogInfo = await processLinks(blogroll);
-      const augmentedWebDevelopmentInfo = await processLinks(webDevelopment);
-      const augmentedNewsLettersInfo = await processLinks(newsLetters);
+      const [augmentedBlogInfo, augmentedWebDevelopmentInfo, augmentedNewsLettersInfo] = await Promise.all([processLinks(blogroll), processLinks(webDevelopment), processLinks(newsLetters)]);
 
       return {
         blogData: augmentedBlogInfo,
