@@ -9,22 +9,40 @@ updates:
   title: What’s new?
 ---
 
-Kia ora 👋, I'm [fLaMEd](/about/) 🔥 and this is my homepage, a collection of stuff that means everything to to me and probably nothing to you.
+Kia ora 👋, I'm <span class="gradient-text">fLaMEd</span>🔥, the webmaster of <span class="gradient-text">Flamed Fury</span>. I've been a citizen of the Internet since [1996](/memories/), and this homepage offers a glimpse into my world.
 
-I have had a passion for making homepages for a long time. There's always been a time in my life when I have had a homepage in one form or another.
+### About Me
 
-Think of it as a throwback to the old everything/nothing websites of the early 2000s.
+I'm passionate about the Web but not all aspects of its current state. I dislike the modern Web's commercialization, monetization, and walled garden silo approach. [Read more about my perspective](/manifesto/).
 
-### How to browse this website?
+To stay fit, I lift weights, ride my spin bike, and explore local regional parks. My days are filled with [music](/recordshelf/) and [audiobooks](/bookshelf/) during workouts or dog walks.
 
-I've made browsing Flamed Fury as simple as it can be and divided it into four main sections that you can find in the top navigation. 
+I'm an avid reader of [books](/bookshelf/) and [comics](/tags/comics/). When not in the mood for reading, I love relaxing with a [movie](/tags/movies/) or [TV show](/tags/tv/).
 
-The Collections section collects details about my interests and hobbies. I'm into [books](/bookshelf/), [comics](/comics/), [games](/gameshelf/), [music](/recordshelf/), skateboarding and brewing beer.  Make sure to check out the [Mixtapes](/mixtapes/) and [Vinyl Collection](/recordshelf/) pages.
+Gaming has a special place in my heart, and I enjoy playing [computer games](/tags/gaming/) on my [PC](/computerhistory/) or [Steam Deck](/tags/steam deck/).
 
-The Writing section collects posts that I've written, essays and guides. My [Web Manifesto](/manifesto/) is an excellent place to start.
+As a [beer enthusiast](/tags/beer/), I've tried thousands, settling on a few favorites. Beyond drinking, I regularly enjoy brewing my own.
 
-The [Explore](/explore/) section is about exploring and surfing the Web. I've taken a look at popular methods of Web discovery from the past, such as [webrings](/explore/webrings/), [buttons](/explore/buttonwall/), [blogrolls](/explore/blogroll/), and plain old [links](/explore/links/). Rather than dump a bunch of hyperlinks on the page, I've taken the time to understand how each of these was used back in the day, why they fell out of popularity and how they are making a comeback. I hope you discover something new and exciting.
+Family is my greatest joy; my wife and son are my top priorities.
 
-The [About](/about/) section covers the standard things about myself and the website. 
+### How to Browse
 
-Once you've looked around, don't hesitate to head to the [Contact](/contact/) page and get in touch! I'd love to hear from you.
+I've organized <span class="gradient-text">Flamed Fury</span> into five main sections:
+
+- **Collections:** Explore my interests in [books](/bookshelf/), [vinyls](/recordshelf/), [bookmarks](/bookmarks/), and [mixtapes](/mixtapes/).
+
+- **Writing:** Discover posts, essays, and guides. Start with my [Web Manifesto](/manifesto/) before diving into the [archives](/posts/).
+
+- **Explore:** Hyperlinking makes the World Wide Web what it is; check out my [links](/links/) page to discover some new and exciting destinations.
+
+- **Now:** See what I'm currently reading, playing, listening to, and watching on my [/now page](/now/).
+
+- **Uses:** Interested in what hardware and software I use? Check out my [/uses page](/uses/).
+
+I also provide several [feeds](/feeds/) for you to subscribe to with your favourite RSS reader.
+
+Feel free to reach out via email at [flamed@flamedfury.com](mailto:flamed@flamefury.com?subject=Sup%20fLaMEd?). I'm not on social media, so this homepage is the best way to connect with me. If you just want to leave a comment, feel free to respond to any post with a Webmention, or [sign my guestbook](https://guestbook.flamedfury.com).
+
+### Tech Stack
+
+If you're interested in the technical side, I build this site with [Eleventy](https://www.11ty.dev/), based on the [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent) starter project by [Lene Saile](https://www.lenesaile.com/en/). Development happens locally in [VSCode](https://code.visualstudio.com/), and everything is hosted on [Github](https://github.com/flamedfury/flamedfury.com) and deployed to [Netlify](https://netlify.com/).
