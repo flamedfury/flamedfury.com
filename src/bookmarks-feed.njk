@@ -5,7 +5,7 @@ excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}">
-  <title>{{ meta.bookmarksfeed.title }}</title>
+  <title>{{ meta.bookmarksfeed.name }}</title>
   <subtitle>{{ meta.bookmarksfeed.description }}</subtitle>
   <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
   <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self"/>
