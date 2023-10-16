@@ -9,8 +9,8 @@ module.exports = {
       url: '/posts/'
     },
     {
-      text: 'Explore',
-      url: '/explore/'
+      text: 'Links',
+      url: '/links/'
     },
     {
       text: 'Now',
@@ -19,10 +19,6 @@ module.exports = {
     {
       text: 'Uses',
       url: '/uses/'
-    },
-    {
-      text: 'About',
-      url: '/about/'
     }
   ],
   bottom: [
