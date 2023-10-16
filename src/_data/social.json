@@ -6,12 +6,12 @@
   },
   {
     "platform": "github",
-    "url": "https://github.com/flamedfury/flamedfury.com",
+    "url": "https://github.com/flamedfury/",
     "icon": "github.svg"
   },
   {
     "platform": "rss",
-    "url": "feed.xml",
+    "url": "feeds",
     "icon": "rss.svg"
   }
 ]
