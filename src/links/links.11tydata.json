@@ -1,6 +1,12 @@
 {
   "blogroll": [
     {
+      "name": "Katy DeCorah",
+      "url": "https://katydecorah.com/",
+      "feed": "https://katydecorah.com/feed.xml",
+      "note": "Blogs about web development and life. Katy has provided lots of inspiration for how I build parts of Flamed Fury."
+    },
+    {
       "name": "Cory Dransfeldt",
       "url": "https://coryd.dev/",
       "feed": "https://feedpress.me/coryd",
@@ -13,10 +19,22 @@
       "note": "If Cory hasn't done what I'm looking to do, then Robb is my next stop."
     },
     {
+      "name": " Kevin Powell",
+      "url": "https://www.youtube.com/@KevinPowell",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
+      "note": "Helping you learn how to make the web, and make it look good while you're at it."
+    },
+    {
       "name": "Chris Coyier",
       "url": "https://chriscoyier.net/",
       "feed": "https://chriscoyier.net/feed/",
       "note": "Blogs about blogging, web development and life."
+    },
+    {
+      "name": "Oh Hello Ana",
+      "url": "https://ohhelloana.blog/",
+      "feed": "https://ohhelloana.blog/feed.xml",
+      "note": "Blogs about blogging, web development and life. Shares great bookmarks."
     },
     {
       "name": "The Cheapskates Guide to Computers and the Internet",
@@ -49,7 +67,7 @@
       "note": "Blogs about web development and has a great set of development resources."
     },
     {
-      "name": " Kevin Powell ",
+      "name": " Kevin Powell",
       "url": "https://www.youtube.com/@KevinPowell",
       "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
       "note": "Helping you learn how to make the web, and make it look good while you're at it."
@@ -135,6 +153,24 @@
       "url": "https://thehistoryoftheweb.com/",
       "feed": "https://thehistoryoftheweb.com/feed/",
       "note": "The best stories from the web's history."
+    },
+    {
+      "name": "Kevin Powell's Newsletter",
+      "url": "https://kevin-powell.ck.page/profile",
+      "feed": "https://feeds.zencastr.com/f/kdZb7wVs.rss",
+      "note": "Updates, little tips & tricks, and awesome resources from Kevin Powell."
+    },
+    {
+      "name": "People and Blogs",
+      "url": "https://peopleandblogs.com/",
+      "feed": "https://manuelmoreale.com/feed/peopleandblogs",
+      "note": "People and Blogs is a weekly newsletter by Manuel Moreale, where he asks interesting people to talk about themselves and their blogs."
+    },
+    {
+      "name": "Own Your Web",
+      "url": "https://buttondown.email/ownyourweb",
+      "feed": "https://buttondown.email/ownyourweb/rss",
+      "note": "A newsletter by Matthias Ott about designing, building, creating, and publishing for and on the Web."
     },
     {
       "name": "Webworm with David Farrier",
