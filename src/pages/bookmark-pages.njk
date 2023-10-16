@@ -16,6 +16,12 @@ eleventyComputed:
 
 <div class="flow h-entry">
 
+    <p class="meta">
+      <a rel="author" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a> bookmarked <a href="{{ bookmark.url }}" class="u-bookmark-of h-cite">
+        <span class="p-name">{{ bookmark.title }}</span></a>{% set definedDate = date %} on 
+        <time class="dt-published" datetime="{{ bookmark.date }}">{{ bookmark.date }}</time>
+    </p>
+
     <p class="p-summary">
         {{ bookmark.notes }}
     </p>
