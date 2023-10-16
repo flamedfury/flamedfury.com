@@ -9,7 +9,7 @@ excludeFromSitemap: true
   <subtitle>{{ meta.bookmarksfeed.description }}</subtitle>
   <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
   <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self"/>
-  <updated>{{ bookmark | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ bookmark.data.date }}</updated>
   <id>{{ meta.url }}/</id>
   <author>
     <name>{{ meta.author }}</name>
@@ -20,7 +20,7 @@ excludeFromSitemap: true
     <entry>
       <title>{{ bookmark.data.title }}</title>
       <link href="{{ meta.authorWebsite }}{{ absolutePostUrl }}"/>
-      <updated>{{ bookmark | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+      <updated>{{ bookmark.data.date }}</updated>
       <id>{{ meta.authorWebsite }}{{ absolutePostUrl }}</id>
       <content xml:lang="{{ meta.lang }}" type="html">{{ bookmark.templateContent }}</content>
     </entry>
