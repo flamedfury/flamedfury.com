@@ -21,18 +21,16 @@ schema: blog
         <dt>{{ meta.updated | capitalize }}</dt>
         <dd>{% include "partials/date.njk" %}</dd>
       {% endif %}
-    </dl>
 
-    <p style="font-size: var(--size-step-0)">
-      Tagged:
+      <dt>Tagged:</dt>
+      <dd>
       {% for tag in tags %}
         {% if tag != "posts" %}
-          <a href="/tags/{{ tag }}">
-            {{ tag }}
-          </a>
+          <a href="/tags/{{ tag }}">{{ tag }}</a>
         {% endif %}
       {% endfor %}
-    </p>
+      </dd>
+    </dl>
 
     <div class="flow e-content">
       {{ content | safe }}
