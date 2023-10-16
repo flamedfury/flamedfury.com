@@ -2,7 +2,6 @@
 title: /now
 description: What I am currently reading, listening to and watching.
 permalink: /now/index.html
-tags: about
 layout: now.njk
 ---
 
