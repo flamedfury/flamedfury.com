@@ -22,14 +22,7 @@ excludeFromSitemap: true
       <link href="{{ meta.authorWebsite }}{{ absolutePostUrl }}"/>
       <updated>{{ bookmark | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
       <id>{{ meta.authorWebsite }}{{ absolutePostUrl }}</id>
-      <content xml:lang="{{ meta.lang }}" type="html">
-      <p class="meta">
-        <a rel="author" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a> bookmarked <a href="{{ bookmark.data.sourceurl }}" class="u-bookmark-of h-cite">
-        <span class="p-name">{{ bookmark.data.title }}</span></a>{% set definedDate = date %} on 
-        <time class="dt-published" datetime="{{ bookmark.data.date }}">{{ bookmark.data.date }}</time>
-      </p>
-      {{ bookmark.templateContent }}
-      </content>
+      <content xml:lang="{{ meta.lang }}" type="html">{{ bookmark.templateContent }}</content>
     </entry>
   {% endfor %}
 </feed>
