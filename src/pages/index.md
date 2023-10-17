@@ -19,7 +19,7 @@ To stay fit, I lift weights, ride my spin bike, and explore local regional parks
 
 I'm an avid reader of [books](/bookshelf/) and [comics](/tags/comics/). When not in the mood for reading, I love relaxing with a [movie](/tags/movies/) or [TV show](/tags/tv/).
 
-Gaming has a special place in my heart, and I enjoy playing [computer games](/tags/gaming/) on my [PC](/computerhistory/) or [Steam Deck](/tags/steam deck/).
+Gaming has a special place in my heart, and I enjoy playing [computer games](/tags/gaming/) on my [PC](/computerhistory/) or [Steam Deck](/tags/steam%20deck/).
 
 As a [beer enthusiast](/tags/beer/), I've tried thousands, settling on a few favorites. Beyond drinking, I regularly enjoy brewing my own.
 
