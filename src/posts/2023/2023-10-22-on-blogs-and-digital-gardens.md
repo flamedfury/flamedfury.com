@@ -43,4 +43,4 @@ My understanding of the digital garden concept is that I can easily publish a dr
 
 In the end, both blogs and digital gardens offer valuable spaces for self-expression on the web. Instead of getting lost in the details, let's celebrate the diversity of online spaces and continue creating and sharing our thoughts and spaces on the web.
 
-Maggie recently talked with [Chris Coyier](https://shoptalkshow.com/583/) and [Dave Rupert](daverupert.com/) from [Shop Talk](https://shoptalkshow.com). They did talk about digital gardens near the end and Maggie shares some great thoughts about them. Check out episode [583: Language Models, AI, and Digital Gardens with Maggie Appleton](https://shoptalkshow.com/583/).
+Maggie recently talked with [Chris Coyier](https://chriscoyier.net/) and [Dave Rupert](https://daverupert.com/) from [Shop Talk](https://shoptalkshow.com). They did talk about digital gardens near the end and Maggie shares some great thoughts about them. Check out episode [583: Language Models, AI, and Digital Gardens with Maggie Appleton](https://shoptalkshow.com/583/).
