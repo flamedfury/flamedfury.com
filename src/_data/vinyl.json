@@ -1,6 +1,20 @@
 {
   "albums": [
     {
+      "title": "NPR Music Tiny Desk Concert",
+      "artist": "Mac Miller",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Jazzy Hip-Hop",
+      "label": "Warner Records, REMember Music",
+      "code": "",
+      "varient": "Translucent Blue",
+      "number": "",
+      "image": "./src/assets/images/vinyl/mac-miller-tiny-desk.jpeg",
+      "alt": "Cover of the album",
+      "comment": "Translucent blue LP with B-side etching.  NPR Music Tiny Desk Concert vinyl, featuring the live recording of the 2018 performance from NPR Headquarters in Washington, D.C. "
+    },
+    {
       "title": "Bangerz!",
       "artist": "Miley Cyrus",
       "year": 2023,
