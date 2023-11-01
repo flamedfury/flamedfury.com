@@ -11,4 +11,4 @@ I enjoy writing about a variety of topics that capture my interests, including m
 
 This is more than a collection of posts; it's a journey through my life online.
 
-🚀 Ready to explore? Start your journey below!
+🚀 Ready to explore? Start your journey below or browse by [tag](/tags/)!

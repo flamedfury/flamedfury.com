@@ -23,13 +23,7 @@ schema: blog
       {% endif %}
 
       <dt>Tagged:</dt>
-      <dd>
-      {% for tag in tags %}
-        {% if tag != "posts" %}
-          <a href="/tags/{{ tag }}">{{ tag }}</a>
-        {% endif %}
-      {% endfor %}
-      </dd>
+      <dd>{% include "partials/post-tags.njk" %}</dd>
     </dl>
 
     <div class="flow e-content">

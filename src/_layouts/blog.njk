@@ -6,7 +6,7 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
   <div class="section__inner region">
     <div class="wrapper flow">
-      <section class="text-center">
+      <section class="prose text-center">
         <h1 class="fade-in">{{ title }}</h1>
       </section>
     </div>
@@ -14,15 +14,10 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="region">
+<article class="wrapper region">
   <div class="wrapper flow prose">
     {{ content | safe }}
 
-    <!-- [ tag list. ] -->
-    <details>
-      <summary>Tags</summary>
-      {% include "partials/tag-loop.njk" %}
-    </details>
   </div>
 
   <!--[ writing stream. ]-->
@@ -31,7 +26,7 @@ layout: base
       <div class="wrapper content">
         <h2 id="{{ year.year }}">{{ year.year }}</h2>
       </div>
-      <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+      <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
         {% for post in year.posts | reverse %}
           {% include "partials/post-loop.njk" %}
         {% endfor %}
