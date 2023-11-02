@@ -8,7 +8,13 @@ schema: blog
     <h1 class="gradient-text | p-name">{{ title }}</h1>
 
     <dl class="meta">
-      <!-- date -->
+      <dt>
+        Tagged:
+      </dt>
+      <!--] include tags [-->
+      <dd>{% include "partials/post-tags.njk" %}</dd>
+
+      <!--] include date [-->
       {% set definedDate = date %}
       <dt>
         {{ meta.published | capitalize }}
@@ -21,9 +27,6 @@ schema: blog
         <dt>{{ meta.updated | capitalize }}</dt>
         <dd>{% include "partials/date.njk" %}</dd>
       {% endif %}
-
-      <dt>Tagged:</dt>
-      <dd>{% include "partials/post-tags.njk" %}</dd>
     </dl>
 
     <div class="flow e-content">

@@ -21,52 +21,18 @@ layout: base
   </div>
 
   <!--[ writing stream. ]-->
-  {% for year in collections.postsByYear %}
-    <div class="region" style="--region-space-bottom: var(--space-m); --region-space-top: var(--space-m)">
-      <div class="wrapper content">
-        <h2 id="{{ year.year }}">{{ year.year }}</h2>
-      </div>
-      <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-        {% for post in year.posts | reverse %}
-          {% include "partials/post-loop.njk" %}
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.posts %} {% for post in postslist %}
+
+    <li class="card flow overflow-hidden">
+      <h2>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h2>
+      {% set definedDate = post.date %} {% include "partials/date.njk" %}
+      <p>{{ post.data.description }}</p>
+    </li>
+
+    {% endfor %}
+  </ul>
 
 </article>
-
-{# <article class="region">
-  <div class="wrapper flow prose">
-    {{ content | safe }}
-
-        <!-- [ tag list. ] -->
-    <details>
-      <summary>Tags</summary>
-      {% include "partials/tag-loop.njk" %}
-    </details>
-  </div>
-</article>
-
-<article class="region">
-  <div class="wrapper flow content">
-    <!-- [ tag list. ] -->
-    <details>
-      <summary>Tags</summary>
-      {% include "partials/tag-loop.njk" %}
-    </details>
-  </div>
-  <!--[ writing stream. ]-->
-  {% for year in collections.postsByYear %}
-    <div class="region">
-      <div class="wrapper flow content">
-        <h2 id="{{ year.year }}">{{ year.year }}</h2>
-      </div>
-      <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-        {% for post in year.posts | reverse %}
-          {% include "partials/post-loop.njk" %}
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</article> #}

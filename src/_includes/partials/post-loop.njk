@@ -1,8 +1,0 @@
-<li id="{{ post.data.title | slugify }}" class="card flow overflow-hidden">
-  <h3>
-    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-  </h3>
-  {% set definedDate = post.date %}
-  {% include "partials/date.njk" %}
-  <p>{{ post.data.description }}</p>
-</li>
