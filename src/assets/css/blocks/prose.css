@@ -1,6 +1,6 @@
 .prose {
   --flow-space: var(--space-m-l);
-  --wrapper-max-width: 55rem;
+  --wrapper-width: clamp(16rem, 93vw, 55rem);
 }
 
 .prose :is(h2, h3, h4) + * {
@@ -22,6 +22,6 @@
   margin-top: var(--space-s);
 }
 
-.prose :is(ul:not(.grid), ol:not(.grid)) {
-  padding-inline-start: 0.15ch;
+.prose :where(ul:not(.grid), ol:not(.grid)) {
+  padding-inline-start: var(--space-s-m);
 }
