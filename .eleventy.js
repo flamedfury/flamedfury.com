@@ -43,7 +43,6 @@ const {
 // module import collections
 const {
   getAllPosts,
-  getPostsByYear,
   tagList,
   aliases,
   getAllReplies
@@ -114,7 +113,6 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
-  eleventyConfig.addCollection('postsByYear', getPostsByYear);
   eleventyConfig.addCollection('tagList', tagList);
   eleventyConfig.addCollection('replies', getAllReplies);
   eleventyConfig.addCollection('aliases', aliases);
