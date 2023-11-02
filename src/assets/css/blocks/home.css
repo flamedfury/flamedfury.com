@@ -28,6 +28,7 @@
 
 .updates h3 {
   color: var(--color-light);
+  margin-inline: var(--space-s);
 }
 
 .updates li {
@@ -38,6 +39,11 @@
   font-weight: 700;
 }
 
+.updates p {
+  text-align: center;
+}
+
 .updates-link {
   color: var(--color-light);
+  font-size: var(--size-step-0);
 }
