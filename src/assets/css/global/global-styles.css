@@ -86,12 +86,11 @@ svg {
   padding: 0;
 }
 
-article [href^='http']:not([href*='flamedfury.com']) {
+article [href^='http']:not([href*='flamedfury.com']):not(.no-indicator) {
   padding-inline-end: 0.8em;
 }
 
-article
-  [href^='http']:not([href*='flamedfury.com']):not(.no-indicator)::after {
+article [href^='http']:not([href*='flamedfury.com']):not(.no-indicator)::after {
   position: absolute;
   display: inline-block;
   inline-size: 1em;

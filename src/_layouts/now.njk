@@ -96,7 +96,9 @@ layout: page
       <div class="grid" style="--grid-min-item-size: 10rem">
         {% for artist in artists %}
           <div class="flow">
-            <a href="{{artist.url}}" title="{{artist.name | escape}}"><img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" width="350" height="350"></a>
+            <a href="{{artist.url}}" title="{{artist.name | escape}}" class="no-indicator">
+              <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" style="object-fit: cover" width="350" height="350">
+            </a>
             <div class="artist-meta">
               <p class="artist-name">{{artist.name}}</p>
               <p class="artist-plays">{{artist.playcount}} plays</p>
@@ -113,7 +115,9 @@ layout: page
       <div class="grid" style="--grid-min-item-size: 10rem">
         {% for track in tracks %}
           <div class="flow">
-            <a href="{{ track.url }}" title="{{ track.name | escape }}"><img src="{{ track.image }}" alt="Album artwork for {{ track.name }} by {{ track.artist.name }}" title="{{ track.name }} by {{ track.artist.name }}"></a>
+            <a href="{{ track.url }}" title="{{ track.name | escape }}" class="no-indicator">
+              <img src="{{ track.image }}" alt="Album artwork for {{ track.name }} by {{ track.artist.name }}" title="{{ track.name }} by {{ track.artist.name }}" width="350" height="350">
+            </a>
             <div class="track-meta">
               <p class="track-name">{{ track.name }}</p>
               <p class="track-artist-name">{{ track.artist.name }}</p>
@@ -131,7 +135,9 @@ layout: page
       <div class="grid breakout" style="--grid-min-item-size: 10rem">
         {% for album in albums %}
           <div class="flow">
-            <a href="{{ album.url }}" title="{{ album.name }}"><img src="{{ album.image }}" width="350" height="350" alt="The cover art for {{ album.name }}"></a>
+            <a href="{{ album.url }}" title="{{ album.name }}" class="no-indicator">
+              <img src="{{ album.image }}" alt="The cover art for {{ album.name }}" width="350" height="350">
+            </a>
             <div class="album-meta">
               <p class="album-name">{{ album.name }}</p>
               <p class="album-artist-name">{{ album.artist.name }}</p>
@@ -148,7 +154,7 @@ layout: page
       <div class="grid" style="--grid-min-item-size: 10rem">
         {% for show in tv %}
           <div class="flow">
-            <a href="https://trakt.tv/shows/{{ show.show.ids.slug }}/seasons/{{ show.episode.season }}/episodes/{{ show.episode.number }}" title="{{ show.show.title | escape }}">
+            <a href="https://trakt.tv/shows/{{ show.show.ids.slug }}/seasons/{{ show.episode.season }}/episodes/{{ show.episode.number }}" title="{{ show.show.title | escape }}" class="no-indicator">
               <img src="{{ show.posterUrl }}" alt="{{ show.show.title }}"/>
             </a>
             <div class="show-meta">
@@ -167,7 +173,7 @@ layout: page
       <div class="grid" style="--grid-min-item-size: 10rem">
         {% for movie in movies %}
           <div class="flow">
-            <a href="https://trakt.tv/movies/{{ movie.movie.ids.slug }}" title="{{ movie.movie.title | escape }}">
+            <a href="https://trakt.tv/movies/{{ movie.movie.ids.slug }}" title="{{ movie.movie.title | escape }}" class="no-indicator">
               <img src="{{ movie.posterUrl }}" alt="{{ movie.movie.title }}"/>
             </a>
             <div class="movie-meta">
