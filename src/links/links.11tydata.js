@@ -48,7 +48,7 @@ async function getLatestPost(feedUrl) {
 module.exports = {
   eleventyComputed: {
     /** Augments blog info with fetched information from the actual blogs */
-    async linksData({ blogroll, webDevelopment, newsLetters }) {
+    async linksData({ blogroll, webDevelopment, newsLetters, podCasts }) {
       const processLinks = async (links) => {
         if (!links) {
           return [];
@@ -72,12 +72,13 @@ module.exports = {
         }));
       };
 
-      const [augmentedBlogInfo, augmentedWebDevelopmentInfo, augmentedNewsLettersInfo] = await Promise.all([processLinks(blogroll), processLinks(webDevelopment), processLinks(newsLetters)]);
+      const [augmentedBlogInfo, augmentedWebDevelopmentInfo, augmentedNewsLettersInfo, augmentedPodCastsInfo] = await Promise.all([processLinks(blogroll), processLinks(webDevelopment), processLinks(newsLetters), processLinks(podCasts)]);
 
       return {
         blogData: augmentedBlogInfo,
         webDevelopmentData: augmentedWebDevelopmentInfo,
         newsLettersData: augmentedNewsLettersInfo,
+        podCastsData: augmentedPodCastsInfo,
       };
     }
   }

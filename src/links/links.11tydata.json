@@ -178,5 +178,31 @@
       "feed": "https://www.webworm.co/feed/",
       "note": "David Farrier's stories from the weird side of the Internet."
     }
+  ],
+  "podCasts": [
+    {
+      "name": "The Real Pod presents: Remember When",
+      "url": "https://thespinoff.co.nz/podcasts/the-real-pod",
+      "feed": "https://feeds.megaphone.fm/the-real-pod",
+      "note": "Aotearoa Specific. Revisit New Zealand's pop culture past with Jane Yee, Duncan Greive and Alex Casey."
+    },
+    {
+      "name": "Rebel FM",
+      "url": "https://rebelfm.libsyn.com/",
+      "feed": "http://feeds.libsyn.com/18831/rss",
+      "note": "My gaming fix. They play games and talk about them, their lives, and how the two intersect. Usually. And there are jokes.."
+    },
+    {
+      "name": "Darknet Diaries",
+      "url": "https://darknetdiaries.com/",
+      "feed": "https://feeds.megaphone.fm/darknetdiaries",
+      "note": "Stories from the dark side of the Internet. A podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network. This is Darknet Diaries."
+    },
+    {
+      "name": "Shop Talk Show",
+      "url": "https://shoptalkshow.com/",
+      "feed": "https://shoptalkshow.com/feed/podcast/",
+      "note": "A weekly podcast about building websites from Dave Rupert and Chris Coyier."
+    }
   ]
 }
