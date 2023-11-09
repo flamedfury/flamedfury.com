@@ -19,6 +19,24 @@
       "note": "If Cory hasn't done what I'm looking to do, then Robb is my next stop."
     },
     {
+      "name": "alexandra",
+      "url": "https://xandra.cc/",
+      "feed": "https://yequari.com/index.xml",
+      "note": "Xandra runs the 32-bit Cafe. A lovingly handcrafted homepage that calls back to a 2000s web. Sometimes writes essays."
+    },
+    {
+      "name": "yequari",
+      "url": "https://yequari.com/",
+      "feed": "https://yequari.com/index.xml",
+      "note": "Helps out over at the 32-bit Cafe and occasionally blogs about web things."
+    },
+    {
+      "name": "lostletters",
+      "url": "https://lostletters.neocities.org/",
+      "feed": "https://lostletters.neocities.org/feed.xml",
+      "note": "A friend from the 32-bit Cafe. Another 2000s web throwback. Blogs about mental health, life, veganism and web development."
+    },
+    {
       "name": " Kevin Powell",
       "url": "https://www.youtube.com/@KevinPowell",
       "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
@@ -74,6 +92,12 @@
     }
   ],
   "webDevelopment": [
+    {
+      "name": "32-Bit Cafe",
+      "url": "https://32bit.cafe/",
+      "feed": "",
+      "note": "A web space community that I help moderate. The 32-bit Cafe focuses on building websites for self-expression and creativity, made up of professionals, hobbyists, and enthusiasts of the personal web. Our goal is to help non web developers create their own websites."
+    },
     {
       "name": "MDN Web Docs",
       "url": "https://developer.mozilla.org/en-US/docs/Learn",
@@ -144,7 +168,7 @@
       "name": "SitePoint",
       "url": "https://www.sitepoint.com/",
       "feed": "https://www.sitepoint.com/sitepoint.rss",
-      "note": "Learn Web Design &amp; Development with SitePoint tutorials, courses and books"
+      "note": "Learn Web Design & Development with SitePoint tutorials, courses and books"
     }
   ],
   "newsLetters": [
@@ -222,27 +246,31 @@
       "name": "searchmystite",
       "url": "https://searchmysite.net/",
       "feed": "https://blog.searchmysite.net/index.xml",
-      "notes": " The searchmysite.net search engine is a niche search, focussing on the \"indieweb\" or \"small web\" or \"digital gardens\", i.e. non-commercial content, primarily personal and independent websites."
+      "note": " The searchmysite.net search engine is a niche search, focussing on the \"indieweb\" or \"small web\" or \"digital gardens\", i.e. non-commercial content, primarily personal and independent websites."
     },
     {      
       "name": "Wiby",
       "url": "https://wiby.me/",
-      "notes": "Wiby is a search engine for older style pages, lightweight and based on a subject of interest. Building a web more reminiscent of the early internet."
+      "feed": "",
+      "note": "Wiby is a search engine for older style pages, lightweight and based on a subject of interest. Building a web more reminiscent of the early internet."
     },
     {
       "name": "Gibiru",
       "url": "https://gibiru.com/",
-      "notes": "Uncensored private search engine. They exist to provide access to information outside of big tech's censorship bubble and do so privately."
+      "feed": "",
+      "note": "Uncensored private search engine. They exist to provide access to information outside of big tech's censorship bubble and do so privately."
     },
     {
       "name": "Infotiger",
       "url": "https://infotiger.com/",
-      "notes": "Independent, privacy respecting search engine. Building their own index, sitting at around 300 million english websites indexed."
+      "feed": "",
+      "note": "Independent, privacy respecting search engine. Building their own index, sitting at around 300 million english websites indexed."
     },
     {
       "name": "Brave Search",
       "url": "https://search.brave.com/",
-      "notes": "Brave as a company aside, they claim that they do not filter, downrank or censor search results. They are building their own index of the Web so they do not rely on Google or Bing results."
+      "feed": "",
+      "note": "Brave as a company aside, they claim that they do not filter, downrank or censor search results. They are building their own index of the Web so they do not rely on Google or Bing results."
     }
   ],
   "webDirectories": [
@@ -250,33 +278,37 @@
       "name": " ooh.directory",
       "url": "https://ooh.directory/",
       "feed": "https://ooh.directory/blog/feeds/posts.xml",
-      "notes": "A collection of 2084+ blogs about every topic. "
+      "note": "A collection of 2084+ blogs about every topic. "
     },
     {
       "name": "Ye Olde Blogroll",
       "url": "https://blogroll.org/",
       "feed": "https://blogroll.org/feed/",
-      "notes": "A humanly curated list of fine personal & independent blogs that are updated regularly. No algorithms ever!"
+      "note": "A humanly curated list of fine personal & independent blogs that are updated regularly. No algorithms ever!"
     },
     {
       "name": "indieblog.page",
       "url": "https://indieblog.page/",
-      "notes": "Randomly explore the IndieWeb"
+      "feed": "",
+      "note": "Randomly explore the IndieWeb"
     },
     {
       "name": "personalsit.es",
       "url": "https://personalsit.es/",
-      "notes": "A site to share and revel in personal websites."
+      "feed": "",
+      "note": "A site to share and revel in personal websites."
     },
     {
       "name": "i.webthings directory",
       "url": "https://directory.joejenett.com/",
-      "notes": "A hand curated directory of websites to explore with a focus on the independent and noncommercial web."
+      "feed": "",
+      "note": "A hand curated directory of websites to explore with a focus on the independent and noncommercial web."
     },
     {
       "name": "Kagi Small Web",
       "url": "https://kagi.com/smallweb",
-      "notes": "A Stumble Upon like web surfing experience."
+      "feed": "",
+      "note": "A Stumble Upon like web surfing experience."
     }
   ]
 }

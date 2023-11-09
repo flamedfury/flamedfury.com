@@ -109,3 +109,51 @@ layout: base
     {% endfor %}
   </ul>
 </article>
+
+<article class="wrapper region">
+<h2>Web Directories</h2>
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for link in linksData.webDirectoriesData %}
+      <li id="{{ link.name }}" class="card flow overflow-hidden">
+        <h3>
+          <a href="{{ link.url | url }}">{{ link.name }}</a>
+        </h3>
+        <p class="blog-url"><img alt="" src="{{ link.favicon }}" width="24px" height="24px" loading="lazy" decoding="async" style="display: inline;"/>
+          {{ link.cleansedUrl }}</p>
+        <p class="blog-note">{{ link.note }}</p>
+        {% if link.latestPost and link.latestPost.title %}
+          <p class="latest-post">
+            <b>Latest post:</b>
+            <a href="{{ link.latestPost.url }}">
+              {{ link.latestPost.title }}
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<article class="wrapper region">
+<h2>Search Engines</h2>
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for link in linksData.searchEnginesData %}
+      <li id="{{ link.name }}" class="card flow overflow-hidden">
+        <h3>
+          <a href="{{ link.url | url }}">{{ link.name }}</a>
+        </h3>
+        <p class="blog-url"><img alt="" src="{{ link.favicon }}" width="24px" height="24px" loading="lazy" decoding="async" style="display: inline;"/>
+          {{ link.cleansedUrl }}</p>
+        <p class="blog-note">{{ link.note }}</p>
+        {% if link.latestPost and link.latestPost.title %}
+          <p class="latest-post">
+            <b>Latest post:</b>
+            <a href="{{ link.latestPost.url }}">
+              {{ link.latestPost.title }}
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</article>
