@@ -21,7 +21,8 @@ module.exports = {
   updated: 'updated: ',
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.png',
-    mastodonProfile: 'https://social.lol/@flamed'
+    mastodonProfile: 'https://social.lol/@flamed',
+    microBlogProfile: 'https://micro.blog/flamed'
   },
   blog: {
     // this is for the rss feed
