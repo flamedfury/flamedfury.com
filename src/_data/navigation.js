@@ -19,6 +19,14 @@ module.exports = {
     {
       text: 'Uses',
       url: '/uses/'
+    },
+    {
+      text: 'Tags',
+      url: '/tags/'
+    },
+    {
+      text: 'Feeds',
+      url: '/feeds/'
     }
   ],
   bottom: [
