@@ -7,7 +7,7 @@ tags:
 date: 2023-03-26
 ---
 
-My World of Warcraft guild [<Ascent>](https://raider.io/guilds/us/amanthul/Ascent) completed our last raid for Dragonflight Season One tonight. 
+My World of Warcraft guild [Ascent](https://raider.io/guilds/us/amanthul/Ascent) completed our last raid for Dragonflight Season One tonight. 
 
 I enjoyed this season. Dragonflight has been a more enjoyable expansion than Shadowlands was. 
 
