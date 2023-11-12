@@ -7,7 +7,7 @@ tags:
 date: 2023-05-02
 ---
 
-This post is a response to [Katy's](https://katydecorah.com/) recent blog post where she asks, "[Where do you get your audiobooks?](https://katydecorah.com/notes/audiobook-sources/)"?
+This post is a response to [Katy's](https://katydecorah.com/) recent blog post where she asks, "[Where do you get your audiobooks?](https://katydecorah.com/notes/audiobook-sources/)"
 
 Like Katy, I read the majority of my books in audiobook format. 
 
