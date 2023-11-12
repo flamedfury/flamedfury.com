@@ -1,5 +1,5 @@
 ---
-title: A Long Way Down [Finished]
+title: A Long Way Down
 description: A Long Way Down - Nick Hornby
 tags:
   - books
