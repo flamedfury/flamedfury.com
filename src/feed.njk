@@ -16,8 +16,7 @@ excludeFromSitemap: true
     <name>{{ meta.author }}</name>
     <email>{{ meta.authorEmail }}</email>
   </author>
-  {%- for post in postslist %} {%- set absolutePostUrl = post.url | absoluteUrl(meta.url)
-  %}
+  {%- for post in postslist %} {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />
