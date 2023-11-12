@@ -9,40 +9,15 @@ updates:
   title: What’s new?
 ---
 
-Kia ora 👋, I'm <span class="gradient-text">fLaMEd</span>🔥, the webmaster of <span class="gradient-text">Flamed Fury</span>. I've been a citizen of the Internet since [1996](/memories/), and this homepage offers a glimpse into my world.
+Kia ora! 👋 I'm <span class="gradient-text">fLaMEd</span>🔥, the digital artisan behind <span class="gradient-text">Flamed Fury</span>. Since [1996](/memories/), I've been a keen Web surfer. This homepage is my homage to the net.
 
-### About Me
+My devotion to the Web is unwavering, yet I find myself at odds with certain modern trends. The commercialisation, monetisation, and walled-garden silo approach irk me; I believe [the Web can be so much better](/manifesto/).
 
-I'm passionate about the Web but not all aspects of its current state. I dislike the modern Web's commercialization, monetization, and walled garden silo approach. [Read more about my perspective](/manifesto/).
+Beyond the pixels, my greatest joy is my family, my wife and kids my top priority.
 
-To stay fit, I lift weights, ride my spin bike, and explore local regional parks. My days are filled with [music](/recordshelf/) and [audiobooks](/bookshelf/) during workouts or dog walks.
+Im into fitness, [music](/recordshelf/), [books](/bookshelf/), [comics](/tags/comics/), [movies](/tags/movies/), [TV](/tags/tv/), [gaming](/tags/gaming/), and [beer](/tags/beer/).
 
-I'm an avid reader of [books](/bookshelf/) and [comics](/tags/comics/). When not in the mood for reading, I love relaxing with a [movie](/tags/movies/) or [TV show](/tags/tv/).
+Want to connect? Shoot me an email at [flamed@flamedfury.com](mailto:flamed@flamefury.com?subject=Sup%20fLaMEd?) or use the [contact form](/contact/). Share your thoughts on any post with a Webmention or [drop a line in my guestbook](https://guestbook.flamedfury.com). Feeds are available for your RSS fix, check the [options](/feeds/).
 
-Gaming has a special place in my heart, and I enjoy playing [computer games](/tags/gaming/) on my [PC](/computerhistory/) or [Steam Deck](/tags/steam%20deck/).
 
-As a [beer enthusiast](/tags/beer/), I've tried thousands, settling on a few favorites. Beyond drinking, I regularly enjoy brewing my own.
-
-Family is my greatest joy; my wife and son are my top priorities.
-
-### How to Browse
-
-I've organized <span class="gradient-text">Flamed Fury</span> into five main sections:
-
-- **Collections:** Explore my interests in [books](/bookshelf/), [vinyls](/recordshelf/), [bookmarks](/bookmarks/), and [mixtapes](/mixtapes/).
-
-- **Writing:** Discover posts, essays, and guides. Start with my [Web Manifesto](/manifesto/) before diving into the [archives](/posts/).
-
-- **Explore:** Hyperlinking makes the World Wide Web what it is; check out my [links](/links/) page to discover some new and exciting destinations.
-
-- **Now:** See what I'm currently reading, playing, listening to, and watching on my [/now page](/now/).
-
-- **Uses:** Interested in what hardware and software I use? Check out my [/uses page](/uses/).
-
-I also provide several [feeds](/feeds/) for you to subscribe to with your favourite RSS reader.
-
-Feel free to reach out via email at [flamed@flamedfury.com](mailto:flamed@flamefury.com?subject=Sup%20fLaMEd?). I'm not on social media, so this homepage is the best way to connect with me. If you just want to leave a comment, feel free to respond to any post with a Webmention, or [sign my guestbook](https://guestbook.flamedfury.com).
-
-### Tech Stack
-
-If you're interested in the technical side, I build this site with [Eleventy](https://www.11ty.dev/), based on the [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent) starter project by [Lene Saile](https://www.lenesaile.com/en/). Development happens locally in [VSCode](https://code.visualstudio.com/), and everything is hosted on [Github](https://github.com/flamedfury/flamedfury.com) and deployed to [Netlify](https://netlify.com/).
+For the technically inclined, this site is an [Eleventy](https://www.11ty.dev/) creation. I used the [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent) starter project by [Lene Saile](https://www.lenesaile.com/en/), development happens in [VSCodium](https://vscodium.com/). Witness the magic on [GitHub](https://github.com/flamedfury/flamedfury.com) and watch it unfold on [Netlify](https://netlify.com/).
