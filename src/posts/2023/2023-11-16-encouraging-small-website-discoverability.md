@@ -10,7 +10,7 @@ date: 2023-11-16
 Recently shared on [Hacker News](https://news.ycombinator.com/item?id=38276951), Marginalia's 2021 post, [The Small Website Discoverability Crisis](https://www.marginalia.nu/log/19-website-discoverability-crisis/) caught my attention.
 
 > There are a lot of small websites on the Internet: Interesting websites, beautiful websites, unique websites.
->
+
 > Unfortunately they are incredibly hard to find. You cannot find them on Google or Reddit, and while you can stumble onto them with my search engine, it is not in a very directed fashion.
 
 It prompted a response from Kyle Drake of Neocities, always worth hearing from in our circles. 
