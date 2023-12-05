@@ -4,7 +4,7 @@ layout: base
 <!--[ comment ]-->
 <header class="section spot-color-primary">
   {% include 'svg/divider-edgy.svg' %}
-  <div class="section__inner region" style="--region-space-top: var(--space-xl); --region-space-bottom: var(--space-xl)">
+  <div class="section__inner region">
     <div class="wrapper flow prose">
       <h1 class="text-center title-text">{{ title }}</h1>
     </div>
@@ -12,26 +12,11 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="region home">
-  <div class="wrapper sidebar" data-direction="rtl">
-      <article class="flow prose">
-        <h2>{{ welcome.title }}</h2>
-
-        <div class="flow prose">
-          {{ content | safe }}
-        </div>
-      </article>
-    <aside class="region updates">
-      <div class="flow prose">
-        <h3>{{ updates.title }}</h3>
-
-        <div class="flow prose">
-          {% include "partials/updates.njk" %}
-        </div>
-      </div>
-
-    </aside>
-  </div>
+<article class="region">
+  <article class="wrapper flow prose">
+    <h2>{{ welcome.title }}</h2>
+      {{ content | safe }}
+  </article>
 </article>
 
 <article class="region" style="--region-space-top: var(--space-s)">
