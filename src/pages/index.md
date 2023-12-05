@@ -9,6 +9,8 @@ updates:
   title: What’s new?
 ---
 
+## What's going on Internet?
+
 Kia ora! 👋 I'm <span class="gradient-text">fLaMEd</span>🔥, the digital artisan behind <span class="gradient-text">Flamed Fury</span>. Since [1996](/memories/), I've been a keen Web surfer. This homepage is my homage to the net.
 
 My devotion to the Web is unwavering, yet I find myself at odds with certain modern trends. The commercialisation, monetisation, and walled-garden silo approach irk me; I believe [the Web can be so much better](/manifesto/).
