@@ -1,6 +1,6 @@
 {
   "name": "flamedfury.com",
-  "version": "1.5.4",
+  "version": "1.6.3",
   "engines": {
     "node": ">=16.x.x"
   },
@@ -41,7 +41,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
-    "clean-css": "^5.3.1",
+    "clean-css": "^5.3.3",
     "cross-env": "^7.0.3",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
