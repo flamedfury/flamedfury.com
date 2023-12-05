@@ -35,6 +35,10 @@ module.exports = {
       url: '#top'
     },
     {
+      text: 'Contact',
+      url: '/contact/'
+    },
+    {
       text: 'PSA',
       url: '/psa/'
     },
