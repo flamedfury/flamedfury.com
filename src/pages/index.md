@@ -11,15 +11,12 @@ updates:
 
 ## What's going on Internet?
 
-Kia ora! 👋 I'm <span class="gradient-text">fLaMEd</span>🔥, the digital artisan behind <span class="gradient-text">Flamed Fury</span>. Since [1996](/memories/), I've been a keen Web surfer. This homepage is my homage to the net.
+Kia ora! 👋 I'm <span class="gradient-text">fLaMEd</span>🔥 I'm the webmaster of <span class="gradient-text">Flamed Fury</span>, a collection of stuff that means everything to to me and probably nothing to you. 
 
-My devotion to the Web is unwavering, yet I find myself at odds with certain modern trends. The commercialisation, monetisation, and walled-garden silo approach irk me; I believe [the Web can be so much better](/manifesto/).
+I've been surfing the web since [1996](/memories/). I love the web, however I dislike the modern web’s commercialisation, monetisation, and walled-garden silo approach to things; I believe [the Web can be so much better](/manifesto/).
 
-Beyond the pixels, my greatest joy is my family, my wife and kids my top priority.
+Beyond the pixels, my greatest joy is my family, my wife and kids are my top priority. 
 
-Im into fitness, [music](/recordshelf/), [books](/bookshelf/), [comics](/tags/comics/), [movies](/tags/movies/), [TV](/tags/tv/), [gaming](/tags/gaming/), and [beer](/tags/beer/).
+Once you’ve looked around, don’t hesitate to [get in touch](/contact/)! I’d love to hear from you.
 
-Want to connect? Shoot me an email at [flamed@flamedfury.com](mailto:flamed@flamefury.com?subject=Sup%20fLaMEd?) or use the [contact form](/contact/). Share your thoughts on any post with a Webmention or [drop a line in my guestbook](https://guestbook.flamedfury.com). Feeds are available for your RSS fix, check the [options](/feeds/).
-
-
-For the technically inclined, this site is an [Eleventy](https://www.11ty.dev/) creation. I used the [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent) starter project by [Lene Saile](https://www.lenesaile.com/en/), development happens in [VSCodium](https://vscodium.com/). Witness the magic on [GitHub](https://github.com/flamedfury/flamedfury.com) and watch it unfold on [Netlify](https://netlify.com/).
+This homepage is my love letter to the web. Think of it as a throwback to the old everything/nothing websites of the early 2000s.
