@@ -1,6 +1,19 @@
 {
   "albums": [
     {
+      "title": "Swimming",
+      "artist": "Mac Miller",
+      "year": 2018,
+      "format": "vinyl",
+      "genre": "JHip Hop, Funk / Soul",
+      "label": "Warner Records, REMember Music",
+      "code": "",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/mac-miller-swimming.jpg",
+      "alt": "Cover of the album",
+      "comment": "Standard black. What an amazing album. RIP Mac Miller. "
+    },{
       "title": "NPR Music Tiny Desk Concert",
       "artist": "Mac Miller",
       "year": 2023,
