@@ -154,18 +154,20 @@ layout: page
       <div class="grid" style="--grid-min-item-size: 10rem">
         {% for show in tv %}
           <div class="flow">
-            <a href="https://trakt.tv/shows/{{ show.show.ids.slug }}/seasons/{{ show.episode.season }}/episodes/{{ show.episode.number }}" title="{{ show.show.title | escape }}" class="no-indicator">
+            <a href="https://trakt.tv/shows/{{ show.show.ids.slug }}" title="{{ show.show.title }}" class="no-indicator">
               <img src="{{ show.posterUrl }}" alt="{{ show.show.title }}"/>
             </a>
             <div class="show-meta">
-              <p class="show-episode-title">{{ show.episode.title }}</p>
-              <p class="show-title">{{ show.show.title }} - S{{ show.episode.season }}E{{ show.episode.number }}</p>
+              <p class="show-title">{{ show.show.title }}</p>
+              <p class="show-episode-title">{{ show.episodeRange }}</p>
+              
             </div>
           </div>
         {% endfor %}
       </div>
     </div>
   </article>
+
 
   <article class="region">
     <div class="wrapper flow">

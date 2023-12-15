@@ -118,12 +118,12 @@
 
 
 /* now: trakt tv shows */
-.show-episode-title {
+.show-title {
   font-size: var(--size-step-0);
   break-inside: avoid;
 }
 
-.show-title {
+.show-episode-title {
   color: var(--color-light-glare);
   font-size: var(--size-step-min-1);
 }
