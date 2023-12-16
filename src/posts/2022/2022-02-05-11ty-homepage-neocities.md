@@ -7,8 +7,12 @@ tags:
 layout: post
 permalink: /guides/11ty-homepage-neocities/
 date: 2022-01-26
-updated: 2022-03-16
+updated: 2023-12-16
 ---
+
+<aside>
+<p><strong>ATTENTION</strong> This guide is currently out of date. It should still mostly work. I am working on a new version.</p>
+</aside>
 
 Kia ora, I'm hoping that this guide is going to provide a great starting point for those of you who have been happily constructing your homepages and hosting them on Neocities but want to take it to the next level.
 
