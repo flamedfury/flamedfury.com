@@ -4,7 +4,6 @@ layout: base
 
 <header class="section spot-color-primary">
   {% include 'svg/divider-edgy.svg' %}
-
   <div class="section__inner region">
     <div class="wrapper flow">
       <section class="prose text-center">
@@ -12,78 +11,80 @@ layout: base
       </section>
     </div>
   </div>
-
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="wrapper region">
-  <div class="wrapper flow prose">
+<article class="wrapper region flow prose">
     {{ content | safe }}
-  </div>
 </article>
 
-<article class="region page">
-  <div class="wrapper flow content">
-    <h2>Books read</h2>
-    <div class="grid breakout" style="--grid-min-item-size: 10rem">
-      {% for book in metadataread | reverse %}
+<article class="wrapper region flow prose page">
+  <h2>Bookshelf</h2>
+  <div class="grid" style="--grid-min-item-size: 10rem">
+    {% for book in metadataread | reverse %}
 
-        {% if loop.index <= 6 %}
-          <div class="flow">
-            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
-          </div>
-        {% endif %}
+      {% if loop.index <= 8 %}
+        <div class="flow">
+          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
+        </div>
+      {% endif %}
 
-      {% endfor %}
-    </div>
-    <p>
-      <a href="/bookshelf/">All books</a>
-    </p>
-
-    <h2>Vinyls collected</h2>
-    <div class="grid breakout" style="--grid-min-item-size: 10rem">
-      {% for item in vinyl.albums %}
-        {% if loop.index <= 6 %}
-          <div class="flow">
-            {% imagePlaceholder item.image,
-            "the album cover" %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    <p>
-      <a href="/recordshelf/">All vinyl</a>
-    </p>
-
-    <h2>Bookmarks</h2>
-    <div class="grid breakout" style="--grid-min-item-size: 10rem">
-      {% for bookmark in bookmarks | reverse %}
-        {% if loop.index <= 6 %}
-          <div class="flow">
-            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ bookmark.image }}">
-            <span class="block" style="font-size: 1rem">
-              <a href="{{ bookmark.url }}">{{ bookmark.title }}</a>
-            </span>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    <p>
-      <a href="/bookmarks/">All bookmarks</a>
-    </p>
-
-    <h2>Mixtapes</h2>
-    <div class="grid breakout" style="--grid-min-item-size: 15rem">
-      {% for item in mixtapes.playlists %}
-        {% if loop.index <= 4 %}
-          <div class="flow">
-            <iframe style="border-radius:12px" src="{{ item.embed }}" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    <p>
-      <a href="/mixtapes/">All Mixtapes</a>
-    </p>
+    {% endfor %}
   </div>
+  <p>
+    <a href="/bookshelf/">All books</a>
+  </p>
+</article>
+
+<article class="wrapper region flow prose page">
+  <h2>Recordshelf</h2>
+  <div class="grid" style="--grid-min-item-size: 10rem">
+    {% for item in vinyl.albums %}
+      {% if loop.index <= 8 %}
+        <div class="flow">
+          <a href="/recordshelf/#{{ item.title | slug }}">
+          {% imagePlaceholder item.image,
+          "the album cover" %}
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p>
+    <a href="/recordshelf/">All vinyl</a>
+  </p>
+</article>
+
+<article class="wrapper region flow prose ">
+  <h2>Bookmarks</h2>
+  <ul class="flow" role="list">
+    {% for bookmark in collections.allBookmarks | reverse %}
+      {% if loop.index <= 4 %}
+        <li id="{{ bookmark.data.title | slugify }}" class="card flow overflow-hidden">
+          <h3>
+            <a href="{{ bookmark.url | url }}">{{ bookmark.data.title }}</a>
+          </h3>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p>
+    <a href="/bookmarks/">All bookmarks</a>
+  </p>
+</article>
+
+<article class="wrapper region flow prose">
+  <h2>Mixtapes</h2>
+  <div class="grid breakout" style="--grid-min-item-size: 15rem">
+    {% for item in mixtapes.playlists %}
+      {% if loop.index <= 3 %}
+        <div class="flow">
+          <iframe style="border-radius:12px" src="{{ item.embed }}" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p>
+    <a href="/mixtapes/">All Mixtapes</a>
+  </p>
 </article>
