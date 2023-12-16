@@ -21,7 +21,7 @@ function groupEpisodesByShow(episodes) {
 module.exports = async function () {
   const TV_KEY = process.env.TRAKT_API_KEY;
   const TMDB_KEY = process.env.TMDB_API_KEY;
-  const url = 'https://api.trakt.tv/users/flamed/history/shows';
+  const url = 'https://api.trakt.tv/users/flamed/history/shows?page=1&limit=36';
   const res = await EleventyFetch(url, {
     duration: '1h',
     type: 'json',
@@ -88,5 +88,5 @@ module.exports = async function () {
     return 0;
   });
 
-  return shows.slice(0, 4); // Adjust the limit of shows as per your requirement
+  return shows.slice(0, 8);
 };
