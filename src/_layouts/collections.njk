@@ -21,20 +21,24 @@ layout: base
 <article class="wrapper region flow prose page">
   <h2>Bookshelf</h2>
   <div class="grid" style="--grid-min-item-size: 10rem">
+    {% set finishedBooksCount = 0 %}
     {% for book in metadataread | reverse %}
-
-      {% if loop.index <= 8 %}
-        <div class="flow">
-          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
-        </div>
+      {% if book.status == 'finished' %}
+        {% if finishedBooksCount < 8 %}
+          <div class="flow">
+            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
+          </div>
+          {% set finishedBooksCount = finishedBooksCount + 1 %}
+        {% endif %}
       {% endif %}
-
     {% endfor %}
   </div>
   <p>
     <a href="/bookshelf/">All books</a>
   </p>
 </article>
+
+
 
 <article class="wrapper region flow prose page">
   <h2>Recordshelf</h2>
