@@ -1,10 +1,8 @@
 ---
 title: /now
-description: What I am currently reading, listening to and watching.
+description: What I am currently up to
 permalink: /now/index.html
 layout: now.njk
 ---
 
-This is my [now](https://nownownow.com/about) page, inspired by all the wonderful [now](https://nownownow.com/) pages out there. You should create one too!
-
-What I am currently reading, listening to and watching.
+This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.
