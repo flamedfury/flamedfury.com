@@ -19,12 +19,6 @@
       "note": "If Cory hasn't done what I'm looking to do, then Robb is my next stop."
     },
     {
-      "name": "alexandra",
-      "url": "https://xandra.cc/",
-      "feed": "",
-      "note": "Xandra runs the 32-bit Cafe. A lovingly handcrafted homepage that calls back to a 2000s web. Sometimes writes essays."
-    },
-    {
       "name": "yequari",
       "url": "https://yequari.com/",
       "feed": "https://yequari.com/index.xml",
@@ -35,6 +29,12 @@
       "url": "https://lostletters.neocities.org/",
       "feed": "https://lostletters.neocities.org/feed.xml",
       "note": "A friend from the 32-bit Cafe. Another 2000s web throwback. Blogs about mental health, life, veganism and web development."
+    },
+    {
+      "name": "anhvn",
+      "url": "https://anhvn.com/",
+      "feed": "https://anhvn.com/feed.xml",
+      "note": "I love anhvn's redesigns. Has a great resources list. Blogs from time to time."
     },
     {
       "name": " Kevin Powell",
@@ -67,12 +67,6 @@
       "note": "Fun website. Blogs about tech, web development and mental health"
     },
     {
-      "name": "Jim Nielsen's Blog",
-      "url": "https://blog.jim-nielsen.com/",
-      "feed": "https://blog.jim-nielsen.com/feed.xml",
-      "note": "Blogs about interesting things about the web."
-    },
-    {
       "name": "Manuel Moreale",
       "url": "https://manuelmoreale.com/",
       "feed": "https://manuelmoreale.com/feed/rss",
@@ -83,12 +77,38 @@
       "url": "https://thinkdobecreate.com/",
       "feed": "https://thinkdobecreate.com/feed/",
       "note": "Blogs about web development and has a great set of development resources."
+    }
+  ],
+  "coolSites": [
+    {
+      "name": "alexandra",
+      "url": "https://xandra.cc/",
+      "feed": "",
+      "note": "Xandra runs the 32-bit Cafe. A lovingly handcrafted homepage that calls back to a 2000s web. Sometimes writes essays."
     },
     {
-      "name": " Kevin Powell",
-      "url": "https://www.youtube.com/@KevinPowell",
-      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
-      "note": "Helping you learn how to make the web, and make it look good while you're at it."
+      "name": "Coby Cat's Abode",
+      "url": "https://cobycat.neocities.org/",
+      "feed": "",
+      "note": "A fantastic handmade site. Covers European/Belgian Disney stuff."
+    },
+    {
+      "name": "DVD Nerd",
+      "url": "https://dvdnerd.neocities.org/",
+      "feed": "",
+      "note": "Check out the DVD Push Button reviews."
+    },
+    {
+      "name": "Trans Rats",
+      "url": "https://transrats.neocities.org/",
+      "feed": "",
+      "note": "Don't try this on your mobile, but check out the crazy Pokemon plushie collection!"
+    },
+    {
+      "name": "It's Not Stupid",
+      "url": "https://itsnotstupid.com/",
+      "feed": "",
+      "note": "An Invader Zim fan site. This is everything that a fan site should be!"
     }
   ],
   "webDevelopment": [

@@ -14,8 +14,9 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="wrapper region">
+<article class="wrapper region flow">
 <h2>Blogroll</h2>
+  <p>Interesting websites with blogs that I subscribe to.</p>
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for blog in linksData.blogData %}
       <li id="{{ blog.name }}" class="card flow overflow-hidden">
@@ -38,7 +39,32 @@ layout: base
   </ul>
 </article>
 
-<article class="wrapper region">
+<article class="wrapper region flow">
+<h2>Cool Sites</h2>
+  <p>Cool websites that aren't blogs that have interesting pages to get lost in.</p>
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% for link in linksData.coolSitesData %}
+      <li id="{{ link.name }}" class="card flow overflow-hidden">
+        <h3>
+          <a href="{{ link.url | url }}">{{ link.name }}</a>
+        </h3>
+        <p class="blog-url"><img alt="" src="{{ link.favicon }}" width="24px" height="24px" loading="lazy" decoding="async" style="display: inline;"/>
+          {{ link.cleansedUrl }}</p>
+        <p class="blog-note">{{ link.note }}</p>
+        {% if link.latestPost and link.latestPost.title %}
+          <p class="latest-post">
+            <b>Latest post:</b>
+            <a href="{{ link.latestPost.url }}">
+              {{ link.latestPost.title }}
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<article class="wrapper region flow">
 <h2>Web Development</h2>
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.webDevelopmentData %}
@@ -62,7 +88,7 @@ layout: base
   </ul>
 </article>
 
-<article class="wrapper region">
+<article class="wrapper region flow">
 <h2>Newsletters</h2>
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.newsLettersData %}
@@ -86,7 +112,7 @@ layout: base
   </ul>
 </article>
 
-<article class="wrapper region">
+<article class="wrapper region flow">
 <h2>Podcasts</h2>
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.podCastsData %}
@@ -110,7 +136,7 @@ layout: base
   </ul>
 </article>
 
-<article class="wrapper region">
+<article class="wrapper region flow">
 <h2>Web Directories</h2>
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.webDirectoriesData %}
@@ -134,7 +160,7 @@ layout: base
   </ul>
 </article>
 
-<article class="wrapper region">
+<article class="wrapper region flow">
 <h2>Search Engines</h2>
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.searchEnginesData %}
