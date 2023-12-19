@@ -58,6 +58,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { slugifyString } = require('./config/utils');
 const { escape } = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 
 module.exports = eleventyConfig => {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
@@ -133,6 +134,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(bundlerPlugin);
 
   // 	--------------------- Passthrough File Copy -----------------------
 
