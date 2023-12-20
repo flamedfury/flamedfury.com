@@ -1,11 +1,25 @@
 {
   "albums": [
     {
+      "title": "Run It Back",
+      "artist": "Home Brew",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "Years Gone By",
+      "code": "YGB007",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/home-brew-run-it-back.jpg",
+      "alt": "Cover of the album",
+      "comment": "The last Home Brew album was eleven years ago. This one is great, lots of retrospect, lots of the same living."
+    },
+    {
       "title": "Swimming",
       "artist": "Mac Miller",
       "year": 2018,
       "format": "vinyl",
-      "genre": "JHip Hop, Funk / Soul",
+      "genre": "Hip Hop, Funk / Soul",
       "label": "Warner Records, REMember Music",
       "code": "",
       "varient": "Standard Black",
@@ -13,7 +27,8 @@
       "image": "./src/assets/images/vinyl/mac-miller-swimming.jpg",
       "alt": "Cover of the album",
       "comment": "Standard black. What an amazing album. RIP Mac Miller. "
-    },{
+    },
+    {
       "title": "NPR Music Tiny Desk Concert",
       "artist": "Mac Miller",
       "year": 2023,
