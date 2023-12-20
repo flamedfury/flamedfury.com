@@ -12,7 +12,9 @@ I've been tracking the beers I drink in [Untappd](https://untappd.com/) since 20
 
 Untappd don't provide any easy way to get your data out so I jacked this straight from their website. It took a bit of hacking but here it is.
 
-Don't look under the hood, it's a mess of jacked code from a React app.
+Don't look under the hood, it's a mess of jacked code from a React app. 
+
+RSS viewers you will have to click through to the [web version[/posts/my-year-in-beer-2023/] to see the breakdown.
 
 {% css %}
 hr {
