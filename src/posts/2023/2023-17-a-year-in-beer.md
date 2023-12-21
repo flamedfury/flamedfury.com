@@ -14,7 +14,7 @@ Untappd don't provide any easy way to get your data out so I jacked this straigh
 
 Don't look under the hood, it's a mess of jacked code from a React app. 
 
-RSS viewers you will have to click through to the [web version[/posts/my-year-in-beer-2023/] to see the breakdown.
+RSS viewers you will have to click through to the [web version](/posts/my-year-in-beer-2023/) to see the breakdown.
 
 {% css %}
 hr {
