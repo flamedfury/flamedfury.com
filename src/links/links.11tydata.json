@@ -37,7 +37,13 @@
       "note": "I love anhvn's redesigns. Has a great resources list. Blogs from time to time."
     },
     {
-      "name": " Kevin Powell",
+      "name": "Minutes to Midnight",
+      "url": "https://minutestomidnight.co.uk/",
+      "feed": "https://minutestomidnight.co.uk/feed.xml",
+      "note": "Simone is a musician and blogger. He thinks and blogs about similar things to me."
+    },
+    {
+      "name": "Kevin Powell",
       "url": "https://www.youtube.com/@KevinPowell",
       "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
       "note": "Helping you learn how to make the web, and make it look good while you're at it."
@@ -58,25 +64,25 @@
       "name": "The Cheapskates Guide to Computers and the Internet",
       "url": "http://cheapskatesguide.org/",
       "note": "Essays about the otherside of the Internet with a focus on low cost computing.",
-      "feed": "https://cheapskatesguide.org/cheapskates-guide-rss-feed.xml"
+      "feed": ""
     },
     {
       "name": "Localghost",
       "url": "https://localghost.dev/",
-      "feed": "https://localghost.dev/feed.xml",
+      "feed": "https://localghost.dev/articles.xml",
       "note": "Fun website. Blogs about tech, web development and mental health"
     },
     {
       "name": "Manuel Moreale",
       "url": "https://manuelmoreale.com/",
-      "feed": "https://manuelmoreale.com/feed/rss",
+      "feed": "",
       "note": "Blogs about tech, the web and disconnecting."
     },
     {
-      "name": "Stephanie Eckles",
-      "url": "https://thinkdobecreate.com/",
-      "feed": "https://thinkdobecreate.com/feed/",
-      "note": "Blogs about web development and has a great set of development resources."
+      "name": "Kev Quirk",
+      "url": "https://kevquirk.com/",
+      "feed": "https://kevquirk.com/feed",
+      "note": "Kev blogs about blogging, life and has a great watch collection."
     }
   ],
   "coolSites": [
@@ -109,6 +115,24 @@
       "url": "https://itsnotstupid.com/",
       "feed": "",
       "note": "An Invader Zim fan site. This is everything that a fan site should be!"
+    },
+    {
+      "name": "Ray's Miscellany",
+      "url": "https://www.brisray.com/",
+      "feed": "",
+      "note": "Brisray has been developing and maintaining his website since 1999. Lots of pages to get lost in and boasts the most complete collection and overview of webrings."
+    },
+    {
+      "name": "Matchbox Forums",
+      "url": "https://www.mbxforum.com/",
+      "feed": "",
+      "note": "Matchbox Forum is a not-for-profit organisation of Matchbox collectors. A great resource to keep up with the latest Matchbox releases and news."
+    },
+    {
+      "name": "Wheel Collectors",
+      "url": "https://wheelcollectors.com/",
+      "feed": "",
+      "note": "Matchbox Forum is a not-for-profit organisation of Matchbox collectors. A great resource to keep up with the latest Matchbox releases and news."
     }
   ],
   "webDevelopment": [
@@ -228,7 +252,7 @@
       "name": "The Real Pod presents: Remember When",
       "url": "https://thespinoff.co.nz/podcasts/the-real-pod",
       "feed": "https://feeds.megaphone.fm/the-real-pod",
-      "note": "Aotearoa Specific. Revisit New Zealand's pop culture past with Jane Yee, Duncan Greive and Alex Casey."
+      "note": "ENDED. Aotearoa Specific. Revisit New Zealand's pop culture past with Jane Yee, Duncan Greive and Alex Casey."
     },
     {
       "name": "Rebel FM",
@@ -247,6 +271,12 @@
       "url": "https://shoptalkshow.com/",
       "feed": "https://shoptalkshow.com/feed/podcast/",
       "note": "A weekly podcast about building websites from Dave Rupert and Chris Coyier."
+    },
+    {
+      "name": "Hemespheric Views",
+      "url": "https://hemisphericviews.com/",
+      "feed": "https://listen.hemisphericviews.com/rss",
+      "note": "Hemespheric Views is a podcast about technology, media, food, cultural differences and family life."
     }
   ],
   "searchEngines": [
