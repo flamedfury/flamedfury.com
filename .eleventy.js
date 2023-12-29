@@ -30,7 +30,6 @@ const {
   mdInline,
   splitlines,
   sortObjectByKey,
-  webmentionsByUrl,
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -96,7 +95,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
   eleventyConfig.addFilter('sortObjectByKey', sortObjectByKey);
-  eleventyConfig.addFilter('webmentionsByUrl', webmentionsByUrl);
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);

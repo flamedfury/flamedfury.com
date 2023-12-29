@@ -134,92 +134,6 @@ const sortObjectByKey = (object) => {
   return sortedObject;
 };
 
-// source: https://drhayes.io/blog/webmentions-in-11ty/
-// enables webmentions
-
-function makePredicate(propValue) {
-  return function (mention) {
-    return mention.type === propValue;
-  };
-}
-
-const isThisUrl = (...urls) => (mention) =>
-  urls.map((u) => `https://flamedfury.com${u}`).includes(mention['wm-target']);
-
-const isValid = (mention) =>
-  mention.author &&
-  mention.author.name &&
-  (mention.published || mention['wm-received']) &&
-  mention.content &&
-  !mention['wm-private'];
-
-const isLike = makePredicate('like-of');
-const isMention = makePredicate('mention-of');
-const isRepost = makePredicate('repost-of');
-const isReply = makePredicate('in-reply-to');
-
-const byPublished = (a, b) => a.published - b.published;
-
-function transform(mention) {
-  const newMention = {
-    author: mention.author,
-    name: mention.name,
-    url: mention.url,
-    type: mention['wm-property'],
-  };
-
-  // Date Handling
-  const published = mention['published'] || mention['wm-received'];
-  if (published) {
-    try {
-      newMention.published = new Date(published);
-      if (isNaN(newMention.published.valueOf())) {
-        throw Error(`Invalid date format: ${published}`);
-      }
-    } catch (e) {
-      console.error('Error parsing published date', e);
-      newMention.published = new Date();
-    }
-  }
-
-  // Content Handling
-  if (mention.content?.text) {
-    newMention.content = mention.content.text;
-  } else if (mention.content?.html) {
-    newMention.content = sanitizeHtml(mention.content.html);
-  } else {
-    newMention.content = "No content available";
-  }
-
-  return newMention;
-}
-
-function webmentionsByUrl(webmentions, aliases) {
-  aliases = aliases || [];
-  const data = {
-    likes: [],
-    reposts: [],
-    replies: [],
-  };
-
-  if (!webmentions) {
-    return data;
-  }
-
-  const forThisPage = webmentions
-    .filter(isThisUrl(this.page.url, ...aliases))
-    .filter(isValid)
-    .map(transform)
-    .sort(byPublished);
-
-  // Separate by type
-  data.likes = forThisPage.filter(isLike);
-  data.reposts = forThisPage.filter(isRepost);
-  data.replies = forThisPage.filter((m) => isReply(m) || isMention(m));
-
-  return data;
-}
-
 module.exports = {
   limit,
   toHtml,
@@ -232,6 +146,5 @@ module.exports = {
   minifyJs,
   mdInline,
   splitlines,
-  sortObjectByKey,
-  webmentionsByUrl
+  sortObjectByKey
 };
