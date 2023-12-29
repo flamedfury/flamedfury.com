@@ -25,7 +25,7 @@ This led to many webmasters removing blogrolls from their websites or limiting t
 
 Recently, interest in personal websites and blogrolls has become popular again. As more and more people become disillusioned with social media and create their own websites, blogrolls are making a comeback as a way for webmasters to build relationships and share resources with other websites. Webmasters again recognise the value of providing web surfers with new discovery opportunities. Blogrolls and links pages are back and better than ever.
 
-In my own [links page](/links/), I've structured my blogroll at the page's forefront, curating a selection of links to personal websites. These curated selections focus on webmasters who consistently update their content and offer an [RSS feed](/feeds/), allowing surfers to stay connected with their latest posts. Additionally, you'll find a compilation of valuable resources and services that I personally find helpful, alongside unconventional yet fantastic personal websites that diverge from the typical blog format.
+In my own [links page](/links/), I've structured my blogroll at the page's forefront, curating a selection of links to personal websites. These curated selections focus on webmasters who consistently update their content and offer an [RSS feed](/feeds/), and [exposes it](https://rknight.me/please-expose-your-rss/) allowing surfers to stay connected with their latest posts. Additionally, you'll find a compilation of valuable resources and services that I personally find helpful, alongside unconventional yet fantastic personal websites that diverge from the typical blog format.
 
 Whether you're just starting out with your own website or a seasoned webmaster, having a blogroll on your website can be a great way to build relationships and community. 
 
@@ -70,5 +70,7 @@ In today's digitally driven world, where algorithms and corporate interests ofte
 While blogrolls may not adorn every website today, and the tiny 88x31 buttons have dwindled, their legacy lives on through the resurgence of personal websites and the celebration of independent content. However, these relics must adapt and evolve with us to remain relevant in the ever-evolving Web landscape.
 
 It's essential to reimagine their role in today's digital arena by drawing from the past to navigate the future of the Web as we treasure and reflect on these remnants from the Web's earlier days. Remember, beyond serving as mere tools for navigation between personal websites, these relics embody connections and the spirit of discovery.
+
+One of the most recent additions to making connections through personal websites and the Web are 
 
 Let's continue embracing the old and new, ensuring the Web remains an endlessly fascinating and ever-evolving space for future generations.
