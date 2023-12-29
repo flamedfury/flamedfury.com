@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@chrisburnell/eleventy-cache-webmentions": "^1.2.5",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.3",
