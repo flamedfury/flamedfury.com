@@ -18,6 +18,6 @@ module.exports = Object.assign(defaults, {
   allowlist: [],
   blocklist: [],
   urlReplacements: {},
-  maximumHtmlLength: 12000,
+  maximumHtmlLength: 5000,
   maximumHtmlText: "mentioned this in",
 })
