@@ -59,7 +59,7 @@ Webrings were created as a way for people to discover new websites on a particul
 
 Check out Ray's [Webring History](https://brisray.com/web/webring-history.htm) page for an in-depth history of webrings.
 
-Webrings are making a resurgence, and many new webrings with modern underlying technology are being created. Ray is also maintaining a [Webring List](https://brisray.com/web/webring-list.htm), which is the most comprehensive list of webrings that are both active and active. 
+Webrings are making a resurgence, and many new webrings with modern underlying technology are being created. Ray is also maintaining a [Webring List](https://brisray.com/web/webring-list.htm), which is the most comprehensive list of webrings that are both active and inactive. 
 
 I love a good webring, but I'm not a fan of surfing through a webring and seeing the same sites tha are in all the other webrings. A webring should have a niche and connect websites within that niche together. Otherwise, what's the point? 
 
@@ -67,10 +67,16 @@ I love a good webring, but I'm not a fan of surfing through a webring and seeing
 
 In today's digitally driven world, where algorithms and corporate interests often steer our online experiences, the resurgence of these relics serves as a reminder of the communal and authentic nature of the early Web. Their return suggests a longing for the intimate, handcrafted browsing experiences of years gone by.
 
-While blogrolls may not adorn every website today, and the tiny 88x31 buttons have dwindled, their legacy lives on through the resurgence of personal websites and the celebration of independent content. However, these relics must adapt and evolve with us to remain relevant in the ever-evolving Web landscape.
+While blogrolls may not adorn every website today, and the tiny 88x31 buttons have dwindled, their legacy lives on through the resurgence of personal websites and the celeb ration of independent content. However, these relics must adapt and evolve with us to remain relevant in the ever-evolving Web landscape.
 
 It's essential to reimagine their role in today's digital arena by drawing from the past to navigate the future of the Web as we treasure and reflect on these remnants from the Web's earlier days. Remember, beyond serving as mere tools for navigation between personal websites, these relics embody connections and the spirit of discovery.
 
-One of the most recent additions to making connections through personal websites and the Web are 
+One of the recent additions worth mentioning about building connections in the world of personal websites is [Webmentions](https://alistapart.com/article/webmentions-enabling-better-communication-on-the-internet/). Webmentions are an [open standard protocol](https://www.w3.org/TR/webmention/) notifying webpages about links, likes, or comments.
+
+I've finally got Webmentions up and running here! Now, I can showcase boosts, likes, and mentions from Mastodon and replies from other sites. The real charm lies in enabling others to respond to my posts by sharing them on their websites. That's the true essence of the Web's magic.
+
+However, using Webmentions does come with its challenges. The initial setup can be complicated, demanding precise configurations from the sender and receiver to ensure all parts of the mentions are included. There's a heavy reliance on [microformats](http://microformats.org/wiki/webmention), so the Mastodon connection has gained popularity and become the default. It simplifies matters for the receiver, requiring correct configurations to harness the frictionless posting Mastodon provides.
+
+My goal for the new year is to advocate and encourage using our websites as communication tools, reducing reliance on social media platforms. After all, that's what our websites are designed for!"
 
 Let's continue embracing the old and new, ensuring the Web remains an endlessly fascinating and ever-evolving space for future generations.
