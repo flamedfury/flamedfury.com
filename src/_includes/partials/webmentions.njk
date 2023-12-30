@@ -7,78 +7,64 @@
     </div>
   {% else %}
 
-  <div class="flow">
-    <h3>Reposts</h3>
-    {% for webmention in webmentions %}
-      {% if webmention.activity.type == "repost" %}
-        {% if webmention.data.author.name != "fLaMEd" %}
-          {% if webmention.url != "" %}
-            <a class="h-card u-url link-u-exempt" href="{{ webmention.data.url }}" target="_blank" rel="noopener noreferrer">
-              {% if webmention.data.author.photo %}
-                <img src="{{ webmention.data.author.photo }}" alt="{{ webmention.data.author.name }}" width="48" height="48" loading="lazy" />
-              {% else %}
-                <img src="{{ meta.webmentions.fallbackAvatar }}" alt="" width="48" height="48" />
-              {% endif %}
-            </a>
+    <div class="flow">
+      <h3>Reposts & Likes</h3>
+      {% for webmention in webmentions %}
+        {% if (webmention.type == "entry") and (webmention['wm-property'] in ['repost-of', 'like-of']) %}
+          {% if webmention.author.name != "fLaMEd" %}
+            {% if webmention.url != "" %}
+              <a class="h-card u-url link-u-exempt" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+                {% if webmention.author.photo %}
+                  <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" width="48" height="48" loading="lazy" />
+                {% else %}
+                  <img src="{{ meta.webmentions.fallbackAvatar }}" alt="" width="48" height="48" />
+                {% endif %}
+              </a>
+            {% endif %}
           {% endif %}
         {% endif %}
-      {% endif %}
-    {% endfor %}
-  </div>
-  
-  <div class="flow">
-    <h3>Likes</h3>
-    {% for webmention in webmentions %}
-      {% if webmention.activity.type == "like" %}
-        {% if webmention.data.author.name != "fLaMEd" %}
-          {% if webmention.url != "" %}
-            <a class="h-card u-url link-u-exempt" href="{{ webmention.data.url }}" target="_blank" rel="noopener noreferrer">
-              {% if webmention.data.author.photo %}
-                <img src="{{ webmention.data.author.photo }}" alt="{{ webmention.data.author.name }}" width="48" height="48" loading="lazy" />
-              {% else %}
-                <img src="{{ meta.webmentions.fallbackAvatar }}" alt="" width="48" height="48" />
-              {% endif %}
-            </a>
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
 
-  <div class="webmention-replies flow">
-    <h3>Comments</h3>
-    {% for webmention in webmentions %}
-      {% if webmention.activity.type == "reply" or webmention.activity.type == "link" %}
-        <article id="webmention-{{ webmention.id }}" class="webmention webmention--reply">
-          <div class="webmention__meta">
-            {% if webmention.data.author %}
-              {% if webmention.data.author.photo %}
-                <img src="{{ webmention.data.author.photo }}" alt="{{ webmention.data.author.name }}" width="48" height="48" loading="lazy" />
-              {% else %}
-                <img src="{{ meta.webmentions.fallbackAvatar }}" alt="" width="48" height="48" />
+    <div class="webmention-replies flow">
+      <h3>Comments</h3>
+      {% for webmention in webmentions %}
+        {% if (webmention.type == "entry") and (webmention['wm-property'] in ['in-reply-to', 'mention-of']) %}
+          <article id="webmention-{{ webmention['wm-id'] }}" class="webmention webmention--reply">
+            <div class="webmention__meta">
+              {% if webmention.author %}
+                {% if webmention.author.photo %}
+                  <img src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}" width="48" height="48" loading="lazy" />
+                {% else %}
+                  <img src="{{ meta.webmentions.fallbackAvatar }}" alt="" width="48" height="48" />
+                {% endif %}
+                <span>
+                  <strong class="p-name"><a class="no-indicator" href="{{ webmention.author.url }}">{{ webmention.author.name }}</a></strong>
+                </span>
               {% endif %}
-              <span>
-                <strong class="p-name"><a class="no-indicator" href="{{ webmention.data.author.url }}">{{ webmention.data.author.name }}</a></strong>
-              </span>
-            {% endif %}
-            {% if webmention.verified_date %}
-              <!-- date -->
-              {% set definedDate = webmention.verified_date %}
-              {% include "partials/date-time.njk" %}
-            {% endif %}
-          </div>
-          {% if webmention.contentSanitized %}
+              {% if webmention['wm-received'] %}
+                <!-- Date-time -->
+                {% set definedDate = webmention['wm-received'] %}
+                {% if webmention.url %}
+                <a class="no-indicator" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+                  {% include "partials/date-time.njk" %}
+                </a>
+                {% endif %}
+              {% endif %}
+            </div>
+            {% if webmention.contentSanitized %}
             <p class="webmention-text">
               {{ webmention.contentSanitized | safe | truncate }}
-              {% if webmention.data.url %}
-              <a href="{{ webmention.data.url }}" target="_blank" rel="noopener noreferrer"> source </a>
-              {% endif %}
+            </p>
+            {% elseif webmention.content.text %}
+            <p class="webmention-text">
+              {{ webmention.content.text | safe | truncate }}
             </p>
           {% endif %}
-        </article>
-      {% endif %} 
-    {% endfor %}
-  </div>
+          </article>
+        {% endif %} 
+      {% endfor %}
+    </div>
   {% endif %}
 
   <section class="region">

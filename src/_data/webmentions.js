@@ -5,8 +5,8 @@ require("dotenv").config()
 
 module.exports = Object.assign(defaults, {
 	domain: "https://flamedfury.com",
-	feed: `https://webmention.io/api/mentions.json?domain=flamedfury.com&token=${process.env.WEBMENTION_IO_TOKEN}&per-page=9001`,
-	key: "links",
+	feed: `https://webmention.io/api/mentions.jf2?domainflamedfury.com&token=${process.env.WEBMENTION_IO_TOKEN}&per-page=9001`,
+	key: "children",
   duration: "1h",
   uniqueKey: "webmentions",
   allowedHTML: {

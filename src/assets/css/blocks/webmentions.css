@@ -63,12 +63,13 @@
 @media screen and (min-width: 30em) {
   .webmention-replies .webmention__meta {
     display: grid;
-    grid-template-columns: 50px 1fr 210px;
+    grid-template-columns: 50px 1fr 220px;
   }
 
   .webmention-replies .webmention__meta time {
     display: inline;
     margin-block-start: 0;
     text-align: right;
+    font-weight: normal;
   }
 }
