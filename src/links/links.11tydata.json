@@ -19,6 +19,12 @@
       "note": "If Cory hasn't done what I'm looking to do, then Robb is my next stop."
     },
     {
+      "name": "Xandra",
+      "url": "https://xandra.bearblog.dev/",
+      "feed": "https://library.xandra.cc/feed/",
+      "note": "Xandra, my Small Web bestie is finally blogging, about the web! Watch this one."
+    },
+    {
       "name": "yequari",
       "url": "https://yequari.com/",
       "feed": "https://yequari.com/index.xml",
@@ -238,7 +244,7 @@
       "name": "Own Your Web",
       "url": "https://buttondown.email/ownyourweb",
       "feed": "https://buttondown.email/ownyourweb/rss",
-      "note": "A newsletter by Matthias Ott about designing, building, creating, and publishing for and on the Web."
+      "note": "A newsletter by Matthias Ott about designing, building, creating, and publishing for and on the Web. For developers."
     },
     {
       "name": "Webworm with David Farrier",
