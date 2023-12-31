@@ -7,7 +7,7 @@ tags:
 date: 2023-05-16
 ---
 
-I've read [38 books so far in 2023](/books/). 
+I've read [38 books so far in 2023](/bookshelf/). 
 
 I've managed to read this many books in 5 months due to switching to audiobooks as the primary way that I [read books](/posts/where-do-you-get-your-audiobooks/).
 
