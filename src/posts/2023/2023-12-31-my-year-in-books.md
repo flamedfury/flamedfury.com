@@ -1,10 +1,6 @@
 ---
 title: My Year In Books 2023
-<<<<<<< HEAD
 description: I read this many books in 2023, you won't believe what I realised.
-=======
-Description: I read this many books in 2023, you won't believe what I realised.
->>>>>>> 68fd0c55a9fab7e97cc56c5052fe906ffd9f53ac
 tags:
   - books
   - thoughts
