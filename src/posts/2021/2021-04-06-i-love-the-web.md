@@ -1,25 +1,21 @@
 ---
-title: Web Manifesto
-layout: post
+title: I Love The Web
 tags:
-  - writing
   - web
   - thoughts
-permalink: /manifesto/index.html
-description: My Web Manifesto is where I dive deep into the current state of the Internet and explore whether it is heading in an ideal direction.
+description: I love the web and I think everybody should have their own homepage.
 date: 2021-04-06
-updated: 2023-01-05
+updated: 2024-01-02
+redirectFrom: ['manifesto']
 ---
 
-The following are my raw and unedited thoughts spread over several weeks. I add these to the page as I think them through, usually while walking my dogs. Once I get to the point where I have shared all my feelings on the subject, I will attempt to put some order into the chaos.
+The following are my raw and unedited thoughts spread over several ~~weeks~~ years. I add these to the page as I think them through, usually while walking my dogs. Once I get to the point where I have shared all my feelings on the subject, I will attempt to put some order into the chaos.
 
 The Internet used to be a vast place. Netizens filled their time writing emails, visiting forums, making websites, and chatting on IRC. They filled their bookmarks folder in their browsers with hundreds of places they enjoyed visiting across the web.
 
 These days, the Internet is contained, reduced to a smaller number of places people may visit daily. Boring.
 
 It's time to take it back.
-
-{% include "partials/toc.njk" %}
 
 ## Why I have a homepage
 I believe in taking back control, reclaiming my digital future and contributing to rebuilding a web for everybody.
@@ -104,7 +100,7 @@ Overall, Web3 might address some issues related to data privacy and control. Sti
 ## Final thought
 A personal homepage is fantastic; if you don't, get one!
 
-To expand upon [@molly0xfff@hachyderm.io](https://front-end.social/@molly0xfff@hachyderm.io/109536577589664928) post to [Front-End Social](https://front-end.social/):
+To expand upon [@molly0xfff@hachyderm.io](https://hachyderm.io/@molly0xfff/109536322921704909):
 
 > if you are at all able (or able to learn), i highly recommend: creating your own website, on your own domain, acquiring copies of your data that you care about that's on third party sites (particularly twitter)
 
@@ -121,15 +117,16 @@ I've curated a set of resources to help everyone to get started, no matter your 
 ### Building your own homepage
 
 - [Jackie's guide to making a website zine](https://www.zinesbyjackie.com/shop/jackies-guide-to-making-a-website-by-you--for-you) - Want to make your own website, but don't know how to start? Jackie's awesome Zine is a 28-page, Risograph-printed comic guide to help you brainstorm, design, and bring a personal website to life.
+- [HTML Dog](https://hachyderm.io/@molly0xfff/109536322921704909) - Tutorials covering HTML, CSS and JavaScript for all skill levels.
 - [W3Schools](https://www.w3schools.com/where_to_start.asp) - A great beginner resource with well organised and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.
 - [MDN: Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) - MDN Web Docs is a popular document repository and learning resource for web developers. This site provides learning resources for open web technologies like HTML and CSS. Less beginner tutorials than W3 Schools and more indepth technical documents.
 
 ### Hosting your own homepage
 
 - [Neocities](https://neocities.org) - A great place for beginners. Neocities is a commercial web hosting service for static pages. It offers 1 GB of storage space for free sites and no server-side scripting for both paid and free subscriptions, the service's expressed goal is to revive the support of free web hosting of the now-defunct GeoCities. Many new and old webmasters come to Neocities to host their new homepages. Check out [Sadgrl's absolute beginner's guide to Neocities](https://sadgrl.online/learn/articles/beginners-guide-neocities) to get going.
-- [W3Schools Spaces](https://www.w3schools.com/spaces/index.php) - W3Schools offer a wide range of beginner tutorials and now a place to host your projects. Free hosting and an online code editor.
-- [Ichi City](https://ichi.city) - A small independent project by [m15o](m15o.smol.pub/). Ichi is a tiny internet community where people can create their homepages for free. These pages are listed on Ichi's index, allowing everyone to explore, discover, and engage with one another. 
-- [Bear Blog](https://bearblog.dev/) - Want to get your thoughts out there as quick as possible? Bear Blog is a privacy-first, no-nonsense, super-fast blogging platform.
 - [omg.lol](https://home.omg.lol/) - Treat yourself to an awesome web address, a devastatingly gorgeous profile page, a stellar email address, a weblog, a now page and heaps more.
-- [Netlify](https://netlify.com) - Want to level up your static websites? Look no further than Netlify.
+- [Ichi City](https://ichi.city) - A small independent project by [m15o](m15o.smol.pub/). Ichi is a tiny internet community where people can create their homepages for free. These pages are listed on Ichi's index, allowing everyone to explore, discover, and engage with one another.
+- [Micro.Blog](https://micro.blog) - Personal blogging that makes it easy to be social. Post short thoughts or long essays, share photos, all on your own blog. Micro.blog makes it easy. Free and paid plans available.
+- [Bear Blog](https://bearblog.dev/) - Want to get your thoughts out there as quick as possible? Bear Blog is a privacy-first, no-nonsense, super-fast blogging platform.
+- [W3Schools Spaces](https://www.w3schools.com/spaces/index.php) - W3Schools offer a wide range of beginner tutorials and now a place to host your projects. Free hosting and an online code editor.
 - [Github Pages](https://pages.github.com/) - Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
