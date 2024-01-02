@@ -5,6 +5,7 @@ tags:
   - web
   - thoughts
 date: 2023-12-28
+updated: 2023-12-31
 ---
 
 One of the great things about the World Wide Web is the ability for websites to link to each other, providing a never-ending stream of websites to explore. 
