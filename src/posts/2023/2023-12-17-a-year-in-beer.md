@@ -4,7 +4,7 @@ description: I drank a lot of great beers this year, let's take a look.
 tags:
   - beer
 date: 2023-12-17
-updated: 2023-12-19
+updated: 2024-01-07
 layout: untappd.njk
 ---
 
