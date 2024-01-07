@@ -17,7 +17,7 @@ layout: base
         </h2>
         {% set definedDate = bookmark.data.date %}
         {% include "partials/date.njk" %}
-        <p>{{ bookmark.data.notes }}</p>
+        <p>{{ bookmark.data.notes | truncate }}</p>
       </li>
 
     {% endfor %}
