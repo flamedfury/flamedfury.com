@@ -51,6 +51,14 @@ Considering this, one might question the relevance of 88x31 buttons in the moder
 
 I'd like to create and use a 200x40 banner instead. I encourage fellow webmasters to consider similar adaptations for their websites.
 
+If you want to check out the wild world of buttons check out these pages:
+- https://sillydog.org/netscape/now.html
+- https://cyber.dabamos.de/88x31/
+- https://anlucas.neocities.org/88x31Buttons
+- https://neonaut.neocities.org/cyber/88x31
+- https://capstasher.neocities.org/88x31collection-page1
+- https://88x31.kate.pet/
+
 ## Webrings
 
 A webring is a collection of websites linked together in a circular structure. Webrings were popular in the early days of the Web before search engines became as sophisticated as they are today. Webrings were used to help people find similar websites on a particular topic.
