@@ -42,7 +42,8 @@ const {
 const {
   getAllPosts,
   tagList,
-  getAllReplies
+  getAllReplies,
+  filterFeedPosts,
 } = require('./config/collections/index.js');
 
 // module import events
@@ -113,6 +114,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('tagList', tagList);
   eleventyConfig.addCollection('replies', getAllReplies);
+  eleventyConfig.addCollection('feed', filterFeedPosts);
   eleventyConfig.addCollection("allBookmarks", function (collection) {
     const bookmarks = collection.getAll().filter((item) => item.data.isBookmark);
     return bookmarks;
