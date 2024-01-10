@@ -23,7 +23,7 @@ Kev's response in [Let's Make the IndieWeb Easier](https://kevquirk.com/lets-mak
 
 Kev swiftly points out that while these tools may be straightforward for developers, they present formidable challenges for others interested in the concept.
 
-As I caught up on [additional responses]((https://jeremy.hu/lets-make-the-indieweb-easier/)) [throughout the day](https://brandonwrites.xyz/re-lets-make-the-indieweb-easier-and-blogging/) [from various sources](https://colinwalker.blog/blog/?date=2024-01-08#p2), the discussion seemed primarily fixated on blogging.
+As I caught up on [additional responses](https://jeremy.hu/lets-make-the-indieweb-easier/) [throughout the day](https://brandonwrites.xyz/re-lets-make-the-indieweb-easier-and-blogging/) [from various sources](https://colinwalker.blog/blog/?date=2024-01-08#p2), the discussion seemed primarily fixated on blogging.
 
 This got me thinking: "[What about individuals seeking to create a website that doesn't align with traditional blogging?](/posts/build-personal-websites/)" Consider those who want to showcase collections, whether it's Hardrock Cafe pint glasses, Matchbox cars, or any other passion. Platforms like WordPress, Ghost, or Bear Blog may not be the best solution.
 
