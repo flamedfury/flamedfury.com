@@ -13,7 +13,7 @@ updates:
 
 Kia ora! 👋 I'm <span class="gradient-text">fLaMEd</span>🔥 I'm the webmaster of <span class="gradient-text">Flamed Fury</span>, a collection of stuff that means everything to to me and probably nothing to you. 
 
-I've been surfing the web since [1996](/memories/). I love the web, however I dislike the modern web’s commercialisation, monetisation, and walled-garden silo approach to things; I believe [the Web can be so much better](/manifesto/).
+I've been surfing the web since [1996](/memories/). I love the web, however I dislike the modern web’s commercialisation, monetisation, and walled-garden silo approach to things; I believe [the Web can be so much better](/posts/i-love-the-web).
 
 Beyond the pixels, my greatest joy is my family, my wife and kids are my top priority. 
 
