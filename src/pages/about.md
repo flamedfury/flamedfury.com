@@ -37,4 +37,4 @@ The current version (2302) used the starter project [Eleventy Excellent](https:/
 
 All development is done locally in [VSCode](https://code.visualstudio.com/) and pushed to [Github](https://github.com/flamedfury/flamedfury.com).
 
-Every commit starts a new build, and the website is deployed to [Netlify](https://netlify.com/).
+Every commit starts a new build, and the website is deployed to [Neocities](https://neocities.org/).
