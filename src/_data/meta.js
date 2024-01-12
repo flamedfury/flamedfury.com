@@ -1,5 +1,5 @@
 module.exports = {
-  url: process.env.URL || 'http://localhost:8080',
+  url: process.env.URL || 'https://flamedfury.com',
   domain: 'flamedfury.com',
   siteName: 'Flamed Fury',
   siteVersion: '2302',
