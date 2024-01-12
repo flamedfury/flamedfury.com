@@ -4,7 +4,7 @@ module.exports = {
   siteName: 'Flamed Fury',
   siteVersion: '2302',
   siteDescription:
-    'My personal homepage, full of stuff that means everything to me, and nothing to you. You will find my thoughts about the current state of the web, my recollections of my earliest memories of the web, and a bunch of pages detailing some of my interests in records, books, comics, games, movies and tv shows. Come have a read and leave me a message.',
+    'The personal homepage of fLaMEd.',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
@@ -28,7 +28,8 @@ module.exports = {
     // this is for the rss feed
     name: 'Flamed Fury',
     description:
-      'A feed of the latest posts from flamedfury.com.'
+      'A feed of the latest posts from flamedfury.com.',
+    url: 'https://flamedfury.com/'
   },
   bookmarksfeed: {
     // this is for the rss feed

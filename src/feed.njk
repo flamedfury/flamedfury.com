@@ -4,11 +4,11 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.blog.url }}/">
   <title>{{ meta.blog.name }}</title>
   <subtitle>{{ meta.blog.description }}</subtitle>
-  <link href="{{ meta.url }}/feed.xml" rel="self" />
-  <link href="{{ meta.url }}/" />
+  <link href="{{ meta.blog.url }}/feed.xml" rel="self" />
+  <link href="{{ meta.blog.url }}/" />
   {% set postslist = collections.posts %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ meta.url }}/</id>
