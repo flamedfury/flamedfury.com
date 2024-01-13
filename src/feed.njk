@@ -11,7 +11,7 @@ excludeFromSitemap: true
   <link href="{{ meta.blog.url }}/" />
   {% set postslist = collections.posts %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ meta.url }}/</id>
+  <id>{{ meta.blog.url }}/</id>
   <author>
     <name>{{ meta.author }}</name>
     <email>{{ meta.authorEmail }}</email>
