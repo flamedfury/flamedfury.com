@@ -1,5 +1,5 @@
 module.exports = {
-  url: process.env.URL || 'https://flamedfury.com',
+  url: 'https://flamedfury.com',
   domain: 'flamedfury.com',
   siteName: 'Flamed Fury',
   siteVersion: '2302',
@@ -29,7 +29,7 @@ module.exports = {
     name: 'Flamed Fury',
     description:
       'A feed of the latest posts from flamedfury.com.',
-    url: 'https://flamedfury.com/'
+    url: 'https://flamedfury.com'
   },
   bookmarksfeed: {
     // this is for the rss feed

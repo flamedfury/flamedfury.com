@@ -20,9 +20,9 @@ excludeFromSitemap: true
   {% set absolutePostUrl %}{{ post.url | absoluteUrl }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}" />
+    <link href="{{ meta.blog.url }}{{ absolutePostUrl }}" />
     <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
+    <id>{{ meta.blog.url }}{{ absolutePostUrl }}</id>
     <content xml:lang="{{ locale }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
