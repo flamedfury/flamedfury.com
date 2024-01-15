@@ -1,11 +1,11 @@
 ---
 title: Gameshelf
-description: I've loved computer games forever. I miss having the time and energy I used to have for them. This page will collect all the games that I have played over the years.
+description: Where I collect the games that I'm playing, want to play or have finished playing
 layout: page
 permalink: /gameshelf/index.html
 category: collections
 date: 2021-02-22
-updated: 2023-05-29
+updated: 2024-01-15
 ---
 
 :construction: Under construction :construction:
@@ -16,10 +16,7 @@ These are a few of the games that have my attention at the moment.
 
 ### Playing
 Games that I'm currently playing:
-- World of Warcraft: Dragonflight, Season 1 (PC)
-- Marvel's Guardians of the Galaxy (PC)
-- Need For Speed (2015) (PC)
-- Kingdoms of Amalur: Re-Reckoning Review (Steam Deck)
+- World of Warcraft: Dragonflight, Season Three (PC)
 
 ### Standbys
 Games that I have installed and like to play when I'm not raiding:
@@ -46,6 +43,9 @@ Games that I've started, but never ended up finishing:
 - Warhammer 40,000: Dawn of War
 - Warhammer 40,000: Dawn of War II
 - Watch_Dogs2
+- Marvel's Guardians of the Galaxy (PC)
+- Need For Speed (2015) (PC)
+- Kingdoms of Amalur: Re-Reckoning Review (Steam Deck)
 
 ### Games I loved
 Games that I've played, finished and loved playing:

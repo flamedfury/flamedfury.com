@@ -16,79 +16,43 @@ layout: base
 
 <article class="wrapper region flow prose">
     {{ content | safe }}
-</article>
-
-<article class="wrapper region flow prose page">
-  <h2>Bookshelf</h2>
-  <div class="grid" style="--grid-min-item-size: 10rem">
-    {% set finishedBooksCount = 0 %}
-    {% for book in metadataread | reverse %}
-      {% if book.status == 'finished' %}
-        {% if finishedBooksCount < 8 %}
-          <div class="flow">
-            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
-          </div>
-          {% set finishedBooksCount = finishedBooksCount + 1 %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </div>
-  <p>
-    <a href="/bookshelf/">All books</a>
-  </p>
-</article>
-
-
-
-<article class="wrapper region flow prose page">
-  <h2>Recordshelf</h2>
-  <div class="grid" style="--grid-min-item-size: 10rem">
-    {% for item in vinyl.albums %}
-      {% if loop.index <= 8 %}
-        <div class="flow">
-          <a href="/recordshelf/#{{ item.title | slug }}">
-          {% imagePlaceholder item.image,
-          "the album cover" %}
-          </a>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-  <p>
-    <a href="/recordshelf/">All vinyl</a>
-  </p>
-</article>
-
-<article class="wrapper region flow prose ">
-  <h2>Bookmarks</h2>
-  <ul class="flow" role="list">
-    {% for bookmark in collections.allBookmarks | reverse %}
-      {% if loop.index <= 4 %}
-        <li id="{{ bookmark.data.title | slugify }}" class="card flow overflow-hidden">
+    
+    <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+        <li class="card flow overflow-hidden">
           <h3>
-            <a href="{{ bookmark.url | url }}">{{ bookmark.data.title }}</a>
+            <a href="/bookshelf/">Bookshelf</a>
           </h3>
+          <p>The books that I've read, or want to read.</p>
         </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <p>
-    <a href="/bookmarks/">All bookmarks</a>
-  </p>
-</article>
-
-<article class="wrapper region flow prose">
-  <h2>Mixtapes</h2>
-  <div class="grid breakout" style="--grid-min-item-size: 15rem">
-    {% for item in mixtapes.playlists %}
-      {% if loop.index <= 3 %}
-        <div class="flow">
-          <iframe style="border-radius:12px" src="{{ item.embed }}" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-  <p>
-    <a href="/mixtapes/">All Mixtapes</a>
-  </p>
+        <li class="card flow overflow-hidden">
+          <h3>
+            <a href="/recordshelf/">Recordshelf</a>
+          </h3>
+          <p>I love music and I'm not immune to collecting albums that mean something to me.</p>
+        </li>
+        <li class="card flow overflow-hidden">
+          <h3>
+            <a href="/bookmarks/">Bookmarks</a>
+          </h3>
+          <p>I surf and read alot about the web. This is an ever growing list of links to the articles I've found interesting.</p>
+        </li>
+        <li class="card flow overflow-hidden">
+          <h3>
+            <a href="/mixtapes/">Mixtapes</a>
+          </h3>
+          <p>I like to pretend that I'm a trendy music curator. A collection of mixtapes in Spotify playlist format.</p>
+        </li>
+        <li class="card flow overflow-hidden">
+          <h3>
+            <a href="/gameshelf/">Gameshelf</a>
+          </h3>
+          <p>Where has my time and energy for gaming gone?</p>
+        </li>
+        <li class="card flow overflow-hidden">
+          <h3>
+            <a href="/garage/">The Garage</a>
+          </h3>
+          <p>Renewing my interest in diecast metal cars.</p>
+        </li>
+    </ul>
 </article>
