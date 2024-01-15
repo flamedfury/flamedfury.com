@@ -339,11 +339,29 @@
       "url": "https://search.brave.com/",
       "feed": "",
       "note": "Brave as a company aside, they claim that they do not filter, downrank or censor search results. They are building their own index of the Web so they do not rely on Google or Bing results."
+    },
+    {
+      "name": "Yep",
+      "url": "https://yep.com/",
+      "feed": "",
+      "note": "New search engine built from scratch. Claims to offer an unbiased, private search experience that rewards and compensates the makers behind the content..."
+    },
+    {
+      "name": "Stract",
+      "url": "https://stract.com/",
+      "feed": "",
+      "note": "Independent and open search. You can apply different optics to narrow down the types of page you're looking for."
+    },
+    {
+      "name": "Mwmbl",
+      "url": "https://mwmbl.org/",
+      "feed": "https://blog.mwmbl.org/index.xml",
+      "note": "Mwmbl is a free search engine with a focus on freedom, user experience, and community. Results are provided by their own index and a touch of curation."
     }
   ],
   "webDirectories": [
     {
-      "name": " ooh.directory",
+      "name": "ooh.directory",
       "url": "https://ooh.directory/",
       "feed": "https://ooh.directory/blog/feeds/posts.xml",
       "note": "A collection of 2084+ blogs about every topic. "
@@ -371,6 +389,12 @@
       "url": "https://directory.joejenett.com/",
       "feed": "",
       "note": "A hand curated directory of websites to explore with a focus on the independent and noncommercial web."
+    },
+    {
+      "name": "Indieseek.xyz Indie Web Directory",
+      "url": "https://indieseek.xyz/links/",
+      "feed": "https://indieseek.xyz/feed/",
+      "note": "A human edited, Indieweb directory."
     },
     {
       "name": "Kagi Small Web",
