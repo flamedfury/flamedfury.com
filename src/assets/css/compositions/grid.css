@@ -31,10 +31,3 @@ to change how empty grid tracks are handled */
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 50vw, 28rem);
 }
-
-.auto-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 
-    repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
-}
