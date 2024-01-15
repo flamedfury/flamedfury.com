@@ -62,7 +62,7 @@ layout: page
       {% for artist in artists %}
         <div class="flow">
           <a href="{{artist.url}}" title="{{artist.name | escape}}" class="no-indicator">
-            <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" style="object-fit: cover" width="350" height="350">
+            <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" class="now-image" style="object-fit: cover" width="350" height="350">
           </a>
           <div class="artist-meta">
             <p class="artist-name">{{artist.name}}</p>
@@ -79,7 +79,7 @@ layout: page
       {% for album in albums %}
         <div class="flow">
           <a href="{{ album.url }}" title="{{ album.name }}" class="no-indicator">
-            <img src="{{ album.image }}" alt="The cover art for {{ album.name }}" width="350" height="350">
+            <img src="{{ album.image }}" alt="The cover art for {{ album.name }}" class="now-image" width="350" height="350">
           </a>
           <div class="album-meta">
             <p class="album-name">{{ album.name }}</p>
