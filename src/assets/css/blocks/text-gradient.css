@@ -1,8 +1,0 @@
-.gradient-text {
-  color: transparent;
-  background: radial-gradient(rgb(220, 38, 38), rgb(234, 88, 12), rgb(202, 138, 4));
-  padding: 0.6rem 0;
-  background-size: 50%;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
