@@ -37,10 +37,16 @@
       "note": "A friend from the 32-bit Cafe. Another 2000s web throwback. Blogs about mental health, life, veganism and web development."
     },
     {
+      "name": "Frills",
+      "url": "https://frills.dev",
+      "feed": "https://frills.dev/rss.xml",
+      "note": "Frills' has crafted a beautiful website for herself with 11ty and Neocities. Filled with experiments, blogs, developer resources. The HTML named colours experiment is awesome."
+    },
+    {
       "name": "anhvn",
       "url": "https://anhvn.com/",
       "feed": "https://anhvn.com/feed.xml",
-      "note": "I love anhvn's redesigns. Has a great resources list. Blogs from time to time."
+      "note": "I love anhvn's redesigns. Has a great resources list. Blogs from time to time and I love when they sprinkle the comic panels throughout website updates."
     },
     {
       "name": "Minutes to Midnight",
@@ -96,7 +102,13 @@
       "name": "alexandra",
       "url": "https://xandra.cc/",
       "feed": "",
-      "note": "Xandra runs the 32-bit Cafe. A lovingly handcrafted homepage that calls back to a 2000s web. Sometimes writes essays."
+      "note": "Xandra runs the 32-bit Cafe. Her museum is a lovingly handcrafted homepage that calls back to a 2000s web. Sometimes writes essays."
+    },
+    {
+      "name": "Let's Learn Together!",
+      "url": "https://letslearntogether.neocities.org/",
+      "feed": "",
+      "note": "A collection of handcrafted essays and learning material covering a broad range of topics"
     },
     {
       "name": "Coby Cat's Abode",
@@ -127,6 +139,12 @@
       "url": "https://www.brisray.com/",
       "feed": "",
       "note": "Brisray has been developing and maintaining his website since 1999. Lots of pages to get lost in and boasts the most complete collection and overview of webrings."
+    },
+    {
+      "name": "10@earth ~",
+      "url": "https://10kph.neocities.org/",
+      "feed": "",
+      "note": "A statically generated shrine to 10's life and interests. The site map is a beautiful way to explore the website."
     },
     {
       "name": "Matchbox Forums",
@@ -239,12 +257,6 @@
       "url": "https://peopleandblogs.com/",
       "feed": "https://manuelmoreale.com/feed/peopleandblogs",
       "note": "People and Blogs is a weekly newsletter by Manuel Moreale, where he asks interesting people to talk about themselves and their blogs."
-    },
-    {
-      "name": "Own Your Web",
-      "url": "https://buttondown.email/ownyourweb",
-      "feed": "https://buttondown.email/ownyourweb/rss",
-      "note": "A newsletter by Matthias Ott about designing, building, creating, and publishing for and on the Web. For developers."
     },
     {
       "name": "Webworm with David Farrier",
