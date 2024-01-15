@@ -1,12 +1,10 @@
 ---
 permalink: /index.html
 title: ' Flamed Fury'
-description: 'My personal homepage, full of stuff that means everything to me, and nothing to you. You will find my thoughts about the current state of the web, my recollections of my earliest memories of the web, and a bunch of pages detailing some of my interests in records, books, comics, games, movies and tv shows. Come have a read and leave me a message.'
+description: 'The personal homepage of fLaMEd. I love the web and love to write about it.'
 layout: 'home'
 welcome: 
   title: What's going on Internet?
-updates:
-  title: What’s new?
 ---
 
 ## What's going on Internet?
