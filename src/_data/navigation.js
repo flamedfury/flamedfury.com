@@ -39,6 +39,10 @@ module.exports = {
       url: '/contact/'
     },
     {
+      text: 'Buttons',
+      url: '/buttons/'
+    },
+    {
       text: 'PSA',
       url: '/psa/'
     },
