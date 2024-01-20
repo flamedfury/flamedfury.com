@@ -37,16 +37,6 @@ jobs:
     - uses: actions/checkout@v4
     # Set up any tools and build steps here
     # This example uses a Node.js toolchain to build a site
-    - name: Cache dependencies and build artifacts
-      uses: actions/cache@v2
-      with:
-        path: |
-          node_modules
-          dist/assets/images/generated
-          .cache
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      restore-keys: |
-        ${{ runner.os }}-node-
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
@@ -62,7 +52,7 @@ jobs:
     - run: npm run build
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@master # don't use master in production
+      uses: bcomnes/deploy-to-neocities@master # dont use master in production
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true
