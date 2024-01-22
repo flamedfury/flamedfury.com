@@ -5,7 +5,7 @@ description: How to get in contact with fLaMEd
 layout: page
 ---
 
-Hey there 👋, email ✉️ is the easiest way to contact me. Hit me up [flamed@flamedfury.com](mailto:flamed@flamefury.com?subject=Sup%20fLaMEd?), I’d love to hear from you.
+Hey there 👋, email ✉️ is the easiest way to contact me. Hit me up [flamed@flamedfury.com](mailto:flamed@flamedfury.com?subject=Sup%20fLaMEd?), I’d love to hear from you.
 
 I've been playing around with Mastodon and you can find me over on social.lol as [@flamed](https://social.lol/@flamed).
 
