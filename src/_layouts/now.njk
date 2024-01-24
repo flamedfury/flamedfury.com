@@ -6,7 +6,7 @@ layout: page
     {{ content | safe }}
 </article>
 
-<article class="wrapper region flow">
+{# <article class="wrapper region flow">
   <h2>Lately</h2>
   <div class="card now-flex">
     <div class="now-box" style="flex: 0 0 1em; font-size: var(--size-step-3); padding-right: var(--space-s);">
@@ -19,7 +19,7 @@ layout: page
       <p>{{ status.content }}</p>
     </div>
   </div>
-</article>
+</article> #}
 
 <article class="wrapper region flow">
   <h2>Reading: books</h2>
@@ -27,7 +27,7 @@ layout: page
     {% for book in metadataread | reverse %}
       {% if book.status == 'started' %}
         <div class="flow">
-          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}">
+          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}" class="now-image">
         </div>
       {% endif %}
     {% endfor %}
@@ -58,11 +58,13 @@ layout: page
 
 <article class="wrapper region flow">
     <h2>Listening: artists</h2>
-    <div class="grid" style="--grid-min-item-size: 10rem">
+    <div class="grid"  style="--grid-min-item-size: 10rem">
       {% for artist in artists %}
         <div class="flow">
           <a href="{{artist.url}}" title="{{artist.name | escape}}" class="no-indicator">
-            <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" class="now-image" style="object-fit: cover" width="350" height="350">
+            <div>
+              <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" class="now-image">
+            </div>
           </a>
           <div class="artist-meta">
             <p class="artist-name">{{artist.name}}</p>
@@ -75,11 +77,13 @@ layout: page
 
 <article class="wrapper region flow">
     <h2>Listening: albums</h2>
-    <div class="grid breakout" style="--grid-min-item-size: 10rem">
+    <div class="grid"  style="--grid-min-item-size: 10rem">
       {% for album in albums %}
         <div class="flow">
           <a href="{{ album.url }}" title="{{ album.name }}" class="no-indicator">
-            <img src="{{ album.image }}" alt="The cover art for {{ album.name }}" class="now-image" width="350" height="350">
+            <div>
+              <img src="{{ album.image }}" alt="The cover art for {{ album.name }}" class="now-image">
+            </div>
           </a>
           <div class="album-meta">
             <p class="album-name">{{ album.name }}</p>

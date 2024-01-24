@@ -140,8 +140,8 @@
 /* now: images */
 
 .now-image {
-  max-inline-size: var(--max-img-width, 100%);
-  block-size: auto;
+  --max-img-width: 9rem;
+  object-fit: cover;
   border-radius: var(--space-xs, 1rem);
   border: 1px solid var(--color-dark);
 }
