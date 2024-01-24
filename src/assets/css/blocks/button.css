@@ -1,6 +1,6 @@
  .button {
   color: var(--button-text, var(--color-light));
-  background-color: var(--button-bg, var(--color-dark));
+  background-color: var(--button-bg, var(--color-primary));
   border: 2px solid var(--button-border, var(--color-primary));
   border-radius: var(--border-radius);
   display: inline-block;
@@ -13,8 +13,8 @@
   text-decoration: none;
 }
 
-a.button:hover {
+.button:hover {
+  --button-bg: var(--color-dark);
   --button-text: var(--color-light);
-  --button-bg: var(--color-primary);
   --button-border: var(--color-primary);
 }

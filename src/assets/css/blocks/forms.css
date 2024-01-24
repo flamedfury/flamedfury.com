@@ -17,6 +17,5 @@ input[type='text']::placeholder, input[type='email']::placeholder, textarea::pla
 input,
 textarea,
 button {
-  width: 100%;
   margin-bottom: 1em;
 }

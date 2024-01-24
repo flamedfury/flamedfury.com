@@ -4,6 +4,19 @@ description: Intentionally leaving the house during the day and surrounding myse
 tags:
   - life
 date: 2023-09-11
+gallery:
+  - image: ./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-01.jpeg
+    alt: 'The Historic Korokoro Dam'
+    caption: ''
+  - image: ./src/assets/images/posts/2023/2023-09-11-bushwalks-top-of-korokoro-dam-01.jpeg
+    alt: 'Top of the Korokoro Dam'
+    caption: ''
+  - image: ./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-02.jpeg
+    alt: 'The Historic Korokoro Dam'
+    caption: ''
+  - image: ./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-03.jpeg
+    alt: 'The Historic Korokoro Dam'
+    caption: ''
 ---
 
 My family and I live down the road from one of the entrances to the Belmont Regional Park, the largest regional park in Wellington. This provides us easy access to beautiful walking tracks. 
@@ -25,10 +38,4 @@ I've been completing the walk three times a week to complement my exercise routi
 >
 > https://www.gw.govt.nz/assets/Documents/2001/11/Regional-Parks_20011127_163445.pdf
 
-{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-top-of-korokoro-dam-01.jpeg", "Top of the Korokoro Dam", "Looking out across the top of the dam." %}
-
-{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-01.jpeg", "The Historic Korokoro Dam" %}
-
-{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-02.jpeg", "The Historic Korokoro Dam" %}
-
-{% imagePlaceholder "./src/assets/images/posts/2023/2023-09-11-bushwalks-korokoro-dam-03.jpeg", "The Historic Korokoro Dam" %}
+{% include "components/gallery.njk" %}
