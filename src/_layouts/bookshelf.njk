@@ -9,41 +9,19 @@ layout: base
   </div>
 </article>
 
-{% for book in metadataread | reverse %}
-  {% if book.status == 'finished' %}
-    {% set year = book.dateFinished | truncate(4, true, '') %}
+<article class="region">
+  <div class="wrapper flow prose">
+    <h2>Books Read</h2>
+    <div class="grid" style="--grid-min-item-size: 10rem">
 
-    {% if loop.first or year != prev_year %}
-      {% if not loop.first %}
-      </div>
-    </article>
-  {% endif %}
-  <article class="region page">
-    <div class="wrapper flow content">
-      <h2>{{ year }}</h2>
-      <div class="grid breakout" style="--grid-min-item-size: 10rem">
+    {% for book in metadataread | reverse %}
+      {% if book.status == 'finished' %}
+        <div class="bookshelf flow">
+          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
+        </div>
       {% endif %}
+    {% endfor %}
 
-      <div class="flow">
-        <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
-        <p>
-          <span class="block" style="font-size: 1.2rem">
-            {{ book.title }}
-          </span>
-          <span class="block" style="font-size: 1rem">
-            {{ book.authors }}
-          </span>
-          <span class="block" style="font-size: 1rem">
-            {{ book.dateFinished }}
-          </span>
-        </p>
-      </div>
-
-      {% set prev_year = year %}
-    {% endif %}
-  {% endfor %}
-
-  {% if books | length %}
+    </div>
   </div>
 </article>
-{% endif %}
