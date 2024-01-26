@@ -62,8 +62,8 @@ layout: page
       {% for artist in artists %}
         <div class="flow">
           <a href="{{artist.url}}" title="{{artist.name | escape}}" class="no-indicator">
-            <div>
-              <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" class="now-image">
+            <div class="now__artist">
+              <img src="{{ artist.image }}" alt="Photo of {{ artist.name }}" title="{{ artist.name }}" class="now__artist-image">
             </div>
           </a>
           <div class="artist-meta">
