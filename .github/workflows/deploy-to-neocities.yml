@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: lts/*
           cache: "npm"
       - name: Replace environment variables and build
         run: |
@@ -43,6 +43,7 @@ jobs:
           path: |
             src/assets/images/generated
             .cache
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:
