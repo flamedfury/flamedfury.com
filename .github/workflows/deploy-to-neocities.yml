@@ -1,59 +1,43 @@
-# Builds the site with 11ty and deploys to Neocities
-name: Deploy to neocities
-
-# only run on changes to master
+name: "Deploy to Neocities"
 on:
   schedule:
-    - cron: 0 9/9 * * *
+    - cron: 0 7/9 * * *
   push:
     branches:
       - main
-
-env:
-  FORCE_COLOR: 1
-  node_version: lts/*
-  API_KEY: ${{ secrets.LASTFM_KEY }}
-  USERNAME: ${{ secrets.LASTFM_USER }}
-  OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
-  SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-  SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-  STEAM_KEY: ${{ secrets.STEAM_KEY }}
-  STEAM_ID: ${{ secrets.STEAM_ID }}
-  TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-  TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
-  TRAKT_KEY: ${{ secrets.TRAKT_KEY }}
-  TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
-  WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
-
-concurrency: # prevent concurrent deploys doing strange things
-  group: deploy-to-neocities
-  cancel-in-progress: true
-
 jobs:
   deploy:
+    name: "Deploy to Neocities"
     runs-on: ubuntu-latest
-
+    env:
+      API_KEY: ${{ secrets.LASTFM_KEY }}
+      USERNAME: ${{ secrets.LASTFM_USER }}
+      OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
+      SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+      SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+      STEAM_KEY: ${{ secrets.STEAM_KEY }}
+      STEAM_ID: ${{ secrets.STEAM_ID }}
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
+      TRAKT_KEY: ${{ secrets.TRAKT_KEY }}
+      TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
+      WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
     steps:
-    - uses: actions/checkout@v4
-    # Set up any tools and build steps here
-    # This example uses a Node.js toolchain to build a site
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ env.node_version }}
-    - run: |
-        sed -i "s/process\.env\.LASTFM_KEY/\"$API_KEY\"/" src/_data/albums.js
-        sed -i "s/process\.env\.LASTFM_USER/\"$USERNAME\"/" src/_data/albums.js
-        sed -i "s/process\.env\.LASTFM_KEY/\"$API_KEY\"/" src/_data/artists.js
-        sed -i "s/process\.env\.LASTFM_USER/\"$USERNAME\"/" src/_data/artists.js
-        sed -i "s/process\.env\.LASTFM_KEY/\"$API_KEY\"/" src/_data/tracks.js
-        sed -i "s/process\.env\.LASTFM_USER/\"$USERNAME\"/" src/_data/tracks.js
-    - run: npm i
-    - run: npm run build
-    # When the dist_dir is ready, deploy it to neocities
-    - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@master # dont use master in production
-      with:
-        api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: true
-        dist_dir: dist
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+      - run: npm install
+      - run: npm run build
+      - name: Cache dependencies and build artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            src/assets/images/generated
+            .cache
+      - uses: bcomnes/deploy-to-neocities@v1
+        with:
+          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          cleanup: true
+          dist_dir: dist
