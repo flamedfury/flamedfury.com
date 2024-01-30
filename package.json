@@ -11,7 +11,9 @@
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
     "start": "run-p dev:*",
-    "build": "run-s clean build:*"
+    "build": "run-s clean build:*",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
+    "postbuild": "webmention https://flamedfury.com/feed.xml --limit 1 --send && webmention https://flamedfury.com/bookmarks-feed.xml --limit 1 --send"
   },
   "keywords": [],
   "repository": {
@@ -27,6 +29,7 @@
     "@11ty/eleventy-plugin-bundle": "^1.0.5",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@extractus/feed-extractor": "^6.2.1",
+    "@remy/webmention": "^1.0.4",
     "axios": "^1.4.0",
     "fs": "^0.0.1-security",
     "html-minifier-terser": "^7.2.0",
