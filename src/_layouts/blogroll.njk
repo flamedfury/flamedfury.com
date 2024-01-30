@@ -17,7 +17,7 @@ layout: base
 <article class="wrapper region flow">
 <h2>Blogroll</h2>
   <p>Interesting websites with blogs that I subscribe to.</p>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% for blog in linksData.blogData %}
       <li id="{{ blog.name }}" class="card flow overflow-hidden">
         <h3>
@@ -42,7 +42,7 @@ layout: base
 <article class="wrapper region flow">
 <h2>Cool Sites</h2>
   <p>Cool websites that aren't blogs that have interesting pages to get lost in.</p>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.coolSitesData %}
       <li id="{{ link.name }}" class="card flow overflow-hidden">
         <h3>
@@ -66,7 +66,7 @@ layout: base
 
 <article class="wrapper region flow">
 <h2>Web Development</h2>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.webDevelopmentData %}
       <li id="{{ link.name }}" class="card flow overflow-hidden">
         <h3>
@@ -90,7 +90,7 @@ layout: base
 
 <article class="wrapper region flow">
 <h2>Newsletters</h2>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.newsLettersData %}
       <li id="{{ link.name }}" class="card flow overflow-hidden">
         <h3>
@@ -114,7 +114,7 @@ layout: base
 
 <article class="wrapper region flow">
 <h2>Podcasts</h2>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.podCastsData %}
       <li id="{{ link.name }}" class="card flow overflow-hidden">
         <h3>
@@ -138,7 +138,7 @@ layout: base
 
 <article class="wrapper region flow">
 <h2>Web Directories</h2>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.webDirectoriesData %}
       <li id="{{ link.name }}" class="card flow overflow-hidden">
         <h3>
@@ -162,7 +162,7 @@ layout: base
 
 <article class="wrapper region flow">
 <h2>Search Engines</h2>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% for link in linksData.searchEnginesData %}
       <li id="{{ link.name }}" class="card flow overflow-hidden">
         <h3>

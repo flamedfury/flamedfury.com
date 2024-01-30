@@ -12,10 +12,8 @@ layout: base
   {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="region">
-  <article class="wrapper flow prose">
-    {{ content | safe }}
-  </article>
+<article class="region wrapper flow prose">
+  {{ content | safe }}
 </article>
 
 <article class="region" style="--region-space-top: var(--space-s)">
@@ -24,7 +22,7 @@ layout: base
     <p>These are my most recent posts. More are available to read on the <a href="posts">posts page</a>.</p>
   </div>
 
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="wrapper grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% set postslist = collections.posts %}
     {% for post in postslist.slice(0, 6) %}
 

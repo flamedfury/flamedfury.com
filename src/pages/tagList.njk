@@ -22,7 +22,7 @@ eleventyComputed:
 </header>
 
 <article class="wrapper">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
     {% set taglist = collections[tag] | reverse %} {% for post in taglist %}
 
     <li class="card flow overflow-hidden">
