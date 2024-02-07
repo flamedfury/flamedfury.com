@@ -15,20 +15,24 @@ module.exports = {
     {
       text: 'Blog',
       url: '/blog/page-0/'
-    },
-    {
-      text: 'Style guide',
-      url: '/styleguide/'
     }
   ],
   bottom: [
     {
-      text: 'Imprint',
-      url: '/imprint/'
+      text: 'Contact',
+      url: '/contact/'
+    },
+    {
+      text: 'PSA',
+      url: '/psa/'
     },
     {
       text: 'Privacy',
       url: '/privacy/'
+    },
+    {
+      text: 'Style guide',
+      url: '/styleguide/'
     }
   ]
 };

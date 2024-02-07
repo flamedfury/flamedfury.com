@@ -1,7 +1,7 @@
 ---
 title: Not Found
 layout: page
-permalink: /404.html
+permalink: /not_found.html
 eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 noindex: true

@@ -26,9 +26,9 @@ module.exports = {
     'Visible content: another website by fLaMed', // alt text for default meta image
   blog: {
     // this is for the rss feed
-    name: 'My Web Development Blog',
+    name: 'Flamed Fury: Latest Posts',
     description:
-      'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+      'I write about the web and other stuff.',
     tagSingle: 'Tag',
     tagPlural: 'Tags',
     tagMore: 'More tags:',
