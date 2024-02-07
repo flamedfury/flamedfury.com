@@ -6,3 +6,23 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.logo:hover,
+.logo:focus {
+  color: transparent;
+  background: var(--gradient-conic);
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.logo svg { 
+  --fillColorTop: var(--color-text);
+  --fillColorBot: var(--color-text-accent);
+}
+
+.logo:hover svg,
+.logo:focus svg {
+  --fillColorTop: var(--color-primary);
+  --fillColorBot: var(--color-primary-highlight);
+} 
