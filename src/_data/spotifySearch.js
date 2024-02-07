@@ -38,24 +38,6 @@ async function searchSpotifyArtist(artistName, accessToken) {
   }
 }
 
-async function searchSpotifyTrack(trackName, artistName, accessToken) {
-  const query = encodeURIComponent(`${trackName} ${artistName}`);
-  const url = `https://api.spotify.com/v1/search?type=track&q=${query}&limit=1`;
-
-  try {
-    const response = await axios.get(url, {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    });
-
-    return response.data.tracks.items[0];
-  } catch (error) {
-    console.error('Spotify API Error:', error.response.data);
-    throw error;
-  }
-}
-
 module.exports = {
   searchSpotifyAlbum,
   searchSpotifyArtist,
