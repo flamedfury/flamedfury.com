@@ -1,0 +1,47 @@
+.button {
+  color: var(--button-text, var(--color-text));
+  background-color: var(--button-bg, var(--color-bg));
+  border: 2px solid var(--button-border, var(--color-text));
+  border-radius: var(--border-radius);
+  display: inline-block;
+  font: inherit;
+  padding: 0.3rem var(--space-s);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover,
+.button[aria-current='page'],
+.button[aria-pressed='true'],
+.button[data-state='active'] {
+  background-size: 150% 150%;
+  --button-bg: var(--color-text);
+  --button-text: var(--color-bg);
+  --button-border: var(--color-text);
+}
+
+.button:active {
+  transform: scale(99%);
+}
+
+.button:where(:has(svg)) {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.button:where(:has(.visually-hidden)) {
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+/* all buttons have a min size */
+.button:where(:not(:has(svg))) {
+  text-align: center;
+  min-inline-size: 6ch;
+}
+
+.button:where(:not(:has(.visually-hidden))) {
+  padding: var(--button-padding, 0.35em 1em);
+}

@@ -1,0 +1,85 @@
+<base href="{{ page.url }}">
+
+<meta
+  name="description"
+  content="
+  {% if discover.description %} {{ discover.description }}
+  {% elif description %}
+  {{ description }}
+  {% else %}
+  {{ meta.siteDescription }}
+  {% endif %}
+  "
+>
+
+<meta name="theme-color" content="{{ meta.themeColor }}">
+<!-- Search Engines -->
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<!-- Made with Eleventy! -->
+<meta name="generator" content="{{ eleventy.generator }}">
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no">
+<!-- supports both dark and light color schemes, page author prefers light as default. -->
+<meta name="color-scheme" content="light dark">
+<!-- activates page transitions -->
+<meta name="view-transition" content="same-origin">
+
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="{{ meta.url }}{{ page.url }}">
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt">
+
+{% if personal.social.mastodon %}
+<!-- Mastodon verified site -->
+<link rel="me" href="{{ personal.social.mastodon }}">
+{% endif %}
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="{{ meta.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta
+  property="og:title"
+  content="{% if title %}{{ title }}{% else %}{{ meta.siteName }}{% endif %}"
+>
+<meta
+  property="og:image"
+  content="{{ meta.url }}{% if (layout == 'post') %}/assets/og-images/{{
+    title | slugify
+  }}-preview.jpeg
+  {% else %}{{ meta.opengraph_default }}
+  {% endif %}"
+>
+<meta
+  property="og:image:alt"
+  content="{% if (layout == 'post') %}{% else %}{{ meta.opengraph_default_alt }}
+{% endif %}"
+>
+<meta
+  property="og:description"
+  content="{% if description %}{{ description }}{% else %}{{
+    meta.siteDescription
+  }}{% endif %}"
+>
+<meta property="og:site_name" content="{{ meta.siteName }}">
+<meta property="og:locale" content="{{ meta.locale }}">
+<meta property="article:author" content="{{ meta.author.name }}">
+
+<!-- Twitter specific head data was removed in v2 -->
+
+<!-- RSS Autodiscovery. Loops over meta.blog.feedLinks -->
+{% for feedLink in meta.blog.feedLinks %}
+<link
+  rel="alternate"
+  type="{{ feedLink.type }}"
+  title="{{ feedLink.title }}: {{ meta.siteName }}"
+  href="{{ feedLink.url }}"
+>
+{% endfor %}
+
+<!-- Favicon: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+<link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="any">
+<link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+<link rel="manifest" href="{{ '/site.webmanifest' | url }}">
