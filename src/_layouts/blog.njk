@@ -18,6 +18,7 @@ masonry: true
 
   <ul
     class="blogcards | grid"
+    role="list"
     data-rows="masonry"
     data-layout="50-50"
   >
@@ -40,7 +41,7 @@ masonry: true
     <nav role="navigation" aria-labelledby="pagination_label">
 			<span id="pagination_label" hidden>{{ meta.blog.pagination }}</span>
 			<span id="prefix" hidden>{{ meta.blog.paginationPage }}</span>
-      <ol class="pagination | cluster">
+      <ol class="pagination | cluster" role="list">
         <li>
           {% if pagination.href.previous %}
             <a href="{{ pagination.href.previous }}"> {{ meta.blog.paginationPrevious }} </a>
