@@ -2,7 +2,8 @@ const axios = require('axios');
 
 async function searchSpotifyAlbum(albumName, artistName, accessToken) {
   const query = encodeURIComponent(`${albumName} ${artistName}`);
-  const url = `https://api.spotify.com/v1/search?type=album&q=${query}&limit=1`;
+  const market = 'NZ';
+  const url = `https://api.spotify.com/v1/search?type=album&q=${query}&market=${market}&limit=1`;
 
   try {
     const response = await axios.get(url, {
@@ -20,7 +21,8 @@ async function searchSpotifyAlbum(albumName, artistName, accessToken) {
 
 async function searchSpotifyArtist(artistName, accessToken) {
   const query = encodeURIComponent(artistName);
-  const url = `https://api.spotify.com/v1/search?type=artist&q=${query}&limit=1`;
+  const market = 'NZ';
+  const url = `https://api.spotify.com/v1/search?type=artist&q=${query}&market=${market}&limit=1`;
 
   try {
     const response = await axios.get(url, {
@@ -57,5 +59,4 @@ async function searchSpotifyTrack(trackName, artistName, accessToken) {
 module.exports = {
   searchSpotifyAlbum,
   searchSpotifyArtist,
-  searchSpotifyTrack,
 };
