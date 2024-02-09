@@ -25,7 +25,7 @@
 
 .card:hover,
 .card:focus-within {
-  border: 3px solid var(--color-primary);
+  border: 3px dashed var(--color-primary);
 }
 
 /* 'clickable' */
