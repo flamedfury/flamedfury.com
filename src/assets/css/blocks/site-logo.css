@@ -10,7 +10,7 @@
 .logo:hover,
 .logo:focus {
   color: transparent;
-  background: var(--gradient-conic);
+  background: var(--gradient-flames);
   background-size: 50%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -24,5 +24,5 @@
 .logo:hover svg,
 .logo:focus svg {
   --fillColorTop: var(--color-primary);
-  --fillColorBot: var(--color-primary-highlight);
+  --fillColorBot: var(--color-secondary);
 } 
