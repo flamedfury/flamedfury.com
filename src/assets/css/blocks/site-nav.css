@@ -57,7 +57,7 @@
 
   /* Change the border-color on :hover and :focus */
   .site-nav a:where(:hover, :focus) {
-    --text-decoration: var(--color-text-accent);
+    --text-decoration: var(--color-primary);
     --text-color: var(--color-text);
     --background-color: transparent;
   }

@@ -93,8 +93,12 @@ hr {
 /* Base interactive elements */
 
 a {
-  color: currentcolor;
-  text-decoration-thickness: 0.08em;
+  color: currentColor;
+  text-decoration-thickness: .10em;
+}
+
+article p a {
+  color: var(--color-primary)
 }
 
 a:hover {
@@ -112,8 +116,8 @@ main:focus {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background-color: var(--color-text);
-  color: var(--color-bg);
+  background-color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .preload-transitions * {
