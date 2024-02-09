@@ -1,7 +1,7 @@
 .button {
   color: var(--button-text, var(--color-text));
-  background-color: var(--button-bg, var(--color-bg));
-  border: 2px solid var(--button-border, var(--color-text));
+  background-color: var(--button-bg, var(--color-primary));
+  border: 2px solid var(--button-border, var(--color-primary));
   border-radius: var(--border-radius);
   display: inline-block;
   font: inherit;
@@ -16,9 +16,9 @@
 .button[aria-pressed='true'],
 .button[data-state='active'] {
   background-size: 150% 150%;
-  --button-bg: var(--color-text);
-  --button-text: var(--color-bg);
-  --button-border: var(--color-text);
+  --button-bg: var(--color-tertiary);
+  --button-text: var(--color-text);
+  --button-border: var(--color-tertiary);
 }
 
 .button:active {

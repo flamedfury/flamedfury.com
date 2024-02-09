@@ -5,9 +5,9 @@
 }
 
 .post-tag {
-  --button-bg: var(--color-text);
-  --button-text: var(--color-bg);
-  --button-border: var(--color-text);
+  --button-bg: var(--color-primary);
+  --button-text: var(--color-text);
+  --button-border: var(--color-primary);
   font-size: var(--size-step-min-2);
   text-transform: uppercase;
   padding: 0.1rem 0.625rem;
