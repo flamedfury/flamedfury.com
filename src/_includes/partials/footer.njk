@@ -4,7 +4,7 @@
   <div class="wrapper">
     <div class="site-foot__inner">
       <nav class="site-foot__inner text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
-        &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }} <small>{{ pkg.version }}</small>  </a>
+        &copy; {% year %} <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ meta.siteName }} <small>{{ pkg.version }}</small> </a>
 
         {% for item in navigation.bottom %}
         <a
@@ -58,7 +58,7 @@
 				class="button"
 				theme-toggle
 			>
-				<span id="theme-switcher-value"></span>
+			<span id="theme-switcher-value">{{ meta.themeSwitch.initial }}</span>
 			</button>
 
 		</div>
