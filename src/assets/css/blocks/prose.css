@@ -20,7 +20,7 @@
 }
 
 .prose :is(h2 + *, h3 + *, h4 + *):not(figure) {
-  --flow-space: var(--space-s);
+  --flow-space: var(--space-m);
 }
 
 .prose .heading-anchor:is(:hover, :focus) {
@@ -43,13 +43,16 @@
 
 /* inline space only for "regular lists" */
 .prose :where(ul:not(.grid), ol:not(.grid)) {
-  padding-inline-start: var(--space-m);
+  padding-inline-start: 1.5ch;
+}
+/* marker only for "regular lists" */
+.prose :where(ul:not(.grid):not([role='list'])) li::marker {
+  color: var(--color-primary);
+  content: '– ';
 }
 
-/* marker only for "regular lists" */
-.prose :where(ul:not(.grid)) li::marker {
+.prose ol li::marker {
   color: var(--color-primary);
-  content: '- ';
 }
 
 .prose img {
