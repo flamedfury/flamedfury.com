@@ -1,6 +1,62 @@
 {
   "albums": [
     {
+      "title": "Trees",
+      "artist": "Avantdale Bowling Club",
+      "year": 2022,
+      "format": "vinyl",
+      "genre": "Hip Hop, Jazz",
+      "label": "Years Gone By",
+      "code": "YGB006",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/trees.png",
+      "alt": "Cover of the album",
+      "comment": "Second Avantdale Bowling Club project. Solid rap album. Aotearoa music rules."
+    },
+    {
+      "title": "Avantdale Bowling Club",
+      "artist": "Avantdale Bowling Club",
+      "year": 2018,
+      "format": "vinyl",
+      "genre": "Hip Hop, Jazz",
+      "label": "Years Gone By",
+      "code": "YGB001",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/avantdale-bowling-club.png",
+      "alt": "Cover of the album",
+      "comment": "New project by Tom Scott (Home Brew). Gatefold cover includes download card. Tracks D1, D2, and D3 are vinyl exclusive bonus tracks."
+    },
+    {
+      "title": "In Utero",
+      "artist": "Nirvana",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Rock",
+      "label": "DGC, Sub Pop",
+      "code": "",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/in-utero.jpg",
+      "alt": "Cover of the album",
+      "comment": "Remastered, 30th Anniversary re-issue. Beautiful packaging. Heavy cardboard gatefold sleeve. 12\" main record, 10\" demo disk and a lyric sheet."
+    },
+    {
+      "title": "Home Brew (11th Anniversary Edition)",
+      "artist": "Home Brew",
+      "year": 2023,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "Young Gifted & Broke",
+      "code": "YGB000",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/home-brew.png",
+      "alt": "Cover of the album",
+      "comment": "Re-issue for the 11th anniversary. \"Last Day\" found on all other releases was dropped to fit vinyl time constraints, 3000 made."
+    },
+    {
       "title": "Run It Back",
       "artist": "Home Brew",
       "year": 2023,
