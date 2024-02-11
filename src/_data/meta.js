@@ -42,7 +42,7 @@ module.exports = {
   navigation: {
     ariaTop: 'Main',
     ariaBottom: 'Complementary',
-    ariaSocial: 'Social',
+    ariaPlatforms: 'Platforms',
     closedText: 'Menu'
   },
   themeSwitch: {
