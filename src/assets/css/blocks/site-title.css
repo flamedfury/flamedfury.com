@@ -1,0 +1,10 @@
+.site-title
+{
+  color: var(--color-light);
+  font-family: var(--font-display);
+  font-size: var(--size-step-6);
+  text-shadow: var(--color-dark-glare);
+  text-transform: uppercase;
+  /* transform: rotate(-7deg); */
+  word-break: break-word;
+}
