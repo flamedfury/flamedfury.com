@@ -16,9 +16,9 @@
 .button[aria-pressed='true'],
 .button[data-state='active'] {
   background-size: 150% 150%;
-  --button-bg: var(--color-tertiary);
+  --button-bg: var(--color-secondary);
   --button-text: var(--color-text);
-  --button-border: var(--color-tertiary);
+  --button-border: var(--color-secondary);
 }
 
 .button:active {

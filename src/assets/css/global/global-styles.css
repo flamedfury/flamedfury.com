@@ -109,14 +109,6 @@ article p a {
   color: var(--color-primary);
 }
 
-article p a:hover {
-  color: transparent;
-  background-image: var(--gradient-flames);
-  padding: 0.6rem 0;
-  background-size: 50%;
-  background-clip: text;
-}
-
 :focus-visible {
   outline: 3px solid;
   outline-offset: 0.3ch;
