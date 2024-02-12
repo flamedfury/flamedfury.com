@@ -11,7 +11,7 @@ When it comes to computer peripherals, I use Logitech. Keyboards, mice, headsets
 
 Until recently, I used a [G613](https://www.logitechg.com/en-us/products/gaming-keyboards/g613-wireless-mechanical-gaming-keyboard.920-008386.html) keyboard paired with a [G03](https://support.logi.com/hc/en-nz/articles/360025266514--Product-Gallery-G603-LIGHTSPEED-Wireless-Gaming-Mouse) wireless mouse. They suited me fine over the years. I wanted to switch from gaming peripherals to the [MX Master Series](https://www.logitech.com/en-us/mx/master-series.html) after using the MX Master 2 and 3S mice and MX Keys keyboard on my work MacBook.
 
-{% imagePlaceholder "./src/assets/images/posts/2023-03-16-logitech-mx-keyboard-mouse.jpeg", "A Logitech MX Mechanical keyboard and MX Master 3S mouse on a camouflage mouse mat on a wooden desk", "The MX Mechanical & MX Master 3S" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-03-16-logitech-mx-keyboard-mouse.jpeg", "A Logitech MX Mechanical keyboard and MX Master 3S mouse on a camouflage mouse mat on a wooden desk", "The MX Mechanical & MX Master 3S" %}
 
 I'm now using an [MX Mechanical](https://www.logitech.com/en-us/products/keyboards/mx-mechanical.html) with tactile quiet keys and an [MX Master 3S](https://www.logitech.com/en-us/products/mice/mx-master-3s.910-006556.html) mouse. This has been great because I enjoy the mouse gestures that the MX Master 3S provides on my work MacBook. Using these gestures, I can easily switch between open applications and desktops without reaching for the keyboard and remembering the keys to press.
 

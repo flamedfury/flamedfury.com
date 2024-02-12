@@ -6,7 +6,7 @@ tags:
 date: 2020-06-21 
 ---
 
-{% imagePlaceholder "./src/assets/images/posts/2020/hustle-harder-hustle-smarter-huge.jpg", "The book cover of the book Hustle Harder, Hustle Smarter by Curtis Jackson", "Hustle harder, hustle smarter" %}
+{% eleventyImage "./src/assets/images/posts/2020/hustle-harder-hustle-smarter-huge.jpg", "The book cover of the book Hustle Harder, Hustle Smarter by Curtis Jackson", "Hustle harder, hustle smarter" %}
 
 I just finished up this book and damn, I really enjoyed it.
 

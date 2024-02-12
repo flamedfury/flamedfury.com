@@ -35,12 +35,12 @@ Set VKD3D to version 2.8
 #### Game info
 Download custom cover art from [SteamGridDB](https://www.steamgriddb.com/search/grids?term=Diablo+Iv).
 
-{% imagePlaceholder "./src/assets/images/posts/2023-03-27-diablo-iv-character-select.png", "The character select screen in the game Diablo IV", "Chose your character" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-03-27-diablo-iv-character-select.png", "The character select screen in the game Diablo IV", "Chose your character" %}
 
-{% imagePlaceholder "./src/assets/images/posts/2023-03-27-diablo-iv-gameplay.png", "A screenshot of Diablo IV gameplay", "Clearing the first dungeon" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-03-27-diablo-iv-gameplay.png", "A screenshot of Diablo IV gameplay", "Clearing the first dungeon" %}
 
-{% imagePlaceholder "./src/assets/images/posts/2023-03-27-diablo-iv-boss-fight.png", "A screenshot of Diablo IV gameplay, fighting the first boss", "First boss fight" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-03-27-diablo-iv-boss-fight.png", "A screenshot of Diablo IV gameplay, fighting the first boss", "First boss fight" %}
 
-{% imagePlaceholder "./src/assets/images/posts/2023-03-27-diablo-iv-cut-scene.png", "A cut scene from the game Diablo IV", "Cut scenes play perfectly" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-03-27-diablo-iv-cut-scene.png", "A cut scene from the game Diablo IV", "Cut scenes play perfectly" %}
 
 You should be good to go to slay the demons of hell.

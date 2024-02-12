@@ -25,8 +25,6 @@ I am very happy with this machine; however, it's a pain moving downstairs to the
 - Case: NZXT H510 Flow
 - Cooling: 2x NZXT Aer RGB 140mm, 1x NZXT Aer RGB 120mm
 
-{% include "partials/toc.njk" %}
-
 ## Gaming rig timeline
   
 ### 2005

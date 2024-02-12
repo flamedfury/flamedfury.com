@@ -187,7 +187,7 @@ The Nunjucks loop can be updated to use `game.steamUrl` for the hyperlink.
 
 The games section of the [/now](/now/) page now looks like this:
 
-{% imagePlaceholder "./src/assets/images/posts/2023-06-19-now-page-playing-games.png", "A screenshot of the playing games section of the now page on flamedfury.com. It show's two games box cover art.", "Recently played games, now with cover art" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-06-19-now-page-playing-games.png", "A screenshot of the playing games section of the now page on flamedfury.com. It show's two games box cover art.", "Recently played games, now with cover art" %}
 
 I made a commit, pushed it to main, and waited for Netlify to build and deploy. 
 

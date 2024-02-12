@@ -7,7 +7,7 @@ date: 2020-05-16
 youtube: true
 ---
 
-{% imagePlaceholder "./src/assets/images/posts/2020/no-one-mourns-the-wicked.jpg", "A skull wearing sunglasses and a hat", "No One Mourns The Wicked - Bandcamp" %}
+{% eleventyImage "./src/assets/images/posts/2020/no-one-mourns-the-wicked.jpg", "A skull wearing sunglasses and a hat", "No One Mourns The Wicked - Bandcamp" %}
 
 No One Mourns The Wicked [dropped yesterday](https://bigghostlimited.bandcamp.com/album/no-one-mourns-the-wicked).
 
