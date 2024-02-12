@@ -75,3 +75,13 @@
   font-weight: normal;
   src: local(''), url(/assets/fonts/robotomono/robotomono-regular.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'Yanoneka';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local(''), 
+    url(/assets/fonts/yanoneka/YanoneKaffeesatz-Bold.woff2) format('woff2');
+}
+
