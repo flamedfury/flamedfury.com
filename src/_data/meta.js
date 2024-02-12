@@ -39,6 +39,11 @@ module.exports = {
     paginationPrevious: 'Previous',
     paginationNext: 'Next'
   },
+  details: {
+    aria: 'section controls',
+    expand: 'expand all',
+    collapse: 'collapse all'
+  },
   navigation: {
     ariaTop: 'Main',
     ariaBottom: 'Complementary',
