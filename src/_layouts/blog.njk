@@ -54,6 +54,7 @@ masonry: true
               {{ loop.index }}</a>
           </li>
         {%- endfor %}
+        {% endif %}
         <li>
           {% if pagination.href.next %}
             <a href="{{ pagination.href.next }}">{{ meta.blog.paginationNext }}</a>
