@@ -21,8 +21,16 @@ const tagList = collection => {
   return Array.from(tagsSet).sort();
 };
 
+/** All bookmarks as a collection */
+const allBookmarks = collection => {
+  const bookmarks = collection.getAll().filter(item => item.data.isBookmark);
+  return bookmarks;
+};
+
+
 module.exports = {
   getAllPosts,
   onlyMarkdown,
-  tagList
+  tagList,
+  allBookmarks
 };

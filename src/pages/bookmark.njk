@@ -1,0 +1,35 @@
+---
+layout: post
+pagination:
+    data: bookmarks
+    size: 1
+    alias: bookmark
+    addAllPagesToCollections: true
+permalink: 'bookmarks/{{ bookmark.title | slugify }}/index.html'
+isBookmark: true
+eleventyComputed:
+    title: "{{ bookmark.title }}"
+    sourceurl: "{{ bookmark.url }}"
+    notes: "{{ bookmark.notes }}"
+    date: "{{ bookmark.date }}"
+---
+
+<div class="flow h-entry">
+
+    <p>
+     Bookmarked <a href="{{ bookmark.url }}" class="u-bookmark-of h-cite"> <span class="p-name">{{ bookmark.title }}</span></a>
+    </p>
+
+    {% if bookmark.quote %}
+    <blockquote>{{ bookmark.quote }}</blockquote>
+    {% endif %}
+
+    <p class="p-summary">
+        {{ bookmark.notes }}
+    </p>
+
+    <p>
+        <a href="/bookmarks/">More Bookmarks</a>
+    </p>
+
+</div>
