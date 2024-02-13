@@ -14,7 +14,9 @@ masonry: true
     {% include 'svg/divider-edgy.svg' %}
   </header>
 
-	<div class="region flow prose"  style="--region-space-top: var(--space-xl-2xl)">  {{ content | safe }}</div>
+	<div class="region flow prose"  style="--region-space-top: var(--space-xl-2xl)">
+      {{ content | safe }}
+  </div>
 
   <ul
     class="blogcards | grid"
