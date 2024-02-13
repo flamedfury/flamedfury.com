@@ -24,8 +24,8 @@ const imageShortcode = async (
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
-    urlPath: '/assets/images/',
-    outputDir: './dist/assets/images/',
+    urlPath: '/assets/images/generated/',
+    outputDir: './dist/assets/images/generated/',
     filenameFormat: (id, src, width, format, options) => {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
