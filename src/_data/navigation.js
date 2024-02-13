@@ -1,20 +1,32 @@
 module.exports = {
   top: [
     {
-      text: 'About',
-      url: '/about/'
+      text: 'Collections',
+      url: '/collections/'
     },
     {
-      text: 'Get started',
-      url: '/get-started/'
+      text: 'Posts',
+      url: '/posts/'
     },
     {
-      text: 'Built with',
-      url: '/built-with/'
+      text: 'Links',
+      url: '/Links/'
     },
     {
-      text: 'Blog',
-      url: '/blog/page-0/'
+      text: 'Now',
+      url: '/now/'
+    },
+    {
+      text: 'Uses',
+      url: '/uses/'
+    },
+    {
+      text: 'Tags',
+      url: '/tags/'
+    },
+    {
+      text: 'Feeds',
+      url: '/feeds/'
     }
   ],
   bottom: [
