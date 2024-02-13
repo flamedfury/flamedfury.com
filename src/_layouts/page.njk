@@ -9,3 +9,15 @@ layout: base
   <h1 class="gradient-text">{{ title }}</h1>
   {{ content | safe }}
 </article>
+
+{% if type == 'bookshelf' %}
+  {% include "partials/bookshelf.njk" %}
+{% endif %}
+
+{% if type == 'recordshelf' %}
+  {% include "partials/recordshelf.njk" %}
+{% endif %}
+
+{% if type == 'bookmarks' %}
+  {% include "partials/bookmarks.njk" %}
+{% endif %}

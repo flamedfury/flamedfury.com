@@ -29,6 +29,15 @@ schema: blog
     </p>
 
     {{ content | safe }}
+    
+    {% if type == 'seasonal' %}
+      {% include "partials/seasonal.njk" %}
+    {% endif %}
+
+    {% if type == 'untappd' %}
+      {% include "partials/untappd.njk" %}
+    {% endif %}
+
     {% include 'components/edit-on.njk' %}
   </div>
 
