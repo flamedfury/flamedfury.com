@@ -4,7 +4,7 @@
     <details>
       <summary><h2>Want To Read</h2></summary>
       <div class="grid" style="--grid-min-item-size: 10rem">
-      {% for book in books | reverse %}
+      {% for book in bookshelf | reverse %}
         {% if book.status == 'want to read' %}
           <div class="bookshelf flow">
             <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="">
@@ -17,7 +17,7 @@
     <h2>Finished Reading</h2>
       <div class="grid" style="--grid-min-item-size: 10rem">
 
-      {% for book in books | reverse %}
+      {% for book in bookshelf | reverse %}
         {% if book.status == 'finished' %}
           <div class="bookshelf flow">
             <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="">
