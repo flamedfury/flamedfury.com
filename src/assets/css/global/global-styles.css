@@ -105,7 +105,7 @@ a:hover {
   text-decoration: none;
 }
 
-article p a {
+article p a, article li a {
   color: var(--color-primary);
 }
 
