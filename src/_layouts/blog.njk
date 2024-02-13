@@ -4,7 +4,7 @@ masonry: true
 ---
 
 <article class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-secondary)">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
     <div
       class="section__inner flow region"
       style="--region-space-top: var(--space-xl-2xl)"
@@ -47,6 +47,7 @@ masonry: true
             <a href="{{ pagination.href.previous }}"> {{ meta.blog.paginationPrevious }} </a>
           {% else %} {{ meta.blog.paginationPrevious }} {% endif %}
         </li>
+        {% if meta.blog.paginationNumbers %}
         {%- for pageEntry in pagination.pages %}
           <li>
             <a href="{{ pagination.hrefs[ loop.index0 ] }}" id="link_{{ loop.index }}" aria-labelledby="prefix link_{{ loop.index }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}>

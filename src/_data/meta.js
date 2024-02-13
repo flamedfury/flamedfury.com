@@ -34,10 +34,11 @@ module.exports = {
     tagMore: 'More tags:',
     // feed links are looped over in the head.
     feedLinks: [{title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml'}],
-    pagination: 'Blog',
+    paginationLabel: 'Blog',
     paginationPage: 'Page',
     paginationPrevious: 'Previous',
-    paginationNext: 'Next'
+    paginationNext: 'Next',
+    paginationNumbers: true
   },
   details: {
     aria: 'section controls',
