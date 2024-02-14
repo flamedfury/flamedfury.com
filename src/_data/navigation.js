@@ -35,15 +35,23 @@ module.exports = {
       url: '/contact/'
     },
     {
+      text: 'Buttons',
+      url: '/buttons/'
+    },
+    {
       text: 'PSA',
       url: '/psa/'
+    },
+    {
+      text: 'SOA',
+      url: '/soa/'
     },
     {
       text: 'Privacy',
       url: '/privacy/'
     },
     {
-      text: 'Style guide',
+      text: 'Styleguide',
       url: '/styleguide/'
     }
   ]
