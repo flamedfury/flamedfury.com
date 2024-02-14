@@ -66,7 +66,17 @@ module.exports = {
 
   // Disables Tailwind's reset etc
   corePlugins: {
-    preflight: false
+    preflight: false,
+    textOpacity: false,
+    backgroundOpacity: false,
+    borderOpacity: false
+  },
+  // Prevents Tailwind's core components
+  blocklist: ['container'],
+
+  // Prevents Tailwind from generating that wall of empty custom properties
+  experimental: {
+    optimizeUniversalDefaults: true
   },
   plugins: [
     // Generates custom property values from tailwind config
