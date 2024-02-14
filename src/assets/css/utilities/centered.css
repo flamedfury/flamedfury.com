@@ -1,0 +1,9 @@
+/*
+CENTERED UTILITY
+Centers an element vertically and horizontally
+*/
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
