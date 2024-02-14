@@ -25,15 +25,17 @@ module.exports = {
   opengraph_default_alt:
     'Visible content: another website by fLaMed', // alt text for default meta image
   blog: {
-    // this is for the rss feed
+    // RSS
     name: 'Flamed Fury: Latest Posts',
     description:
       'I write about the web and other stuff.',
+    // feed links are looped over in the head. You may add more to the array.
+    feedLinks: [{title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml'}],
+    // Tags
     tagSingle: 'Tag',
     tagPlural: 'Tags',
     tagMore: 'More tags:',
-    // feed links are looped over in the head.
-    feedLinks: [{title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml'}],
+    // Pagination
     paginationLabel: 'Blog',
     paginationPage: 'Page',
     paginationPrevious: 'Previous',
