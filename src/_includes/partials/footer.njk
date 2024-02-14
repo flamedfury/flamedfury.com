@@ -5,7 +5,10 @@
     <div class="site-foot__inner">
       <nav class="site-foot__inner text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
         &copy; {% year %} <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ meta.siteName }} <small>{{ pkg.version }}</small> </a>
-
+			</nav>
+		</div>
+		<div class="site-foot__inner">
+			<nav class="site-foot__inner text-step-min-1 wrap" aria-label="{{ meta.navigation.ariaBottom }}">
         {% for item in navigation.bottom %}
         <a
           href="{{ item.url }}"
@@ -19,29 +22,26 @@
         >
         {% endfor %}
       </nav>
+		</div>
 
-				<nav class="site-foot__inner" aria-label="{{ meta.navigation.ariaSocial }}">
+		<div class="site-foot__inner">
+			<nav class="site-foot__inner" aria-label="{{ meta.navigation.ariaPlatforms }}">
+						<!-- gets the first item from the feed loop set in meta -->
+						<a href="{{ meta.blog.feedLinks[0].url }}" rel="alternate" type="{{ meta.blog.feedLinks[0].type }}">
+							<span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
+							<div aria-hidden="true">{% include 'svg/rss.svg' %}</div>
+						</a>
 
-
-
-							<!-- gets the first item from the feed loop set in meta -->
-							<a href="{{ meta.blog.feedLinks[0].url }}" rel="alternate" type="{{ meta.blog.feedLinks[0].type }}">
-								<span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
-								<div aria-hidden="true">{% include 'svg/rss.svg' %}</div>
-							</a>
-
-							{% for key, value in personal.social %}
-							{% if value != "" %}
-								<!-- regular social networks -->
-							<a href="{{ value }}" rel="me">
-								<span class="visually-hidden">{{ key | capitalize }}</span>
-								<div aria-hidden="true">{% include 'svg/social-' + key + '.svg' %}</div>
-							</a>
-							{% endif %}
-
-
-					{% endfor %}
-        </nav>
+						{% for key, value in personal.platforms %}
+						{% if value != "" %}
+							<!-- regular platforms networks -->
+						<a href="{{ value }}" rel="me">
+							<span class="visually-hidden">{{ key | capitalize }}</span>
+							<div aria-hidden="true">{% include 'svg/platform-' + key + '.svg' %}</div>
+						</a>
+						{% endif %}
+				{% endfor %}
+			</nav>
     </div>
 
 		<!-- theme switch -->

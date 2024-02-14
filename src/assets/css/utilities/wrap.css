@@ -1,0 +1,7 @@
+/*
+WRAP UTILITY
+Just wraps items
+*/
+.wrap {
+  flex-wrap: wrap;
+}
