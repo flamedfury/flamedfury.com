@@ -12,7 +12,7 @@
             {% set definedDate = bookmark.date %} {% include "components/date.njk" %}
           </span>
         </div>
-        <p>{{ bookmark.data.notes | truncate }}</p>
+        <p>{{ bookmark.data.notes | truncate(100) }}</p>
       </div>
     </li>
     {% endfor %}
