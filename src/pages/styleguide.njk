@@ -36,7 +36,7 @@ customGradients:
 
       <p>{{ designTokens.colors.description }}</p>
 
-      <ul>
+      <ul role="list">
         {%- for color in designTokens.colors.items %}
         <li>
           <div style="background-color: var(--color-{{ color.name | slugify }}"></div>
@@ -51,7 +51,7 @@ customGradients:
       <h3 class="heading-line | mt-l-xl">Custom colours</h3>
       <p>in <code>variables.css</code>. Some only change for dark theme.</p>
 
-      <ul>
+      <ul role="list">
         {%- for color in customColors %}
         <li>
           <div style="background-color: var({{ color.property }})"></div>
@@ -64,7 +64,7 @@ customGradients:
 
       <h3 class="heading-line | mt-l-xl">Gradients</h3>
 
-      <ul>
+      <ul role="list">
         {%- for gradient in customGradients %}
         <li>
           <div style="background-image: var({{ gradient.property }})"></div>
