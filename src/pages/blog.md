@@ -6,6 +6,7 @@ pagination:
   data: collections.posts
   size: 10000
 permalink: 'posts/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+masonry: true
 ---
 
 This blog has a pagination of {{ pagination.size }} posts per page.
