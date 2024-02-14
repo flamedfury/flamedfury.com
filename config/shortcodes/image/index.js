@@ -76,7 +76,7 @@ const imageShortcode = async (
 				${imgageAttributes}>
 			</picture>`;
 
-  return htmlmin.minify(imageElement, {collapseWhitespace: true});
+  return imageElement;
 };
 
 module.exports = imageShortcode;
