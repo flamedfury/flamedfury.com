@@ -6,7 +6,8 @@
       {% for book in bookshelf | reverse %}
         {% if book.status == 'want to read' %}
           <div class="bookshelf flow">
-            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="">
+            {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn + ".png", "Book Cover" %}
+            {# <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt=""> #}
           </div>
         {% endif %}
       {% endfor %}
@@ -19,9 +20,8 @@
       {% for book in bookshelf | reverse %}
         {% if book.status == 'finished' %}
           <div class="bookshelf flow">
-            {# {% eleventyImage book.thumbnail, "Book Cover" %}
-            {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png", "Book Cover" %} #}
-            <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="">
+            {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn + ".png", "Book Cover" %}
+            {# <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt=""> #}
           </div>
         {% endif %}
       {% endfor %}
