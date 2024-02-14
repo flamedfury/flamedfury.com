@@ -1,0 +1,12 @@
+<article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+  <h2>Reading: books</h2>
+  <div class="grid" style="--grid-min-item-size: 10rem">
+    {% for book in bookshelf | reverse %}
+      {% if book.status == 'started' %}
+        <div class="flow">
+          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}" class="now__img">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</article>
