@@ -1,0 +1,45 @@
+---
+title: Mixtapes
+description: Mixtapes I've created available on Spotify and Apple Music
+permalink: /mixtapes/index.html
+layout: page
+date: 2022-03-28
+updated: 2024-02-15
+
+---
+
+<p>
+  As you can tell, I love music. I also love to create mixtapes and playlists. This page contains a selection of my mixtapes and playlists on Spotify. Please give them a listen and let me know what you think.
+</p>
+
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% include 'svg/divider-soft-top.svg' %}
+  <section class="section__inner wrapper">
+    {% for item in mixtapes.playlists %}
+      <h3 style="font-size: var(--size-step-2); max-width: 50ch;">{{ item.title }}</h3>
+      <div class="vinyl sidebar">
+        <div
+          class="region"
+          style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)"
+        >
+          <iframe
+            style="border-radius:12px"
+            src="{{ item.embed }}"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          ></iframe>
+        </div>
+        <div
+          class="flow region"
+          style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)"
+        >
+          <p>{{ item.comment }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+  {% include 'svg/divider-soft-bottom.svg' %}
+</article>
