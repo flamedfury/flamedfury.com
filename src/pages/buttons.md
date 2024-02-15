@@ -15,7 +15,7 @@ Even though these buttons are too small to be functional on modern high-resoluti
 ```
 
 <div class="sidebar">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
     <img src="/assets/images/buttons/flamedfury.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
@@ -25,7 +25,7 @@ Even though these buttons are too small to be functional on modern high-resoluti
   </div>
 </div>
 <div class="sidebar">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
     <img src="/assets/images/buttons/flamedfury2.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
@@ -35,7 +35,7 @@ Even though these buttons are too small to be functional on modern high-resoluti
   </div>
 </div>
 <div class="sidebar">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
     <img src="/assets/images/buttons/fury.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
@@ -45,7 +45,7 @@ Even though these buttons are too small to be functional on modern high-resoluti
   </div>
 </div>
 <div class="sidebar">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
     <img src="/assets/images/buttons/flamedfurybutton.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
@@ -55,7 +55,7 @@ Even though these buttons are too small to be functional on modern high-resoluti
   </div>
 </div>
 <div class="sidebar">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
     <img src="/assets/images/buttons/flamedfury22.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
