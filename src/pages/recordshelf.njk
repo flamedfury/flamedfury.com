@@ -1,0 +1,60 @@
+---
+title: Recordshelf
+description: This page details my growing vinyl collection. It includes photos of the cover, sleeves and the vinyl itself, along with commentary on my thoughts on the packaging and the music itself.
+permalink: /recordshelf/index.html
+layout: page
+date: 2022-03-22
+updated: 2023-01-23
+---
+
+<p>
+  I am big fan of vinyl records for their unique sound quality. The warmth and richness of
+  the audio is unparalleled by digital formats, and the smooth conveyance of analog
+  recordings truly immerses me in the music. The added texture of the crackle and pop of
+  the subtle imperfections only adds to the charm of listening to music on vinyl.
+</p>
+
+<p>
+  It's not just the sound that makes vinyl so unique, but also the physical experience of
+  handling the record, placing it on the turntable, and watching it spin as the music
+  plays.
+</p>
+
+<p>
+  It's a ritual that can't be replicated with digital formats. That's why vinyl is my
+  go-to medium for listening to music, as it truly allows me to fully appreciate and enjoy
+  the music.
+</p>
+
+<p>Enjoy the collection.</p>
+
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% include 'svg/divider-soft-top.svg' %}
+  <section class="section__inner wrapper">
+    {%- for item in vinyl.albums -%}
+    <a class="recordshelf-link" href="#{{ item.title | slug }}">
+      <h3 id="{{ item.title | slug }}">{{ item.title }}</h3>
+    </a>
+      <div class="recordshelf sidebar | mb-xl pb-xl">
+        <div class="flex place-content-center items-center">
+        {% eleventyImage item.image,
+          "the album cover for {{ item.title }}" %}
+        </div>
+        <div class="flex flex-wrap content-center">
+        <p class="uppercase">
+          Artist: {{ item.artist }}</p>
+          <p class="uppercase">Info: {{ item.format }} / {{ item.year }}, {{ item.genre }}</p>
+          <p class="uppercase">Label: {{ item.label }}
+            {{ item.code }}</p>
+          <p class="uppercase">Release: {{ item.varient }}
+            {{ item.number }}</p>
+        </p>
+        <p>
+          {{ item.comment }}
+        </p>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+  {% include 'svg/divider-soft-bottom.svg' %}
+</article>
