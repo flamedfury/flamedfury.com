@@ -16,12 +16,9 @@ updated: 2024-02-15
   {% include 'svg/divider-soft-top.svg' %}
   <section class="section__inner wrapper">
     {% for item in mixtapes.playlists %}
-      <h3 style="font-size: var(--size-step-2); max-width: 50ch;">{{ item.title }}</h3>
-      <div class="vinyl sidebar">
-        <div
-          class="region"
-          style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)"
-        >
+      <h3 class="mb-s-m">{{ item.title }}</h3>
+      <div class="recordshelf sidebar | mb-xl pb-xl">
+        <div class="flex place-content-center items-center">
           <iframe
             style="border-radius:12px"
             src="{{ item.embed }}"
@@ -32,10 +29,7 @@ updated: 2024-02-15
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           ></iframe>
         </div>
-        <div
-          class="flow region"
-          style="--region-space-top: var(--space-s-m); --region-space-bottom: var(--space-s-m)"
-        >
+        <div class="flex flex-wrap content-center">
           <p>{{ item.comment }}</p>
         </div>
       </div>
