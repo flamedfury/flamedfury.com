@@ -1,0 +1,412 @@
+{
+  "blogroll": [
+    {
+      "name": "Katy DeCorah",
+      "url": "https://katydecorah.com/",
+      "feed": "https://katydecorah.com/feed.xml",
+      "note": "Blogs about web development and life. Katy has provided lots of inspiration for how I build parts of Flamed Fury."
+    },
+    {
+      "name": "Cory Dransfeldt",
+      "url": "https://coryd.dev/",
+      "feed": "https://feedpress.me/coryd",
+      "note": "Whenever I want to do something on my website, I check to see if Cory has already done it."
+    },
+    {
+      "name": "Robb Knight",
+      "url": "https://rknight.me/",
+      "feed": "https://rknight.me/feed.xml",
+      "note": "If Cory hasn't done what I'm looking to do, then Robb is my next stop."
+    },
+    {
+      "name": "Xandra",
+      "url": "https://library.xandra.cc/",
+      "feed": "https://library.xandra.cc/feed/",
+      "note": "Xandra, my Small Web bestie is finally blogging, about the web! Watch this one."
+    },
+    {
+      "name": "yequari",
+      "url": "https://yequari.com/",
+      "feed": "https://yequari.com/index.xml",
+      "note": "Helps out over at the 32-bit Cafe and occasionally blogs about web things."
+    },
+    {
+      "name": "lostletters",
+      "url": "https://lostletters.neocities.org/",
+      "feed": "https://lostletters.neocities.org/feed.xml",
+      "note": "A friend from the 32-bit Cafe. Another 2000s web throwback. Blogs about mental health, life, veganism and web development."
+    },
+    {
+      "name": "Frills",
+      "url": "https://frills.dev",
+      "feed": "https://frills.dev/rss.xml",
+      "note": "Frills' has crafted a beautiful website for herself with 11ty and Neocities. Filled with experiments, blogs, developer resources. The HTML named colours experiment is awesome."
+    },
+    {
+      "name": "anhvn",
+      "url": "https://anhvn.com/",
+      "feed": "https://anhvn.com/feed.xml",
+      "note": "I love anhvn's redesigns. Has a great resources list. Blogs from time to time and I love when they sprinkle the comic panels throughout website updates."
+    },
+    {
+      "name": "Minutes to Midnight",
+      "url": "https://minutestomidnight.co.uk/",
+      "feed": "https://minutestomidnight.co.uk/feed.xml",
+      "note": "Simone is a musician and blogger. He thinks and blogs about similar things to me."
+    },
+    {
+      "name": "Kevin Powell",
+      "url": "https://www.youtube.com/@KevinPowell",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
+      "note": "Helping you learn how to make the web, and make it look good while you're at it."
+    },
+    {
+      "name": "Chris Coyier",
+      "url": "https://chriscoyier.net/",
+      "feed": "https://chriscoyier.net/feed/",
+      "note": "Blogs about blogging, web development and life."
+    },
+    {
+      "name": "Oh Hello Ana",
+      "url": "https://ohhelloana.blog/",
+      "feed": "https://ohhelloana.blog/feed.xml",
+      "note": "Blogs about blogging, web development and life. Shares great bookmarks."
+    },
+    {
+      "name": "The Cheapskates Guide to Computers and the Internet",
+      "url": "http://cheapskatesguide.org/",
+      "note": "Essays about the otherside of the Internet with a focus on low cost computing.",
+      "feed": ""
+    },
+    {
+      "name": "Localghost",
+      "url": "https://localghost.dev/",
+      "feed": "https://localghost.dev/articles.xml",
+      "note": "Fun website. Blogs about tech, web development and mental health"
+    },
+    {
+      "name": "Manuel Moreale",
+      "url": "https://manuelmoreale.com/",
+      "feed": "",
+      "note": "Blogs about tech, the web and disconnecting."
+    },
+    {
+      "name": "Kev Quirk",
+      "url": "https://kevquirk.com/",
+      "feed": "https://kevquirk.com/feed",
+      "note": "Kev blogs about blogging, life and has a great watch collection."
+    },
+    {
+      "name": "Sara Joy",
+      "url": "https://sarajoy.dev",
+      "feed": "https://sarajoy.dev/rss.xml",
+      "note": "Sara is a web developer and mother. Maintains the CSS Joy webring. Enjoy our banter on Mastodon."
+    }
+  ],
+  "coolSites": [
+    {
+      "name": "alexandra",
+      "url": "https://xandra.cc/",
+      "feed": "",
+      "note": "Xandra runs the 32-bit Cafe. Her museum is a lovingly handcrafted homepage that calls back to a 2000s web. Sometimes writes essays."
+    },
+    {
+      "name": "Let's Learn Together!",
+      "url": "https://letslearntogether.neocities.org/",
+      "feed": "",
+      "note": "A collection of handcrafted essays and learning material covering a broad range of topics"
+    },
+    {
+      "name": "Coby Cat's Abode",
+      "url": "https://cobycat.neocities.org/",
+      "feed": "",
+      "note": "A fantastic handmade site. Covers European/Belgian Disney stuff."
+    },
+    {
+      "name": "DVD Nerd",
+      "url": "https://dvdnerd.neocities.org/",
+      "feed": "",
+      "note": "Check out the DVD Push Button reviews."
+    },
+    {
+      "name": "Trans Rats",
+      "url": "https://transrats.neocities.org/",
+      "feed": "",
+      "note": "Don't try this on your mobile, but check out the crazy Pokemon plushie collection!"
+    },
+    {
+      "name": "It's Not Stupid",
+      "url": "https://itsnotstupid.com/",
+      "feed": "",
+      "note": "An Invader Zim fan site. This is everything that a fan site should be!"
+    },
+    {
+      "name": "Ray's Miscellany",
+      "url": "https://www.brisray.com/",
+      "feed": "",
+      "note": "Brisray has been developing and maintaining his website since 1999. Lots of pages to get lost in and boasts the most complete collection and overview of webrings."
+    },
+    {
+      "name": "10@earth ~",
+      "url": "https://10kph.neocities.org/",
+      "feed": "",
+      "note": "A statically generated shrine to 10's life and interests. The site map is a beautiful way to explore the website."
+    },
+    {
+      "name": "Bytemoth's Brook",
+      "url": "https://bytemoth.neocities.org/",
+      "feed": "",
+      "note": "Bytemoth is a Digital Warlock and has been around a while. Start at the homepage and dive in and get lost."
+    },
+    {
+      "name": "Wheel Collectors",
+      "url": "https://wheelcollectors.com/",
+      "feed": "",
+      "note": "Matchbox Forum is a not-for-profit organisation of Matchbox collectors. A great resource to keep up with the latest Matchbox releases and news."
+    }
+  ],
+  "webDevelopment": [
+    {
+      "name": "32-Bit Cafe",
+      "url": "https://32bit.cafe/",
+      "feed": "",
+      "note": "A web space community that I help moderate. The 32-bit Cafe focuses on building websites for self-expression and creativity, made up of professionals, hobbyists, and enthusiasts of the personal web. Our goal is to help non web developers create their own websites."
+    },
+    {
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn",
+      "feed": "",
+      "note": "A complete set of articles aims to guide complete beginners to web development with all that they need to start coding websites."
+    },
+    {
+      "name": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/",
+      "feed": "",
+      "note": "Magazine on CSS, JavaScript, front-end, accessibility, UX and design. For developers, designers and front-end engineers."
+    },
+    {
+      "name": "CodePen",
+      "url": "https://codepen.io/",
+      "feed": "",
+      "note": "An online code editor, learning environment, and community for front-end web development using HTML, CSS and JavaScript code snippets, projects, and web applications."
+    },
+    {
+      "name": "Every Layout",
+      "url": "https://every-layout.dev/",
+      "feed": "",
+      "note": "Through a series of simple, composable layouts, Every Layout will teach you how to better harness the built-in algorithms that power browsers and CSS."
+    },
+    {
+      "name": "Utopia",
+      "url": "https://utopia.fyi/",
+      "feed": "",
+      "note": "Fluid responsive design for your websites."
+    },
+    {
+      "name": "11ty",
+      "url": "https://www.11ty.dev/",
+      "feed": "",
+      "note": "Eleventy, a simpler static site generator."
+    },
+    {
+      "name": "11tybundle",
+      "url": "https://11tybundle.dev/",
+      "feed": "",
+      "note": "Weekly posts full of 11ty resources from across the web."
+    },
+    {
+      "name": "11ty Rocks!",
+      "url": "https://11ty.rocks/",
+      "feed": "",
+      "note": "A collection of Eleventy (11ty) starters, projects, plugins, and resources by Stephanie Eckles."
+    },
+    {
+      "name": "SmolCSS",
+      "url": "https://smolcss.dev/",
+      "feed": "",
+      "note": "Minimal snippets for modern CSS layouts and components by Stephanie Eckles."
+    },
+    {
+      "name": "Modern CSS",
+      "url": "https://moderncss.dev/",
+      "feed": "",
+      "note": "A series examining modern CSS solutions to problems by Stephanie Eckles."
+    },
+    {
+      "name": "HTML Recipes",
+      "url": "https://htmlrecipes.dev/",
+      "feed": "",
+      "note": "A collection of quick copy HTML snippets for a variety of common scenarios by Stephanie Eckles."
+    },
+    {
+      "name": "SitePoint",
+      "url": "https://www.sitepoint.com/",
+      "feed": "",
+      "note": "Learn Web Design & Development with SitePoint tutorials, courses and books"
+    }
+  ],
+  "newsLetters": [
+    {
+      "name": "The History Of the Web",
+      "url": "https://thehistoryoftheweb.com/",
+      "feed": "https://thehistoryoftheweb.com/feed/",
+      "note": "The best stories from the web's history."
+    },
+    {
+      "name": "Kevin Powell's Newsletter",
+      "url": "https://kevin-powell.ck.page/profile",
+      "feed": "https://feeds.zencastr.com/f/kdZb7wVs.rss",
+      "note": "Updates, little tips & tricks, and awesome resources from Kevin Powell."
+    },
+    {
+      "name": "People and Blogs",
+      "url": "https://peopleandblogs.com/",
+      "feed": "https://manuelmoreale.com/feed/peopleandblogs",
+      "note": "People and Blogs is a weekly newsletter by Manuel Moreale, where he asks interesting people to talk about themselves and their blogs."
+    },
+    {
+      "name": "Webworm with David Farrier",
+      "url": "https://www.webworm.co/",
+      "feed": "https://www.webworm.co/feed/",
+      "note": "David Farrier's stories from the weird side of the Internet."
+    }
+  ],
+  "podCasts": [
+    {
+      "name": "The Real Pod presents: Remember When",
+      "url": "https://thespinoff.co.nz/podcasts/the-real-pod",
+      "feed": "https://feeds.megaphone.fm/the-real-pod",
+      "note": "ENDED. Aotearoa Specific. Revisit New Zealand's pop culture past with Jane Yee, Duncan Greive and Alex Casey."
+    },
+    {
+      "name": "Rebel FM",
+      "url": "https://rebelfm.libsyn.com/",
+      "feed": "http://feeds.libsyn.com/18831/rss",
+      "note": "My gaming fix. They play games and talk about them, their lives, and how the two intersect. Usually. And there are jokes.."
+    },
+    {
+      "name": "Darknet Diaries",
+      "url": "https://darknetdiaries.com/",
+      "feed": "https://feeds.megaphone.fm/darknetdiaries",
+      "note": "Stories from the dark side of the Internet. A podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network. This is Darknet Diaries."
+    },
+    {
+      "name": "Shop Talk Show",
+      "url": "https://shoptalkshow.com/",
+      "feed": "https://shoptalkshow.com/feed/podcast/",
+      "note": "A weekly podcast about building websites from Dave Rupert and Chris Coyier."
+    },
+    {
+      "name": "Hemespheric Views",
+      "url": "https://hemisphericviews.com/",
+      "feed": "https://listen.hemisphericviews.com/rss",
+      "note": "Hemespheric Views is a podcast about technology, media, food, cultural differences and family life."
+    }
+  ],
+  "searchEngines": [
+    {
+      "name": "Kagi",
+      "url": "https://kagi.com/",
+      "feed": "",
+      "note": "Kagi is a paid search product. It is also a fast, private search engine that provides results that have your best interests in mind. I'm paying for it and using it as my default search."
+    },
+    {
+      "name": "Marginalia Search",
+      "url": "https://search.marginalia.nu/",
+      "feed": "",
+      "note": "An independent search engine that favours text-heavy websites. Focuses on non-commercial content, and attempts to show you sites you perhaps weren't aware of in favor of the sort of sites you probably already knew existed."
+    },
+    {
+      "name": "searchmystite",
+      "url": "https://searchmysite.net/",
+      "feed": "",
+      "note": " The searchmysite.net search engine is a niche search, focussing on the \"indieweb\" or \"small web\" or \"digital gardens\", i.e. non-commercial content, primarily personal and independent websites."
+    },
+    {      
+      "name": "Wiby",
+      "url": "https://wiby.me/",
+      "feed": "",
+      "note": "Wiby is a search engine for older style pages, lightweight and based on a subject of interest. Building a web more reminiscent of the early internet."
+    },
+    {
+      "name": "Gibiru",
+      "url": "https://gibiru.com/",
+      "feed": "",
+      "note": "Uncensored private search engine. They exist to provide access to information outside of big tech's censorship bubble and do so privately."
+    },
+    {
+      "name": "Infotiger",
+      "url": "https://infotiger.com/",
+      "feed": "",
+      "note": "Independent, privacy respecting search engine. Building their own index, sitting at around 300 million english websites indexed."
+    },
+    {
+      "name": "Brave Search",
+      "url": "https://search.brave.com/",
+      "feed": "",
+      "note": "Brave as a company aside, they claim that they do not filter, downrank or censor search results. They are building their own index of the Web so they do not rely on Google or Bing results."
+    },
+    {
+      "name": "Yep",
+      "url": "https://yep.com/",
+      "feed": "",
+      "note": "New search engine built from scratch. Claims to offer an unbiased, private search experience that rewards and compensates the makers behind the content..."
+    },
+    {
+      "name": "Stract",
+      "url": "https://stract.com/",
+      "feed": "",
+      "note": "Independent and open search. You can apply different optics to narrow down the types of page you're looking for."
+    },
+    {
+      "name": "Mwmbl",
+      "url": "https://mwmbl.org/",
+      "feed": "",
+      "note": "Mwmbl is a free search engine with a focus on freedom, user experience, and community. Results are provided by their own index and a touch of curation."
+    }
+  ],
+  "webDirectories": [
+    {
+      "name": "ooh.directory",
+      "url": "https://ooh.directory/",
+      "feed": "",
+      "note": "A collection of 2084+ blogs about every topic. "
+    },
+    {
+      "name": "Ye Olde Blogroll",
+      "url": "https://blogroll.org/",
+      "feed": "",
+      "note": "A humanly curated list of fine personal & independent blogs that are updated regularly. No algorithms ever!"
+    },
+    {
+      "name": "indieblog.page",
+      "url": "https://indieblog.page/",
+      "feed": "",
+      "note": "Randomly explore the IndieWeb"
+    },
+    {
+      "name": "personalsit.es",
+      "url": "https://personalsit.es/",
+      "feed": "",
+      "note": "A site to share and revel in personal websites."
+    },
+    {
+      "name": "i.webthings directory",
+      "url": "https://directory.joejenett.com/",
+      "feed": "",
+      "note": "A hand curated directory of websites to explore with a focus on the independent and noncommercial web."
+    },
+    {
+      "name": "Indieseek.xyz Indie Web Directory",
+      "url": "https://indieseek.xyz/links/",
+      "feed": "",
+      "note": "A human edited, Indieweb directory."
+    },
+    {
+      "name": "Kagi Small Web",
+      "url": "https://kagi.com/smallweb",
+      "feed": "",
+      "note": "A Stumble Upon like web surfing experience."
+    }
+  ]
+}

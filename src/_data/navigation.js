@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       text: 'Links',
-      url: '/Links/'
+      url: '/links/'
     },
     {
       text: 'Now',

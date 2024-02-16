@@ -1,0 +1,79 @@
+---
+title: Links
+description: A collection of links for websites and services that I find useful.
+layout: page
+permalink: /links/index.html
+masonry: true
+---
+
+<p>I hope you find what you're looking for.</p>
+
+<h2>Blogroll</h2>
+<p>Interesting websites with blogs that I subscribe to.</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.blogData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
+
+<h2>Cool Sites</h2>
+<p>Cool websites that aren't blogs that have interesting pages to get lost in.</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.coolSitesData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
+
+<h2>Web Development</h2>
+<p>Website useful for learning or keeping up with web development.</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.webDevelopmentData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
+
+<h2>Newsletters</h2>
+<p>Newsletters I read, you might find interesting too.</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.newsLettersData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
+
+<h2>Podcasts</h2>
+<p>Podcasts that I listen to and recommend.</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.podCastsData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
+
+<h2>Web Directories</h2>
+<p>Discovery is a huge part of the small and independent web, these directories are helping surface everyone's wonderful websites.</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.webDirectoriesData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
+
+<h2>Search Engines</h2>
+<p>Contary to popular belief, search exists outside of adtech, check out some of these search engines and avoid the blog spam.</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.searchEnginesData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
