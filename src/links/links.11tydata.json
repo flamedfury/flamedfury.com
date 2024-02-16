@@ -98,11 +98,7 @@
     },
     {
       "name": "Sara Joy",
-<<<<<<< HEAD
-      "url": "https://sarajoy.dev/basic/",
-=======
       "url": "https://sarajoy.dev",
->>>>>>> 9e8de89c5f1236b8ef15d76ee0990523df9f4350
       "feed": "https://sarajoy.dev/rss.xml",
       "note": "Sara is a web developer and mother. Maintains the CSS Joy webring. Enjoy our banter on Mastodon."
     }
