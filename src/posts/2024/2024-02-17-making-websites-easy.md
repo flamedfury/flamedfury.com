@@ -1,5 +1,5 @@
 ---
-title: Making Websites Shoud Be Easy
+title: Making Websites Should Be Easy
 description: Creating a website can be daunting, especially for if you're not a developer. This is a summary of a conversation with Sara Joy. Our vision is to make it easy for anyone to create a beautiful and functional website.
 tags:
   - web
