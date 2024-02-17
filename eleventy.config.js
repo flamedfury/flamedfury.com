@@ -34,6 +34,7 @@ const {allBookmarks} = require('./config/collections/index.js');
 
 // module import events
 const {svgToJpeg} = require('./config/events/index.js');
+const { updateOMGLol } = require('./config/events/index.js');
 
 // plugins
 
@@ -100,6 +101,9 @@ module.exports = eleventyConfig => {
     // this only runs in development, on your machine, so og images get installed fonts.
     eleventyConfig.on('eleventy.after', svgToJpeg);
   }
+  eleventyConfig.on('eleventy.after', async () => {
+    await updateOMGLol();
+  });
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
