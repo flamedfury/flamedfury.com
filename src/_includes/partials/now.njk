@@ -1,12 +1,40 @@
 <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
   <h2>Reading: books</h2>
   <div class="grid" style="--grid-min-item-size: 10rem">
+    {% set started_books_found = false %}
     {% for book in bookshelf | reverse %}
       {% if book.status == 'started' %}
+        {% set started_books_found = true %}
         <div class="flow">
           <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}" class="now__img">
         </div>
       {% endif %}
     {% endfor %}
+    {% if not started_books_found %}
+      <p>Not currently reading a book.</p>
+    {% endif %}
   </div>
 </article>
+
+<article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+  <h2>Playing: games</h2>
+  <div class="grid" style="--grid-min-item-size: 20rem">
+    <div class="flow">
+      <img src="../assets/images/pages/now/wow-dragon-flight.png" alt="An image of the cover art for the game World Of Warcraft: Dragonflight" class="now__img">
+      <div class="game-name">
+        <a href="https://worldofwarcraft.blizzard.com/en-us/" title="World Of Warcraft: Dragonflight">World Of Warcraft: Dragonflight</a>
+      </div>
+    </div>
+    {% for game in games %}
+      <div class="flow">
+        {% if game.coverArt %}
+          <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}" class="now__img">
+        {% endif %}
+        <div class="game-name">
+          <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}">{{ game.name }}</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</article>
+
