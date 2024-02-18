@@ -5,7 +5,7 @@ tags:
   - web
   - thoughts
 date: 2024-02-17
-redirectFrom: ['/posts/making-websites-should-be-easy/']
+redirectFrom: ['/posts/making-websites-shoud-be-easy/']
 ---
 
 Creating a website can be a daunting task, especially for non-developers. As someone well aware of the struggles with the process, I spoke with [Sara](https://sarajoy.dev/) on Mastodon about [simplifying the process of creating a website for non-developers](https://social.lol/@flamed/111730917308541254) on the back end of a recent post "[An Easy Web](/posts/an-easy-web)".
