@@ -2,7 +2,7 @@ module.exports = {
   url: process.env.URL || 'http://localhost:8080',
   siteName: 'Flamed Fury',
   siteDescription:
-    'fLaMEd\'s personal homepage.',
+    'fLaMEd\'s homepage. I write about the web and other stuff.',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
@@ -26,11 +26,13 @@ module.exports = {
     'Visible content: another website by fLaMed', // alt text for default meta image
   blog: {
     // RSS
-    name: 'Flamed Fury: Latest Posts',
+    name: 'The Weblog of fLaMEd',
     description:
       'I write about the web and other stuff.',
     // feed links are looped over in the head. You may add more to the array.
-    feedLinks: [{title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml'}],
+    feedLinks: [
+      {title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml'},
+      {title: 'Atom Feed', url: '/bookmarks-feed.xml', type: 'application/atom+xml'}],
     // Tags
     tagSingle: 'Tag',
     tagPlural: 'Tags',
@@ -41,6 +43,13 @@ module.exports = {
     paginationPrevious: 'Previous',
     paginationNext: 'Next',
     paginationNumbers: true
+  },
+  feeds: {
+    // Alternative RSS feeds
+    bookmarks: {
+      name:  'fLaMEd\'s Bookmarks',
+      description: 'A collection of interesting links from around the web'
+    }
   },
   details: {
     aria: 'section controls',
