@@ -1,40 +1,167 @@
-<article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
-  <h2>Reading: books</h2>
-  <div class="grid" style="--grid-min-item-size: 10rem">
-    {% set started_books_found = false %}
-    {% for book in bookshelf | reverse %}
-      {% if book.status == 'started' %}
-        {% set started_books_found = true %}
-        <div class="flow">
-          <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="An image of the book cover for the book {{ book.title }}" class="now__img">
-        </div>
-      {% endif %}
-    {% endfor %}
-    {% if not started_books_found %}
-      <p>Not currently reading a book.</p>
-    {% endif %}
-  </div>
-</article>
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% include 'svg/divider-soft-top.svg' %}
+  <section class="section__inner wrapper">
 
-<article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
-  <h2>Playing: games</h2>
-  <div class="grid" style="--grid-min-item-size: 20rem">
-    <div class="flow">
-      <img src="../assets/images/pages/now/wow-dragon-flight.png" alt="An image of the cover art for the game World Of Warcraft: Dragonflight" class="now__img">
-      <div class="game-name">
-        <a href="https://worldofwarcraft.blizzard.com/en-us/" title="World Of Warcraft: Dragonflight">World Of Warcraft: Dragonflight</a>
-      </div>
-    </div>
-    {% for game in games %}
-      <div class="flow">
-        {% if game.coverArt %}
-          <img src="{{ game.coverArt }}" alt="An image of the cover art for the game {{ game.name }}" class="now__img">
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Reading: books</h2>
+      <div class="grid" style="--grid-min-item-size: 10rem">
+        {% set started_books_found = false %}
+        {% for book in bookshelf | reverse %}
+          {% if book.status == 'started' %}
+            {% set started_books_found = true %}
+            <div class="">
+              <img
+                src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png"
+                alt="An image of the book cover for the book {{ book.title }}"
+                class="now__img"
+              />
+            </div>
+          {% endif %}
+        {% endfor %}
+        {% if not started_books_found %}
+          <p>Not currently reading a book.</p>
         {% endif %}
-        <div class="game-name">
-          <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}">{{ game.name }}</a>
-        </div>
       </div>
-    {% endfor %}
-  </div>
-</article>
+    </article>
 
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Playing: games</h2>
+      <div class="grid" style="--grid-min-item-size: 20rem">
+        <div class="flow">
+          <img
+            src="../assets/images/pages/now/wow-dragon-flight.png"
+            alt="An image of the cover art for the game World Of Warcraft: Dragonflight"
+            class="now__img"
+          />
+          <div class="game-name">
+            <a
+              href="https://worldofwarcraft.blizzard.com/en-us/"
+              title="World Of Warcraft: Dragonflight"
+              >World Of Warcraft: Dragonflight</a
+            >
+          </div>
+        </div>
+        {% for game in games %}
+          <div class="flow">
+            {% if game.coverArt %}
+              <img
+                src="{{ game.coverArt }}"
+                alt="An image of the cover art for the game {{ game.name }}"
+                class="now__img"
+              />
+            {% endif %}
+            <div class="game-name">
+              <a href="{{ game.steamUrl }}" title="{{ game.name | escape }}"
+                >{{ game.name }}</a
+              >
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Listening: artists</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for artist in artists %}
+          <div class="">
+            <a
+              href="{{ artist.url }}"
+              title="{{ artist.name | escape }}"
+              class="no-indicator"
+            >
+              <div class="now__artist">
+                <img
+                  src="{{ artist.image }}"
+                  alt="Photo of {{ artist.name }}"
+                  title="{{ artist.name }}"
+                  class="now__img now__artist-img"
+                />
+              </div>
+            </a>
+            <div class="artist-meta">
+              <p class="artist-name">{{ artist.name }}</p>
+              <p class="artist-plays">{{ artist.playcount }} plays</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Listening: albums</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for album in albums %}
+          <div class="">
+            <a href="{{ album.url }}" title="{{ album.name }}" class="no-indicator">
+              <div class="now__album">
+                <img
+                  src="{{ album.image }}"
+                  alt="The cover art for {{ album.name }}"
+                  class="now__img"
+                />
+              </div>
+            </a>
+            <div class="album-meta">
+              <p class="album-name">{{ album.name }}</p>
+              <p class="album-artist-name">{{ album.artist.name }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Watching: tv</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for show in tv %}
+          <div class="">
+            <a
+              href="https://trakt.tv/shows/{{ show.show.ids.slug }}"
+              title="{{ show.show.title }}"
+              class="no-indicator"
+            >
+              <img
+                src="{{ show.posterUrl }}"
+                alt="{{ show.show.title }}"
+                class="now__img"
+              />
+            </a>
+            <div class="show-meta">
+              <p class="show-title">{{ show.show.title }}</p>
+              <p class="show-episode-title">{{ show.episodeRange }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Watching: movies</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for movie in movies %}
+          <div class="">
+            <a
+              href="https://trakt.tv/movies/{{ movie.movie.ids.slug }}"
+              title="{{ movie.movie.title | escape }}"
+              class="no-indicator"
+            >
+              <img
+                src="{{ movie.posterUrl }}"
+                alt="{{ movie.movie.title }}"
+                class="now__img"
+              />
+            </a>
+            <div class="movie-meta">
+              <p class="movie-title">
+                {{ movie.movie.title }}
+                <span class="movie-date">({{ movie.movie.year }})</span>
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+  </section>
+  {% include 'svg/divider-soft-bottom.svg' %}
+</article>

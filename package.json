@@ -26,6 +26,7 @@
     "@11ty/eleventy-plugin-bundle": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "axios": "^1.6.7",
     "isomorphic-fetch": "^3.0.0",
     "markdown-it-eleventy-img": "^0.10.1",
     "normalize-url": "^6.1.0",
