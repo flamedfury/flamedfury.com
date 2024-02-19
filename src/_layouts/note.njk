@@ -1,0 +1,31 @@
+---
+layout: base
+schema: blog
+---
+
+<article class="region blog | h-entry" style="--region-space-top: var(--space-xl-2xl)">
+  <div class="wrapper flow prose">
+
+    <details hidden>
+      <h1 class="gradient-text | p-name">&nbsp;</h1>
+      <div class="p-author h-card">
+        <a rel="me" class="p-author h-card" href="{{ meta.authorWebsite }}">{{ meta.author }}</a>
+        <img class="u-photo" src="{{ meta.authorAvatar }}">
+      </div>
+      <a class="u-url" href="{{ absolutePostUrl }}">
+          {% set definedDate = date %} {% include "components/date.njk" %}
+      </a>
+    </details>
+
+    <blockquote>
+      <p>
+        In reply to <a class="h-cite u-in-reply-to" href="{{ reply }}">{{ reply }}</a>
+      </p>
+    </blockquote>
+
+    <div class="flow e-content">
+      {{ content | safe }}
+    </div>
+
+  </div>
+</article>
