@@ -31,26 +31,26 @@ updated: 2023-01-23
 <article class="full section" style="--spot-color: var(--color-bg-accent)">
   {% include 'svg/divider-soft-top.svg' %}
   <section class="section__inner wrapper">
-    {%- for item in vinyl.albums -%}
-    <a class="recordshelf-link" href="#{{ item.title | slug }}">
-      <h3 id="{{ item.title | slug }}">{{ item.title }}</h3>
+    {%- for record in vinyl.albums -%}
+    <a class="recordshelf-link" href="#{{ record.title | slug }}">
+      <h3 id="{{ record.title | slug }}">{{ record.title }}</h3>
     </a>
       <div class="recordshelf sidebar | mb-xl pb-xl">
-        <div class="flex place-content-center items-center">
-        {% eleventyImage item.image,
-          "the album cover for {{ item.title }}" %}
+        <div class="flex place-content-center records-center">
+        {% eleventyImage record.image,
+          "the album cover for {{ record.title }}" %}
         </div>
         <div class="flex flex-wrap content-center">
         <p class="uppercase">
-          Artist: {{ item.artist }}</p>
-          <p class="uppercase">Info: {{ item.format }} / {{ item.year }}, {{ item.genre }}</p>
-          <p class="uppercase">Label: {{ item.label }}
-            {{ item.code }}</p>
-          <p class="uppercase">Release: {{ item.varient }}
-            {{ item.number }}</p>
+          Artist: {{ record.artist }}</p>
+          <p class="uppercase">Info: {{ record.format }} / {{ record.year }}, {{ record.genre }}</p>
+          <p class="uppercase">Label: {{ record.label }}
+            {{ record.code }}</p>
+          <p class="uppercase">Release: {{ record.varient }}
+            {{ record.number }}</p>
         </p>
         <p>
-          {{ item.comment }}
+          {{ record.comment }}
         </p>
         </div>
       </div>
