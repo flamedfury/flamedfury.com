@@ -27,10 +27,19 @@ const allBookmarks = collection => {
   return bookmarks;
 };
 
+//** Function to filter posts for the feed based on date */
+const filterFeedPosts = collection => {
+  const postsAfterDate = collection.getFilteredByGlob('./src/posts/**/*.md')
+    .filter(post => new Date(post.date) >= new Date('2023-01-01')) // Filter posts after 2023-01-01
+    .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort in descending order by date
+  return postsAfterDate.slice(0, 10); // Return the 10 most recent posts
+};
+
 
 module.exports = {
   getAllPosts,
   onlyMarkdown,
   tagList,
-  allBookmarks
+  allBookmarks,
+  filterFeedPosts
 };
