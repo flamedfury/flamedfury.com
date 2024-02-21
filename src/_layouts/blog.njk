@@ -1,20 +1,9 @@
 ---
-layout: base
+layout: page
 masonry: true
 ---
 
-<article class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-primary)">
-    <div
-      class="section__inner flow region"
-      style="--region-space-top: var(--space-xl-2xl)"
-    >
-      <h1 class="text-center text-base-light">{{ title }}</h1>
-    </div>
-    {% include 'svg/divider-edgy.svg' %}
-  </header>
-
-	<div class="region flow prose"  style="--region-space-top: var(--space-xl-2xl)">
+	<div class="region flow prose" style="--region-space-top: var(--space-l)">
       {{ content | safe }}
   </div>
 

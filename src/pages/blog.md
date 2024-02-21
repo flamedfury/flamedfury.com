@@ -9,4 +9,4 @@ permalink: 'posts/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumbe
 masonry: true
 ---
 
-This blog has a pagination of {{ pagination.size }} posts per page.
+Welcome to my weblog. Dive in or browse by [tag](/tags/).
