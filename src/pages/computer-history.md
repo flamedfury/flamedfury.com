@@ -1,6 +1,6 @@
 ---
 title: Gaming PC History
-layout: post
+layout: page
 permalink: /computerhistory/index.html
 description: "I love computer games, and I love building computers. On this page, I take a trip down memory lane and try to remember all the computers I have assembled over the years."
 tags:
@@ -19,7 +19,7 @@ I am very happy with this machine; however, it's a pain moving downstairs to the
 - Motherboard: ASUS ROG STRIX B550-F GAMING WIFI II
 - RAM: Corsair CMW16GX4M2C3200C16 Vengeance RGB PRO 16GB (2x 8GB)
 - Cooler: NZXT Kraken Z63 Liquid Cooler 280MM
-- GPU: # ZOTAC GeForce RTX 3080 Ti Trinity OC 12GB
+- GPU: ZOTAC GeForce RTX 3080 Ti Trinity OC 12GB
 - Storage: Samsung 970 EVO 1TB M.2 NVMe
 - PSU: Corsair RM1000X 2021
 - Case: NZXT H510 Flow
