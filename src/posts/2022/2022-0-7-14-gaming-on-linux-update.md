@@ -3,7 +3,7 @@ title: Gaming on Linux Update
 description: How I'm dealing with a dying graphics card
 tags:
   - gaming
-date: 2020-07-14
+date: 2022-07-14
 ---
 
 I was never sure how I was going to handle or record updates to the [Gameshelf](/gameshelf/) page so figured this would be the best place to do that.
