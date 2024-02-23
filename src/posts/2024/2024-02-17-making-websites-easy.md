@@ -30,8 +30,4 @@ Over at the [32-Bit Cafe](https://32bit.cafe/), we have a beginner's guide to [c
 
 Sara got to work straight away on two templates; check out [LinkFae](https://codepen.io/sarajw/pen/rNRWgVv) and [Website](https://codepen.io/sarajw/pen/oNVzvgg) simple templates. And I know [Blake](https://blakewatson.com/) has started working on something similar, I can't wait to see how this space progresses. 
 
-<<<<<<< HEAD
 I'll get to work on the fan site templates soon, promise.
-=======
-I'll get to work on the fan site templates soon, promise.
->>>>>>> 2402
