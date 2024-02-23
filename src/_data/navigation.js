@@ -21,10 +21,6 @@ module.exports = {
       url: '/uses/'
     },
     {
-      text: 'Tags',
-      url: '/tags/'
-    },
-    {
       text: 'Feeds',
       url: '/feeds/'
     }
@@ -35,8 +31,16 @@ module.exports = {
       url: '/contact/'
     },
     {
+      text: 'History',
+      url: '/history/'
+    },
+    {
       text: 'Buttons',
       url: '/buttons/'
+    },
+    {
+      text: 'Tags',
+      url: '/tags/'
     },
     {
       text: 'PSA',
@@ -44,7 +48,7 @@ module.exports = {
     },
     {
       text: 'SOA',
-      url: '/soa/'
+      url: '/statement-of-audience/'
     },
     {
       text: 'Privacy',
