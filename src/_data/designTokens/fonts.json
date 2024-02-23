@@ -12,10 +12,7 @@
       "description": "Base font stack for body text.",
       "value": [
         "Figtree",
-        "Optima",
-        "Candara",
-        "Noto Sans",
-        "source-sans-pro",
+        "system-ui",
         "sans-serif"
       ]
     },
