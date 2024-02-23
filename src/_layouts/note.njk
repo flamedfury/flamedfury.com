@@ -3,7 +3,7 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog | h-entry">
+<article class="region blog | h-entry" style="--region-space-top: var(--space-xl-2xl)">
   <div class="wrapper flow prose">
 
     <details hidden>
@@ -13,7 +13,7 @@ schema: blog
         <img class="u-photo" src="{{ meta.authorAvatar }}">
       </div>
       <a class="u-url" href="{{ absolutePostUrl }}">
-        {% include "partials/date.njk" %}
+          {% set definedDate = date %} {% include "components/date.njk" %}
       </a>
     </details>
 
@@ -29,5 +29,3 @@ schema: blog
 
   </div>
 </article>
-
-{% include "partials/webmentions.njk" %}

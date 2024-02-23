@@ -4,16 +4,18 @@
   Low-specificity, global styles that apply to the whole
   project: https://cube.fyi/css.html
 */
+
 body {
-  color: var(--color-light);
-  background-color: var(--color-dark);
-  font-size: var(--size-step-1);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-size: var(--size-step-0);
   font-family: var(--font-base);
-  font-weight: 400;
   line-height: 1.4;
   letter-spacing: var(--tracking);
   display: flex;
   flex-direction: column;
+  font-weight: var(--font-medium);
+  accent-color: var(--color-primary);
 }
 
 main {
@@ -21,22 +23,17 @@ main {
 }
 
 /* Base typesetting */
-h1{
-  line-height: 1;
+h1,
+h2,
+h3 {
+  line-height: 1.2;
   letter-spacing: var(--tracking-s);
+  font-weight: var(--font-bold);
   font-family: var(--font-display);
 }
 
-h2,
-h3 {
-  line-height: 1;
-  letter-spacing: var(--tracking-s);
-  font-family: var(--font-base);
-  font-weight: 700;
-}
-
 h1 {
-  font-size: var(--size-step-5);
+  font-size: var(--size-step-6);
 }
 
 h2 {
@@ -44,26 +41,20 @@ h2 {
 }
 
 h3 {
-  font-size: var(--size-step-3);
+  font-size: var(--size-step-2);
 }
 
 /* Set line lengths */
 p,
 li,
 blockquote:not([class]) {
-  max-inline-size: 50ch;
-}
-
-h1,
-h2,
-h3 {
-  max-inline-size: 20ch;
+  max-inline-size: 65ch;
 }
 
 blockquote {
-  border-inline-start: 0.8rem solid var(--color-primary);
+  border-inline-start: 0.5rem solid var(--color-primary);
   padding: var(--space-m-l);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-2);
 }
 
 blockquote > * + * {
@@ -73,7 +64,7 @@ blockquote > * + * {
 blockquote :last-child {
   font-family: var(--font-base);
   font-style: normal;
-  font-size: var(--size-step-2);
+  font-size: var(--size-step-1);
 }
 
 svg {
@@ -82,60 +73,45 @@ svg {
   flex: none;
 }
 
+strong {
+  font-weight: var(--font-extra-bold);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 10%;
+  margin-block: var(--space-m-l);
+  margin-inline-start: 0;
+  background-color: var(--color-bg-accent-2);
+}
+
 [role='list'] {
   padding: 0;
 }
 
-article [href^='http']:not([href*='flamedfury.com']):not(.no-indicator) {
-  padding-inline-end: 0.8em;
+ol li::marker {
+  color: var(--color-primary);
 }
 
-article [href^='http']:not([href*='flamedfury.com']):not(.no-indicator)::after {
-  position: absolute;
-  display: inline-block;
-  inline-size: 1em;
-  block-size: 1em;
-  background-image: url('/assets/images/icn-external.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60% auto;
-  /* alternative text rules */
-  content: '(external link)';
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
-}
+/* Base interactive elements */
 
 a {
   color: currentcolor;
-  font-weight: bold;
-}
-
-article a {
-  color: var(--color-primary);
+  text-decoration-thickness: 0.08em;
 }
 
 a:hover {
   text-decoration: none;
-  color: transparent;
-  background: radial-gradient(rgb(220, 38, 38), rgb(234, 88, 12), rgb(202, 138, 4));
-  background-size: 50%;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
-:focus {
-  color: transparent;
-  background: radial-gradient(rgb(220, 38, 38), rgb(234, 88, 12), rgb(202, 138, 4));
-  background-size: 50%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  outline: 3px dashed var(--color-primary);
+article p a {
+  color: var(--color-primary);
+}
+
+:focus-visible {
+  outline: 3px solid;
   outline-offset: 0.3ch;
-}
-
-:target {
-  scroll-margin-top: 2ex;
 }
 
 main:focus {
@@ -144,39 +120,25 @@ main:focus {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-light);
-  color: var(--color-dark);
+  background-color: var(--color-text);
+  color: var(--color-bg);
 }
 
 .preload-transitions * {
   transition: none !important;
 }
 
-/* Base heading colours */
-h1,
-h2,
-h3,
-h4 {
-  color: var(--color-primary);
-}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-header h1 {
-  color: var(--color-light);
-}
-
-time,
-.meta {
-  font-size: var(--size-step-0);
-  opacity: 0.8;
-}
-
-figcaption {
-  font-size: var(--size-step-0);
-  opacity: 0.8;
-  text-align: center;
-}
-
-iframe {
-	width: 100%;
-	aspect-ratio: 4 / 2;
+  *,
+  ::after,
+  ::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

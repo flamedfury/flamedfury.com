@@ -11,4 +11,4 @@ I've been playing around with Mastodon and you can find me over on social.lol as
 
 If email isn’t your thing you can fill out the contact form below and I’ll do my best to get back to you.
 
-{% include "partials/contact-form.njk" %}
+{% include 'partials/contact.njk' %}

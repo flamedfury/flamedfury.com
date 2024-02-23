@@ -76,7 +76,7 @@ code .
 
 You should now be in VSCode with the following project structure:
 
-{% imagePlaceholder "./src/assets/images/guides/11ty-home-page-neocities-vscode.png", "A view of what your VSCode project should look like", "VSCode Project Structure" %}
+{% eleventyImage "./src/assets/images/posts/2022/11ty-home-page-neocities-vscode.png", "A view of what your VSCode project should look like", "VSCode Project Structure" %}
 
 Open `packages.json` and update the scriptions section to the following:
 
@@ -234,7 +234,7 @@ If everything has been configured right so far you should see the following:
 Now you can open up `http://localhost:8080` and check out your new 11ty homepage! It should look like this:
 
 
-{% imagePlaceholder "./src/assets/images/guides/11ty-home-page-neocities-homepage-001.png", "A view of what your index file should look like", "A Basic Hello World HTML Page" %}
+{% eleventyImage "./src/assets/images/posts/2022/11ty-home-page-neocities-homepage-001.png", "A view of what your index file should look like", "A Basic Hello World HTML Page" %}
 
 Amazing! But what we want to avoid is having to write out the `<html>` and `<head>` and `<body>` tags on each and every page, and be able to include a site header, navigation and footer so we don't have to copy and paste the changes across every page each time we update.
 
@@ -310,7 +310,7 @@ layout: base.njk
 
 If you've kept 11ty running and the broswer running it should look like this:
 
-{% imagePlaceholder "./src/assets/images/guides/11ty-home-page-neocities-homepage-002.png", "A view of what your index file should look like now that you're using a tempalte", "A Basic Hello World HTML Page Using a Template" %}
+{% eleventyImage "./src/assets/images/posts/2022/11ty-home-page-neocities-homepage-002.png", "A view of what your index file should look like now that you're using a tempalte", "A Basic Hello World HTML Page Using a Template" %}
 
 Amazing! Now lets create the additional pages for our homepage.
 
@@ -440,7 +440,7 @@ base.njk:
 
 If you've kept 11ty running and the broswer running it should look like this:
 
-{% imagePlaceholder "./src/assets/images/guides/11ty-home-page-neocities-homepage-003.png", "A view of what your index file should look like now that you've added your partial tempalte files", "A Basic Hello World HTML Page Using a Template and Partials" %}
+{% eleventyImage "./src/assets/images/posts/2022/11ty-home-page-neocities-homepage-003.png", "A view of what your index file should look like now that you've added your partial tempalte files", "A Basic Hello World HTML Page Using a Template and Partials" %}
 
 Amazing! Now lets add the blog.
 
@@ -576,7 +576,7 @@ These are all of my amazing blog posts, enjoy!
 If you've kept 11ty running and the broswer running it should look like this:
 
 
-{% imagePlaceholder "./src/assets/images/guides/11ty-home-page-neocities-homepage-004.png", "A view of what your blog page should look like", "A Basic Blog List Page" %}
+{% eleventyImage "./src/assets/images/posts/2022/11ty-home-page-neocities-homepage-004.png", "A view of what your blog page should look like", "A Basic Blog List Page" %}
 
 Amazing huh?
 
@@ -826,7 +826,7 @@ Just make sure you put all your static files in the appropriate directory and yo
 
 So finally, if you've kept 11ty running and the broswer running it should look like this:
 
-{% imagePlaceholder "./src/assets/images/guides/11ty-home-page-neocities-homepage-005.png", "A view of what your blog page should look like with the stylesheet applied", "A Nicely Styled Homepage" %}
+{% eleventyImage "./src/assets/images/posts/2022/11ty-home-page-neocities-homepage-005.png", "A view of what your blog page should look like with the stylesheet applied", "A Nicely Styled Homepage" %}
 
 Amazing! Now if you're happy with that you can take the contents of the `public` directory and upload those to Neocities, however, the key thing in this is automating the rest with Github and the Neocities API - check again soon for the next parts where we will do just that.
 

@@ -9,7 +9,7 @@ date: 2024-01-14
 
 This post is a week late. I wrapped up Season Three officially at the end of last week's raid where we completed the [Glory of the Dream Raider](https://www.wowhead.com/achievement=19349/glory-of-the-dream-raider) achievement.
 
-{% imagePlaceholder "./src/assets/images/posts/2024/2024-01-14-glory-of-the-heroic-raider.jpg", "Player characters in the game World Of Warcraft standing around the defeated boss, Fyrakk The Blazing", "Glory Of The Dream Raiders" %}
+{% eleventyImage "./src/assets/images/posts/2024/2024-01-14-glory-of-the-heroic-raider.jpg", "Player characters in the game World Of Warcraft standing around the defeated boss, Fyrakk The Blazing", "Glory Of The Dream Raiders" %}
 
 With my guild, [Ascent](https://raider.io/ascent) we achieved [Ahead of the Curve: Fyrakk the Blazing](https://www.wowhead.com/achievement=19350/ahead-of-the-curve-fyrakk-the-blazing), on 2023-12-17. This was our best tier yet, completing the raid on heroic difficulty 5 weeks after release. 
 

@@ -14,11 +14,10 @@ needs to be to allow items to sit inline with each other
 --switcher-vertical-alignment How items should align vertically.
 Can be any acceptable flexbox alignment value.
 */
-
 .switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gutter, var(--space-size-1));
+  gap: var(--gutter, var(--space-s-l));
   align-items: var(--switcher-vertical-alignment, flex-start);
 }
 

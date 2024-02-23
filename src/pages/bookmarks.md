@@ -1,7 +1,9 @@
 ---
 title: Bookmarks
-layout: bookmarks.njk
+layout: page
+type: bookmarks
 permalink: /bookmarks/index.html
+masonry: true
 ---
 
-A collection of interesting articles that I have read.
+Interesting links from around the web!

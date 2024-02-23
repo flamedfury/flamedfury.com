@@ -11,9 +11,9 @@ date: 2023-04-26
 
 This release of Ol' Dirty Bastard's debuet release from 1996 features two picture disc vinyls and features remastered versions of the songs.
 
-{% imagePlaceholder "./src/assets/images/posts/2023-04-26-odb-rsd-front.jpeg", "A photo of the front cover of the vinyl record Return To The 36 Chambers: The Dirty Version by Ol' Dirty Bastard", "Return To The 36 Chambers: The Dirty Version" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-04-26-odb-rsd-front.jpeg", "A photo of the front cover of the vinyl record Return To The 36 Chambers: The Dirty Version by Ol' Dirty Bastard", "Return To The 36 Chambers: The Dirty Version" %}
 
-{% imagePlaceholder "./src/assets/images/posts/2023-04-26-odb-rsd-back.jpeg", "A photo of the back cover of the vinyl record Return To The 36 Chambers: The Dirty Version by Ol' Dirty Bastard", "Return To The 36 Chambers: The Dirty Version" %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-04-26-odb-rsd-back.jpeg", "A photo of the back cover of the vinyl record Return To The 36 Chambers: The Dirty Version by Ol' Dirty Bastard", "Return To The 36 Chambers: The Dirty Version" %}
 
 > The late Wu-Tang Clan icon’s debut solo album, Return To The 36 Chambers: The Dirty Version, was one of the most anticipated releases of 1996, and it didn’t disappoint: spin-off hits Brooklyn Zoo and Shimmy Shimmy Ya provided excellent showcases for what Rolling Stone called ODB’s “raspy, lisp-punctuated voice and half-sung, half-rapped style”. Return To The 36 Chambers cracked the Top 10 of the Billboard 200, and fans will to return to the album once more this Record Store Day, for an exclusive 2LP picture-disc pressing.
 

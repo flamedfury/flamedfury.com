@@ -2,13 +2,14 @@ const markdownIt = require('markdown-it');
 const markdownItPrism = require('markdown-it-prism');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItClass = require('@toycode/markdown-it-class');
-const markdownItTocDoneRight = require('markdown-it-toc-done-right');
 const markdownItLinkAttributes = require('markdown-it-link-attributes');
-const markdownItEmoji = require('markdown-it-emoji');
+const markdownItEmoji = require('markdown-it-emoji').full;
+const markdownItEleventyImg = require('markdown-it-eleventy-img');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownitMark = require('markdown-it-mark');
 const markdownitAbbr = require('markdown-it-abbr');
 const {slugifyString} = require('../utils');
+const path = require('path');
 
 const markdownLib = markdownIt({
   html: true,
@@ -31,15 +32,6 @@ const markdownLib = markdownIt({
     ol: 'list',
     ul: 'list'
   })
-  .use(markdownItTocDoneRight, {
-    placeholder: `{:toc}`,
-    slugify: slugifyString,
-    containerId: 'toc',
-    listClass: 'toc-list',
-    itemClass: 'toc-item',
-    linkClass: 'toc-link',
-    listType: 'ol'
-  })
   .use(markdownItLinkAttributes, [
     {
       // match external links
@@ -47,12 +39,28 @@ const markdownLib = markdownIt({
         return href.match(/^https?:\/\//);
       },
       attrs: {
-        target: '_blank',
         rel: 'noopener'
       }
     }
   ])
   .use(markdownItEmoji)
+  .use(markdownItEleventyImg, {
+    imgOptions: {
+      widths: [440, 880, 1024],
+      urlPath: '/assets/images/',
+      outputDir: './dist/assets/images/',
+      formats: ['webp', 'jpeg']
+    },
+    globalAttributes: {
+      loading: 'lazy',
+      decoding: 'async',
+      sizes: '90vw'
+    },
+		// prepend src for markdown images
+    resolvePath: (filepath, env) => {
+      return path.join('src', filepath);
+    }
+  })
   .use(markdownItFootnote)
   .use(markdownitMark)
   .use(markdownitAbbr);

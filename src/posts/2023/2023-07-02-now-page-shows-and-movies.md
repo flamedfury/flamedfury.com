@@ -66,7 +66,7 @@ module.exports = async function () {
 
 Great, I could retrieve the same metadata but displaying it was still a boring unordered list with orange hyperlinks. 
 
-{% imagePlaceholder "./src/assets/images/posts/2023-07-02-now-page-trakt-before.png", "A screenshot of my now page showing my recently watched tv shows and movies in an unordered list." %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-07-02-now-page-trakt-before.png", "A screenshot of my now page showing my recently watched tv shows and movies in an unordered list." %}
 
 But where to get our images from? There are a few options to choose from, [The Movie DB](https://themoviedb.org) (TMDB), [TheTVDB](https://thetvdb.com/) (TVDB), [Fanart.tv](https://fanart.tv/), and [Open Media Database](https://www.omdb.org) (OMDB). 
 
@@ -243,6 +243,6 @@ I can use `show.posterUrl` to display the poster image in my Nunjucks loop.
 
 The result is a much nicer looking /now page.
 
-{% imagePlaceholder "./src/assets/images/posts/2023-07-02-now-page-trakt-after.png", "A screenshot of my now page showing my recently watched tv shows and movies in a grid display, now with beautiful poster art from TMDB.org." %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-07-02-now-page-trakt-after.png", "A screenshot of my now page showing my recently watched tv shows and movies in a grid display, now with beautiful poster art from TMDB.org." %}
 
 I hope that this post has helped explain how I achieved this and that you are okay with that I used ChatGPT to help me accomplish it. Please look through and [contact me](/contact/) if I need to correct anything. I'm always looking forward to improving my website overall. 

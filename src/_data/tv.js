@@ -88,5 +88,5 @@ module.exports = async function () {
     return 0;
   });
 
-  return shows.slice(0, 8);
+  return shows.slice(0, 4);
 };

@@ -1,36 +1,32 @@
 ---
-layout: base
+layout: page
+masonry: true
 ---
 
-<header class="section spot-color-primary">
-  {% include 'svg/divider-edgy.svg' %}
-  <div class="section__inner region">
-    <div class="wrapper flow">
-      <section class="prose text-center">
-        <h1 class="fade-in">{{ title }}</h1>
-      </section>
-    </div>
-  </div>
-  {% include 'svg/divider-edgy.svg' %}
-</header>
-
-<article class="wrapper region">
-  <div class="wrapper flow prose">
-    {{ content | safe }}
+	<div class="region flow prose" style="--region-space-top: var(--space-l)">
+      {{ content | safe }}
   </div>
 
-  <!--[ writing stream. ]-->
-  <ul class="grid mt-l-xl" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist %}
-
-    <li class="card flow overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
-    {% endfor %}
+  <ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+    <!-- loop posts -->
+    {% set itemList = pagination.items %} {% for item in itemList %}
+    <!-- activate tags -->
+    {% set activateTags = true %}
+    <!-- set date context -->
+    {% set definedDate = item.date %}
+    <!-- set heading context -->
+    {% set headingContext = "h2" %}
+    <!-- include card -->
+    {% include 'components/card.njk' %} {% endfor %}
   </ul>
+
+  <!-- set collection to paginate -->
+  {% set collectionToPaginate = collections.posts %}
+  <!-- set target pagination settings in meta.js -->
+  {% set metaKey = "blog" %}
+  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
+  {% if collectionToPaginate.length > pagination.size %}
+  <!-- include pagination -->
+  {% include 'components/pagination.njk' %} {% endif %}
+
 </article>

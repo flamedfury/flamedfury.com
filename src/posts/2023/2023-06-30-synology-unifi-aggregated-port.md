@@ -19,7 +19,7 @@ The [Synology DS923+](/posts/synology-ds923/) features two RJ-45 1GbE LAN Ports 
 * Click **apply** to save the changes.
 * The new interface **Bond 1** will be displayed the **Network Interface** list.
 
-{% imagePlaceholder "./src/assets/images/posts/2023-06-30-synology-bonded-interface.png", "A screenshot showing the newly created interface Bond 1 in the Synology DSM control panel." %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-06-30-synology-bonded-interface.png", "A screenshot showing the newly created interface Bond 1 in the Synology DSM control panel." %}
 
 ## Unifi switch
 
@@ -30,6 +30,6 @@ The [Synology DS923+](/posts/synology-ds923/) features two RJ-45 1GbE LAN Ports 
 * Leave Link Speed set to **Auto-negotiate**
 * Click **Apply Changes** to save the changes.
 
-{% imagePlaceholder "./src/assets/images/posts/2023-06-30-unifi-aggregated-ports.png", "A screenshot showing ports 15 and 16 in aggregation mode on a Unifi US-16-150W network switch." %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-06-30-unifi-aggregated-ports.png", "A screenshot showing ports 15 and 16 in aggregation mode on a Unifi US-16-150W network switch." %}
 
 With Link Aggregation enabled, the network traffic will be automatically adjusted and balanced for each connected device. It doesn't increase the bandwidth per device beyond the 110 MB/s over Gigabit ethernet. However, multiple concurrent users can achieve higher bandwidth by utilising both ethernet links simultaneously.

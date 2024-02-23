@@ -1,11 +1,11 @@
 ---
 title: Bookshelf
 description: I love reading books and have forever. This page collects the books that I've read since I started tracking them.
-layout: bookshelf.njk
+layout: page
+type: bookshelf
 permalink: /bookshelf/index.html
-category: collections
 date: 2021-02-22
-updated: 2023-05-29
+updated: 2024-02-20
 ---
 
 Welcome to my bookshelf, where you can find a collection of all the books I have read and the ones I am excited to read. [As someone who has been reading throughout my life](/posts/reading-adventures/), I have always been fascinated by the power of books to transport us to different worlds, teach us new things, and awaken our imaginations.

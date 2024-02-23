@@ -1,10 +1,11 @@
 ---
 permalink: /index.html
-title: ' Flamed Fury'
-description: 'The personal homepage of fLaMEd. I love the web and love to write about it.'
+title: 'Flamed Fury'
+description: 'The personal website of fLaMEd. I love the web.'
 layout: 'home'
-welcome: 
-  title: What's going on Internet?
+blog:
+  title: 'Recent Posts'
+  intro: "These are my most recent posts. More are available to read on the posts page."
 ---
 
 ## What's going on Internet?

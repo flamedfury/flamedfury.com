@@ -1,40 +1,47 @@
 ---
 layout: base
+masonry: true
 ---
-<!--[ comment ]-->
-<header class="section spot-color-primary">
-  {% include 'svg/divider-edgy.svg' %}
-  <div class="section__inner region">
-    <div class="wrapper flow prose">
-      <h1 class="text-center title-text">{{ title }}</h1>
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
+    {% include 'svg/divider-melty.svg' %}
+    <div class="section__inner flow region">
+      <h1 class="text-center text-base-light site-title">{{ title }}</h1>
     </div>
-  </div>
-  {% include 'svg/divider-edgy.svg' %}
-</header>
+    {% include 'svg/divider-melty.svg' %}
+  </header>
 
-<article class="region wrapper flow prose">
-  {{ content | safe }}
-</article>
+  <article class="full | region">
+    <div class="wrapper flow prose">
+      {{ content | safe }}
+    </div>
+  </article>
 
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
-    <h2>Recent posts</h2>
-    <p>These are my most recent posts. More are available to read on the <a href="posts">posts page</a>.</p>
-  </div>
+  <section class="full | region">
+    <div class="wrapper flow prose">
+      <h2>{{ blog.title }}</h2>
+      <!-- blog intro text is optional. -->
 
-  <ul class="wrapper grid mt-l-xl" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %}
-    {% for post in postslist.slice(0, 6) %}
+      {% if blog.intro %}
+      <p>{{ blog.intro }}</p>
+      {% endif %}
 
-      <li class="card flow overflow-hidden">
-        <h3>
-          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </h3>
-        {% set definedDate = post.date %}
-        {% include "partials/date.njk" %}
-        <p>{{ post.data.description }}</p>
-      </li>
-
-    {% endfor %}
-  </ul>
-</article>
+      <ul
+        class="feature | grid region"
+        role="list"
+        data-rows="masonry"
+        data-layout="50-50"
+      >
+        <!-- loop posts -->
+        {% set itemList = collections.posts %} {% for item in itemList.slice(0, 6) %}
+        <!-- activate tags -->
+        {% set activateTags = true %}
+        <!-- set heading context -->
+        {% set headingContext = "h3" %}
+        <!-- card -->
+        {% include 'components/card.njk' %} {% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>

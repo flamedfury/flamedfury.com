@@ -2,13 +2,11 @@ const slugify = require('slugify');
 
 /** Converts string to a slug form. */
 const slugifyString = str => {
-  const slug = slugify(str, {
+  return slugify(str, {
     replacement: '-',
-    remove: /[#,&,+()$~%.'":*?<>{}]/g,
+    remove: /[#,&,+()$~%.'":*¿?¡!<>{}]/g,
     lower: true
   });
-
-  return slug.replace(/\//g, '-');
 };
 
 /** throw an error if the provided argument is not of the expected. */

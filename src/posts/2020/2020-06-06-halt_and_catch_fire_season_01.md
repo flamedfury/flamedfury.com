@@ -7,7 +7,7 @@ tags:
 date: 2020-06-06
 ---
 
-{% imagePlaceholder "./src/assets/images/posts/2020/halt_and_catch_fire_season01.jpg", "Gordon, Cameron, and Joe looking at what's happening", "Gordon, Cameron, and Joe looking at what's happening. - thetvdb.com" %}
+{% eleventyImage "./src/assets/images/posts/2020/halt_and_catch_fire_season01.jpg", "Gordon, Cameron, and Joe looking at what's happening", "Gordon, Cameron, and Joe looking at what's happening. - thetvdb.com" %}
 
 
 Sat down last week with my brother and watched season 1 of Halt and Catch Fire over a few days. 

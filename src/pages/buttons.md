@@ -14,9 +14,9 @@ Even though these buttons are too small to be functional on modern high-resoluti
 <img src="flamedfury.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
 ```
 
-<div class="sidebar region">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
-    <img src="/assets/images/explore/buttons/flamedfury.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
+<div class="sidebar">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
+    <img src="/assets/images/buttons/flamedfury.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
     <p>
@@ -24,9 +24,9 @@ Even though these buttons are too small to be functional on modern high-resoluti
     </p>
   </div>
 </div>
-<div class="sidebar region">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
-    <img src="/assets/images/explore/buttons/flamedfury2.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
+<div class="sidebar">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
+    <img src="/assets/images/buttons/flamedfury2.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
     <p>
@@ -34,9 +34,9 @@ Even though these buttons are too small to be functional on modern high-resoluti
     </p>
   </div>
 </div>
-<div class="sidebar region">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
-    <img src="/assets/images/explore/buttons/fury.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
+<div class="sidebar">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
+    <img src="/assets/images/buttons/fury.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
     <p>
@@ -44,9 +44,9 @@ Even though these buttons are too small to be functional on modern high-resoluti
     </p>
   </div>
 </div>
-<div class="sidebar region">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
-    <img src="/assets/images/explore/buttons/flamedfurybutton.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
+<div class="sidebar">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
+    <img src="/assets/images/buttons/flamedfurybutton.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
     <p>
@@ -54,9 +54,9 @@ Even though these buttons are too small to be functional on modern high-resoluti
     </p>
   </div>
 </div>
-<div class="sidebar region">
-  <div class="centered" style="--sidebar-target-width: 10rem;">
-    <img src="/assets/images/explore/buttons/flamedfury22.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
+<div class="sidebar">
+  <div class="flex place-content-center items-center" style="--sidebar-target-width: 10rem;">
+    <img src="/assets/images/buttons/flamedfury22.gif" width="88px" height="31px" alt="" title="Visit Flamed Fury Now!">
   </div>
   <div style="--sidebar-content-min-width:75%">
     <p>

@@ -21,26 +21,26 @@ module.exports = {
       url: '/uses/'
     },
     {
-      text: 'Tags',
-      url: '/tags/'
-    },
-    {
       text: 'Feeds',
       url: '/feeds/'
     }
   ],
   bottom: [
     {
-      text: 'Back to top',
-      url: '#top'
-    },
-    {
       text: 'Contact',
       url: '/contact/'
     },
     {
+      text: 'History',
+      url: '/history/'
+    },
+    {
       text: 'Buttons',
       url: '/buttons/'
+    },
+    {
+      text: 'Tags',
+      url: '/tags/'
     },
     {
       text: 'PSA',
@@ -55,12 +55,8 @@ module.exports = {
       url: '/privacy/'
     },
     {
-      text: 'Proven',
-      url: 'https://proven.lol/d9f26b'
-    },
-    {
-      text: 'Style Guide',
-      url: '/styleguide'
+      text: 'Styleguide',
+      url: '/styleguide/'
     }
   ]
 };

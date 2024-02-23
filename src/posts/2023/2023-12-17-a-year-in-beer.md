@@ -5,7 +5,7 @@ tags:
   - beer
 date: 2023-12-17
 updated: 2024-01-07
-layout: untappd.njk
+type: untappd
 ---
 
 I've been tracking the beers I drink in [Untappd](https://untappd.com/) since 2013. Like many companies, Untappd also produce an end of year look back that I thought would be fun to share here on my own website.
@@ -129,14 +129,8 @@ input::placeholder, textarea::placeholder {
   cursor: default
 }
 
-audio, canvas, embed, iframe, img, object, svg, video {
-  display: block;
-  vertical-align: middle
-}
-
-img, video {
-  max-width: 100%;
-  height: auto
+.post img  {
+  aspect-ratio: auto;
 }
 
 [hidden] {

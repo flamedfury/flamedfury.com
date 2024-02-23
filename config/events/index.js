@@ -1,33 +1,41 @@
+// https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
+// https://github.com/sophiekoonin/localghost/blob/main/src/plugins/og-to-png.js
+// converts SVG to JPEG for open graph images
+
+const fsPromises = require('fs/promises');
 const fs = require('fs');
+const path = require('path');
 const Image = require('@11ty/eleventy-img');
+const ogImagesDir = './src/assets/og-images';
+
+const svgToJpeg = async function () {
+  const socialPreviewImagesDir = 'dist/assets/og-images/';
+  const files = await fsPromises.readdir(socialPreviewImagesDir);
+  if (files.length > 0) {
+    files.forEach(function (filename) {
+      const outputFilename = filename.substring(0, filename.length - 4);
+      if (
+        filename.endsWith('.svg') & !fs.existsSync(path.join(ogImagesDir, outputFilename))
+      ) {
+        const imageUrl = socialPreviewImagesDir + filename;
+        Image(imageUrl, {
+          formats: ['jpeg'],
+          outputDir: ogImagesDir,
+          filenameFormat: function (id, src, width, format, options) {
+            return `${outputFilename}.${format}`;
+          }
+        });
+      }
+    });
+  } else {
+    console.log('⚠ No social images found');
+  }
+};
+
+// Updates my omg.lol now page
+
 const dotenv = require('dotenv');
 dotenv.config();
-
-// https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
-// concerts SVG to JPEG for open graph images
-
-const svgToJpeg = function () {
-  const socialPreviewImagesDir = 'dist/assets/images/social-preview/';
-  fs.readdir(socialPreviewImagesDir, (err, files) => {
-    if (!!files && files.length > 0) {
-      files.forEach(fileName => {
-        if (fileName.endsWith('.svg')) {
-          let imageUrl = socialPreviewImagesDir + fileName;
-          Image(imageUrl, {
-            formats: ['jpeg'],
-            outputDir: './' + socialPreviewImagesDir,
-            filenameFormat: function (id, src, width, format, options) {
-              let outputFileName = fileName.substring(0, fileName.length - 4);
-              return `${outputFileName}.${format}`;
-            }
-          });
-        }
-      });
-    } else {
-      console.log('⚠ No social images found');
-    }
-  });
-};
 
 async function updateOMGLol() {
   const omglolkey = process.env.OMG_LOL_KEY;

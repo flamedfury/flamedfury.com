@@ -28,7 +28,7 @@ Wrapped up work, got stuck in a little bit of layout improvements. Talking about
 
 Show us an image!
 
-![Pop a kickflip!](/assets/images/kickflip.jpg)
+![Pop a kickflip!](/assets/images/template/kickflip.jpg)
 
 Haha! Sweet, but what about bullet lists? What else are you going to implement over the long weekend?
 

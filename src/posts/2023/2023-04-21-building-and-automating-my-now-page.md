@@ -11,7 +11,7 @@ I had tried something earlier on the bookshelf and recordshelf pages; they were 
 
  It looked like this...
 
- {% imagePlaceholder "./src/assets/images/posts/2023-04-21-flamed-fury-top-albums.png", "A screenshot of the top albums section of flamedfury.com's Recordshelf page from August 2022", "Flamed Fury: Top Albums, July 2022" %}
+ {% eleventyImage "./src/assets/images/posts/2023/2023-04-21-flamed-fury-top-albums.png", "A screenshot of the top albums section of flamedfury.com's Recordshelf page from August 2022", "Flamed Fury: Top Albums, July 2022" %}
 
  This version is inspired by [Corey](https://coryd.dev/) and his recent post [Building my /now page using Eleventy](https://coryd.dev/posts/2023/building-my-now-page-using-eleventy/).
 

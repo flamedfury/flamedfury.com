@@ -1,14 +1,7 @@
 [[plugins]]
 package = "netlify-plugin-cache"
-
   [plugins.inputs]
-  paths = [
-    "dist/assets/images/generated", # Eleventy Image Disk Cache
-    ".cache" # Remote Asset Cache
-  ]
-
-[[plugins]]
-package = "netlify-plugin-debug-cache"
+  paths = [ ".cache" ]
 
 
 [[headers]]

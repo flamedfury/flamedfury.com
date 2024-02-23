@@ -17,11 +17,11 @@ The downside is there is no way to easily remove a series from Continue Reading.
 
 This is extremely painful when you read a couple of old issues for some back story. Then you're plagued forever with the old books in your Continue Reading view. 
 
-{% imagePlaceholder "./src/assets/images/posts/2023-07-18-marvel-unlimited-continue-reading.jpg", "A screenshot of the the application, Marvel Unlimited showing the continue reading row.", "My Continue Reading issues at the time of writing. Four new releases and the second issue of X-Terminators from 1988." %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-07-18-marvel-unlimited-continue-reading.jpg", "A screenshot of the the application, Marvel Unlimited showing the continue reading row.", "My Continue Reading issues at the time of writing. Four new releases and the second issue of X-Terminators from 1988." %}
 
 You can click or tap `see all` to see your list of Continue Reading issues. My list is filled with series that I'll most likely never read. 
 
-{% imagePlaceholder "./src/assets/images/posts/2023-07-18-marvel-unlimited-continue-reading-view.jpg", "A screenshot of the the application, Marvel Unlimited showing the continue reading page.", "New issues mixed with old issues I probably won't go back and read anytime soon..." %}
+{% eleventyImage "./src/assets/images/posts/2023/2023-07-18-marvel-unlimited-continue-reading-view.jpg", "A screenshot of the the application, Marvel Unlimited showing the continue reading page.", "New issues mixed with old issues I probably won't go back and read anytime soon..." %}
 
 The list fills up for many reasons, reading tie-ins during cross-over events, checking out new series to see if you want to read them or reading a single issue to get some back story. 
 

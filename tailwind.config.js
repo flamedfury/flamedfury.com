@@ -4,38 +4,41 @@ const plugin = require('tailwindcss/plugin');
 const postcss = require('postcss');
 const postcssJs = require('postcss-js');
 
-const clampGenerator = require('./src/assets/css-utils/clamp-generator.js');
-const tokensToTailwind = require('./src/assets/css-utils/tokens-to-tailwind.js');
+const clampGenerator = require('./src/utilities/clamp-generator.js');
+const tokensToTailwind = require('./src/utilities/tokens-to-tailwind.js');
 
 // Raw design tokens
-const colorTokens = require('./src/assets/design-tokens/colors.json');
-const fontTokens = require('./src/assets/design-tokens/fonts.json');
-const spacingTokens = require('./src/assets/design-tokens/spacing.json');
-const textSizeTokens = require('./src/assets/design-tokens/text-sizes.json');
+const colorTokens = require('./src/_data/designTokens/colors.json');
+const fontTokens = require('./src/_data/designTokens/fonts.json');
+const spacingTokens = require('./src/_data/designTokens/spacing.json');
+const textSizeTokens = require('./src/_data/designTokens/textSizes.json');
+const textLeadingTokens = require('./src/_data/designTokens/textLeading.json');
+const textWeightTokens = require('./src/_data/designTokens/textWeights.json');
+const viewportTokens = require('./src/_data/designTokens/viewports.json');
 
 // Process design tokens
 const colors = tokensToTailwind(colorTokens.items);
 const fontFamily = tokensToTailwind(fontTokens.items);
 const fontSize = tokensToTailwind(clampGenerator(textSizeTokens.items));
+const fontWeight = tokensToTailwind(textWeightTokens.items);
+const fontLeading = tokensToTailwind(textLeadingTokens.items);
 const spacing = tokensToTailwind(clampGenerator(spacingTokens.items));
 
 module.exports = {
-  content: ['./src/**/*.{html,js,jsx,mdx,njk,twig,vue}'],
+  content: ['./src/**/*.{html,js,md,njk,liquid,webc}'],
   presets: [],
   theme: {
     screens: {
-      md: '50em',
-      lg: '80em'
+      ltsm: {max: `${viewportTokens.sm}px`},
+      sm: `${viewportTokens.sm}px`,
+      md: `${viewportTokens.md}px`
     },
     colors,
     spacing,
-    fontSize,
     fontFamily,
-    fontWeight: {
-      normal: 400,
-      bold: 700,
-      black: 800
-    },
+    fontSize,
+    fontWeight,
+    fontLeading,
     backgroundColor: ({theme}) => theme('colors'),
     textColor: ({theme}) => theme('colors'),
     margin: ({theme}) => ({
@@ -65,8 +68,20 @@ module.exports = {
 
   // Disables Tailwind's reset etc
   corePlugins: {
-    preflight: false
+    preflight: false,
+    textOpacity: false,
+    backgroundOpacity: false,
+    borderOpacity: false
   },
+
+  // Prevents Tailwind's core components
+  blocklist: ['container'],
+
+  // Prevents Tailwind from generating that wall of empty custom properties
+  experimental: {
+    optimizeUniversalDefaults: true
+  },
+
   plugins: [
     // Generates custom property values from tailwind config
     plugin(function ({addComponents, config}) {
@@ -78,7 +93,9 @@ module.exports = {
         {key: 'colors', prefix: 'color'},
         {key: 'spacing', prefix: 'space'},
         {key: 'fontSize', prefix: 'size'},
-        {key: 'fontFamily', prefix: 'font'}
+        {key: 'fontLeading', prefix: 'leading'},
+        {key: 'fontFamily', prefix: 'font'},
+        {key: 'fontWeight', prefix: 'font'}
       ];
 
       groups.forEach(({key, prefix}) => {

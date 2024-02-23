@@ -13,7 +13,7 @@ Down here in [Aotearoa](https://en.wikipedia.org/wiki/Aotearoa), our festive sea
 
 For the past five summers, [Onetangi Beach](https://en.wikipedia.org/wiki/Onetangi) on Waiheke Island has been our go-to spot for  the holidays. Initially a familiar place for my wife, whose childhood memories were made here, it quickly became our own tradition. Yet, as life shifted gears and little feet joined our adventures, our annual Waiheke escapades underwent a delightful transformation. Here’s a glimpse of how our summer has evolved with the arrival of our kids.
 
-{% imagePlaceholder "./src/assets/images/posts/2024/2024-01-07-onetangi.jpeg", "A car parked under a large fence at the end of a long grass driveway", "The ancient Pohutukawa tree" %}
+{% eleventyImage "./src/assets/images/posts/2024/2024-01-07-onetangi.jpeg", "A car parked under a large fence at the end of a long grass driveway", "The ancient Pohutukawa tree" %}
 
 ## Then: The Relaxed Rhythm
 

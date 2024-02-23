@@ -7,7 +7,9 @@ permalink: /uses/index.html
 date: 2023-02-15
 ---
 
-A few of the things that I use daily. Inspired by [uses.tech](https://uses.tech/).
+This page needs to be updated...
+
+The /uses pages details my setups, gear, software and configs.. Inspired by [uses.tech](https://uses.tech/)
 
 ## PC
 

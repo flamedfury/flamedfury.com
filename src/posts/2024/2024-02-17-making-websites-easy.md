@@ -5,7 +5,10 @@ tags:
   - web
   - thoughts
 date: 2024-02-17
+<<<<<<< HEAD
 redirectFrom: ['/posts/making-websites-shoud-be-easy/']
+=======
+>>>>>>> 2402
 ---
 
 Creating a website can be a daunting task, especially for non-developers. As someone well aware of the struggles with the process, I spoke with [Sara](https://sarajoy.dev/) on Mastodon about [simplifying the process of creating a website for non-developers](https://social.lol/@flamed/111730917308541254) on the back end of a recent post "[An Easy Web](/posts/an-easy-web)".
@@ -30,4 +33,8 @@ Over at the [32-Bit Cafe](https://32bit.cafe/), we have a beginner's guide to [c
 
 Sara got to work straight away on two templates; check out [LinkFae](https://codepen.io/sarajw/pen/rNRWgVv) and [Website](https://codepen.io/sarajw/pen/oNVzvgg) simple templates. And I know [Blake](https://blakewatson.com/) has started working on something similar, I can't wait to see how this space progresses. 
 
+<<<<<<< HEAD
 I'll get to work on the fan site templates soon, promise.
+=======
+I'll get to work on the fan site templates soon, promise.
+>>>>>>> 2402

@@ -41,7 +41,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            src/assets/images/generated
+            ./src/assets/og-images
+            ./src/assets/images/generated
             .cache
           key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
       - name: Deploy to Neocities

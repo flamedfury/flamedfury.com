@@ -2,9 +2,30 @@
 layout: base
 ---
 
-<article class="region page">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
-    {{ content | safe }}
-  </div>
+<article
+  class="region wrapper flow prose"
+  style="--region-space-top: var(--space-xl-2xl)"
+>
+  <h1 class="gradient-text">{{ title }}</h1>
+  {{ content | safe }}
 </article>
+
+{% if type == 'bookshelf' %}
+  {% include "partials/bookshelf.njk" %}
+{% endif %}
+
+{% if type == 'recordshelf' %}
+  {% include "partials/recordshelf.njk" %}
+{% endif %}
+
+{% if type == 'bookmarks' %}
+  {% include "partials/bookmarks.njk" %}
+{% endif %}
+
+{% if type == 'now' %}
+  {% include "partials/now.njk" %}
+{% endif %}
+
+{% if type == 'collections' %}
+  {% include "partials/collections.njk" %}
+{% endif %}

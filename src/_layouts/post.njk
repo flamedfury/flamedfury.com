@@ -3,37 +3,52 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog | h-entry">
+<article class="region blog" style="--region-space-top: var(--space-xl-2xl)">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text | p-name">{{ title }}</h1>
+    <h1 class="gradient-text">{{ title }}</h1>
 
-    <dl class="meta">
-      <dt>
-        Tagged:
-      </dt>
-      <!--] include tags [-->
-      <dd>{% include "partials/post-tags.njk" %}</dd>
+    <!-- image -->
+    {% if image %}{% eleventyImage image, alt or title, null, "eager", "feature" %} {%
+    endif %}
 
-      <!--] include date [-->
-      {% set definedDate = date %}
-      <dt>
-        {{ meta.published | capitalize }}
-      </dt>
-      <dd>{% include "partials/date.njk" %}</dd>
+    <!-- credit -->
+    {% if credit %}
+    <p class="feature text-step-min-1">© {{ credit }}</p>
+    {% endif %}
 
-      {% if updated %}
-        <!-- updated -->
-        {% set definedDate = updated %}
-        <dt>{{ meta.updated | capitalize }}</dt>
-        <dd>{% include "partials/date.njk" %}</dd>
-      {% endif %}
-    </dl>
+    <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s)">
+      <!-- date -->
+      {% set definedDate = date %} {% include "components/date.njk" %}
 
-    <div class="flow e-content">
-      {{ content | safe }}
-    </div>
+      <!-- tags -->
+      {% if tags.length > 1 %} {% for tag in tags %} {% if tag != "posts" %}
+      <a class="button post-tag" href="/tags/{{ tag }}">
+        {{ tag }}
+      </a>
+      {% endif %} {% endfor %} {% endif %}
+    </p>
 
+    {{ content | safe }}
+    
+    {% if type == 'seasonal' %}
+      {% include "partials/seasonal.njk" %}
+    {% endif %}
+
+    {% if type == 'untappd' %}
+      {% include "partials/untappd.njk" %}
+    {% endif %}
+
+    {% include 'components/edit-on.njk' %}
+  </div>
+
+  <!--  h-card infos: https://indieweb.org/authorship -->
+  <div hidden class="h-entry">
+    <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
+    <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
+    <img
+      class="u-author h-card"
+      src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
+      alt="{{ meta.author.name }}"
+    />
   </div>
 </article>
-
-{% include "partials/webmentions.njk" %}

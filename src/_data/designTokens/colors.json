@@ -1,0 +1,26 @@
+{
+  "title": "Colors",
+  "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
+  "items": [
+    {
+      "name": "Base Dark",
+      "value": "#252525"
+    },
+    {
+      "name": "Base Light",
+      "value": "#f4f4f4"
+    },
+    {
+      "name": "Primary Highlight",
+      "value": "#ff4800"
+    },
+    {
+      "name": "Secondary Highlight",
+      "value": "#ff7900"
+    },
+    {
+      "name": "Tertiary Highlight",
+      "value": "#ffaa00"
+    }
+  ]
+}

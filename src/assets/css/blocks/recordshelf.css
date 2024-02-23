@@ -1,0 +1,7 @@
+.recordshelf {
+	border-bottom: 2px dashed;
+}
+
+.recordshelf:last-child {
+	border-top: none;
+}
