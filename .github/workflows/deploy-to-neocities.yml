@@ -1,0 +1,53 @@
+name: "Deploy to Neocities"
+on:
+  schedule:
+    - cron: 0 7/9 * * *
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: "Deploy to Neocities"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: "npm"
+      - name: Replace environment variables and build
+        run: |
+          set -e
+          sed -i "s/process\.env\.LASTFM_KEY/\"${LASTFM_KEY}\"/" src/_data/albums.js
+          sed -i "s/process\.env\.LASTFM_USER/\"${LASTFM_USER}\"/" src/_data/albums.js
+          sed -i "s/process\.env\.LASTFM_KEY/\"${LASTFM_KEY}\"/" src/_data/artists.js
+          sed -i "s/process\.env\.LASTFM_USER/\"${LASTFM_USER}\"/" src/_data/artists.js
+          npm install
+          npm run build
+        env:
+          LASTFM_KEY: ${{ secrets.LASTFM_KEY }}
+          LASTFM_USER: ${{ secrets.LASTFM_USER }}
+          OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          STEAM_KEY: ${{ secrets.STEAM_KEY }}
+          STEAM_ID: ${{ secrets.STEAM_ID }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
+          TRAKT_KEY: ${{ secrets.TRAKT_KEY }}
+          TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+      - name: Cache dependencies and build artifacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./src/assets/og-images
+            ./src/assets/images/generated
+            .cache
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+      - name: Deploy to Neocities
+        uses: bcomnes/deploy-to-neocities@v1
+        with:
+          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          cleanup: true
+          dist_dir: dist
