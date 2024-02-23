@@ -407,6 +407,12 @@
       "url": "https://kagi.com/smallweb",
       "feed": "",
       "note": "A Stumble Upon like web surfing experience."
+    },
+    {
+      "name": "Bukmark.Club",
+      "url": "https://bukmark.club/",
+      "feed": "",
+      "note": "A brand new independent web directory."
     }
   ]
 }
