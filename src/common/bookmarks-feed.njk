@@ -20,7 +20,7 @@ excludeFromSitemap: true
     {% set absolutePostUrl = bookmark.url | absoluteUrl(metadata.url) %}
     <entry>
       <title>{{ bookmark.data.title }}</title>
-      <link href="{{ meta.authorWebsite }}{{ absolutePostUrl }}"/>
+      <link href="{{ meta.url }}{{ absolutePostUrl }}"/>
       <updated>{{ bookmark.data.date }}</updated>
       <id>{{ meta.authorWebsite }}{{ absolutePostUrl }}</id>
       <content xml:lang="{{ meta.lang }}" type="html">{{ bookmark.templateContent }}</content>
