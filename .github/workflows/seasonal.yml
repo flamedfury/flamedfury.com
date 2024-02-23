@@ -1,0 +1,37 @@
+name: Seasonal post
+
+on:
+  schedule:
+    - cron: "00 02 20 Mar,Jun,Sep,Dec *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Set a specific date to run the action (YYYY-MM-DD), leave blank for today.
+        type: string
+
+jobs:
+  seasonal_post:
+    runs-on: ubuntu-latest
+    name: Write seasonal post
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Write seasonal post
+        uses: katydecorah/seasonal-post-action@v6.2.1
+        with:
+          github-username: flamedfury
+          github-repository: metadata-library
+          season-names: Summer,Autumn,Winter,Spring
+          season-emoji: ☀️,🍂,❄️,🌷
+          posts-directory: ./src/posts/
+          source-bookmarks: bookmarked|_data/bookmarks.json
+          seasonal-post-template: ./src/_layouts/seasonal-post-template.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit files
+        run: |
+          git pull
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A && git commit -m "${{ env.seasonEmoji }} ${{ env.season }}"
+          git push
