@@ -38,6 +38,7 @@
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.3",
+    "comicgeeks": "^1.1.0",
     "cssnano": "^6.0.0",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
