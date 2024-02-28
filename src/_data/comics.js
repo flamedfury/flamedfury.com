@@ -9,7 +9,7 @@ module.exports = async function () {
     let asset = new AssetCache(cacheKey);
 
     // Check if the cache is fresh within the last day
-    if (asset.isCacheValid("1m")) {
+    if (asset.isCacheValid("1d")) {
         // Return cached data.
         return asset.getCachedValue(); // a promise
     }
