@@ -42,7 +42,7 @@ jobs:
         with:
           path: |
             ./src/assets/og-images
-            ./src/assets/images/generated
+            ./src/assets/images/
             .cache
           key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
       - name: Deploy to Neocities
