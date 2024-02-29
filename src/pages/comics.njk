@@ -12,7 +12,7 @@ updated: 2023-05-29
 <div class="grid mt-l-xl" style="--grid-min-item-size: 12rem">
     {% for comic in comics.series %}
     <div class="comics">
-        <img src="{{ comic.cover }}" alt="Cover Image" load="lazy">
+        <img src="{{ comic.cover }}" alt="Cover Image for {{ comic.name }}" load="lazy">
         <p class="comics-publisher mt-s-m">{{ comic.publisher }}</p>
         <p class="comics-title">{{ comic.name }}</p>
         <p class="comics-date">{{ comic.date }}</p>
