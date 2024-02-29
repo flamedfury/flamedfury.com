@@ -1,7 +1,10 @@
 [[plugins]]
 package = "netlify-plugin-cache"
   [plugins.inputs]
-  paths = [ ".cache" ]
+  paths = [
+    "dist/assets/images"
+    ".cache"
+  ]
 
 
 [[headers]]
