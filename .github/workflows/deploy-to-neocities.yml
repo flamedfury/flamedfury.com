@@ -11,10 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: lts/*
           cache: "npm"
+      - uses: actions/cache/restore@v4
+      id: cache
+      with:
+        path: |
+          .cache
+          src/assets/images
+          src/assets/og-images
+        key: 11ty-${{ runner.os }}-${{ github.run_id }}
+        restore-keys: |
+          11ty-${{ runner.os }}
+          ${{ runner.os }}-11ty
       - name: Replace environment variables and build
         run: |
           set -e
@@ -37,17 +48,16 @@ jobs:
           TRAKT_KEY: ${{ secrets.TRAKT_KEY }}
           TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
-      - name: Cache dependencies and build artifacts
-        uses: actions/cache@v4
-        with:
-          path: |
-            ./src/assets/og-images
-            ./src/assets/images/
-            .cache
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: true
           dist_dir: dist
+      - uses: actions/cache/save@v4
+      with:
+        path: |
+          .cache
+          src/assets/images
+          src/assets/og-images
+        key: 11ty-${{ runner.os }}-${{ github.run_id }}
