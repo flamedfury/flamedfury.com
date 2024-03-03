@@ -17,7 +17,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/flamedfury/flamedfury.git"
+    "url": "https://github.com/flamedfury/flamedfury.com.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
