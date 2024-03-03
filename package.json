@@ -1,8 +1,8 @@
 {
-  "name": "eleventy-excellent",
+  "name": "flamedfury",
   "version": "2.2.1",
-  "description": "Eleventy starter based on the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
-  "author": "Lene Saile",
+  "description": "Flamed Fury. Whats going on Internet?",
+  "author": "fLaMEd",
   "license": "ISC",
   "engines": {
     "node": ">=18.x.x"
@@ -17,7 +17,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/flamedfury/flamedfury.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
