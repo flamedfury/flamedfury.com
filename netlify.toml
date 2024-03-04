@@ -4,7 +4,7 @@ package = "netlify-plugin-cache"
   paths = [
     "dist/assets/images",
     "dist/assets/og-images",
-    "assets/images".
+    "assets/images",
     "assets/og-images",
     ".cache"
   ]
