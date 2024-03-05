@@ -1,5 +1,4 @@
 const dayjs = require('dayjs');
-const CleanCSS = require('clean-css');
 const site = require('../../src/_data/meta');
 const {throwIfNotType} = require('../utils');
 const esbuild = require('esbuild');
