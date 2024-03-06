@@ -28,10 +28,6 @@ jobs:
             ./src/assets/og-images
             src/assets/images
             src/assets/og-images
-            dist/assets/images
-            dist/assets/og-images
-            assets/images
-            assets/og-images
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             11ty-${{ runner.os }}
@@ -75,8 +71,4 @@ jobs:
             ./src/assets/og-images
             src/assets/images
             src/assets/og-images
-            dist/assets/images
-            dist/assets/og-images
-            assets/images
-            assets/og-images
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
