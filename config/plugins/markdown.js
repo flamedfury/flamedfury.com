@@ -59,6 +59,26 @@ const markdownLib = markdownIt({
 		// prepend src for markdown images
     resolvePath: (filepath, env) => {
       return path.join('src', filepath);
+    },
+    renderImage(image, attributes) {
+      const [Image, options] = image;
+      const [src, attrs] = attributes;
+
+      Image(src, options);
+
+      const metadata = Image.statsSync(src, options);
+      const imageMarkup = Image.generateHTML(metadata, attrs, {
+        whitespaceMode: 'inline'
+      });
+
+      const imageElement = attrs.title
+        ? `<figure class="flow">
+			${imageMarkup}
+					<figcaption>${attrs.title}</figcaption>
+				</figure>`
+        : `${imageMarkup}`;
+
+      return imageElement;
     }
   })
   .use(markdownItFootnote)
