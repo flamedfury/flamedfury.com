@@ -20,7 +20,8 @@ const {
   toAbsoluteUrl,
   stripHtml,
   minifyJs,
-  splitlines
+  splitlines,
+  getMostRecentFinishedBook
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -69,6 +70,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('stripHtml', stripHtml);
   eleventyConfig.addFilter('slugify', slugifyString);
   eleventyConfig.addFilter('splitlines', splitlines);
+  eleventyConfig.addFilter('getMostRecentFinishedBook', getMostRecentFinishedBook);
+
 
   eleventyConfig.addNunjucksAsyncFilter('jsmin', minifyJs);
 

@@ -71,11 +71,19 @@ const splitlines = (input, maxCharLength) => {
   return lines;
 };
 
+/** Creates a filter for the most recently finished book from the bookshelf */
+const getMostRecentFinishedBook = bookshelf => {
+  const finishedBooks = bookshelf.filter(book => book.status === 'finished');
+  finishedBooks.sort((a, b) => new Date(b.dateFinished) - new Date(a.dateFinished));
+  return finishedBooks[0];
+};
+
 module.exports = {
   toISOString,
   formatDate,
   toAbsoluteUrl,
   stripHtml,
   minifyJs,
-  splitlines
+  splitlines,
+  getMostRecentFinishedBook
 };

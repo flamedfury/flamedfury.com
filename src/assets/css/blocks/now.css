@@ -1,3 +1,9 @@
+/* now: books */
+.now-reading {
+  font-size: var(--size-step-min-1);
+  break-inside: avoid;
+}
+
 /* now: games */
 .game-name {
   font-size: var(--size-step-min-1);

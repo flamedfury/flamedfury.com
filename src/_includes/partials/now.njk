@@ -1,25 +1,38 @@
 <article class="full section" style="--spot-color: var(--color-bg-accent)">
   {% include 'svg/divider-soft-top.svg' %}
   <section class="section__inner wrapper">
-
     <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
       <h2>Reading: books</h2>
-      <div class="grid" style="--grid-min-item-size: 10rem">
+      <div class="grid" style="--grid-min-item-size: 12rem">
         {% set started_books_found = false %}
         {% for book in bookshelf | reverse %}
           {% if book.status == 'started' %}
             {% set started_books_found = true %}
-            <div class="">
+            <div class="now-bookshelf">
               <img
                 src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png"
                 alt="An image of the book cover for the book {{ book.title }}"
-                class="now__img"
+                class="now-img"
               />
+              <p class="now-reading">Currently reading</p>
             </div>
           {% endif %}
         {% endfor %}
         {% if not started_books_found %}
           <p>Not currently reading a book.</p>
+        {% endif %}
+
+        <!-- recently finished reading -->
+        {% set mostRecentFinishedBook = bookshelf | getMostRecentFinishedBook %}
+        {% if mostRecentFinishedBook %}
+          <div class="now-bookshelf">
+            <img
+              src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ mostRecentFinishedBook.isbn }}.png"
+              alt="An image of the book cover for the book {{ mostRecentFinishedBook.title }}"
+              class=""
+            />
+            <p class="now-reading">Just finished</p>
+          </div>
         {% endif %}
       </div>
     </article>
