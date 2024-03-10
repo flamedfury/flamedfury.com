@@ -23,15 +23,12 @@ While it's unfortunate that the show only lasted for one season, it's also a ble
 
 Growing up in Aotearoa and attending high school between 1998 and 2001, I found myself relating to the plot despite being from a different country and period in time. The show's themes of identity, fitting in, and finding oneself were relatable to my experiences growing up. Sam and Cindy's relationship is too real compared to similar situations where I pursued a particular girl for superficial reasons that didn't end up being the best choice. 
 
-Also, how could you not relate to Bill settling down for a TV dinner at home alone? Between going from geek to freak, I loved nothing more than a Friday night at home, alone with a pizza dinner in front of the television.
+Also, how could you not relate to Bill settling down for a TV dinner at home alone? I loved nothing more than a Friday night at home, alone with a pizza dinner in front of the television.
 
 Like the characters in the show, I went through a period of transition where I moved from being a "geek" to a more rebellious and non-conformist personality, which the show depicts as a "freak." I ultimately found myself while still sticking to my geek tendencies, carving my niche in high school for better or worse.
 
 When I think about it, Freaks and Geeks is a timeless coming-of-age story that captures the universal experiences of growing up and trying to find one's place in the world.
 
 As someone who grew up in a different country and time period, I find it fantastic to see how the show resonated with a kid on the other side of the world. It continues to be a relatable and nostalgic trip back to a different and, in a way, a simpler era.
-
-I was listening to this while writing this post, , you might enjoy it too if you grew up like me.
-
 
 I was listening to [Freaks and Geeks](https://open.spotify.com/playlist/71Z0Oamb9CSg03lepmF5IU?si=6df203c7e6094c35) while writing this post. If you grew up like me, you might enjoy it too.
