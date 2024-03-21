@@ -12,14 +12,3 @@ ${playlistYaml}
 
 The books I read, playlist I made, and articles I read this ${season}.
 
-## Books
-
-${bookMarkdown}
-
-## Playlist
-
-${playlistMarkdown}
-
-## Articles
-
-${bookmarkMarkdown}

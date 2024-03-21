@@ -1,3 +1,12 @@
+.seasonal-bookshelf > img {
+  aspect-ratio: auto;
+  border: 1px solid var(--color-dark);
+  border-radius: var(--space-xs,1rem);
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  width: 100%;
+  height: 100%;
+}
+
 .seasonal-playlist {
   margin-bottom: 2em;
   columns: 3 14rem;
@@ -8,18 +17,17 @@
 }
 
 .seasonal-playlist-cover {
-  display: grid;
-  place-content: center;
+  text-align: center;
 }
 
 .seasonal-playlist-track {
-  font-size: var(--size-step-0);
+  font-size: var(--size-step-min-2);
   break-inside: avoid;
 }
 
 .seasonal-playlist-track-meta {
   color: var(--color-text-accent);
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-min-2);
 }
 
 .seasonal-playlist-track-artist {

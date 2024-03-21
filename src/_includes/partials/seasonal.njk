@@ -1,19 +1,16 @@
 <h2 id="books">Books</h2>
 <div class="grid" style="--grid-min-item-size: 10rem">
   {% for book in books %}
-  {% if book.status == 'finished' %}
-  <div class="bookshelf flow">
+  <div class="seasonal-bookshelf flow">
     <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png"
       alt="Book Cover for {{ book.title }}" load="lazy">
   </div>
-  {% endif %}
   {% endfor %}
 </div>
 
 <h2 id="playlist">Playlist</h2>
-<div class="playlist-cover">
-  <img
-    src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/playlists/{{ playlist | slugify }}.png">
+<div class="seasonal-playlist-cover">
+  <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/playlists/{{ playlist | slugify }}.png">
 </div>
 <div class="text-center">
   <p>
@@ -25,7 +22,7 @@
   {% for tracks in tracks %}
   <li>
     <div class="seasonal-playlist-track-name">{{ tracks.track }}</div>
-    <div class="playlist-track-meta">
+    <div class="seasonal-playlist-track-meta">
       {% if tracks.album and tracks.album != '' %}
       <span class="seasonal-playlist-track-artist">{{ tracks.artist }}</span> - <span class="seasonal-track-album">{{
         tracks.album }}</span>
