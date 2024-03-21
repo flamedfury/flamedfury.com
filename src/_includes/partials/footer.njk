@@ -1,51 +1,21 @@
 {% set activePage = page.url | url %}
-
 <footer class="site-foot">
-  <div class="wrapper">
+  <div class="wrapper flow">
     <div class="site-foot__inner">
-      <nav
-        class="site-foot__inner text-step-min-1 text-center"
-        aria-label="{{ meta.navigation.ariaBottom }}"
-      >
+      <nav class="site-foot__inner text-step-min-1 text-center" aria-label="{{ meta.navigation.ariaBottom }}">
         &copy; 1999 - {% year %}
-        <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}
-          >{{ meta.siteName }} <small>2402</small>
+        <a href="/" {% if page.url == "/" %} aria-current="page" {% endif %}>{{ meta.siteName }}
+          <small>2402</small>
         </a>
         don't jack.
       </nav>
-    </div>
-    <div class="site-foot__inner">
       <nav
-        class="site-foot__inner text-step-min-1 cluster place-content-center"
-        aria-label="{{ meta.navigation.ariaBottom }}"
-      >
-        {% for item in navigation.bottom %}
-          <a
-            href="{{ item.url }}"
-            {{
-              helpers.getLinkActiveState(item.url,
-              page.url)
-              |
-              safe
-            }}
-            >{{ item.text }}</a
-          >
-        {% endfor %}
-      </nav>
-    </div>
-
-    <div class="site-foot__inner">
-      <nav class="site-foot__inner" aria-label="{{ meta.navigation.ariaPlatforms }}">
+        class="site-foot__inner" aria-label="{{ meta.navigation.ariaPlatforms }}">
         <!-- gets the first item from the feed loop set in meta -->
-        <a
-          href="{{ meta.blog.feedLinks[0].url }}"
-          rel="alternate"
-          type="{{ meta.blog.feedLinks[0].type }}"
-        >
+        <a href="{{ meta.blog.feedLinks[0].url }}" rel="alternate" type="{{ meta.blog.feedLinks[0].type }}">
           <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
           <div aria-hidden="true">{% include 'svg/rss.svg' %}</div>
         </a>
-
         {% for key, value in personal.platforms %}
           {% if value != "" %}
             <!-- regular platforms networks -->
@@ -57,18 +27,26 @@
         {% endfor %}
       </nav>
     </div>
-
+    <div class="site-foot__inner">
+      <nav class="site-foot__inner text-step-min-1 cluster place-content-center" aria-label="{{ meta.navigation.ariaBottom }}">
+        {% for item in navigation.bottom %}
+          <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+    <div class="site-foot__inner"></div>
     <!-- webrings -->
     <div class="site-foot__inner flex-wrap">{% include "partials/webrings.njk" %}</div>
-
     <!-- theme switch -->
-    {% include 'components/theme-switch.njk' %}
-
-    <div class="text-center mt-m-l">
-      <a class="creator text-step-min-1" href="{{ meta.creator.website }}"
-        >Made with <span>{% include 'svg/heart.svg' %}</span> by
-        {{ meta.creator.name }}</a
-      >
+    <div class="site-foot__inner">
+      {% include 'components/theme-switch.njk' %}
+    </div>
+    <div class="site-foot__inner">
+      <a class="creator text-step-min-1" href="{{ meta.creator.website }}">
+        Made with
+        <span>{% include 'svg/heart.svg' %}</span>
+        by {{ meta.creator.name }}
+      </a>
     </div>
   </div>
 </footer>
