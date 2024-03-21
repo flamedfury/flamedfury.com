@@ -1,44 +1,45 @@
 <h2 id="books">Books</h2>
 <div class="grid" style="--grid-min-item-size: 10rem">
   {% for book in books %}
-    <div class="flow">
-      <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png">
-      <ul class="book-meta">
-        <li class="book-title">{{ book.title }}</li>
-        <li class="book-authors">{{ book.authors }}</li>
-      </ul>
-    </div>
+  {% if book.status == 'finished' %}
+  <div class="bookshelf flow">
+    <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png"
+      alt="Book Cover for {{ book.title }}" load="lazy">
+  </div>
+  {% endif %}
   {% endfor %}
 </div>
 
 <h2 id="playlist">Playlist</h2>
 <div class="playlist-cover">
-  <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/playlists/{{ playlist | slugify }}.png">
+  <img
+    src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/playlists/{{ playlist | slugify }}.png">
 </div>
-<div class="playlist-meta">
+<div class="text-center">
   <p>
     <a href="{{ spotify }}">Listen on Spotify</a>
   </p>
 </div>
 
-<ul class="playlist flow">
+<ul class="seasonal-playlist flow">
   {% for tracks in tracks %}
-    <li>
-      <div class="playlist-track-name">{{ tracks.track }}</div>
-      <div class="playlist-track-meta">
-        {% if tracks.album and tracks.album != '' %}
-          <span class="playlist-track-artist">{{ tracks.artist }}</span> - <span class="track-album">{{ tracks.album }}</span>
-        {% endif %}
-      </div>
-    </li>
+  <li>
+    <div class="seasonal-playlist-track-name">{{ tracks.track }}</div>
+    <div class="playlist-track-meta">
+      {% if tracks.album and tracks.album != '' %}
+      <span class="seasonal-playlist-track-artist">{{ tracks.artist }}</span> - <span class="seasonal-track-album">{{
+        tracks.album }}</span>
+      {% endif %}
+    </div>
+  </li>
   {% endfor %}
 </ul>
 
 <h2 id="bookmarks">Bookmarks</h2>
 <ul>
   {% for bookmark in bookmarked %}
-        <li>
-          <a href="{{ bookmark.url }}">{{ bookmark.title }}</a> - {{ bookmark.notes }}
-        </li>
+  <li>
+    <a href="{{ bookmark.url }}">{{ bookmark.title }}</a> - {{ bookmark.notes }}
+  </li>
   {% endfor %}
 </ul>

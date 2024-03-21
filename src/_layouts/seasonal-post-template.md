@@ -2,9 +2,9 @@
 title: ${year} ${season}
 description: The books I read, playlist I made, and articles I read this ${season}.
 tags: seasonal
-category: post, seasonal
+type: seasonal
 layout: post
-permalink: "//posts/{{ title | slugify }}/index.html"
+permalink: "//posts/${year}/{{ title | slugify }}/index.html"
 ${bookYaml}
 ${bookmarkYaml}
 ${playlistYaml}

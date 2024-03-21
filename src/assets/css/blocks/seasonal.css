@@ -1,0 +1,27 @@
+.seasonal-playlist {
+  margin-bottom: 2em;
+  columns: 3 14rem;
+  column-gap: var(--space-size-s);
+  column-fill: balance;
+  list-style: none;
+  padding: 0;
+}
+
+.seasonal-playlist-cover {
+  display: grid;
+  place-content: center;
+}
+
+.seasonal-playlist-track {
+  font-size: var(--size-step-0);
+  break-inside: avoid;
+}
+
+.seasonal-playlist-track-meta {
+  color: var(--color-text-accent);
+  font-size: var(--size-step-min-1);
+}
+
+.seasonal-playlist-track-artist {
+  font-weight: 700;
+}
