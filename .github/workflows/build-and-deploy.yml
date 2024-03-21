@@ -1,0 +1,83 @@
+name: "Flamed Fury: Build and Deploy"
+
+on:
+  schedule:
+    - cron: 0 2/6 * * *
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: "Build Setup"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: "npm"
+
+      - uses: actions/cache/restore@v4
+        id: cache
+        with:
+          path: |
+            .cache
+            src/assets/images
+            src/assets/og-images
+            dist/assets/images
+            dist/assets/og-images
+          key: 11ty-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            11ty-${{ runner.os }}
+            ${{ runner.os }}-11ty
+            
+      - name: Build website
+        run: |
+          set -e
+          sed -i "s/process\.env\.LASTFM_KEY/\"${LASTFM_KEY}\"/" src/_data/albums.js
+          sed -i "s/process\.env\.LASTFM_USER/\"${LASTFM_USER}\"/" src/_data/albums.js
+          sed -i "s/process\.env\.LASTFM_KEY/\"${LASTFM_KEY}\"/" src/_data/artists.js
+          sed -i "s/process\.env\.LASTFM_USER/\"${LASTFM_USER}\"/" src/_data/artists.js
+          npm install
+          npm run build
+        env:
+          LASTFM_KEY: ${{ secrets.LASTFM_KEY }}
+          LASTFM_USER: ${{ secrets.LASTFM_USER }}
+          OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          STEAM_KEY: ${{ secrets.STEAM_KEY }}
+          STEAM_ID: ${{ secrets.STEAM_ID }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
+          TRAKT_KEY: ${{ secrets.TRAKT_KEY }}
+          TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+
+      - name: Deploy website to server
+        uses: easingthemes/ssh-deploy@v5.0.3
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
+          SOURCE: "dist/"
+          REMOTE_HOST: 103.96.117.109
+          REMOTE_PORT: 2200
+          REMOTE_USER: ${{ secrets.CPANEL_USER }}
+          TARGET: ${{ secrets.CPANEL_TARGET }}
+          EXCLUDE: ".git*, .github*, node_modules*, src*"
+          SCRIPT_BEFORE: |
+            whoami
+          SCRIPT_AFTER: |
+            whoami
+            echo $RSYNC_STDOUT
+
+      - uses: actions/cache/save@v4
+        with:
+          path: |
+            .cache
+            src/assets/images
+            src/assets/og-images
+            dist/assets/images
+            dist/assets/og-images
+          key: 11ty-${{ runner.os }}-${{ github.run_id }}
