@@ -301,6 +301,12 @@
       "url": "https://hemisphericviews.com/",
       "feed": "https://listen.hemisphericviews.com/rss",
       "note": "Hemespheric Views is a podcast about technology, media, food, cultural differences and family life."
+    },
+    {
+      "name": "Ruminate",
+      "url": "https://ruminatepodcast.com/",
+      "feed": "https://feeds.libsyn.com/517508/rss",
+      "note": "A podcast about the web, games, and terrible food."
     }
   ],
   "searchEngines": [
