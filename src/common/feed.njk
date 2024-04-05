@@ -23,6 +23,7 @@ excludeFromSitemap: true
     <link href="{{ absolutePostUrl }}" />
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
+    <summary>{{ post.data.description }}</summary>
     <content
       xml:lang="{{ meta.locale }}"
       type="html"
