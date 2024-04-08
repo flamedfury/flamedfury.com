@@ -1,16 +1,16 @@
-.post, .bookmark h1 {
+.post h1, .bookmark h1 {
   font-size: var(--size-step-5);
 }
 
-.post, .bookmark h2 {
+.post h2, .bookmark h2 {
   font-size: var(--size-step-3);
 }
 
-.post, .bookmark h3 {
+.post h3, .bookmark h3 {
   font-size: var(--size-step-2);
 }
 
-.post, .bookmark img {
+.post img, .bookmark img {
   max-inline-size: var(--max-img-width, 100%);
   block-size: auto;
   aspect-ratio: 16/9;
