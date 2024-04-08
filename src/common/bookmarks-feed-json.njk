@@ -1,0 +1,32 @@
+---json
+{
+  "permalink": "bookmarks-feed.json",
+  "eleventyExcludeFromCollections": true
+}
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ meta.feeds.bookmarks.name | safe }}",
+  "home_page_url": "{{ meta.url }}/",
+  "feed_url": "{{ meta.url }}/bookmarks-feed.json",
+  "description": "{{ meta.feeds.bookmarks.description }}",
+  "author": {
+    "name": "{{ meta.author.name }}",
+    "url": "{{ meta.url }}",
+    "avatar": "{{ meta.author.avatar }}",
+    "email": "{{ meta.author.email }}"
+  },
+  "items": [
+    {% for bookmark in collections.allBookmarks | reverse %}
+      {
+        "id": "{{ meta.url }}{{ bookmark.url }}",
+        "url": "{{ meta.url }}{{ bookmark.url }}",
+        "title": "{{ bookmark.data.title }}",
+        "content_html": "{{ bookmark.templateContent | replace('\n', '') | replace('    ', '') | replace('"', '\\"') | safe }}",
+        "date_published": "{{ bookmark.data.date }}",
+        "external_url": "{{ bookmark.data.sourceurl }}",
+        "tags": [{% if bookmark.data.hashtags %}{% for tag in bookmark.data.hashtags | split(',') %}"{{ tag.trim() }}"{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]
+      }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}

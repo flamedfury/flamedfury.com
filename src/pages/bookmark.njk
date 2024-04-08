@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bookmark
 pagination:
     data: bookmarks
     size: 1
@@ -11,15 +11,9 @@ eleventyComputed:
     title: "{{ bookmark.title }}"
     sourceurl: "{{ bookmark.url }}"
     notes: "{{ bookmark.notes }}"
-    date: "{{ bookmark.date }}"
+    date: "{% if bookmark.timestamp %}{{ bookmark.timestamp }}{% else %}{{ bookmark.date }}{% endif %}"
+    hashtags: "{{ bookmark.tags }}"
 ---
-
-<div class="flow h-entry">
-
-    <p>
-     Bookmarked <a href="{{ bookmark.url }}" class="u-bookmark-of h-cite"> <span class="p-name">{{ bookmark.title }}</span></a>
-    </p>
-
     {% if bookmark.quote %}
     <blockquote>{{ bookmark.quote }}</blockquote>
     {% endif %}
@@ -27,9 +21,3 @@ eleventyComputed:
     <p class="p-summary">
         {{ bookmark.notes }}
     </p>
-
-    <p>
-        <a href="/bookmarks/">More Bookmarks</a>
-    </p>
-
-</div>
