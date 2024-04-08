@@ -78,6 +78,11 @@ const getMostRecentFinishedBook = bookshelf => {
   return finishedBooks[0];
 };
 
+// divides a string into an array of substrings based on a specified separator.
+const split = (input, separator) => {
+  return input.split(separator);
+};
+
 module.exports = {
   toISOString,
   formatDate,
@@ -85,5 +90,6 @@ module.exports = {
   stripHtml,
   minifyJs,
   splitlines,
-  getMostRecentFinishedBook
+  getMostRecentFinishedBook,
+  split
 };
