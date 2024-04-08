@@ -1,6 +1,6 @@
 # Flamed Fury
 
-![Deploy to neocities](https://github.com/flamedfury/flamedfury.com/workflows/Deploy%20to%20neocities/badge.svg?branch=main)
+[![Flamed Fury: Build and Deploy](https://github.com/flamedfury/flamedfury.com/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/flamedfury/flamedfury.com/actions/workflows/build-and-deploy.yml)
 
 Flamed Fury is my personal homepage, full of stuff that means everything to me, and nothing to you. You will find my thoughts about the current state of the web, my recollections of my earliest memories of the web, and a bunch of pages detailing some of my interests in records, books, comics, games, movies and tv shows. Come have a read and leave me a message.
 
