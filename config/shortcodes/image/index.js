@@ -11,7 +11,7 @@ const stringifyAttributes = attributeMap => {
     .join(' ');
 };
 
-const imageShortcode = async (
+async function imageShortcode (
   src,
   alt = '',
   caption,
@@ -20,7 +20,7 @@ const imageShortcode = async (
   sizes = '90vw',
   widths = [440, 880, 1024, 1360],
   formats = ['webp', 'jpeg']
-) => {
+) {
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
