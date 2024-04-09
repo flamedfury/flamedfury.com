@@ -24,10 +24,7 @@ jobs:
         with:
           path: |
             .cache
-            src/assets/images
-            src/assets/og-images
-            dist/assets/images
-            dist/assets/og-images
+            src
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             11ty-${{ runner.os }}
@@ -71,8 +68,5 @@ jobs:
         with:
           path: |
             .cache
-            src/assets/images
-            src/assets/og-images
-            dist/assets/images
-            dist/assets/og-images
+            src
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
