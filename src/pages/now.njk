@@ -1,0 +1,181 @@
+---
+title: Now
+layout: page
+description: What I'm up to
+permalink: /now/index.html
+---
+
+<p>
+  This is a <a href="https://nownownow.com/about">now page</a>, and if you have your own
+  website, you should make one, too.
+</p>
+
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% include 'svg/divider-soft-top.svg' %}
+  <section class="section__inner wrapper">
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Reading: books</h2>
+      <h3>Currently reading</h3>
+      <div class="sidebar flow">
+        {% set started_books_found = false %}
+        {% for book in bookshelf | reverse %}
+          {% if book.status == 'started' %}
+            {% set started_books_found = true %}
+            <div>
+              {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book {{ book.title }}" %}
+            </div>
+            <div class="now-book-meta">
+              <p class="now-book-author">{{ book.authors }}</p>
+              <p class="now-book-title">{{ book.title }}</p>
+              <p class="now-book-description">{{ book.description | safe }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- recently finished reading -->
+      <h3>Just finished</h3>
+      <div class="sidebar flow">
+        {% set mostRecentFinishedBook = bookshelf | getMostRecentFinishedBook %}
+        {% if mostRecentFinishedBook %}
+          <div>
+            {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + mostRecentFinishedBook.isbn +".png", "An image of the book cover for the book {{ mostRecentFinishedBook.title }}" %}
+          </div>
+          <div class="now-book-meta">
+            <p class="now-book-author">{{ mostRecentFinishedBook.authors | safe }}</p>
+            <p class="now-book-title">{{ mostRecentFinishedBook.title | safe }}</p>
+            <p class="now-book-description">
+              {{ mostRecentFinishedBook.description | safe }}
+            </p>
+          </div>
+        {% endif %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Playing: games</h2>
+      <div class="sidebar flow">
+        <div>
+          {% eleventyImage "./src/assets/images/pages/now/wow-dragon-flight.png", "An image of the cover art for the game World Of Warcraft: Dragonflight" %}
+        </div>
+        <div class="now-game-meta">
+          <p class="now-game-publisher">Blizzard</p>
+          <p class="now-game-title">World of Warcraft: Dragonflight</p>
+          <p class="now-game-description">
+            Three years after the events of World of Warcraft: Shadowlands, the
+            dragonflights of Azeroth have returned, called upon to defend their ancestral
+            home, the Dragon Isles. Surging with elemental magic and the life energies of
+            Azeroth, the Isles are awakening once more, and it's up to the champions to
+            explore their primordial wonder and discover long-forgotten secrets.
+          </p>
+        </div>
+      </div>
+
+      {% for game in games %}
+        <div class="sidebar flow">
+          <div class="now-game-art">
+            {% if game.coverArt %}
+              <img
+                src="{{ game.coverArt }}"
+                alt="An image of the cover art for the game {{ game.name }}"
+                class="now__img"
+              />
+            {% endif %}
+          </div>
+          <div class="now-game-meta">
+            <p class="now-game-publisher">{{ game.developers }}</p>
+            <p class="now-game-title">{{ game.name }}</p>
+            <p class="now-game-description">{{ game.short_description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Listening: artists</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for artist in artists %}
+          <div class="stack">
+            <a
+              href="{{ artist.url }}"
+              title="{{ artist.name | escape }}"
+              class="no-indicator"
+            >
+              <div class="now-artist">
+                {% eleventyImage artist.image, "Photo of " + artist.name, "", "lazy", "now-artist" %}
+              </div>
+            </a>
+            <div class="now-artist-meta">
+              <p class="now-artist-name">{{ artist.name }}</p>
+              <p class="now-artist-plays">{{ artist.playcount }} plays</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Listening: albums</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for album in albums %}
+          <div class="stack">
+            <a href="{{ album.url }}" title="{{ album.name }}" class="no-indicator">
+              <div class="now-album">
+                {% eleventyImage album.image, "Cover art for the album " + album.name %}
+              </div>
+            </a>
+            <div class="now-album-meta">
+              <p class="now-album-artist-name">{{ album.artist.name }}</p>
+              <p class="now-album-name">{{ album.name }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Watching: tv</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for show in tv %}
+          <div class="stack">
+            <a
+              href="https://trakt.tv/shows/{{ show.show.ids.slug }}"
+              title="{{ show.show.title }}"
+              class="no-indicator"
+            >
+              {% eleventyImage show.posterUrl, "Cover art for the show " + show.show.title %}
+            </a>
+            <div class="now-show-meta">
+              <p class="now-show-episode-title">{{ show.episodeRange }}</p>
+              <p class="now-show-title">{{ show.show.title }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      <h2>Watching: movies</h2>
+      <div class="grid" style="--grid-min-item-size: 12rem">
+        {% for movie in movies %}
+          <div class="stack">
+            <a
+              href="https://trakt.tv/movies/{{ movie.movie.ids.slug }}"
+              title="{{ movie.movie.title | escape }}"
+              class="no-indicator"
+            >
+              {% eleventyImage movie.posterUrl, "Cover art for the movie " + movie.movie.title %}
+            </a>
+            <div class="now-movie-meta">
+              <p class="now-movie-title">
+                {{ movie.movie.title }}
+                <span class="now-movie-date">({{ movie.movie.year }})</span>
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+  </section>
+  {% include 'svg/divider-soft-bottom.svg' %}
+</article>
