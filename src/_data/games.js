@@ -6,7 +6,7 @@ module.exports = async function () {
   try {
     const url = `http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${process.env.STEAM_KEY}&steamid=${process.env.STEAM_ID}&format=json`;
     const res = await EleventyFetch(url, {
-      duration: '1h',
+      duration: '1s',
       type: 'json',
     });
 
@@ -27,6 +27,18 @@ module.exports = async function () {
         });
 
         const gameDetails = gameDetailsRes[game.appid].data;
+        if (gameDetails) {
+          game.developers = gameDetails.developers.join(', '); // Assign developers to the game object
+          game.publishers = gameDetails.publishers.join(', ');
+          game.about_the_game = gameDetails.about_the_game;
+          game.short_description = gameDetails.short_description;
+        } else {
+          game.developers = 'Unknown'; // Assign default value if developers data is not available
+          game.publishers = 'Unknown';
+          game.about_the_game = 'No information available';
+          game.short_description = 'No information available';
+        }
+             
         if (gameDetails && gameDetails.hasOwnProperty('header_image')) {
           const coverArtUrl = gameDetails.header_image;
           const coverArtRes = await fetch(coverArtUrl);
