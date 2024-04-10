@@ -32,7 +32,7 @@
     <!--  inline blogpost schema  -->
     {% if schema == 'blog' %} {%- include "schemas/blogpost-schema.njk" %} {% endif %}
 
-    {# <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}"> #}
+    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}">
 
     <!-- preloads in page data -->
     {% if preloads -%}
