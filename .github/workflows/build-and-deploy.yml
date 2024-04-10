@@ -24,7 +24,7 @@ jobs:
         with:
           path: |
             .cache
-            src
+            src/assets/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             11ty-${{ runner.os }}
@@ -68,5 +68,5 @@ jobs:
         with:
           path: |
             .cache
-            src
+            src/assets/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
