@@ -10,10 +10,6 @@ layout: base
   {{ content | safe }}
 </article>
 
-{% if type == 'bookshelf' %}
-  {% include "partials/bookshelf.njk" %}
-{% endif %}
-
 {% if type == 'recordshelf' %}
   {% include "partials/recordshelf.njk" %}
 {% endif %}
