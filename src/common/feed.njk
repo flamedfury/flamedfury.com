@@ -21,7 +21,7 @@ excludeFromSitemap: true
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <updated>{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}</updated>
     <id>{{ absolutePostUrl }}</id>
     <summary>{{ post.data.description }}</summary>
     <content
