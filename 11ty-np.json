@@ -1,0 +1,12 @@
+{
+  "editorCmd": "codium",
+  "openAfterCreate": true,
+  "paragraphCount": 4,
+  "postsFolder": "src/posts",
+  "promptCategory": false,
+  "promptTargetFolder": false,
+  "promptTemplateFile": false,
+  "templateFile": "11ty-np.md",
+  "timeStamp": true,
+  "useYear": true
+}
