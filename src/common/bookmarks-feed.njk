@@ -24,7 +24,7 @@ excludeFromSitemap: true
       <updated>{{ bookmark.data.date }}</updated>
       <id>{{ meta.authorWebsite }}{{ absolutePostUrl }}</id>
       <content xml:lang="{{ meta.locale }}" type="html">
-        {{ bookmark.templateContent | safe }}
+        {{ bookmark.templateContent }}
       </content>
     </entry>
   {% endfor %}
