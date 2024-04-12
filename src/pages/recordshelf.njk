@@ -5,6 +5,9 @@ permalink: /recordshelf/index.html
 layout: page
 date: 2022-03-22
 updated: 2023-01-23
+grid:
+  sizes: "(max-width: 615px) 50vw, 100vw"
+	widths: [100, 520]
 ---
 
 <p>
@@ -31,27 +34,32 @@ updated: 2023-01-23
 <article class="full section" style="--spot-color: var(--color-bg-accent)">
   {% include 'svg/divider-soft-top.svg' %}
   <section class="section__inner wrapper">
+
     {%- for record in vinyl.albums -%}
-    <a class="recordshelf-link" href="#{{ record.title | slug }}">
-      <h3 id="{{ record.title | slug }}">{{ record.title }}</h3>
+    <a href="#{{ record.title | slug }}">
+      <h2 id="{{ record.title | slug }}">{{ record.title }}</h2>
     </a>
-      <div class="recordshelf sidebar | mb-xl pb-xl">
-        <div class="flex place-content-center records-center">
+      <div class="recordshelf sidebar flow">
+        <div class="recordshelf-cover">
         {% eleventyImage record.image,
-          "the album cover for {{ record.title }}" %}
+          "the album cover for {{ record.title }}", null, lazy, "(min-width:30em) 50vw, 100vw", [200, 400] %}
         </div>
-        <div class="flex flex-wrap content-center">
-        <p class="uppercase">
-          Artist: {{ record.artist }}</p>
-          <p class="uppercase">Info: {{ record.format }} / {{ record.year }}, {{ record.genre }}</p>
-          <p class="uppercase">Label: {{ record.label }}
-            {{ record.code }}</p>
-          <p class="uppercase">Release: {{ record.varient }}
-            {{ record.number }}</p>
-        </p>
-        <p>
-          {{ record.comment }}
-        </p>
+        <div class="recordshelf-info stack">
+          <dl class="recordshelf-grid">
+            <dt class="recordshelf-label">Artist</dt>
+            <dd class="recordshelf-detail">{{ record.artist }}</dd>
+            <dt class="recordshelf-label">Year</dt>
+            <dd class="recordshelf-detail">{{ record.year }}</dd>
+            <dt class="recordshelf-label">Genre</dt>
+            <dd class="recordshelf-detail">{{ record.genre }}</dd>
+            <dt class="recordshelf-label">Label</dt>
+            <dd class="recordshelf-detail">{{ record.label }} {% if record.code %}/ {{ record.code }}{% endif %}</dd>
+            <dt class="recordshelf-label">Variant</dt>
+            <dd class="recordshelf-detail">{{ record.varient }} {{ record.number }}</dd>
+          </dl>
+          <p class="recordshelf-comment">
+            {{ record.comment }}
+          </p>
         </div>
       </div>
     {% endfor %}
