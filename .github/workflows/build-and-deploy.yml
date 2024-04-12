@@ -23,8 +23,10 @@ jobs:
         id: cache
         with:
           path: |
-            .cache
-            src/assets/
+            .cache/
+            src/assets/fonts/
+            src/images/
+            src/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             11ty-${{ runner.os }}
@@ -67,6 +69,8 @@ jobs:
       - uses: actions/cache/save@v4
         with:
           path: |
-            .cache
-            src/assets/
+            .cache/
+            src/assets/fonts/
+            src/images/
+            src/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
