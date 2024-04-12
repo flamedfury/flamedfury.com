@@ -6,7 +6,6 @@ const postcssImportExtGlob = require('postcss-import-ext-glob');
 const tailwindcss = require('tailwindcss');
 const postcssRelativeColorSyntax = require('@csstools/postcss-relative-color-syntax');
 const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
 
 module.exports = eleventyConfig => {
   eleventyConfig.addTemplateFormats('css');
@@ -24,8 +23,7 @@ module.exports = eleventyConfig => {
           postcssImport,
           tailwindcss,
           postcssRelativeColorSyntax({preserve: true}),
-          autoprefixer,
-          cssnano
+          autoprefixer
         ]).process(content, {
           from: path
         });
