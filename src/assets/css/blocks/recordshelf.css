@@ -1,27 +1,27 @@
 .recordshelf {
-	border-bottom: 2px dashed;
-	margin-bottom: var(--space-xl);
-	padding-bottom: var(--space-xl);
+  border-bottom: 2px dashed;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
 }
 
 .recordshelf:last-child {
-	border-top: none;
+  border-top: none;
 }
 
 .recordshelf-grid {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-	gap: var(--space-s);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: var(--space-s);
 }
 
 .recordshelf-grid > dt::after {
-  content: ": ";
+  content: ': ';
 }
 
 .recordshelf-label {
   color: var(--color-text-accent);
   font-size: var(--size-step-min-1);
-	font-weight: 600;
+  font-weight: 600;
   text-transform: uppercase;
   break-inside: avoid;
 }
