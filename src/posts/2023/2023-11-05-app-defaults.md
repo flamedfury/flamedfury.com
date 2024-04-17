@@ -2,7 +2,7 @@
 title: App Defaults
 description: Episode 097 of the Hemispheric Views podcast held a fun Duel of the Defaults! competition. Here’s my list.
 tags:
-  - Technology
+  - tech
 date: 2023-11-05
 ---
 

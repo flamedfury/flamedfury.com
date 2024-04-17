@@ -3,7 +3,7 @@ title: Logitech MX on Linux
 description: When it comes to computer peripherals, I use Logitech. Keyboards, mice, headsets - they’re all Logitech. But how do you take advantage of them when Logitech doesn't provide Linux drivers or software?
 tags:
   - linux
-  - technology
+  - tech
 date: 2023-03-16
 ---
 

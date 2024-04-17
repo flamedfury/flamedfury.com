@@ -3,7 +3,7 @@ title: 'Buying DRM-Free Audiobooks'
 description: Unlock the world of audiobooks without the drama of DRM.
 tags:
   - books
-  - technology
+  - tech
 date: 2023-10-17
 ---
 

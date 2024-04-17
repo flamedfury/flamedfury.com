@@ -3,7 +3,7 @@ title: 'DRM-Free Audiobooks'
 description: Discover the freedom of DRM-free audiobooks and explore how to listen to them on your terms.
 tags:
   - books
-  - technology
+  - tech
 date: 2023-10-13
 ---
 

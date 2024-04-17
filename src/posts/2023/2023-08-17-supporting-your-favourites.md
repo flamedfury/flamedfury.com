@@ -3,7 +3,7 @@ title: 'Show Some Love: Supporting Your Favourites'
 description: Support a free and open web by supporting the projects that you love.
 tags:
   - web
-  - technology
+  - tech
   - thoughts
 date: 2023-08-17
 ---
