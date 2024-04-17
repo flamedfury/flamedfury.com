@@ -347,12 +347,6 @@
       "note": "Independent, privacy respecting search engine. Building their own index, sitting at around 300 million english websites indexed."
     },
     {
-      "name": "Brave Search",
-      "url": "https://search.brave.com/",
-      "feed": "",
-      "note": "Brave as a company aside, they claim that they do not filter, downrank or censor search results. They are building their own index of the Web so they do not rely on Google or Bing results."
-    },
-    {
       "name": "Yep",
       "url": "https://yep.com/",
       "feed": "",
@@ -369,6 +363,12 @@
       "url": "https://mwmbl.org/",
       "feed": "",
       "note": "Mwmbl is a free search engine with a focus on freedom, user experience, and community. Results are provided by their own index and a touch of curation."
+    },
+    {
+      "name": "Plumb",
+      "url": "https://plumb.one/",
+      "feed": "",
+      "note": "Plumb is a new search engine that claims it doesn't monitor or track you while you search. Supported by ads, but is not an ad platform that supports search. "
     }
   ],
   "webDirectories": [
@@ -419,6 +419,28 @@
       "url": "https://bukmark.club/",
       "feed": "",
       "note": "A brand new independent web directory."
+    }
+  ],
+  "multiMedia": [
+    {
+      "name": "The Movie Database (TMDB)",
+      "url": "https://themoviedb.org/",
+      "note": "The Movie Database (TMDB) is a community built movie and television database. This website has superseded the usefulness of the IMDB for me. allows users to sign up, contribute data and track what they've watched."
+    },
+    {
+      "name": "The TV Database (TVDB",
+      "url": "https://www.thetvdb.com/",
+      "note": "Another community driven television and movie database. Great alternative for the movie database. Full of great user curated lists of various movies and television shows."
+    },
+    {
+      "name": "The Internet Music Video Database (IMVDb)",
+      "url": "https://imvdb.com/",
+      "note": "The Internet Music Video Database is another community driven database but for music videos. They track credits, technical information, and other data about music videos."
+    },
+    {
+      "name": "Internet Game Database (IGDB)",
+      "url": "https://www.igdb.com/",
+      "note": "Discover, Rate and track your games. The Internet Game Database is another community contributed Database for video games."
     }
   ]
 }

@@ -48,7 +48,7 @@ async function getLatestPost(feedUrl) {
 module.exports = {
   eleventyComputed: {
     /** Augments blog info with fetched information from the actual blogs */
-    async linksData({ blogroll, coolSites, webDevelopment, newsLetters, podCasts, webDirectories, searchEngines }) {
+    async linksData({ blogroll, coolSites, webDevelopment, newsLetters, podCasts, webDirectories, searchEngines, multiMedia }) {
       const processLinks = async (links) => {
         if (!links) {
           return [];
@@ -72,7 +72,7 @@ module.exports = {
         }));
       };
 
-      const [augmentedBlogInfo, augmentedCoolInfo, augmentedWebDevelopmentInfo, augmentedNewsLettersInfo, augmentedPodCastsInfo, augmentedwebDirectoriesInfo, augmentedsearchEnginesInfo] = await Promise.all([processLinks(blogroll), processLinks(coolSites), processLinks(webDevelopment), processLinks(newsLetters), processLinks(podCasts), processLinks(webDirectories), processLinks(searchEngines)]);
+      const [augmentedBlogInfo, augmentedCoolInfo, augmentedWebDevelopmentInfo, augmentedNewsLettersInfo, augmentedPodCastsInfo, augmentedwebDirectoriesInfo, augmentedsearchEnginesInfo, augmentedmultiMediaInfo] = await Promise.all([processLinks(blogroll), processLinks(coolSites), processLinks(webDevelopment), processLinks(newsLetters), processLinks(podCasts), processLinks(webDirectories), processLinks(searchEngines), processLinks(multiMedia)]);
 
       return {
         blogData: augmentedBlogInfo,
@@ -82,6 +82,7 @@ module.exports = {
         podCastsData: augmentedPodCastsInfo,
         webDirectoriesData: augmentedwebDirectoriesInfo,
         searchEnginesData: augmentedsearchEnginesInfo,
+        multiMediaData: augmentedmultiMediaInfo,
       };
     }
   }

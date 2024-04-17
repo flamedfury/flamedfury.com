@@ -97,3 +97,18 @@ masonry: true
     {% include 'components/links.njk' %}
   {% endfor %}
 </ul>
+
+<a href="#multimedia">
+  <h2 id="search">Multimedia</h2>
+</a>
+<p>
+  Contary to popular belief, search exists outside of adtech, check out some of these
+  search engines and avoid the blog spam.
+</p>
+
+<ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop links -->
+  {% for link in linksData.multiMediaData %}
+    {% include 'components/links.njk' %}
+  {% endfor %}
+</ul>
