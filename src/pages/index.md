@@ -1,8 +1,8 @@
 ---
 permalink: /index.html
-title: 'Flamed Fury'
-description: 'The personal website of fLaMEd. I love the web.'
-layout: 'home'
+title: 'fLaMEd fury'
+description: What's going on Internet? This is my homepage. I write about the web and stuff.
+layout: home
 blog:
   title: 'Recent Posts'
   intro: "These are my most recent posts. More are available to read on the posts page."
@@ -10,7 +10,7 @@ blog:
 
 ## What's going on Internet?
 
-Kia ora! 👋 I'm <span class="gradient-text">fLaMEd</span>🔥 I'm the webmaster of <span class="gradient-text">Flamed Fury</span>, a collection of stuff that means everything to me and probably nothing to you. 
+Kia ora! 👋 I'm <span class="gradient-text">fLaMEd</span>🔥 I'm the webmaster of <span class="gradient-text">fLaMEd fury</span>, a collection of stuff that means everything to me and probably nothing to you. 
 
 I've been surfing the web since [1996](/memories/). I [love the web](/posts/i-love-the-web) and writing [about the web](/tags/web/). 
 
