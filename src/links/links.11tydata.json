@@ -323,7 +323,7 @@
       "note": "An independent search engine that favours text-heavy websites. Focuses on non-commercial content, and attempts to show you sites you perhaps weren't aware of in favor of the sort of sites you probably already knew existed."
     },
     {
-      "name": "searchmystite",
+      "name": "searchmysite",
       "url": "https://searchmysite.net/",
       "feed": "",
       "note": " The searchmysite.net search engine is a niche search, focussing on the \"indieweb\" or \"small web\" or \"digital gardens\", i.e. non-commercial content, primarily personal and independent websites."
@@ -369,6 +369,12 @@
       "url": "https://plumb.one/",
       "feed": "",
       "note": "Plumb is a new search engine that claims it doesn't monitor or track you while you search. Supported by ads, but is not an ad platform that supports search. "
+    },
+    {
+      "name": "Clew",
+      "url": "https://clew.se/",
+      "feed": "",
+      "note": "A super new search engine that is trying to be different than the rest. Starting off with a super small index with plans to grow."
     }
   ],
   "webDirectories": [
