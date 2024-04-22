@@ -8,7 +8,7 @@ pagination:
 permalink: 'bookmarks/{{ bookmark.title | slugify }}/index.html'
 isBookmark: true
 eleventyComputed:
-    title: "{{ bookmark.title }}"
+    title: "{{ bookmark.title | safe }}"
     sourceurl: "{{ bookmark.url }}"
     notes: "{{ bookmark.notes }}"
     date: "{% if bookmark.timestamp %}{{ bookmark.timestamp }}{% else %}{{ bookmark.date }}{% endif %}"
