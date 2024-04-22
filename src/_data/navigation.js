@@ -27,6 +27,10 @@ module.exports = {
   ],
   bottom: [
     {
+      text: 'Top',
+      url: '#top'
+    },
+    {
       text: 'Contact',
       url: '/contact/'
     },
