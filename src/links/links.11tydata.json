@@ -375,6 +375,12 @@
       "url": "https://clew.se/",
       "feed": "",
       "note": "A super new search engine that is trying to be different than the rest. Starting off with a super small index with plans to grow."
+    },
+    {
+      "name": "Mojeek",
+      "url": "https://www.mojeek.com/",
+      "feed": "",
+      "note": "Mojeek is a growing independent search engine which does not track you. Mojeek have their own crawler and are building their own index."
     }
   ],
   "webDirectories": [
