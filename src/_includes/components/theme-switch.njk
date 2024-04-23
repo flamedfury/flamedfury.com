@@ -6,11 +6,8 @@
   data-theme-switcher
   hidden
 >
-  <h2 id="theme-switcher-label">{{ meta.themeSwitch.title }}</h2>
-  <button class="button" id="light-theme-toggle" data-theme="light">
-    <span>{{ meta.themeSwitch.light }}</span>
-  </button>
-  <button class="button" id="dark-theme-toggle" data-theme="dark">
-    <span>{{ meta.themeSwitch.dark }}</span>
+  <h2 id="theme-switcher-label" style="display: none;">{{ meta.themeSwitch.title }}</h2>
+  <button class="button" id="theme-toggle" data-theme-toggle>
+    <span id="theme-toggle-text">{{ meta.themeSwitch.light }}</span>
   </button>
 </div>

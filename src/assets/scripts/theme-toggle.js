@@ -7,8 +7,7 @@ const theme = {
 };
 
 window.onload = () => {
-  const lightThemeToggle = document.querySelector('#light-theme-toggle');
-  const darkThemeToggle = document.querySelector('#dark-theme-toggle');
+  const themeToggleButton = document.querySelector('#theme-toggle');
   const switcher = document.querySelector('[data-theme-switcher]');
 
   if (!switcher) {
@@ -18,30 +17,35 @@ window.onload = () => {
   switcher.removeAttribute('hidden');
   reflectPreference();
 
-  lightThemeToggle.addEventListener('click', () => onClick('light'));
-  darkThemeToggle.addEventListener('click', () => onClick('dark'));
+  // Event listener for the theme toggle button
+  themeToggleButton.addEventListener('click', toggleTheme);
 
-  lightThemeToggle.setAttribute('aria-pressed', theme.value === 'light');
-  darkThemeToggle.setAttribute('aria-pressed', theme.value === 'dark');
+  // Update button's aria-pressed attribute based on the current theme
+  themeToggleButton.setAttribute('aria-pressed', theme.value === 'light');
+
+  // Set the button text based on the current theme
+  updateButtonText();
 };
 
-// sync with system changes
-window
-  .matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', ({matches: isDark}) => {
-    theme.value = isDark ? 'dark' : 'light';
-    setPreference();
-  });
-
-function onClick(themeValue) {
-  theme.value = themeValue;
-  document
-    .querySelector('#light-theme-toggle')
-    .setAttribute('aria-pressed', themeValue === 'light');
-  document
-    .querySelector('#dark-theme-toggle')
-    .setAttribute('aria-pressed', themeValue === 'dark');
+function toggleTheme() {
+  theme.value = theme.value === 'light' ? 'dark' : 'light';
   setPreference();
+  updateButtonText();
+}
+
+function updateButtonText() {
+  const themeToggleButton = document.querySelector('#theme-toggle');
+  const themeToggleText = document.querySelector('#theme-toggle-text');
+
+  if (theme.value === 'light') {
+    // Show "DARK" when in light mode
+    themeToggleText.textContent = darkLabel;
+    themeToggleButton.setAttribute('aria-pressed', false);
+  } else {
+    // Show "LIGHT" when in dark mode
+    themeToggleText.textContent = lightLabel;
+    themeToggleButton.setAttribute('aria-pressed', true);
+  }
 }
 
 function getColorPreference() {
@@ -59,9 +63,8 @@ function setPreference() {
 
 function reflectPreference() {
   document.firstElementChild.setAttribute('data-theme', theme.value);
-  document.querySelector('#light-theme-toggle')?.setAttribute('aria-label', lightLabel);
-  document.querySelector('#dark-theme-toggle')?.setAttribute('aria-label', darkLabel);
+  updateButtonText();
 }
 
-// set early so no page flashes / CSS is made aware
+// Set early so no page flashes / CSS is made aware
 reflectPreference();
