@@ -25,8 +25,8 @@ jobs:
           path: |
             .cache/
             src/assets/fonts/
-            src/images/
-            src/og-images/
+            src/assets/images/
+            src/assets/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
           restore-keys: |
             11ty-${{ runner.os }}
@@ -71,6 +71,6 @@ jobs:
           path: |
             .cache/
             src/assets/fonts/
-            src/images/
-            src/og-images/
+            src/assets/images/
+            src/assets/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
