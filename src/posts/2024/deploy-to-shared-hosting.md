@@ -97,7 +97,7 @@ You're going to need a shared hosting plan or any hosting plan that gives you SS
 
 ### Github IP ranges
 
-Unless you're paying Github lots of money, when you run an action, your runner gets assigned a random IP address. There are complicated ways to automate retrieving the IP address at build time and creating firewall rules, but this depends on the access level to your server. To simplify things, I just allowed GitHub's IP ranges access to SSH, and I'm happy to hear [why this might be a bad idea]().
+Unless you're paying Github lots of money, when you run an action, your runner gets assigned a random IP address. There are complicated ways to automate retrieving the IP address at build time and creating firewall rules, but this depends on the access level to your server. To simplify things, I just allowed GitHub's IP ranges access to SSH, and I'm happy to hear [why this might be a bad idea](/contact/).
 
 To get the IP ranges, I created a file `github-ip-ranges.zsh` with the following:
 
