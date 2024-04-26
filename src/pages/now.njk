@@ -27,7 +27,7 @@ permalink: /now/index.html
             <div class="now-book-meta">
               <p class="now-book-author">{{ book.authors }}</p>
               <p class="now-book-title">{{ book.title }}</p>
-              <p class="now-book-description">{{ book.description | safe }}</p>
+              <p class="now-book-description">{{ book.description | safe | truncate }}</p>
             </div>
           {% endif %}
         {% endfor %}
@@ -45,7 +45,7 @@ permalink: /now/index.html
             <p class="now-book-author">{{ mostRecentFinishedBook.authors | safe }}</p>
             <p class="now-book-title">{{ mostRecentFinishedBook.title | safe }}</p>
             <p class="now-book-description">
-              {{ mostRecentFinishedBook.description | safe }}
+              {{ mostRecentFinishedBook.description | safe | truncate }}
             </p>
           </div>
         {% endif %}
