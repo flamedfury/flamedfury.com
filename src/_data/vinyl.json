@@ -1,6 +1,34 @@
 {
   "albums": [
     {
+      "title": "Smash",
+      "artist": "Offspring",
+      "year": 1999,
+      "format": "vinyl",
+      "genre": "Rock",
+      "label": "Epitaph",
+      "code": "86868-1",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/offspring-smash.png",
+      "alt": "Cover of the album",
+      "comment": "Smash is my favourite Offspring album. Reports indicate that this album sounds horrible on vinyl. I'll let you know when I get a chance to open it up to play."
+    },
+    {
+      "title": "Significant Other",
+      "artist": "Limp Bizkit",
+      "year": 1999,
+      "format": "vinyl",
+      "genre": "Hip Hop, Rock",
+      "label": "Flip Records, Interscope, UMe",
+      "code": "B0026803-01",
+      "varient": "Standard Black",
+      "number": "",
+      "image": "./src/assets/images/vinyl/significant-other.jpg",
+      "alt": "Cover of the album",
+      "comment": "One of my absolute favourites from when I was growing up. Took a while, but I finally have a copy."
+    },
+    {
       "title": "Trees",
       "artist": "Avantdale Bowling Club",
       "year": 2022,
