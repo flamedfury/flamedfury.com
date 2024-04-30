@@ -1,7 +1,7 @@
 const EleventyFetch = require('@11ty/eleventy-fetch');
 
 // Add MasterChef Australia to the denylist
-const denylist = ['MasterChef Australia'];
+const denylist = ['MasterChef Australia', 'MasterChef: Dessert Masters'];
 
 // Helper function to group episodes by show title
 function groupEpisodesByShow(episodes) {
