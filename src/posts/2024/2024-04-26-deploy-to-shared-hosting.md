@@ -3,7 +3,7 @@ title: Deploying An 11ty Project To Shared Hosting
 description: Forget the usual suspects for your website hosting. You should consider shared hosting for your next 11ty project.
 tags:
   - eleventy
-  - webdev
+  - development
   - guides
 date: 2024-04-25
 timestamp: 2024-04-25T05:17:11.582Z
