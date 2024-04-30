@@ -21,7 +21,7 @@ I surf the web on my desktop, laptop, tablet and phone. Yeah, that's a lot of de
 
 Interesting links are collected as new tabs from places like [Mastodon](https://social.lol/@flamed/), Discord, [Forums](https://discourse.32bit.cafe/), my RSS reader and random surfing on places like [Search My Site](https://searchmysite.net/) or [Marginalia](https://search.marginalia.nu/).
 
-Daily/weekly/monthly, I get overwhelmed with having too many tabs and lots of duplicate tabs open 🤣 (shoutout to [Ahn](https://anhvn.com/)). I find some focus time to go through each open tab and give them a quick skim to see if it's something I want to sit down and read with my full attention.
+Daily/weekly/monthly, I get overwhelmed with having too many tabs and lots of duplicate tabs open 🤣 (shoutout to [Anh](https://anhvn.com/)). I find some focus time to go through each open tab and give them a quick skim to see if it's something I want to sit down and read with my full attention.
 
 I'll send the links I want to read later straight to Pocket. Otherwise, I'll close the tab and then feel satisfied with less than a dozen open tabs. Repeat for each device...
 
