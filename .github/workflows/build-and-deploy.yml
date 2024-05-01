@@ -65,6 +65,7 @@ jobs:
           SOURCE: "dist/"
           TARGET: ${{ secrets.CPANEL_TARGET }}
           EXCLUDE: ".git*, .github*, node_modules*, src*"
+          ARGS: "-avzr --delete"
 
       - uses: actions/cache/save@v4
         with:
