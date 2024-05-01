@@ -32,10 +32,7 @@ excludeFromSitemap: true
       <updated>{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}</updated>
       <id>{{ absolutePostUrl }}</id>
       <summary>{{ post.data.description }}</summary>
-      <content xml:lang="{{ meta.locale }}" type="html">
-        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-        {% include 'partials/rss-thanks.njk' %}
-      </content>
+      <content xml:lang="{{ meta.locale }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}{% include 'components/rss-thanks.njk' %}</content>
     </entry>
   {%- endfor %}
 </feed>
