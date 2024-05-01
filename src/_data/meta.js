@@ -69,11 +69,11 @@ module.exports = {
 		initial: 'select'
   },
   greenweb: {
-    // this goues into src/common/greenweb.njk
+    // this goes into src/common/carbon.njk
     providers: {
       // if you want to add more than one, edit the array directly.
-      domain: 'neocities.org',
-      service: 'static-hosting'
+      domain: 'hooplahosting.co.nz',
+      service: 'shared-hosting'
     },
     credentials: {
       // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
@@ -84,8 +84,8 @@ module.exports = {
   },
   viewRepo: {
     // this is for the view/edit on github link. The value in the package.json will be pulled in.
-    allow: true,
+    allow: false,
     infoText: 'View this page on GitHub'
   },
-  easteregg: true
+  easteregg: false
 };
