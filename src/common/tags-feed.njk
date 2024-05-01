@@ -1,0 +1,41 @@
+---
+title: 'Category Archive'
+pagination:
+  data: collections.tagCollections
+  size: 1
+  alias: tag
+permalink: '/tags/{{ tag | slugify }}.xml'
+siteUrl: '{{ meta.url }}'
+authorName: '{{ meta.author.name }}'
+authorEmail: '{{ meta.author.email }}'
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
+  <title>{{ tag | capitalize }} - {{ meta.blog.name }}</title>
+  <subtitle>Latest posts in the "{{ tag }}" category</subtitle>
+  <link href="{{ meta.url }}/tags/{{ tag | slugify }}.xml" rel="self" />
+  <link href="{{ meta.url }}/tags/{{ tag | slugify }}" />
+  {% set tagCollection = collections.tagCollections[tag] %}
+  <updated>{{ tagCollection | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ meta.url }}/tags/{{ tag | slugify }}</id>
+  <author>
+    <name>{{ meta.author.name }}</name>
+    <email>{{ meta.author.email }}</email>
+  </author>
+  {%- for post in tagCollection | reverse %}
+    {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}" />
+      <updated>{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <summary>{{ post.data.description }}</summary>
+      <content xml:lang="{{ meta.locale }}" type="html">
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+        {% include 'partials/rss-thanks.njk' %}
+      </content>
+    </entry>
+  {%- endfor %}
+</feed>

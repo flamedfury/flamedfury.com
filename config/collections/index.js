@@ -21,6 +21,23 @@ const tagList = collection => {
   return Array.from(tagsSet).sort();
 };
 
+/** Second collection for tag xml feeds */
+const tagCollections = collection => {
+  const tags = collection.getAll().reduce((acc, item) => {
+    if (item.data.tags) {
+      item.data.tags.forEach(tag => {
+        if (!acc[tag]) {
+          acc[tag] = [];
+        }
+        acc[tag].push(item);
+      });
+    }
+    return acc;
+  }, {});
+
+  return tags;
+};
+
 /** All bookmarks as a collection */
 const allBookmarks = collection => {
   const bookmarks = collection.getAll().filter(item => item.data.isBookmark);
@@ -40,6 +57,7 @@ module.exports = {
   getAllPosts,
   onlyMarkdown,
   tagList,
+  tagCollections,
   allBookmarks,
   filterFeedPosts
 };

@@ -32,6 +32,7 @@ const {imageShortcode, includeRaw, liteYoutube} = require('./config/shortcodes/i
 const {getAllPosts} = require('./config/collections/index.js');
 const {onlyMarkdown} = require('./config/collections/index.js');
 const {tagList} = require('./config/collections/index.js');
+const {tagCollections} = require('./config/collections/index.js');
 const {allBookmarks} = require('./config/collections/index.js');
 const {filterFeedPosts} = require('./config/collections/index.js');
 
@@ -102,6 +103,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
   eleventyConfig.addCollection('tagList', tagList);
+  eleventyConfig.addCollection("tagCollections", tagCollections);
   eleventyConfig.addCollection('allBookmarks', allBookmarks);
   eleventyConfig.addCollection('feed', filterFeedPosts);
 
