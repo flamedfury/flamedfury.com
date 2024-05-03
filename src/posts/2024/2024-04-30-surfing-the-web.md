@@ -29,8 +29,6 @@ I'll send the links I want to read later straight to Pocket. Otherwise, I'll clo
 
 First, I need to find some focus time. Usually, when the kids are out of the house, downtime at the airport while travelling or after the kids are in bed, and I'm not falling asleep watching [TV](/tags/tv/) on the couch. 
 
-I'll Open Pocket on a computer, tablet or Kobo (rarely on the phone) and start reading my saved articles and posts. 
-
 I'll Open Pocket on a computer, tablet, or Kobo (rarely on the phone) and start reading my saved articles and posts. If an article or post is interesting and I want to share it with the community, I'll favourite it, archive it, and copy the URL for sharing. Otherwise, the saved article is deleted.
 
 ## Sharing the web
