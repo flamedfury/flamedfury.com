@@ -27,6 +27,7 @@ The script I'm about to share offers decent automation for building and deployin
 
 Because this is a Github Action, it relies on GitHub, which I still use to host my source code. If you're not into Github, try running this on [Gitea](https://docs.gitea.com/usage/actions/overview); I still need to look into it though.
 
+{% raw %}
 ```yaml
 name: "11ty: Build and Deploy"
 
@@ -90,6 +91,7 @@ jobs:
             src/assets/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
 ```
+{% endraw %}
 
 ## What do I need to use this?
 
@@ -101,6 +103,7 @@ Unless you're paying Github lots of money, when you run an action, your runner g
 
 To get the IP ranges, I created a file `github-ip-ranges.zsh` with the following:
 
+{% raw %}
 ```bash
 #!/bin/zsh
 
@@ -121,6 +124,7 @@ if [ -n "$github_ip_ranges" ]; then
     echo "$github_ip_ranges"
 fi
 ```
+{% endraw %}
 
 Then I gave it running permissiones `chmod +x github_ip_ranges.zsh` before running it with `./github_ip_ranges.zsh`
 
@@ -137,6 +141,7 @@ Once you have these, you need to create them as [repository secrets](https://doc
 
 ## Let's breakdown the script
 
+{% raw %}
 ```yaml
 name: "11ty: Build and Deploy"
 
@@ -147,6 +152,7 @@ on:
     branches:
       - main
 ```
+{% endraw %}
 
 - The script is named "11ty: Build and Deploy". 
 - It automates the process of building and deploying your 11ty website project to a shared hosting server. 
@@ -154,6 +160,7 @@ on:
 
 ### Setup
 
+{% raw %}
 ```yaml
 jobs:
   build-and-deploy:
@@ -167,12 +174,14 @@ jobs:
           node-version: lts/*
           cache: "npm"
 ```
+{% endraw %}
 
 - The job runs on the latest version of the Ubuntu operating system (`ubuntu-latest`).
 - It uses the `actions/checkout@v4` action to check out the repository and `actions/setup-node@v4` action to set up Node.js with the latest LTS version.
 
 ### Restore cache
 
+{% raw %}
 ```yaml
   - uses: actions/cache/restore@v4
     id: cache
@@ -187,6 +196,7 @@ jobs:
         11ty-${{ runner.os }}
         ${{ runner.os }}-11ty
 ```
+{% endraw %}
 
 - `actions/cache/restore@v4` is used to restore cached files and directories that may speed up the build process.
 - The cache includes specific paths such as `.cache/`, `src/assets/fonts/`, and others.
@@ -194,6 +204,7 @@ jobs:
 
 ### Build
 
+{% raw %}
 ```yaml
       - name: Build website
         run: |
@@ -203,6 +214,7 @@ jobs:
           LASTFM_KEY: ${{ secrets.LASTFM_KEY }}
           LASTFM_USER: ${{ secrets.LASTFM_USER }}
 ```
+{% endraw %}
 
 - Installs necessary dependencies with `npm install`.
 - Builds the website with `npm run build`.
@@ -210,6 +222,7 @@ jobs:
 
 ### Deploy
 
+{% raw %}
 ```yaml
       - name: Deploy website to server
         uses: easingthemes/ssh-deploy@v5.0.3
@@ -222,6 +235,7 @@ jobs:
           TARGET: ${{ secrets.CPANEL_TARGET }}
           EXCLUDE: ".git*, .github*, node_modules*, src*"
 ```
+{% endraw %}
 
 - Uses the `easingthemes/ssh-deploy`action to deploy the built website to the shared hosting server.
 - Uses an SSH private key (`CPANEL_SSH_KEY`) to authenticate with the server.
@@ -232,6 +246,7 @@ jobs:
 
 ### Save cache
 
+{% raw %}
 ```yaml
       - uses: actions/cache/save@v4
         with:
@@ -242,6 +257,7 @@ jobs:
             src/assets/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
 ```
+{% endraw %}
 
 - Uses the `actions/cache/save@v4` action to save the cache paths from the build process for future runs.
 - The cache key is based on the runner's operating system and GitHub run ID.
