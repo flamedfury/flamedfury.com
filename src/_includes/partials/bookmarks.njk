@@ -9,7 +9,7 @@
         </h2>
         <div class="cluster">
           <span class="text-step-min-1">
-            {% set definedDate = bookmark.date %} {% include "components/date.njk" %}
+            {% set definedDate = bookmark.data.date %} {% include "components/date.njk" %}
           </span>
         </div>
         <p>{{ bookmark.data.notes | truncate(100) | safe }}</p>
