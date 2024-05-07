@@ -1,0 +1,88 @@
+---
+title: Homepage
+permalink: /homepage/index.html
+description: What's going on Internet?
+layout: base
+masonry: true
+---
+
+<div class="wrapper">
+  <section class="full | region">
+    <div class="wrapper flow">
+      <div class="feature | grid region" data-rows="masonry" data-layout="25">
+        <div class="card featured">
+          <h2>What's going on Internet?</h2>
+            <p>Kia ora! 👋 I’m <span class="gradient-text">fLaMEd</span>🔥 I’m the webmaster of <span class="gradient-text">fLaMEd fury</span>, a collection of stuff that means everything to me and probably nothing to you.</p>
+            <p>I’ve been surfing the web since <a href="/memories/">1996</a>. I <a href="/posts/i-love-the-web">love the web</a> and writing <a href="/tags/web/">about the web</a>.</p>
+            <p>Outside of the pixels, I’m a husband and father of two. My family and I live with our two dogs in Te Awa Kairangi, Aotearoa.</p>
+            <p>Once you’ve looked around, don’t hesitate to <a href="/contact/">get in touch</a>! I’d love to hear from you.</p>
+            <p>This homepage is my love letter to the web. Think of it as a throwback to the old everything/nothing websites of the early 2000s.</p>
+        </div>
+        <div class="card">
+          <h2>Latest Posts</h2>
+            <ul>
+              <li>Post 1</li>
+              <li>Post 2</li>
+              <li>Post 3</li>
+              <li>Post 4</li>
+              <li>Post 5</li>
+            </ul>
+          <h2>Featured Posts</h2>
+            <ul>
+              <li>Post 1</li>
+              <li>Post 2</li>
+              <li>Post 3</li>
+              <li>Post 4</li>
+              <li>Post 5</li>
+            </ul>
+        </div>
+        <div class="card">
+          <h2>Currently</h2>
+            <p>🏡 Living in Te Awa Kairangi, Aotearoa</p>
+            <p>👨 Being a full time dad</p>
+            <p>🏗️ Building flamedfury.com</p>
+            <p>☕ Supporting the <a href="https://32bit.cafe">32-Bit Cafe</a></p>
+            <p>{{ status.emoji }} {{ status.content }}</p>
+            <p>See more of <a href="/now/">what I'm up to now</a>.</p>
+        </div>
+        <div class="card">
+          <h2>Reading</h2>
+          {% for book in bookshelf | reverse %}
+          {% if book.status == 'started' %}
+            {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book {{ book.title }}" %}
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="card">
+          <h2>Latest record</h2>
+          {%- for i in range(0, 1) -%}
+            {%- set record = vinyl.albums[i] %}
+            {% eleventyImage record.image %}
+          {%- endfor -%}
+          <p>Check out the <a href="/recordshelf/">Recordshelf</a></p>
+        </div>
+        <div class="card">
+          <h2>Just Watched</h2>
+          <ul role="list">
+          {% for movie in movies %}
+          <li>🍿 {{ movie.movie.title }}</li>
+          {% endfor %}
+          {% for show in tv %}
+          <li>📺 {{ show.show.title }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="card">
+          <h2></h2>
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card"></div>
+      </div>
+    </div>
+  </section>
+</div>
