@@ -29,12 +29,3 @@ to change how empty grid tracks are handled */
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 50vw, 28rem);
 }
-
-.grid[data-layout='25'] {
-  --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 75vw, 28rem);
-}
-
-.featured {
-  grid-column: span 2;
-}

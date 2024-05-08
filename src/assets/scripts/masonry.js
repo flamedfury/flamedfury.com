@@ -1,44 +1,48 @@
-// ----- masonry fallback if CSS masonry not supported, solution by Ana Tudor: https://codepen.io/thebabydino/pen/yLYppjK
+/**
+ * Initializes the masonry layout for grids that do not support CSS grid masonry.
+ * Inspired by:
+ * Ana Tudor: https://codepen.io/thebabydino/pen/yLYppjK and
+ * Andy Barefoot: https://codepen.io/andybarefoot/pen/QMeZda
+ */
+document.addEventListener('DOMContentLoaded', function () {
+  const isMasonrySupported = CSS.supports('grid-template-rows', 'masonry');
 
-const supportMasonry = CSS.supports('grid-template-rows', 'masonry');
+  if (!isMasonrySupported) {
+    const masonryGrids = [...document.querySelectorAll('.grid[data-rows="masonry"]')];
 
-if (!supportMasonry) {
-  let grids = [...document.querySelectorAll('.grid[data-rows="masonry"]')];
+    function layoutMasonry() {
+      masonryGrids.forEach(grid => {
+        const items = [...grid.children].filter(child => child.nodeType === 1);
 
-  if (grids.length && getComputedStyle(grids[0]).gridTemplateRows !== 'masonry') {
-    grids = grids.map(grid => ({
-      _el: grid,
-      gap: parseFloat(getComputedStyle(grid).rowGap),
-      items: [...grid.childNodes]
-        .filter(c => c.nodeType === 1 && +getComputedStyle(c).gridColumnEnd !== -1)
-        .map(c => ({_el: c})),
-      ncol: 0
-    }));
+        const columnCount = getComputedStyle(grid).gridTemplateColumns.split(' ').length;
 
-    function layout() {
-      grids.forEach(grid => {
-        let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(' ').length;
-        if (grid.ncol !== ncol) {
-          grid.ncol = ncol;
-          grid.items.forEach(c => c._el.style.removeProperty('margin-block-start'));
-          if (grid.ncol > 1) {
-            grid.items.slice(ncol).forEach((c, i) => {
-              let prev_fin = grid.items[i]._el.getBoundingClientRect().bottom,
-                curr_ini = c._el.getBoundingClientRect().top;
-              c._el.style.marginTop = `${prev_fin + grid.gap - curr_ini}px`;
-            });
+        items.forEach((item, index) => {
+          item.style.removeProperty('margin-top'); // Clear previous adjustments
+
+          // Only adjust items that are not in the first row
+          if (index >= columnCount) {
+            const previousIndex = index - columnCount;
+            const previousItem = items[previousIndex];
+
+            const previousItemBottom =
+              previousItem.getBoundingClientRect().bottom + parseFloat(getComputedStyle(grid).rowGap);
+
+            const currentItemTop = item.getBoundingClientRect().top;
+
+            item.style.marginTop = `${previousItemBottom - currentItemTop}px`;
           }
-        }
+        });
       });
     }
 
-    addEventListener(
-      'load',
-      e => {
-        layout();
-        addEventListener('resize', layout, false);
-      },
-      false
-    );
+    // Initial layout setup
+    layoutMasonry();
+
+    // Resize handling with debounce to optimize performance
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(layoutMasonry, 100);
+    });
   }
-}
+});
