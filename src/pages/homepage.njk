@@ -10,7 +10,7 @@ masonry: true
   <section class="full | region">
     <div class="wrapper flow">
       <div class="feature | grid region" data-rows="masonry" data-layout="50-50">
-        <div class="card featured">
+        <div class="homepage-card flow featured">
           <h2>What's going on Internet?</h2>
             <p>Kia ora! 👋 I’m <span class="gradient-text">fLaMEd</span>🔥 I’m the webmaster of <span class="gradient-text">fLaMEd fury</span>, a collection of stuff that means everything to me and probably nothing to you.</p>
             <p>I’ve been surfing the web since <a href="/memories/">1996</a>. I <a href="/posts/i-love-the-web">love the web</a> and writing <a href="/tags/web/">about the web</a>.</p>
@@ -18,46 +18,44 @@ masonry: true
             <p>Once you’ve looked around, don’t hesitate to <a href="/contact/">get in touch</a>! I’d love to hear from you.</p>
             <p>This homepage is my love letter to the web. Think of it as a throwback to the old everything/nothing websites of the early 2000s.</p>
         </div>
-        <div class="card">
-          <h3>Heading</h3>
-          <p>Paragraph text</p>
+        <div class="homepage-card">
+          <h3>status.lol</h3>
+          <p>{{ status.emoji }} {{ status.content }}</p>
         </div>
-        <div class="card">
-          <h3>Latest Posts</h3>
+        <div class="homepage-card flow">
+          <h3>Latest posts</h3>
             <ul>
-              <li>Post 1</li>
-              <li>Post 2</li>
-              <li>Post 3</li>
-              <li>Post 4</li>
-              <li>Post 5</li>
+              {% set itemList = collections.posts %} {% for item in itemList.slice(0, 6) %}
+                <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
+              {% endfor %}
             </ul>
-          <h3>Featured Posts</h3>
+          <h3>Read these</h3>
             <ul>
-              <li>Post 1</li>
-              <li>Post 2</li>
-              <li>Post 3</li>
-              <li>Post 4</li>
+              <li><a href="/posts/i-love-the-web/">I Love The Web</a></li>
+              <li><a href="/posts/an-easy-web/">An Easy Web</a></li>
+              <li><a href="/posts/build-personal-websites/">Build Personal Websites</li>
+              <li><a href="/posts/making-websites-should-be-easy/">Making Websites Should Be Easy</a></li>
               <li>Post 5</li>
             </ul>
         </div>
-        <div class="card">
-          <h3>Currently</h3>
+        <div class="homepage-card flow">
+          <h3>I am...</h3>
             <p>🏡 Living in Te Awa Kairangi, Aotearoa</p>
             <p>👨 Being a full time dad</p>
             <p>🏗️ Building flamedfury.com</p>
             <p>☕ Supporting the <a href="https://32bit.cafe">32-Bit Cafe</a></p>
-            <p>{{ status.emoji }} {{ status.content }}</p>
             <p>See more of <a href="/now/">what I'm up to now</a>.</p>
         </div>
-        <div class="card">
+        <div class="homepage-card">
           <h3>Reading</h3>
           {% for book in bookshelf | reverse %}
           {% if book.status == 'started' %}
             {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book {{ book.title }}" %}
           {% endif %}
           {% endfor %}
+          <p>Check out the <a href="/bookshelf/">Bookshelf</a></p>
         </div>
-        <div class="card">
+        <div class="homepage-card">
           <h3>Latest record</h3>
           {%- for i in range(0, 1) -%}
             {%- set record = vinyl.albums[i] %}
@@ -65,7 +63,7 @@ masonry: true
           {%- endfor -%}
           <p>Check out the <a href="/recordshelf/">Recordshelf</a></p>
         </div>
-        <div class="card">
+        <div class="homepage-card">
           <h3>Just Watched</h3>
           <ul role="list">
           {% for movie in movies %}
@@ -76,19 +74,19 @@ masonry: true
           {% endfor %}
           </ul>
         </div>
-        <div class="card">
+        <div class="homepage-card">
           <h3>Heading</h3>
           <p>Skate ipsum dolor sit amet, judo air g-turn Kevin Harris acid drop nosegrind handplant. Saran Wrap ollie slob air blunt 360 slide. Death box casper front foot impossible tail gnar bucket powerslide.</p>
         </div>
-        <div class="card">
+        <div class="homepage-card">
           <h3>Heading</h3>
           <p>Skate ipsum dolor sit amet, judo air g-turn Kevin Harris acid drop nosegrind handplant. Saran Wrap ollie slob air blunt 360 slide. Death box casper front foot impossible tail gnar bucket powerslide.</p>
         </div>
-        <div class="card">
+        <div class="homepage-card">
           <h3>Heading</h3>
           <p>Skate ipsum dolor sit amet, judo air g-turn Kevin Harris acid drop nosegrind handplant. Saran Wrap ollie slob air blunt 360 slide. Death box casper front foot impossible tail gnar bucket powerslide.</p>
         </div>
-        <div class="card">
+        <div class="homepage-card">
           <h3>Heading</h3>
           <p>Skate ipsum dolor sit amet, judo air g-turn Kevin Harris acid drop nosegrind handplant. Saran Wrap ollie slob air blunt 360 slide. Death box casper front foot impossible tail gnar bucket powerslide.</p>
         </div>
