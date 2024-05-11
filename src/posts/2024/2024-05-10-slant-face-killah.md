@@ -15,7 +15,7 @@ Doot, doot, doot, doot, doot, doot
 Argh!
 <span class="gradient-text" style="font-size: var(--size-step-2)">Brrrrrrrrrrrrrrrrrrrrt</span>
 
-Ayyo, what's up Internet? I last wrote about Conway [four years ago](/posts/no-one-mourns-the-wicked/). The intention was to post more about him and his records but for reasons it never happened. What better opportunity than day 10 of [#WeblogPoMo2024](/tags/weblogpomo2024/) and the release day for [Slant Face Killah]().
+Ayyo, what's up Internet? I last wrote about Conway [four years ago](/posts/no-one-mourns-the-wicked/). The intention was to post more about him and his records but for reasons it never happened. What better opportunity than day 10 of [#WeblogPoMo2024](/tags/weblogpomo2024/) and the release day for [Slant Face Killah](https://musicthread.app/link/2gJf35PrGW2omLFb0bv3zgG8KrO).
 
 Conway has been my favourite Griselda member since stumbling across them in 2015's Griselda Ghost. You can see in [yesterday's post](/posts/top-50-artists-2021-2024/) he's the second artist in my top 50 right after Miley.
 
