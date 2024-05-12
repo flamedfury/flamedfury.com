@@ -1,6 +1,6 @@
 ---
 title: Scribe - Not Many (REMIX)
-description: 
+description: The most legendary hip-hop track to come out of Aotearoa.
 tags:
   - music
   - weblogpomo2024
