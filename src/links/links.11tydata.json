@@ -43,6 +43,18 @@
       "note": "Frills' has crafted a beautiful website for herself with 11ty and Neocities. Filled with experiments, blogs, developer resources. The HTML named colours experiment is awesome."
     },
     {
+      "name": "Chris Burnell",
+      "url": "https://chrisburnell.com//",
+      "feed": "https://chrisburnell.com/feed.xml",
+      "note": "Chris has become a great friend and has been great to bounce ideas with. His website is huge and has heaps to explore. Development, IndieWeb, beer..."
+    },
+    {
+      "name": "Joel Chrono",
+      "url": "https://joelchrono.xyz/",
+      "feed": "https://joelchrono.xyz/feed.xml",
+      "note": "Joel is another recent friend who I've been chatting with. Great website to dive into emulation and blogging in general."
+    },
+    {
       "name": "anhvn",
       "url": "https://anhvn.com/",
       "feed": "https://anhvn.com/feed.xml",
@@ -55,34 +67,10 @@
       "note": "Simone is a musician and blogger. He thinks and blogs about similar things to me."
     },
     {
-      "name": "Kevin Powell",
-      "url": "https://www.youtube.com/@KevinPowell",
-      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
-      "note": "Helping you learn how to make the web, and make it look good while you're at it."
-    },
-    {
-      "name": "Chris Coyier",
-      "url": "https://chriscoyier.net/",
-      "feed": "https://chriscoyier.net/feed/",
-      "note": "Blogs about blogging, web development and life."
-    },
-    {
-      "name": "Oh Hello Ana",
-      "url": "https://ohhelloana.blog/",
-      "feed": "https://ohhelloana.blog/feed.xml",
-      "note": "Blogs about blogging, web development and life. Shares great bookmarks."
-    },
-    {
       "name": "The Cheapskates Guide to Computers and the Internet",
       "url": "http://cheapskatesguide.org/",
       "note": "Essays about the otherside of the Internet with a focus on low cost computing.",
       "feed": ""
-    },
-    {
-      "name": "Localghost",
-      "url": "https://localghost.dev/",
-      "feed": "https://localghost.dev/articles.xml",
-      "note": "Fun website. Blogs about tech, web development and mental health"
     },
     {
       "name": "Manuel Moreale",
@@ -157,12 +145,6 @@
       "url": "https://bytemoth.neocities.org/",
       "feed": "",
       "note": "Bytemoth is a Digital Warlock and has been around a while. Start at the homepage and dive in and get lost."
-    },
-    {
-      "name": "Wheel Collectors",
-      "url": "https://wheelcollectors.com/",
-      "feed": "",
-      "note": "Matchbox Forum is a not-for-profit organisation of Matchbox collectors. A great resource to keep up with the latest Matchbox releases and news."
     }
   ],
   "webDevelopment": [
@@ -239,10 +221,10 @@
       "note": "A collection of quick copy HTML snippets for a variety of common scenarios by Stephanie Eckles."
     },
     {
-      "name": "SitePoint",
-      "url": "https://www.sitepoint.com/",
-      "feed": "",
-      "note": "Learn Web Design & Development with SitePoint tutorials, courses and books"
+      "name": "Kevin Powell",
+      "url": "https://www.youtube.com/@KevinPowell",
+      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJZv4d5rbIKd4QHMPkcABCw",
+      "note": "Helping you learn how to make the web, and make it look good while you're at it."
     }
   ],
   "newsLetters": [
