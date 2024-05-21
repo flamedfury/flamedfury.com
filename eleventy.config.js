@@ -26,7 +26,7 @@ const {
 } = require('./config/filters/index.js');
 
 // module import shortcodes
-const {imageShortcode, includeRaw, liteYoutube} = require('./config/shortcodes/index.js');
+const {imageShortcode, includeRaw, liteYoutube, svgShortcode} = require('./config/shortcodes/index.js');
 
 // module import collections
 const {getAllPosts} = require('./config/collections/index.js');
@@ -91,6 +91,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, by stephanie eckles
+  eleventyConfig.addShortcode('svg', svgShortcode);
 
   // 	--------------------- Custom transforms ---------------------
   eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
