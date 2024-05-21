@@ -1,70 +1,42 @@
-const storageKey = 'theme-preference';
-const lightLabel = '{{ meta.themeSwitch.light }}';
-const darkLabel = '{{ meta.themeSwitch.dark }}';
+document.addEventListener('DOMContentLoaded', function () {
+  const themeToggleBtn = document.querySelector('#theme-toggle');
+  const themeLabel = document.querySelector('#theme-label');
+  const lightIcon = document.querySelector('.light-icon');
+  const darkIcon = document.querySelector('.dark-icon');
+  const storageKey = 'theme-preference';
 
-const theme = {
-  value: getColorPreference()
-};
-
-window.onload = () => {
-  const themeToggleButton = document.querySelector('#theme-toggle');
-  const switcher = document.querySelector('[data-theme-switcher]');
-
-  if (!switcher) {
-    return;
-  }
-
-  switcher.removeAttribute('hidden');
-  reflectPreference();
-
-  // Event listener for the theme toggle button
-  themeToggleButton.addEventListener('click', toggleTheme);
-
-  // Update button's aria-pressed attribute based on the current theme
-  themeToggleButton.setAttribute('aria-pressed', theme.value === 'light');
-
-  // Set the button text based on the current theme
-  updateButtonText();
-};
-
-function toggleTheme() {
-  theme.value = theme.value === 'light' ? 'dark' : 'light';
-  setPreference();
-  updateButtonText();
-}
-
-function updateButtonText() {
-  const themeToggleButton = document.querySelector('#theme-toggle');
-  const themeToggleText = document.querySelector('#theme-toggle-text');
-
-  if (theme.value === 'light') {
-    // Show "DARK" when in light mode
-    themeToggleText.textContent = darkLabel;
-    themeToggleButton.setAttribute('aria-pressed', false);
-  } else {
-    // Show "LIGHT" when in dark mode
-    themeToggleText.textContent = lightLabel;
-    themeToggleButton.setAttribute('aria-pressed', true);
-  }
-}
-
-function getColorPreference() {
-  if (localStorage.getItem(storageKey)) {
-    return localStorage.getItem(storageKey);
-  } else {
+  // Fetches the color preference from localStorage or system settings
+  function getColorPreference() {
+    const storedPreference = localStorage.getItem(storageKey);
+    if (storedPreference) {
+      return storedPreference;
+    }
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
-}
 
-function setPreference() {
-  localStorage.setItem(storageKey, theme.value);
-  reflectPreference();
-}
+  let currentTheme = getColorPreference();
 
-function reflectPreference() {
-  document.firstElementChild.setAttribute('data-theme', theme.value);
-  updateButtonText();
-}
+  function updateTheme() {
+    const isDark = currentTheme === 'dark';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    localStorage.setItem(storageKey, currentTheme);
 
-// Set early so no page flashes / CSS is made aware
-reflectPreference();
+    themeLabel.textContent = isDark ? '{{ meta.themeSwitch.dark }}' : '{{ meta.themeSwitch.light }}';
+    themeToggleBtn.setAttribute('aria-pressed', isDark);
+    lightIcon.style.display = isDark ? 'none' : 'block';
+    darkIcon.style.display = isDark ? 'block' : 'none';
+  }
+
+  themeToggleBtn.addEventListener('click', () => {
+    currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+    updateTheme();
+  });
+
+  // Add event listener for system color scheme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    currentTheme = e.matches ? 'dark' : 'light';
+    updateTheme();
+  });
+
+  updateTheme(); // Initialize theme on load
+});
