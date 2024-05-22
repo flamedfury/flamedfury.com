@@ -16,26 +16,11 @@
   padding: var(--space-xs);
 }
 
+:not(nav#social).site-foot__inner {
+  flex-wrap: wrap;
+}
+
 .site-foot svg {
   inline-size: 1.1em;
   block-size: 1em;
-}
-
-.site-foot .creator {
-  text-decoration: none;
-}
-
-.site-foot .creator {
-  text-decoration: none;
-}
-.site-foot .creator:hover {
-  color: transparent;
-  background-image: var(--gradient-rainbow);
-  background-size: 100%;
-  background-repeat: repeat;
-  background-clip: text;
-}
-
-.site-foot .creator:hover svg {
-  color: var(--color-text);
 }

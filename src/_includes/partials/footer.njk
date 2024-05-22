@@ -1,6 +1,15 @@
 {% set activePage = page.url | url %}
 <footer class="site-foot">
   <div class="wrapper flow">
+
+    <div class="site-foot__inner">
+      <nav class="site-foot__inner text-step-min-1 cluster place-content-center" aria-label="{{ meta.navigation.ariaBottom }}">
+        {% for item in navigation.bottom %}
+          <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+
     <div class="site-foot__inner">
       <nav class="site-foot__inner text-step-min-1 text-center" aria-label="{{ meta.navigation.ariaBottom }}">
         &copy; 1999 - {% year %}
@@ -9,8 +18,7 @@
         </a>
         don't jack.
       </nav>
-      <nav
-        class="site-foot__inner" aria-label="{{ meta.navigation.ariaPlatforms }}">
+      <nav class="site-foot__inner" aria-label="{{ meta.navigation.ariaPlatforms }}">
         <!-- gets the first item from the feed loop set in meta -->
         <a href="{{ meta.blog.feedLinks[0].url }}" rel="alternate" type="{{ meta.blog.feedLinks[0].type }}">
           <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
@@ -26,23 +34,6 @@
           {% endif %}
         {% endfor %}
       </nav>
-    </div>
-    <div class="site-foot__inner">
-      <nav class="site-foot__inner text-step-min-1 cluster place-content-center" aria-label="{{ meta.navigation.ariaBottom }}">
-        {% for item in navigation.bottom %}
-          <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
-        {% endfor %}
-      </nav>
-    </div>
-    <div class="site-foot__inner"></div>
-
-    <!-- created by -->
-    <div class="site-foot__inner">
-      <a class="creator text-step-min-1" href="{{ meta.creator.website }}">
-        Made with
-        <span>{% include 'svg/heart.svg' %}</span>
-        by {{ meta.creator.name }}
-      </a>
     </div>
   </div>
 </footer>
