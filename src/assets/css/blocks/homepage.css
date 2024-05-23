@@ -32,3 +32,55 @@
 .homepage-card {
   --gutter: var(--space-l);
 }
+
+
+
+.homepage-stack-layout > * {
+	grid-area: stack;
+}
+
+.homepage-stack-layout {
+	display: grid;
+	grid-template-areas: "stack";
+}
+
+.homepage-background-picture img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	.homepage-background-picture img {
+    --background-img-brightness: 0.45;
+    --background-img-saturate: 1.25;
+		filter: brightness(var(--background-img-brightness))
+			saturate(var(--background-img-saturate));
+	}
+} */
+
+
+.homepage-stack-layout h1 {
+	place-self: center;
+	text-align: center;
+  font-size: var(--size-step-6);
+  text-transform: uppercase;
+  mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/5383/splatter-mask_1_1.png");
+}
+
+.homepage-stack-layout small {
+	color: var(--color-text);
+	font-style: italic;
+}
+
+.homepage-stack-layout h1,
+.homepage-stack-layout small {
+	position: relative;
+}
+
+.homepage-background-picture__content {
+	/* ensure stacking context above the picture */
+	position: relative;
+	align-self: center;
+	text-align: center;
+}
