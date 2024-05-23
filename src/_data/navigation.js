@@ -17,8 +17,8 @@ module.exports = {
       url: '/now/'
     },
     {
-      text: 'Uses',
-      url: '/uses/'
+      text: 'Slashes',
+      url: '/slashes/'
     },
     {
       text: 'Feeds',
