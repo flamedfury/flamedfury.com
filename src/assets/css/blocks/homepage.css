@@ -65,7 +65,7 @@
 	text-align: center;
   font-size: var(--size-step-6);
   text-transform: uppercase;
-  mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/5383/splatter-mask_1_1.png");
+  mask-image: url("../images/splatter-mask.png");
 }
 
 .homepage-stack-layout small {
