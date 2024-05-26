@@ -18,15 +18,25 @@
   background-color: var(--color-secondary);
 }
 
-.homepage-card h2,
-.homepage-card h3 {
+.homepage-card h2 {
   font-family: var(--font-base);
   font-size: var(--size-step-2);
+}
+
+.homepage-card h3 {
+  font-family: var(--font-base);
+  font-size: var(--size-step-1);
 }
 
 .homepage-card h2 a,
 .homepage-card h3 a {
   text-decoration: none;
+}
+
+.homepage-card p,
+.homepage-card a,
+.homepage-card li {
+  font-size: var(--size-step-min-1);
 }
 
 .homepage-card {

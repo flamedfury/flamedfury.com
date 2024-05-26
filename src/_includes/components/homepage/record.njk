@@ -1,0 +1,5 @@
+{%- for i in range(0, 1) -%}
+{%- set record = vinyl.albums[i] %}
+{% eleventyImage record.image %}
+{%- endfor -%}
+<p><a href="/recordshelf/">Recordshelf</a></p>
