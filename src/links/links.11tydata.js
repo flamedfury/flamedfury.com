@@ -1,4 +1,3 @@
-const { AssetCache } = require('@11ty/eleventy-fetch');
 const normalizeUrl = require('normalize-url');
 
 module.exports = {

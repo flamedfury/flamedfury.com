@@ -16,11 +16,5 @@
       {{ link.cleansedUrl }}
     </p>
     <p class="blog-note">{{ link.note }}</p>
-    {% if link.latestPost and link.latestPost.title %}
-      <p class="latest-post">
-        <b>Latest post:</b>
-        <a href="{{ link.latestPost.url }}"> {{ link.latestPost.title }} </a>
-      </p>
-    {% endif %}
   </div>
 </li>
