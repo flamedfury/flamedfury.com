@@ -1,14 +1,10 @@
 ---
 title: Contact
 permalink: /contact/index.html
-description: How to get in contact with fLaMEd
+description: My email contact form
 layout: page
 ---
 
-Hey there 👋, email ✉️ is the easiest way to contact me. Hit me up [flamed@flamedfury.com](mailto:flamed@flamedfury.com?subject=Sup%20fLaMEd?), I’d love to hear from you.
-
-I've been playing around with Mastodon and you can find me over on social.lol as [@flamed](https://social.lol/@flamed).
-
-If email isn’t your thing you can fill out the contact form below and I’ll do my best to get back to you.
+Hey there 👋, the form below is an easy way to get in touch with me. However, I'm more likely to respond through other means of communication, check out my [Hello](/hello/) page to see how!
 
 {% include 'partials/contact.njk' %}

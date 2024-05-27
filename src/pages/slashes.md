@@ -1,5 +1,5 @@
 ---
-title: /slashes
+title: Slashes
 description: A page listing all my /slash pages
 layout: page
 permalink: /slashes/index.html
@@ -10,12 +10,12 @@ This is a [/slashes](https://slashpages.net/) page. A /slashes page is an index 
 
 - [About](/about/)
 - [Blogroll](/links#blogroll)
-- Changelog
+- [Changelog](/changes/)
 - Colophon
 - [Contact](/contact/)
 - Defaults
 - [Feeds](/feeds/)
-- Hello
+- [Hello](/hello/)
 - Ideas
 - [Interests](/interests/)
 - Nope
