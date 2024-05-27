@@ -7,14 +7,13 @@ date: 2021-01-12
 updated: 2023-05-29
 ---
 
-<p>This is my comic collection...</p>
+<p>This is most of my comic collection, I'm still working on adding the back catalogue...</p>
 
 <div class="grid mt-l-xl" style="--grid-min-item-size: 12rem">
-    {% for comic in comics.series %}
+    {% for comic in comics.data %}
     <div class="comics">
-        <img src="{{ comic.cover }}" alt="Cover Image for {{ comic.name }}" load="lazy">
-        <p class="comics-publisher mt-s-m">{{ comic.publisher }}</p>
-        <p class="comics-title">{{ comic.name }}</p>
+        <a href="{{ comic.url }}" class="no-indicator"><img src="{{ comic.cover }}" alt="Cover Image for {{ comic.name }}" load="lazy"></a>
+        <p class="comics-title">{{ comic.name }} ({{ comic.date_end }})</p>
         <p class="comics-date">{{ comic.date }}</p>
         <p class="comics-collection"><a href="{{ comic.url }}">View issues</a></p>
     </div>
