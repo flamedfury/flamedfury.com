@@ -23,23 +23,38 @@ permalink: /now/index.html
 
     <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
       <h2>Reading: books</h2>
-      <h3>Currently reading</h3>
-      <div class="sidebar flow">
-        {% set started_books_found = false %}
-        {% for book in bookshelf | reverse %}
-          {% if book.status == 'started' %}
-            {% set started_books_found = true %}
-            <div>
-              {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book {{ book.title }}" %}
-            </div>
-            <div class="now-book-meta">
-              <p class="now-book-author">{{ book.authors }}</p>
-              <p class="now-book-title">{{ book.title }}</p>
-              <p class="now-book-description">{{ book.description | safe | truncate }}</p>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+
+      {% set started_books_found = false %}
+      {% for book in bookshelf %}
+        {% if book.status == 'started' %}
+          {% set started_books_found = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if started_books_found %}
+        <!-- currently reading -->
+        <h3>Currently reading</h3>
+        <div class="sidebar flow">
+          {% for book in bookshelf | reverse %}
+            {% if book.status == 'started' %}
+              <div>
+                {% if book.image %}
+                  {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + book.image, "An image of the book cover for the book " + book.title %}
+                {% elseif book.isbn %}
+                  {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book " + book.title %}
+                {% else %}
+                  <p>No image available for {{ book.title }}</p>
+                {% endif %}
+              </div>
+              <div class="now-book-meta">
+                <p class="now-book-author">{{ book.authors }}</p>
+                <p class="now-book-title">{{ book.title }}</p>
+                <p class="now-book-description">{{ book.description | safe | truncate }}</p>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
 
       <!-- recently finished reading -->
       <h3>Just finished</h3>
@@ -47,14 +62,16 @@ permalink: /now/index.html
         {% set mostRecentFinishedBook = bookshelf | getMostRecentFinishedBook %}
         {% if mostRecentFinishedBook %}
           <div>
-            {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + mostRecentFinishedBook.isbn +".png", "An image of the book cover for the book {{ mostRecentFinishedBook.title }}" %}
+            {% if mostRecentFinishedBook.image %}
+              {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + mostRecentFinishedBook.image, "An image of the book cover for the book " + mostRecentFinishedBook.title %}
+            {% else %}
+              {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + mostRecentFinishedBook.isbn +".png", "An image of the book cover for the book " + mostRecentFinishedBook.title %}
+            {% endif %}
           </div>
           <div class="now-book-meta">
             <p class="now-book-author">{{ mostRecentFinishedBook.authors | safe }}</p>
             <p class="now-book-title">{{ mostRecentFinishedBook.title | safe }}</p>
-            <p class="now-book-description">
-              {{ mostRecentFinishedBook.description | safe | truncate }}
-            </p>
+            <p class="now-book-description">{{ mostRecentFinishedBook.description | safe | truncate }}</p>
           </div>
         {% endif %}
       </div>

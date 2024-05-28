@@ -19,7 +19,11 @@ updated: 2024-04-10
     {% for book in bookshelf | reverse %}
       {% if book.status == 'want to read' %}
         <div class="bookshelf flow">
-          {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book {{ book.title }}" %}
+        {% if book.image %}
+          {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + book.image, "An image of the book cover for the book " + book.title %}
+        {% else %}
+          {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book " + book.title %}
+        {% endif %}
         </div>
       {% endif %}
     {% endfor %}
@@ -30,11 +34,15 @@ updated: 2024-04-10
     <div class="grid" style="--grid-min-item-size: 10rem">
 
     {% for book in bookshelf | reverse %}
-      {% if book.status == 'finished' %}
-        <div class="bookshelf flow">
-          {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book {{ book.title }}" %}
-        </div>
-      {% endif %}
+    {% if book.status == 'finished' %}
+    <div class="bookshelf flow">
+    {% if book.image %}
+      {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + book.image, "An image of the book cover for the book " + book.title %}
+    {% else %}
+      {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book " + book.title %}
+    {% endif %}
+    </div>
+    {% endif %}
     {% endfor %}
     </div>
     

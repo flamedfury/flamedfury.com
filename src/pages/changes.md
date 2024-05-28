@@ -10,6 +10,10 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- May 28, 2024
+-- Upgraded to [library-pals v9.0.0](https://github.com/library-pals/read-action/releases/tag/v9.0.0)
+-- Adjusted the logic for looping through books for the [Bookshelf](/bookshelf/) and [Now](/now/) pages.
+
 - May 27, 2024
 -- Added a [Hello](/hello/) page to compliment the [Contact](/contact/) page.
 -- Restored the [Comics](/comics/) page with work around automation.

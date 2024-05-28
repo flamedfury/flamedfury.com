@@ -61,12 +61,7 @@ masonry: true
           <h3>Watching</h3>
           {% include "components/homepage/nowwatching.njk" %}
           <h3>Reading</h3>
-          {% for book in bookshelf | reverse %}
-          {% if book.status == 'started' %}
-          <p>📚 {{ book.title }} by {{ book.authors }}</p>
-          {% endif %}
-          {% endfor %}
-          <p><a href="/bookshelf/">Bookshelf</a></p>
+          {% include "components/homepage/reading.njk" %}
         </div>
         <div class="homepage-card | flow">
           <h3>some.pics</h3>
