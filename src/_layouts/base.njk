@@ -33,9 +33,6 @@
     {% if schema == 'blog' %} {%- include "schemas/blogpost-schema.njk" %} {% endif %}
 
     <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}">
-    {% if css %}
-    <link rel="stylesheet" href="{% getBundleFileUrl 'css' %}">
-    {% endif %}
     
     <!-- preloads in page data -->
     {% if preloads -%}
