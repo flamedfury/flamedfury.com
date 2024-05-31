@@ -1,0 +1,176 @@
+---
+layout: base
+schema: blog
+---
+
+<style>
+  @import url('https://api.fonts.coollabs.io/css2?family=Bubblegum+Sans&display=swap');
+
+  :root {
+    --primary: hsl(329, 85%, 53%);
+    --accent: hsl(89, 85%, 33%);
+    
+    --ff-accent: 'Bubblegum Sans', cursive;
+
+    --step-6: clamp(3.3594rem, 1.0526rem + 11.5337vw, 9.9913rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: hsl(329, 85%, 53%);
+      --accent: hsl(89, 85%, 33%);
+    }
+  }
+
+  /* dark mode user-agent-styles */
+  html {
+    color-scheme: light dark;
+  }
+
+  /* responsive images/videos */
+  img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-family: var(--ff-accent);
+    line-height: 1.1;
+    text-wrap: balance;
+    font-size: var(--step-6);
+    color: var(--primary);
+  }
+
+  h1 {
+    --flow-space: 2em;
+  }
+
+  h2 {
+    --flow-space: 1.5em;
+  }
+
+  .post-tag {
+    --button-bg: var(--primary);
+    --button-text: var(--text);
+    --button-border: var(--primary);
+  }
+
+  .site-nav [aria-current="page"], .site-nav [data-state="active"],
+  article p a {
+    --text-decoration: var(--primary);
+    color: var(--primary);
+  }
+
+  .site-nav a:where(:hover, :focus) {
+    --text-decoration: var(--primary);
+    --text-color: var(--color-text);
+    --background-color: transparent;
+  }
+
+  .smol-stack-layout > * {
+    grid-area: stack;
+  }
+
+  .smol-stack-layout {
+    display: grid;
+    grid-template-areas: "stack";
+    aspect-ratio: var(--stack-aspect-ratio);
+    background-color: var(--background);
+  }
+
+  .smol-background-picture img {
+    --background-img-brightness: 0.45;
+    --background-img-saturate: 1.25;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* decrease brightness to improve text contrast */
+    filter: brightness(var(--background-img-brightness))
+      saturate(var(--background-img-saturate));
+  }
+
+  .smol-stack-layout h1 {
+    place-self: center;
+    text-align: center;
+    font-style: italic;
+    padding: 5vh 2vw;
+  }
+
+  .smol-stack-layout small {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  .smol-stack-layout h1,
+  .smol-stack-layout small {
+    position: relative;
+  }
+
+  .smol-background-picture__content {
+    /* ensure stacking context above the picture */
+    position: relative;
+    align-self: center;
+    text-align: center;
+  }
+
+  blockquote {
+    border-inline-start: 0.8rem solid var(--primary);
+    font-weight: 700;
+    line-height: 1;
+    font-size: var(--step-3);
+    letter-spacing: var(--tracking-s);
+    padding: var(--space-m);
+  }
+
+  blockquote:not([class]) {
+    max-inline-size: 50ch;
+    line-height: 1.6;
+  }
+
+  blockquote > * + * {
+    margin-top: var(--flow-space, 1em);
+  }
+</style>
+
+<div class="smol-stack-layout smol-background-picture">
+  <img src="https://cdn.some.pics/flamed/651a6a7d27206.jpg">
+
+  <div class="smol-background-picture__content">
+    <h1>Sliding Away</h1>
+    <small>Back to the ocean, I'll go back to the city lights</small>
+  </div>
+</div>
+
+<article class="region blog" style="--region-space-top: var(--space-xl-2xl)">
+  <div class="wrapper flow prose">
+    <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s)">
+      <!-- date -->
+      {% set definedDate = date %} {% include "components/date.njk" %}
+
+      <!-- tags -->
+      {% if tags.length > 1 %} {% for tag in tags %} {% if tag != "posts" %}
+      <a class="button post-tag" href="/tags/{{ tag }}">
+        {{ tag }}
+      </a>
+      {% endif %} {% endfor %} {% endif %}
+    </p>
+
+    {{ content | safe }}
+
+    {% include 'components/reply-by.njk' %}
+  </div>
+
+  <!--  h-card infos: https://indieweb.org/authorship -->
+  <div hidden class="h-entry">
+    <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
+    <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
+    <img
+      class="u-author h-card"
+      src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
+      alt="{{ meta.author.name }}"
+    />
+  </div>
+</article>
