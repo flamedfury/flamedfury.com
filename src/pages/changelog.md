@@ -2,13 +2,17 @@
 title: Changelog
 description: This 
 layout: page
-permalink: /changes/index.html
+permalink: /changelog/index.html
 date: 2024-05-27
 ---
 
 This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details changes to pages, layout, and content.
 
 ## Changes
+
+- June 01, 2024
+-- Added support for `changefreq` added to [sitemap](/sitemap.xml)
+-- Added multi-tag support on the blog card component.
 
 - May 30, 2024
 -- Removed elventy-bundle-plugin

@@ -10,7 +10,7 @@ This is a [/slashes](https://slashpages.net/) page. A /slashes page is an index 
 
 - [About](/about/)
 - [Blogroll](/links#blogroll)
-- [Changelog](/changes/)
+- [Changelog](/changelog/)
 - Colophon
 - [Contact](/contact/)
 - Defaults
