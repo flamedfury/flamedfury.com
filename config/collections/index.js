@@ -1,3 +1,5 @@
+const _ = require('lodash'); /** For postsByYear */
+
 /** All blog posts as a collection. */
 const getAllPosts = collection => {
   const projects = collection.getFilteredByGlob('./src/posts/*/*.md');
@@ -52,6 +54,15 @@ const filterFeedPosts = collection => {
   return postsAfterDate.slice(0, 10); // Return the 10 most recent posts
 };
 
+/** Collection to group posts by year */
+const postsByYear = collection => {
+  return _.chain(collection.getFilteredByGlob('./src/posts/**/*.md'))
+    .groupBy(post => new Date(post.date).getFullYear())
+    .toPairs()
+    .reverse()
+    .value();
+};
+
 
 module.exports = {
   getAllPosts,
@@ -59,5 +70,6 @@ module.exports = {
   tagList,
   tagCollections,
   allBookmarks,
-  filterFeedPosts
+  filterFeedPosts,
+  postsByYear
 };

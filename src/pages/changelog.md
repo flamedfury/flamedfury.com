@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- June 02, 2024
+-- Added an [Archive](/archive/) page, a list of all posts ordered by year.
+
 - June 01, 2024
 -- Added support for `changefreq` added to [sitemap](/sitemap.xml)
 -- Added multi-tag support on the blog card component.

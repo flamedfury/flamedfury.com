@@ -35,6 +35,7 @@ const {tagList} = require('./config/collections/index.js');
 const {tagCollections} = require('./config/collections/index.js');
 const {allBookmarks} = require('./config/collections/index.js');
 const {filterFeedPosts} = require('./config/collections/index.js');
+const {postsByYear} = require('./config/collections/index.js');
 
 // module import events
 const {svgToJpeg} = require('./config/events/index.js');
@@ -107,6 +108,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection("tagCollections", tagCollections);
   eleventyConfig.addCollection('allBookmarks', allBookmarks);
   eleventyConfig.addCollection('feed', filterFeedPosts);
+  eleventyConfig.addCollection('postsByYear', postsByYear);
 
   // 	--------------------- Events ---------------------
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
