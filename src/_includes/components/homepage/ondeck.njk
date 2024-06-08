@@ -1,0 +1,28 @@
+<ul role="list">
+  {% if movies and movies.length > 0 %}
+    <li>🍿 {{ movies[0].movie.title }} ({{ movies[0].movie.year }})</li>
+  {% endif %}
+  {% if tv and tv.length > 0 %}
+    <li>📺 {{ tv[0].show.title }}</li>
+  {% endif %}
+    <li><script src="https://recentfm.rknight.me/now.js?u=xkx9t6bb"></script></li>
+  {% set started_books_found = false %}
+{% for book in bookshelf %}
+  {% if book.status == 'started' %}
+    {% set started_books_found = true %}
+  {% endif %}
+{% endfor %}
+
+{% if started_books_found %}
+  {% for book in bookshelf | reverse %}
+    {% if book.status == 'started' %}
+      <li>📚 {{ book.title }} by {{ book.authors[0] }}</li>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% set mostRecentFinishedBook = bookshelf | getMostRecentFinishedBook %}
+  {% if mostRecentFinishedBook %}
+    <li>📚 Just finished {{ mostRecentFinishedBook.title }} by {{ mostRecentFinishedBook.authors[0] }}</li>
+  {% endif %}
+{% endif %}
+</ul>
