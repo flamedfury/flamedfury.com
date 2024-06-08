@@ -83,6 +83,11 @@ const split = (input, separator) => {
   return input.split(separator);
 };
 
+/** Normalises a URL. */
+const normalizeUrl = (url) => {
+  return url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+};
+
 module.exports = {
   toISOString,
   formatDate,
@@ -91,5 +96,6 @@ module.exports = {
   minifyJs,
   splitlines,
   getMostRecentFinishedBook,
-  split
+  split,
+  normalizeUrl
 };

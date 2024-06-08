@@ -1,0 +1,61 @@
+---
+title: Links
+description: A collection of links for websites and services that I find useful.
+layout: page
+permalink: /links/index.html
+masonry: true
+---
+
+<style>
+.links-card {
+  background-color: var(--color-bg-accent);
+  border: 4px solid var(--color-bg-accent);
+  color: var(--color-text);
+  padding: var(--space-s-m);
+  border-radius: var(--border-radius);
+  max-inline-size: unset;
+}
+
+.links-card ::selection {
+  color: var(--color-dark);
+  background-color: var(--color-secondary);
+}
+
+.links-card h2 {
+  font-family: var(--font-base);
+  font-size: var(--size-step-2);
+}
+
+.links-card h3 {
+  font-family: var(--font-base);
+  font-size: var(--size-step-2);
+}
+
+.links-card h2 a,
+.links-card h3 a {
+  text-decoration: none;
+}
+
+{# .links-card p,
+.links-card a,
+.links-card li {
+  font-size: var(--size-step-min-1);
+} #}
+
+.links-card {
+  --gutter: var(--space-l);
+}
+</style>
+
+{% from "components/linksSection.njk" import renderSection %}
+
+<p>I hope you find what you're looking for.</p>
+
+{{ renderSection("blogroll", "Blogroll", "Interesting websites with blogs that I subscribe to.", links.blogroll) }}
+{{ renderSection("coolSites", "Cool Sites", "Cool websites that aren't blogs that have interesting pages to get lost in.", links.coolSites) }}
+{{ renderSection("webdev", "Web Development", "Website useful for learning or keeping up with web development.", links.webDevelopment) }}
+{{ renderSection("newsletters", "Newsletters", "Newsletters I read, you might find interesting too.", links.newsLetters) }}
+{{ renderSection("podcasts", "Podcasts", "Podcasts that I listen to and recommend.", links.podCasts) }}
+{{ renderSection("webdirs", "Web Directories", "Discovery is a huge part of the small and independent web, these directories are helping surface everyone's wonderful websites.", links.webDirectories) }}
+{{ renderSection("search", "Search Engines", "Contrary to popular belief, search exists outside of adtech, check out some of these search engines and avoid the blog spam.", links.searchEngines) }}
+{{ renderSection("multimedia", "Multimedia", "Websites that I use to help with my self hosted media server.", links.multiMedia) }}

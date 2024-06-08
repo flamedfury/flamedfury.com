@@ -1,20 +1,23 @@
-<li id="{{ link.name }}" class="card">
-  <div class="flow">
+<li id="{{ link.name }}" class="links-card | flow">
     <h3>
-      <a href="{{ link.url | url }}" class="no-indicator">{{ link.name }}</a>
+      {{ link.name }}
     </h3>
     <p class="blog-url">
-      <img
-        alt=""
-        src="{{ link.favicon }}"
-        width="24px"
-        height="24px"
-        loading="lazy"
-        decoding="async"
-        style="display: inline;"
-      />
-      {{ link.cleansedUrl }}
+        <img
+          alt=""
+          src="https://v1.indieweb-avatar.11ty.dev/{{ link.url | urlencode }}"
+          width="24px"
+          height="24px"
+          loading="lazy"
+          decoding="async"
+          style="display: inline;"
+        />
+      <a href="{{ link.url | url }}" class="no-indicator">{{ link.url | normalizeUrl }}</a>
     </p>
     <p class="blog-note">{{ link.note }}</p>
-  </div>
+    {% if link.feed %}
+      <p class="blog-feed">
+        <a href="{{ link.feed }}">RSS Feed</a>
+      </p>
+    {% endif %}
 </li>
