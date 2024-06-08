@@ -7,8 +7,8 @@ excludeFromSitemap: true
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
   <title>{{ meta.feeds.bookmarks.name }}</title>
   <subtitle>{{ meta.feeds.bookmarks.description }}</subtitle>
-  <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self" />
-  <link href="{{ meta.url }}/" />
+  <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self">
+  <link href="{{ meta.url }}/">
   {% set postslist = collections.posts %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ meta.url }}/</id>
@@ -20,9 +20,9 @@ excludeFromSitemap: true
     {% set absolutePostUrl = bookmark.url | absoluteUrl(metadata.url) %}
     <entry>
       <title>{{ bookmark.data.title | safe }}</title>
-      <link href="{{ meta.url }}{{ absolutePostUrl }}"/>
+      <link href="{{ meta.url }}{{ absolutePostUrl }}">
       <updated>{{ bookmark.data.date }}</updated>
-      <id>{{ meta.authorWebsite }}{{ absolutePostUrl }}</id>
+      <id>{{ meta.author.website }}{{ absolutePostUrl }}</id>
       <content xml:lang="{{ meta.locale }}" type="html">
         {{ bookmark.templateContent }}
       </content>

@@ -4,7 +4,7 @@ module.exports = {
   siteDescription:
     'What\'s going on Internet? This is my homepage. I write about the web and stuff.',
   siteType: 'Person', // schema
-  locale: 'en_EN',
+  locale: 'en',
   lang: 'en',
   skipContent: 'Skip to content',
   author: {
@@ -12,7 +12,7 @@ module.exports = {
     avatar: '/favicon.png',
     email: 'hello@flamedfury.com.com', // email of the author
     website: 'https://flamedfury.com' // the personal site of the author
-  },
+  }, 
   creator: {
     name: 'fLaMEd', // creator's (developer) name.
     email: 'hello@flamedfury.com',
