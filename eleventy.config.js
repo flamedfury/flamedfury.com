@@ -45,7 +45,6 @@ const { updateOMGLol } = require('./config/events/index.js');
 // plugins
 const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 const markdownLib = require('./config/plugins/markdown.js');
@@ -124,7 +123,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(bundlerPlugin);
   eleventyConfig.setLibrary('md', markdownLib);
 
   // Add support for YAML data files with .yaml extension
