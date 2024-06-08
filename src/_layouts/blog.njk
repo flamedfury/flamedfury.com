@@ -7,7 +7,7 @@ masonry: true
       {{ content | safe }}
   </div>
 
-  <ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="blogcards feature | grid" role="list" data-rows="masonry" data-layout="50-50">
     <!-- loop posts -->
     {% set itemList = pagination.items %} {% for item in itemList %}
     <!-- activate tags -->
@@ -29,4 +29,3 @@ masonry: true
   <!-- include pagination -->
   {% include 'components/pagination.njk' %} {% endif %}
 
-</article>
