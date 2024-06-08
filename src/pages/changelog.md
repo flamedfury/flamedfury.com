@@ -10,6 +10,17 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- June 08, 2024
+-- Reverted 3.0 changes.
+-- Fixed a URL typo on the [Hello](/hello/) page.
+-- Refactored the code for the [Links](/links) page, fixed a duplicate section description.
+-- Refactored the code for the [Homepage](/), re-ordered the content boxes.
+-- Added pagination to the [Posts](/posts/) page as well as a link to the [Archives](/archive/) page.
+
+- June 07, 2024
+-- Attempted updating to [Eleventy 3.0](https://www.11ty.dev/blog/canary-eleventy-v3/) and [Eleventy Excelletn 3.0](https://eleventy-excellent.netlify.app/blog/eleventy-excellent-30/).
+-- Lots of stuff broke 🫣
+
 - June 02, 2024
 -- Added an [Archive](/archive/) page, a list of all posts ordered by year.
 
