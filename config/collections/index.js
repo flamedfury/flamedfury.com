@@ -56,13 +56,19 @@ const filterFeedPosts = collection => {
 
 /** Collection to group posts by year */
 const postsByYear = collection => {
-  return _.chain(collection.getFilteredByGlob('./src/posts/**/*.md'))
-    .groupBy(post => new Date(post.date).getFullYear())
-    .toPairs()
-    .reverse()
-    .value();
-};
+  const posts = collection.getFilteredByGlob('./src/posts/**/*.md');
 
+  const groupedPosts = posts.reduce((acc, post) => {
+    const year = new Date(post.date).getFullYear();
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  }, {});
+
+  return Object.entries(groupedPosts).sort((a, b) => b[0] - a[0]);
+};
 
 module.exports = {
   getAllPosts,
