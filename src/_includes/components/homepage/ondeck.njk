@@ -7,7 +7,7 @@
     <li>📺 {{ tv[0].show.title }}</li>
   {% endif %}
     <li><script src="https://recentfm.rknight.me/now.js?u=xkx9t6bb"></script></li>
-  {% set started_books_found = false %}
+{% set started_books_found = false %}
 {% for book in bookshelf %}
   {% if book.status == 'started' %}
     {% set started_books_found = true %}
