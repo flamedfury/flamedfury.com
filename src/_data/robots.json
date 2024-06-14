@@ -1,0 +1,103 @@
+{
+  "userAgents": [
+    {
+      "agent": "AdsBot-Google"
+    },
+    {
+      "agent": "Amazonbot"
+    },
+    {
+      "agent": "anthropic-ai"
+    },
+    {
+      "agent": "Applebot"
+    },
+    {
+      "agent": "Applebot-Extended"
+    },
+    {
+      "agent": "AwarioRssBot"
+    },
+    {
+      "agent": "AwarioSmartBot"
+    },
+    {
+      "agent": "Bytespider"
+    },
+    {
+      "agent": "CCBot"
+    },
+    {
+      "agent": "ChatGPT-User"
+    },
+    {
+      "agent": "ClaudeBot"
+    },
+    {
+      "agent": "Claude-Web"
+    },
+    {
+      "agent": "cohere-ai"
+    },
+    {
+      "agent": "DataForSeoBot"
+    },
+    {
+      "agent": "Diffbot"
+    },
+    {
+      "agent": "FacebookBot"
+    },
+    {
+      "agent": "FriendlyCrawler"
+    },
+    {
+      "agent": "Google-Extended"
+    },
+    {
+      "agent": "GoogleOther"
+    },
+    {
+      "agent": "GPTBot"
+    },
+    {
+      "agent": "img2dataset"
+    },
+    {
+      "agent": "ImagesiftBot"
+    },
+    {
+      "agent": "magpie-crawler"
+    },
+    {
+      "agent": "Meltwater"
+    },
+    {
+      "agent": "omgili"
+    },
+    {
+      "agent": "omgilibot"
+    },
+    {
+      "agent": "peer39_crawler"
+    },
+    {
+      "agent": "peer39_crawler/1.0"
+    },
+    {
+      "agent": "PerplexityBot"
+    },
+    {
+      "agent": "PiplBot"
+    },
+    {
+      "agent": "scoop.it"
+    },
+    {
+      "agent": "Seekr"
+    },
+    {
+      "agent": "YouBot"
+    }
+  ]
+}
