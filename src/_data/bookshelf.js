@@ -6,7 +6,7 @@ module.exports = async function () {
   // returning promise
 
   let data = await EleventyFetch(url, {
-    duration: '0s',
+    duration: '1d',
     type: 'json'
   });
 
