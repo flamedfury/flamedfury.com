@@ -38,7 +38,7 @@ module.exports = async function () {
           game.about_the_game = 'No information available';
           game.short_description = 'No information available';
         }
-             
+
         if (gameDetails && gameDetails.hasOwnProperty('header_image')) {
           const coverArtUrl = gameDetails.header_image;
           const coverArtRes = await fetch(coverArtUrl);
