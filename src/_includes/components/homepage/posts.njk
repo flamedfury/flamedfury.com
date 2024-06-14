@@ -1,0 +1,15 @@
+<h3>Latest posts</h3>
+<ul>
+  {% set itemList = collections.posts %} {% for item in itemList.slice(0, 6) %}
+    <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
+  {% endfor %}
+</ul>
+<h3>Read these</h3>
+<ul>
+  <li><a href="/posts/i-love-the-web/">I Love The Web</a></li>
+  <li><a href="/posts/an-easy-web/">An Easy Web</a></li>
+  <li><a href="/posts/build-personal-websites/">Build Personal Websites</li>
+  <li><a href="/posts/making-websites-should-be-easy/">Making Websites Should Be Easy</a></li>
+  <li><a href="/posts/blogging-anonymously/">Blogging Anonymously</a></li>
+</ul>
+<p><a href="/posts/">All posts</a></p>

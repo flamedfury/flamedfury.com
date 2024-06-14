@@ -23,49 +23,27 @@ masonry: true
           {% include "components/homepage/welcome.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>I am...</h3>
           {% include "components/homepage/now.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>Latest posts</h3>
-            <ul>
-              {% set itemList = collections.posts %} {% for item in itemList.slice(0, 6) %}
-                <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
-              {% endfor %}
-            </ul>
-          <h3>Read these</h3>
-            <ul>
-              <li><a href="/posts/i-love-the-web/">I Love The Web</a></li>
-              <li><a href="/posts/an-easy-web/">An Easy Web</a></li>
-              <li><a href="/posts/build-personal-websites/">Build Personal Websites</li>
-              <li><a href="/posts/making-websites-should-be-easy/">Making Websites Should Be Easy</a></li>
-              <li><a href="/posts/blogging-anonymously/">Blogging Anonymously</a></li>
-            </ul>
-            <p><a href="/posts/">All posts</a></p>
+          {% include "components/homepage/posts.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>status.lol</h3>
-          <p>{{ status.emoji }} {{ status.content }}</p>
-          <p><a href="https://social.lol/@flamed/">social.lol</a></p>
+          {% include "components/homepage/status.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>Hit me up</h3>
           {% include "components/homepage/msg.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>Webrings</h3>
           {% include "components/webrings.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>Latest record</h3>
           {% include "components/homepage/record.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>On deck</h3>
           {% include "components/homepage/ondeck.njk" %}
         </div>
         <div class="homepage-card | flow">
-          <h3>some.pics</h3>
           {% include "components/homepage/somepics.njk" %}
         </div>
       </div>
