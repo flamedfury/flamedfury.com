@@ -1,6 +1,6 @@
 ---
 title: Changelog
-description: This 
+description: This
 layout: page
 permalink: /changelog/index.html
 date: 2024-05-27
@@ -9,6 +9,11 @@ date: 2024-05-27
 This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details changes to pages, layout, and content.
 
 ## Changes
+
+- June 14, 2024
+-- New record, [Relapse](/recordshelf/#relapse) added to the [collection](/recordshelf).
+-- Adjusted [homepage](/) cards.
+-- Applied [Cory's](https://coryd.dev/) [robots.txt](https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/main/robots.txt) to [robots.txt](/robots.txt) and .htaccess.
 
 - June 08, 2024
 -- Reverted 3.0 changes.
