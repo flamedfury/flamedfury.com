@@ -1,6 +1,20 @@
 {
   "albums": [
     {
+      "title": "Relapse",
+      "artist": "Eminem",
+      "year": 2009,
+      "format": "vinyl",
+      "genre": "Rap",
+      "label": "Aftermath Entertainment, Shady Records",
+      "code": "",
+      "varient": "",
+      "number": "",
+      "image": "./src/assets/images/vinyl/relapse.jpg",
+      "alt": "Cover of the album",
+      "comment": "Cult classic."
+    },
+    {
       "title": "Smash",
       "artist": "Offspring",
       "year": 1999,

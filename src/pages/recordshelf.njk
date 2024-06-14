@@ -54,8 +54,10 @@ grid:
             <dd class="recordshelf-detail">{{ record.genre }}</dd>
             <dt class="recordshelf-label">Label</dt>
             <dd class="recordshelf-detail">{{ record.label }} {% if record.code %}/ {{ record.code }}{% endif %}</dd>
+            {% if record.varient %}
             <dt class="recordshelf-label">Variant</dt>
             <dd class="recordshelf-detail">{{ record.varient }} {{ record.number }}</dd>
+            {% endif %}
           </dl>
           <p class="recordshelf-comment">
             {{ record.comment }}
