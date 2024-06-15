@@ -4,8 +4,6 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 
-User-agent: *
-
 {% for bot in robots.userAgents %}
 User-agent: {{ bot.agent }}
 {% endfor %}
