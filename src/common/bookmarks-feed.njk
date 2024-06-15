@@ -23,9 +23,7 @@ excludeFromSitemap: true
       <link href="{{ meta.url }}{{ absolutePostUrl }}">
       <updated>{{ bookmark.data.date }}</updated>
       <id>{{ meta.author.website }}{{ absolutePostUrl }}</id>
-      <content xml:lang="{{ meta.locale }}" type="html">
-        {{ bookmark.templateContent }}
-      </content>
+      <content xml:lang="{{ meta.locale }}" type="html">{{ bookmark.templateContent }}</content>
     </entry>
   {% endfor %}
 </feed>
