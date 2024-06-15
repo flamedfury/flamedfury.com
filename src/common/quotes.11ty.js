@@ -4,7 +4,7 @@
  */
 
 const fs = require("fs");
-const txt = "src/assets/quotes.txt";
+const txt = "src/assets/static/quotes.txt";
 
 // Read the file
 const data = fs.readFileSync(txt, "utf-8");
