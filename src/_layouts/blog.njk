@@ -3,29 +3,28 @@ layout: page
 masonry: true
 ---
 
-	<div class="region flow prose" style="--region-space-top: var(--space-l)">
-      {{ content | safe }}
-  </div>
+<div class="region flow prose" style="--region-space-top: var(--space-l)">
+  {{ content | safe }}
+</div>
 
-  <ul class="blogcards feature | grid" role="list" data-rows="masonry" data-layout="50-50">
-    <!-- loop posts -->
-    {% set itemList = pagination.items %} {% for item in itemList %}
-    <!-- activate tags -->
-    {% set activateTags = true %}
-    <!-- set date context -->
-    {% set definedDate = item.date %}
-    <!-- set heading context -->
-    {% set headingContext = "h2" %}
-    <!-- include card -->
-    {% include 'components/card.njk' %} {% endfor %}
-  </ul>
+<ul class="blogcards feature | grid" role="list" data-rows="masonry" data-layout="50-50">
+  <!-- loop posts -->
+  {% set itemList = pagination.items %} {% for item in itemList %}
+  <!-- activate tags -->
+  {% set activateTags = true %}
+  <!-- set date context -->
+  {% set definedDate = item.date %}
+  <!-- set heading context -->
+  {% set headingContext = "h2" %}
+  <!-- include card -->
+  {% include 'components/card.njk' %} {% endfor %}
+</ul>
 
-  <!-- set collection to paginate -->
-  {% set collectionToPaginate = collections.posts %}
-  <!-- set target pagination settings in meta.js -->
-  {% set metaKey = "blog" %}
-  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
-  {% if collectionToPaginate.length > pagination.size %}
-  <!-- include pagination -->
-  {% include 'components/pagination.njk' %} {% endif %}
-
+<!-- set collection to paginate -->
+{% set collectionToPaginate = collections.posts %}
+<!-- set target pagination settings in meta.js -->
+{% set metaKey = "blog" %}
+<!-- if the number of items in the collection is greater than the number of items shown on one page -->
+{% if collectionToPaginate.length > pagination.size %}
+<!-- include pagination -->
+{% include 'components/pagination.njk' %} {% endif %}
