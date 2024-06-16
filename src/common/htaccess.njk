@@ -11,8 +11,6 @@ excludeFromSitemap: true
   RewriteBase /
 
   # Block “AI” bots
-  {% for bot in robots.userAgents %}
-  RewriteCond %{HTTP_USER_AGENT} {{ bot.agent }} [NC]
-  {%- endfor %}
+  RewriteCond %{HTTP_USER_AGENT} {{ robots.htaccess }} [NC]
   RewriteRule ^ – [F]
 </IfModule>
