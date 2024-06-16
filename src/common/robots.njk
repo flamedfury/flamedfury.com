@@ -4,9 +4,19 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 
+
+User-agent: ia_archiver
+Disallow:
+
+User-agent: MojeekBot
+Disallow:
+
+User-agent: search.marginalia.nu
+Disallow:
+
 {% for bot in robots.userAgents %}
 User-agent: {{ bot.agent }}
-{% endfor %}
 Disallow: /
+{% endfor %}
 
 Sitemap: {{ meta.url }}/sitemap.xml
