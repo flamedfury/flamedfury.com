@@ -102,4 +102,4 @@ Sorry bots, you're not welcome here 🤣
 ```
 {% endraw %}
 
-There you go. Thanks to [Ethan](https://ethanmarcotte.com/, [Robb](https://rknight.me/), [Starbreaker](https://starbreaker.org), and [Cory](https://coryd.dev/) for the starting blocks.
+There you go. Thanks to [Ethan](https://ethanmarcotte.com/), [Robb](https://rknight.me/), [Starbreaker](https://starbreaker.org), and [Cory](https://coryd.dev/) for the starting blocks.
