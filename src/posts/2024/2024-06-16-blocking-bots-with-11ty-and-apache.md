@@ -1,6 +1,6 @@
 ---
 title: Blocking Bots With 11ty And Apache
-description:
+description: How to block bots with robots.txt, .htaccess with 11ty and Apache. Make it difficult for them to jack your stuff!
 tags:
   - eleventy
   - development
