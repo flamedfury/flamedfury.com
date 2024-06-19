@@ -2,6 +2,10 @@ const EleventyFetch = require('@11ty/eleventy-fetch');
 const { getSpotifyAccessToken } = require('./spotifyAuth');
 const { searchSpotifyArtist } = require('./spotifySearch');
 
+function cleanArtistName(name) {
+  return name.split(/ feat\. | ft\. | featuring /i)[0].trim();
+}
+
 module.exports = async function () {
   const API_KEY = process.env.LASTFM_KEY;
   const USERNAME = process.env.LASTFM_USER;
@@ -14,10 +18,24 @@ module.exports = async function () {
     });
     const artists = lastFmResponse.topartists.artist;
 
+    // Clean and aggregate artist plays
+    const aggregatedArtists = {};
+    artists.forEach(artist => {
+      const cleanedName = cleanArtistName(artist.name);
+      if (!aggregatedArtists[cleanedName]) {
+        aggregatedArtists[cleanedName] = {
+          ...artist,
+          name: cleanedName,
+          playcount: 0,
+        };
+      }
+      aggregatedArtists[cleanedName].playcount += parseInt(artist.playcount, 10);
+    });
+
     const spotifyAccessToken = await getSpotifyAccessToken();
 
     const artistsWithSpotify = await Promise.all(
-      artists.map(async (artist) => {
+      Object.values(aggregatedArtists).map(async (artist) => {
         try {
           const spotifyArtist = await searchSpotifyArtist(artist.name, spotifyAccessToken);
           const image = spotifyArtist.images.length > 0 ? spotifyArtist.images[0].url : null;
