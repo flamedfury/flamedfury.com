@@ -5,8 +5,8 @@ tags:
   - thoughts
 description: I love the web and I think everybody should have their own homepage.
 date: 2021-04-06
-updated: 2024-01-02
-redirectFrom: ['manifesto']
+updated: 2024-06-21
+redirectFrom: ['/manifesto']
 ---
 
 The following are my raw and unedited thoughts spread over several ~~weeks~~ years. I add these to the page as I think them through, usually while walking my dogs. Once I get to the point where I have shared all my feelings on the subject, I will attempt to put some order into the chaos.
@@ -87,15 +87,12 @@ I think the discoverability aspect of the web was lost during the time when blog
 I loved linking all my web friends' homepages from my own back in the day, which formed a sense of community within the communities for whatever topic your page was about that particular month.
 
 ## Web3
-Web3 refers to using blockchain technology to create a more decentralised and distributed version of the current World Wide Web. While Web3 web has the potential to solve some problems, such as increasing privacy and security, it is not necessarily solving problems that the personal web cannot already address.
 
-One of the main arguments for Web3 is that it allows individuals to own and control their own data rather than having it controlled by centralised entities such as corporations or governments. However, the personal web already provides tools and methods for individuals to take control of their own data and privacy. For example, individuals can use private browsing modes, a virtual private network (VPN), and install browser extensions to block tracking cookies to protect their data. There are already decentralised alternatives to many popular centralised services, such as decentralised social media platforms and file storage. Internet forums have existed for a long time.
+Web3 can be and should be ignored. Inventor of the World Wide Web, Tim Berners-Lee [dismissed Web3](https://www.cnbc.com/2022/11/04/web-inventor-tim-berners-lee-wants-us-to-ignore-web3.html) at the Web Summit conference held in Lisbon in 2023.
 
-Some individuals and organisations pushing for the adoption of Web3 may have financial incentives for doing so. For example, many of the proponents of Web3 are involved in the cryptocurrency market and stand to benefit financially if the decentralised web becomes more widely adopted. This is because Web3 relies on blockchain technology, often powered by cryptocurrency transactions. As such, these individuals and organisations may be vested in promoting Web3 as a solution to various problems, even if it may not necessarily be the most effective solution. 
+> It’s a real shame in fact that the actual Web3 name was taken by Ethereum folks for the stuff that they’re doing with blockchain. In fact, Web3 is not the web at all".
 
-This is important for us as individuals to be aware of these potential conflicts of interest and to carefully consider the motivations behind the promotion of Web3.
-
-Overall, Web3 might address some issues related to data privacy and control. Still, the personal web already provides individuals with the tools and resources to take control of their own data and privacy significantly.
+Web3 shrills claim that by using blockchain technology it can create a more decentralised and distributed version of the current World Wide Web. The World Wide Web is already decentralised and distributed, especially if you step out of the "Big Tech" silos. The World Wide Web already provides individuals with the tools and resources to take control of their own data and privacy significantly. The problem is making these tools and resources [available and accessible to everyone](/posts/making-websites-should-be-easy/).
 
 ## Final thought
 A personal homepage is fantastic; if you don't, get one!
@@ -117,7 +114,7 @@ I've curated a set of resources to help everyone to get started, no matter your 
 ### Building your own homepage
 
 - [Jackie's guide to making a website zine](https://www.zinesbyjackie.com/shop/jackies-guide-to-making-a-website-by-you--for-you) - Want to make your own website, but don't know how to start? Jackie's awesome Zine is a 28-page, Risograph-printed comic guide to help you brainstorm, design, and bring a personal website to life.
-- [HTML Dog](https://hachyderm.io/@molly0xfff/109536322921704909) - Tutorials covering HTML, CSS and JavaScript for all skill levels.
+- [HTML Dog](https://htmldog.com/guides/) - Tutorials covering HTML, CSS and JavaScript for all skill levels.
 - [W3Schools](https://www.w3schools.com/where_to_start.asp) - A great beginner resource with well organised and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.
 - [MDN: Learn Web Development](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) - MDN Web Docs is a popular document repository and learning resource for web developers. This site provides learning resources for open web technologies like HTML and CSS. Less beginner tutorials than W3 Schools and more indepth technical documents.
 
