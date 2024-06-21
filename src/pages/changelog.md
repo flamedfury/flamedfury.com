@@ -10,6 +10,12 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- June 21, 2024
+-- Implemented [301 redirects](/posts/automate-301-redirects-in-11ty/) with .htaccess
+
+- June 19, 2024
+-- Fixed album artists matching 
+
 - June 14, 2024
 -- New record, [Relapse](/recordshelf/#relapse) added to the [collection](/recordshelf).
 -- Adjusted [homepage](/) cards.
