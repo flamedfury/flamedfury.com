@@ -1,0 +1,26 @@
+---
+title: Monthly Generator
+layout: page
+permalink: /monthly/index.html
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+
+
+<ul>
+{%- for book in bookshelf | reverse %}
+
+{% if book.status == 'finished' %}
+  <li>{{ book.dateFinished }} | {{ book.title }} by {{ book.authors | join(', ') }}</li>
+{% endif %}
+
+{% endfor -%}
+</ul>
+
+
+<h2>Bookmarks</h2>
+<ul>
+  {%- for bookmark in bookmarks | reverse %}
+  <li>{{ bookmark.date }} <a href="{{ bookmark.url }}">{{ bookmark.title }}</a> | {{ bookmark.notes }}</li>
+  {% endfor -%}
+</ul>
