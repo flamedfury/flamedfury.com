@@ -1,0 +1,25 @@
+---
+title: Tobey
+description: Dope video. Two for two so far. Friday can't come soon enough.
+tags:
+  - music
+date: 2024-07-09
+timestamp: 2024-07-08T21:54:06.129Z
+---
+
+What's up Internet? The music video for the Eminem's second single [Tobey](https://musicthread.app/link/2iyvx31rK9Ydey5r2BnaNP0p1fj) from his upcoming album [The Death Of Slim Shady](https://musicthread.app/link/2iywclckgtfrQXKXJFhakey0ZoS?) featuring Big Sean and Babytron just dropped and I'm happy to share that I loved it.
+
+Originally a cut track from Janurary's [All Is Yellow](https://musicthread.app/link/2iyw4FeAToqHtI2m8d6LaQJE1N2) album from Cole Bennett's Lyrical Lemonade outfit, Eminem apparently loved the idea and wanted it for his album. This is the result.
+
+Babytron starts
+
+> Tobey Maguire got bit by a spider, but see, me, it was a goat
+> If you want space, I hope you take your helmet off soon as you get up to Venus and choke
+
+Which sets up for an amazing song from the trio from Detroit and has Eminem weighing in on his legacy and securing his place as a trail blazer in hip hop.
+
+Surfing the web for commentary, this track seems to have a fan base divided. I'm a fan, what about you?
+
+My anticipation for this album is huge and Friday can't roll around fast enough.
+
+{% youtube 'CanCZktm0TQ', 'Eminem - Tobey feat. Big Sean & BabyTron' %}
