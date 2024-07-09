@@ -10,11 +10,14 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- July 9, 2024
+-- Added a [JSON feed](/feeds/) for my posts to better control my EchoFeed.
+
 - June 21, 2024
 -- Implemented [301 redirects](/posts/automate-301-redirects-in-11ty/) with .htaccess
 
 - June 19, 2024
--- Fixed album artists matching 
+-- Fixed album artists matching
 
 - June 14, 2024
 -- New record, [Relapse](/recordshelf/#relapse) added to the [collection](/recordshelf).
