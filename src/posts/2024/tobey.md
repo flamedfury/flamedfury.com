@@ -3,6 +3,11 @@ title: Tobey
 description: Dope video. Two for two so far. Friday can't come soon enough.
 tags:
   - music
+hashtags:
+  - smallweb
+  - blogging
+  - music
+  - eminem
 date: 2024-07-09
 timestamp: 2024-07-08T21:54:06.129Z
 ---

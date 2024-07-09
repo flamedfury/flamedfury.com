@@ -1,0 +1,31 @@
+---
+permalink: /feed.json
+eleventyExcludeFromCollections: true
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ meta.blog.name | safe }}",
+  "home_page_url": "{{ meta.url }}/",
+  "feed_url": "{{ meta.url }}/feed.json",
+  "description": "{{ meta.blog.description }}",
+  "author": {
+    "name": "{{ meta.author.name }}",
+    "url": "{{ meta.url }}",
+    "avatar": "{{ meta.author.avatar }}",
+    "email": "{{ meta.author.email }}"
+  },
+  "items": [
+    {% set postslist = collections.feed %}
+    {% for post in postslist %}
+      {
+        "id": "{{ meta.url }}{{ post.url }}",
+        "url": "{{ meta.url }}{{ post.url }}",
+        "title": "{{ post.data.title | safe }}",
+        "content_html": "{{ post.templateContent | escape | replace('\n', '') | replace('    ', '') | replace('"', '\\"') | safe }}",
+        "date_published": "{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}",
+        "summary": "{{ post.data.description | safe }}",
+        "tags": [{% if post.data.hashtags %}{% for tag in post.data.hashtags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]
+      }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
