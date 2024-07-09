@@ -1,6 +1,8 @@
----
-permalink: /feed.json
-eleventyExcludeFromCollections: true
+---json
+{
+  "permalink": "feed.json",
+  "eleventyExcludeFromCollections": true
+}
 ---
 {
   "version": "https://jsonfeed.org/version/1.1",
@@ -21,9 +23,9 @@ eleventyExcludeFromCollections: true
         "id": "{{ meta.url }}{{ post.url }}",
         "url": "{{ meta.url }}{{ post.url }}",
         "title": "{{ post.data.title | safe }}",
-        "content_html": "{{ post.templateContent | escape | replace('\n', '') | replace('    ', '') | replace('"', '\\"') | safe }}",
+        "summary": "{{ post.data.description | replace('"', '\\"') | safe }}",
+        "content_html": "{{ post.templateContent | replace('\n', '') | replace('    ', '') | replace('"', '\\"') | safe }}",
         "date_published": "{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}",
-        "summary": "{{ post.data.description | safe }}",
         "tags": [{% if post.data.hashtags %}{% for tag in post.data.hashtags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]
       }{% if not loop.last %},{% endif %}
     {% endfor %}
