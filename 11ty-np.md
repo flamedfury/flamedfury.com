@@ -1,7 +1,8 @@
 ---
-title: 
-description: 
-tags: 
+title:
+description:
+tags:
+hashtags:
 date:
 timestamp:
 ---
