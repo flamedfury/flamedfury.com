@@ -19,15 +19,16 @@
   "items": [
     {% set postslist = collections.feed %}
     {% for post in postslist %}
-      {
-        "id": "{{ meta.url }}{{ post.url }}",
-        "url": "{{ meta.url }}{{ post.url }}",
-        "title": "{{ post.data.title | safe }}",
-        "summary": "{{ post.data.description | replace('"', '\\"') | safe }}",
-        "content_html": "{{ post.templateContent | replace('\n', '') | replace('    ', '') | replace('"', '\\"') | safe }}",
-        "date_published": "{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}",
-        "tags": [{% if post.data.hashtags %}{% for tag in post.data.hashtags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]
-      }{% if not loop.last %},{% endif %}
+    {
+      "id": "{{ meta.url }}{{ post.url }}",
+      "url": "{{ meta.url }}{{ post.url }}",
+      "title": "{{ post.data.title | safe }}",
+      "summary": "{{ post.data.description | replace('"', '\\"') | safe }}",
+      "content_html": "{{ post.templateContent | replace('\n', '') | replace('    ', '') | replace('"', '\\"') | safe }}",
+      "date_published": "{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}",
+      "tags": [{% if post.data.hashtags %}{% for tag in post.data.hashtags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]
+    }
+    {% if not loop.last %},{% endif %}
     {% endfor %}
   ]
 }
