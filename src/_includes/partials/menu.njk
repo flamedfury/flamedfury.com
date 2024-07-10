@@ -2,7 +2,7 @@
   <ul class="cluster" role="list">
     {% for item in navigation.top %}
     <li>
-      <a class="nav" href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+      <a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
     </li>
     {% endfor %}
     <!-- theme switch -->
