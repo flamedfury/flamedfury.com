@@ -13,20 +13,20 @@ Building PCs is a fun hobby that I have enjoyed for many years. Below is my best
 
 ## Current rig
 
-I am very happy with this machine; however, it's a pain moving downstairs to the lounge to play on the TV. Looking at building a smaller PC specifically for gaming in the lounge and keeping this one in the study.
+July 2024. This will be the upgrade this rig gets as AM4 is done. The upgrade to the 5800X3D and doubling the RAM to 32GB along with 4TB of storage I should be sweeet for the next few years.
 
-- CPU: AMD Ryzen 5 5600
+- CPU: AMD Ryzen 7 5800X3D
 - Motherboard: ASUS ROG STRIX B550-F GAMING WIFI II
-- RAM: Corsair CMW16GX4M2C3200C16 Vengeance RGB PRO 16GB (2x 8GB)
+- RAM: Kingston Fury 32GB ( 2 X 16GB) DDR4 3200 CL16
 - Cooler: NZXT Kraken Z63 Liquid Cooler 280MM
 - GPU: ZOTAC GeForce RTX 3080 Ti Trinity OC 12GB
-- Storage: Samsung 970 EVO 1TB M.2 NVMe
+- Storage: Lexar NM790 4TB NVMe M.2 SSD
 - PSU: Corsair RM1000X 2021
 - Case: NZXT H510 Flow
 - Cooling: 2x NZXT Aer RGB 140mm, 1x NZXT Aer RGB 120mm
 
 ## Gaming rig timeline
-  
+
 ### 2005
 
 This rig is the earliest that I have a record of buying. Everything prior is lost to time. However, those PCs weren't built for gaming. I honestly can't remember how I managed to game on the previous PCs I owned. This rig was the start of my adventures in the World of Warcraft.
@@ -71,7 +71,7 @@ At some point during 2007, the motherboard or the GPU died, so I upgraded to an 
 - Storage: Western Digital Caviar Black 500GB SATAII
 - PSU: Corsair HX650 650W
 - Case: Cooler Master Storm Scout
-  
+
 
 ### 2011
 
@@ -84,7 +84,7 @@ In June 2011, Bitcoin was making news headlines, so a friend and I built a Bitco
 - PSU: Seasonic M12D 850W
 - Storage: Western Digital Caviar Blue 500GB WD5000AAKX
 - Case: Antec Gaming One Hundred Gaming
-  
+
 
 Within a couple of months, the price of Bitcoin plummeted (not for the first time), so we decided to retire the mining rig. I salvaged two GPUs and built this rig in October to replace the old i5 750.
 
@@ -107,7 +107,7 @@ Upgraded the 2011 rig around September 2012 with 2x GTX 670's' and a new Microso
 - GPU: 2x Gainward GeForce GTX 670 2GB
 - PSU: Corsair AX750
 - Case: Corsair 650D
-  
+
 
 ### 2016
 
@@ -120,7 +120,7 @@ If I remember correctly, I sold the 670s and got a new GPU, ATI R9 390, to help 
 - GPU: Gigabyte G1 R9 390 8GB
 - PSU: Corsair AX750
 - Case: Corsair 650D
-  
+
 
 In August 2016, the 2011 rig showed its age, and I built a new Intel machine. I thought the 6500 CPU would be fine, but it ultimately became a bottleneck. Moving from the 650D to its smaller 350D counterpart was a great move and saved space on the desk.
 
@@ -131,7 +131,7 @@ In August 2016, the 2011 rig showed its age, and I built a new Intel machine. I 
 - GPU: Gigabyte G1 R9 390 8GB
 - PSU: Corsair RM650x
 - Case: Corsair Obsidian Series 350D
-  
+
 
 One month later, I gave up on the R9 390 and put it back in the old rig before selling it and upgrading to a GTX 1070. This card was a beast.
 
@@ -158,7 +158,7 @@ In November 2018, I built this beast of a system.
 - PSU: Corsair RM650x V2
 - Case: Fractal Design Meshify C
 - Cooling: 2x NZXT Aer RGB 140mm, 1x NZXT Aer RGB 120mm
-  
+
 
 ### 2019
 
@@ -173,7 +173,7 @@ Around October 2019, the Asus 2080Ti started experiencing some troubles. Overhea
 - PSU: Corsair RM650x V2
 - Case: Fractal Design Meshify C
 - Cooling: 2x NZXT Aer RGB 140mm, 1x NZXT Aer RGB 120mm
-  
+
 
 ### 2021
 
@@ -188,7 +188,7 @@ The Ryzen RTX rig is still doing the job; however, the Wraith Prism cooler was t
 - PSU: Corsair RM650x V2
 - Case: Fractal Design Meshify C
 - Cooling: 2x NZXT Aer RGB 140mm, 1x NZXT Aer RGB 120mm
-  
+
 
 ### 2022
 
@@ -206,8 +206,8 @@ I couldn't bare not having a working PC and quickly picked up a new motherboard,
 - Motherboard: ASUS ROG STRIX B550-F GAMING WIFI II
 - RAM: Corsair CMW16GX4M2C3200C16 Vengeance RGB PRO 16GB (2x 8GB)
 - Cooler: NZXT Kraken Z63 Liquid Cooler 280MM
-- GPU: Gigabyte GeForce RTX 2080 Ti GAMING OC 11G
+- GPU: ZOTAC GeForce RTX 3080 Ti Trinity OC 12GB
 - Storage: Samsung 970 EVO 1TB M.2 NVMe
 - PSU: Corsair RM1000X 2021
-- Case: NZXT H510 Flow  
+- Case: NZXT H510 Flow
 - Cooling: 2x NZXT Aer RGB 140mm, 1x NZXT Aer RGB 120mm

@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- July 10, 2024
+-- [Gaming PC History](/computerhistory/) page has been updated with my latest upgrades.
+
 - July 9, 2024
 -- Added a [JSON feed](/feeds/) for my posts to better control my EchoFeed.
 
