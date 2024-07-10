@@ -12,7 +12,7 @@ module.exports = {
     avatar: '/favicon.png',
     email: 'hello@flamedfury.com.com', // email of the author
     website: 'https://flamedfury.com' // the personal site of the author
-  }, 
+  },
   creator: {
     name: 'fLaMEd', // creator's (developer) name.
     email: 'hello@flamedfury.com',
@@ -27,12 +27,14 @@ module.exports = {
   blog: {
     // RSS
     name: 'The Weblog of fLaMEd',
-    description:
-      'I write about the web and other stuff.',
+    description: 'I write about the web and other stuff.',
     // feed links are looped over in the head. You may add more to the array.
     feedLinks: [
       {title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml'},
-      {title: 'Atom Feed', url: '/bookmarks-feed.xml', type: 'application/atom+xml'}],
+      {title: 'Atom Feed', url: '/bookmarks-feed.xml', type: 'application/atom+xml'},
+      {title: 'JSON Feed', url: '/feed.json', type: 'application/json'},
+      {title: 'JSON Feed', url: '/bookmarks-feed.json', type: 'application/json'}
+    ],
     // Tags
     tagSingle: 'Tag',
     tagPlural: 'Tags',
