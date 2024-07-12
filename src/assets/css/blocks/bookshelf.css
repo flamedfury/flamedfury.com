@@ -1,4 +1,4 @@
-.bookshelf > img {
+.bookshelf > a > img {
   object-fit: cover;
   border-radius: var(--space-xs, 1rem);
   border: 1px solid var(--color-dark);
@@ -8,7 +8,7 @@
   transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
 }
 
-.bookshelf > img:hover {
+.bookshelf > a > img:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
   transform: scale(1.25); /* Add a slight scale effect on hover */
 }

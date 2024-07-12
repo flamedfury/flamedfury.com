@@ -1,0 +1,36 @@
+---
+layout: page
+pagination:
+    data: bookshelf
+    size: 1
+    alias: book
+    addAllPagesToCollections: true
+permalink: 'bookshelf/{{ book.title | slugify }}/index.html'
+isBook: true
+eleventyComputed:
+    title: "{{ book.title | safe }}"
+---
+
+<div class="recordshelf sidebar flow">
+    <div class="recordshelf-cover">
+        <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}">
+    </div>
+    <div class="recordshelf-info stack">
+      <dl class="recordshelf-grid">
+        <dt class="recordshelf-label">Author</dt>
+        <dd class="recordshelf-detail">{{ book.authors }}</dd>
+        <dt class="recordshelf-label">Published</dt>
+        <dd class="recordshelf-detail">{{ book.publishedDate }}</dd>
+        <dt class="recordshelf-label">Format</dt>
+        <dd class="recordshelf-detail">{{ book.format }}</dd>
+        <dt class="recordshelf-label">Finished</dt>
+        <dd class="recordshelf-detail">{{ book.dateFinished }}</dd>
+        <dt class="recordshelf-label">Rating</dt>
+        <dd class="recordshelf-detail">{{ book.rating }}</dd>
+      </dl>
+      <p class="recordshelf-comment">{{ book.notes }}</p>
+    </div>
+    <p class="recordshelf-comment">
+        {{ book.description }}
+    </p>
+  </div>
