@@ -10,6 +10,12 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- July 14, 2024
+-- Movies and TV shows now link to [The Movie DB](https://themoviedb.org/) on the [Now](/now/) page.
+
+- July 12, 2024
+-- Added individual pages for each book in the [Bookshelf](/bookshelf/). Need to tidy up meta data.
+
 - July 10, 2024
 -- [Gaming PC History](/computerhistory/) page has been updated with my latest upgrades.
 
