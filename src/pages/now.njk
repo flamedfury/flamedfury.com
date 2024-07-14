@@ -164,7 +164,7 @@ permalink: /now/index.html
         {% for show in tv %}
           <div class="stack">
             <a
-              href="https://trakt.tv/shows/{{ show.show.ids.slug }}"
+              href="{{ show.tmdbUrl }}"
               title="{{ show.show.title }}"
               class="no-indicator"
             >
@@ -185,7 +185,7 @@ permalink: /now/index.html
         {% for movie in movies %}
           <div class="stack">
             <a
-              href="https://trakt.tv/movies/{{ movie.movie.ids.slug }}"
+              href="{{ movie.tmdbUrl }}"
               title="{{ movie.movie.title | escape }}"
               class="no-indicator"
             >

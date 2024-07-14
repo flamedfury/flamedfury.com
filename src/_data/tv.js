@@ -35,17 +35,24 @@ module.exports = async function () {
   });
 
   let episodes = [];
-  for (const show of res) {
+  const episodePromises = res.map(async (show) => {
     const tmdbId = show.show.ids.tmdb;
     const tmdbUrl = `https://api.themoviedb.org/3/tv/${tmdbId}?api_key=${TMDB_KEY}`;
-    const tmdbRes = await EleventyFetch(tmdbUrl, {
-      duration: '1h',
-      type: 'json',
-    });
-    const posterPath = tmdbRes.poster_path;
-    show.posterUrl = `https://image.tmdb.org/t/p/w500${posterPath}`;
-    episodes.push(show);
-  }
+    try {
+      const tmdbRes = await EleventyFetch(tmdbUrl, {
+        duration: '1h',
+        type: 'json',
+      });
+      const posterPath = tmdbRes.poster_path;
+      show.posterUrl = `https://image.tmdb.org/t/p/w500${posterPath}`;
+      show.tmdbUrl = `https://www.themoviedb.org/tv/${tmdbId}`;
+      episodes.push(show);
+    } catch (error) {
+      console.error(`Failed to fetch data for TMDB ID ${tmdbId}:`, error);
+    }
+  });
+
+  await Promise.all(episodePromises);
 
   // Group episodes by show title
   const groupedEpisodes = groupEpisodesByShow(episodes);
@@ -71,6 +78,7 @@ module.exports = async function () {
       const showData = {
         show: episodes[0].show,
         posterUrl: episodes[0].posterUrl,
+        tmdbUrl: episodes[0].tmdbUrl,
         episodeRange: episodeRange,
       };
 
