@@ -24,43 +24,38 @@ permalink: /now/index.html
     <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
       <h2>Reading: books</h2>
 
-      {% set started_books_found = false %}
+      {% set currentlyReading = null %}
+      {% set mostRecentFinishedBook = bookshelf | getMostRecentFinishedBook %}
+
       {% for book in bookshelf %}
         {% if book.status == 'started' %}
-          {% set started_books_found = true %}
+          {% set currentlyReading = book %}
         {% endif %}
       {% endfor %}
 
-      {% if started_books_found %}
+      {% if currentlyReading %}
         <!-- currently reading -->
         <h3>Currently reading</h3>
         <div class="sidebar flow">
-          {% for book in bookshelf | reverse %}
-            {% if book.status == 'started' %}
-              <div>
-                {% if book.image %}
-                  {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + book.image, "An image of the book cover for the book " + book.title %}
-                {% elseif book.isbn %}
-                  {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + book.isbn +".png", "An image of the book cover for the book " + book.title %}
-                {% else %}
-                  <p>No image available for {{ book.title }}</p>
-                {% endif %}
-              </div>
-              <div class="now-book-meta">
-                <p class="now-book-author">{{ book.authors }}</p>
-                <p class="now-book-title">{{ book.title }}</p>
-                <p class="now-book-description">{{ book.description | safe | truncate }}</p>
-              </div>
+          <div>
+            {% if currentlyReading.image %}
+              {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + currentlyReading.image, "An image of the book cover for the book " + currentlyReading.title %}
+            {% elseif currentlyReading.isbn %}
+              {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + currentlyReading.isbn +".png", "An image of the book cover for the book " + currentlyReading.title %}
+            {% else %}
+              <p>No image available for {{ currentlyReading.title }}</p>
             {% endif %}
-          {% endfor %}
+          </div>
+          <div class="now-book-meta">
+            <p class="now-book-author">{{ currentlyReading.authors }}</p>
+            <p class="now-book-title">{{ currentlyReading.title }}</p>
+            <p class="now-book-description">{{ currentlyReading.description | safe | truncate }}</p>
+          </div>
         </div>
-      {% endif %}
-
-      <!-- recently finished reading -->
-      <h3>Just finished</h3>
-      <div class="sidebar flow">
-        {% set mostRecentFinishedBook = bookshelf | getMostRecentFinishedBook %}
-        {% if mostRecentFinishedBook %}
+      {% elseif mostRecentFinishedBook %}
+        <!-- recently finished reading -->
+        <h3>Just finished</h3>
+        <div class="sidebar flow">
           <div>
             {% if mostRecentFinishedBook.image %}
               {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + mostRecentFinishedBook.image, "An image of the book cover for the book " + mostRecentFinishedBook.title %}
@@ -73,8 +68,9 @@ permalink: /now/index.html
             <p class="now-book-title">{{ mostRecentFinishedBook.title | safe }}</p>
             <p class="now-book-description">{{ mostRecentFinishedBook.description | safe | truncate }}</p>
           </div>
-        {% endif %}
-      </div>
+        </div>
+      {% endif %}
+      <p>Check out the <a href="/bookshelf/">Bookshelf</a> for more books.</p>
     </article>
 
     <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
@@ -114,6 +110,7 @@ permalink: /now/index.html
           </div>
         </div>
       {% endfor %}
+      <p>Check out the <a href="/gameshelf/">Gameshelf</a> for more games.</p>
     </article>
 
     <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
