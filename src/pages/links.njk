@@ -4,6 +4,39 @@ description: A collection of links for websites and services that I find useful.
 layout: page
 permalink: /links/index.html
 masonry: true
+sections:
+  - id: blogroll
+    title: Blogroll
+    description: Interesting websites with blogs that I subscribe to.
+    linksKey: blogroll
+  - id: coolSites
+    title: Cool Sites
+    description: Cool websites that aren't blogs that have interesting pages to get lost in.
+    linksKey: coolSites
+  - id: webdev
+    title: Web Development
+    description: Website useful for learning or keeping up with web development.
+    linksKey: webDevelopment
+  - id: newsletters
+    title: Newsletters
+    description: Newsletters I read, you might find interesting too.
+    linksKey: newsLetters
+  - id: podcasts
+    title: Podcasts
+    description: Podcasts that I listen to and recommend.
+    linksKey: podCasts
+  - id: webdirs
+    title: Web Directories
+    description: Discovery is a huge part of the small and independent web, these directories are helping surface everyone's wonderful websites.
+    linksKey: webDirectories
+  - id: search
+    title: Search Engines
+    description: Contrary to popular belief, search exists outside of adtech, check out some of these search engines and avoid the blog spam.
+    linksKey: searchEngines
+  - id: multimedia
+    title: Multimedia
+    description: Websites that I use to help with my self hosted media server.
+    linksKey: multiMedia
 ---
 
 <style>
@@ -36,11 +69,11 @@ masonry: true
   text-decoration: none;
 }
 
-{# .links-card p,
+.links-card p,
 .links-card a,
 .links-card li {
-  font-size: var(--size-step-min-1);
-} #}
+  font-size: var(--size-step-0);
+}
 
 .links-card {
   --gutter: var(--space-l);
@@ -51,11 +84,12 @@ masonry: true
 
 <p>I hope you find what you're looking for.</p>
 
-{{ renderSection("blogroll", "Blogroll", "Interesting websites with blogs that I subscribe to.", links.blogroll) }}
-{{ renderSection("coolSites", "Cool Sites", "Cool websites that aren't blogs that have interesting pages to get lost in.", links.coolSites) }}
-{{ renderSection("webdev", "Web Development", "Website useful for learning or keeping up with web development.", links.webDevelopment) }}
-{{ renderSection("newsletters", "Newsletters", "Newsletters I read, you might find interesting too.", links.newsLetters) }}
-{{ renderSection("podcasts", "Podcasts", "Podcasts that I listen to and recommend.", links.podCasts) }}
-{{ renderSection("webdirs", "Web Directories", "Discovery is a huge part of the small and independent web, these directories are helping surface everyone's wonderful websites.", links.webDirectories) }}
-{{ renderSection("search", "Search Engines", "Contrary to popular belief, search exists outside of adtech, check out some of these search engines and avoid the blog spam.", links.searchEngines) }}
-{{ renderSection("multimedia", "Multimedia", "Websites that I use to help with my self hosted media server.", links.multiMedia) }}
+<div class="taglist | my-s-m cluster">
+  {% for section in sections %}
+  <a class="button" href="#{{ section.id }}">{{ section.title }}</a>
+  {% endfor %}
+</div>
+
+{% for section in sections %}
+{{ renderSection(section.id, section.title, section.description, links[section.linksKey]) }}
+{% endfor %}

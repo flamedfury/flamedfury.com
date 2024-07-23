@@ -10,6 +10,11 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- July 24, 2024
+-- Updated the [Links](/links/) page with a new [personal](/links/#coolSites) site and two new [directories](/links/#webdirs).
+-- Added section links for easy navigation.
+-- Submitted fLaMEd fury to [A Blog Directory](https://blogroll.club/).
+
 - July 14, 2024
 -- Movies and TV shows now link to [The Movie DB](https://themoviedb.org/) on the [Now](/now/) page.
 

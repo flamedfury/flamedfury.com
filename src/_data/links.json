@@ -136,7 +136,7 @@
     },
     {
       "name": "10@earth ~",
-      "url": "https://10kph.neocities.org/",
+      "url": "https://karuma.me/",
       "feed": "",
       "note": "A statically generated shrine to 10's life and interests. The site map is a beautiful way to explore the website."
     },
@@ -145,6 +145,12 @@
       "url": "https://bytemoth.neocities.org/",
       "feed": "",
       "note": "Bytemoth is a Digital Warlock and has been around a while. Start at the homepage and dive in and get lost."
+    },
+    {
+      "name": "Cinni's Dream Home",
+      "url": "https://cinni.net/",
+      "feed": "",
+      "note": "Literally an online art project. Check out Cinni's shrines, art and games!"
     }
   ],
   "webDevelopment": [
@@ -310,7 +316,7 @@
       "feed": "",
       "note": " The searchmysite.net search engine is a niche search, focussing on the \"indieweb\" or \"small web\" or \"digital gardens\", i.e. non-commercial content, primarily personal and independent websites."
     },
-    {      
+    {
       "name": "Wiby",
       "url": "https://wiby.me/",
       "feed": "",
@@ -413,6 +419,18 @@
       "url": "https://bukmark.club/",
       "feed": "",
       "note": "A brand new independent web directory."
+    },
+    {
+      "name": "The Forest",
+      "url": "https://theforest.link/",
+      "feed": "",
+      "note": "The Forest, by Manu and Carl aims to bring back some unpredictability to surfing the web."
+    },
+    {
+      "name": "A Blog Directory",
+      "url": "https://blogroll.club/",
+      "feed": "",
+      "note": "A home for everyone's Blog and Post rolls."
     }
   ],
   "multiMedia": [
