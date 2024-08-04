@@ -1,12 +1,20 @@
 module.exports = {
   top: [
     {
-      text: 'Collections',
-      url: '/collections/'
+      text: 'Bookshelf',
+      url: '/bookshelf/'
+    },
+    {
+      text: 'Recordshelf',
+      url: '/recordshelf/'
     },
     {
       text: 'Posts',
       url: '/posts/'
+    },
+    {
+      text: 'Bookmarks',
+      url: '/bookmarks/'
     },
     {
       text: 'Links',
@@ -17,8 +25,8 @@ module.exports = {
       url: '/now/'
     },
     {
-      text: 'Slashes',
-      url: '/slashes/'
+      text: 'About',
+      url: '/about/'
     },
     {
       text: 'Feeds',
