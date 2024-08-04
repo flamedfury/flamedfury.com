@@ -9,12 +9,11 @@
 
     <!-- title -->
     <title>
-      {% if discover.title %} {{ discover.title }}
-      {% elif title %}
-      {{ title }}
-      {% else %}
-      {{ meta.siteName }}
-      {% endif %}
+      {%- if title -%}
+        {{- title -}}
+      {%- else -%}
+        {{- meta.siteName -}}
+      {%- endif -%}
     </title>
 
     <!-- 4 synchronous js  -->
@@ -33,7 +32,7 @@
     {% if schema == 'blog' %} {%- include "schemas/blogpost-schema.njk" %} {% endif %}
 
     <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}">
-    
+
     <!-- preloads in page data -->
     {% if preloads -%}
     <!-- prettier-ignore -->
