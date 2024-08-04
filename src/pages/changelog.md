@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 5, 2024
+-- Updated the top navigation to highlight popular pages like the [Bookshelf](/bookshelf/), [Recordshelf](/recordshelf/), and [Bookmarks](/bookmarks/) pages alongside [Posts](/posts/), and [Now](/now/) page.
+
 - July 24, 2024
 -- Updated the [Links](/links/) page with a new [personal](/links/#coolSites) site and two new [directories](/links/#webdirs).
 -- Added section links for easy navigation.
