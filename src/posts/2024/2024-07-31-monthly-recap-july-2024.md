@@ -54,6 +54,16 @@ I should spend some time hunting down some of my wish list, always a fun activit
 -   [The Internet is a Series of Webs](https://aramzs.xyz/essays/the-internet-is-a-series-of-webs/) - The fate of the open web is inextricable from the other ways our world is in crisis. What can we do about it?
 -   [I feel hacked](https://noisydeadlines.net/i-feel-hacked) - Thoughts on how the internet and social media have evolved over the years into it's current state of ads and addictive scrolling. What are the trade-offs between the benefits and downsides of being online?
 
+## Gaming
+
+I recently upgrade the CPU in my [gaming rig](https://flamedfury.com/computerhistory/#current-rig) and that got my hyped to play Cyberpunk 2077. I can't believe it's taken me so long to play this one. This is my favourite type of game. When I've finished with this I want to go back and finish the recent Jedi Star Wars games that I didn't get too far into.
+
+However, this past week has been Warcraft heavy. I finally played a bit of [Mists of Pandaria Remix](https://worldofwarcraft.blizzard.com/en-us/news/24092672/updated-522-world-of-warcraft-remix-mists-of-pandaria-now-live), but with less than twenty days left in the event, I'm not sure if I'll get much done in it. I have however been playing a bunch of the exapansion pre-event. Levelling and gearing up alts that I'll most likely not be playing when The War Within drops. They'll be happily geared and look good however.
+
+I'll be out of the country with the family at the end of the month during the expansion launch so I will miss out on launch day fun and levelling up with everyone else. Shouldn't be a problem as the raids don't open until a month after launch, plenty of time to catch up and get raid ready.
+
+Anyway, I'll head back to Cyberpunk and finish that up before that happens.
+
 ## Website
 
 Another month that I haven't updated to 11ty 3.0.0 but now that the [beta](https://www.11ty.dev/blog/three-point-oh-beta-one/) is available I'll try and get that done during August.
