@@ -26,10 +26,17 @@ schema: blog
         {{ tag }}
       </a>
       {% endif %} {% endfor %} {% endif %}
+      <!-- bookmarks tags -->
+      {% set tags = bookmark.tags | default('') %}
+      {% if tags %}
+        {% for tag in tags | string | split(',') %}
+        <span class="button post-tag">{{ tag | trim }}</span>
+        {% endfor %}
+      {% endif %}
     </p>
 
     {{ content | safe }}
-    
+
     {% if type == 'seasonal' %}
       {% include "partials/seasonal.njk" %}
     {% endif %}
