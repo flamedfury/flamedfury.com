@@ -24,11 +24,11 @@ excludeFromSitemap: true
       <updated>{{ bookmark.data.date }}</updated>
       <id>{{ meta.author.website }}{{ absolutePostUrl }}</id>
       <content xml:lang="{{ meta.locale }}" type="html">
-        <p>🔖 Bookmarked <a href="{{ bookmark.data.sourceurl }}">{{ bookmark.data.title | escapeXml }}</a></p>
-        <blockquote>{{ bookmark.data.quote }}</blockquote>
-        <p>{{ bookmark.data.notes }}</p>
-        &lt;hr /&gt;
-        <p>Hey, thanks for reading this post in your feed reader! Want to chat? &lt;a href=&quot;mailto:hello@flamedfury.com?subject=RE Bookmark: {{ bookmark.data.title }}&quot;&gt;Reply by email&lt;/a&gt; or add me on &lt;a href=&quot;xmpp:flamed@omg.lol&quot;&gt;XMPP&lt;/a&gt;. Check out the &lt;a href=&quot;https://flamedfury.com/bookmarks/&quot;&gt;bookmarks archive&lt;/a&gt; on the website.</p>
+        {{ '<p>🔖 Bookmarked <a href="' | safe }}{{ bookmark.data.sourceurl | escapeXml }}{{ '">' | safe }}{{ bookmark.data.title | escapeXml }}{{ '</a></p>' | safe }}
+        {{ '<blockquote>' | safe }}{{ bookmark.data.quote | escapeXml }}{{ '</blockquote>' | safe }}
+        {{ '<p>' | safe }}{{ bookmark.data.notes | escapeXml }}{{ '</p>' | safe }}
+        {{ '<hr />' | safe }}
+        {{ '<p>Hey, thanks for reading this post in your feed reader! Want to chat? <a href="mailto:hello@flamedfury.com?subject=RE Bookmark: ' | safe }}{{ bookmark.data.title | escapeXml }}{{ '">Reply by email</a> or add me on <a href="xmpp:flamed@omg.lol">XMPP</a>. Check out the <a href="https://flamedfury.com/bookmarks/">bookmarks archive</a> on the website.</p>' | safe }}
       </content>
     </entry>
   {% endfor %}
