@@ -5,21 +5,21 @@ excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
-  <title>{{ meta.feeds.bookmarks.name | safe }}</title>
-  <subtitle>{{ meta.feeds.bookmarks.description | safe }}</subtitle>
+  <title>{{ meta.feeds.bookmarks.name | replace('&', '&amp;') | replace('<', '&lt;') | replace('>', '&gt;') | replace('"', '&quot;') }}</title>
+  <subtitle>{{ meta.feeds.bookmarks.description | replace('&', '&amp;') | replace('<', '&lt;') | replace('>', '&gt;') | replace('"', '&quot;') }}</subtitle>
   <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self" />
   <link href="{{ meta.url }}/" />
   {% set postslist = collections.posts %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ meta.url }}/</id>
   <author>
-    <name>{{ meta.author.name | safe }}</name>
-    <email>{{ meta.author.email | safe }}</email>
+    <name>{{ meta.author.name | replace('&', '&amp;') | replace('<', '&lt;') | replace('>', '&gt;') | replace('"', '&quot;') }}</name>
+    <email>{{ meta.author.email | replace('&', '&amp;') | replace('<', '&lt;') | replace('>', '&gt;') | replace('"', '&quot;') }}</email>
   </author>
   {% for bookmark in collections.allBookmarks | reverse %}
     {% set absolutePostUrl = bookmark.url | absoluteUrl(metadata.url) %}
     <entry>
-      <title>{{ bookmark.data.title | safe }}</title>
+      <title>{{ bookmark.data.title | replace('&', '&amp;') | replace('<', '&lt;') | replace('>', '&gt;') | replace('"', '&quot;') }}</title>
       <link href="{{ meta.url }}{{ absolutePostUrl }}" />
       <updated>{{ bookmark.data.timestamp }}</updated>
       <id>{{ meta.author.website }}{{ absolutePostUrl }}</id>
