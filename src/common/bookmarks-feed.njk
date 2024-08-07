@@ -5,16 +5,16 @@ excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
-  <title>{{ meta.feeds.bookmarks.name }}</title>
-  <subtitle>{{ meta.feeds.bookmarks.description }}</subtitle>
-  <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self">
-  <link href="{{ meta.url }}/">
+  <title>{{ meta.feeds.bookmarks.name | safe }}</title>
+  <subtitle>{{ meta.feeds.bookmarks.description | safe }}</subtitle>
+  <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self" />
+  <link href="{{ meta.url }}/" />
   {% set postslist = collections.posts %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ meta.url }}/</id>
   <author>
-    <name>{{ meta.author.name }}</name>
-    <email>{{ meta.author.email }}</email>
+    <name>{{ meta.author.name | safe }}</name>
+    <email>{{ meta.author.email | safe }}</email>
   </author>
   {% for bookmark in collections.allBookmarks | reverse %}
     {% set absolutePostUrl = bookmark.url | absoluteUrl(metadata.url) %}
