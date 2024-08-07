@@ -88,6 +88,17 @@ const normalizeUrl = (url) => {
   return url.replace(/^https?:\/\//, '').replace(/\/$/, '');
 };
 
+/** Escapes special characters for XML for the feeds. */
+const escapeXml = (str) => {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+};
+
 module.exports = {
   toISOString,
   formatDate,
@@ -97,5 +108,6 @@ module.exports = {
   splitlines,
   getMostRecentFinishedBook,
   split,
-  normalizeUrl
+  normalizeUrl,
+  escapeXml
 };
