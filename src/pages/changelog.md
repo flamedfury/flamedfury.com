@@ -10,6 +10,10 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 7, 2024
+-- Fixed the [Bookmarks](/bookmarks/) pages and [Atom feed](/bookmarks-feed.xml).
+-- Added a new [Bookmarks & Link Blogs](/links/#linkblogs) section to the [links page](/links/). Let me know if you've got a similar page that I should link.
+
 - August 5, 2024
 -- Updated the top navigation to highlight popular pages like the [Bookshelf](/bookshelf/), [Recordshelf](/recordshelf/), and [Bookmarks](/bookmarks/) pages alongside [Posts](/posts/), and [Now](/now/) page.
 

@@ -433,6 +433,50 @@
       "note": "A home for everyone's Blog and Post rolls."
     }
   ],
+  "linkBlogs": [
+    {
+      "name": "fLaMEd's Bookmarks",
+      "url": "https://flamedfury.com/bookmarks/",
+      "feed": "",
+      "note": "Yup, my own bookmarks page. Focuses on interesting posts from across the small and open web."
+    },
+    {
+      "name": "Linkage",
+      "url": "https://linkage.lol/",
+      "feed": "",
+      "note": "An old fashioned link blog by Lou Plummer, updated daily."
+    },
+    {
+      "name": "Link Punk",
+      "url": "https://linkpunk.micro.blog/",
+      "feed": "",
+      "note": "A link blog by Brad Enslen, shares articles and posts they find interesting."
+    },
+    {
+      "name": "i.webthings.hub",
+      "url": "https://iwebthings.joejenett.com",
+      "feed": "",
+      "note": "A long running link blog by Joe Jenett"
+    },
+    {
+      "name": "Chris Burnell's Bookmarks",
+      "url": "https://chrisburnell.com/bookmarks/",
+      "feed": "",
+      "note": "Chris's collection of bookmarks from across the web."
+    },
+    {
+      "name": "Cory's Links",
+      "url": "https://coryd.dev/links/",
+      "feed": "",
+      "note": "A large collection of links that Cory Dransfeldt finds interesting."
+    },
+    {
+      "name": "Robb's Links",
+      "url": "https://rknight.me/links/",
+      "feed": "",
+      "note": "A collection of interesting links from Robb Knight."
+    }
+  ],
   "multiMedia": [
     {
       "name": "The Movie Database (TMDB)",
