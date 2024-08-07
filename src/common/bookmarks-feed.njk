@@ -5,7 +5,7 @@ excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
-  <title>{{ meta.feeds.bookmarks.name | escapeXml }}</title>
+  <title>{{ meta.feeds.bookmarks.name }}</title>
   <subtitle>{{ meta.feeds.bookmarks.description | escapeXml }}</subtitle>
   <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self" />
   <link href="{{ meta.url }}/" />
@@ -23,7 +23,13 @@ excludeFromSitemap: true
       <link href="{{ meta.url }}{{ absolutePostUrl }}" />
       <updated>{{ bookmark.data.date }}</updated>
       <id>{{ meta.author.website }}{{ absolutePostUrl }}</id>
-      <content xml:lang="{{ meta.locale }}" type="html">{{ bookmark.templateContent | safe }}</content>
+      <content xml:lang="{{ meta.locale }}" type="html">
+        <p>🔖 Bookmarked <a href="{{ bookmark.data.sourceurl }}">{{ bookmark.data.title | escapeXml }}</a></p>
+        <blockquote>{{ bookmark.data.quote }}</blockquote>
+        <p>{{ bookmark.data.notes }}</p>
+        &lt;hr /&gt;
+        <p>Hey, thanks for reading this post in your feed reader! Want to chat? &lt;a href=&quot;mailto:hello@flamedfury.com?subject=RE Bookmark: {{ bookmark.data.title }}&quot;&gt;Reply by email&lt;/a&gt; or add me on &lt;a href=&quot;xmpp:flamed@omg.lol&quot;&gt;XMPP&lt;/a&gt;. Check out the &lt;a href=&quot;https://flamedfury.com/bookmarks/&quot;&gt;bookmarks archive&lt;/a&gt; on the website.</p>
+      </content>
     </entry>
   {% endfor %}
 </feed>

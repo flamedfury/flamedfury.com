@@ -11,6 +11,7 @@ eleventyComputed:
     title: "{{ bookmark.title | safe }}"
     sourceurl: "{{ bookmark.url }}"
     notes: "{{ bookmark.notes }}"
+    quote: "{{ bookmark.quote }}"
     date: "{% if bookmark.timestamp %}{{ bookmark.timestamp }}{% else %}{{ bookmark.date }}{% endif %}"
     hashtags: "{{ bookmark.tags | default('') }}"
 ---
