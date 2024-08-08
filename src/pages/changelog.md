@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 8, 2024
+-- Updated the [Comics](/comics/) page with the latest additions.
+
 - August 7, 2024
 -- Fixed the [Bookmarks](/bookmarks/) pages and [Atom feed](/bookmarks-feed.xml).
 -- Added a new [Bookmarks & Link Blogs](/links/#linkblogs) section to the [links page](/links/). Let me know if you've got a similar page that I should link.

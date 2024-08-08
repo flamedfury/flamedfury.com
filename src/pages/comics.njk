@@ -10,10 +10,10 @@ updated: 2023-05-29
 <p>This is most of my comic collection, I'm still working on adding the back catalogue...</p>
 
 <div class="grid mt-l-xl" style="--grid-min-item-size: 12rem">
-    {% for comic in comics.data %}
+    {% for comic in (comics.data.concat(comics.single)) %}
     <div class="comics">
-        <a href="{{ comic.url }}" class="no-indicator"><img src="{{ comic.cover }}" alt="Cover Image for {{ comic.name }}" load="lazy"></a>
-        <p class="comics-title">{{ comic.name }} ({{ comic.date_end }})</p>
+        <img src="{{ comic.cover }}" alt="Cover Image for {{ comic.name }}" load="lazy">
+        <p class="comics-title">{{ comic.name }}</p>
         <p class="comics-date">{{ comic.date }}</p>
         <p class="comics-collection"><a href="{{ comic.url }}">View issues</a></p>
     </div>
