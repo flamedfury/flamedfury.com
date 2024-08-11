@@ -1,9 +1,10 @@
-const EleventyFetch = require('@11ty/eleventy-fetch');
+import EleventyFetch from '@11ty/eleventy-fetch';
 
-module.exports = async function () {
+export default async function () {
   const MOVIE_KEY = process.env.TRAKT_API_KEY;
   const TMDB_KEY = process.env.TMDB_API_KEY;
   const url = 'https://api.trakt.tv/users/flamed/history/movies';
+
   const res = await EleventyFetch(url, {
     duration: '1h',
     type: 'json',
@@ -15,6 +16,7 @@ module.exports = async function () {
       },
     },
   });
+
   const movies = res.slice(0, 4);
 
   const moviePromises = movies.map(async (movie) => {

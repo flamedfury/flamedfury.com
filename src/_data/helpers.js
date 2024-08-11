@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /**
    * Returns back some attributes based on whether the
    * link is active or a parent of an active item.
@@ -7,7 +7,6 @@ module.exports = {
    * @param {String} pageUrl - The page context.
    * @returns {String} - The attributes or empty.
    */
-
   getLinkActiveState(itemUrl, pageUrl) {
     let response = '';
 
@@ -40,7 +39,6 @@ module.exports = {
    *
    * @returns {string} A random UUID.
    */
-
   random() {
     const segment = () => {
       return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);

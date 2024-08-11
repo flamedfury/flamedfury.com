@@ -1,7 +1,9 @@
-const axios = require('axios');
-require('dotenv').config({ systemvars: true });
+import axios from 'axios';
+import dotenv from 'dotenv';
 
-async function getSpotifyAccessToken() {
+dotenv.config({ systemvars: true });
+
+export async function getSpotifyAccessToken() {
   const authOptions = {
     method: 'post',
     url: 'https://accounts.spotify.com/api/token',
@@ -21,6 +23,6 @@ async function getSpotifyAccessToken() {
   }
 }
 
-module.exports = {
+export default {
   getSpotifyAccessToken,
 };

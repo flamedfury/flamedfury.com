@@ -1,9 +1,11 @@
-const EleventyFetch = require('@11ty/eleventy-fetch');
-require('dotenv').config();
+import EleventyFetch from '@11ty/eleventy-fetch';
+import dotenv from 'dotenv';
 
-module.exports = async function () {
+dotenv.config();
+
+export default async function () {
     const url = 'https://api.omg.lol/address/flamed/pics/';
-    
+
     // Get the API key from the environment variables
     const apiKey = process.env.OMG_LOL_KEY;
 
@@ -33,4 +35,4 @@ module.exports = async function () {
         console.error('Error fetching data from OMG.LOL API:', error);
         return []; // Return an empty array to indicate an error occurred
     }
-};
+}

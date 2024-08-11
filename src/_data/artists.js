@@ -1,12 +1,12 @@
-const EleventyFetch = require('@11ty/eleventy-fetch');
-const { getSpotifyAccessToken } = require('./spotifyAuth');
-const { searchSpotifyArtist } = require('./spotifySearch');
+import EleventyFetch from '@11ty/eleventy-fetch';
+import { getSpotifyAccessToken } from './spotifyAuth.js';
+import { searchSpotifyArtist } from './spotifySearch.js';
 
 function cleanArtistName(name) {
   return name.split(/ feat\. | ft\. | featuring /i)[0].trim();
 }
 
-module.exports = async function () {
+export default async function () {
   const API_KEY = process.env.LASTFM_KEY;
   const USERNAME = process.env.LASTFM_USER;
   const url = `http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${USERNAME}&api_key=${API_KEY}&limit=8&format=json&period=7day`;
@@ -53,4 +53,4 @@ module.exports = async function () {
     console.error('Error fetching Last.fm data:', error);
     throw error;
   }
-};
+}

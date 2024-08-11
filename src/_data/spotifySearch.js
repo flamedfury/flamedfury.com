@@ -1,6 +1,6 @@
-const axios = require('axios');
+import axios from 'axios';
 
-async function searchSpotifyAlbum(albumName, artistName, accessToken) {
+export async function searchSpotifyAlbum(albumName, artistName, accessToken) {
   const query = encodeURIComponent(`${albumName} ${artistName}`);
   const market = 'NZ';
   const url = `https://api.spotify.com/v1/search?type=album&q=${query}&market=${market}&limit=1`;
@@ -19,7 +19,7 @@ async function searchSpotifyAlbum(albumName, artistName, accessToken) {
   }
 }
 
-async function searchSpotifyArtist(artistName, accessToken) {
+export async function searchSpotifyArtist(artistName, accessToken) {
   const query = encodeURIComponent(artistName);
   const market = 'NZ';
   const url = `https://api.spotify.com/v1/search?type=artist&q=${query}&market=${market}&limit=1`;
@@ -38,7 +38,7 @@ async function searchSpotifyArtist(artistName, accessToken) {
   }
 }
 
-module.exports = {
+export default {
   searchSpotifyAlbum,
   searchSpotifyArtist,
 };

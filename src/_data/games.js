@@ -1,8 +1,10 @@
-require('isomorphic-fetch');
-const EleventyFetch = require('@11ty/eleventy-fetch');
-require('dotenv').config({ systemvars: true });
+import 'isomorphic-fetch';
+import EleventyFetch from '@11ty/eleventy-fetch';
+import dotenv from 'dotenv';
 
-module.exports = async function () {
+dotenv.config({ systemvars: true });
+
+export default async function () {
   try {
     const url = `http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${process.env.STEAM_KEY}&steamid=${process.env.STEAM_ID}&format=json`;
     const res = await EleventyFetch(url, {
@@ -28,12 +30,12 @@ module.exports = async function () {
 
         const gameDetails = gameDetailsRes[game.appid].data;
         if (gameDetails) {
-          game.developers = gameDetails.developers.join(', '); // Assign developers to the game object
+          game.developers = gameDetails.developers.join(', ');
           game.publishers = gameDetails.publishers.join(', ');
           game.about_the_game = gameDetails.about_the_game;
           game.short_description = gameDetails.short_description;
         } else {
-          game.developers = 'Unknown'; // Assign default value if developers data is not available
+          game.developers = 'Unknown';
           game.publishers = 'Unknown';
           game.about_the_game = 'No information available';
           game.short_description = 'No information available';
@@ -60,7 +62,6 @@ module.exports = async function () {
     return gamesWithCoverArt;
   } catch (error) {
     console.error('Error fetching data:', error);
-    // You can choose to return an empty array or a default value if there's an error.
     return [];
   }
-};
+}

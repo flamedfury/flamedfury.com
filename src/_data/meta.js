@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   url: process.env.URL || 'https://flamedfury.com',
   siteName: 'fLaMEd fury',
   siteDescription:
@@ -30,10 +30,10 @@ module.exports = {
     description: 'I write about the web and other stuff.',
     // feed links are looped over in the head. You may add more to the array.
     feedLinks: [
-      {title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml'},
-      {title: 'Atom Feed', url: '/bookmarks-feed.xml', type: 'application/atom+xml'},
-      {title: 'JSON Feed', url: '/feed.json', type: 'application/json'},
-      {title: 'JSON Feed', url: '/bookmarks-feed.json', type: 'application/json'}
+      { title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml' },
+      { title: 'Atom Feed', url: '/bookmarks-feed.xml', type: 'application/atom+xml' },
+      { title: 'JSON Feed', url: '/feed.json', type: 'application/json' },
+      { title: 'JSON Feed', url: '/bookmarks-feed.json', type: 'application/json' }
     ],
     // Tags
     tagSingle: 'Tag',
@@ -49,7 +49,7 @@ module.exports = {
   feeds: {
     // Alternative RSS feeds
     bookmarks: {
-      name:  'fLaMEd\'s Bookmarks',
+      name: 'fLaMEd\'s Bookmarks',
       description: 'A collection of interesting links from around the web'
     }
   },
@@ -68,7 +68,7 @@ module.exports = {
     title: 'Theme',
     light: 'light',
     dark: 'dark',
-		initial: 'select'
+    initial: 'select'
   },
   greenweb: {
     // this goes into src/common/carbon.njk
@@ -78,7 +78,7 @@ module.exports = {
       service: 'shared-hosting'
     },
     credentials: {
-      // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
+      // optional, eg: { domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
       domain: '',
       doctype: '',
       url: ''

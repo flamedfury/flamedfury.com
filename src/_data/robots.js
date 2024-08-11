@@ -1,6 +1,7 @@
-const { AssetCache } = require("@11ty/eleventy-fetch");
+import { AssetCache } from "@11ty/eleventy-fetch";
+import fetch from "node-fetch";
 
-module.exports = async function() {
+export default async function() {
     console.log("Fetching robots.txt");
 
     let asset = new AssetCache("robots.txt");
@@ -9,8 +10,6 @@ module.exports = async function() {
         console.log("Returning robots.txt from cache");
         return await asset.getCachedValue();
     }
-
-    const fetch = (await import("node-fetch")).default;
 
     const res = await fetch("https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/main/robots.txt");
     let txt = await res.text();

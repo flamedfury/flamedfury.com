@@ -1,4 +1,4 @@
-const EleventyFetch = require('@11ty/eleventy-fetch');
+import EleventyFetch from '@11ty/eleventy-fetch';
 
 // Add MasterChef Australia to the denylist
 const denylist = ['MasterChef Australia', 'MasterChef: Dessert Masters'];
@@ -18,7 +18,7 @@ function groupEpisodesByShow(episodes) {
   return groupedShows;
 }
 
-module.exports = async function () {
+export default async function () {
   const TV_KEY = process.env.TRAKT_API_KEY;
   const TMDB_KEY = process.env.TMDB_API_KEY;
   const url = 'https://api.trakt.tv/users/flamed/history/shows?page=1&limit=36';
@@ -97,4 +97,4 @@ module.exports = async function () {
   });
 
   return shows.slice(0, 4);
-};
+}
