@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import site from '../../src/_data/meta.js';
-import { throwIfNotType } from '../utils.js';
+import {throwIfNotType} from '../utils/index.js';
 import esbuild from 'esbuild';
 
 /** Removes all tags from an HTML string. */

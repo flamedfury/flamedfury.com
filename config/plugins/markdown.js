@@ -8,7 +8,7 @@ import markdownItEleventyImg from 'markdown-it-eleventy-img';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownitMark from 'markdown-it-mark';
 import markdownitAbbr from 'markdown-it-abbr';
-import { slugifyString } from '../utils.js';
+import {slugifyString} from '../utils/index.js';
 import path from 'path';
 
 const markdownLib = markdownIt({
