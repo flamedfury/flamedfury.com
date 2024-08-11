@@ -47,10 +47,10 @@ const { updateOMGLol } = require('./config/events/index.js');
 const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-
 const markdownLib = require('./config/plugins/markdown.js');
 const {slugifyString} = require('./config/utils/index.js');
 const yaml = require('js-yaml');
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -126,6 +126,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setLibrary('md', markdownLib);
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   // Add support for YAML data files with .yaml extension
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
