@@ -31,7 +31,6 @@ import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import markdownLib from './config/plugins/markdown.js';
 import { slugifyString } from './config/utils/index.js';
 import yaml from 'js-yaml';
-import UpgradeHelper from '@11ty/eleventy-upgrade-help';
 import htmlConfig from './config/transforms/html-config.js';
 import cssConfig from './config/template-languages/css-config.js';
 import jsConfig from './config/template-languages/js-config.js';
@@ -62,12 +61,9 @@ export default (eleventyConfig) => {
   eleventyConfig.addFilter('split', split);
   eleventyConfig.addFilter('normalizeUrl', normalizeUrl);
   eleventyConfig.addFilter('escapeXml', escapeXml);
-
   eleventyConfig.addNunjucksAsyncFilter('jsmin', minifyJs);
-
   eleventyConfig.addFilter('toJson', JSON.stringify);
   eleventyConfig.addFilter('fromJson', JSON.parse);
-
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
@@ -109,7 +105,6 @@ export default (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setLibrary('md', markdownLib);
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   // Add support for YAML data files with .yaml extension
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
