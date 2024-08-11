@@ -1,13 +1,11 @@
-// CSS and JavaScript as first-class citizens in Eleventy: https://pepelsbey.dev/articles/eleventy-css-js/
+import postcss from 'postcss';
+import postcssImport from 'postcss-import';
+import postcssImportExtGlob from 'postcss-import-ext-glob';
+import tailwindcss from 'tailwindcss';
+import postcssRelativeColorSyntax from '@csstools/postcss-relative-color-syntax';
+import autoprefixer from 'autoprefixer';
 
-const postcss = require('postcss');
-const postcssImport = require('postcss-import');
-const postcssImportExtGlob = require('postcss-import-ext-glob');
-const tailwindcss = require('tailwindcss');
-const postcssRelativeColorSyntax = require('@csstools/postcss-relative-color-syntax');
-const autoprefixer = require('autoprefixer');
-
-module.exports = eleventyConfig => {
+export default function (eleventyConfig) {
   eleventyConfig.addTemplateFormats('css');
 
   eleventyConfig.addExtension('css', {
@@ -22,7 +20,7 @@ module.exports = eleventyConfig => {
           postcssImportExtGlob,
           postcssImport,
           tailwindcss,
-          postcssRelativeColorSyntax({preserve: true}),
+          postcssRelativeColorSyntax({ preserve: true }),
           autoprefixer
         ]).process(content, {
           from: path
@@ -32,4 +30,4 @@ module.exports = eleventyConfig => {
       };
     }
   });
-};
+}
