@@ -5,6 +5,9 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addExtension('js', {
     outputFileExtension: 'js',
+    compileOptions: {
+      permalink: true, // Set this to true to retain permalink functionality in JS
+    },
     compile: async (content, path) => {
       if (!path.startsWith('./src/assets/scripts/')) {
         return;

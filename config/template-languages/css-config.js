@@ -10,6 +10,9 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addExtension('css', {
     outputFileExtension: 'css',
+    compileOptions: {
+      permalink: true, // Set this to true to retain permalink functionality in CSS
+    },
     compile: async (content, path) => {
       if (path !== './src/assets/css/global.css') {
         return;
