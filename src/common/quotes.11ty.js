@@ -1,23 +1,20 @@
-/**
- * @file Generates a JSON file from a txt file
- * https://www.lkhrs.com/blog/2023/js-random-quote/
- */
+import fs from 'fs';
+import path from 'path';
 
-const fs = require("fs");
-const txt = "src/assets/static/quotes.txt";
+const txt = path.resolve('src/assets/static/quotes.txt');
 
 // Read the file
-const data = fs.readFileSync(txt, "utf-8");
+const fileContent = fs.readFileSync(txt, 'utf-8');
 // Split into new lines
-const split = data.split("\n");
+const split = fileContent.split('\n');
 // Split into values and remove whitespace/new line characters
 const quotes = split.map((line) => line.trim());
 
-exports.data = {
-	permalink: "/quotes.json",
-	eleventyExcludeFromCollections: true,
+export const data = {
+  permalink: '/quotes.json',
+  eleventyExcludeFromCollections: true,
 };
 
-exports.render = function () {
-	return JSON.stringify(quotes);
+export function render() {
+  return JSON.stringify(quotes);
 }
