@@ -1,6 +1,6 @@
-const Image = require('@11ty/eleventy-img');
-const path = require('path');
-const htmlmin = require('html-minifier-terser');
+import Image from '@11ty/eleventy-img';
+import path from 'path';
+import { minify as htmlmin } from 'html-minifier-terser';
 
 const stringifyAttributes = attributeMap => {
   return Object.entries(attributeMap)
@@ -11,7 +11,7 @@ const stringifyAttributes = attributeMap => {
     .join(' ');
 };
 
-async function imageShortcode (
+export async function imageShortcode (
   src,
   alt = '',
   caption,
@@ -78,5 +78,3 @@ async function imageShortcode (
 
   return imageElement;
 };
-
-module.exports = imageShortcode;

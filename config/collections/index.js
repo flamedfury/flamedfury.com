@@ -1,18 +1,18 @@
-const _ = require('lodash'); /** For postsByYear */
+import _ from 'lodash'; /** For postsByYear */
 
 /** All blog posts as a collection. */
-const getAllPosts = collection => {
+export const getAllPosts = collection => {
   const projects = collection.getFilteredByGlob('./src/posts/*/*.md');
   return projects.reverse();
 };
 
 /** All markdown files as a collection for sitemap.xml */
-const onlyMarkdown = collection => {
+export const onlyMarkdown = collection => {
   return collection.getFilteredByGlob('./src/**/*.md');
 };
 
 /** All tags from all posts as a collection. */
-const tagList = collection => {
+export const tagList = collection => {
   const tagsSet = new Set();
   collection.getAll().forEach(item => {
     if (!item.data.tags) return;
@@ -24,7 +24,7 @@ const tagList = collection => {
 };
 
 /** Second collection for tag xml feeds */
-const tagCollections = collection => {
+export const tagCollections = collection => {
   const tags = collection.getAll().reduce((acc, item) => {
     if (item.data.tags) {
       item.data.tags.forEach(tag => {
@@ -41,13 +41,13 @@ const tagCollections = collection => {
 };
 
 /** All bookmarks as a collection */
-const allBookmarks = collection => {
+export const allBookmarks = collection => {
   const bookmarks = collection.getAll().filter(item => item.data.isBookmark);
   return bookmarks;
 };
 
 //** Function to filter posts for the feed based on date */
-const filterFeedPosts = collection => {
+export const filterFeedPosts = collection => {
   const postsAfterDate = collection.getFilteredByGlob('./src/posts/**/*.md')
     .filter(post => new Date(post.date) >= new Date('2023-01-01')) // Filter posts after 2023-01-01
     .sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort in descending order by date
@@ -55,7 +55,7 @@ const filterFeedPosts = collection => {
 };
 
 /** Collection to group posts by year */
-const postsByYear = collection => {
+export const postsByYear = collection => {
   const posts = collection.getFilteredByGlob('./src/posts/**/*.md');
 
   const groupedPosts = posts.reduce((acc, post) => {
@@ -70,7 +70,7 @@ const postsByYear = collection => {
   return Object.entries(groupedPosts).sort((a, b) => b[0] - a[0]);
 };
 
-module.exports = {
+export default {
   getAllPosts,
   onlyMarkdown,
   tagList,

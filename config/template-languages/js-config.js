@@ -1,6 +1,6 @@
-const esbuild = require('esbuild');
+import * as esbuild from 'esbuild';
 
-module.exports = eleventyConfig => {
+export default function (eleventyConfig) {
   eleventyConfig.addTemplateFormats('js');
 
   eleventyConfig.addExtension('js', {
@@ -34,4 +34,4 @@ module.exports = eleventyConfig => {
       };
     }
   });
-};
+}

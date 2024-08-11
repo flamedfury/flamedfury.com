@@ -1,4 +1,4 @@
-const liteYoutube = (id, label) => {
+export function liteYoutube(id, label) {
   return `
   <div class="youtube-embed"> <lite-youtube videoid="${id}" style="background-image: url('https://i.ytimg.com/vi/${id}/hqdefault.jpg');">
   <button type="button" class="lty-playbtn">
@@ -6,5 +6,4 @@ const liteYoutube = (id, label) => {
   </button>
 </lite-youtube></div>
     `;
-};
-module.exports = liteYoutube;
+}

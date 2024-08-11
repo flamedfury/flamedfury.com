@@ -1,16 +1,16 @@
-const dayjs = require('dayjs');
-const site = require('../../src/_data/meta');
-const {throwIfNotType} = require('../utils');
-const esbuild = require('esbuild');
+import dayjs from 'dayjs';
+import site from '../../src/_data/meta.js';
+import { throwIfNotType } from '../utils.js';
+import esbuild from 'esbuild';
 
 /** Removes all tags from an HTML string. */
-const stripHtml = str => {
+export const stripHtml = str => {
   throwIfNotType(str, 'string');
   return str.replace(/<[^>]+>/g, '');
 };
 
 /** Formats the given string as an absolute url. */
-const toAbsoluteUrl = url => {
+export const toAbsoluteUrl = url => {
   throwIfNotType(url, 'string');
   // Replace trailing slash, e.g., site.com/ => site.com
   const siteUrl = site.url.replace(/\/$/, '');
@@ -21,12 +21,12 @@ const toAbsoluteUrl = url => {
 };
 
 /** Converts the given date string to ISO8610 format. */
-const toISOString = dateString => dayjs(dateString).toISOString();
+export const toISOString = dateString => dayjs(dateString).toISOString();
 
 /** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format */
-const formatDate = (date, format) => dayjs(date).format(format);
+export const formatDate = (date, format) => dayjs(date).format(format);
 
-const minifyJs = async (code, ...rest) => {
+export const minifyJs = async (code, ...rest) => {
   const callback = rest.pop();
   const cacheKey = rest.length > 0 ? rest[0] : null;
 
@@ -50,7 +50,7 @@ const minifyJs = async (code, ...rest) => {
 };
 
 // source: https://github.com/bnijenhuis/bnijenhuis-nl/blob/main/.eleventy.js
-const splitlines = (input, maxCharLength) => {
+export const splitlines = (input, maxCharLength) => {
   const parts = input.split(' ');
   const lines = parts.reduce(function (acc, cur) {
     if (!acc.length) {
@@ -72,24 +72,24 @@ const splitlines = (input, maxCharLength) => {
 };
 
 /** Creates a filter for the most recently finished book from the bookshelf */
-const getMostRecentFinishedBook = bookshelf => {
+export const getMostRecentFinishedBook = bookshelf => {
   const finishedBooks = bookshelf.filter(book => book.status === 'finished');
   finishedBooks.sort((a, b) => new Date(b.dateFinished) - new Date(a.dateFinished));
   return finishedBooks[0];
 };
 
 // divides a string into an array of substrings based on a specified separator.
-const split = (input, separator) => {
+export const split = (input, separator) => {
   return input.split(separator);
 };
 
 /** Normalises a URL. */
-const normalizeUrl = (url) => {
+export const normalizeUrl = url => {
   return url.replace(/^https?:\/\//, '').replace(/\/$/, '');
 };
 
 /** Escapes special characters for XML for the feeds. */
-const escapeXml = (str) => {
+export const escapeXml = str => {
   if (typeof str !== 'string') return str;
   return str
     .replace(/&/g, '&amp;')
@@ -99,7 +99,7 @@ const escapeXml = (str) => {
     .replace(/'/g, '&apos;');
 };
 
-module.exports = {
+export default {
   toISOString,
   formatDate,
   toAbsoluteUrl,
