@@ -37,15 +37,8 @@ schema: blog
 
     {{ content | safe }}
 
-    {% if type == 'seasonal' %}
-      {% include "partials/seasonal.njk" %}
-    {% endif %}
-
-    {% if type == 'untappd' %}
-      {% include "partials/untappd.njk" %}
-    {% endif %}
-
     {% include 'components/reply-by.njk' %}
+
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
