@@ -34,6 +34,8 @@ import yaml from 'js-yaml';
 import htmlConfig from './config/transforms/html-config.js';
 import cssConfig from './config/template-languages/css-config.js';
 import jsConfig from './config/template-languages/js-config.js';
+import pluginWebmentions from "@chrisburnell/eleventy-cache-webmentions";
+import configWebmentions from "./src/_data/webmentions.js";
 
 export default (eleventyConfig) => {
   // --------------------- Custom Watch Targets -----------------------
@@ -105,6 +107,7 @@ export default (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setLibrary('md', markdownLib);
+  eleventyConfig.addPlugin(pluginWebmentions, configWebmentions)
 
   // Add support for YAML data files with .yaml extension
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));

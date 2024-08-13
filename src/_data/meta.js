@@ -84,10 +84,9 @@ export default {
       url: ''
     }
   },
-  viewRepo: {
-    // this is for the view/edit on github link. The value in the package.json will be pulled in.
-    allow: false,
-    infoText: 'View this page on GitHub'
+  webMentions: {
+    pingback: 'https://webmention.io/flamedfury.com/xmlrpc',
+    webmention: 'https://webmention.io/flamedfury.com/webmention'
   },
   easteregg: false
 };

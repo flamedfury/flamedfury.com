@@ -29,6 +29,7 @@
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
+    "@chrisburnell/eleventy-cache-webmentions": "^2.1.5",
     "@csstools/postcss-relative-color-syntax": "^2.0.9",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",

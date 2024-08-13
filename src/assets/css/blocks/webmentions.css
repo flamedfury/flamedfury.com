@@ -1,0 +1,17 @@
+.webmentions input[type='url'] {
+  background-color: var(--dark-bg);
+  border: 2px solid #999;
+  color: var(--color-text);
+}
+
+.webmentions input[type='url']::placeholder {
+  opacity: 0.5;
+  font-size: var(--size-step-min-1);
+}
+
+.webmentions .button {
+  margin-inline-end: 0;
+  padding: 0.1rem var(--space-m-l);
+  line-height: 1.3;
+  font-size: var(--size-step-min-1);
+}

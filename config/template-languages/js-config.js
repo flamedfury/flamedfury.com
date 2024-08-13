@@ -2,6 +2,7 @@ import * as esbuild from 'esbuild';
 
 export default function (eleventyConfig) {
   eleventyConfig.addTemplateFormats('js');
+  eleventyConfig.ignores.add("./src/**/*.11tydata.js");
 
   eleventyConfig.addExtension('js', {
     outputFileExtension: 'js',

@@ -1,0 +1,58 @@
+<section class="webmentions flow">
+
+    {% if webmentions.length %}
+    {% set replies = webmentions | getWebmentionsByTypes(['mention-of', 'in-reply-to']) %}
+    {% set validReplies = [] %}
+
+    {% for reply in replies %}
+    {% set wmSource = reply | getWebmentionSource %}
+    {% if "https://brid.gy/" not in wmSource %}
+    {% set validReplies = validReplies.concat(reply) %}
+    {% endif %}
+    {% endfor %}
+
+    {% if validReplies.length %}
+    <p class="text-step-min-1">Mentioned on:</p>
+    <ul>
+        {% for reply in validReplies %}
+        {% set wmId = reply['wm-id'] %}
+        {% set wmSource = reply | getWebmentionSource %}
+        {% set wmUrl = reply | getWebmentionURL %}
+        {% set authorUrl = reply.author.url | default(wmSource) %}
+        {% set authorName = reply.author.name %}
+
+        <li id="response-{{ wmId }}" class="text-step-min-1">
+            <a href="{{ wmUrl | safe }}" rel="external nofollow" title="Read externally">{{ wmUrl | safe }}</a>
+            {% if authorName %}
+            by <a href="{{ authorUrl | safe }}" rel="external nofollow" title="{{ authorName }}">{{ authorName | safe
+                }}</a>
+            {% else %}
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="text-step-min-1">No mentions yet.</p>
+    {% endif %}
+    {% else %}
+    <p class="text-step-min-1">No mentions yet.</p>
+    {% endif %}
+
+
+
+    <form id="webmention" action="https://webmention.io/flamedfury.com/webmention" method="post"
+        class="form-webmention">
+        <label for="form-webmention-source" class="text-step-min-1">Have you published a response on your own website?
+            Let me know where:</label>
+        <div class="sidebar" style="
+        --sidebar-gap: var(--space-xs);
+        --sidebar-target-width: 60%;
+        --sidebar-content-min-width: 220px;
+        ">
+            <input id="form-webmention-source" type="url" name="source" placeholder="https://example.com" required />
+            <input type="hidden" name="target" value="https://flamedfury.com{{ page.url }}" />
+            <input type="submit" class="button" value="Send Webmention" />
+        </div>
+    </form>
+
+</section>
