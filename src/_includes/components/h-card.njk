@@ -1,7 +1,6 @@
 <!--  h-card infos: https://indieweb.org/authorship -->
 <div hidden class="h-card">
-  <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
-  <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
-  <img class="u-author h-card" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
+  <a class="p-name u-url u-uid" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
+  <img class="u-photo" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
     alt="{{ meta.author.name }}" />
 </div>
