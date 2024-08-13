@@ -10,6 +10,15 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 14, 2024
+-- New [Bookmarks & Link Blogs](/links/#linkblogs) added to the [links page](/links/).
+
+- August 13, 2024
+- Reimplemented Webmentions with the latest version of [eleventy-webmentions-cache](https://chrisburnell.com/eleventy-cache-webmentions/). Shoutout to [Chris](https://chrisburnell.com/) for the support. Will post a write up on my intentions for webmentions later.
+
+- August 12, 2024
+-- Upgraded to [11ty v3.0.0-beta.1](https://www.11ty.dev/blog/three-point-oh-beta-one/). All CommonJS modules converted to ESM. No issues this time round.
+
 - August 8, 2024
 -- Updated the [Comics](/comics/) page with the latest additions.
 
