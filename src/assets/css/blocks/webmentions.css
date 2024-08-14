@@ -1,5 +1,5 @@
 .webmentions input[type='url'] {
-  background-color: var(--dark-bg);
+  background-color: var(--color-bg-accent);
   border: 2px solid #999;
   color: var(--color-text);
 }
