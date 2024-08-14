@@ -2,7 +2,7 @@
 <div hidden class="h-entry">
   <a class="p-name u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title | safe }}</a>
   <a class="p-author h-card" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
-  <img class="p-author h-card" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
+  <img class="p-author u-photo" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
     alt="{{ meta.author.name }}" />
   <p class="e-content">{{ description | safe }}</p>
   <time class="dt-published" datetime="{{ definedDate | toIsoString }}">{{ definedDate | formatDate('YYYY-MM-DD
