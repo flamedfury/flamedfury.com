@@ -1,0 +1,3 @@
+.page h1, .bookmark h1 {
+  font-size: var(--size-step-5);
+}
