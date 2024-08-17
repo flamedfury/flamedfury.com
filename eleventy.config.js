@@ -44,9 +44,7 @@ export default (eleventyConfig) => {
 
   // --------------------- Layout Aliases -----------------------
   eleventyConfig.addLayoutAlias('base', 'base.njk');
-  eleventyConfig.addLayoutAlias('home', 'home.njk');
   eleventyConfig.addLayoutAlias('page', 'page.njk');
-  eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
   eleventyConfig.addLayoutAlias('tags', 'tags.njk');
   eleventyConfig.addLayoutAlias('note', 'note.njk');

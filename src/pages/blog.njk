@@ -1,10 +1,16 @@
 ---
 layout: page
+title: Posts
+description: This is fLaMEd's weblog
+pagination:
+  data: collections.posts
+  size: 19
+permalink: 'posts/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 masonry: true
 ---
 
 <div class="region flow prose" style="--region-space-top: var(--space-l)">
-  {{ content | safe }}
+  <p>Welcome to my weblog. Dive in or browse by <a href="/tags/">tag</a> or posts by <a href="/archive/">year</a>.</p>
 </div>
 
 <ul class="blogcards feature | grid" role="list" data-rows="masonry" data-layout="50-50">

@@ -1,0 +1,29 @@
+---
+title: Bookmarks
+layout: page
+type: bookmarks
+permalink: /bookmarks/index.html
+masonry: true
+---
+
+<div class="region flow prose" style="--region-space-top: var(--space-l)">
+  <p>Interesting links from around the web! These bookmarks are also available as a <a href="/feeds/">feed</a>.</p>
+</div>
+
+<ul class="blogcards feature | grid" role="list" data-rows="masonry" data-layout="50-50">
+  {% for bookmark in collections.allBookmarks | reverse %}
+  <li class="card">
+    <div class="flow">
+      <h2>
+        <a href="{{ bookmark.url | url }}">{{ bookmark.data.title | safe }}</a>
+      </h2>
+      <div class="cluster">
+        <span class="text-step-min-1">
+          {% set definedDate = bookmark.data.date %} {% include "components/date.njk" %}
+        </span>
+      </div>
+      <p>{{ bookmark.data.notes | truncate(100) | safe }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
