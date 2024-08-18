@@ -431,6 +431,18 @@
       "url": "https://blogroll.club/",
       "feed": "",
       "note": "A home for everyone's Blog and Post rolls."
+    },
+    {
+      "name": "MelonLand Surf Club",
+      "url": "https://melonland.net/surf-club",
+      "feed": "",
+      "note": "The surf club is a webring that is designed to promote and help people find the homepages of MelonLand Forum members! ."
+    },
+    {
+      "name": "The Big List of Personal Websites",
+      "url": "http://biglist.terraaeon.com/",
+      "feed": "",
+      "note": "Terraaeon is maintaing a big list of personal websites. Submission form at the bottom."
     }
   ],
   "linkBlogs": [
@@ -489,7 +501,7 @@
       "note": "Chris is collecting and sharing links focusing on the internet, tech, and development."
     },
     {
-      "name": "Distincting Quality Links",
+      "name": "Distinctive Quality Links",
       "url": "https://distinctivequality.com/links/",
       "feed": "",
       "note": "Ovi is collecting links on designing, coding, and writing for the web and email."
@@ -507,16 +519,28 @@
       "note": "Lou is collecting and sharing cool links from across the web."
     },
     {
-      "name": "",
-      "url": "",
+      "name": "Bounty of bookmarks",
+      "url": "https://felix.plesoianu.ro/links/index.html",
       "feed": "",
-      "note": ""
+      "note": "Rather than hoarding and keeping bookmarks to themselves, Felix is sharing with the bounty of bookmarks. Thousands of bookamrks devided into categories for browsing."
     },
     {
-      "name": "",
-      "url": "",
+      "name": "Hidde's Links",
+      "url": "https://hidde.blog/links/",
       "feed": "",
-      "note": ""
+      "note": "Hiddie is collecting posts about the web and tech."
+    },
+    {
+      "name": "The internet used to be fun",
+      "url": "https://projects.kwon.nyc/internet-is-fun/",
+      "feed": "",
+      "note": "A collection of posts across the web about, well the web!"
+    },
+    {
+      "name": "Tangible Life Linkposts",
+      "url": "https://tangiblelife.net/tagged/linkpost",
+      "feed": "",
+      "note": "Steve is collecting and sharing links from across the web as a link log as a subset of his blog."
     },
     {
       "name": "",

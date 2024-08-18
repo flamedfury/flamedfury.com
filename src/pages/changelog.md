@@ -10,6 +10,13 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 18, 2024
+- New [Bookmarks & Link Blogs](/links/#linkblogs) and a new [Directory](/links/#webdirs) added to the [links page](/links/).
+
+- August 17, 2024
+-- Merged a few layouts, removed the rest.
+-- Reduced the `<h1>` font size on sub pages.
+
 - August 14, 2024
 -- New [Bookmarks & Link Blogs](/links/#linkblogs) added to the [links page](/links/).
 
