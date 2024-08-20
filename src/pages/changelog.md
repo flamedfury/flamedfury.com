@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 20, 2024
+- Fixed <a href="xmpp:flamed@omg.lol">XMPP</a> link on homepage.
+
 - August 18, 2024
 - New [Bookmarks & Link Blogs](/links/#linkblogs) and a new [Directory](/links/#webdirs) added to the [links page](/links/).
 
