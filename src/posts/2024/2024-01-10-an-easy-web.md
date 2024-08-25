@@ -5,15 +5,16 @@ tags:
   - web
   - thoughts
 date: 2024-01-10
+updated: 2024-08-25
 ---
 
-Being busy with my return to work this year meant I missed most of yesterday's discussions. While skimming through various websites and Mastodon, I couldn't contribute until today. Yet, upon catching up on the posts and replies, a crucial point often overlooked hit me.
+What's going on, Internet? Being busy with my return to work this year meant I missed most of yesterday's discussions. While skimming through various websites and Mastodon, I couldn't contribute until today. Once I caught up on the posts and replies, one thing hit me.
 
-Simply put, I firmly believe the web and building a website should be more accessible—not just for developers, **but for everyone**.
+I firmly believe the web and building a website should be more accessible—not just for developers, **but for everyone**.
 
 This train of thought originated from Giles's post [Let's make the indie web easier](https://gilest.org/indie-easy.html). I resonate with the idea of website ownership being an excellent avenue that we genuinely wish more individuals would embrace.
 
-> If we want the future web we’re all clamouring for, we need to give people more options for self-hosted independence. If we seriously, truly want the independent, non-enshittified personal web to flourish, we need to make it **easier for people to join in**. 
+> If we want the future web we’re all clamouring for, we need to give people more options for self-hosted independence. If we seriously, truly want the independent, non-enshittified personal web to flourish, we need to make it **easier for people to join in**.
 
 Giles effectively highlights the need for developers to create simpler tools for personal web publishing, eliminating technical barriers. Although platforms like WordPress and static site generators exist, their installation and usage still present significant hurdles for many, especially those unfamiliar with development.
 
@@ -21,13 +22,13 @@ Kev's response in [Let's Make the IndieWeb Easier](https://kevquirk.com/lets-mak
 
 > SSGs and their ilk are simple for developers but not simple for the vast majority of people. We need tools that are simple to use, simple to manage, and simple maintain.
 
-Kev swiftly points out that while these tools may be straightforward for developers, they present formidable challenges for others interested in the concept.
+Kev points out that while these tools may be straightforward for developers and other technical people, they may not be the most accessible and present challenges for those interested in breaking free of the platforms and silos.
 
 As I caught up on [additional responses](https://jeremy.hu/lets-make-the-indieweb-easier/) [throughout the day](https://brandonwrites.xyz/re-lets-make-the-indieweb-easier-and-blogging/) [from various sources](https://colinwalker.blog/blog/?date=2024-01-08#p2), the discussion seemed primarily fixated on blogging.
 
 This got me thinking: "[What about individuals seeking to create a website that doesn't align with traditional blogging?](/posts/build-personal-websites/)" Consider those who want to showcase collections, whether it's Hardrock Cafe pint glasses, Matchbox cars, or any other passion. Platforms like WordPress, Ghost, or Bear Blog may not be the best solution.
 
-My side project ideas aside, there's a lot to be said for websites that don't need to be or want to be blogs: 
+My side project ideas aside, there's a lot to be said for websites that don't need to be or want to be blogs:
 
 **Showcasing Collections**: Are you passionate about collecting items like Hardrock Cafe pint glasses, Matchbox cars, stamps, coins, vintage toys, or any niche hobby? A website offers a fantastic platform to proudly display and share your collection. It allows for organised galleries, descriptions, and detailed insights about each item.
 
@@ -41,6 +42,8 @@ My side project ideas aside, there's a lot to be said for websites that don't ne
 
 These examples underscore the personal aspect of websites catering to individual passions, hobbies, expressions, or documentation without focusing on business, sales, professional branding, or self-promotion. Websites offer an adaptable canvas for self-expression and sharing, going beyond the conventional structure of a blog. Sure, they could be smashed into blog format, but they would lose appeal and charm.
 
-The emphasis lies in propelling the small, open, and independent web to greater heights by empowering a broader spectrum of people to commence their online journey. What's indispensable here are tools that can be effortlessly set up and used by non-developers, devoid of complex coding or terminal usage. These tools should ideally be easily deployable in a self-hosted or shared hosting environment.
+The emphasis lies in enabling the small, open, and independent web to broader audiences by making it easier for a wider range of people to begin their online journey outside the walls of the silos. What needs to exist for this to happen are tools that can be effortlessly set up and used by non-developers, devoid of complex coding or terminal usage. These tools should ideally be easily deployable in a self-hosted or shared hosting environment.
 
-Enhancing the accessibility of independent web creation will enable more individuals to freely share their diverse experiences across the web. Ultimately, it's about creating a more inclusive digital space **for everyone**.
+Enhancing the accessibility of independent web creation will enable more individuals to freely share their diverse experiences across the web.
+
+Ultimately, it's about creating a more inclusive digital space **for everyone**. Laters.
