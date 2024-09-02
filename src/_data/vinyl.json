@@ -1,6 +1,20 @@
 {
   "albums": [
     {
+      "title": "Heads I Win, Tails You Lose",
+      "artist": "Gangrene",
+      "year": 2024,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "ALC Records",
+      "code": "ALC-5056",
+      "varient": "",
+      "number": "",
+      "image": "./src/assets/images/vinyl/gangrene-heads-i-win-tails-you-lose.jpg",
+      "alt": "Cover of the album",
+      "comment": "Gangrene is a group made up by rapper/producers The Alchemist and Oh No. This album has sick artwork, and bangs."
+    },
+    {
       "title": "Relapse",
       "artist": "Eminem",
       "year": 2009,
