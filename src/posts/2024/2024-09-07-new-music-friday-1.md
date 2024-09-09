@@ -1,6 +1,6 @@
 ---
 title: "New Music Friday #1"
-description:
+description: Cleared a few items out of my music to buy wish list. Come check out some fantastic local artists.
 tags:
   - music
 hashtags:
