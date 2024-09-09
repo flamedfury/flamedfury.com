@@ -10,6 +10,12 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- September 09, 2024
+-- Created an [Interests](/interests/), and [Favourites](/favourites/) page.
+
+- August 25, 2024
+-- Added a new small web search engine [Teclis](https://teclis.com/) to the list.
+
 - August 20, 2024
 - Fixed <a href="xmpp:flamed@omg.lol">XMPP</a> link on homepage.
 
