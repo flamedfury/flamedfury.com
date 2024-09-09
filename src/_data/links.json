@@ -83,6 +83,12 @@
       "url": "https://sarajoy.dev",
       "feed": "https://sarajoy.dev/rss.xml",
       "note": "Sara is a web developer and mother. Maintains the CSS Joy webring. Enjoy our banter on Mastodon."
+    },
+    {
+      "name": "disassociated",
+      "url": "https://disassociated.com",
+      "feed": "https://disassociated.com/feed",
+      "note": "disassociated is blogging about similar things to fLaMEd FURY. Posts about the web and other interests. Some absolute banger web commentary."
     }
   ],
   "coolSites": [
