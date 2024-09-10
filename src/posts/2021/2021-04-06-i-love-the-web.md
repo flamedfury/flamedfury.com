@@ -101,7 +101,7 @@ To expand upon [@molly0xfff@hachyderm.io](https://hachyderm.io/@molly0xfff/10953
 
 > if you are at all able (or able to learn), i highly recommend: creating your own website, on your own domain, acquiring copies of your data that you care about that's on third party sites (particularly twitter)
 
-- Learn some basic HTML & CSS. 
+- Learn some basic HTML & CSS.
 - Purchase your own domain.
 - Find some webhosting.
 - Start copying content that you've created and shared to social media and posting it on your new homepage.
@@ -122,7 +122,7 @@ I've curated a set of resources to help everyone to get started, no matter your 
 
 - [Neocities](https://neocities.org) - A great place for beginners. Neocities is a commercial web hosting service for static pages. It offers 1 GB of storage space for free sites and no server-side scripting for both paid and free subscriptions, the service's expressed goal is to revive the support of free web hosting of the now-defunct GeoCities. Many new and old webmasters come to Neocities to host their new homepages. Check out [Sadgrl's absolute beginner's guide to Neocities](https://sadgrl.online/learn/articles/beginners-guide-neocities) to get going.
 - [omg.lol](https://home.omg.lol/) - Treat yourself to an awesome web address, a devastatingly gorgeous profile page, a stellar email address, a weblog, a now page and heaps more.
-- [Ichi City](https://ichi.city) - A small independent project by [m15o](m15o.smol.pub/). Ichi is a tiny internet community where people can create their homepages for free. These pages are listed on Ichi's index, allowing everyone to explore, discover, and engage with one another.
+- [Ichi City](https://ichi.city) - A small independent project by [m15o](https://m15o.smol.pub/). Ichi is a tiny internet community where people can create their homepages for free. These pages are listed on Ichi's index, allowing everyone to explore, discover, and engage with one another.
 - [Micro.Blog](https://micro.blog) - Personal blogging that makes it easy to be social. Post short thoughts or long essays, share photos, all on your own blog. Micro.blog makes it easy. Free and paid plans available.
 - [Bear Blog](https://bearblog.dev/) - Want to get your thoughts out there as quick as possible? Bear Blog is a privacy-first, no-nonsense, super-fast blogging platform.
 - [W3Schools Spaces](https://www.w3schools.com/spaces/index.php) - W3Schools offer a wide range of beginner tutorials and now a place to host your projects. Free hosting and an online code editor.
