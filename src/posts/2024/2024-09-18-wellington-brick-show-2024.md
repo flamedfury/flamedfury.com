@@ -48,7 +48,7 @@ What's up, Internet? In the continued efforts to keep our young family entertain
 
 If you think that all we do is attend Lego shows and exhibits, well, we don't... There's just a few of them on around the country at the moment :P
 
-We all really enjoyed the show. There was a great selection of incredible Lego builds on display with lots of great themes. As we enetered the show room we were greeted by a lego portrait of Taylor Swift.
+We all really enjoyed the show. There was a great selection of incredible Lego builds on display with lots of great themes. As we entered the show room we were greeted by a lego portrait of Taylor Swift.
 
 My favourite was a recreation of part of Leeds Street in Wellington featuring the Fortune Favours Brewery and Tap Room and the Gorilla Burger Container.
 
@@ -58,7 +58,7 @@ Star Wars was very popular. Lots of the big sets on display like the Super Star 
 
 My son was excited to see the display of the Lego Speed cars as we've collected and built a few of those together.
 
-The Wellington Lego User Group looks to do a lot of charity donations thorugh the club. They had a few raffles going over the weekend and I brought a few tickets but never got the call.
+The Wellington Lego User Group looks to do a lot of charity donations through the club. They had a few raffles going over the weekend and I brought a few tickets but never got the call.
 
 They also had a scavenger hunt going that kept my son entertained throughout our time there. Twelve of the displays had hidden mini figs hidden in the displays that you had to find to recieve a stamp on your card. He managed to complete the challenge and entered the prize drawer but I don't think we were selected as a winner.
 
