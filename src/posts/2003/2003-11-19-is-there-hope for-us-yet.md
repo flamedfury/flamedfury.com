@@ -2,8 +2,8 @@
 title: Is There Hope For Us Yet?
 description: Where I never built that car...
 tags:
-  - life
   - wasted youth
+  - life
 date: 2003-11-19
 
 ---
