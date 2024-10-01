@@ -89,6 +89,12 @@
       "url": "https://disassociated.com",
       "feed": "https://disassociated.com/feed",
       "note": "disassociated is blogging about similar things to fLaMEd FURY. Posts about the web and other interests. Some absolute banger web commentary."
+    },
+    {
+      "name": "Notes by JCProbably",
+      "url": "https://notes.jeddacp.com/",
+      "feed": "https://notes.jeddacp.com/feed/",
+      "note": "Jedda posts about the web, blogging, photography, books and other stuff. I absolutely love her Postroll, a great source of new posts to read!"
     }
   ],
   "coolSites": [
@@ -456,7 +462,7 @@
       "name": "Linkage",
       "url": "https://linkage.lol/",
       "feed": "",
-      "note": "An old fashioned link blog by Lou Plummer and Jedda. Updated daily."
+      "note": "An old fashioned link blog by Lou Plummer. Updated daily."
     },
     {
       "name": "Link Punk",
