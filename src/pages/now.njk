@@ -15,7 +15,7 @@ permalink: /now/index.html
     <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
       <h2>Currently</h2>
         <p>🏡 Living in Te Awa Kairangi, Aotearoa</p>
-        <p>👨 Being a full time dad</p>
+        <p>🏢 Back at work</p>
         <p>🏗️ Building flamedfury.com</p>
         <p>☕ Supporting the <a href="https://32bit.cafe">32-Bit Cafe</a></p>
         <p>{{ status.emoji }} {{ status.content }}</p>
@@ -59,8 +59,10 @@ permalink: /now/index.html
           <div>
             {% if mostRecentFinishedBook.image %}
               {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/" + mostRecentFinishedBook.image, "An image of the book cover for the book " + mostRecentFinishedBook.title %}
-            {% else %}
+            {% elseif mostRecentFinishedBook.isbn %}
               {% eleventyImage "https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-" + mostRecentFinishedBook.isbn +".png", "An image of the book cover for the book " + mostRecentFinishedBook.title %}
+            {% else %}
+              <p>No image available for {{ mostRecentFinishedBook.title }}</p>
             {% endif %}
           </div>
           <div class="now-book-meta">
@@ -97,6 +99,8 @@ permalink: /now/index.html
                 alt="An image of the cover art for the game {{ game.name }}"
                 class="now__img"
               />
+            {% else %}
+              <p>No cover art available for {{ game.name }}</p>
             {% endif %}
           </div>
           <div class="now-game-meta">
@@ -120,7 +124,11 @@ permalink: /now/index.html
               class="no-indicator"
             >
               <div class="now-artist">
-                {% eleventyImage artist.image, "Photo of " + artist.name, "", "lazy", "now-artist" %}
+                {% if artist.image %}
+                  {% eleventyImage artist.image, "Photo of " + artist.name, "", "lazy", "now-artist" %}
+                {% else %}
+                  <p>No image available for {{ artist.name }}</p>
+                {% endif %}
               </div>
             </a>
             <div class="now-artist-meta">
@@ -139,7 +147,11 @@ permalink: /now/index.html
           <div class="stack">
             <a href="{{ album.url }}" title="{{ album.name }}" class="no-indicator">
               <div class="now-album">
-                {% eleventyImage album.image, "Cover art for the album " + album.name %}
+                {% if album.image %}
+                  {% eleventyImage album.image, "Cover art for the album " + album.name %}
+                {% else %}
+                  <p>No image available for {{ album.name }}</p>
+                {% endif %}
               </div>
             </a>
             <div class="now-album-meta">
@@ -161,7 +173,11 @@ permalink: /now/index.html
               title="{{ show.show.title }}"
               class="no-indicator"
             >
-              {% eleventyImage show.posterUrl, "Cover art for the show " + show.show.title %}
+              {% if show.posterUrl %}
+                {% eleventyImage show.posterUrl, "Cover art for the show " + show.show.title %}
+              {% else %}
+                <p>No poster available for {{ show.show.title }}</p>
+              {% endif %}
             </a>
             <div class="now-show-meta">
               <p class="now-show-episode-title">{{ show.episodeRange }}</p>
@@ -177,18 +193,16 @@ permalink: /now/index.html
       <div class="grid" style="--grid-min-item-size: 12rem">
         {% for movie in movies %}
           <div class="stack">
-            <a
-              href="{{ movie.tmdbUrl }}"
-              title="{{ movie.movie.title | escape }}"
-              class="no-indicator"
-            >
-              {% eleventyImage movie.posterUrl, "Cover art for the movie " + movie.movie.title %}
+            <a href="{{ movie.tmdbUrl }}" title="{{ movie.title }}" class="no-indicator">
+              {% if movie.posterUrl %}
+                {% eleventyImage movie.posterUrl, "Poster for the movie " + movie.title %}
+              {% else %}
+                <p>No poster available for {{ movie.title }}</p>
+              {% endif %}
             </a>
             <div class="now-movie-meta">
-              <p class="now-movie-title">
-                {{ movie.movie.title }}
-                <span class="now-movie-date">({{ movie.movie.year }})</span>
-              </p>
+              <p class="now-movie-title">{{ movie.title }}</p>
+              <p class="now-movie-episode-title">{{ movie.releaseYear }}</p>
             </div>
           </div>
         {% endfor %}
