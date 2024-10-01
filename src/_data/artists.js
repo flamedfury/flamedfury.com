@@ -2,8 +2,20 @@ import EleventyFetch from '@11ty/eleventy-fetch';
 import { getSpotifyAccessToken } from './spotifyAuth.js';
 import { searchSpotifyArtist } from './spotifySearch.js';
 
+// Function to clean artist names by removing featured artists and collaboration markers
 function cleanArtistName(name) {
-  return name.split(/ feat\. | ft\. | featuring /i)[0].trim();
+  // Define common separators used for featured artists and collaborations
+  const separators = [" feat. ", " ft. ", " featuring ", " & ", " x ", " with ", " Feat. "];
+
+  // Split by the first occurrence of any separator and return the main artist's name
+  for (const separator of separators) {
+    if (name.includes(separator)) {
+      return name.split(separator)[0].trim();
+    }
+  }
+
+  // If no separator is found, return the original name
+  return name.trim();
 }
 
 export default async function () {
@@ -22,6 +34,8 @@ export default async function () {
     const aggregatedArtists = {};
     artists.forEach(artist => {
       const cleanedName = cleanArtistName(artist.name);
+
+      // Initialize the artist in the aggregated object if not already present
       if (!aggregatedArtists[cleanedName]) {
         aggregatedArtists[cleanedName] = {
           ...artist,
@@ -29,11 +43,14 @@ export default async function () {
           playcount: 0,
         };
       }
+
+      // Add the play count to the aggregated artist
       aggregatedArtists[cleanedName].playcount += parseInt(artist.playcount, 10);
     });
 
     const spotifyAccessToken = await getSpotifyAccessToken();
 
+    // Fetch Spotify data for each aggregated artist
     const artistsWithSpotify = await Promise.all(
       Object.values(aggregatedArtists).map(async (artist) => {
         try {
@@ -43,7 +60,7 @@ export default async function () {
         } catch (error) {
           // Handle errors for individual artists gracefully
           console.error(`Error fetching Spotify data for artist '${artist.name}':`, error);
-          return { ...artist, image: null }; // Return artist without Spotify data
+          return { ...artist, image: null }; // Return artist without Spotify data if there's an error
         }
       })
     );
