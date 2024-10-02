@@ -1,5 +1,5 @@
 ---
-title: "Monhtly Recap: September 2024"
+title: "Monthly Recap: September 2024"
 description: What's going on, Internet? Blogging, bookmarking, gaming, website workshops and a social web!
 tags:
   - monthly recap
@@ -10,6 +10,7 @@ hashtags:
   - indieweb
 date: 2024-10-02
 timestamp: 2024-10-01T20:57:08.543Z
+redirectFrom: ['/posts/monhtly-recap-september-2024/']
 ---
 
 What's going on, Internet? It's been an interesting month starting back at work after being off for four months on parental leave.
