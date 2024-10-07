@@ -13,7 +13,7 @@ date: 2024-10-07
 timestamp: 2024-10-07T20:53:09.495Z
 ---
 
-After reading Jay Hoffmann's recent post on "[Gift Of Code](https://thehistoryoftheweb.com/the-gift-of-code/)," he recounts the moment Netscape ended and Mozilla Firefox emerged from the ashes.
+What's going on, Internet? After reading Jay Hoffmann's recent post on "[Gift Of Code](https://thehistoryoftheweb.com/the-gift-of-code/)," he recounts the moment Netscape ended and Mozilla Firefox emerged from the ashes.
 
 > Caught in a death spiral, and backed by their employees, Netscape  instead chose to gift their browser to the open source community and  spun off Mozilla as a non-profit to take charge.
 >
