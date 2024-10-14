@@ -24,7 +24,6 @@ import {
 } from './config/collections/index.js';
 
 import { svgToJpeg, updateOMGLol } from './config/events/index.js';
-
 import { EleventyRenderPlugin } from '@11ty/eleventy';
 import pluginRss from '@11ty/eleventy-plugin-rss';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
@@ -36,6 +35,7 @@ import cssConfig from './config/template-languages/css-config.js';
 import jsConfig from './config/template-languages/js-config.js';
 import pluginWebmentions from "@chrisburnell/eleventy-cache-webmentions";
 import configWebmentions from "./src/_data/webmentions.js";
+import musicThread from './config/plugins/musicthread.js';
 
 export default (eleventyConfig) => {
   // --------------------- Custom Watch Targets -----------------------
@@ -106,6 +106,7 @@ export default (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginWebmentions, configWebmentions)
+  eleventyConfig.addPlugin(musicThread);
 
   // Add support for YAML data files with .yaml extension
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
