@@ -13,7 +13,7 @@ timestamp: 2024-10-14T10:34:43.446Z
 
 # The Death Of Slim Shady
 
-What's up, Internet? I really wanted to post this two weeks after the album's release, but life happens, and here it is. This isn't an album review. It isn't necessarily about the album itself, though I definitely will comment on it. It is about moments that you had when younger that you may not have appreciated at the time but had since forgotten about.
+What's up, Internet? I really wanted to post this two weeks after the album's release, but life happens, and here it is. This isn't an album review. It isn't necessarily about the album itself, though I definitely will comment on it. It is about moments you had when you were younger that you may not have appreciated at the time but have since forgotten about.
 
 Music is so personal now, as is the access, the range, and the personalisation of your listening experience. (Being forced to hear the same twenty songs that the DSPs push on you aside). When I was growing up and at school, a handful of radio stations played a handful of songs (similar to those same twenty songs the DSPs push down your throats now). Everyone you knew was listening to the same music (obviously with exception) most of the time.
 
@@ -33,7 +33,7 @@ The entire experience was super fun. Sitting down and listening to the album mul
 
 I started writing this post at the end of July but never finished it. It was hard to get the words out of my head amongst the full-time parenting and eventual return to work. Three months later, with several music videos and bonus tracks released, a trimmed-down version of the album has found a place in my regular rotation.
 
-Songs like Temporary and Somebody Save Me are great, but I don't need to listen to them every time I want to hear the rest of the album. I've also dropped Road Rage because I just don't vibe with it, Tobey because I listened to it too much during the release hype countdown, and the Guess Who's Back skit while adding Fuel (Shady Edition) to the end.
+Songs like Temporary and Somebody Save Me are great, but I don't need to listen to them every time I want to hear the rest of the album. I've also dropped Road Rage because I don't vibe with it, Tobey because I listened too much during the release hype countdown, and the Guess Who's Back skit while adding Fuel (Shady Edition) to the end.
 
 I listened to the bonus tracks, Like My Shit and Kyrie & Luka, but I don't think they fit the vibe of the rest of the album at all, so I most likely won't listen to them all that much. This is what my redone album looks like:
 
