@@ -1,6 +1,20 @@
 <!--  h-card infos: https://indieweb.org/authorship -->
-<div hidden class="h-card">
-  <a class="h-card p-name u-url u-uid" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
+<div hidden class="p-author h-card">
+  <a class="p-name u-url u-uid" rel="me" href="{{ meta.url }}">{{ meta.author.name }}</a>
   <img class="u-photo" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
     alt="{{ meta.author.name }}" />
+  <p class="p-note">And eight years later, I'm still at it. Divorced, re-married, a felon, a father, sleepin' pill addict.</p>
+</div>
+
+
+<div hidden>
+  <!--  h-card infos -->
+  <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
+  <p class="h-card p-author">
+    <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author }}</a>
+    <img
+      src="{{ meta.authorAvatar | url | absoluteUrl(meta.url) }}"
+      alt="{{ meta[page.lang].siteName }}"
+    />
+  </p>
 </div>
