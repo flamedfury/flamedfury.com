@@ -3,7 +3,6 @@ title: Bookmarks
 layout: page
 type: bookmarks
 permalink: /bookmarks/index.html
-masonry: true
 ---
 
 <div class="region flow prose" style="--region-space-top: var(--space-l)">
@@ -27,3 +26,11 @@ masonry: true
   </li>
   {% endfor %}
 </ul>
+
+{% css "inline" %}
+  {% include "css/card.css" %}
+{% endcss %}
+
+{% js "inline" %}
+  {% include "scripts/masonry.js" %}
+{% endjs %}

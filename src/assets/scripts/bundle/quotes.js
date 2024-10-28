@@ -1,52 +1,48 @@
-/**
- * @file Displays a random quote from a predefined list.
- * https://www.lkhrs.com/blog/2023/js-random-quote/
- */
+document.addEventListener("DOMContentLoaded", function () {
+  const element = document.querySelector("#quote");
 
-let element = document.querySelector("#quote");
+  // Ensure the element exists
+  if (!element) return;
 
-/**
- * Randomly shuffle an array
- * https://stackoverflow.com/a/2450976/1293256
- * @param  {Array} array The array to shuffle
- * @return {String}      The first item in the shuffled array
- */
-function shuffle(array) {
-	let currentIndex = array.length;
-	let temporaryValue, randomIndex;
+  // List of quotes
+  const quotes = [
+    "Come on over, do the twist",
+    "Overdo it and have a fit",
+    "Love you so much it makes me sick",
+    "Beat me out of me",
+    "She keeps it pumpin' straight to my heart",
+    "Nature is a whore",
+    "With the lights out, it's less dangerous",
+    "I'm so happy, 'cause today I found my friends",
+    "It's okay to eat fish 'cause they don't have any feelings",
+    "Love myself better than you",
+    "I know it's wrong, so what should I do?",
+    "Won't you believe it? It's just my luck",
+    "Would you believe me when I tell you, you're the queen of my heart?",
+    "She said, she'd take me anywhere",
+    "Chokin' on the ashes of her enemy",
+    "Armed and dangerous, ain't too many can bang with us"
+  ];
 
-	// While there remain elements to shuffle...
-	while (0 !== currentIndex) {
-		// Pick a remaining element...
-		randomIndex = Math.floor(Math.random() * currentIndex);
-		currentIndex -= 1;
+  /**
+   * Randomly shuffle an array and return the first item
+   */
+  function shuffle(array) {
+    let currentIndex = array.length, randomIndex;
 
-		// And swap it with the current element.
-		temporaryValue = array[currentIndex];
-		array[currentIndex] = array[randomIndex];
-		array[randomIndex] = temporaryValue;
-	}
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
 
-	return array;
-}
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
 
-/**
- * Fetch JSON, shuffle the quotes, and use the first one to update the DOM
- */
-async function getQuote() {
-	try {
-		let response = await fetch('/quotes.json');
-		if (!response.ok) throw response.status;
-		let quotes = await response.json();
-		if (!quotes) throw "No quotes returned.";
+    return array[0];
+  }
 
-		shuffle(quotes);
-
-		element.innerHTML = `${quotes[1]}`;
-	} catch (error) {
-		console.log(error);
-	}
-}
-
-// Initialize
-getQuote();
+  // Display a random quote
+  element.innerHTML = shuffle(quotes);
+});

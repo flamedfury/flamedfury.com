@@ -24,3 +24,7 @@ eleventyComputed:
   <!-- card -->
   {% include 'partials/card.njk' %} {% endfor %}
 </ul>
+
+{% js "inline" %}
+  {% include "scripts/masonry.js" %}
+{% endjs %}

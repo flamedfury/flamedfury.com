@@ -81,7 +81,7 @@
 	text-align: center;
   font-size: var(--size-step-6);
   text-transform: uppercase;
-  mask-image: url("../images/splatter-mask.png");
+  mask-image: url("../assets/images/splatter-mask.png");
 }
 
 .homepage-stack-layout small {

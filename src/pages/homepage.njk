@@ -3,8 +3,6 @@ title: fLaMEd fury
 permalink: /index.html
 description: What's going on Internet? This is my homepage. I write about the web and stuff.
 layout: base
-quote: true
-masonry: true
 ---
 
 <div class="wrapper">
@@ -48,6 +46,14 @@ masonry: true
           {% include "components/homepage/somepics.njk" %}
         </div>
       </div>
+
+      <custom-masonry></custom-masonry>
+
     </div>
   </section>
 </div>
+
+{% js "inline" %}
+  {% include "scripts/quotes.js" %}
+  {% include "scripts/masonry.js" %}
+{% endjs %}

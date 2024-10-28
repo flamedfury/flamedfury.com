@@ -6,7 +6,6 @@ pagination:
   data: collections.allPosts
   size: 19
 permalink: 'posts/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
-masonry: true
 ---
 
 <div class="region flow prose" style="--region-space-top: var(--space-l)">
@@ -33,4 +32,9 @@ masonry: true
 <!-- if the number of items in the collection is greater than the number of items shown on one page -->
 {% if collectionToPaginate.length > pagination.size %}
 <!-- include pagination -->
-{% include 'partials/pagination.njk' %} {% endif %}
+{% include 'partials/pagination.njk' %}
+{% endif %}
+
+{% js "inline" %}
+  {% include "scripts/masonry.js" %}
+{% endjs %}
