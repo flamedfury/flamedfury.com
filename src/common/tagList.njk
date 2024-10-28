@@ -18,7 +18,7 @@ eleventyComputed:
 	<!-- set heading context -->
 	{% set headingContext = "h2" %}
 	<!-- card -->
-	{% include 'components/card.njk' %} {% endfor %}
+	{% include 'partials/card.njk' %} {% endfor %}
 </ul>
 
 <h2>{{ meta.blog.tagMore }}</h2>
@@ -39,5 +39,3 @@ eleventyComputed:
   </a></li>
   {% endfor %}
 </ul>
-
-

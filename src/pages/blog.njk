@@ -23,7 +23,7 @@ masonry: true
   <!-- set heading context -->
   {% set headingContext = "h2" %}
   <!-- include card -->
-  {% include 'components/card.njk' %} {% endfor %}
+  {% include 'partials/card.njk' %} {% endfor %}
 </ul>
 
 <!-- set collection to paginate -->
@@ -33,4 +33,4 @@ masonry: true
 <!-- if the number of items in the collection is greater than the number of items shown on one page -->
 {% if collectionToPaginate.length > pagination.size %}
 <!-- include pagination -->
-{% include 'components/pagination.njk' %} {% endif %}
+{% include 'partials/pagination.njk' %} {% endif %}

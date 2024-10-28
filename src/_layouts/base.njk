@@ -20,6 +20,10 @@
     <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
     {% set jsthemetoggle %} {% include "theme-toggle-inline.js" %} {% endset %}
 
+    <!-- 5 CSS  -->
+    <!-- <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" /> -->
+    {% include "head/css-inline.njk" %}
+
     <!--  inline base schema -->
     {% include "schemas/base-schema.njk" %}
 

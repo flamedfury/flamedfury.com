@@ -13,7 +13,7 @@ schema: blog
         <img class="u-photo" src="{{ meta.authorAvatar }}">
       </div>
       <a class="u-url" href="{{ absolutePostUrl }}">
-          {% set definedDate = date %} {% include "components/date.njk" %}
+          {% set definedDate = date %} {% include "partials/date.njk" %}
       </a>
     </details>
 

@@ -11,13 +11,13 @@
     {% endif %}
     <div class="cluster">
       <span class="text-step-min-1">
-        {% set definedDate = item.date %} {% include "components/date.njk" %} {% if activateTags and item.data.tags.length > 1 %}
+        {% set definedDate = item.date %} {% include "partials/date.njk" %} {% if activateTags and item.data.tags.length > 1 %}
           {# For cards with multiple tags, show all tags for the card #}
-          {% for tagButton in range( 0, item.data.tags.length ) %} 
+          {% for tagButton in range( 0, item.data.tags.length ) %}
             {# Skip "administrative" tags like 'posts' and 'feature' #}
-            {% if 
-              (item.data.tags[ tagButton ] != "posts") and 
-              (item.data.tags[ tagButton ] != "feature") 
+            {% if
+              (item.data.tags[ tagButton ] != "posts") and
+              (item.data.tags[ tagButton ] != "feature")
             %}
               <span class="button post-tag"> {{ item.data.tags[ tagButton ] }} </span>
             {% endif %}

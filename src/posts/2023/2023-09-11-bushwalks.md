@@ -19,12 +19,12 @@ gallery:
     caption: ''
 ---
 
-My family and I live down the road from one of the entrances to the Belmont Regional Park, the largest regional park in Wellington. This provides us easy access to beautiful walking tracks. 
+My family and I live down the road from one of the entrances to the Belmont Regional Park, the largest regional park in Wellington. This provides us easy access to beautiful walking tracks.
 From this entrance, there is access to eleven walking and hiking tracks of various length and difficulty.
 
 The park features the historic Korokoro Dam, World War II ammunition stores and the original coach road from Wellington.
 
-My favourite walk is the Korokoro Dam Loop track. The trail map indicates a 2.7km distance and allows 1 hour to complete. I can manage it in 26 minutes at a fast walk/jog. 
+My favourite walk is the Korokoro Dam Loop track. The trail map indicates a 2.7km distance and allows 1 hour to complete. I can manage it in 26 minutes at a fast walk/jog.
 
 Now that it's spring in Aotearoa and not constantly raining, it's a great time to get out and enjoy the fresh air and bush.
 
@@ -38,4 +38,4 @@ I've been completing the walk three times a week to complement my exercise routi
 >
 > https://www.gw.govt.nz/assets/Documents/2001/11/Regional-Parks_20011127_163445.pdf
 
-{% include "components/gallery.njk" %}
+{% include "partials/gallery.njk" %}

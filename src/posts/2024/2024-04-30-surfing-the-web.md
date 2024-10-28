@@ -9,15 +9,15 @@ date: 2024-04-30
 timestamp: 2024-04-30T07:22:47.637Z
 ---
 
-If you've read my website for any amount of time, you'll know I'm a big web surfer. My [bookmarks page](/bookmarks/) and [bookmarks feed](/bookmarks-feed.xml) are excellent ways for me to share my more interesting finds with the wider community. 
+If you've read my website for any amount of time, you'll know I'm a big web surfer. My [bookmarks page](/bookmarks/) and [bookmarks feed](/bookmarks-feed.xml) are excellent ways for me to share my more interesting finds with the wider community.
 
-This post has been in draft for **months**. I'm not kidding. I at least had it planned well over a year ago, but when I read the post "[How Do I Save Links For Later](https://chriscoyier.net/2023/08/20/how-do-i-save-links-for-later/)" by Chris Coyier and "[How I Read Online](https://minutestomidnight.co.uk/blog/how-i-read-online/)" by Simone Silvestroni did I actually put some words into the draft. 
+This post has been in draft for **months**. I'm not kidding. I at least had it planned well over a year ago, but when I read the post "[How Do I Save Links For Later](https://chriscoyier.net/2023/08/20/how-do-i-save-links-for-later/)" by Chris Coyier and "[How I Read Online](https://minutestomidnight.co.uk/blog/how-i-read-online/)" by Simone Silvestroni did I actually put some words into the draft.
 
 And then it sat there for more months until [arevakhach](https://foreverliketh.is/) started the topic "[Tab & Bookmark Management](https://discourse.32bit.cafe/t/tab-bookmark-management/842) on the [32-Bit Forums](https://discourse.32bit.cafe/) did I actually sit down and flesh it out.
 
 ## Surfing the web
 
-I surf the web on my desktop, laptop, tablet and phone. Yeah, that's a lot of devices, but they work great in different situations and places. 
+I surf the web on my desktop, laptop, tablet and phone. Yeah, that's a lot of devices, but they work great in different situations and places.
 
 Interesting links are collected as new tabs from places like [Mastodon](https://social.lol/@flamed/), Discord, [Forums](https://discourse.32bit.cafe/), my RSS reader and random surfing on places like [Search My Site](https://searchmysite.net/) or [Marginalia](https://search.marginalia.nu/).
 
@@ -27,7 +27,7 @@ I'll send the links I want to read later straight to Pocket. Otherwise, I'll clo
 
 ## Reading the web
 
-First, I need to find some focus time. Usually, when the kids are out of the house, downtime at the airport while travelling or after the kids are in bed, and I'm not falling asleep watching [TV](/tags/tv/) on the couch. 
+First, I need to find some focus time. Usually, when the kids are out of the house, downtime at the airport while travelling or after the kids are in bed, and I'm not falling asleep watching [TV](/tags/tv/) on the couch.
 
 I'll Open Pocket on a computer, tablet, or Kobo (rarely on the phone) and start reading my saved articles and posts. If an article or post is interesting and I want to share it with the community, I'll favourite it, archive it, and copy the URL for sharing. Otherwise, the saved article is deleted.
 
@@ -37,7 +37,7 @@ This is the fun part. My workflow is made up of an [iOS Shortcut](https://github
 
 I'll review all the articles I liked, and for the ones I feel are worth sharing on Flamed Fury, I'll copy the URL and trigger the action via a modified version of the shortcut mentioned above.
 
-I enter a few details, like a quote from the text, a couple of my thoughts, and some related tags, along with the URL. The action saves the link to a JSON file in my metadata-library repository, which is then available to my 11ty project. 
+I enter a few details, like a quote from the text, a couple of my thoughts, and some related tags, along with the URL. The action saves the link to a JSON file in my metadata-library repository, which is then available to my 11ty project.
 
 Over in my 11ty project I have a data file aptly named `bookmarks.json` that uses Eleventy-Fetch to grab the bookmark data from the JSON file.
 
@@ -105,7 +105,7 @@ To generate the pages, I have an 11ty partial that generates the actual [Bookmar
         </h2>
         <div>
           <span>
-            {% set definedDate = bookmark.date %} {% include "components/date.njk" %}
+            {% set definedDate = bookmark.date %} {% include "partials/date.njk" %}
           </span>
         </div>
         <p>{{ bookmark.data.notes | truncate(100) | safe }}</p>
@@ -187,7 +187,7 @@ The JSON feed powers an Echo on [Echo Feed](https://echofeed.app), which shares 
 
 {% raw %}
 ```jinja2
-🔖 New bookmark: {{ title }} 
+🔖 New bookmark: {{ title }}
 
 🔗 {{ external_link }}
 
