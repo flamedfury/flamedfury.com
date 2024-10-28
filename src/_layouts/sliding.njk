@@ -9,7 +9,7 @@ schema: blog
   :root {
     --primary: hsl(329, 85%, 53%);
     --accent: hsl(89, 85%, 33%);
-    
+
     --ff-accent: 'Bubblegum Sans', cursive;
 
     --step-6: clamp(3.3594rem, 1.0526rem + 11.5337vw, 9.9913rem);
@@ -148,7 +148,7 @@ schema: blog
   <div class="wrapper flow prose">
     <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s)">
       <!-- date -->
-      {% set definedDate = date %} {% include "components/date.njk" %}
+      {% set definedDate = date %} {% include "partials/date.njk" %}
 
       <!-- tags -->
       {% if tags.length > 1 %} {% for tag in tags %} {% if tag != "posts" %}
@@ -160,7 +160,7 @@ schema: blog
 
     {{ content | safe }}
 
-    {% include 'components/reply-by.njk' %}
+    {% include 'partials/reply-by.njk' %}
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
