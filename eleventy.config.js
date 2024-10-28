@@ -38,6 +38,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('postsByYear', postsByYear);
 
   // // ---------------------  Plugins
+  eleventyConfig.addPlugin(plugins.cssConfig);
+  eleventyConfig.addPlugin(plugins.jsConfig);
   eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
@@ -45,11 +47,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.pluginWebmentions, plugins.configWebmentions);
 
   // // ---------------------  bundle
-  // eleventyConfig.addBundle('css', {hoist: true});
+  eleventyConfig.addBundle('css', {hoist: true});
 
   // // 	--------------------- Library and Data
-  // eleventyConfig.setLibrary('md', plugins.markdownLib);
-  // eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
+  eleventyConfig.setLibrary('md', plugins.markdownLib);
+  eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
 
   // // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
@@ -81,7 +83,7 @@ export default async function (eleventyConfig) {
   // // --------------------- Passthrough File Copy
 
   // -- same path
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
+  ['src/assets/fonts/', 'src/assets/images/', 'src/assets/og-images', 'src/assets/static'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
