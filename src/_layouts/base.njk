@@ -20,11 +20,6 @@
     <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
     {% set jsthemetoggle %} {% include "theme-toggle-inline.js" %} {% endset %}
 
-    <script>
-      <!-- prettier-ignore -->
-      {{ jsthemetoggle | jsmin | safe }}
-    </script>
-
     <!--  inline base schema -->
     {% include "schemas/base-schema.njk" %}
 
