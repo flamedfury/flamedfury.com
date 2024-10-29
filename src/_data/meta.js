@@ -18,7 +18,7 @@ export const creator = {
   website: 'https://flamedfury.com',
   social: 'https://social.lol/@flamed'
 };
-export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
+export const pathToSvgLogo = 'src/assets/svg/misc/flamed.svg'; // used for favicon generation
 export const themeColor = '#ff4800'; //  Manifest: defines the default theme color for the application
 export const themeBgColor = '#252525'; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
