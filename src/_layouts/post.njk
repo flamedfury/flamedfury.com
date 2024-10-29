@@ -8,18 +8,13 @@ schema: blog
     <h1 class="gradient-text">{{ title }}</h1>
 
     <!-- image -->
-    {% if image %}{% eleventyImage image, alt or title, null, "eager", "feature" %} {%
-    endif %}
-
-    <!-- credit -->
-    {% if credit %}
-    <p class="feature text-step-min-1">© {{ credit }}</p>
+    {% if image %}
+      {% eleventyImage image, alt or title, null, "eager", "feature" %}
     {% endif %}
 
     <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s)">
       <!-- date -->
       {% set definedDate = date %} {% include "partials/date.njk" %}
-
       <!-- tags -->
       {% if tags.length > 1 %} {% for tag in tags %} {% if tag != "posts" %}
       <a class="button post-tag" href="/tags/{{ tag }}">
@@ -36,12 +31,14 @@ schema: blog
     </p>
 
     {{ content | safe }}
-
     {% include 'partials/reply-by.njk' %}
-
     {% include 'partials/webmentions.njk' %}
 
   </div>
 
-  {% include 'components/h-entry.njk' %}
+  {% include 'partials/h-entry.njk' %}
 </article>
+
+{%- css "inline" -%}
+  {%- include 'css/post.css' -%}
+{%- endcss -%}

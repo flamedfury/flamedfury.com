@@ -2,14 +2,9 @@
 
 <!doctype html>
 <html lang="{{ meta.lang }}">
-  <!-- The order of elements in the head follows recommendations by Harry Roberts. learn more here: https://www.youtube.com/watch?v=MHyAOZ45vnU -->
-
   <head>
-    <!-- 1 charset/viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- 2 title -->
     <title>
       {% if discover.title %}
         {{ discover.title }}
@@ -22,20 +17,14 @@
 
     <base href="{{ page.url }}" />
 
-    <!-- 3 synchronous js  -->
     {% include "head/js-inline.njk" %}
 
-    <!-- 4 schema settings -->
     {% include "head/schema.njk" %}
 
-    <!-- 5 CSS  -->
-    <!-- <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" /> -->
     {% include "head/css-inline.njk" %}
 
-    <!-- 6 preloads  -->
     {% include "head/preloads.njk" %}
 
-    <!-- 7 meta tags, icons, open graph etc.  -->
     {% include "head/meta-info.njk" %}
   </head>
 

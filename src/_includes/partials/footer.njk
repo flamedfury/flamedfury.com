@@ -1,5 +1,7 @@
 {% set activePage = page.url | url %}
 <footer class="site-foot">
+  {% include 'partials/h-entry.njk' %}
+
   <div class="wrapper flow">
 
     <div class="site-foot__inner">
@@ -37,5 +39,4 @@
     </div>
   </div>
 
-  {% include 'components/h-card.njk' %}
 </footer>
