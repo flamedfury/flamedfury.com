@@ -1,0 +1,29 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ meta.lang or page.lang }}" xml:base="{{ meta.url }}/">
+  <title>{{ meta.blog.name }}</title>
+  <subtitle>{{ meta.blog.description }}</subtitle>
+  <link href="{{ permalink | htmlBaseUrl(meta.url) }}" rel="self" />
+  <link href="{{ meta.url | addPathPrefixToFullUrl }}" />
+  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ meta.url | addPathPrefixToFullUrl }}</id>
+  <author>
+    <name>{{ meta.author.name }}</name>
+  </author>
+  {% set postslist = collections.posts | reverse %}
+  {% for post in postslist | limit(11) %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(meta.url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{% if post.data.timestamp %}{{ post.data.timestamp | dateToRfc3339 }}{% else %}{{ post.date | dateToRfc3339 }}{% endif %}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <summary>{{ post.data.description }}</summary>
+      <content xml:lang="en" type="html"><![CDATA[{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}]]>{% include 'partials/rss-thanks.njk' %}</content>
+    </entry>
+  {% endfor %}
+</feed>

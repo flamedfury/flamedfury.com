@@ -10,6 +10,7 @@ import {escapeXml} from './filters/escape-xml.js';
 import {normalizeUrl} from './filters/normalize-url.js';
 import {getMostRecentFinishedBook} from './filters/finished-books.js'
 import {split} from './filters/splitstring.js';
+import {limit} from './filters/limit.js';
 
 export default {
   toISOString,
@@ -24,5 +25,6 @@ export default {
   escapeXml,
   normalizeUrl,
   getMostRecentFinishedBook,
-  split
+  split,
+  limit
 };

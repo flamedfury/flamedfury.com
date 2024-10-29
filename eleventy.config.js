@@ -12,9 +12,9 @@ import yaml from 'js-yaml';
 //  config import
 import {getAllPosts, onlyMarkdown, tagList, tagCollections, allBookmarks, filterFeedPosts, postsByYear} from './src/_config/collections.js';
 import events from './src/_config/events.js';
-import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
+import filters from './src/_config/filters.js';
 
 export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
@@ -28,7 +28,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('tags', 'tags.njk');
   eleventyConfig.addLayoutAlias('bookmark', 'bookmark.njk');
 
-  // //	---------------------  Collections
+  //	---------------------  Collections
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
   eleventyConfig.addCollection('tagList', tagList);
@@ -37,7 +37,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('filterFeedPosts', filterFeedPosts);
   eleventyConfig.addCollection('postsByYear', postsByYear);
 
-  // // ---------------------  Plugins
+  // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.cssConfig);
   eleventyConfig.addPlugin(plugins.jsConfig);
   eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
@@ -46,15 +46,15 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.musicThread);
   eleventyConfig.addPlugin(plugins.pluginWebmentions, plugins.configWebmentions);
 
-  // // ---------------------  bundle
+  // ---------------------  bundle
   eleventyConfig.addBundle('css', {hoist: true});
   eleventyConfig.addBundle('js', {hoist: true});
 
-  // // 	--------------------- Library and Data
+  // 	--------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
 
-  // // --------------------- Filters
+  // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
   eleventyConfig.addFilter('formatDate', filters.formatDate);
   eleventyConfig.addFilter('markdownFormat', filters.markdownFormat);
@@ -68,20 +68,21 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('normalizeUrl', filters.normalizeUrl);
   eleventyConfig.addFilter('getMostRecentFinishedBook', filters.getMostRecentFinishedBook);
   eleventyConfig.addFilter('split', filters.split);
+  eleventyConfig.addFilter('limit', filters.limit);
 
-  // // --------------------- Shortcodes
+  // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
   eleventyConfig.addShortcode('eleventyImage', shortcodes.imageShortcode);
   eleventyConfig.addShortcode('youtube', shortcodes.liteYoutube);
   eleventyConfig.addShortcode('includeRaw', shortcodes.includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
-  // // --------------------- Events ---------------------
+  // --------------------- Events ---------------------
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
     eleventyConfig.on('eleventy.after', events.svgToJpeg);
   }
 
-  // // --------------------- Passthrough File Copy
+  // --------------------- Passthrough File Copy
 
   // -- same path
   ['src/assets/fonts/', 'src/assets/images/', 'src/assets/og-images', 'src/assets/static'].forEach(path =>
