@@ -1,23 +1,28 @@
-.control {
+.details .control {
   --gutter: var(--space-xs-s);
   --cluster-horizontal-alignment: flex-end;
   border-block-start: 1px solid var(--color-bg-accent);
   padding-block-start: var(--space-xs);
 }
 
-details > * + * {
+/* Hide without JS */
+is-land:not(:defined) .details .control {
+  display: none;
+}
+
+.details details > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
 
-details > p:last-child {
+.details details > p:last-child {
   margin-block-end: var(--space-l);
 }
 
-summary {
+.details summary {
   grid-column: content;
 }
 
-summary {
+.details summary {
   display: flex;
   align-items: baseline;
   line-height: 1.2;
@@ -28,13 +33,13 @@ summary {
   font-size: var(--size-step-1);
 }
 
-summary:hover,
-summary:focus-visible,
-[open] > summary {
+.details summary:hover,
+.details summary:focus-visible,
+.details[open] > summary {
   color: var(--color-primary);
 }
 
-summary::before {
+.details summary::before {
   content: '+';
   display: block;
   color: var(--color-primary);
@@ -47,21 +52,35 @@ summary::before {
   margin-inline-start: 0.2ch;
 }
 
-[open] summary::before {
-  content: '-';
+.details details[open] summary::before {
+  content: '–';
+}
+
+.details details > :is(h2, h3) {
+  font-weight: var(--font-bold);
+  font-size: var(--size-step-0);
+  border-block-end: 1px solid var(--color-bg-accent);
+  padding-block-end: var(--space-xs);
+}
+
+.details details > :is(h2, h3) {
+  font-weight: var(--font-bold);
+  font-size: var(--size-step-0);
+  border-block-end: 1px solid var(--color-bg-accent);
+  padding-block-end: var(--space-xs);
 }
 
 /* Hide default marker */
-summary::-webkit-details-marker,
-summary::marker {
+.details summary::-webkit-details-marker,
+.details summary::marker {
   content: '';
   display: none;
 }
 
-summary + * {
+.details summary + * {
   margin-block-start: var(--space-s-m);
 }
 
-details > * + * {
+.details details > * + * {
   margin-inline-start: 2.4ch;
 }
