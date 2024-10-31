@@ -1,6 +1,6 @@
 <!--  h-card infos: https://indieweb.org/authorship -->
-<div hidden>
-  <p class="p-author h-card">
+<div hidden="h-card">
+  <p class="p-author">
     <a class="p-name u-url u-uid" rel="me" href="{{ meta.url }}">{{ meta.author.name }}</a>
   </p>
   <img class="u-photo" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}" alt="{{ meta.author.name }}" />
