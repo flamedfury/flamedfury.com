@@ -10,6 +10,18 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- October 30, 2024
+-- Major backend overhaul, caught up with Lene's [recent config structure](https://www.lenesaile.com/en/blog/organizing-the-eleventy-config-file/#update-june-2024).
+
+- October 16, 2024
+-- Added Mastodon author tag support
+
+- October 15. 2024
+-- Added capability to embed a https://musicthread.app/ thread.
+
+- October 05, 2024
+-- Upgraded to Eleventy 3.0.0 stable
+
 - September 09, 2024
 -- Created an [Interests](/interests/), and [Favourites](/favourites/) page.
 
