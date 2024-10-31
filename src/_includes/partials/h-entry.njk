@@ -1,5 +1,5 @@
 <!--  h-entry infos: https://indieweb.org/authorship -->
-<div hidden class="h-entry">
+<div class="h-entry" hidden>
   <a class="p-name u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title | safe }}</a>
   <a class="p-author h-card" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
   <img class="u-photo" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
