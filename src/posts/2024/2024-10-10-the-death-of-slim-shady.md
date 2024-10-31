@@ -11,8 +11,6 @@ date: 2024-10-10
 timestamp: 2024-10-14T10:34:43.446Z
 ---
 
-# The Death Of Slim Shady
-
 What's up, Internet? I really wanted to post this two weeks after the album's release, but life happens, and here it is. This isn't an album review. It isn't necessarily about the album itself, though I definitely will comment on it. It is about moments you had when you were younger that you may not have appreciated at the time but have since forgotten about.
 
 Music is so personal now, as is the access, the range, and the personalisation of your listening experience. (Being forced to hear the same twenty songs that the DSPs push on you aside). When I was growing up and at school, a handful of radio stations played a handful of songs (similar to those same twenty songs the DSPs push down your throats now). Everyone you knew was listening to the same music (obviously with exception) most of the time.
