@@ -1,6 +1,20 @@
 {
   "albums": [
     {
+      "title": "The Death Of Slim Shady (Coup De Grâce)",
+      "artist": "Eminem",
+      "year": 2024,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "Aftermath Entertainment, Shady Records, Interscope Records",
+      "code": "",
+      "varient": "Red & Blue Opaque",
+      "number": "",
+      "image": "./src/assets/images/vinyl/the-death-of-slim-shady.jpg",
+      "alt": "Cover of the album",
+      "comment": "My personal album of the year 2024."
+    },
+    {
       "title": "Heads I Win, Tails You Lose",
       "artist": "Gangrene",
       "year": 2024,
