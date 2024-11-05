@@ -2,7 +2,11 @@
 title: Bookmarks
 layout: page
 type: bookmarks
-permalink: /bookmarks/index.html
+pagination:
+  data: collections.allBookmarks
+  size: 20
+  reverse: true
+permalink: 'bookmarks/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 ---
 
 <div class="region flow prose" style="--region-space-top: var(--space-l)">
@@ -10,15 +14,16 @@ permalink: /bookmarks/index.html
 </div>
 
 <ul class="blogcards feature | grid" role="list" data-rows="masonry" data-layout="50-50">
-  {% for bookmark in collections.allBookmarks | reverse %}
+  {% for bookmark in pagination.items %}
   <li class="card">
     <div class="flow">
       <h2>
-        <a href="{{ bookmark.url | url }}">{{ bookmark.data.title | safe }}</a>
+        <a href="{{ bookmark.url }}">{{ bookmark.data.title | safe }}</a>
       </h2>
       <div class="cluster">
         <span class="text-step-min-1">
-          {% set definedDate = bookmark.data.date %} {% include "partials/date.njk" %}
+          {% set definedDate = bookmark.data.date %}
+          {% include "partials/date.njk" %}
         </span>
       </div>
       <p>{{ bookmark.data.notes | truncate(100) | safe }}</p>
@@ -26,6 +31,16 @@ permalink: /bookmarks/index.html
   </li>
   {% endfor %}
 </ul>
+
+<!-- set collection to paginate -->
+{% set collectionToPaginate = collections.allBookmarks %}
+<!-- set target pagination settings in meta.js -->
+{% set metaKey = "bookmarks" %}
+<!-- if the number of items in the collection is greater than the number of items shown on one page -->
+{% if collectionToPaginate.length > pagination.size %}
+<!-- include pagination -->
+{% include 'partials/pagination.njk' %}
+{% endif %}
 
 {% css "inline" %}
   {% include "css/card.css" %}

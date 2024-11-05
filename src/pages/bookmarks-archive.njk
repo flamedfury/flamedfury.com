@@ -1,0 +1,44 @@
+---
+title: Bookmarks
+layout: page
+permalink: /bookmarks/archive/index.html
+---
+
+<p>All bookmarks, by month.</p>
+
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "seperator" %}
+  <section class="section__inner wrapper">
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      {% set bookmarks = bookmarks | sort(true, false, 'date') | reverse %}
+      {% set currentMonth = '' %}
+
+      {% set monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] %}
+
+      <ul>
+      {% for bookmark in bookmarks %}
+        {% set bookmarkYear = bookmark.date.slice(0, 4) %}
+        {% set bookmarkMonthIndex = bookmark.date.slice(5, 7) | int - 1 %}
+        {% set bookmarkMonthName = monthNames[bookmarkMonthIndex] %}
+        {% set bookmarkMonthYear = bookmarkMonthName + ", " + bookmarkYear %}
+
+        {% if bookmarkMonthYear != currentMonth %}
+          {% if not loop.first %}</ul>{% endif %}
+          <h2>{{ bookmarkMonthYear }}</h2>
+          <ul>
+          {% set currentMonth = bookmarkMonthYear %}
+        {% endif %}
+
+        <li>
+          <a href="{{ bookmark.url }}">{{ bookmark.title }}</a> -
+          {% if bookmark.notes %}
+            {{ bookmark.notes }}
+          {% endif %}
+        </li>
+
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+      </ul>
+    </article>
+  </section>
+</article>

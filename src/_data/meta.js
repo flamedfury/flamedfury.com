@@ -46,6 +46,13 @@ export const blog = {
   paginationNext: 'Next',
   paginationNumbers: true
 };
+export const bookmarks = {
+  paginationLabel: "Bookmarks",
+  paginationPage: "Page",
+  paginationPrevious: "Previous",
+  paginationNext: "Next",
+  paginationNumbers: true
+}
 export const details = {
   aria: 'section controls',
   expand: 'expand all',
