@@ -10,7 +10,7 @@ export const author = {
   avatar: '/icon-512x512.png',
   email: 'hello@flamedfury.com',
   website: 'https://flamedfury.com.com',
-  fediverse: 'https://social.lol/@flamed'
+  fediverse: '@flamed@social.lol'
 };
 export const creator = {
   name: 'fLaMEd',
