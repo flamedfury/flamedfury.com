@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- November 6, 2024
+-- Added pagination to the [Bookmarks](/bookmarks/) page for easier browsing.
+
 - October 30, 2024
 -- Major backend overhaul, caught up with Lene's [recent config structure](https://www.lenesaile.com/en/blog/organizing-the-eleventy-config-file/#update-june-2024).
 
