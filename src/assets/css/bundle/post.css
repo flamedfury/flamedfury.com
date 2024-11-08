@@ -10,14 +10,14 @@
   font-size: var(--size-step-2);
 }
 
-.post img, .bookmark img {
+.post img,
+.bookmark img {
   max-inline-size: var(--max-img-width, 100%);
   block-size: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: center;
 }
-
 
 .date {
   font-size: var(--size-step-1);

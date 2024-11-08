@@ -1,0 +1,53 @@
+.post aside,
+.styleguide aside {
+  --border-width: 0.2rem;
+  --border: var(--border-width) solid #999;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding-inline: var(--space-s-m);
+  position: relative;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding-inline-start: var(--space-l-xl);
+  padding-block: var(--space-s-m);
+  margin-block: var(--space-m-l);
+}
+
+.post aside:before,
+.styleguide aside:before {
+  --size: 2.25em;
+  border-radius: 100%;
+  content: '';
+  display: flex;
+  font-size: 1.15em;
+  block-size: 2.15em;
+  inset-inline-start: calc(var(--size) / -2 - var(--border-width) / 2);
+  line-height: 1;
+  position: absolute;
+  inset-block-start: 1em;
+  inline-size: var(--size);
+  background-color: var(--color-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.post aside.note:before,
+.styleguide aside.note:before {
+  background-image: url('../assets/svg/misc/note.svg');
+}
+
+.post aside.warning:before,
+.styleguide aside.warning:before {
+  background-image: url('../assets/svg/misc/warning.svg');
+}
+
+.post aside.tip:before,
+.styleguide aside.tip:before {
+  background-image: url('../assets/svg/misc/tip.svg');
+}
+
+.post aside.skateboard:before,
+.styleguide aside.skateboard:before {
+  background-image: url('../assets/svg/misc/skateboard.svg');
+}

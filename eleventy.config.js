@@ -76,6 +76,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode('youtube', shortcodes.liteYoutube);
   eleventyConfig.addShortcode('includeRaw', shortcodes.includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  eleventyConfig.addShortcode('aside', shortcodes.aside);
 
   // --------------------- Events ---------------------
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
@@ -85,7 +86,7 @@ export default async function (eleventyConfig) {
   // --------------------- Passthrough File Copy
 
   // -- same path
-  ['src/assets/fonts/', 'src/assets/images/', 'src/assets/og-images', 'src/assets/static'].forEach(path =>
+  ['src/assets/fonts/', 'src/assets/images/', 'src/assets/og-images', 'src/assets/static', 'src/assets/svg'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
