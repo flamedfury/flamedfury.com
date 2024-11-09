@@ -79,6 +79,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode('includeRaw', shortcodes.includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode('aside', shortcodes.aside);
+  eleventyConfig.addShortcode('inReplyTo', shortcodes.inReplyTo);
+  eleventyConfig.addShortcode('mentionOf', shortcodes.mentionOf);
 
   // --------------------- Events ---------------------
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {

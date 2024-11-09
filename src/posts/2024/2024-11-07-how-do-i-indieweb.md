@@ -13,7 +13,7 @@ date: 2024-11-09
 timestamp: 2024-11-08T19:04:58.033Z
 ---
 
-What's going on, Internet? I came across the question "How do you (personally) IndieWeb?" from [Open Mentions](https://openmentions.com/news/question-of-the-week/how-do-you-personally-indieweb/) while surfing the net this morning and wanted to take a moment to answer it, as I had been thinking about the IndieWeb again recently.
+What's going on, Internet? This is a reply to a post I came across recently while surfing the net, {% inReplyTo "https://openmentions.com/news/question-of-the-week/how-do-you-personally-indieweb/", "How do you (personally) IndieWeb?" %} from the Open Mentions website. I wanted to take a moment to answer it, as I have been thinking about the IndieWeb again recently.
 
 {% aside 'Remember, the IndieWeb is a set of principles, experiements and suggestions, not prescriptions. You can pick and choose as many or as little of the IndieWeb building blocks to participate in the IndieWeb. Some are easier than the others.' %}
 
