@@ -16,24 +16,23 @@ updated: 2024-04-10
 <article class="full section" style="--spot-color: var(--color-bg-accent)">
   {% svg "divider/soft-top", null, "seperator" %}
   <section class="section__inner wrapper">
-  <h2>Finished Reading</h2>
+    <h2>Finished Reading</h2>
     <div class="grid" style="--grid-min-item-size: 10rem">
-
-    {% for book in bookshelf | reverse %}
-    {% if book.status == 'finished' %}
-    <div class="bookshelf flow">
-    {% if book.image %}
-    <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
-      <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}" alt="Book Cover for {{ book.title }}" load="lazy">
-    </a>
-    {% else %}
-    <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
-      <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="Book Cover for {{ book.title }}" load="lazy">
-    </a>
-    {% endif %}
-    </div>
-    {% endif %}
-    {% endfor %}
+      {% for book in bookshelf | reverse %}
+        {% if book.status == 'finished' %}
+          <div class="bookshelf flow">
+            {% if book.image %}
+              <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
+                <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}" alt="Book Cover for {{ book.title }}" load="lazy">
+              </a>
+            {% else %}
+              <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
+                <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="Book Cover for {{ book.title }}" load="lazy">
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </section>
   {% svg "divider/soft-bottom", null, "seperator" %}
