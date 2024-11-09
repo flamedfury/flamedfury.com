@@ -1,3 +1,4 @@
-<!-- External CSS -->
 <link rel="stylesheet" href="{% getBundleFileUrl "css", "global" %}">
 <link rel="stylesheet" href="{% getBundleFileUrl "css", "inline" %}">
+
+{% css "global" %}{% include "css/global.css" %}{% endcss %}
