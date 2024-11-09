@@ -1,7 +1,7 @@
 <h3>Photos</h3>
-{% if somepics %}
-{% set pic = somepics[0] %}
-<img src="https://cdn.some.pics/flamed/{{ pic.id }}.jpg" alt="{{ pic.description }}">
-{% else %}
-    <p>No pictures available</p>
-{% endif %}
+{%- if somepics -%}
+  {% set pic = somepics[0] %}
+  <img src="https://cdn.some.pics/flamed/{{ pic.id }}.jpg" alt="{{ pic.description }}">
+{%- else -%}
+  <p>No pictures available</p>
+{%- endif -%}

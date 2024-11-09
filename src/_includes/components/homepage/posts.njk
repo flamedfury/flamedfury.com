@@ -1,8 +1,9 @@
 <h3>Latest posts</h3>
 <ul>
-  {% set itemList = collections.allPosts %} {% for item in itemList.slice(0, 6) %}
-    <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
-  {% endfor %}
+  {%- set itemList = collections.allPosts -%}
+  {%- for item in itemList.slice(0, 6) -%}
+  <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
+  {%- endfor -%}
 </ul>
 <h3>Read these</h3>
 <ul>
