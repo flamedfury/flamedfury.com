@@ -70,6 +70,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('getMostRecentFinishedBook', filters.getMostRecentFinishedBook);
   eleventyConfig.addFilter('split', filters.split);
   eleventyConfig.addFilter('limit', filters.limit);
+  eleventyConfig.addFilter('filterByProperty', filters.filterByProperty);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);

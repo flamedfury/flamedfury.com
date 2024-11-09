@@ -11,6 +11,7 @@ import {normalizeUrl} from './filters/normalize-url.js';
 import {getMostRecentFinishedBook} from './filters/finished-books.js'
 import {split} from './filters/splitstring.js';
 import {limit} from './filters/limit.js';
+import {filterByProperty} from './filters/filter-by-property.js';
 
 export default {
   toISOString,
@@ -26,5 +27,6 @@ export default {
   normalizeUrl,
   getMostRecentFinishedBook,
   split,
-  limit
+  limit,
+  filterByProperty
 };
