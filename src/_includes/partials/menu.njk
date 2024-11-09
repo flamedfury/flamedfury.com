@@ -1,13 +1,12 @@
 <nav id="mainnav" class="site-nav" aria-label="{{ meta.navigation.ariaTop }}">
   <ul class="cluster" role="list">
-    {% for item in navigation.top %}
+    {%- for item in navigation.top -%}
+      <li>
+        <a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+      </li>
+    {%- endfor -%}
     <li>
-      <a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
-    </li>
-    {% endfor %}
-    <!-- theme switch -->
-    <li>
-      {% include 'partials/theme-switch.njk' %}
+      {%- include 'partials/theme-switch.njk' -%}
     </li>
   </ul>
 </nav>
