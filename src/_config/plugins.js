@@ -9,9 +9,13 @@ import musicThread from './plugins/musicthread.js';
 import pluginWebmentions from "@chrisburnell/eleventy-cache-webmentions";
 import configWebmentions from "../_data/webmentions.js";
 
+// Custom transforms
+
+import {jsConfig} from './plugins/js-config.js';
+import {htmlConfig} from './plugins/html-config.js';
+
 // Custom template language
 import {cssConfig} from './plugins/css-config.js';
-import {jsConfig} from './plugins/js-config.js';
 
 export default {
   EleventyRenderPlugin,
@@ -21,6 +25,7 @@ export default {
   musicThread,
   pluginWebmentions,
   configWebmentions,
+  htmlConfig,
   cssConfig,
   jsConfig
 };
