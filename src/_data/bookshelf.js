@@ -5,7 +5,7 @@ export default async function () {
 
   // returning promise
   const data = await EleventyFetch(url, {
-    duration: '1d',
+    duration: '1h',
     type: 'json'
   });
 
