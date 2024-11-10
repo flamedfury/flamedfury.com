@@ -3,7 +3,7 @@ layout: base
 schema: blog
 ---
 
-<article class="region blog" style="--region-space-top: var(--space-xl-2xl)">
+<article class="region blog h-entry" style="--region-space-top: var(--space-xl-2xl)">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
 
@@ -17,7 +17,7 @@ schema: blog
       {% set definedDate = date %} {% include "partials/date.njk" %}
       <!-- tags -->
       {% if tags.length > 1 %} {% for tag in tags %} {% if tag != "posts" %}
-      <a class="button post-tag" href="/tags/{{ tag }}">
+      <a class="button post-tag p-category" href="/tags/{{ tag }}">
         {{ tag }}
       </a>
       {% endif %} {% endfor %} {% endif %}
@@ -25,18 +25,25 @@ schema: blog
       {% set tags = bookmark.tags | default('') %}
       {% if tags %}
         {% for tag in tags | string | split(',') %}
-        <span class="button post-tag">{{ tag | trim }}</span>
+        <span class="button post-tag p-category">{{ tag | trim }}</span>
         {% endfor %}
       {% endif %}
     </p>
 
-    {{ content | safe }}
+    <div class="e-content">
+      {{ content | safe }}
+    </div>
+
     {% include 'partials/reply-by.njk' %}
     {% include 'partials/webmentions.njk' %}
 
   </div>
 
-  {% include 'partials/h-entry.njk' %}
+  <!-- Author information -->
+  <div class="p-author h-card" hidden>
+    <a class="p-name u-url" href="{{ meta.url }}">{{ meta.author.name }}</a>
+    <img class="u-photo" src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}" alt="{{ meta.author.name }}" />
+  </div>
 </article>
 
 {%- css "inline" -%}
