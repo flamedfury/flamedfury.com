@@ -9,21 +9,17 @@ schema: blog
       <a class="p-name u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
     </h1>
 
-    <!-- image -->
     {% if image %}
       {% eleventyImage image, alt or title, null, "eager", "feature" %}
     {% endif %}
 
     <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s)">
-      <!-- date -->
       {% set definedDate = date %} {% include "partials/date.njk" %}
-      <!-- tags -->
       {% if tags.length > 1 %} {% for tag in tags %} {% if tag != "posts" %}
       <a class="button post-tag p-category" href="/tags/{{ tag }}">
         {{ tag }}
       </a>
       {% endif %} {% endfor %} {% endif %}
-      <!-- bookmarks tags -->
       {% set tags = bookmark.tags | default('') %}
       {% if tags %}
         {% for tag in tags | string | split(',') %}
@@ -32,9 +28,7 @@ schema: blog
       {% endif %}
     </p>
 
-    <div class="e-content">
-      {{ content | safe }}
-    </div>
+    {{ content | safe }}
 
     {% include 'partials/reply-by.njk' %}
     {% include 'partials/webmentions.njk' %}
