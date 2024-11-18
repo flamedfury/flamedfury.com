@@ -1,7 +1,16 @@
 <h3>Photos</h3>
 {%- if somepics -%}
   {% set pic = somepics[0] %}
-  <img src="https://cdn.some.pics/flamed/{{ pic.id }}.jpg" alt="{{ pic.description }}">
+  <img src="https://cdn.some.pics/flamed/{{ pic.id }}.jpg"
+       alt="{{ pic.description }}"
+       width="300"
+       height="300"
+       loading="lazy"
+       class="somepics-image">
 {%- else -%}
   <p>No pictures available</p>
 {%- endif -%}
+
+{% css "inline" %}
+  {% include "css/somepics.css" %}
+{% endcss %}

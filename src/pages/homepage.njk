@@ -17,33 +17,36 @@ layout: base
         </div>
       </div>
 
-      <div class="popout | grid region homepage-content" data-rows="masonry" data-layout="50-50">
-        <div class="homepage-card | flow featured">
+      <div class="homepage-grid | region homepage-content">
+        <div class="homepage-card welcome | flow featured">
           {% include "components/homepage/welcome.njk" %}
         </div>
-        <div class="homepage-card | flow">
-          {% include "components/homepage/now.njk" %}
-        </div>
-        <div class="homepage-card | flow">
+        <div class="homepage-card posts | flow">
           {% include "components/homepage/posts.njk" %}
         </div>
-        <div class="homepage-card | flow">
-          {% include "components/homepage/status.njk" %}
+        <div class="homepage-card featured-posts | flow">
+          {% include "components/homepage/featured-posts.njk" %}
         </div>
-        <div class="homepage-card | flow">
-          {% include "components/homepage/msg.njk" %}
+        <div class="homepage-card now | flow">
+          {% include "components/homepage/now.njk" %}
         </div>
-        <div class="homepage-card | flow">
-          {% include "partials/webrings.njk" %}
+        <div class="homepage-card contact | flow">
+          {% include "components/homepage/contact.njk" %}
         </div>
-        <div class="homepage-card | flow">
-          {% include "components/homepage/record.njk" %}
-        </div>
-        <div class="homepage-card | flow">
+        <div class="homepage-card ondeck | flow">
           {% include "components/homepage/ondeck.njk" %}
         </div>
-        <div class="homepage-card | flow">
+        <div class="homepage-card webrings | flow">
+          {% include "components/homepage/webrings.njk" %}
+        </div>
+        <div class="homepage-card records | flow">
+          {% include "components/homepage/record.njk" %}
+        </div>
+        <!-- <div class="homepage-card somepics | flow">
           {% include "components/homepage/somepics.njk" %}
+        </div> -->
+        <div class="homepage-card status | flow">
+          {% include "components/homepage/status.njk" %}
         </div>
       </div>
 

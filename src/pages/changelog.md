@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- November 18, 2024
+-- Changed the homepage layout, more changes to come.
+
 - November 6, 2024
 -- Added pagination to the [Bookmarks](/bookmarks/) page for easier browsing.
 
