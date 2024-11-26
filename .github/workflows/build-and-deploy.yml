@@ -31,7 +31,7 @@ jobs:
           restore-keys: |
             11ty-${{ runner.os }}
             ${{ runner.os }}-11ty
-            
+
       - name: Build website
         run: |
           set -e
@@ -72,6 +72,12 @@ jobs:
           path: |
             .cache/
             src/assets/fonts/
-            src/assets/images/
+            src/assets/images/buttons
+            src/assets/images/experiments
+            src/assets/images/favicon
+            src/assets/images/pages
+            src/assets/images/posts
+            src/assets/images/vinyl
+            src/assets/images/template
             src/assets/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
