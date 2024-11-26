@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- November 27, 2024
+-- Added The Death Of Slim Shady [alternative cover](/recordshelf/#the-death-of-slim-shady-(coup-de-grace)) art to the [Recordshelf](/recordshelf/).
+
 - November 18, 2024
 -- Changed the homepage layout, more changes to come.
 
