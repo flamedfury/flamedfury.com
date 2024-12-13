@@ -14,7 +14,7 @@ What's happening, Internet? I managed to miss [Bandcamp Friday](https://isitband
 
 Again I'm purchasing music from local artists, new and old. I hope you get a chance to check one or two of them out.
 
-[**Kaupapa Driven Rhymes Uplifted**](https://rpmvinylnz.bandcamp.com/album/kaupapa-driven-rhymes-uplifted) by Dam Native is Aotearoa's "lost album". Recorded and released in 1997 it was widely considered one of the best hip hop albums to come out of Aotearoa. It's back with last months vinyl re-issue and availability on digital streaming platforms. RNZ have a fantastic read over on their websit, [Danny Haimona on the legacy of Dam Native's Kaupapa Driven Rhymes Uplifted](https://www.rnz.co.nz/news/te-manu-korihi/529300/danny-haimona-on-the-legacy-of-dam-native-s-kaupapa-driven-rhymes-uplifted).
+[**Kaupapa Driven Rhymes Uplifted**](https://rpmvinylnz.bandcamp.com/album/kaupapa-driven-rhymes-uplifted) by Dam Native is Aotearoa's "lost album". Recorded and released in 1997 it was widely considered one of the best hip hop albums to come out of Aotearoa. It's back with last months vinyl re-issue and availability on digital streaming platforms. Stuff have a fantastic read over on their website, [‘Lost’ Māori hip-hop classic set for new lease of life, years after going out of print](https://www.stuff.co.nz/culture/350415089/lost-maori-hip-hop-classic-set-new-lease-life-years-after-going-out-print).
 
 [**The Rose Of Jericho**](https://georgialines.bandcamp.com/album/the-rose-of-jericho) is the debut album from Mount Maunganui singer/songwriter Georgina Lines. Smooth listening for when you just want to chill.
 
