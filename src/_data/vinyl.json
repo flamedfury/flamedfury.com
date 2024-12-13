@@ -1,6 +1,20 @@
 {
   "albums": [
     {
+      "title": "Kaupapa Driven Rhymes Uplifted",
+      "artist": "Dam Native",
+      "year": 2024,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "Tangata Records, Tautoko Maori",
+      "code": "",
+      "varient": "Dark Red Marbled",
+      "number": "",
+      "image": "./src/assets/images/vinyl/dam-native.jpg",
+      "alt": "Cover of the album",
+      "comment": "Aotearoa's lost hip hop classic, reissued years after going out of print."
+    },
+    {
       "title": "The Death Of Slim Shady (Coup De Grâce)",
       "artist": "Eminem",
       "year": 2024,
