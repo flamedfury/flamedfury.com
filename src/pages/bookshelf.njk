@@ -7,6 +7,13 @@ date: 2021-02-22
 updated: 2024-04-10
 ---
 
+<style>
+  .bookcount {
+    font-size: var(--size-step-min-1);
+    padding: 0 0.25rem 0.5rem;
+  }
+</style>
+
 <p>Welcome to my bookshelf, where you can find a collection of all the books I have read and the ones I am excited to read. <a href="/posts/reading-adventures/">As someone who has been reading throughout my life</a>, I have always been fascinated by the power of books to transport us to different worlds, teach us new things, and awaken our imaginations.</p>
 
 <p>My love for reading has only grown stronger over the years, and I am always looking for new and exciting books to add to my collection. If you have a book you think I might enjoy, please don't hesitate to <a href="/contact/">reach out and recommend it to me</a>.</p>
@@ -15,25 +22,28 @@ updated: 2024-04-10
 
 <article class="full section" style="--spot-color: var(--color-bg-accent)">
   {% svg "divider/soft-top", null, "seperator" %}
-  <section class="section__inner wrapper">
+  <section class="section__inner wrapper flow">
     <h2>Finished Reading</h2>
+
+    {% for year, yearBooks in collections.booksByYear %}
+    <h3>{{ year }} <span class="bookcount">({{ yearBooks.length }})</span></h3>
     <div class="grid" style="--grid-min-item-size: 10rem">
-      {% for book in bookshelf | reverse %}
-        {% if book.status == 'finished' %}
-          <div class="bookshelf flow">
-            {% if book.image %}
-              <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
-                <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}" alt="Book Cover for {{ book.title }}" load="lazy">
-              </a>
-            {% else %}
-              <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
-                <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="Book Cover for {{ book.title }}" load="lazy">
-              </a>
-            {% endif %}
-          </div>
-        {% endif %}
+      {% for book in yearBooks %}
+        <div class="bookshelf flow">
+          {% if book.image %}
+            <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
+              <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}" alt="Book Cover for {{ book.title }}" load="lazy">
+            </a>
+          {% else %}
+            <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
+              <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="Book Cover for {{ book.title }}" load="lazy">
+            </a>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
+  {% endfor %}
+
   </section>
   {% svg "divider/soft-bottom", null, "seperator" %}
 </article>

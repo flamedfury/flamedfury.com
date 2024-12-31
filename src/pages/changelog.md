@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- December 31, 2024
+-- Organised finished books by year on the [Bookshelf](/bookshelf/).
+
 - December 13, 2024
 -- Added [Kaupapa Driven Rhymes Uplifted](/recordshelf/#kaupapa-driven-rhymes-uplifted) to the [Recordshelf](/recordshelf/).
 

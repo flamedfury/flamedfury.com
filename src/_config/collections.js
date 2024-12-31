@@ -70,6 +70,30 @@ export const postsByYear = collection => {
   return Object.entries(groupedPosts).sort((a, b) => b[0] - a[0]);
 };
 
+/** Collection to group books by year */
+export const booksByYear = collection => {
+  const books = collection.getAll()[0].data.bookshelf;
+
+  const groupedBooks = books.reduce((acc, book) => {
+    if (book.dateFinished && book.status === "finished") {
+      const year = new Date(book.dateFinished).getFullYear();
+      if (!acc[year]) {
+        acc[year] = [];
+      }
+      acc[year].push(book);
+    }
+    return acc;
+  }, {});
+
+  // Sort books within each year
+  Object.keys(groupedBooks).forEach(year => {
+    groupedBooks[year].sort((a, b) => new Date(b.dateFinished) - new Date(a.dateFinished));
+  });
+
+  // Convert to array and sort years in descending order
+  return Object.entries(groupedBooks).sort((a, b) => b[0] - a[0]);
+};
+
 export default {
   getAllPosts,
   onlyMarkdown,
@@ -77,5 +101,6 @@ export default {
   tagCollections,
   allBookmarks,
   filterFeedPosts,
-  postsByYear
+  postsByYear,
+  booksByYear
 };
