@@ -9,7 +9,7 @@ date: 2024-12-31
 timestamp: 2024-12-31T02:13:29.620Z
 ---
 
-I'm a parent. We have two kids under four years old. I'd say this has been the toughest year of being a parent so far. Life is a constant dance of chaos and love.
+What's up, Internet? I'm a parent. We have two kids under four years old. I'd say this has been the toughest year of being a parent so far. Life is a constant dance of chaos and love.
 
 There is never a moment of downtime as either of the kids needs your attention at any one time.
 

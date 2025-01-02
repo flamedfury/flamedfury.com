@@ -13,7 +13,7 @@ image: ./src/assets/images/posts/2024/2024-12-31-music-rewind.jpeg
 alt: My year in music 2024
 ---
 
-I don't do Spotify, so I don't get a Spotify Wrapped in November, but I can get some interesting stats from ListenBrainz once we reached the end of the year.
+What's happening, Internet? I don't do Spotify, so I don't get a Spotify Wrapped in November, but I can get some interesting stats from ListenBrainz once we reached the end of the year.
 
 This year was a good year for music for me. I got into a lot of local music this year, both old and new. It's been great revisiting local albums that were popular when I was younger, while also diving into old and new international artists.
 
