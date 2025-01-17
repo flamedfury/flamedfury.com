@@ -11,7 +11,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "favicons": "node ./src/_config/setup/generate-favicons.js",
-    "dev:11ty": "eleventy --serve --watch",
+    "dev:clean": "rimraf src/assets/og-images",
+    "dev:11ty": "cross-env ELEVENTY_ENV=development eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "npm run dev:clean & npm run dev:11ty",
     "build": "npm run clean && npm run build:11ty"
@@ -37,6 +38,7 @@
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "axios": "^1.7.2",
+    "cross-env": "^7.0.3",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
     "esbuild": "^0.24.0",
