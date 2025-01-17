@@ -9,6 +9,8 @@ date: 2024-05-27
 This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details changes to pages, layout, and content.
 
 ## Changes
+- January 17, 2025
+-- New links added to the [Blogroll](/links/#blogroll) and [Cool Sites](/links/#coolSites).
 
 - December 31, 2024
 -- Organised finished books by year on the [Bookshelf](/bookshelf/).

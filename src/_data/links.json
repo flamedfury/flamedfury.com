@@ -95,6 +95,18 @@
       "url": "https://notes.jeddacp.com/",
       "feed": "https://notes.jeddacp.com/feed/",
       "note": "Jedda posts about the web, blogging, photography, books and other stuff. I absolutely love her Postroll, a great source of new posts to read!"
+    },
+    {
+      "name": "suboptimalism",
+      "url": "https://suboptimalism.neocities.org",
+      "feed": "https://suboptimalism.neocities.org/feed.xml",
+      "note": "Suboptimalism is a personal philosophy developed during a four-month period of intense reflection in a library."
+    },
+    {
+      "name": "Living Out Loud",
+      "url": "https://louplummer.lol/",
+      "feed": "https://louplummer.lol/feed.atom/",
+      "note": "Living Out Loud is a personal blog by internet good guy, Lou Plummer. Lou shares personal stories from across his life. There's a great new story to read every day."
     }
   ],
   "coolSites": [
@@ -157,6 +169,12 @@
       "url": "https://cinni.net/",
       "feed": "",
       "note": "Literally an online art project. Check out Cinni's shrines, art and games!"
+    },
+    {
+      "name": "America's Decline",
+      "url": "https://americasdecline.neocities.org/",
+      "feed": "",
+      "note": "90s throwback pop culture!"
     }
   ],
   "webDevelopment": [
