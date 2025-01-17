@@ -24,7 +24,7 @@ const stringifyAttributes = attributeMap => {
  * @param {string} [className] - The CSS class name for the image element.
  * @param {string} [sizes='90vw'] - The sizes attribute for the image.
  * @param {number[]} [widths=[440, 650, 960, 1200]] - The widths for generating responsive images.
- * @param {string[]} [formats=['avif', 'webp', 'jpeg']] - The formats for generating responsive images.
+ * @param {string[]} [formats=['webp', 'jpeg']] - The formats for generating responsive images.
  * @returns {string} - The HTML image element.
  */
 export const imageShortcode = async (
@@ -35,7 +35,7 @@ export const imageShortcode = async (
   className,
   sizes = '90vw',
   widths = [440, 650, 960, 1200],
-  formats = ['avif', 'webp', 'jpeg'],
+  formats = ['webp', 'jpeg'],
   page // Add page as a new argument
 ) => {
   const metadata = await Image(src, {
