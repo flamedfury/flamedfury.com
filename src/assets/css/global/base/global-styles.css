@@ -5,6 +5,10 @@
   project: https://cube.fyi/css.html
 */
 
+html {
+  color-scheme: light dark;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -23,7 +27,6 @@ main {
   flex: auto;
 }
 
-/* Base typesetting */
 h1,
 h2,
 h3 {
@@ -45,7 +48,6 @@ h3 {
   font-size: var(--size-step-2);
 }
 
-/* Set line lengths */
 p,
 li,
 blockquote:not([class]) {
@@ -95,8 +97,6 @@ ol li::marker {
   color: var(--color-primary);
 }
 
-/* Base interactive elements */
-
 a {
   color: currentcolor;
   text-decoration-thickness: 0.08em;
@@ -119,7 +119,6 @@ main:focus {
   outline: none;
 }
 
-/* Base selection styles that invert whatever colours are rendered */
 ::selection {
   background-color: var(--color-text);
   color: var(--color-bg);
@@ -129,17 +128,8 @@ main:focus {
   transition: none !important;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  ::after,
-  ::before {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+@media (scripting: none) {
+  .require-js {
+    display: none;
   }
 }
