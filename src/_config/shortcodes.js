@@ -5,7 +5,7 @@ import { includeRaw } from "./shortcodes/includeraw.js";
 import { aside } from "./shortcodes/aside.js";
 import {asidePaired} from "./shortcodes/aside.js"
 import { inReplyTo } from './shortcodes/inReplyTo.js';
-import { mentionOf } from './shortcodes/mentionOf.js'; // Import the new mention-of shortcode
+import { mentionOf } from './shortcodes/mentionOf.js';
 
 export default {
   imageShortcode,
