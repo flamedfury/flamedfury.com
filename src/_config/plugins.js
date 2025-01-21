@@ -7,6 +7,7 @@ import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 
 // custom
 import {markdownLib} from './plugins/markdown.js';
+import {drafts} from './plugins/drafts.js';
 import musicThread from './plugins/musicthread.js';
 import pluginWebmentions from "@chrisburnell/eleventy-cache-webmentions";
 import configWebmentions from "../_data/webmentions.js";
@@ -26,6 +27,7 @@ export default {
   webc,
   eleventyImageTransformPlugin,
   markdownLib,
+  drafts,
   musicThread,
   pluginWebmentions,
   configWebmentions,

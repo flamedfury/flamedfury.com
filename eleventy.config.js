@@ -42,6 +42,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.jsConfig);
   eleventyConfig.addPlugin(plugins.cssConfig);
+  eleventyConfig.addPlugin(plugins.drafts);
   eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
