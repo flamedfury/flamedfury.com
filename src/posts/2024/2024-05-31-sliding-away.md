@@ -8,7 +8,7 @@ tags:
 date: 2024-05-31
 timestamp: 2024-05-31T07:24:50.030Z
 image: './src/assets/images/posts/2024/2024-05-31-sliding-away.jpg'
-alt: 'Miley Cyris leaning on the edge of a pool in from the music video Slide Away'
+alt: 'Miley Cyrus rests their head on folded arms, adorned with bracelets, on the edge of a dimly lit pool, with soft lighting creating a reflective ambiance. From the music video, Sliding Away.'
 ---
 
 What's going on Internet? Miley Cyrus, a dynamic musical force and should be celebrated for her daring metamorphoses. She takes us on a touching journey through the contrasting narratives of [We Can't Stop](https://musicthread.app/link/2hECY3lfDFoyko6nwkwvuKseMrj), [Slide Away](https://musicthread.app/link/2hECY12BaeHyGJEhkQ8KxfDPRoe), and her recent single [Jaded](https://musicthread.app/link/2hEF0hlY81opHVfsJQJ85s9jBWQ). Each song is a window into different chapters of Miley's life and emotional landscape, revealing her growth and resilience in a deeply personal and relatable way.

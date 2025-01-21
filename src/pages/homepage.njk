@@ -10,7 +10,7 @@ layout: base
     <div class="wrapper">
 
       <div class="feature | homepage-stack-layout homepage-background-picture">
-        <img src="../assets/images/header2024.png" width="1600px">
+        <img src="../assets/images/header2024.png" alt="Miley Cyrus wearing an I AM HERE black crop top and red pants poses confidently before a dynamic orange and yellow splatter backdrop, exuding an edgy, vibrant energy.">
         <div class="homepage-background-picture__content">
           <h1>{{ title }}</h1>
           <small id="quote"></small>
@@ -50,13 +50,10 @@ layout: base
         </div>
       </div>
 
-      <custom-masonry></custom-masonry>
-
     </div>
   </section>
 </div>
 
 {% js "inline" %}
   {% include "scripts/quotes.js" %}
-  {% include "scripts/masonry.js" %}
 {% endjs %}
