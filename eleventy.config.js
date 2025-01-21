@@ -54,12 +54,12 @@ export default async function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
-    widths: [650, 960, 1200],
+    widths: ['auto'],
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
         decoding: 'async',
-        sizes: '100vw'
+        sizes: 'auto'
       },
       pictureAttributes: {}
     }
