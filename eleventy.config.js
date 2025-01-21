@@ -47,6 +47,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
   eleventyConfig.addPlugin(plugins.musicThread);
   eleventyConfig.addPlugin(plugins.pluginWebmentions, plugins.configWebmentions);
+    eleventyConfig.addPlugin(plugins.webc, {
+    components: ['./src/_includes/webc/*.webc'],
+    useTransform: true
+  });
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
     outputDir: '/assets/images/',
