@@ -4,19 +4,19 @@ permalink: /styleguide/index.html
 layout: base
 eleventyExcludeFromCollections: true
 customColors:
-  - property: '--color-text'
-  - property: '--color-text-accent'
-  - property: '--color-bg'
-  - property: '--color-bg-accent'
-  - property: '--color-bg-accent-2'
-  - property: '--color-primary'
-  - property: '--color-secondary'
-  - property: '--color-tertiary'
+- property: '--color-text'
+- property: '--color-text-accent'
+- property: '--color-bg'
+- property: '--color-bg-accent'
+- property: '--color-bg-accent-2'
+- property: '--color-primary'
+- property: '--color-secondary'
+- property: '--color-tertiary'
 customGradients:
-  - property: '--gradient-rainbow'
-  - property: '--gradient-conic'
-  - property: '--gradient-stripes'
-  - property: '--gradient-flames'
+- property: '--gradient-rainbow'
+- property: '--gradient-conic'
+- property: '--gradient-stripes'
+- property: '--gradient-flames'
 ---
 
 <!-- Inspired by: https://stevenwoodson.com/blog/eleventy-style-guide-generator-step-by-step-guide-adding-to-an-existing-site/ -->
@@ -31,6 +31,34 @@ customGradients:
     </p>
   </header>
 
+  <section class="flow region region-space-m">
+    <h2 class="heading-line">Buttons</h2>
+    <ul class="cluster" role="list">
+      <li>
+        <a href="#" class="button">Default button</a>
+      </li>
+      <li>
+        <a href="#" class="button" data-button-variant="primary">pink button</a>
+      </li>
+      <li>
+        <a href="#" class="button" data-button-variant="secondary">blue button</a>
+      </li>
+      <li>
+        <a href="#" class="button" data-button-variant="tertiary">gold button</a>
+      </li>
+
+      <li>
+        <a href="#" class="button" data-ghost-button>Ghost button</a>
+      </li>
+      <li>
+        <a href="#" class="button" data-button-radius="hard">Hard edges</a>
+      </li>
+      <li>
+        <a href="#" class="button"> {% svg "misc/star" %} Button with icon </a>
+      </li>
+    </ul>
+  </section>
+
   <div class="full colors | section">
     <section class="section__inner wrapper flow region">
       <h2 class="heading-line">Colors</h2>
@@ -43,7 +71,10 @@ customGradients:
             <div style="background-color: var(--color-{{ color.name | slugify }}"></div>
 
             <p>
-              <code>var(--color-{{ color.name | slugify }})</code>
+              <code
+                >#{{ color.value | slugify }}<br />
+                var(--color-{{ color.name | slugify }})</code
+              >
             </p>
           </li>
         {%- endfor -%}
@@ -87,9 +118,7 @@ customGradients:
     <ul class="fonts flow">
       {%- for font in designTokens.fonts.items -%}
         <li class="font" style="font-family: var(--font-{{ font.name | slugify }})">
-          <h3 style="font-family: var(--font-{{ font.name | slugify }})">
-            {{ font.name }}
-          </h3>
+          <h3 style="font-family: var(--font-{{ font.name | slugify }})">{{ font.name }}</h3>
           <p>{{ font.description }}</p>
           <p><strong>Font Families</strong>: {{ font.value | join(', ') }}</p>
           <code>var(--font-{{ font.name | slugify }})</code>
@@ -104,9 +133,7 @@ customGradients:
 
       <p>
         {{ designTokens.textSizes.description }}. Fluid type and space scales were
-        <a href="{{ designTokens.textSizes.meta.scaleGenerator }}"
-          >generated with Utopia</a
-        >.
+        <a href="{{ designTokens.textSizes.meta.scaleGenerator }}">generated with Utopia</a>.
       </p>
 
       <table class="sizes flow">
@@ -122,9 +149,7 @@ customGradients:
               </span>
             </td>
             <td class="sizes-example">
-              <p style="font-size:var(--size-{{ size.name | slugify }})">
-                {{ size.name }}
-              </p>
+              <p style="font-size:var(--size-{{ size.name | slugify }})">{{ size.name }}</p>
             </td>
           </tr>
         {%- endfor -%}
@@ -163,9 +188,90 @@ customGradients:
       {%- endfor -%}
     </table>
   </section>
+
+  <div class="full sizes | section">
+    <section class="section__inner wrapper flow region">
+      <h2 class="heading-line">HTML elements</h2>
+
+      <h3 class="heading-line | mt-l-xl">Typography</h3>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+
+      <h3 class="heading-line | mt-l-xl">Typography elements</h3>
+      <b>Bold text</b>
+      <i>Italic text</i>
+      <u>Underlined text</u>
+      <mark>Highlighted text</mark>
+      <code>Inline code</code>
+      <kbd>Alt+F4</kbd>
+
+      <h3 class="heading-line | mt-l-xl">Links and buttons</h3>
+      <a href="https://flamedfury.com">Internal hyperlink</a>
+      <a href="https://32-bit.cafe">External hyperlink</a>
+      <button class="button mt-l-xl">I'm a button</button>
+      <a class="button" href="https://flamedfury.com">I'm a button with a link</a>
+
+      <h3 class="heading-line | mt-l-xl">Lists</h3>
+      <h4>Bulleted list</h4>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <h4>Numbered list</h4>
+      <ol>
+        <li>Do this thing</li>
+        <li>Do that thing</li>
+        <li>Do the other thing</li>
+      </ol>
+
+      <h3 class="heading-line | mt-l-xl">Blockquotes</h3>
+      <blockquote>
+        <p>And eight years later, I'm still at it. Divorced, re-married, a felon, a father, sleepin' pill addict.</p>
+        <p><cite>– Eminem</cite></p>
+      </blockquote>
+
+      <h3 class="heading-line | mt-l-xl">Code blocks</h3>
+      <pre>
+        <code>
+          // This is a JS example
+          const test = "fLaMEd fury";
+          console.log(and the rest);
+        </code>
+      </pre>
+
+      <h3 class="heading-line | mt-l-xl">Info boxes</h3>
+      <p>
+        Icons jacked from <a href="https://tabler.io/icons">tabler</a>.
+      </p>
+
+      {% aside 'This is a standard note.' %}
+
+      {% aside 'This is a warning message.', 'warning' %}
+
+      {% aside 'This is a helpful tip.', 'tip' %}
+
+      {% aside 'This is a skateboarding tip!', 'skateboard' %}
+
+    </section>
+  </div>
+
+  <section class="spacing | flow region">
+    <h2 class="heading-line">Images</h2>
+
+    <p>
+      {{ designTokens.spacing.description }}<br />
+      Fluid type and space scales were
+      <a href="{{ designTokens.spacing.meta.scaleGenerator }}">generated with Utopia</a>.
+    </p>
+
+  </section>
 </article>
 
 {%- css "inline" -%}
-  {%- include 'css/styleguide.css' -%}
-  {%- include 'css/table.css' -%}
+{%- include 'css/styleguide.css' -%}
+{%- include 'css/table.css' -%}
 {%- endcss -%}
