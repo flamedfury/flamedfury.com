@@ -3,7 +3,6 @@
 :root {
   color-scheme: light dark;
   --gutter: var(--space-m-l);
-  --border-radius: 0.3rem;
   --transition-duration: 250ms;
   --transition-timing: ease;
   --wrapper-width: 85rem;

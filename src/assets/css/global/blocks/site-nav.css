@@ -16,7 +16,7 @@
   padding: var(--space-s);
   text-decoration: none;
   display: block;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-medium);
   border: 1px solid var(--border-color);
 }
 
