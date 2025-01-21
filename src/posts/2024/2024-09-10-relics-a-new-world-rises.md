@@ -36,14 +36,10 @@ RELICS is an exhibition created by Australian LEGO Masters Jackson Harvey and Al
 
 I had a lot of fun walking around and reading the displays. They've done a fantastic job of building the differently themed worlds in reclaimed objects.
 
-I took some photos from the exhibit, you can click them for larger, unoptimised versions.
+I took some photos from the exhibit
 
 <ul class="gallery" role="list" style="padding: 0;">
   {%- for item in gallery -%}
-    <li>
-      <a href="/assets/images/posts/{{ item.image | replace('./src/assets/images/posts/', '') }}">
-        {% eleventyImage item.image, item.alt %}
-      </a>
-    </li>
+    <li>{% eleventyImage item.image, item.alt %}</li>
   {%- endfor -%}
 </ul>

@@ -64,14 +64,10 @@ They also had a scavenger hunt going that kept my son entertained throughout our
 
 Overall it was a fun morning out and got me excited for more Lego building. I better put some time aside and finish building my [Optimus Prime](https://www.lego.com/en-nz/product/optimus-prime-10302).
 
-I took some photos from the display, you can click them for larger, unoptimised versions.
+I took some photos from the display.
 
 <ul class="gallery" role="list" style="padding: 0;">
   {%- for item in gallery -%}
-    <li>
-      <a href="/assets/images/posts/{{ item.image | replace('./src/assets/images/posts/', '') }}">
-        {% eleventyImage item.image, item.alt %}
-      </a>
-    </li>
+    <li>{% eleventyImage item.image, item.alt %}</li>
   {%- endfor -%}
 </ul>
