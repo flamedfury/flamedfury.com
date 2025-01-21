@@ -47,6 +47,20 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
   eleventyConfig.addPlugin(plugins.musicThread);
   eleventyConfig.addPlugin(plugins.pluginWebmentions, plugins.configWebmentions);
+  eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
+    formats: ['webp', 'jpeg'],
+    outputDir: '/assets/images/',
+    widths: ['auto'],
+    extensions: 'html',
+    htmlOptions: {
+      imgAttributes: {
+        loading: 'lazy',
+        decoding: 'async',
+        sizes: '100vw'
+      },
+      pictureAttributes: {}
+    }
+  });
 
   // ---------------------  bundle
   eleventyConfig.addBundle('css', {hoist: true});
