@@ -53,9 +53,7 @@ export default async function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
-    outputDir: '/assets/images/',
-    widths: ['auto'],
-    extensions: 'html',
+    widths: [650, 960, 1200],
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
