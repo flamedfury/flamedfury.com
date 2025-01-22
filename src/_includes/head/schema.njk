@@ -1,4 +1,5 @@
-    {%- include "schemas/base-schema.njk" %}
-    {%- if schema == 'blog' %}
-      {%- include "schemas/blogpost-schema.njk" -%}
-    {% endif %}
+{% include "schemas/WebSite.njk" %}
+
+{% if schema %}
+  {%- include "schemas/" + schema + ".njk" -%}
+{% endif %}
