@@ -1,11 +1,11 @@
 {% set activePage = page.url | url %}
-<footer class="site-foot">
+<footer class="site-footer mt-l-xl psm mb-l-xl">
   {% include 'partials/h-card.njk' %}
 
   <div class="wrapper flow">
 
-    <div class="site-foot__inner">
-      <nav class="site-foot__inner text-step-min-1 cluster place-content-center" aria-label="{{ meta.navigation.ariaBottom }}">
+    <div class="">
+      <nav class="text-step-min-1 cluster place-content-center" aria-label="{{ meta.navigation.ariaBottom }}">
         {%- for item in navigation.bottom %}
             <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
         {%- endfor -%}
@@ -13,14 +13,14 @@
     </div>
 
     <div class="site-foot__inner">
-      <nav class="site-foot__inner text-step-min-1 text-center" aria-label="{{ meta.navigation.ariaBottom }}">
+      <nav class="text-step-min-1 text-center" aria-label="{{ meta.navigation.ariaBottom }}">
         &copy; 1999 - {% year %}
         <a href="/" {% if page.url == "/" %} aria-current="page" {% endif %}>{{ meta.siteName }}
           <small>2402</small>
         </a>
         don't jack.
       </nav>
-      <nav class="footer__meta | cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
+      <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
         <a href="{{ meta.blog.feedLinks[0].url }}" rel="alternate" type="{{ meta.blog.feedLinks[0].type }}">
           <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
           {% svg "misc/rss" %}
