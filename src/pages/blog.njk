@@ -35,6 +35,6 @@ permalink: 'posts/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumbe
 {% include 'partials/pagination.njk' %}
 {% endif %}
 
-{% js "inline" %}
+{% js "local" %}
   {% include "scripts/masonry.js" %}
 {% endjs %}

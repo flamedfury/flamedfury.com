@@ -60,10 +60,10 @@ sections:
 {{ renderSection(section.id, section.title, section.description, links[section.linksKey]) }}
 {% endfor %}
 
-{% css "inline" %}
+{% css "local" %}
   {% include "css/links.css" %}
 {% endcss %}
 
-{% js "inline" %}
+{% js "local" %}
   {% include "scripts/masonry.js" %}
 {% endjs %}

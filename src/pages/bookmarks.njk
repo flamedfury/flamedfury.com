@@ -42,10 +42,10 @@ permalink: 'bookmarks/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageN
 {% include 'partials/pagination.njk' %}
 {% endif %}
 
-{% css "inline" %}
+{% css "local" %}
   {% include "css/card.css" %}
 {% endcss %}
 
-{% js "inline" %}
+{% js "local" %}
   {% include "scripts/masonry.js" %}
 {% endjs %}
