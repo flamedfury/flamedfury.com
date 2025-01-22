@@ -15,7 +15,7 @@
     <div class="site-foot__inner">
       <nav class="text-step-min-1 text-center" aria-label="{{ meta.navigation.ariaBottom }}">
         &copy; 1999 - {% year %}
-        <a href="/" {% if page.url == "/" %} aria-current="page" {% endif %}>{{ meta.siteName }}
+        <a href="/" {{ indicateActiveHome }}>{{ meta.siteName }}
           <small>2402</small>
         </a>
         don't jack.
