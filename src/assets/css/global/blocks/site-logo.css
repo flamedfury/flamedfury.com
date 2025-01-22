@@ -16,7 +16,7 @@
   -webkit-background-clip: text;
 }
 
-.logo svg { 
+.logo svg {
   --fillColorTop: var(--color-text);
   --fillColorBot: var(--color-text-accent);
 }
@@ -25,4 +25,4 @@
 .logo:focus svg {
   --fillColorTop: var(--color-primary);
   --fillColorBot: var(--color-secondary);
-} 
+}
