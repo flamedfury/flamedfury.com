@@ -1,6 +1,6 @@
 ---
 title: Changelog
-description: This
+description: This is my changelog
 layout: page
 permalink: /changelog/index.html
 date: 2024-05-27
@@ -9,6 +9,12 @@ date: 2024-05-27
 This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details changes to pages, layout, and content.
 
 ## Changes
+
+- January 23, 2025
+-- Backend updates based on the 4.0 changes to [Eleventy Excellent](https://eleventy-excellent.netlify.app/blog/eleventy-excellent-40/).
+-- Upgraded Elevent Image to [6.0.0](https://github.com/11ty/eleventy-img/releases/tag/v6.0.0).
+-- Changed the colour scheme, should be WCAG 2.1 colour contrast compliant in both light and dark modes now.
+
 - January 17, 2025
 -- New links added to the [Blogroll](/links/#blogroll) and [Cool Sites](/links/#coolSites).
 
