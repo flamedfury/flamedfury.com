@@ -393,6 +393,12 @@
       "url": "https://www.mojeek.com/",
       "feed": "",
       "note": "Mojeek is a growing independent search engine which does not track you. Mojeek have their own crawler and are building their own index."
+    },
+    {
+      "name": "Raw Web",
+      "url": "https://rawweb.org/",
+      "feed": "",
+      "note": "Explore the gems of independent websites. A search engine built from independant website feeds."
     }
   ],
   "webDirectories": [
