@@ -3,6 +3,7 @@ title: "Monthly Recap: October 2024"
 description: What's up, Internet? Blogging, dark romance novels, new vinyl for the collection, a stack of bookmarks, the Cafe's haloween event, and HTML for People? Check out how October went for me.
 tags:
   - monthly recap
+  - now
 hashtags:
   - web
   - blogging

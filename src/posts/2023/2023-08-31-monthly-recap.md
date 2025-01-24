@@ -3,13 +3,14 @@ title: 'Monthly Recap: August 2023'
 description: Hello web surfers, and welcome to August's recap.
 tags:
   - monthly recap
+  - now
 date: 2023-09-05
 ---
 
-Hello web surfers, and welcome to August's recap. 
+Hello web surfers, and welcome to August's recap.
 
 I wrote three posts:
-- [Whakapapa Ski Trip](/posts/whakapapa-ski-trip/), where I recapped a trip up north with family and friends and spent some time skiing. 
+- [Whakapapa Ski Trip](/posts/whakapapa-ski-trip/), where I recapped a trip up north with family and friends and spent some time skiing.
 - [Show Some Love: Supporting Your Favourites](/posts/show-some-love-supporting-your-favourites/), where I talk about supporting a free and open web by supporting the projects you love.
 - [Beervana 2023](/posts/beervana-2023/), where I spent the day at Beervana, Aotearoa's largest beer festival.
 
@@ -32,12 +33,12 @@ I got the website working with the [IndieWeb](https://indieweb.org/). This invol
 
 I'm not planning on using Mastodon extensively. I'll look into setting up feed syndication so that anyone who wants to can follow along and get updates over on Mastodon as an alternative to my [RSS Feed](/feed.xml).
 
-I had a good go at getting [WebMentions](https://indieweb.org/Webmention) going but ran into some issues getting them displaying. I read heaps of posts about them from [Max](https://mxb.dev/blog/using-webmentions-on-static-sites/), [Sia](https://sia.codes/posts/webmentions-eleventy-in-depth/), [Robb](https://rknight.me/adding-webmentions-to-your-site/), [Cory](https://coryd.dev/posts/2023/webmentions-in-eleventy/) and others where they iterated upon each other but kept running into build issues with 11ty. 
+I had a good go at getting [WebMentions](https://indieweb.org/Webmention) going but ran into some issues getting them displaying. I read heaps of posts about them from [Max](https://mxb.dev/blog/using-webmentions-on-static-sites/), [Sia](https://sia.codes/posts/webmentions-eleventy-in-depth/), [Robb](https://rknight.me/adding-webmentions-to-your-site/), [Cory](https://coryd.dev/posts/2023/webmentions-in-eleventy/) and others where they iterated upon each other but kept running into build issues with 11ty.
 
-I'll take another look at it another time cause I really want to be able to do the whole website to website [reply](https://indieweb.org/reply) thing. The appeal of WebMentions is not to use Mastodon as a comment system but to use our websites to reply to other websites. 
+I'll take another look at it another time cause I really want to be able to do the whole website to website [reply](https://indieweb.org/reply) thing. The appeal of WebMentions is not to use Mastodon as a comment system but to use our websites to reply to other websites.
 
 I organised my [posts](/posts/) tags. Removed duplicates, single-entry tags, etc.
 
-And finally, I started re-organising my top-of-page navigation. I'm considering consolidating some pages and bringing others to the top level. I deprecated my contact page and moved the contact details to the [About](/about/) page. I have a few more tasks like this to complete; I must remember to set the redirects correctly. 
+And finally, I started re-organising my top-of-page navigation. I'm considering consolidating some pages and bringing others to the top level. I deprecated my contact page and moved the contact details to the [About](/about/) page. I have a few more tasks like this to complete; I must remember to set the redirects correctly.
 
 That concludes everything for this month. We'll catch up again soon.

@@ -3,6 +3,7 @@ title: "Monthly Recap: November 2023"
 description: Hello web surfers, and welcome to November's recap.
 tags:
   - monthly recap
+  - now
 date: 2023-11-30
 ---
 

@@ -11,6 +11,7 @@ import {getMostRecentFinishedBook} from './filters/finished-books.js'
 import {split} from './filters/splitstring.js';
 import {limit} from './filters/limit.js';
 import {filterByProperty} from './filters/filter-by-property.js';
+import {postDate} from './filters/postDate.js'
 
 export default {
   toISOString,
@@ -26,5 +27,6 @@ export default {
   getMostRecentFinishedBook,
   split,
   limit,
-  filterByProperty
+  filterByProperty,
+  postDate
 };

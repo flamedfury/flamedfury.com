@@ -3,6 +3,7 @@ title: "Monthly Recap: May 2024"
 description: What's up, Internet? Time to recap the posts I wrote, books I read, links I shared and updates I made to the website during May. This month includes a recap of WebLogPoMo2024.
 tags:
   - monthly recap
+  - now
 date: 2024-06-02
 timestamp: 2024-06-02T09:56:13.345Z
 ---
@@ -16,7 +17,7 @@ I can't say that the month was easy. It was a struggle some evenings to sit down
 I'm glad I did it, I'm not going to do anything like it for a while and am going to enjoy my evenings without any self impossed pressure to post anything.
 
 For June, I'm looking forward to working on behind the scenes stuff on the website and some time to participate in [
-32bit.cafe Community Code Jam #4: Destination Vacation](https://tilde.32bit.cafe/~ribose/events/destination/index.html). I've got a great idea that I've had on the back burner for a while now and this might be the perfect (only?) opportunity I get to see it through. 
+32bit.cafe Community Code Jam #4: Destination Vacation](https://tilde.32bit.cafe/~ribose/events/destination/index.html). I've got a great idea that I've had on the back burner for a while now and this might be the perfect (only?) opportunity I get to see it through.
 
 Let me know if you're keen to join the Code Jam and join us over on the [forums](https://discourse.32bit.cafe/)
 
@@ -58,7 +59,7 @@ As mentioned above, May was Weblog Posting Month and I managed to post every sin
 
 ## Reading
 
-I managed to read (listen) to six books this month alongside my usual podcasts. The standout book in May for me was [Golden Days](https://bookhub.co.nz/p/golden-days) by Caroline Barron. 
+I managed to read (listen) to six books this month alongside my usual podcasts. The standout book in May for me was [Golden Days](https://bookhub.co.nz/p/golden-days) by Caroline Barron.
 
 - [Hello World](https://bookhub.co.nz/p/hello-world-how-to-be-human-in-the-age-of-the-machine) | Hannah Fry
 - [Upgrade Your HTML V](https://leanpub.com/upgrade-your-html-5) | Jens Oliver Meiert
@@ -89,12 +90,12 @@ It didn't feel like I had much time for reading and bookmarking but here we go, 
 
 ## Website
 
-The big thing this month was the rollout of the new [homepage](/) layout along with the sweeet new header graphics. This was something I always had planned with the 2023 refresh but never eventuated due to failing to get help with the graphics. I found [Abi](https://fizzyrph.tumblr.com/) who was able to help me out and created the awesome header image that graces the front page. 
+The big thing this month was the rollout of the new [homepage](/) layout along with the sweeet new header graphics. This was something I always had planned with the 2023 refresh but never eventuated due to failing to get help with the graphics. I found [Abi](https://fizzyrph.tumblr.com/) who was able to help me out and created the awesome header image that graces the front page.
 
 For everything else, I've started a [Changelog](/changelog/) to keep track of the changes, check it out if you want.
 
 ## Around the web
 
-[Robb's](https://rknight.me) back again with another funtastic idea, [Slash Pages](https://slashpages.net/). A fun mini site with the details of a selection of pages that are popular across small web websites. To get amongst it I created my own [Slashes](/slashes/) page to keep track and link to all the slash pages I'm working on. 
+[Robb's](https://rknight.me) back again with another funtastic idea, [Slash Pages](https://slashpages.net/). A fun mini site with the details of a selection of pages that are popular across small web websites. To get amongst it I created my own [Slashes](/slashes/) page to keep track and link to all the slash pages I'm working on.
 
 Right, that's it for now. Catch you on the flip side 🤙

@@ -3,6 +3,7 @@ title: "Monthly Recap: November 2024"
 description: What's up, Internet? Novembers out, and December's in. What did I write, read, bookmark and get up to in November?
 tags:
   - monthly recap
+  - now
 hashtags:
   - web
   - blogging

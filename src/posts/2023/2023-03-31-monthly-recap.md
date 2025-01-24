@@ -3,6 +3,7 @@ title: 'Monthly Recap: March 2023'
 description: Hello web surfers, and welcome to March's recap. This month I started writing blog posts again.
 tags:
   - monthly recap
+  - now
 date: 2023-03-31
 ---
 
@@ -18,4 +19,4 @@ As I take a break from World of Warcraft between seasons, the Diablo IV beta was
 
 Finally, I spent a lot of time working on my [metadata-library](https://github.com/flamedfury/metadata-library/) after coming across [this post](https://katydecorah.com/code/build-your-metadata-library/) by [Katy DeCorah](https://katydecorah.com/). After a lot of support from Katy, I got it up and running, and on the 20th of March, the first automated seasonal post was published. Check it out, [2023 Summer](/posts/2023-summer/). I've got until July to figure out how to format the page nicely; it should be easy to see what data I have available and can use in a Nunjucks template. Expect a post in the future detailing how I set it up.
 
-**Things to do**: I have created a backlog task to restore all archived posts posted to Flamed Fury over the years. These posts will provide an exciting look into my growth over the decades. 
+**Things to do**: I have created a backlog task to restore all archived posts posted to Flamed Fury over the years. These posts will provide an exciting look into my growth over the decades.

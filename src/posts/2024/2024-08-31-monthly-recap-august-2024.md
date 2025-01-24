@@ -3,6 +3,7 @@ title: "Monthly Recap: August 2024"
 description: What's up, Internet? Blogging, code jamming, lots of books read, new records, a stack of bookmarks, and IndieWeb discourse? Whaaat? Check out how August went for me.
 tags:
   - monthly recap
+  - now
 hashtags:
   - web
   - blogging

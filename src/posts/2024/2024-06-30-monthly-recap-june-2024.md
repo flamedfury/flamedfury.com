@@ -2,6 +2,7 @@
 title: "Monthly Recap: June 2024"
 description: What's up, Internet? June was code jams, blocking bots, posts, books, music, bookmarks and small improvements to the website.
   - monthly recap
+  - now
 date: 2024-07-01
 timestamp: 2024-07-01T08:07:04.928Z
 ---

@@ -3,11 +3,12 @@ title: "Monthly Recap: April 2024"
 description: Monthly recap for April 2024
 tags:
   - monthly recap
+  - now
 date: 2024-05-01
 timestamp: 2024-05-01T09:31:14.082Z
 ---
 
-What's happening Internet? Was it just me, or did April feel like it came and went like nothing? 
+What's happening Internet? Was it just me, or did April feel like it came and went like nothing?
 
 It might have felt rushed to me as I was busy wrapping up work and handing over my day-to-day tasks as I prepared to go on parental leave until September! I'm almost through the first week of looking after my daughter full time and am loving it.
 
@@ -29,13 +30,13 @@ I definitely picked up the slack from February and March. I found that sitting d
 I read two [books](/bookshelf/) in April. They were both chunky coming in at 16 and 17 hours respectively. I didn't have much time outside doing stuff that I didn't get through any more books, that's just the way it goes some times. I also needed a break after smashing through the entire [Three Body Problem](https://bookhub.co.nz/p/the-three-body-problem) in only 9 days...
 
 - [A Court of Thorns and Roses](https://bookhub.co.nz/p/a-court-of-thorns-and-roses-1-1851049): This was a long, but easy read and just what I needed. The main character seemed insufferable at first, like they always do in these stories but overall enjoyed as it progressed.
-- [The Penguin History of Aotearoa New Zealand](https://bookhub.co.nz/p/the-penguin-history-of-new-zealand-2598273?): This was a fantastic read. Just a great in depth look at Aotearoa's history. I recommend for every Kiwi and anyone who's remotely interested in our small and remote country. 
+- [The Penguin History of Aotearoa New Zealand](https://bookhub.co.nz/p/the-penguin-history-of-new-zealand-2598273?): This was a fantastic read. Just a great in depth look at Aotearoa's history. I recommend for every Kiwi and anyone who's remotely interested in our small and remote country.
 
 ## Music
 
 Record Store Day happens two times a year April 20 was the first of 2024. While I didn't buy any of the RSD releases I picked up a few from my wish list.
 
-- [Significant Other](/recordshelf/#significant-other): Limp Bizkit get a lot of hate, but this is an absolute banger from my childhood. 
+- [Significant Other](/recordshelf/#significant-other): Limp Bizkit get a lot of hate, but this is an absolute banger from my childhood.
 - [Smash](/recordshelf/#smash): Smash is my favourite Offspring album. I haven't opened it to play yet, but interested to see if it sounds as bad on vinyl as they say...
 
 ## Bookmarks
@@ -48,7 +49,7 @@ It looks like I saved around [25 bookmarks](/bookmarks/) in April. A few of the 
 - [Heat Death of the Internet](https://www.takahe.org.nz/heat-death-of-the-internet): Great piece that has you nodding your head in agreement as you read along.
 - [The Analog Web - The History of the Web](https://thehistoryoftheweb.com/the-analog-web/): Jay Hoffman dives into the small web, what he describes as the analog web. I even managed to get a quote and link near the bottom 🙌
 
-## Website 
+## Website
 
 I feel like I've made a lot of behind the scenes changes this month.
 

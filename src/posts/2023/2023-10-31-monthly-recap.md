@@ -3,10 +3,11 @@ title: "Monthly Recap: October 2023"
 description: Hello web surfers, and welcome to October's recap.
 tags:
   - monthly recap
+  - now
 date: 2023-10-31
 ---
 
-Hello web surfers, and welcome to October's recap. 
+Hello web surfers, and welcome to October's recap.
 
 I wrote three posts:
 - [Hear me out: The Whopper is the best type of burger](/posts/hear-me-out-the-whopper-is-the-best-type-of-burger/), where I dissect the Whopper.

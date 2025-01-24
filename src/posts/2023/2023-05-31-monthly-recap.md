@@ -3,6 +3,7 @@ title: 'Monthly Recap: May 2023'
 description: Hello web surfers, and welcome to May's recap.
 tags:
   - monthly recap
+  - now
 date: 2023-06-04
 ---
 
@@ -10,7 +11,7 @@ Hello web surfers, and welcome to May's recap.
 
 I wrote two new posts; they both look into audiobooks, where I get my audiobooks and how audiobooks have changed my listening habits. [Where Do You Get Your Audiobooks?](/posts/where-do-you-get-your-audiobooks/) and [How Have Your Listening Habits Changed?](/posts/how-have-your-listening-habits-changed/).
 
-I cleared my backlog of new music and added thirteen new records to the vinyl collection on the [Recordshelf](/recordshelf/). 
+I cleared my backlog of new music and added thirteen new records to the vinyl collection on the [Recordshelf](/recordshelf/).
 
 - [III - Temples of Boom](/recordshelf/#iii-temples-of-boom)
 - [Enter The Wu-Tang (36 Chambers)](/recordshelf/#enter-the-wu-tang-(36-chambers))

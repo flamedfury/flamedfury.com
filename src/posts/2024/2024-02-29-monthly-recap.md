@@ -3,6 +3,7 @@ title: "Monthly Recap: February 2024"
 description: Hello web surfers, welcome to Feburary's recap.
 tags:
   - monthly recap
+  - now
 date: 2024-03-07
 ---
 
@@ -13,7 +14,7 @@ I spoke about writing less [last month](/posts/monthly-recap-january-2024/), and
 + [Making Websites Should Be Easy](/posts/making-websites-should-be-easy/): Creating a website can be daunting, especially for non-developers. As someone well aware of the struggles with the process, I spoke with [Sara](https://sarajoy.dev/) on Mastodon about [simplifying the process of creating a website for non-developers](https://social.lol/@flamed/111730917308541254) on the back end of a recent post, "[An Easy Web](/posts/an-easy-web)".
 + [Building My Comics Page](/building-my-comics-page/): My [comics page](/comics/) sat empty for years. I finally sat down and did something about it using eleventy-fetch and League of Comic Geeks. In this post, I detail how I did it.
 
-Anyway, I was busy behind the scenes working on the website itself. With the recent release of [Eleventy-Excellent 2.0](https://eleventy-excellent.netlify.app/), I took the time to rehaul the entire backend; converting everything was slow. The great thing was that many of the additions I'd hacked in over the past year are now part of Eleventy Excellent. 
+Anyway, I was busy behind the scenes working on the website itself. With the recent release of [Eleventy-Excellent 2.0](https://eleventy-excellent.netlify.app/), I took the time to rehaul the entire backend; converting everything was slow. The great thing was that many of the additions I'd hacked in over the past year are now part of Eleventy Excellent.
 
 I still have a few more improvements to make; we'll see how that goes.
 

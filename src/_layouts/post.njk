@@ -16,14 +16,14 @@ schema: BlogPosting
     <p class="cluster text-step-min-1" style="--gutter: var(--space-xs-s)">
       {% set definedDate = date %} {% include "partials/date.njk" %}
       {% if tags.length > 1 %} {% for tag in tags %} {% if tag != "posts" %}
-      <a class="button post-tag p-category" href="/tags/{{ tag }}" data-small-button>
+      <a class="button post-tag p-category" href="/tags/{{ tag }}" data-button-variant="primary" data-small-button>
         {{ tag }}
       </a>
       {% endif %} {% endfor %} {% endif %}
       {% set tags = bookmark.tags | default('') %}
       {% if tags %}
         {% for tag in tags | string | split(',') %}
-        <span class="button post-tag p-category">{{ tag | trim }}</span>
+        <span class="button post-tag p-category" data-button-variant="primary" data-small-button>{{ tag | trim }}</span>
         {% endfor %}
       {% endif %}
     </p>

@@ -3,6 +3,7 @@ title: "Monthly Recap: September 2024"
 description: What's going on, Internet? Blogging, bookmarking, gaming, website workshops and a social web!
 tags:
   - monthly recap
+  - now
 hashtags:
   - web
   - blogging

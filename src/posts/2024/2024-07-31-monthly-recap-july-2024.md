@@ -3,6 +3,7 @@ title: "Monthly Recap: July 2024"
 description: What's up, Internet? A couple of blog posts, heaps of bookmarks and a few updates from these corners of the web.
 tags:
   - monthly recap
+  - now
 hashtags:
   - web
   - blogging

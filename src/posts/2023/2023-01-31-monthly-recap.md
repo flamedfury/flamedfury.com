@@ -1,8 +1,9 @@
 ---
 title: 'Monthly Recap: January 2023'
-description: Hello web surfers and welcome to January's recap. It's been an exciting month refreshing existing content and adding new content. 
+description: Hello web surfers and welcome to January's recap. It's been an exciting month refreshing existing content and adding new content.
 tags:
   - monthly recap
+  - now
 date: 2023-01-31
 ---
 
@@ -12,7 +13,7 @@ The [Web Manifesto](/manifesto/) page was edited and rewritten. I've updated my 
 
 I rewrote and updated the [Comic Rack](/comics/), [Bookshelf](/bookshelf/), and [Recordshelf](/recordshelf) pages.
 
-I created a bunch of new pages for the new Explore section; Check out the [Webrings](/explore/webrings) and [Buttonwall](/explore/buttonwall) pages. 
+I created a bunch of new pages for the new Explore section; Check out the [Webrings](/explore/webrings) and [Buttonwall](/explore/buttonwall) pages.
 
 Webrings were a big part of Web discovery. I've written a few paragraphs on this page about what they are and how they work. One of the three webrings that I am part of has been archived. I will re-assess and add the remaining active webrings soon.
 
@@ -24,6 +25,6 @@ This gets me thinking about information architecture... This makes an excellent 
 
 Similar to the other new and updated pages, I've added a few paragraphs on why I like vinyl as a medium for music. I hope this adds some personality to the page and that you (the web surfers) reading can relate as you browse the collection.
 
-I've moved all the vinyl metadata to its own JSON file in the `_data` directory. The `vinyl-collection` template renders it nice and tidy. 
+I've moved all the vinyl metadata to its own JSON file in the `_data` directory. The `vinyl-collection` template renders it nice and tidy.
 
 Future plans: Take photos of my collection, including pictures of the covers, sleeves, vinyl and anything else that makes the record unique.

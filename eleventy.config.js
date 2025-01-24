@@ -88,6 +88,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('split', filters.split);
   eleventyConfig.addFilter('limit', filters.limit);
   eleventyConfig.addFilter('filterByProperty', filters.filterByProperty);
+  eleventyConfig.addFilter('postDate', filters .postDate);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);

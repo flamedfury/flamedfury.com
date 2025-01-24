@@ -3,6 +3,7 @@ title: 'Monthly Recap: April 2023'
 description: Hello web surfers, and welcome to April's recap. This month I focused on automating more of Flamed Fury.
 tags:
   - monthly recap
+  - now
 date: 2023-04-30
 ---
 

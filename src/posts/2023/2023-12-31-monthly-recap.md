@@ -3,6 +3,7 @@ title: "Monthly Recap: December 2023"
 description: Hello web surfers, Happy New Year and welcome to December's recap.
 tags:
   - monthly recap
+  - now
 date: 2024-01-02
 ---
 
@@ -30,8 +31,8 @@ One of my besties, [Xandra](https://xandra.cc), has also started blogging in ant
 
 Speaking of blogging, I've been getting into [Mastodon](https://social.lol/@flamed) recently. Not as a tool for building a brand or self-promotion, but discovery. Okay, I can't help but share a new post when I've published one. There's been so many people posting great things about the Web recently. Let's hope 2024 continues the trend. Some of my favourites recently are:
 - [omg.lol: an oasis on the internet](https://blakewatson.com/journal/omg-lol-an-oasis-on-the-internet/) by [Blake](https://social.lol/@bw) shared a love letter to [omg.lol](https://omg.lol). The post talks about the beauty of the Web, where lovingly handcrafted services like omg.lol exist. Omg.lol provides various services through custom subdomains like email forwarding, web pages, blogging, and image hosting. Omg.lol is the result of a single developer, Adam. He is praised for his responsiveness to feedback and constant work improving the service. Like me, Blake enjoys exploring personal websites and the small, personal corner of the internet it enables.
-- [The Web Is Fantastic](https://rknight.me/blog/the-web-is-fantastic/) by [Robb](https://social.lol/@robb) talks about themes familiar to readers of this website. The Open Web of links, blogs and RSS feeds is better than social media platforms for discovering new content. The joy of discovering an interesting blog post by following links from one website blog to another, the independent, link-based nature of the real Web, makes discovering new ideas and information more enjoyable. 
+- [The Web Is Fantastic](https://rknight.me/blog/the-web-is-fantastic/) by [Robb](https://social.lol/@robb) talks about themes familiar to readers of this website. The Open Web of links, blogs and RSS feeds is better than social media platforms for discovering new content. The joy of discovering an interesting blog post by following links from one website blog to another, the independent, link-based nature of the real Web, makes discovering new ideas and information more enjoyable.
 
-I still have a few drafts to carry over and can't wait to finish them to share with everyone. 
+I still have a few drafts to carry over and can't wait to finish them to share with everyone.
 
 I hope you had a great end to the year and had a break of some sort, and I can't wait to see what 2024 brings.
