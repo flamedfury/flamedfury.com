@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- January 24, 2025
+-- Created a new [Default Apps](/default-apps/) for my annual [default app](https://rknight.me/app-defaults/) updates.
+
 - January 23, 2025
 -- Backend updates based on the 4.0 changes to [Eleventy Excellent](https://eleventy-excellent.netlify.app/blog/eleventy-excellent-40/).
 -- Upgraded Elevent Image to [6.0.0](https://github.com/11ty/eleventy-img/releases/tag/v6.0.0).

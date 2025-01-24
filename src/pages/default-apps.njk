@@ -1,0 +1,38 @@
+---
+title: Default Apps
+layout: page
+description: My default apps
+permalink: /default-apps/index.html
+---
+
+{% set latest_defaults = collections['default apps'] | reverse %}
+{% set latestDefaultApps = latest_defaults[0] %}
+
+<p>
+  My default apps, last updated {{ latestDefaultApps.date | postDate }}. Inspired by <a href="https://listen.hemisphericviews.com/097">Hemispheric Views</a>, and <a href="https://defaults.rknight.me/">catalogued</a> by <a href="https://rknight.me/">Robb</a>.
+</p>
+
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "seperator" %}
+  <section class="section__inner wrapper">
+    <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+      {{ latestDefaultApps.content | safe }}
+    </article>
+  </section>
+
+  <section class="section__inner wrapper">
+    <details>
+      <summary>Previous Entries</summary>
+      <ul>
+        {% for post in latest_defaults %}
+          {% if not loop.first %}
+            <li>
+              {{ post.date | postDate }} - <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </details>
+  </section>
+  {% svg "divider/soft-bottom", null, "seperator" %}
+</article>
