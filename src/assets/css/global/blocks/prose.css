@@ -30,7 +30,7 @@
 }
 
 .prose mark {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-accent);
   color: var(--color-dark);
 }
 

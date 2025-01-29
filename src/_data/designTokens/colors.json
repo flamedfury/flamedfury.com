@@ -39,28 +39,28 @@
       "value": "#161616"
     },
     {
-      "name": "Tangelo",
-      "value": "#ff4500"
+      "name": "Pri",
+      "value": "#d9480f"
     },
     {
-      "name": "Tangelo Subdued",
-      "value": "#ec5e3a"
+      "name": "Pri Subdued",
+      "value": "#ca5935"
     },
     {
-      "name": "Orange",
-      "value": "#ff7f00"
+      "name": "Sec",
+      "value": "#fd7e14"
     },
     {
-      "name": "Orange Subdued",
-      "value": "#ef8a44"
+      "name": "Sec Subdued",
+      "value": "#ee8947"
     },
     {
-      "name": "Red",
-      "value": "#ff0000"
+      "name": "Acc",
+      "value": "#28a745"
     },
     {
-      "name": "Red Subdued",
-      "value": "#eb4435"
+      "name": "Acc Subdued",
+      "value": "#49a257"
     }
   ]
 }

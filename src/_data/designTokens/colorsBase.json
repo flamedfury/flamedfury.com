@@ -10,16 +10,16 @@
   "shades_vibrant": [],
   "light_dark": [
     {
-      "name": "Tangelo",
-      "value": "#ff4500"
+      "name": "Pri",
+      "value": "#d9480f"
     },
     {
-      "name": "Orange",
-      "value": "#ff7f00"
+      "name": "Sec",
+      "value": "#fd7e14"
     },
     {
-      "name": "Red",
-      "value": "#ff0000"
+      "name": "Acc",
+      "value": "#28a745"
     }
   ],
   "standalone": []

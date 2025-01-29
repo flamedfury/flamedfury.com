@@ -15,14 +15,14 @@
   --gradient-conic: conic-gradient(
     var(--color-primary) 0 28%,
     var(--color-secondary) 0 67%,
-    var(--color-tertiary) 0 100%
+    var(--color-accent) 0 100%
   );
   --gradient-stripes: linear-gradient(
     45deg,
     var(--color-gray-900) 0 75%,
     var(--color-primary) 0 85%,
     var(--color-secondary) 0 92%,
-    var(--color-tertiary) 0 100%
+    var(--color-accent) 0 100%
   );
   --gradient-flames: radial-gradient(
     rgb(220, 38, 38),
@@ -41,9 +41,9 @@
   --color-text: var(--color-gray-800);
   --color-bg: var(--color-gray-100);
 
-  --color-primary: var(--color-tangelo);
-  --color-secondary: var(--color-orange);
-  --color-tertiary: var(--color-red);
+  --color-primary: var(--color-pri);
+  --color-secondary: var(--color-sec);
+  --color-accent: var(--color-acc);
 
   --color-text-accent: var(--color-gray-700);
   --color-bg-accent: var(--color-gray-200);
@@ -56,9 +56,9 @@
     --color-text: var(--color-gray-100);
     --color-bg: var(--color-gray-800);
 
-    --color-primary: var(--color-tangelo-subdued);
-    --color-secondary: var(--color-orange-subdued);
-    --color-tertiary: var(--color-red-subdued);
+    --color-primary: var(--color-pri-subdued);
+    --color-secondary: var(--color-sec-subdued);
+    --color-accent: var(--color-acc-subdued);
 
     --color-text-accent: var(--color-gray-300);
     --color-bg-accent: var(--color-gray-700);
@@ -69,9 +69,9 @@
   --color-text: var(--color-gray-100);
   --color-bg: var(--color-gray-800);
 
-  --color-primary: var(--color-tangelo-subdued);
-  --color-secondary: var(--color-orange-subdued);
-  --color-tertiary: var(--color-red-subdued);
+  --color-primary: var(--color-pri-subdued);
+  --color-secondary: var(--color-sec-subdued);
+  --color-accent: var(--color-acc-subdued);
 
   --color-text-accent: var(--color-gray-300);
   --color-bg-accent: var(--color-gray-700);

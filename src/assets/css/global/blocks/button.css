@@ -73,10 +73,10 @@
   --button-color: color-mix(in oklab, var(--color-secondary) 5%, var(--color-light));
 }
 
-.button[data-button-variant='tertiary'] {
-  --button-bg: var(--color-tertiary);
+.button[data-button-variant='accent'] {
+  --button-bg: var(--color-accent);
   --button-color: var(--color-dark);
-  --button-color: color-mix(in oklab, var(--color-tertiary) 10%, var(--color-dark));
+  --button-color: color-mix(in oklab, var(--color-accent) 10%, var(--color-dark));
 }
 
 .button[data-ghost-button] {
