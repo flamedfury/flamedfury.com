@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- January 29, 2025
+-- Deleted my Contact page and redirected it to my [Hello](/hello/) page.
+
 - January 24, 2025
 -- Created a new [Default Apps](/defaults/) for my annual [default app](https://rknight.me/app-defaults/) updates.
 -- Added a new search engine, [Raw Web](https://rawweb.org/) to the [Search Engines](/links/#search) section of the links page.
