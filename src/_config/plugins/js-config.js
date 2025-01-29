@@ -1,5 +1,5 @@
 import esbuild from 'esbuild';
-import path from 'node:path';
+import path from 'path';
 
 export const jsConfig = eleventyConfig => {
   eleventyConfig.addTemplateFormats('js');
@@ -19,11 +19,13 @@ export const jsConfig = eleventyConfig => {
         const outputPath = `./src/_includes/scripts/${outputFilename}`;
 
         await esbuild.build({
-          target: 'es2020',
           entryPoints: [inputPath],
           outfile: outputPath,
           bundle: true,
-          minify: true
+          minify: true,
+          platform: 'browser', // Specify browser as the target platform
+          target: 'es2020',
+          format: 'esm', // Use ES modules
         });
         return;
       }
@@ -31,11 +33,13 @@ export const jsConfig = eleventyConfig => {
       // Default handling for other scripts, excluding inline scripts
       return async () => {
         let output = await esbuild.build({
-          target: 'es2020',
           entryPoints: [inputPath],
           bundle: true,
           minify: true,
-          write: false
+          write: false,
+          platform: 'browser', // Specify browser as the target platform
+          target: 'es2020',
+          format: 'esm', // Use ES modules
         });
 
         return output.outputFiles[0].text;
