@@ -1,3 +1,16 @@
+/**
+HYPERCARD
+
+Sometime over the past month (Jan 2025) the CSS I was using to
+create the hover effect over the book covers broke.
+
+I tried to use Zach Leat's hypercard webcomponent but couldn't
+get it working so I jacked the CSS from the js file to create
+a similiar effect and here we are.
+
+Credit to: https://github.com/zachleat/hypercard
+**/
+
 .book-year-count {
   font-size: var(--size-step-min-1);
   padding: 0 0.25rem 0.5rem;
