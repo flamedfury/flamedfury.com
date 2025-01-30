@@ -19,7 +19,7 @@ export const creator = {
   social: 'https://social.lol/@flamed'
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/flamed.svg'; // used for favicon generation
-export const themeColor = '#ff4800'; //  Manifest: defines the default theme color for the application
+export const themeColor = '#d9480f'; //  Manifest: defines the default theme color for the application
 export const themeLight = '#f8f8f8'; // used for meta tag theme-color, if light colors are prefered. best use value set for light bg
 export const themeDark = '#2e2e2e'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bgexport const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
