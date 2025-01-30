@@ -14,22 +14,13 @@
 	height: 100%;
 }
 
-/* @media (prefers-color-scheme: dark) {
-	.homepage-background-picture img {
-    --background-img-brightness: 0.45;
-    --background-img-saturate: 1.25;
-		filter: brightness(var(--background-img-brightness))
-			saturate(var(--background-img-saturate));
-	}
-} */
-
-
 .homepage-stack-layout h1 {
 	place-self: center;
 	text-align: center;
   font-size: var(--size-step-6);
   text-transform: uppercase;
-  mask-image: url("../assets/images/splatter-mask.png");
+  -webkit-text-stroke: 5px var(--color-bg);
+  paint-order: stroke fill;
 }
 
 .homepage-stack-layout small {
