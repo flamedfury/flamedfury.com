@@ -10,6 +10,10 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- January 30, 2025
+-- Improved the readability of the homepage heading.
+-- Improved the [Bookshelf](/bookshelf/) page styling, and added the currently reading and just finished book.
+
 - January 29, 2025
 -- Deleted my Contact page and redirected it to my [Hello](/hello/) page.
 
