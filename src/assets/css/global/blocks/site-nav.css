@@ -18,6 +18,7 @@
   display: block;
   border-radius: var(--border-radius-medium);
   border: 1px solid var(--border-color);
+  font-weight: var(--font-bold);
 }
 
 /* Change the border-color on :hover and :focus */
