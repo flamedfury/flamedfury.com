@@ -1,0 +1,70 @@
+.book-year-count {
+  font-size: var(--size-step-min-1);
+  padding: 0 0.25rem 0.5rem;
+}
+
+.book-grid-item {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  width: 150px;
+  height: 225px;
+  overflow: hidden;
+}
+
+.book-grid-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% -20%, rgba(255,255,255,0.3), rgba(0,0,0,0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.book-grid-item:hover {
+  transform: scale(1.05) rotateY(5deg);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.book-grid-item:hover::before {
+  opacity: 1;
+}
+
+.book-grid-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-details {
+  --flow-space: var(--space-s);
+}
+
+.book-author {
+  color: var(--color-text-accent);
+  font-size: var(--size-step-min-2);
+  text-transform: uppercase;
+  break-inside: avoid;
+}
+
+.book-title {
+  font-weight: 600;
+  break-inside: avoid;
+}
+
+.book-description {
+  font-size: var(--size-step-min-1);
+}
+
+.book-reading-status {
+  font-size: var(--size-step-min-1);
+  break-inside: avoid;
+}
+
+.featured-book-cover {
+  max-width: 200px;
+  height: auto;
+}

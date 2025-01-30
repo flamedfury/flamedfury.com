@@ -1,44 +1,71 @@
 ---
 title: Bookshelf
-description: I love reading books and have forever. This page collects the books that I've read since I started tracking them.
+description: Check out the books I'm reading.
 layout: page
 permalink: /bookshelf/index.html
 date: 2021-02-22
 updated: 2024-04-10
 ---
 
-<style>
-  .bookcount {
-    font-size: var(--size-step-min-1);
-    padding: 0 0.25rem 0.5rem;
-  }
-</style>
-
 <p>Welcome to my bookshelf, where you can find a collection of all the books I have read and the ones I am excited to read. <a href="/posts/reading-adventures/">As someone who has been reading throughout my life</a>, I have always been fascinated by the power of books to transport us to different worlds, teach us new things, and awaken our imaginations.</p>
 
 <p>My love for reading has only grown stronger over the years, and I am always looking for new and exciting books to add to my collection. If you have a book you think I might enjoy, please don't hesitate to <a href="/contact/">reach out and recommend it to me</a>.</p>
 
-  <!-- Add in currently reading here -->
-
 <article class="full section" style="--spot-color: var(--color-bg-accent)">
   {% svg "divider/soft-top", null, "seperator" %}
   <section class="section__inner wrapper flow">
+
+    {% set currentlyReading = null %}
+    {% set mostRecentFinishedBook = bookshelf | getMostRecentFinishedBook %}
+
+    {% for book in bookshelf %}
+      {% if book.status == 'started' %}
+        {% set currentlyReading = book %}
+      {% endif %}
+    {% endfor %}
+
+    {% macro renderBookInfo(book, headerText) %}
+      <h2>{{ headerText }}</h2>
+      <div class="sidebar flow">
+        <div>
+          {% if book.image %}
+            <img class="featured-book-cover" src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}" alt="Book cover for {{ book.title }}" loading="lazy">
+          {% elif book.isbn %}
+            <img class="featured-book-cover" src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="Book cover for {{ book.title }}" loading="lazy">
+          {% else %}
+            <p>No image available for {{ book.title }}</p>
+          {% endif %}
+        </div>
+        <div class="book-details">
+          <p class="book-author">{{ book.authors | safe }}</p>
+          <p class="book-title">{{ book.title | safe }}</p>
+          <p class="book-description">{{ book.description | safe | truncate }}</p>
+        </div>
+      </div>
+    {% endmacro %}
+
+    {% if currentlyReading %}
+      {{ renderBookInfo(currentlyReading, "Currently reading") }}
+    {% elif mostRecentFinishedBook %}
+      {{ renderBookInfo(mostRecentFinishedBook, "Just finished") }}
+    {% endif %}
+
     <h2>Finished Reading</h2>
 
     {% for year, yearBooks in collections.booksByYear %}
-    <h3>{{ year }} <span class="bookcount">({{ yearBooks.length }})</span></h3>
+    <h3>{{ year }} <span class="book-year-count">({{ yearBooks.length }})</span></h3>
     <div class="grid" style="--grid-min-item-size: 10rem">
       {% for book in yearBooks %}
         <div class="bookshelf flow">
-          {% if book.image %}
+          <div class="book-grid-item">
             <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
-              <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}" alt="Book Cover for {{ book.title }}" load="lazy">
+              {% if book.image %}
+                <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/{{ book.image }}" alt="Book Cover for {{ book.title }}" loading="lazy">
+              {% else %}
+                <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="Book Cover for {{ book.title }}" loading="lazy">
+              {% endif %}
             </a>
-          {% else %}
-            <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">
-              <img src="https://raw.githubusercontent.com/flamedfury/metadata-library/main/img/book-{{ book.isbn }}.png" alt="Book Cover for {{ book.title }}" load="lazy">
-            </a>
-          {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
@@ -47,3 +74,7 @@ updated: 2024-04-10
   </section>
   {% svg "divider/soft-bottom", null, "seperator" %}
 </article>
+
+{% css "local" %}
+  {% include "css/bookshelf.css" %}
+{% endcss %}
