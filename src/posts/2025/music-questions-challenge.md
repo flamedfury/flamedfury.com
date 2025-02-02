@@ -66,4 +66,4 @@ Without a doubt. My musical taste started off with what my parents listened to a
 
 ---
 
-This wouldn't be a blog challenge without tagging someone else right? For this set of questions I want to hear from [Cory](https://coryd.dev/) and [Jcrabapple](https://cool-as-heck.blog/) as I know they're both big into music.
+This wouldn't be a blog challenge without tagging someone else right? For this set of questions I want to hear from [Cory](https://coryd.dev/), [Jcrabapple](https://cool-as-heck.blog/), and [Robb](https://rknight.me/) as I know they're both big into music.
