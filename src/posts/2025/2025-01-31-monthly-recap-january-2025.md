@@ -27,19 +27,19 @@ That's life, but what's been happening on the website?
 
 ## Blogging
 
-- [Reflections 2024: Beer](http://localhost:8080/posts/reflections-2024-beer/), my 2024 journey though beer, exploring West Coast IPAs, Bright IPAs,  and New Zealand IPAs. Cheers to a year of hoppy adventures!
-- [Blog Question Challenge 2025](http://localhost:8080/posts/blog-question-challenge-2025/), Nobody asked, but here it is anyway.
-- [Default Apps 2025](http://localhost:8080/posts/default-apps-2025/), My refreshed default apps list for 2025. What's changed?
-- [What To Write](http://localhost:8080/posts/what-to-write/), Website and blogging inspiration from a local bookstore zine
+- [Reflections 2024: Beer](/posts/reflections-2024-beer/), my 2024 journey though beer, exploring West Coast IPAs, Bright IPAs,  and New Zealand IPAs. Cheers to a year of hoppy adventures!
+- [Blog Question Challenge 2025](/posts/blog-question-challenge-2025/), Nobody asked, but here it is anyway.
+- [Default Apps 2025](/posts/default-apps-2025/), My refreshed default apps list for 2025. What's changed?
+- [What To Write](/posts/what-to-write/), Website and blogging inspiration from a local bookstore zine
 
 ## Reading
 
 I'm happy that I finished four books this month. Four books a month are a decent amount of reading while still giving me enough time to listen to podcasts and music.
 
-- [The Invisible Life of Addie LaRue](http://localhost:8080/bookshelf/the-invisible-life-of-addie-larue/) by V.E. Schwab
-- [Maybe in Another Life](http://localhost:8080/bookshelf/maybe-in-another-life/) by Taylor Jenkins Reid
-- [This is the F#$%ing News](http://localhost:8080/bookshelf/this-is-the-fdollarpercenting-news/) by Paddy Gower
-- [Big Time](http://localhost:8080/bookshelf/big-time/) by Jordan Prosser
+- [The Invisible Life of Addie LaRue](/bookshelf/the-invisible-life-of-addie-larue/) by V.E. Schwab
+- [Maybe in Another Life](/bookshelf/maybe-in-another-life/) by Taylor Jenkins Reid
+- [This is the F#$%ing News](/bookshelf/this-is-the-fdollarpercenting-news/) by Paddy Gower
+- [Big Time](/bookshelf/big-time/) by Jordan Prosser
 
 ## Music
 
@@ -75,6 +75,7 @@ Working out the new colour system that Lene implemented as part of 4.0 took some
 The removal of the grunge effect image mask over the title text significantly enhanced the readability of the website header. It appears much more attractive with a solid outline around the text, while sitting on the top of the action-packed paint splatter graphic.
 
 Finally, I spent an evening working on the [Bookshelf](/bookshelf) page and improved it. I have more ideas for this and the other "shelf" pages.
+
 ## Happening around the web
 
 Lots of chatter across the circles I follow about [slash pages](https://slashpages.net/) this month, which is cool because I've been thinking about these pages and how to better manage the balance between pages and posts. A decent draft for a post is in the works, and I will publish it in February. Please hold that to me.
