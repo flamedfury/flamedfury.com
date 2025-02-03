@@ -86,14 +86,6 @@ I think the discoverability aspect of the web was lost during the time when blog
 
 I loved linking all my web friends' homepages from my own back in the day, which formed a sense of community within the communities for whatever topic your page was about that particular month.
 
-## Web3
-
-Web3 can be and should be ignored. Inventor of the World Wide Web, Tim Berners-Lee [dismissed Web3](https://www.cnbc.com/2022/11/04/web-inventor-tim-berners-lee-wants-us-to-ignore-web3.html) at the Web Summit conference held in Lisbon in 2023.
-
-> It’s a real shame in fact that the actual Web3 name was taken by Ethereum folks for the stuff that they’re doing with blockchain. In fact, Web3 is not the web at all".
-
-Web3 shrills claim that by using blockchain technology it can create a more decentralised and distributed version of the current World Wide Web. The World Wide Web is already decentralised and distributed, especially if you step out of the "Big Tech" silos. The World Wide Web already provides individuals with the tools and resources to take control of their own data and privacy significantly. The problem is making these tools and resources [available and accessible to everyone](/posts/making-websites-should-be-easy/).
-
 ## Final thought
 A personal homepage is fantastic; if you don't, get one!
 
