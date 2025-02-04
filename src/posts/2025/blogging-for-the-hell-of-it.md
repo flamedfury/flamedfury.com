@@ -2,7 +2,15 @@
 title: Blogging For The Hell Of It
 description: Why can't I bring myself to just writting about nothing in particular?
 tags:
+<<<<<<< HEAD
 hashtags:
+=======
+  - web
+hashtags:
+  - web
+  - indieweb
+  - blogging
+>>>>>>> 3695d2f (new post: blogging for the hell of it)
 date: 2025-02-04
 timestamp: 2025-02-04T08:37:06.292Z
 ---
