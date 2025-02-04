@@ -110,6 +110,7 @@ ol li::marker {
 a {
   text-decoration-thickness: 0.15ex;
   text-underline-offset: 0.2ch;
+  transition: color 0.2s ease-in-out;
 }
 
 a:not([class]):hover {
@@ -118,6 +119,10 @@ a:not([class]):hover {
 
 article p a {
   color: var(--color-primary);
+}
+
+article p a:hover {
+  color: var(--color-accent);
 }
 
 a:focus {

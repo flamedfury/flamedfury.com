@@ -10,6 +10,11 @@
   font-size: var(--size-step-2);
 }
 
+.post article h2,
+.post article h3 {
+  color: var(--color-text);
+}
+
 /* make featured image alwyays 16/9 */
 .post h1 + :is(picture, figure) img {
   max-inline-size: var(--max-img-width, 100%);

@@ -46,16 +46,20 @@
 
 /* marker only for "regular lists" */
 .prose :where(ul:not(.grid):not([role='list'])) li::marker {
-  color: var(--color-primary);
+  color: var(--color-accent);
   content: '– ';
 }
 
 .prose ol li::marker {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .prose img {
   border-radius: var(--border-radius-medium);
+}
+
+.prose a:hover {
+  color: var(--color-primary);
 }
 
 @media screen(ltsm) {
