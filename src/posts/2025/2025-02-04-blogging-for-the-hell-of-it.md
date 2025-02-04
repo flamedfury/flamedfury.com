@@ -11,7 +11,7 @@ date: 2025-02-04
 timestamp: 2025-02-04T21:37:06.292Z
 ---
 
-I just read [Blogging just because](https://folkmoss.bearblog.dev/blogging-just-because/) by Folkmoss and loved it. I relate to it in so many ways.
+What's going on, Internet? I just read [Blogging just because](https://folkmoss.bearblog.dev/blogging-just-because/) by Folkmoss and loved it. I relate to it in so many ways.
 
 > Finishing up a long day of work only to plop down on the couch and turn on a slightly larger screen for entertainment is the real adversary. My brain needs rest, but not this kind. ……… The best form of relaxation isn't consumption, it's creation.
 
