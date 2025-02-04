@@ -50,6 +50,49 @@ layout: base
         </div>
       </div>
 
+      <section class="full section" style="--spot-color: var(--color-bg-accent)">
+        {% svg "divider/soft-top", null, "seperator" %}
+        <section class="section__inner wrapper">
+          <div class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
+            <h2 id="explore">Surf's up!</h2>
+            <p>There's more pages on my website that can fit in the top navigation. My homepage serves as an index of all pages you might want to visit.</p>
+            <div class="grid | region" data-layout="thirds">
+              <div class="surfing-card">
+                <h3>Shelves & Collections</h3>
+                <nav aria-label="Surf Shelves Navigation">
+                  <ul>
+                    {%- for item in navigation.surfShelves %}
+                      <li><a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+                    {%- endfor -%}
+                  </ul>
+                </nav>
+              </div>
+              <div class="surfing-card">
+                <h3>Personal & About</h3>
+                <nav aria-label="Surf Slashes Navigation">
+                  <ul>
+                    {%- for item in navigation.surfPersonal %}
+                      <li><a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+                    {%- endfor -%}
+                  </ul>
+                </nav>
+              </div>
+              <div class="surfing-card">
+                <h3>Site Information</h3>
+                <nav aria-label="Surf Site Navigation">
+                  <ul>
+                    {%- for item in navigation.surfSite %}
+                      <li><a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a></li>
+                    {%- endfor -%}
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        {% svg "divider/soft-bottom", null, "seperator" %}
+      </section>
+
     </div>
   </section>
 </div>
