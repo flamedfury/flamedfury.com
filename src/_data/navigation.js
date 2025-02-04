@@ -39,10 +39,6 @@ export const bottom = [
     url: '#top'
   },
   {
-    text: 'Contact',
-    url: '/contact/'
-  },
-  {
     text: 'PSA',
     url: '/psa/'
   },
@@ -53,6 +49,10 @@ export const bottom = [
   {
     text: 'Privacy',
     url: '/privacy/'
+  },
+  {
+    text: 'Contact',
+    url: '/hello/'
   }
 ];
 
