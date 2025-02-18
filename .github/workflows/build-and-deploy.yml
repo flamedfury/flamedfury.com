@@ -41,7 +41,7 @@ jobs:
         run: |
           set -e
           npm install
-          npm run build -- --ignore="index.html,feed.xml,feed.json,bookmarks-feed.json,bookmarks-feed.xml"
+          npm run build -- --ignore=index.html --ignore=feed.xml --ignore=feed.json --ignore=bookmarks-feed.json --ignore=bookmarks-feed.xml
         env:
           OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
@@ -115,7 +115,7 @@ jobs:
         run: |
           set -e
           npm install
-          npm run build -- --only="index.html,feed.xml,feed.json,bookmarks-feed.json,bookmarks-feed.xml"
+          npm run build -- --input=. --filter=index.html --filter=feed.xml --filter=feed.json --filter=bookmarks-feed.json --filter=bookmarks-feed.xml
         env:
           OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
