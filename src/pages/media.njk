@@ -115,7 +115,7 @@ permalink: /media/index.html
         {% for artist in artists %}
           <div class="stack">
             <a
-              href="{{ artist.url }}"
+              href="https://musicbrainz.org/artist/{{ artist.mbid }}"
               title="{{ artist.name | escape }}"
               class="no-indicator"
             >
@@ -141,7 +141,7 @@ permalink: /media/index.html
       <div class="grid" style="--grid-min-item-size: 12rem">
         {% for album in albums %}
           <div class="stack">
-            <a href="{{ album.url }}" title="{{ album.name }}" class="no-indicator">
+            <a href="https://musicbrainz.org/release/{{ album.mbid }}" title="{{ album.name }}" class="no-indicator">
               <div class="now-album">
                 {% if album.image %}
                   {% eleventyImage album.image, "Cover art for the album " + album.name %}
@@ -153,6 +153,7 @@ permalink: /media/index.html
             <div class="now-album-meta">
               <p class="now-album-artist-name">{{ album.artist.name }}</p>
               <p class="now-album-name">{{ album.name }}</p>
+              <p class="now-album-plays">{{ album.playcount }} plays</p>
             </div>
           </div>
         {% endfor %}

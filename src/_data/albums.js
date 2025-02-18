@@ -3,28 +3,46 @@ import { getSpotifyAccessToken } from './spotifyAuth.js';
 import { searchSpotifyAlbum } from './spotifySearch.js';
 
 export default async function () {
-  const API_KEY = process.env.LASTFM_KEY;
-  const USERNAME = process.env.LASTFM_USER;
-  const url = `http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${USERNAME}&api_key=${API_KEY}&limit=8&format=json&period=7day`;
+  const USER_NAME = process.env.LISTENBRAINZ_USER;
+  const url = `https://api.listenbrainz.org/1/stats/user/${USER_NAME}/releases?range=week`;
 
-  const lastFmResponse = await EleventyFetch(url, {
-    duration: '1h',
-    type: 'json',
-  });
-  const albums = lastFmResponse.topalbums.album;
+  try {
+    const listenBrainzResponse = await EleventyFetch(url, {
+      duration: '1h',
+      type: 'json',
+    });
+    const albums = listenBrainzResponse.payload.releases.slice(0, 8);
 
-  const spotifyAccessToken = await getSpotifyAccessToken();
+    const spotifyAccessToken = await getSpotifyAccessToken();
 
-  const albumImages = await Promise.all(
-    albums.map(async (album) => {
-      const spotifyAlbum = await searchSpotifyAlbum(album.name, album.artist.name, spotifyAccessToken);
-      return spotifyAlbum.images.length > 0 ? spotifyAlbum.images[0].url : null;
-    })
-  );
+    const albumsWithSpotify = await Promise.all(
+      albums.map(async (album) => {
+        try {
+          const spotifyAlbum = await searchSpotifyAlbum(album.release_name, album.artist_name, spotifyAccessToken);
+          const image = spotifyAlbum.images.length > 0 ? spotifyAlbum.images[0].url : null;
+          return {
+            name: album.release_name,
+            artist: { name: album.artist_name },
+            playcount: album.listen_count,
+            mbid: album.release_mbid,
+            image: image
+          };
+        } catch (error) {
+          console.error(`Error fetching Spotify data for album '${album.release_name}':`, error);
+          return {
+            name: album.release_name,
+            artist: { name: album.artist_name },
+            playcount: album.listen_count,
+            mbid: album.release_mbid,
+            image: null
+          };
+        }
+      })
+    );
 
-  albums.forEach((album, index) => {
-    album.image = albumImages[index];
-  });
-
-  return albums;
-};
+    return albumsWithSpotify;
+  } catch (error) {
+    console.error('Error fetching ListenBrainz data:', error);
+    throw error;
+  }
+}
