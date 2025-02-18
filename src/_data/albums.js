@@ -1,9 +1,16 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
 
+const USER_AGENT = 'fLaMEdfuryMusicLog/1.0.0 ( https://flamedfury.com )';
+
 async function getCoverArtUrl(mbid) {
   const url = `https://coverartarchive.org/release/${mbid}/front`;
   try {
-    const response = await fetch(url, { method: 'HEAD' });
+    const response = await fetch(url, {
+      method: 'HEAD',
+      headers: {
+        'User-Agent': USER_AGENT
+      }
+    });
     if (response.ok) {
       return url;
     }
@@ -21,6 +28,9 @@ export default async function () {
     const listenBrainzResponse = await EleventyFetch(url, {
       duration: '1h',
       type: 'json',
+      headers: {
+        'User-Agent': USER_AGENT
+      }
     });
     const albums = listenBrainzResponse.payload.releases.slice(0, 8);
 
