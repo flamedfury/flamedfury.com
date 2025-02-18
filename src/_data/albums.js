@@ -1,6 +1,17 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
-import { getSpotifyAccessToken } from './spotifyAuth.js';
-import { searchSpotifyAlbum } from './spotifySearch.js';
+
+async function getCoverArtUrl(mbid) {
+  const url = `https://coverartarchive.org/release/${mbid}/front`;
+  try {
+    const response = await fetch(url, { method: 'HEAD' });
+    if (response.ok) {
+      return url;
+    }
+  } catch (error) {
+    console.error(`Error fetching cover art for MBID ${mbid}:`, error);
+  }
+  return null;
+}
 
 export default async function () {
   const USER_NAME = process.env.LISTENBRAINZ_USER;
@@ -13,34 +24,20 @@ export default async function () {
     });
     const albums = listenBrainzResponse.payload.releases.slice(0, 8);
 
-    const spotifyAccessToken = await getSpotifyAccessToken();
-
-    const albumsWithSpotify = await Promise.all(
+    const albumsWithCoverArt = await Promise.all(
       albums.map(async (album) => {
-        try {
-          const spotifyAlbum = await searchSpotifyAlbum(album.release_name, album.artist_name, spotifyAccessToken);
-          const image = spotifyAlbum.images.length > 0 ? spotifyAlbum.images[0].url : null;
-          return {
-            name: album.release_name,
-            artist: { name: album.artist_name },
-            playcount: album.listen_count,
-            mbid: album.release_mbid,
-            image: image
-          };
-        } catch (error) {
-          console.error(`Error fetching Spotify data for album '${album.release_name}':`, error);
-          return {
-            name: album.release_name,
-            artist: { name: album.artist_name },
-            playcount: album.listen_count,
-            mbid: album.release_mbid,
-            image: null
-          };
-        }
+        const image = await getCoverArtUrl(album.release_mbid);
+        return {
+          name: album.release_name,
+          artist: { name: album.artist_name },
+          playcount: album.listen_count,
+          mbid: album.release_mbid,
+          image: image
+        };
       })
     );
 
-    return albumsWithSpotify;
+    return albumsWithCoverArt;
   } catch (error) {
     console.error('Error fetching ListenBrainz data:', error);
     throw error;
