@@ -8,8 +8,8 @@ on:
       - main
 
 jobs:
-  build-main-content:
-    name: "Build Main Content"
+  build-and-deploy:
+    name: "Flamed Fury: Build and Deploy"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,11 +37,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-eleventy-
 
-      - name: Build main content
+      - name: Build website
         run: |
           set -e
           npm install
-          npm run build -- --ignore=index.html --ignore=feed.xml --ignore=feed.json --ignore=bookmarks-feed.json --ignore=bookmarks-feed.xml
+          npm run build
         env:
           OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
@@ -55,7 +55,7 @@ jobs:
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
           LISTENBRAINZ_USER: ${{ secrets.LISTENBRAINZ_USER }}
 
-      - name: Deploy main content
+      - name: Deploy website to server
         uses: easingthemes/ssh-deploy@v5.0.3
         env:
           SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
@@ -64,7 +64,7 @@ jobs:
           REMOTE_USER: ${{ secrets.CPANEL_USER }}
           SOURCE: "dist/"
           TARGET: ${{ secrets.CPANEL_TARGET }}
-          EXCLUDE: ".git*, .github*, node_modules*, src*, index.html, feed.xml, feed.json, bookmarks-feed.json, bookmarks-feed.xml"
+          EXCLUDE: ".git*, .github*, node_modules*, src*"
           ARGS: "-avzr --delete"
 
       - name: Cache build artifacts
@@ -82,61 +82,3 @@ jobs:
             src/assets/images/template
             src/assets/og-images/
           key: 11ty-${{ runner.os }}-${{ github.run_id }}
-
-  build-and-deploy-index-and-feeds:
-    name: "Build and Deploy Index and Feeds"
-    needs: build-main-content
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: "npm"
-
-      - name: Restore cache
-        uses: actions/cache/restore@v4
-        with:
-          path: |
-            .cache/
-            src/assets/fonts/
-            src/assets/images/buttons
-            src/assets/images/experiments
-            src/assets/images/favicon
-            src/assets/images/pages
-            src/assets/images/posts
-            src/assets/images/vinyl
-            src/assets/images/template
-            src/assets/og-images/
-          key: 11ty-${{ runner.os }}-${{ github.run_id }}
-
-      - name: Build index and feeds
-        run: |
-          set -e
-          npm install
-          npm run build -- --input=. --filter=index.html --filter=feed.xml --filter=feed.json --filter=bookmarks-feed.json --filter=bookmarks-feed.xml
-        env:
-          OMG_LOL_KEY: ${{ secrets.OMG_LOL_KEY }}
-          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-          STEAM_KEY: ${{ secrets.STEAM_KEY }}
-          STEAM_ID: ${{ secrets.STEAM_ID }}
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-          TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
-          TRAKT_KEY: ${{ secrets.TRAKT_KEY }}
-          TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
-          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
-          LISTENBRAINZ_USER: ${{ secrets.LISTENBRAINZ_USER }}
-
-      - name: Deploy index and feeds
-        uses: easingthemes/ssh-deploy@v5.0.3
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.CPANEL_HOST }}
-          REMOTE_PORT: ${{ secrets.CPANEL_PORT }}
-          REMOTE_USER: ${{ secrets.CPANEL_USER }}
-          SOURCE: "dist/"
-          TARGET: ${{ secrets.CPANEL_TARGET }}
-          INCLUDE: "index.html,feed.xml,feed.json,bookmarks-feed.json,bookmarks-feed.xml"
-          ARGS: "-avzr"
