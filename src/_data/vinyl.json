@@ -1,6 +1,20 @@
 {
   "albums": [
     {
+      "title": "GNX",
+      "artist": "Kendrick Lamar",
+      "year": 2024,
+      "format": "vinyl",
+      "genre": "Hip Hop",
+      "label": "pgLang",
+      "code": "",
+      "varient": "Limited Edition Grey",
+      "number": "",
+      "image": "./src/assets/images/vinyl/kendrick-gnx.jpg",
+      "alt": "Cover of the album",
+      "comment": "MUSTAAAAAAAAAAAAAAAARD!!"
+    },
+    {
       "title": "Kaupapa Driven Rhymes Uplifted",
       "artist": "Dam Native",
       "year": 2024,
