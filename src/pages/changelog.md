@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- March 08, 2025
+-- Added Wowhead tooltip support.
+
 - January 30, 2025
 -- Improved the readability of the homepage heading.
 -- Improved the [Bookshelf](/bookshelf/) page styling, and added the currently reading and just finished book.

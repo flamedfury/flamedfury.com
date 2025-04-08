@@ -11,6 +11,7 @@ date: 2025-02-26
 timestamp: 2025-02-26T11:20:30.154Z
 image: './src/assets/images/posts/2025/2025-02-26_let-me-solo-him.png'
 alt: 'My World of Warcraft character, a Marksmanship Hunter stands triumphantly beside a defeated Zekvir in his dark, webbed lair. Overlaid text reads: "Let Me Solo Him" and "Hunting the Hunter," both featuring the in-game achievements associated with the kill.'
+wowhead: true
 ---
 
 What's going on, Internet? Last night just as the servers went down before the patch 11.1.0 updates were made I managed to kill Zekvir ?? and complete the achievements [Hunting The Hunter](https://www.wowhead.com/achievement=40431/hunting-the-hunter) and [Let Me Solo Him: Zekvir](https://www.wowhead.com/achievement=40433/let-me-solo-him-zekvir), both which required to kill Zekvir on Tier ?? before the end of Season 1.

@@ -12,6 +12,7 @@ hashtags:
 date: 2024-10-02
 timestamp: 2024-10-01T20:57:08.543Z
 redirectFrom: ['/posts/monhtly-recap-september-2024/']
+wowhead: true
 ---
 
 What's going on, Internet? It's been an interesting month starting back at work after being off for four months on parental leave.

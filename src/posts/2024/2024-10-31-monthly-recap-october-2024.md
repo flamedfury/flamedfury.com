@@ -11,6 +11,7 @@ hashtags:
   - indieweb
 date: 2024-11-05
 timestamp: 2024-10-31T20:13:04.735Z
+wowhead: true
 ---
 
 What's going on, Internet? Well, I drafted this on Thursday the 31st of October and am finally publishing it today. A long weekend away with family and juggling kids and sickness across the family didn't lend itself to having any free time for any website work! Such is life, hey?
