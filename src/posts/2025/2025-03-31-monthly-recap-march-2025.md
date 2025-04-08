@@ -1,7 +1,7 @@
 ---
 title: "Monthly Recap: March 2025"
-description:
-tags:
+description: Moving city, writing workshops, playing golf, and winning at Warcraft...
+tags: monthly-recap
 hashtags:
 date: 2025-03-31
 timestamp: 2025-04-08T01:33:09.896Z
