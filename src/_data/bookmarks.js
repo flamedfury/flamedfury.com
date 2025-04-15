@@ -1,14 +1,20 @@
 import EleventyFetch from '@11ty/eleventy-fetch';
-import slugify from 'slugify';
 
 export default async function () {
   const url = 'https://raw.githubusercontent.com/flamedfury/metadata-library/main/_data/bookmarks.json';
 
-  // returning promise
+  // Fetch the full data
   const data = await EleventyFetch(url, {
-    duration: '1h',
+    duration: '1d',
     type: 'json'
   });
 
-  return data;
+  // Transform/filter the data before returning
+  return data.map(bookmark => ({
+    title: bookmark.title,
+    url: bookmark.url,
+    notes: bookmark.notes,
+    quote: bookmark.quote,
+    timestamp: bookmark.timestamp || bookmark.date,
+  }));
 }
