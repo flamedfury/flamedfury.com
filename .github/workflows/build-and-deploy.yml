@@ -67,18 +67,12 @@ jobs:
           EXCLUDE: ".git*, .github*, node_modules*, src*"
           ARGS: "-avzr --delete"
 
-      - name: Cache build artifacts
-        uses: actions/cache/save@v4
+      - name: Cache Eleventy image output
+        uses: actions/cache@v4
         with:
           path: |
-            .cache/
-            src/assets/fonts/
-            src/assets/images/buttons
-            src/assets/images/experiments
-            src/assets/images/favicon
-            src/assets/images/pages
-            src/assets/images/posts
-            src/assets/images/vinyl
-            src/assets/images/template
-            src/assets/og-images/
-          key: 11ty-${{ runner.os }}-${{ github.run_id }}
+            .cache
+            dist/assets/images
+          key: eleventy-img-${{ runner.os }}-${{ hashFiles('src/assets/images/**/*') }}
+          restore-keys: |
+            eleventy-img-${{ runner.os }}-
