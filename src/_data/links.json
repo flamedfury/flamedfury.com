@@ -473,6 +473,18 @@
       "url": "http://biglist.terraaeon.com/",
       "feed": "",
       "note": "Terraaeon is maintaing a big list of personal websites. Submission form at the bottom."
+    },
+    {
+      "name": "smallweb",
+      "url": "https://smallweb.cc/",
+      "feed": "",
+      "note": "smallweb is a carefully curated collection of neat indie websites that get less attention than they deserve."
+    },
+    {
+      "name": "minifeed",
+      "url": "https://minifeed.net",
+      "feed": "",
+      "note": "Minifeed is a curated blog reader and search engine. A collection of humans-written blogs to make them discoverable and searchable."
     }
   ],
   "linkBlogs": [
