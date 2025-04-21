@@ -10,7 +10,7 @@ dotenv.config();
 import yaml from 'js-yaml';
 
 //  config import
-import {getAllPosts, onlyMarkdown, tagList, tagCollections, allBookmarks, filterFeedPosts, postsByYear, booksByYear} from './src/_config/collections.js';
+import {getAllPosts, onlyMarkdown, tagList, tagCollections, allBookmarks, filterFeedPosts, postsByYear, booksByYear, releasesCollection, artistsCollection, genresCollection, formatsCollection, releaseYearsCollection} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
@@ -37,6 +37,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('filterFeedPosts', filterFeedPosts);
   eleventyConfig.addCollection('postsByYear', postsByYear);
   eleventyConfig.addCollection('booksByYear', booksByYear);
+  eleventyConfig.addCollection("releases", releasesCollection);
+  eleventyConfig.addCollection("artists", artistsCollection);
+  eleventyConfig.addCollection("genres", genresCollection);
+  eleventyConfig.addCollection("formats", formatsCollection);
+  eleventyConfig.addCollection("releaseYears", releaseYearsCollection);
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
@@ -89,6 +94,22 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('limit', filters.limit);
   eleventyConfig.addFilter('filterByProperty', filters.filterByProperty);
   eleventyConfig.addFilter('postDate', filters .postDate);
+  eleventyConfig.addFilter('sortByProperty', filters.sortByProperty);
+  eleventyConfig.addFilter('slice', filters.slice);
+  eleventyConfig.addFilter('dictsort', filters.dictsort);
+  eleventyConfig.addFilter('setAttribute', filters.setAttribute);
+  eleventyConfig.addFilter('groupItems', filters.groupItems);
+  eleventyConfig.addFilter("sortByDateAdded", function(collection) {
+    return collection.slice().sort((a, b) => {
+      // Handle missing data objects
+      const aDate = a.data?.date_added || a.date_added || "1970-01-01";
+      const bDate = b.data?.date_added || b.date_added || "1970-01-01";
+
+      return new Date(aDate) - new Date(bDate);
+    });
+  });
+
+
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);

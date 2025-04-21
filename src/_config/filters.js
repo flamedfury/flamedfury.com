@@ -12,6 +12,11 @@ import {split} from './filters/splitstring.js';
 import {limit} from './filters/limit.js';
 import {filterByProperty} from './filters/filter-by-property.js';
 import {postDate} from './filters/postDate.js'
+import { sortByProperty } from './filters/sort-by-property.js';
+import { slice } from './filters/slice.js';
+import { dictsort } from './filters/dictsort.js';
+import { setAttribute } from './filters/set-attribute.js';
+import { groupItems } from './filters/group-items.js';
 
 export default {
   toISOString,
@@ -28,5 +33,10 @@ export default {
   split,
   limit,
   filterByProperty,
-  postDate
+  postDate,
+  sortByProperty,
+  slice,
+  dictsort,
+  setAttribute,
+  groupItems
 };
