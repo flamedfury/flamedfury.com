@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- March 21, 2025
+- Complete revamp of the [Recordshelf](/recordshelf/). Let me know what you think.
+
 - March 15, 2025
 -- Updated the links page with two new additions to the [Webdirectories](/links/#webdirs) section.
 
