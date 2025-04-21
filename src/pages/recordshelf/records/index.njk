@@ -1,0 +1,54 @@
+---
+title: "Records | Recordshelf"
+permalink: "/recordshelf/records/index.html"
+layout: base
+---
+
+<article class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+  <h1 class="gradient-text" style="font-size: var(--size-step-5);">Records</h1>
+
+  <nav aria-label="breadcrumb" class="cluster breadcrumb-nav">
+    <ul class="cluster" role="list">
+      <li><a href="/recordshelf/">Recordshelf</a></li>
+      <li>Records</li>
+    </ul>
+  </nav>
+
+  <section class="section flow" style="--flow-space: var(--space-l);">
+    <header class="cluster" style="--gutter: var(--space-s)">
+      <h2>The Collection</h2>
+      <p class="counter">{{ collections.releases.length }} records</p>
+    </header>
+
+    {% set sortedReleases = collections.releases | sortByDateAdded | reverse %}
+
+    <div class="grid" data-layout="records">
+      {% for release in sortedReleases %}
+      <article class="record-card">
+        <a href="/recordshelf/records/{{ release.title | slugify }}/" class="record-card__link">
+          <img src="/assets/images/vinyl/{{ release.title | slugify }}.jpg" alt="{{ release.title }} album cover"
+            class="record-card__image" loading="lazy" width="400" height="400">
+
+          <div class="record-card__meta">
+            <h2>{{ release.artist }} - {{ release.title }}</h2>
+            <p class="record-card__year">{{ release.year }}</p>
+            {% if release.favourite %}
+            <span class="record-card__favourite">★</span>
+            {% endif %}
+            {% if release.date_added %}
+            <time class="record-card__date" datetime="{{ release.date_added | formatDate('YYYY-MM-DD') }}">
+              Added {{ release.date_added | formatDate("MMMM D, YYYY") }}
+            </time>
+            {% endif %}
+          </div>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+</article>
+
+{% css "local" %}
+{% include "css/recordshelf.css" %}
+{% endcss %}

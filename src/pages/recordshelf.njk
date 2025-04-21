@@ -2,72 +2,174 @@
 title: Recordshelf
 description: This page details my growing vinyl collection. It includes photos of the cover, sleeves and the vinyl itself, along with commentary on my thoughts on the packaging and the music itself.
 permalink: /recordshelf/index.html
+date: 2025-04-16
+updated: 2025-04-16
 layout: page
-date: 2022-03-22
-updated: 2023-01-23
-grid:
-  sizes: "(max-width: 615px) 50vw, 100vw"
-  widths: [100, 520]
 ---
 
-<p>
-  I am big fan of vinyl records for their unique sound quality. The warmth and richness of
-  the audio is unparalleled by digital formats, and the smooth conveyance of analog
-  recordings truly immerses me in the music. The added texture of the crackle and pop of
-  the subtle imperfections only adds to the charm of listening to music on vinyl.
-</p>
+  <div class="flow" style="--flow-space: var(--space-m);">
+    <p>
+      I am big fan of vinyl records for their unique sound quality. The warmth and richness of
+      the audio is unparalleled by digital formats, and the smooth conveyance of analog
+      recordings truly immerses me in the music. The added texture of the crackle and pop of
+      the subtle imperfections only adds to the charm of listening to music on vinyl.
+    </p>
 
-<p>
-  It's not just the sound that makes vinyl so unique, but also the physical experience of
-  handling the record, placing it on the turntable, and watching it spin as the music
-  plays.
-</p>
+    <p>
+      It's not just the sound that makes vinyl so unique, but also the physical experience of
+      handling the record, placing it on the turntable, and watching it spin as the music
+      plays.
+    </p>
 
-<p>
-  It's a ritual that can't be replicated with digital formats. That's why vinyl is my
-  go-to medium for listening to music, as it truly allows me to fully appreciate and enjoy
-  the music.
-</p>
+    <p>
+      It's a ritual that can't be replicated with digital formats. That's why vinyl is my
+      go-to medium for listening to music, as it truly allows me to fully appreciate and enjoy
+      the music.
+    </p>
 
-<p>Enjoy the collection.</p>
+    <p>Enjoy the collection.</p>
+  </div>
 
-<article class="full section" style="--spot-color: var(--color-bg-accent)">
-  {% svg "divider/soft-top", null, "seperator" %}
-  <section class="section__inner wrapper">
+  <!-- Quick Stats Section -->
+  <section class="full section" style="--spot-color: var(--color-bg-accent)">
+    {% svg "divider/soft-top", null, "seperator" %}
+    <div class="section__inner wrapper flow" style="--flow-space: var(--space-l);">
+      <h2>Quick Stats</h2>
+      <div class="grid">
+        <!-- Top Artists -->
+        {% set sortedArtists = collections.artists | sort(true, false, 'releases.length') | slice(5) %}
+        <section class="stats-card">
+          <h3 class="stats-card__title">Top Artists</h3>
+          <ul class="stats-list" role="list">
+            {% for artistData in sortedArtists %}
+            <li class="stats-list__item">
+              <a href="/recordshelf/artists/{{ artistData.artist | slugify }}" class="stats-list__label">
+                {{ artistData.artist }}
+              </a>
+              <span class="stats-list__value">{{ artistData.releases | length }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="stats-card__footer">
+            <a href="/recordshelf/artists/" class="button">All artists</a>
+          </div>
+        </section>
 
-    {%- for record in vinyl.albums -%}
-    <a href="#{{ record.title | slug }}">
-      <h2 id="{{ record.title | slug }}">{{ record.title }}</h2>
-    </a>
-      <div class="recordshelf sidebar flow">
-        <div class="recordshelf-cover">
-        {% eleventyImage record.image,
-          "the album cover for {{ record.title }}", null, lazy, "(min-width:30em) 50vw, 100vw", [200, 400] %}
-        </div>
-        <div class="recordshelf-info stack">
-          <dl class="recordshelf-grid">
-            <dt class="recordshelf-label">Artist</dt>
-            <dd class="recordshelf-detail">{{ record.artist }}</dd>
-            <dt class="recordshelf-label">Year</dt>
-            <dd class="recordshelf-detail">{{ record.year }}</dd>
-            <dt class="recordshelf-label">Genre</dt>
-            <dd class="recordshelf-detail">{{ record.genre }}</dd>
-            <dt class="recordshelf-label">Label</dt>
-            <dd class="recordshelf-detail">{{ record.label }} {% if record.code %}/ {{ record.code }}{% endif %}</dd>
-            {% if record.varient %}
-            <dt class="recordshelf-label">Variant</dt>
-            <dd class="recordshelf-detail">{{ record.varient }} {{ record.number }}</dd>
-            {% endif %}
-          </dl>
-          <p class="recordshelf-comment">
-            {{ record.comment }}
-          </p>
-        </div>
+        <!-- Top Genres -->
+        {% set genreCounts = {} %}
+        {% for genreItem in collections.genres %}
+        {% set genreCounts = genreCounts | setAttribute(genreItem.genre, genreItem.releases.length) %}
+        {% endfor %}
+        {% set sortedGenres = genreCounts | dictsort | slice(5) %}
+        <section class="stats-card">
+          <h3 class="stats-card__title">Top Genres</h3>
+          <ul class="stats-list" role="list">
+            {% for genre, count in sortedGenres %}
+            <li class="stats-list__item">
+              <a href="/recordshelf/genres/{{ genre | slugify }}" class="stats-list__label">
+                {{ genre }}
+              </a>
+              <span class="stats-list__value">{{ count }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="stats-card__footer">
+            <a href="/recordshelf/genres/" class="button">All genres</a>
+          </div>
+        </section>
+
+        <!-- Top Years -->
+        {% set sortedYears = collections.releaseYears | sort(true, false, 'releases.length') | slice(5) %}
+        <section class="stats-card">
+          <h3 class="stats-card__title">Top Years</h3>
+          <ul class="stats-list" role="list">
+            {% for item in sortedYears %}
+            <li class="stats-list__item">
+              <a href="/recordshelf/years/{{ item.year }}/" class="stats-list__label">
+                {{ item.year }}
+              </a>
+              <span class="stats-list__value">{{ item.releases.length }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          <div class="stats-card__footer">
+            <a href="/recordshelf/years/" class="button">All years</a>
+          </div>
+        </section>
       </div>
-    {% endfor %}
+    </div>
+    {% svg "divider/soft-bottom", null, "seperator" %}
   </section>
-  {% svg "divider/soft-bottom", null, "seperator" %}
-</article>
+
+  <!-- Favourites Section -->
+  {% set favoriteReleases = collections.releases | selectattr("favourite", "equalto", true) | slice(8) %}
+  {% set favoriteCount = collections.releases | selectattr("favourite", "equalto", true) | length %}
+  <section class="section flow" style="--flow-space: var(--space-l);">
+    <header class="cluster" style="--gutter: var(--space-s)">
+      <h2>Favourites</h2>
+      <p class="counter">{{ favoriteCount }} record{% if favoriteCount != 1 %}s{% endif %}</p>
+    </header>
+
+    <div class="grid" style="--grid-min-item-size: 12rem;">
+      {% for release in favoriteReleases %}
+        <article class="record-card">
+          <a href="/recordshelf/records/{{ release.title | slugify }}" class="record-card__link">
+            <img
+              src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
+              alt="{{ release.title }} album cover"
+              class="record-card__image"
+              loading="lazy"
+              width="400"
+              height="400">
+
+            <div class="record-card__meta">
+              <h3>{{ release.title }}</h3>
+              <p>{{ release.artist }}</p>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section class="section flow" style="--flow-space: var(--space-l);">
+    <header class="cluster" style="--gutter: var(--space-s)">
+      <h2>The Collection</h2>
+      <p class="counter">{{ collections.releases.length }} records</p>
+    </header>
+
+    <div class="grid" style="--grid-min-item-size: 12rem;">
+      {% set sortedReleases = collections.releases | sortByDateAdded | reverse | slice(8) %}
+      {% for release in sortedReleases %}
+        <article class="record-card">
+          <a href="/recordshelf/records/{{ release.title | slugify }}" class="record-card__link">
+            <img
+              src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
+              alt="{{ release.title }} album cover"
+              class="record-card__image"
+              loading="lazy"
+              width="400"
+              height="400">
+
+            <div class="record-card__meta">
+              <h3>{{ release.title }}</h3>
+              <p>{{ release.artist }}</p>
+              {% if release.year %}<p>{{ release.year }}</p>{% endif %}
+              {% if release.favourite %}<span class="record-card__favourite">★</span>{% endif %}
+              {% if release.date_added %}
+                <time class="record-card__date" datetime="{{ release.date_added | formatDate('YYYY-MM-DD') }}">
+                  Added {{ release.date_added | formatDate("MMMM D, YYYY") }}
+                </time>
+              {% endif %}
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+
+    <a href="/recordshelf/records/" class="button">View Full Collection</a>
+  </section>
 
 {% css "local" %}
   {% include "css/recordshelf.css" %}

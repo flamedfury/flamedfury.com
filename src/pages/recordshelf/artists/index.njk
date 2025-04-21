@@ -1,0 +1,58 @@
+---
+title: Artists | Recordshelf
+permalink: "/recordshelf/artists/index.html"
+layout: base
+---
+
+<article class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+  <h1 class="gradient-text" style="font-size: var(--size-step-5);">Artists</h1>
+
+  <nav aria-label="breadcrumb" class="cluster breadcrumb-nav">
+    <ul class="cluster" role="list">
+      <li><a href="/recordshelf/">Recordshelf</a></li>
+      <li>Artists</li>
+    </ul>
+  </nav>
+
+  {% set groupedItems = collections.artists | sort(attribute='artist') | groupItems('artist') %}
+
+  <div class="taglist | mt-s-m cluster">
+    {% for group in groupedItems %}
+    <a href="#{{ group[0] | lower }}" class="button button--small">
+      {{ group[0] }}
+    </a>
+    {% endfor %}
+  </div>
+
+  {% for group in groupedItems %}
+  <section class="flow" style="--flow-space: var(--space-m)">
+    <header class="cluster" style="--gutter: var(--space-xs)">
+      <h2 id="{{ group[0] | lower }}" class="title">{{ group[0] }}</h2>
+      <span class="counter">{{ group[1] | length }} artist{% if group[1] | length != 1 %}s{% endif %}</span>
+    </header>
+
+    <div class="grid" data-layout="records">
+      {% for artist in group[1] %}
+      <article class="artist-card surface flow" style="--flow-space: var(--space-xs)">
+        <a href="/recordshelf/artists/{{ artist.artist | slugify }}" class="artist-card__link">
+          <div class="artist-card__content">
+            <h3 class="title">{{ artist.artist }}</h3>
+            <p class="meta">
+              <span class="counter">{{ artist.releases.length }}</span>
+              release{% if artist.releases.length != 1 %}s{% endif %}
+            </p>
+          </div>
+          <svg width="24" height="24" viewBox="0 0 24 24" class="artist-card__icon icon-stroke" aria-hidden="true">
+            <use xlink:href="#icon-chevron-right"></use>
+          </svg>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</article>
+
+{% css "local" %}
+  {% include "css/recordshelf.css" %}
+{% endcss %}

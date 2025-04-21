@@ -1,0 +1,105 @@
+---
+pagination:
+  data: collections.releases
+  size: 1
+  alias: release
+permalink: "/recordshelf/records/{{ release.title | slugify }}/index.html"
+eleventyComputed:
+  title: "{{ release.artist }} - {{ release.title }} | Recordshelf"
+layout: base
+---
+
+<article class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+  <h1 class="gradient-text" style="font-size: var(--size-step-5);">{{ release.artist }} - {{ release.title }}</h1>
+
+  <nav aria-label="breadcrumb" class="cluster breadcrumb-nav">
+    <ul class="cluster" role="list">
+      <li><a href="/recordshelf/">Recordshelf</a></li>
+      <li><a href="/recordshelf/records/">Records</a></li>
+      <li>{{ release.title }}</li>
+    </ul>
+  </nav>
+
+  <div class="recordshelf sidebar flow">
+    <div class="recordshelf-cover">
+      <picture>
+        <source type="image/webp" srcset="/assets/images/vinyl/{{ release.title | slugify }}.jpg">
+        <img src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
+             width="400"
+             height="400"
+             alt="{{ release.artist }} - {{ release.title }} album cover"
+             loading="lazy"
+             decoding="async"
+             class="recordshelf-cover__image">
+      </picture>
+    </div>
+
+    <div class="recordshelf-info stack">
+      <dl class="recordshelf-grid">
+        <dt class="recordshelf-label">Artist</dt>
+        <dd class="recordshelf-detail">{{ release.artist }}</dd>
+
+        <dt class="recordshelf-label">Year</dt>
+        <dd class="recordshelf-detail">{{ release.year }}</dd>
+
+        <dt class="recordshelf-label">Genre</dt>
+        <dd class="recordshelf-detail">{{ release.genres | join(', ') }}</dd>
+
+        <dt class="recordshelf-label">Label</dt>
+        <dd class="recordshelf-detail">{{ release.label }}</dd>
+
+        <dt class="recordshelf-label">Format</dt>
+        <dd class="recordshelf-detail">
+          {% if release.formats %}
+            {% for format in release.formats %}
+              {{ format.name }}
+              {% if format.descriptions %}
+                ({{ format.descriptions | join(', ') }})
+              {% endif %}
+              {% if not loop.last %}, {% endif %}
+            {% endfor %}
+          {% else %}
+            {{ release.format }}
+          {% endif %}
+        </dd>
+
+        <dt class="recordshelf-label">Released</dt>
+        <dd class="recordshelf-detail">{{ release.first_released | formatDate("MMMM D, YYYY") }}</dd>
+
+        <dt class="recordshelf-label">Added</dt>
+        <dd class="recordshelf-detail">{{ release.date_added | formatDate("MMMM D, YYYY") }}</dd>
+      </dl>
+
+      {% if release.notes %}
+        <p class="recordshelf-comment">
+          {{ release.notes }}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+
+  <section class="full section" style="--spot-color: var(--color-bg-accent)">
+    {% svg "divider/soft-top", null, "seperator" %}
+    <div class="section__inner wrapper">
+      <h2>Tracklist</h2>
+      <ol class="tracklist">
+        {% for track in release.tracklist %}
+          <li class="tracklist__item">
+            <span class="tracklist__position">{{ track.position }}</span>
+            <span class="tracklist__title">{{ track.title }}</span>
+            {% if track.duration and track.duration.length > 0 %}
+              <span class="duration">{{ track.duration }}</span>
+            {% else %}
+              <span class="duration">--:--</span>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% svg "divider/soft-bottom", null, "seperator" %}
+  </section>
+</article>
+
+{% css "local" %}
+  {% include "css/recordshelf.css" %}
+{% endcss %}

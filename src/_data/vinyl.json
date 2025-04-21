@@ -10,7 +10,7 @@
       "code": "",
       "varient": "Limited Edition Grey",
       "number": "",
-      "image": "./src/assets/images/vinyl/kendrick-gnx.jpg",
+      "image": "./src/assets/images/vinyl/gnx.jpg",
       "alt": "Cover of the album",
       "comment": "MUSTAAAAAAAAAAAAAAAARD!!"
     },
@@ -24,7 +24,7 @@
       "code": "",
       "varient": "Dark Red Marbled",
       "number": "",
-      "image": "./src/assets/images/vinyl/dam-native.jpg",
+      "image": "./src/assets/images/vinyl/kaupapa-driven-rhymes-uplifted.jpg",
       "alt": "Cover of the album",
       "comment": "Aotearoa's lost hip hop classic, reissued years after going out of print."
     },
@@ -52,7 +52,7 @@
       "code": "",
       "varient": "Red & Blue Opaque",
       "number": "",
-      "image": "./src/assets/images/vinyl/the-death-of-slim-shady.jpg",
+      "image": "./src/assets/images/vinyl/the-death-of-slim-shady-coup-de-grace.jpg",
       "alt": "Cover of the album",
       "comment": "My personal album of the year 2024."
     },
@@ -66,7 +66,7 @@
       "code": "ALC-5056",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/gangrene-heads-i-win-tails-you-lose.jpg",
+      "image": "./src/assets/images/vinyl/heads-i-win-tails-you-lose.jpg",
       "alt": "Cover of the album",
       "comment": "Gangrene is a group made up by rapper/producers The Alchemist and Oh No. This album has sick artwork, and bangs."
     },
@@ -94,7 +94,7 @@
       "code": "86868-1",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/offspring-smash.png",
+      "image": "./src/assets/images/vinyl/smash.jpg",
       "alt": "Cover of the album",
       "comment": "Smash is my favourite Offspring album. Reports indicate that this album sounds horrible on vinyl. I'll let you know when I get a chance to open it up to play."
     },
@@ -122,7 +122,7 @@
       "code": "YGB006",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/trees.png",
+      "image": "./src/assets/images/vinyl/trees.jpg",
       "alt": "Cover of the album",
       "comment": "Second Avantdale Bowling Club project. Solid rap album. Aotearoa music rules."
     },
@@ -136,7 +136,7 @@
       "code": "YGB001",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/avantdale-bowling-club.png",
+      "image": "./src/assets/images/vinyl/avantdale-bowling-club.jpg",
       "alt": "Cover of the album",
       "comment": "New project by Tom Scott (Home Brew). Gatefold cover includes download card. Tracks D1, D2, and D3 are vinyl exclusive bonus tracks."
     },
@@ -164,7 +164,7 @@
       "code": "YGB000",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/home-brew.png",
+      "image": "./src/assets/images/vinyl/home-brew-11th-anniversary-edition.jpg",
       "alt": "Cover of the album",
       "comment": "Re-issue for the 11th anniversary. \"Last Day\" found on all other releases was dropped to fit vinyl time constraints, 3000 made."
     },
@@ -178,7 +178,7 @@
       "code": "YGB007",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/home-brew-run-it-back.jpg",
+      "image": "./src/assets/images/vinyl/run-it-back.jpg",
       "alt": "Cover of the album",
       "comment": "The last Home Brew album was eleven years ago. This one is great, lots of retrospect, lots of the same living."
     },
@@ -192,7 +192,7 @@
       "code": "",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/mac-miller-swimming.jpg",
+      "image": "./src/assets/images/vinyl/swimming.jpg",
       "alt": "Cover of the album",
       "comment": "What an amazing album. RIP Mac Miller. "
     },
@@ -206,7 +206,7 @@
       "code": "",
       "varient": "Translucent Blue",
       "number": "",
-      "image": "./src/assets/images/vinyl/mac-miller-tiny-desk.jpeg",
+      "image": "./src/assets/images/vinyl/npr-music-tiny-desk-concert.jpg",
       "alt": "Cover of the album",
       "comment": "Translucent blue LP with B-side etching.  NPR Music Tiny Desk Concert vinyl, featuring the live recording of the 2018 performance from NPR Headquarters in Washington, D.C. "
     },
@@ -346,7 +346,7 @@
       "code": "",
       "varient": "Cream",
       "number": "",
-      "image": "./src/assets/images/vinyl/my-perogative.jpg",
+      "image": "./src/assets/images/vinyl/greatest-hits-my-prerogative.jpg",
       "alt": "Cover of the album",
       "comment": "Limited Edition, Reissue, Cream."
     },
@@ -388,7 +388,7 @@
       "code": "",
       "varient": "Purple",
       "number": "",
-      "image": "./src/assets/images/vinyl/oops-i-did-it-again.jpg",
+      "image": "./src/assets/images/vinyl/oopsi-did-it-again.jpg",
       "alt": "Cover of the album",
       "comment": "Limited Edition, Reissue, Purple."
     },
@@ -402,7 +402,7 @@
       "code": "GET51295",
       "varient": "Picture Disc",
       "number": "RPD1",
-      "image": "./src/assets/images/vinyl/return-to-the-36-chambers.jpg",
+      "image": "./src/assets/images/vinyl/return-to-the-36-chambers-the-dirty-version.jpg",
       "alt": "Cover of the album",
       "comment": "Record Store Day, Limited Edition, Picture Disc, Reissue, Remastered."
     },
@@ -458,7 +458,7 @@
       "code": "",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/enter-the-wu-tang.jpg",
+      "image": "./src/assets/images/vinyl/enter-the-wu-tang-36-chambers.jpg",
       "alt": "Cover of the album",
       "comment": "2016, 180 gram reissue."
     },
@@ -472,7 +472,7 @@
       "code": "",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/temples-of-boom.jpg",
+      "image": "./src/assets/images/vinyl/iii-temples-of-boom.jpg",
       "alt": "Cover of the album",
       "comment": "2017, 180 gram reissue."
     },
@@ -486,7 +486,7 @@
       "code": "IRFT60299",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/mad-lyrics-of-my-life.jpg",
+      "image": "./src/assets/images/vinyl/mad.jpg",
       "alt": "Cover of the album",
       "comment": "Found in an antique store that also stocks records in Greytown."
     },
@@ -640,7 +640,7 @@
       "code": "BRK153",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/every-hero-needs-a-villian.jpg",
+      "image": "./src/assets/images/vinyl/every-hero-needs-a-villain.jpg",
       "alt": "Cover of the album",
       "comment": "Great second album from Czarface. Dope artwork by Lamour Supreme."
     },
@@ -752,7 +752,7 @@
       "code": "",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/number-1s.jpg",
+      "image": "./src/assets/images/vinyl/1s.jpg",
       "alt": "Cover of the album",
       "comment": "Record Store Day 2022 exclusive release of the original 1998 release. 7050 copies. Includes the track Fantasy featuing ODB."
     },
@@ -906,7 +906,7 @@
       "code": "DRW076",
       "varient": "",
       "number": "220/500",
-      "image": "./src/assets/images/vinyl/no-one-mournes-the-wicked.jpg",
+      "image": "./src/assets/images/vinyl/no-one-mourns-the-wicked.jpg",
       "alt": "Cover of the album",
       "comment": "Black record, limited Edition, numbered. First collab between Conway & Big Ghost. Red Beams goes hard."
     },
@@ -934,7 +934,7 @@
       "code": "",
       "varient": "",
       "number": "",
-      "image": "./src/assets/images/vinyl/the-marshal-mathers-lp.jpg",
+      "image": "./src/assets/images/vinyl/the-marshall-mathers-lp.jpg",
       "alt": "Cover of the album",
       "comment": "Certified classic. 180 gram reissue."
     },
@@ -962,7 +962,7 @@
       "code": "",
       "varient": "Red",
       "number": "",
-      "image": "./src/assets/images/vinyl/dmx-the-legacy.jpg",
+      "image": "./src/assets/images/vinyl/the-legacy.jpg",
       "alt": "Cover of the album",
       "comment": "Compilation, Limited Edition, Red Vinyl. Black Friday RSD exclusive; first time on vinyl. Includes censored version of Slippin'."
     },

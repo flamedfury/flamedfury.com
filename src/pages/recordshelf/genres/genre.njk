@@ -1,0 +1,55 @@
+---
+pagination:
+  data: collections.genres
+  size: 1
+  alias: genreData
+permalink: "/recordshelf/genres/{{ genreData.genre | slugify }}/index.html"
+eleventyComputed:
+  title: "{{ genreData.genre }} | Recordshelf"
+layout: base
+---
+
+<article class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+  <h1 class="gradient-text" style="font-size: var(--size-step-5);">{{ genreData.genre }}</h1>
+
+  <nav aria-label="breadcrumb" class="cluster breadcrumb-nav">
+    <ul class="cluster" role="list">
+      <li><a href="/recordshelf/">Recordshelf</a></li>
+      <li><a href="/recordshelf/genres/">Genres</a></li>
+      <li>{{ genreData.genre }}</li>
+    </ul>
+  </nav>
+
+  <section class="full section" style="--spot-color: var(--color-bg-accent)">
+    <div class="section__inner wrapper">
+      <header class="cluster" style="--gutter: var(--space-s)">
+        <h2>Releases</h2>
+        <p class="counter">{{ genreData.releases.length }} record{% if genreData.releases.length != 1 %}s{% endif %}</p>
+      </header>
+      <div class="grid" data-layout="records">
+        {% for release in genreData.releases %}
+          <article class="record-card">
+            <a href="/recordshelf/records/{{ release.title | slugify }}" class="record-card__link">
+              <img src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
+                   alt="{{ release.title }} album cover"
+                   class="record-card__image"
+                   loading="lazy"
+                   width="400"
+                   height="400">
+              <div class="record-card__meta">
+                <h3>{{ release.title }}</h3>
+                <p>{{ release.artist }}</p>
+                {% if release.year %}<p>{{ release.year }}</p>{% endif %}
+                {% if release.favourite %}<span class="record-card__favourite">★</span>{% endif %}
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</article>
+
+{% css "local" %}
+  {% include "css/recordshelf.css" %}
+{% endcss %}
