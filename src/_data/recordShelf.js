@@ -69,7 +69,7 @@ export default async function () {
   try {
     const localData = await fs.readFile('src/_data/recordShelf.json', 'utf8');
     const myCollection = JSON.parse(localData);
-    const releases = await Promise.all(myCollection.map(fetchReleaseDetails));
+    const releases = await fetchDiscogsCollection("iSposeQu");
     return { releases };
   } catch (error) {
     console.error('Error processing music collection:', error);
