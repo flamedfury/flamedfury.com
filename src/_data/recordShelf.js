@@ -8,7 +8,7 @@ const DISCOGS_USER_AGENT = process.env.USER_AGENT;
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function fetchWithRateLimit(url) {
-  await delay(3000);
+  await delay(5000);
   return EleventyFetch(url, {
     duration: "1d",
     type: "json",
@@ -69,7 +69,7 @@ export default async function () {
   try {
     const localData = await fs.readFile('src/_data/recordShelf.json', 'utf8');
     const myCollection = JSON.parse(localData);
-    const releases = await fetchDiscogsCollection("iSposeQu");
+    const releases = await Promise.all(myCollection.map(fetchReleaseDetails));
     return { releases };
   } catch (error) {
     console.error('Error processing music collection:', error);
