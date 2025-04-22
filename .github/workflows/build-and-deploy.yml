@@ -58,7 +58,7 @@ jobs:
           DISCOGS_USER_AGENT: ${{ secrets.USER_AGENT }}
 
       - name: Deploy website to server
-        uses: easingthemes/ssh-deploy@v5.0.3
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.CPANEL_HOST }}
