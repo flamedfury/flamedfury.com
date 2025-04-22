@@ -17,7 +17,8 @@
     "dev:11ty": "cross-env ELEVENTY_ENV=development eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "npm run dev:11ty",
-    "build": "npm run clean && npm run build:11ty"
+    "build": "npm run clean && npm run build:11ty",
+    "fetch-records": "dotenv -e .env node ./src/_config/setup/fetchDiscogs.js"
   },
   "keywords": [],
   "repository": {
@@ -45,6 +46,7 @@
     "cross-env": "^7.0.3",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
+    "dotenv-cli": "^8.0.0",
     "esbuild": "^0.24.0",
     "html-minifier-terser": "^7.1.0",
     "isomorphic-fetch": "^3.0.0",

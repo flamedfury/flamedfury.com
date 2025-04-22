@@ -8,7 +8,7 @@ const DISCOGS_USER_AGENT = process.env.USER_AGENT;
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function fetchWithRateLimit(url) {
-  await delay(1500);
+  await delay(3000);
   return EleventyFetch(url, {
     duration: "1d",
     type: "json",
@@ -26,13 +26,10 @@ async function fetchReleaseDetails(release) {
     console.error('No Discogs ID provided for release:', release.title);
     return release;
   }
-
   const releaseUrl = `https://api.discogs.com/releases/${release.release_id}`;
-
   try {
     const releaseDetails = await fetchWithRateLimit(releaseUrl);
     const uniqueFormats = new Set();
-
     return {
       ...release,
       label: releaseDetails.labels[0]?.name.replace(/\s*\(\d+\)\s*$/, '') || '',
@@ -63,12 +60,8 @@ async function fetchReleaseDetails(release) {
       }))
     };
   } catch (error) {
-    console.error(`Error for ${release.title}:`, {
-      status: error.cause?.status,
-      headers: error.cause?.headers,
-      url: error.cause?.url
-    });
-    throw error;
+    console.error(`Error fetching details for ${release.title}:`, error);
+    return release;
   }
 }
 

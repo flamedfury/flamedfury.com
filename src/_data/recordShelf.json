@@ -6,7 +6,114 @@
     "release_id": 24476186,
     "first_released": "2022-09-00",
     "date_added": "2023-08-22",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Gangsta"
+      ],
+      "labels": [
+        "Aftermath Entertainment",
+        "G Unit",
+        "Interscope Records",
+        "Czar Entertainment"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Intro To The Documentary",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Westside Story",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Dreams",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Hate It Or Love It",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Higher",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "How We Do",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Don't Need Your Love",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Church For Thugs",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Put You On The Game",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Start From Scratch",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "The Documentary",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Runnin'",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "No More Fun And Games",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "We Ain't",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Where I'm From",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Special",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Don't Worry",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Like Father, Like Son",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Eminem",
@@ -15,7 +122,126 @@
     "release_id": 5191929,
     "first_released": "unknown",
     "date_added": "2022-06-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2013,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Conscious",
+        "Pop Rap",
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "Aftermath Entertainment",
+        "Interscope Records",
+        "Shady Records",
+        "Web Entertainment"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Curtains Up (Skit)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "White America",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Business",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Cleanin Out My Closet",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Square Dance",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "The Kiss (Skit)",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Soldier",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Say Goodbye Hollywood",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Drips",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Without Me",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Paul Rosenberg (Skit)",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Sing For The Moment",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Superman",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Hailie's Song",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Steve Berman (Skit)",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "When The Music Stops",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Say What You Say",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Till I Collapse",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "My Dad's Gone Crazy",
+          "duration": ""
+        },
+        {
+          "position": "D6",
+          "title": "Curtains Close (Skit)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Eminem",
@@ -24,7 +250,114 @@
     "release_id": 5252470,
     "first_released": "2000-05-23",
     "date_added": "2021-09-28",
-    "favourite": true
+    "favourite": true,
+    "discogsData": {
+      "year": 2013,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop",
+        "Horrorcore"
+      ],
+      "labels": [
+        "Aftermath Entertainment",
+        "Interscope Records",
+        "Web Entertainment"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Public Service Announcement 2000",
+          "duration": "0:25"
+        },
+        {
+          "position": "A2",
+          "title": "Kill You",
+          "duration": "4:24"
+        },
+        {
+          "position": "A3",
+          "title": "Stan",
+          "duration": "6:44"
+        },
+        {
+          "position": "A4",
+          "title": "Paul (Skit)",
+          "duration": "0:10"
+        },
+        {
+          "position": "A5",
+          "title": "Who Knew",
+          "duration": "3:47"
+        },
+        {
+          "position": "A6",
+          "title": "Steve Berman",
+          "duration": "0:53"
+        },
+        {
+          "position": "B1",
+          "title": "The Way I Am",
+          "duration": "4:50"
+        },
+        {
+          "position": "B2",
+          "title": "The Real Slim Shady",
+          "duration": "4:44"
+        },
+        {
+          "position": "B3",
+          "title": "Remember Me?",
+          "duration": "3:38"
+        },
+        {
+          "position": "B4",
+          "title": "I'm Back",
+          "duration": "5:10"
+        },
+        {
+          "position": "C1",
+          "title": "Marshall Mathers",
+          "duration": "5:20"
+        },
+        {
+          "position": "C2",
+          "title": "Ken Kaniff (Skit)",
+          "duration": "1:01"
+        },
+        {
+          "position": "C3",
+          "title": "Drug Ballad",
+          "duration": "5:00"
+        },
+        {
+          "position": "C4",
+          "title": "Amityville",
+          "duration": "4:14"
+        },
+        {
+          "position": "C5",
+          "title": "B**** Please II",
+          "duration": "4:48"
+        },
+        {
+          "position": "D1",
+          "title": "Kim",
+          "duration": "6:17"
+        },
+        {
+          "position": "D2",
+          "title": "Under The Influence",
+          "duration": "5:22"
+        },
+        {
+          "position": "D3",
+          "title": "Criminal",
+          "duration": "5:19"
+        }
+      ]
+    }
   },
   {
     "artist": "Eminem",
@@ -33,7 +366,120 @@
     "release_id": 32092962,
     "first_released": "2024-10-25",
     "date_added": "2024-11-04",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2024,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Conscious",
+        "Hardcore Hip-Hop",
+        "Horrorcore"
+      ],
+      "labels": [
+        "Aftermath Entertainment",
+        "Shady Records",
+        "Interscope Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Renaissance",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Habits",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Trouble",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Brand New Dance",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Evil",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "All You Got (Skit)",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Lucifer",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "Antichrist",
+          "duration": ""
+        },
+        {
+          "position": "B9",
+          "title": "Fuel",
+          "duration": ""
+        },
+        {
+          "position": "B10",
+          "title": "Road Rage",
+          "duration": ""
+        },
+        {
+          "position": "C11",
+          "title": "Houdini",
+          "duration": ""
+        },
+        {
+          "position": "C12",
+          "title": "Breaking News (Skit)",
+          "duration": ""
+        },
+        {
+          "position": "C13",
+          "title": "Guilty Conscience 2",
+          "duration": ""
+        },
+        {
+          "position": "C14",
+          "title": "Head Honcho",
+          "duration": ""
+        },
+        {
+          "position": "C15",
+          "title": "Temporary",
+          "duration": ""
+        },
+        {
+          "position": "D16",
+          "title": "Bad One",
+          "duration": ""
+        },
+        {
+          "position": "D17",
+          "title": "Tobey",
+          "duration": ""
+        },
+        {
+          "position": "D18",
+          "title": "Guess Who's Back (Skit)",
+          "duration": ""
+        },
+        {
+          "position": "D19",
+          "title": "Somebody Save Me",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Eminem",
@@ -42,7 +488,86 @@
     "release_id": 12896745,
     "first_released": "unknown",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2018,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Aftermath Entertainment",
+        "Shady Records",
+        "Interscope Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "The Ringer",
+          "duration": "5:37"
+        },
+        {
+          "position": "A2",
+          "title": "Greatest",
+          "duration": "3:46"
+        },
+        {
+          "position": "A3",
+          "title": "Lucky You",
+          "duration": "4:04"
+        },
+        {
+          "position": "A4",
+          "title": "Paul (Skit)",
+          "duration": "0:35"
+        },
+        {
+          "position": "A5",
+          "title": "Normal",
+          "duration": "3:42"
+        },
+        {
+          "position": "A6",
+          "title": "Em Calls Paul (Skit)",
+          "duration": "0:49"
+        },
+        {
+          "position": "A7",
+          "title": "Stepping Stone",
+          "duration": "5:09"
+        },
+        {
+          "position": "B8",
+          "title": "Not Alike",
+          "duration": "4:48"
+        },
+        {
+          "position": "B9",
+          "title": "Kamikaze",
+          "duration": "3:36"
+        },
+        {
+          "position": "B10",
+          "title": "Fall",
+          "duration": "4:22"
+        },
+        {
+          "position": "B11",
+          "title": "Nice Guy",
+          "duration": "2:30"
+        },
+        {
+          "position": "B12",
+          "title": "Good Guy",
+          "duration": "2:22"
+        },
+        {
+          "position": "B13",
+          "title": "Venom (Music From The Motion Picture)",
+          "duration": "4:29"
+        }
+      ]
+    }
   },
   {
     "artist": "Eminem",
@@ -51,7 +576,125 @@
     "release_id": 15143735,
     "first_released": "2020-04-00",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop",
+        "Horrorcore"
+      ],
+      "labels": [
+        "Aftermath Entertainment",
+        "Shady Records",
+        "Interscope Records",
+        "Goliath Artists"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Premonition (Intro)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Unaccommodating",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "You Gon' Learn",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Alfred (Interlude)",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Those Kinda Nights",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "In Too Deep",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Godzilla",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "Darkness",
+          "duration": ""
+        },
+        {
+          "position": "B9",
+          "title": "Leaving Heaven",
+          "duration": ""
+        },
+        {
+          "position": "B10",
+          "title": "Yah Yah",
+          "duration": ""
+        },
+        {
+          "position": "C11",
+          "title": "Stepdad (Intro)",
+          "duration": ""
+        },
+        {
+          "position": "C12",
+          "title": "Stepdad",
+          "duration": ""
+        },
+        {
+          "position": "C13",
+          "title": "Marsh",
+          "duration": ""
+        },
+        {
+          "position": "C14",
+          "title": "Never Love Again",
+          "duration": ""
+        },
+        {
+          "position": "C15",
+          "title": "Little Engine",
+          "duration": ""
+        },
+        {
+          "position": "C16",
+          "title": "Lock It Up",
+          "duration": ""
+        },
+        {
+          "position": "D17",
+          "title": "Farewell",
+          "duration": ""
+        },
+        {
+          "position": "D18",
+          "title": "No Regrets",
+          "duration": ""
+        },
+        {
+          "position": "D19",
+          "title": "I Will",
+          "duration": ""
+        },
+        {
+          "position": "D20",
+          "title": "Alfred (Outro)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Gangrene",
@@ -60,7 +703,84 @@
     "release_id": 31466909,
     "first_released": "unknown",
     "date_added": "2024-09-02",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2024,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "ALC Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Congratulations, You Lose",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Dinosaur Jr.",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Oxnard Water Torture",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "The Gates Of Hell",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Cloud Surfing",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Free Money Interlude",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Espionage",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Magic Dust",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Watch Out",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Just Doing Art",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "You Should Join The Army",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Royal Hand",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Muffler Lung",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Conway The Machine, Alchemist",
@@ -69,7 +789,93 @@
     "release_id": 16317756,
     "first_released": "unknown",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Gangsta",
+        "Boom Bap"
+      ],
+      "labels": [
+        "ALC Records",
+        "Drumwork Music Group"
+      ],
+      "tracklist": [
+        {
+          "position": "A0",
+          "title": "Intro",
+          "duration": ""
+        },
+        {
+          "position": "A1",
+          "title": "14 KI's",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "The Contract",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Shoot Sideways",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Calvin",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "They Got Sonny",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Gold BBS's",
+          "duration": ""
+        },
+        {
+          "position": "B0",
+          "title": "Intro Instrumental",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "14 KI's Instrumental",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "The Contract Instrumental",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Shoot Sideways Instrumental",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Calvin Instrumental",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "They Got Sonny Instrumental",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Gold BBS's Instrumental",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Cardi B, Megan Thee Stallion",
@@ -78,7 +884,40 @@
     "release_id": 16961280,
     "first_released": "unknown",
     "date_added": "2023-01-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Atlantic",
+        "KSR Group"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "WAP (Explicit)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "WAP (Amended)",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "WAP (Radio Edit)",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "WAP (Instrumental)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Machine Gun Kelly",
@@ -87,7 +926,100 @@
     "release_id": 16154867,
     "first_released": "2020-11-06",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Hip Hop",
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Pop Punk"
+      ],
+      "labels": [
+        "Bad Boy Entertainment",
+        "Interscope Records",
+        "EST19XX"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Title Track",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Kiss Kiss",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Drunk Face",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Bloody Valentine",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Forget Me Too",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "All I Know",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Lonely",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "WWIII",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Kevin And Barracuda Interlude",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Concert For Aliens",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "My Ex's Best Friend",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Jawbreaker",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Nothing Inside",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Banyan Tree Interlude",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "Play This When I'm Gone",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Czarface",
@@ -96,7 +1028,89 @@
     "release_id": 4295837,
     "first_released": "2013-02-19",
     "date_added": "2022-07-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2013,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Brick Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Czarface Intro",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Air 'Em Out",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Cement 3's",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Czar Refaeli",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Rock Beast",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Savagely Attack",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Marvel Team Up",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "It's Raw",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Let It Off",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Word War 4",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Dead Zone",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Poisonous Thoughts",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Shoguns",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Hazmat Rap",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Czarface",
@@ -105,7 +1119,95 @@
     "release_id": 7117669,
     "first_released": "unknown",
     "date_added": "2022-06-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2015,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Brick Records",
+        "Fly Casual Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Don The Armor",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Czartacus",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Lumber Jack Match",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Nightcrawler",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "World Premier",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "The Great (Czar Guitar)",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Red Alert",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Junkyard Dogs",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Sgt Slaughter",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "When Gods Go Mad",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Ka-Bang!",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Deadly Class",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Escape From Czarkham Asylum",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Sinister",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Good Villains Go Last",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Miley Cyrus",
@@ -114,7 +1216,85 @@
     "release_id": 26330912,
     "first_released": "2023-03-10",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Alt-Pop",
+        "Pop Rock",
+        "Dance-pop",
+        "Psychedelic"
+      ],
+      "labels": [
+        "Columbia"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Flowers",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Jaded",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Rose Colored Lenses",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Thousand Miles",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "You",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Handstand",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "River",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Violet Chemistry",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Muddy Feet",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Wildcard",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Island",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Wonder Woman",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Mariah Carey",
@@ -123,7 +1303,111 @@
     "release_id": 22969166,
     "first_released": "unknown",
     "date_added": "2022-04-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "styles": [
+        "Ballad",
+        "Contemporary R&B"
+      ],
+      "labels": [
+        "Columbia",
+        "Legacy",
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Sweetheart",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "When You Believe (From The Prince of Egypt)",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Whenever You Call",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "My All",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Honey",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Always Be My Baby",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "One Sweet Day",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Fantasy",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Hero",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Dreamlover",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "I'll Be There",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Emotions",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "I Don't Wanna Cry",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Someday",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Love Takes Time",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Vision of Love",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "I Still Believe",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Conway The Machine, Big Ghost LTD",
@@ -132,7 +1416,72 @@
     "release_id": 17972656,
     "first_released": "2021",
     "date_added": "2022-05-05",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop",
+        "Gangsta"
+      ],
+      "labels": [
+        "de Rap Winkel Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Commencement",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "J Batters",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Way We Move",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Kill All Rats",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Toast",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Losses To Blessings\t",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Highly Praised\t",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Sons Of Kings",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Red Beams\t",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Forever Ago\t",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Conway The Machine",
@@ -141,7 +1490,74 @@
     "release_id": 19441717,
     "first_released": "unknown",
     "date_added": "2022-05-05",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "de Rap Winkel Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Bruiser Brody",
+          "duration": "3:20"
+        },
+        {
+          "position": "A2",
+          "title": "6:30 Tip Off",
+          "duration": "3:03"
+        },
+        {
+          "position": "A3",
+          "title": "Blood Roses",
+          "duration": "3:07"
+        },
+        {
+          "position": "A4",
+          "title": "Clarity",
+          "duration": "2:04"
+        },
+        {
+          "position": "A5",
+          "title": "KD",
+          "duration": "3:40"
+        },
+        {
+          "position": "A6",
+          "title": "200 Pies",
+          "duration": "4:25"
+        },
+        {
+          "position": "B1",
+          "title": "Sister Abigail",
+          "duration": "4:18"
+        },
+        {
+          "position": "B2",
+          "title": "Grace",
+          "duration": "3:19"
+        },
+        {
+          "position": "B3",
+          "title": "Scatter Brain",
+          "duration": "3:29"
+        },
+        {
+          "position": "B4",
+          "title": "Had To Hustle",
+          "duration": "5:02"
+        },
+        {
+          "position": "B5",
+          "title": "S.E. Gang",
+          "duration": "5:01"
+        }
+      ]
+    }
   },
   {
     "artist": "Conway The Machine",
@@ -150,7 +1566,51 @@
     "release_id": 21467713,
     "first_released": "unknown",
     "date_added": "2022-05-05",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "de Rap Winkel Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Spoons House",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "5500",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Doorways",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Courtside",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Tru Bethel",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Fifty Cent Razor",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Conway The Machine, Big Ghost LTD",
@@ -159,7 +1619,72 @@
     "release_id": 24869249,
     "first_released": "2022",
     "date_added": "2022-11-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Boom Bap",
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "de Rap Winkel Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Salutations",
+          "duration": "4:12"
+        },
+        {
+          "position": "A2",
+          "title": "It's a Green Light",
+          "duration": "3:36"
+        },
+        {
+          "position": "A3",
+          "title": "Bodie Broadus",
+          "duration": "3:00"
+        },
+        {
+          "position": "A4",
+          "title": "In My Soul",
+          "duration": "3:03"
+        },
+        {
+          "position": "A5",
+          "title": "Y.B.C.M.",
+          "duration": "3:08"
+        },
+        {
+          "position": "B1",
+          "title": "Why You Ain't Move On Me?",
+          "duration": "3:11"
+        },
+        {
+          "position": "B2",
+          "title": "Sunday Sermon",
+          "duration": "2:39"
+        },
+        {
+          "position": "B3",
+          "title": "Scared II Death",
+          "duration": "3:43"
+        },
+        {
+          "position": "B4",
+          "title": "Big Drum",
+          "duration": "7:04"
+        },
+        {
+          "position": "B5",
+          "title": "Dog Food",
+          "duration": "1:41"
+        }
+      ]
+    }
   },
   {
     "artist": "Rome Streetz",
@@ -168,7 +1693,74 @@
     "release_id": 27234162,
     "first_released": "unknown",
     "date_added": "2023-10-10",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "de Rap Winkel Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Godspeed",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Suicide",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "8Balls",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Gem Drop",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Pz n Qz",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Royal Flush",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Lobsters In Shoreditch",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Dope Stampz",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Majisty",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Antidote",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "U Mad Huh?",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Benny The Butcher",
@@ -177,7 +1769,57 @@
     "release_id": 14206657,
     "first_released": "2019",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2019,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop",
+        "Boom Bap"
+      ],
+      "labels": [
+        "De Rap Winkel Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Intro (Skit)",
+          "duration": "0:27"
+        },
+        {
+          "position": "A2",
+          "title": "Crowns For Kings",
+          "duration": "4:28"
+        },
+        {
+          "position": "A3",
+          "title": "Sunday School",
+          "duration": "5:54"
+        },
+        {
+          "position": "A4",
+          "title": "Dirty Harry",
+          "duration": "3:47"
+        },
+        {
+          "position": "B1",
+          "title": "Took The Money To The Plug's House",
+          "duration": "3:20"
+        },
+        {
+          "position": "B2",
+          "title": "18 Wheeler",
+          "duration": "2:41"
+        },
+        {
+          "position": "B3",
+          "title": "5 To 50 ",
+          "duration": "3:53"
+        }
+      ]
+    }
   },
   {
     "artist": "Conway The Machine, Big Ghost LTD",
@@ -186,7 +1828,66 @@
     "release_id": 15573541,
     "first_released": "2020-06-29",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Thug Rap"
+      ],
+      "labels": [
+        "de Rap Winkel Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Family Secrets (Intro)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Dead Flowers",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Icon",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Fake Love",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Shark Guts",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Brick To Murals",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Rich (Interlude)",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "S.D.L.N.",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Sicarios",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "DMX",
@@ -195,7 +1896,80 @@
     "release_id": 16279217,
     "first_released": "unknown",
     "date_added": "2021-05-15",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Def Jam Recordings",
+        "UMe"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Ready To Meet Him",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Where The Hood At",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "What These Bitches Want",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Get At Me Dog",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Ruff Ryder's Anthem",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "What's My Name",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Party Up",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "X Gon' Give It To Ya",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "How's It Goin' Down",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Slippin'",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Who We Be",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Grand Finale",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Method Man",
@@ -204,7 +1978,87 @@
     "release_id": 13859189,
     "first_released": "unknown",
     "date_added": "2023-08-22",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2019,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "Def Jam Recordings",
+        "Universal Music Special Markets"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Tical",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Biscuits",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Bring The Pain",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "All I Need",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "What The Blood Clot",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Meth Vs. Chef",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Sub Crazy",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Release Yo' Delf",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "P.L.O. Style",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "I Get My Thang In Action",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Mr. Sandman",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Stimulation",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Method Man (Remix)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Nirvana",
@@ -213,7 +2067,111 @@
     "release_id": 28714897,
     "first_released": "unknown",
     "date_added": "2024-02-11",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Grunge",
+        "Alternative Rock"
+      ],
+      "labels": [
+        "DGC",
+        "Sub Pop",
+        "DGC",
+        "Sub Pop",
+        "UMe"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Serve The Servants",
+          "duration": "3:34"
+        },
+        {
+          "position": "A2",
+          "title": "Scentless Apprentice",
+          "duration": "3:47"
+        },
+        {
+          "position": "A3",
+          "title": "Heart-Shaped Box",
+          "duration": "4:39"
+        },
+        {
+          "position": "A4",
+          "title": "Rape Me",
+          "duration": "2:49"
+        },
+        {
+          "position": "A5",
+          "title": "Frances Farmer Will Have Her Revenge On Seattle",
+          "duration": "4:07"
+        },
+        {
+          "position": "A6",
+          "title": "Dumb",
+          "duration": "2:29"
+        },
+        {
+          "position": "B1",
+          "title": "Very Ape",
+          "duration": "1:55"
+        },
+        {
+          "position": "B2",
+          "title": "Milk It",
+          "duration": "3:52"
+        },
+        {
+          "position": "B3",
+          "title": "Pennyroyal Tea",
+          "duration": "3:36"
+        },
+        {
+          "position": "B4",
+          "title": "Radio Friendly Unit Shifter",
+          "duration": "4:49"
+        },
+        {
+          "position": "B5",
+          "title": "Tourette's",
+          "duration": "1:33"
+        },
+        {
+          "position": "B6",
+          "title": "All Apologies",
+          "duration": "3:50"
+        },
+        {
+          "position": "C1",
+          "title": "Gallons Of Rubbing Alcohol Flow Through The Strip",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Marigold",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Sappy",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Moist Vagina",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "I Hate Myself And Want To Die",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "The Offspring",
@@ -222,7 +2180,93 @@
     "release_id": 10243726,
     "first_released": "2016",
     "date_added": "2024-04-26",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2016,
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Alternative Rock",
+        "Punk",
+        "Hardcore"
+      ],
+      "labels": [
+        "Epitaph"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Time To Relax",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Nitro [Youth Energy]",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Bad Habit",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Gotta Get Away",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Genocide",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Something To Believe In",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Come Out And Play (Keep 'Em Separated)",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "Self Esteem",
+          "duration": ""
+        },
+        {
+          "position": "B9",
+          "title": "It'll Be A Long Time",
+          "duration": ""
+        },
+        {
+          "position": "B10",
+          "title": "Killboy Powerhead",
+          "duration": ""
+        },
+        {
+          "position": "B11",
+          "title": "What Happened To You?",
+          "duration": ""
+        },
+        {
+          "position": "B12",
+          "title": "So Alone",
+          "duration": ""
+        },
+        {
+          "position": "B13",
+          "title": "Not The One",
+          "duration": ""
+        },
+        {
+          "position": "B14",
+          "title": "Smash",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Limp Bizkit",
@@ -231,7 +2275,99 @@
     "release_id": 27520260,
     "first_released": "2023-06-00",
     "date_added": "2024-04-26",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop",
+        "Rock"
+      ],
+      "styles": [
+        "Nu Metal"
+      ],
+      "labels": [
+        "Flip Records (2)",
+        "Interscope Records",
+        "UMe"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Intro",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Just Like This",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Nookie",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Break Stuff",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Re-Arranged",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "I'm Broke",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Nobody Like You",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Don't Go Off Wandering",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "9 Teen 90 Nine",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "N 2 Gether Now",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Trust?",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "No Sex",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Show Me What You Got",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "A Lesson Learned",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Outro",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Blink-182",
@@ -240,7 +2376,82 @@
     "release_id": 27332361,
     "first_released": "2023-06-09",
     "date_added": "2023-07-31",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Pop Punk"
+      ],
+      "labels": [
+        "Geffen Records",
+        "UMe"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Dumpweed",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Don't Leave Me",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Aliens Exist",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Going Away To College",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "What's My Age Again",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Dystentery Gary",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Adam's Song",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "All The Small Things",
+          "duration": ""
+        },
+        {
+          "position": "B9",
+          "title": "The Party Song",
+          "duration": ""
+        },
+        {
+          "position": "B10",
+          "title": "Mutt",
+          "duration": ""
+        },
+        {
+          "position": "B11",
+          "title": "Wendy Clear",
+          "duration": ""
+        },
+        {
+          "position": "B12",
+          "title": "Anthem",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "The Genius, GZA",
@@ -249,7 +2460,89 @@
     "release_id": 14240785,
     "first_released": "unknown",
     "date_added": "2023-06-29",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2015,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop",
+        "Boom Bap",
+        "Gangsta"
+      ],
+      "labels": [
+        "Geffen Records",
+        "UMe"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Liquid Swords",
+          "duration": "4:31"
+        },
+        {
+          "position": "A2",
+          "title": "Duel Of The Iron Mic",
+          "duration": "4:06"
+        },
+        {
+          "position": "A3",
+          "title": "Living In The World Today",
+          "duration": "4:23"
+        },
+        {
+          "position": "B1",
+          "title": "Gold",
+          "duration": "3:57"
+        },
+        {
+          "position": "B2",
+          "title": "Cold World",
+          "duration": "5:30"
+        },
+        {
+          "position": "B3",
+          "title": "Labels",
+          "duration": "2:54"
+        },
+        {
+          "position": "C1",
+          "title": "4th Chamber",
+          "duration": "4:37"
+        },
+        {
+          "position": "C2",
+          "title": "Shadowboxin'",
+          "duration": "3:30"
+        },
+        {
+          "position": "C3",
+          "title": "Hell's Wind Staff",
+          "duration": "1:26"
+        },
+        {
+          "position": "C4",
+          "title": "Killah Hills 10304",
+          "duration": "3:42"
+        },
+        {
+          "position": "D1",
+          "title": "Investigative Reports",
+          "duration": "3:49"
+        },
+        {
+          "position": "D2",
+          "title": "Swordsman",
+          "duration": "3:21"
+        },
+        {
+          "position": "D3",
+          "title": "I Gotcha Back",
+          "duration": "4:58"
+        }
+      ]
+    }
   },
   {
     "artist": "Raekwon",
@@ -258,7 +2551,109 @@
     "release_id": 24908474,
     "first_released": "2022",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Get On Down"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Striving For Perfection",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Knuckleheadz",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Knowledge God",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Criminology",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Incarcerated Scarfaces",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Rainy Dayz",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Guillotine (Swordz)",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Can It Be All So Simple (Remix)",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Shark Niggas (Biters)",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Ice Water",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Glaciers Of Ice",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Verbal Intercourse",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "Wisdom Body",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Spot Rusherz",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Ice Cream",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Wu-Gambinos",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Heaven & Hell",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "North Star (Jewels)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Miley Cyrus",
@@ -267,7 +2662,57 @@
     "release_id": 19921147,
     "first_released": "2021-08-00",
     "date_added": "2022-03-22",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Pop Rock"
+      ],
+      "labels": [
+        "Hollywood Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Kicking And Screaming",
+          "duration": "2:58"
+        },
+        {
+          "position": "A2",
+          "title": "Party In The U.S.A.",
+          "duration": "3:22"
+        },
+        {
+          "position": "A3",
+          "title": "When I Look At You",
+          "duration": "4:10"
+        },
+        {
+          "position": "A4",
+          "title": "Time Of Our Lives",
+          "duration": "3:33"
+        },
+        {
+          "position": "B1",
+          "title": "Talk Is Cheap",
+          "duration": "3:40"
+        },
+        {
+          "position": "B2",
+          "title": "Obsessed",
+          "duration": "4:03"
+        },
+        {
+          "position": "B3",
+          "title": "Before The Storm (Live)",
+          "duration": "4:35"
+        }
+      ]
+    }
   },
   {
     "artist": "Eminem",
@@ -276,7 +2721,43 @@
     "release_id": 404245,
     "first_released": "2003",
     "date_added": "2022-11-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2003,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Pop Rap"
+      ],
+      "labels": [
+        "Interscope Records",
+        "Aftermath Entertainment",
+        "Shady Records",
+        "Web Entertainment",
+        "Interscope Records",
+        "Aftermath Entertainment",
+        "Shady Records",
+        "Web Entertainment"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Sing For The Moment (Album Version Explicit)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Rabbit Run (Album Version Explicit)",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Sing For The Moment (Instrumental Version)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Kendrick Lamar",
@@ -285,7 +2766,88 @@
     "release_id": 24901052,
     "first_released": "unknown",
     "date_added": "2022-11-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Conscious"
+      ],
+      "labels": [
+        "Interscope Records",
+        "Top Dawg Entertainment",
+        "Aftermath Entertainment",
+        "UMe",
+        "Interscope Records",
+        "Top Dawg Entertainment",
+        "Aftermath Entertainment",
+        "UMe"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Sherane A.K.A Master Splinter's Daughter",
+          "duration": "4:33"
+        },
+        {
+          "position": "A2",
+          "title": "Bitch, Don't Kill My Vibe",
+          "duration": "5:11"
+        },
+        {
+          "position": "A3",
+          "title": "Backseat Freestyle",
+          "duration": "3:32"
+        },
+        {
+          "position": "A4",
+          "title": "The Art Of Peer Pressure",
+          "duration": "5:25"
+        },
+        {
+          "position": "B1",
+          "title": "Money Trees",
+          "duration": "6:27"
+        },
+        {
+          "position": "B2",
+          "title": "Poetic Justice",
+          "duration": "5:00"
+        },
+        {
+          "position": "B3",
+          "title": "Good Kid",
+          "duration": "3:34"
+        },
+        {
+          "position": "B4",
+          "title": "M.A.A.D City",
+          "duration": "5:49"
+        },
+        {
+          "position": "C1",
+          "title": "Swimming Pools (Drank) [Extended Version]",
+          "duration": "5:14"
+        },
+        {
+          "position": "C2",
+          "title": "Sing About Me, I'm Dying Of Thirst",
+          "duration": "12:04"
+        },
+        {
+          "position": "D1",
+          "title": "Real",
+          "duration": "7:24"
+        },
+        {
+          "position": "D2",
+          "title": "Compton",
+          "duration": "4:07"
+        }
+      ]
+    }
   },
   {
     "artist": "Proof",
@@ -294,7 +2856,51 @@
     "release_id": 1824895,
     "first_released": "2005",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2005,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Thug Rap"
+      ],
+      "labels": [
+        "Iron Fist Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "M.A.D. (Clean)",
+          "duration": "2:58"
+        },
+        {
+          "position": "A2",
+          "title": "M.A.D. (Instrumental)",
+          "duration": "3:04"
+        },
+        {
+          "position": "A3",
+          "title": "M.A.D. (Dirty)",
+          "duration": "3:16"
+        },
+        {
+          "position": "B1",
+          "title": "Lyrics Of My Life",
+          "duration": "2:44"
+        },
+        {
+          "position": "B2",
+          "title": "Pimp Likeness (Dirty)",
+          "duration": "5:15"
+        },
+        {
+          "position": "B3",
+          "title": "Pimp Likeness (Clean)",
+          "duration": "5:16"
+        }
+      ]
+    }
   },
   {
     "artist": "The Beths",
@@ -303,7 +2909,81 @@
     "release_id": 24527939,
     "first_released": "unknown",
     "date_added": "2022-09-25",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Indie Rock"
+      ],
+      "labels": [
+        "Ivy League Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Expert In A Dying Field",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Knees Deep",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Silence Is Golden",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Your Side",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "I Want To Listen",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Head In The Clouds",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Best Left",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Change In The Weather",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "When You Know You Know",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "A Passing Rain",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "I Told You That I Was Afraid",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "2am",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Britney Spears",
@@ -312,7 +2992,87 @@
     "release_id": 26602088,
     "first_released": "2023-03-31",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Electronic",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "styles": [
+        "Ballad",
+        "Dance-pop",
+        "Contemporary R&B"
+      ],
+      "labels": [
+        "Jive",
+        "Legacy",
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "I'm A Slave 4 U",
+          "duration": "3:23"
+        },
+        {
+          "position": "A2",
+          "title": "Overprotected",
+          "duration": "3:18"
+        },
+        {
+          "position": "A3",
+          "title": "Lonely",
+          "duration": "3:20"
+        },
+        {
+          "position": "A4",
+          "title": "I'm Not A Girl, Not Yet A Woman",
+          "duration": "3:51"
+        },
+        {
+          "position": "A5",
+          "title": "Boys",
+          "duration": "3:28"
+        },
+        {
+          "position": "A6",
+          "title": "Anticipating",
+          "duration": "3:16"
+        },
+        {
+          "position": "B1",
+          "title": "I Love Rock 'N' Roll",
+          "duration": "3:05"
+        },
+        {
+          "position": "B2",
+          "title": "Cinderella",
+          "duration": "3:39"
+        },
+        {
+          "position": "B3",
+          "title": "Let Me Be",
+          "duration": "2:51"
+        },
+        {
+          "position": "B4",
+          "title": "Bombastic Love",
+          "duration": "3:05"
+        },
+        {
+          "position": "B5",
+          "title": "That's Where You Take Me",
+          "duration": "3:32"
+        },
+        {
+          "position": "B6",
+          "title": "What It's Like To Be Me",
+          "duration": "2:52"
+        }
+      ]
+    }
   },
   {
     "artist": "Britney Spears",
@@ -321,7 +3081,98 @@
     "release_id": 26900960,
     "first_released": "2023-04-28",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Electronic",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "styles": [
+        "Ballad",
+        "Dance-pop",
+        "Synth-pop",
+        "Contemporary R&B"
+      ],
+      "labels": [
+        "Jive",
+        "Legacy",
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Me Against The Music",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "(I Got That) Boom Boom",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Showdown",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Breathe On Me",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Early Mornin'",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Toxic",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Outrageous",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Touch Of My Hand",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "The Hook Up",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Shadow",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Brave New Girl",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Everytime",
+          "duration": ""
+        },
+        {
+          "position": "",
+          "title": "Bonus Remix",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Me Against The Music (Rishi Rich's Desi Kulcha Remix)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Britney Spears",
@@ -330,7 +3181,139 @@
     "release_id": 27186291,
     "first_released": "unknown",
     "date_added": "2023-06-29",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Electronic",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "styles": [
+        "House",
+        "Ballad",
+        "Vocal",
+        "Synth-pop",
+        "Contemporary R&B"
+      ],
+      "labels": [
+        "Jive",
+        "Legacy",
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "My Prerogative",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Toxic",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "I'm A Slave 4 U",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Oops!...I Did It Again",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Me Against The Music",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Stronger",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Everytime",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "...Baby One More Time",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "(You Drive Me) Crazy (The Stop Remix!)",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Boys (The Co-Ed Remix)",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Sometimes",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Overprotected (The Darkchild Remix Edit)",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Lucky",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Outrageous",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "I'm Not A Girl, Not Yet A Woman",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "I've Just Begun (Having My Fun)",
+          "duration": ""
+        },
+        {
+          "position": "C5",
+          "title": "Do Somethin'",
+          "duration": ""
+        },
+        {
+          "position": "C6",
+          "title": "Toxic (Armand Van Helden Remix Edit)",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Everytime (Hi-Bias Radio Remix)",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Breathe On Me (Jacques Lu Cont Mix)",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Outrageous (Junkie XL's Dancehall Mix)",
+          "duration": ""
+        },
+        {
+          "position": "",
+          "title": "Chris Cox Megamix",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Britney Spears",
@@ -339,7 +3322,85 @@
     "release_id": 26602001,
     "first_released": "unknown",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Pop"
+      ],
+      "styles": [
+        "Ballad",
+        "Contemporary R&B"
+      ],
+      "labels": [
+        "Jive",
+        "Legacy",
+        "Sony Music",
+        "Jive"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Oops!...I Did It Again",
+          "duration": "3:31"
+        },
+        {
+          "position": "A2",
+          "title": "Stronger",
+          "duration": "3:23"
+        },
+        {
+          "position": "A3",
+          "title": "Don't Go Knockin' On My Door",
+          "duration": "3:14"
+        },
+        {
+          "position": "A4",
+          "title": "(I Can't Get No) Satisfaction",
+          "duration": "4:28"
+        },
+        {
+          "position": "A5",
+          "title": "Don't Let Me Be The Last To Know",
+          "duration": "3:50"
+        },
+        {
+          "position": "A6",
+          "title": "What U See (Is What U Get)",
+          "duration": "3:14"
+        },
+        {
+          "position": "A7",
+          "title": "Lucky",
+          "duration": "3:25"
+        },
+        {
+          "position": "B1",
+          "title": "One Kiss From You",
+          "duration": "3:23"
+        },
+        {
+          "position": "B2",
+          "title": "Where Are You Now",
+          "duration": "4:39"
+        },
+        {
+          "position": "B3",
+          "title": "Can't Make You Love Me",
+          "duration": "3:16"
+        },
+        {
+          "position": "B4",
+          "title": "When Your Eyes Say It",
+          "duration": "4:06"
+        },
+        {
+          "position": "B5",
+          "title": "Dear Diary",
+          "duration": "2:46"
+        }
+      ]
+    }
   },
   {
     "artist": "Fly My Pretties",
@@ -348,7 +3409,70 @@
     "release_id": 14328582,
     "first_released": "unknown",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2019,
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [],
+      "labels": [
+        "Loop (5)"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Singing In My Soul",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Champion",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Quiet Girl",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Apple Heart",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Take It From Me ",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Bag Of Money ",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Get Out",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "It’s Never Blown Like It’s Goin’",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Garden ",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Angels",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Fly My Pretties",
@@ -357,7 +3481,65 @@
     "release_id": 15641400,
     "first_released": "2020-07-10",
     "date_added": "2021-09-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [],
+      "labels": [
+        "Loop (5)"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Mud & Stardust",
+          "duration": "4:04"
+        },
+        {
+          "position": "A2",
+          "title": "Clarity",
+          "duration": "6:26"
+        },
+        {
+          "position": "A3",
+          "title": "Lucky",
+          "duration": "5:09"
+        },
+        {
+          "position": "A4",
+          "title": "Turn It Around",
+          "duration": "5:58"
+        },
+        {
+          "position": "B1",
+          "title": "Heavy Weather",
+          "duration": "4:45"
+        },
+        {
+          "position": "B2",
+          "title": "All the Goodness",
+          "duration": "3:51"
+        },
+        {
+          "position": "B3",
+          "title": "Lie in the Land",
+          "duration": "3:16"
+        },
+        {
+          "position": "B4",
+          "title": "The Watchman",
+          "duration": "4:04"
+        },
+        {
+          "position": "B5",
+          "title": "Hit the Hay",
+          "duration": "4:58"
+        }
+      ]
+    }
   },
   {
     "artist": "Inspectah Deck",
@@ -366,7 +3548,104 @@
     "release_id": 25896430,
     "first_released": "unknown",
     "date_added": "2023-08-22",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Loud Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Intro",
+          "duration": "2:01"
+        },
+        {
+          "position": "A2",
+          "title": "Movas & Shakers",
+          "duration": "4:33"
+        },
+        {
+          "position": "A3",
+          "title": "9th Chamber",
+          "duration": "2:51"
+        },
+        {
+          "position": "A4",
+          "title": "Uncontrolled Substance",
+          "duration": "4:50"
+        },
+        {
+          "position": "A5",
+          "title": "Femme Fatale",
+          "duration": "3:06"
+        },
+        {
+          "position": "B1",
+          "title": "The Grand Prix",
+          "duration": "4:44"
+        },
+        {
+          "position": "B2",
+          "title": "Forget Me Not",
+          "duration": "3:50"
+        },
+        {
+          "position": "B3",
+          "title": "Longevity",
+          "duration": "4:40"
+        },
+        {
+          "position": "B4",
+          "title": "Word On The Street",
+          "duration": "3:44"
+        },
+        {
+          "position": "C1",
+          "title": "Elevation",
+          "duration": "3:16"
+        },
+        {
+          "position": "C2",
+          "title": "Lovin You",
+          "duration": "2:36"
+        },
+        {
+          "position": "C3",
+          "title": "Trouble Man",
+          "duration": "5:06"
+        },
+        {
+          "position": "C4",
+          "title": "R.E.C. Room",
+          "duration": "3:16"
+        },
+        {
+          "position": "C5",
+          "title": "Friction",
+          "duration": "3:36"
+        },
+        {
+          "position": "D1",
+          "title": "Hyperdermix",
+          "duration": "4:52"
+        },
+        {
+          "position": "D2",
+          "title": "Show N Prove",
+          "duration": "4:08"
+        },
+        {
+          "position": "D3",
+          "title": "The Cause",
+          "duration": "4:35"
+        }
+      ]
+    }
   },
   {
     "artist": "Wu-Tang Clan",
@@ -375,7 +3654,157 @@
     "release_id": 10403050,
     "first_released": "2017",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2017,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Loud Records",
+        "RCA",
+        "Legacy",
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Wu-Revolution",
+          "duration": "6:17"
+        },
+        {
+          "position": "A2",
+          "title": "Reunited",
+          "duration": "5:23"
+        },
+        {
+          "position": "B1",
+          "title": "For Heavens Sake",
+          "duration": "4:13"
+        },
+        {
+          "position": "B2",
+          "title": "Cash Still Rules/Scary Hours (Still Don't Nothing Move But The Money)",
+          "duration": "3:06"
+        },
+        {
+          "position": "B3",
+          "title": "Visionz",
+          "duration": "3:09"
+        },
+        {
+          "position": "C1",
+          "title": "As High As Wu-Tang Gets",
+          "duration": "2:39"
+        },
+        {
+          "position": "C2",
+          "title": "Severe Punishment",
+          "duration": "4:49"
+        },
+        {
+          "position": "C3",
+          "title": "Older Gods",
+          "duration": "3:07"
+        },
+        {
+          "position": "D1",
+          "title": "Maria",
+          "duration": "2:34"
+        },
+        {
+          "position": "D2",
+          "title": "A Better Tommorrow",
+          "duration": "4:58"
+        },
+        {
+          "position": "D3",
+          "title": "It's Yourz",
+          "duration": "4:15"
+        },
+        {
+          "position": "E1",
+          "title": "Intro",
+          "duration": "2:05"
+        },
+        {
+          "position": "E2",
+          "title": "Triumph",
+          "duration": "5:38"
+        },
+        {
+          "position": "E3",
+          "title": "Impossible",
+          "duration": "4:28"
+        },
+        {
+          "position": "E4",
+          "title": "Little Ghetto Boys",
+          "duration": "4:31"
+        },
+        {
+          "position": "F1",
+          "title": "Deadly Melody",
+          "duration": "4:03"
+        },
+        {
+          "position": "F2",
+          "title": "The City",
+          "duration": "4:07"
+        },
+        {
+          "position": "F3",
+          "title": "The Projects",
+          "duration": "3:15"
+        },
+        {
+          "position": "F4",
+          "title": "Bells Of War",
+          "duration": "5:12"
+        },
+        {
+          "position": "G1",
+          "title": "The M.G.M.",
+          "duration": "2:39"
+        },
+        {
+          "position": "G2",
+          "title": "Dog Sh*t",
+          "duration": "2:39"
+        },
+        {
+          "position": "G3",
+          "title": "Duck Seazon",
+          "duration": "5:20"
+        },
+        {
+          "position": "G4",
+          "title": "Hellz Wind Staff",
+          "duration": "4:52"
+        },
+        {
+          "position": "H1",
+          "title": "Heaterz",
+          "duration": "4:19"
+        },
+        {
+          "position": "H2",
+          "title": "Black Shampoo",
+          "duration": "3:50"
+        },
+        {
+          "position": "H3",
+          "title": "Second Coming",
+          "duration": "4:35"
+        },
+        {
+          "position": "H4",
+          "title": "The Closing",
+          "duration": "2:43"
+        }
+      ]
+    }
   },
   {
     "artist": "Ghostface Killah",
@@ -384,7 +3813,99 @@
     "release_id": 22335604,
     "first_released": "2022-03-04",
     "date_added": "2022-04-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Music On Vinyl"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Iron Maiden",
+          "duration": "4:46"
+        },
+        {
+          "position": "A2",
+          "title": "Wildflower",
+          "duration": "3:26"
+        },
+        {
+          "position": "A3",
+          "title": "The Faster Blade",
+          "duration": "2:27"
+        },
+        {
+          "position": "A4",
+          "title": "260",
+          "duration": "2:46"
+        },
+        {
+          "position": "B1",
+          "title": "Assassination Day",
+          "duration": "4:18"
+        },
+        {
+          "position": "B2",
+          "title": "Poisonous Darts",
+          "duration": "2:15"
+        },
+        {
+          "position": "B3",
+          "title": "Winter Warz",
+          "duration": "4:40"
+        },
+        {
+          "position": "B4",
+          "title": "Box In Hand",
+          "duration": "3:14"
+        },
+        {
+          "position": "C1",
+          "title": "Fish",
+          "duration": "3:50"
+        },
+        {
+          "position": "C2",
+          "title": "Camay",
+          "duration": "4:34"
+        },
+        {
+          "position": "C3",
+          "title": "Daytona 500",
+          "duration": "4:40"
+        },
+        {
+          "position": "C4",
+          "title": "Motherless Child",
+          "duration": "3:45"
+        },
+        {
+          "position": "D1",
+          "title": "Black Jesus",
+          "duration": "4:37"
+        },
+        {
+          "position": "D2",
+          "title": "After The Smoke Is Clear",
+          "duration": "3:17"
+        },
+        {
+          "position": "D3",
+          "title": "All That I Got Is You",
+          "duration": "5:21"
+        },
+        {
+          "position": "D4",
+          "title": "The Soul Controller",
+          "duration": "6:49"
+        }
+      ]
+    }
   },
   {
     "artist": "Ainslie Allen",
@@ -393,7 +3914,89 @@
     "release_id": 25254286,
     "first_released": "2021-11-19",
     "date_added": "2022-11-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Folk, World, & Country"
+      ],
+      "styles": [],
+      "labels": [
+        "Not On Label (Ainslie Allen Self-released)"
+      ],
+      "tracklist": [
+        {
+          "position": "1",
+          "title": "Out of my Head (intro)",
+          "duration": ""
+        },
+        {
+          "position": "2",
+          "title": "Into My Life",
+          "duration": ""
+        },
+        {
+          "position": "3",
+          "title": "Lasso or the .22",
+          "duration": ""
+        },
+        {
+          "position": "4",
+          "title": "Mamma Says (Breaking Rulees)",
+          "duration": ""
+        },
+        {
+          "position": "5",
+          "title": "Love Doesn't Work Anymore",
+          "duration": ""
+        },
+        {
+          "position": "6",
+          "title": "Old You",
+          "duration": ""
+        },
+        {
+          "position": "7",
+          "title": "Maserati",
+          "duration": ""
+        },
+        {
+          "position": "8",
+          "title": "My Mum",
+          "duration": ""
+        },
+        {
+          "position": "9",
+          "title": "You Think You're (Better Than Me)",
+          "duration": ""
+        },
+        {
+          "position": "10",
+          "title": "Done and Gone",
+          "duration": ""
+        },
+        {
+          "position": "11",
+          "title": "Kererū",
+          "duration": ""
+        },
+        {
+          "position": "12",
+          "title": "I'm On My Way",
+          "duration": ""
+        },
+        {
+          "position": "13",
+          "title": "And The Stars",
+          "duration": ""
+        },
+        {
+          "position": "14",
+          "title": "Taku Māmā - Bonus Track",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Kendrick Lamar",
@@ -402,7 +4005,85 @@
     "release_id": 33067563,
     "first_released": "unknown",
     "date_added": "2025-02-20",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2025,
+      "genres": [
+        "Hip Hop",
+        "Funk / Soul"
+      ],
+      "styles": [
+        "Conscious",
+        "Contemporary R&B",
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "pgLang",
+        "Interscope Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Wacced Out Murals",
+          "duration": "5:17"
+        },
+        {
+          "position": "A2",
+          "title": "Squabble Up",
+          "duration": "2:38"
+        },
+        {
+          "position": "A3",
+          "title": "Luther",
+          "duration": "2:58"
+        },
+        {
+          "position": "A4",
+          "title": "Man At The Garden",
+          "duration": "3:53"
+        },
+        {
+          "position": "A5",
+          "title": "Hey Now",
+          "duration": "3:38"
+        },
+        {
+          "position": "A6",
+          "title": "Reincarnated",
+          "duration": "4:36"
+        },
+        {
+          "position": "B1",
+          "title": "TV Off",
+          "duration": "3:41"
+        },
+        {
+          "position": "B2",
+          "title": "Dodger Blue",
+          "duration": "2:11"
+        },
+        {
+          "position": "B3",
+          "title": "Peekaboo",
+          "duration": "2:36"
+        },
+        {
+          "position": "B4",
+          "title": "Heart Pt. 6",
+          "duration": "4:52"
+        },
+        {
+          "position": "B5",
+          "title": "GNX",
+          "duration": "3:14"
+        },
+        {
+          "position": "B6",
+          "title": "Gloria",
+          "duration": "4:48"
+        }
+      ]
+    }
   },
   {
     "artist": "Mark Ronson, Miley Cyrus",
@@ -411,7 +4092,37 @@
     "release_id": 13493873,
     "first_released": "2019-04-13",
     "date_added": "2021-10-02",
-    "favourite": true
+    "favourite": true,
+    "discogsData": {
+      "year": 2019,
+      "genres": [
+        "Electronic",
+        "Pop"
+      ],
+      "styles": [
+        "Dance-pop"
+      ],
+      "labels": [
+        "RCA"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Nothing Breaks Like A Heart",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Nothing Breaks Like A Heart (Dimitri From Paris Remix) ",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Nothing Breaks Like A Heart (Boston Bun Remix)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Miley Cyrus",
@@ -420,7 +4131,103 @@
     "release_id": 19570501,
     "first_released": "unknown",
     "date_added": "2021-09-28",
-    "favourite": true
+    "favourite": true,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Arena Rock",
+        "Hard Rock",
+        "Post-Punk",
+        "Power Pop",
+        "Soft Rock",
+        "Pop Rock",
+        "Ballad"
+      ],
+      "labels": [
+        "RCA"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "WTF Do I Know",
+          "duration": "2:52"
+        },
+        {
+          "position": "A2",
+          "title": "Plastic Hearts",
+          "duration": "3:26"
+        },
+        {
+          "position": "A3",
+          "title": "Angels Like You",
+          "duration": "3:16"
+        },
+        {
+          "position": "A4",
+          "title": "Prisoner",
+          "duration": "2:49"
+        },
+        {
+          "position": "B1",
+          "title": "Gimme What I Want",
+          "duration": "2:32"
+        },
+        {
+          "position": "B2",
+          "title": "Night Crawling",
+          "duration": "3:09"
+        },
+        {
+          "position": "B3",
+          "title": "Midnight Sky",
+          "duration": "3:43"
+        },
+        {
+          "position": "B4",
+          "title": "High",
+          "duration": "3:17"
+        },
+        {
+          "position": "C1",
+          "title": "Hate Me",
+          "duration": "2:38"
+        },
+        {
+          "position": "C2",
+          "title": "Bad Karma",
+          "duration": "3:08"
+        },
+        {
+          "position": "C3",
+          "title": "Never Be Me",
+          "duration": "3:36"
+        },
+        {
+          "position": "C4",
+          "title": "Golden G String",
+          "duration": "3:56"
+        },
+        {
+          "position": "D1",
+          "title": "Edge Of Midnight (Midnight Sky Remix)",
+          "duration": "3:40"
+        },
+        {
+          "position": "D2",
+          "title": "Heart Of Glass (Live From The iHeart Festival)",
+          "duration": "3:33"
+        },
+        {
+          "position": "D3",
+          "title": "Zombie (Live From The NIVA Save Our Stages Festival)",
+          "duration": "4:50"
+        }
+      ]
+    }
   },
   {
     "artist": "Miley Cyrus",
@@ -429,7 +4236,111 @@
     "release_id": 28422217,
     "first_released": "2015",
     "date_added": "2023-10-15",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop",
+        "Pop"
+      ],
+      "styles": [],
+      "labels": [
+        "RCA",
+        "Legacy"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Adore You",
+          "duration": "4:38"
+        },
+        {
+          "position": "A2",
+          "title": "We Can't Stop",
+          "duration": "3:51"
+        },
+        {
+          "position": "A3",
+          "title": "SMS (Bangerz)",
+          "duration": "2:49"
+        },
+        {
+          "position": "A4",
+          "title": "4x4",
+          "duration": "3:11"
+        },
+        {
+          "position": "B1",
+          "title": "My Darlin'",
+          "duration": "4:03"
+        },
+        {
+          "position": "B2",
+          "title": "Wrecking Ball",
+          "duration": "3:41"
+        },
+        {
+          "position": "B3",
+          "title": "Love Money Party",
+          "duration": "3:39"
+        },
+        {
+          "position": "B4",
+          "title": "#GETITRIGHT",
+          "duration": "4:24"
+        },
+        {
+          "position": "C1",
+          "title": "Drive",
+          "duration": "4:15"
+        },
+        {
+          "position": "C2",
+          "title": "FU",
+          "duration": "3:51"
+        },
+        {
+          "position": "C3",
+          "title": "Do My Thang",
+          "duration": "3:45"
+        },
+        {
+          "position": "C4",
+          "title": "Maybe You're Right",
+          "duration": "3:33"
+        },
+        {
+          "position": "D1",
+          "title": "Someone Else",
+          "duration": "4:48"
+        },
+        {
+          "position": "D2",
+          "title": "Rooting For My Baby",
+          "duration": "3:20"
+        },
+        {
+          "position": "D3",
+          "title": "On My Own",
+          "duration": "3:52"
+        },
+        {
+          "position": "D4",
+          "title": "Hands In The Air",
+          "duration": "3:22"
+        },
+        {
+          "position": "",
+          "title": "Bonus Track",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "23",
+          "duration": "4:12"
+        }
+      ]
+    }
   },
   {
     "artist": "Wu-Tang Clan",
@@ -438,7 +4349,95 @@
     "release_id": 8154672,
     "first_released": "unknown",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2016,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop",
+        "Boom Bap"
+      ],
+      "labels": [
+        "RCA",
+        "Loud Records",
+        "Sony Music",
+        "Legacy"
+      ],
+      "tracklist": [
+        {
+          "position": "",
+          "title": "Shaolin Sword",
+          "duration": "29:19"
+        },
+        {
+          "position": "A1",
+          "title": "Bring Da Ruckus",
+          "duration": "4:10"
+        },
+        {
+          "position": "A2",
+          "title": "Shame On A Nigga",
+          "duration": "2:57"
+        },
+        {
+          "position": "A3",
+          "title": "Clan In Da Front",
+          "duration": "4:33"
+        },
+        {
+          "position": "A4",
+          "title": "Wu-Tang: 7th Chamber",
+          "duration": "6:05"
+        },
+        {
+          "position": "A5",
+          "title": "Can It Be All So Simple",
+          "duration": "4:46"
+        },
+        {
+          "position": "A6",
+          "title": "Protect Ya Neck (Intermission)",
+          "duration": "6:48"
+        },
+        {
+          "position": "",
+          "title": "Wu-Tang Sword",
+          "duration": "28:53"
+        },
+        {
+          "position": "B1",
+          "title": "Da Mystery Of Chessboxin'",
+          "duration": "4:48"
+        },
+        {
+          "position": "B2",
+          "title": "Wu-Tang Clan Ain't Nuthing Ta F' Wit",
+          "duration": "3:36"
+        },
+        {
+          "position": "B3",
+          "title": "C.R.E.A.M.",
+          "duration": "4:12"
+        },
+        {
+          "position": "B4",
+          "title": "Method Man",
+          "duration": "5:50"
+        },
+        {
+          "position": "B5",
+          "title": "Tearz",
+          "duration": "4:17"
+        },
+        {
+          "position": "B6",
+          "title": "Wu-Tang: 7th Chamber - Part II",
+          "duration": "5:08"
+        }
+      ]
+    }
   },
   {
     "artist": "Taylor Swift",
@@ -447,7 +4446,139 @@
     "release_id": 27604608,
     "first_released": "unknown",
     "date_added": "2023-07-31",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Pop",
+        "Folk, World, & Country"
+      ],
+      "styles": [
+        "Country",
+        "Alternative Rock",
+        "Vocal"
+      ],
+      "labels": [
+        "Republic Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Mine (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Sparks Fly (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Back To December (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Speak Now (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Dear John (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Mean (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "The Story Of Us (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "Never Grow Up (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "C9",
+          "title": "Enchanted (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "C10",
+          "title": "Better Than Revenge (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "C11",
+          "title": "Innocent (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "C12",
+          "title": "Haunted (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "D13",
+          "title": "Last Kiss (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "D14",
+          "title": "Long Live (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "D15",
+          "title": "Ours (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "D16",
+          "title": "Superman (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "",
+          "title": "From The Vault",
+          "duration": ""
+        },
+        {
+          "position": "E17",
+          "title": "Electric Touch (Taylor's Version) (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "E18",
+          "title": "When Emma Falls In Love (Taylor's Version) (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "E19",
+          "title": "I Can See You (Taylor's Version) (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "F20",
+          "title": "Castles Crumbling (Taylor's Version) (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "F21",
+          "title": "Foolish One (Taylor's Version) (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "F22",
+          "title": "Timeless (Taylor's Version) (From The Vault)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Taylor Swift",
@@ -456,7 +4587,163 @@
     "release_id": 20415259,
     "first_released": "unknown",
     "date_added": "2021-10-16",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Pop",
+        "Folk, World, & Country"
+      ],
+      "styles": [
+        "Country",
+        "Vocal"
+      ],
+      "labels": [
+        "Republic Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Fearless (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Fifteen (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Love Story (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Hey Stephen (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "White Horse (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "You Belong With Me (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Breathe (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "B8",
+          "title": "Tell Me Why (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "B9",
+          "title": "You’re Not Sorry (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "C10",
+          "title": "The Way I Loved You (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "C11",
+          "title": "Forever & Always (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "C12",
+          "title": "The Best Day (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "C13",
+          "title": "Change (Taylor’s Version)",
+          "duration": ""
+        },
+        {
+          "position": "D14",
+          "title": "Jump Then Fall (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "D15",
+          "title": "Untouchable (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "D16",
+          "title": "Forever & Always (Piano Version) (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "D17",
+          "title": "Come In With The Rain (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "E18",
+          "title": "Superstar (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "E19",
+          "title": "The Other Side Of The Door (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "E20",
+          "title": "Today Was A Fairytale (Taylor's Version)",
+          "duration": ""
+        },
+        {
+          "position": "E21",
+          "title": "You All Over Me (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "E22",
+          "title": "Mr. Perfectly Fine (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "F23",
+          "title": "We Were Happy (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "F24",
+          "title": "That's When (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "F25",
+          "title": "Don't You (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "F26",
+          "title": "Bye Bye Baby (From The Vault)",
+          "duration": ""
+        },
+        {
+          "position": "",
+          "title": "Bonus Track",
+          "duration": ""
+        },
+        {
+          "position": "F27",
+          "title": "Love Story (Taylor’s Version) - Elvira Remix",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Ol' Dirty Bastard",
@@ -465,7 +4752,98 @@
     "release_id": 26841434,
     "first_released": "unknown",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Boom Bap",
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "Rhino Records (2)",
+        "Elektra"
+      ],
+      "tracklist": [
+        {
+          "position": "A-1",
+          "title": "Intro",
+          "duration": "4:47"
+        },
+        {
+          "position": "A-2",
+          "title": "Shimmy Shimmy Ya",
+          "duration": "2:41"
+        },
+        {
+          "position": "A-3",
+          "title": "Baby C'mon",
+          "duration": "3:26"
+        },
+        {
+          "position": "A-4",
+          "title": "Brooklyn Zoo",
+          "duration": "3:37"
+        },
+        {
+          "position": "B-1",
+          "title": "Hippa To Da Hoppa ",
+          "duration": "3:01"
+        },
+        {
+          "position": "B-2",
+          "title": "Raw Hide",
+          "duration": "4:02"
+        },
+        {
+          "position": "B-3",
+          "title": "Damage",
+          "duration": "2:47"
+        },
+        {
+          "position": "B-4",
+          "title": "Don't U Know",
+          "duration": "4:26"
+        },
+        {
+          "position": "C-1",
+          "title": "The Stomp",
+          "duration": "2:22"
+        },
+        {
+          "position": "C-2",
+          "title": "Goin' Down",
+          "duration": "4:19"
+        },
+        {
+          "position": "C-3",
+          "title": "Drunk Game (Sweet Sugar Pie)",
+          "duration": "4:20"
+        },
+        {
+          "position": "C-4",
+          "title": "Snakes",
+          "duration": "5:26"
+        },
+        {
+          "position": "D-1",
+          "title": "Brooklyn Zoo II (Tiger Crane)",
+          "duration": "7:20"
+        },
+        {
+          "position": "D-2",
+          "title": "Proteck Ya Neck II The Zoo",
+          "duration": "4:00"
+        },
+        {
+          "position": "D-3",
+          "title": "Cuttin' Headz",
+          "duration": "2:28"
+        }
+      ]
+    }
   },
   {
     "artist": "Cypress Hill",
@@ -474,7 +4852,99 @@
     "release_id": 11079090,
     "first_released": "unknown",
     "date_added": "2023-02-18",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2017,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Gangsta"
+      ],
+      "labels": [
+        "Ruffhouse Records",
+        "Columbia",
+        "Sony Music",
+        "Legacy"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Spark Another Owl",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Throw Your Set In The Air",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Stoned Raiders",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Illusions",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Killa Hill Niggas",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Boom Biddy Bye Bye",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "No Rest For The Wicked",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Make A Move",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Killafornia",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Funk Freakers",
+          "duration": ""
+        },
+        {
+          "position": "C4",
+          "title": "Locotes",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Red Light Visions",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "Strictly Hip Hop",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Let It Rain",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Everybody Must Get Stoned",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Bone Thugs-N-Harmony",
@@ -483,7 +4953,106 @@
     "release_id": 27928278,
     "first_released": "2023-08-00",
     "date_added": "2023-08-22",
-    "favourite": true
+    "favourite": true,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Gangsta"
+      ],
+      "labels": [
+        "Ruthless Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Da Introduction",
+          "duration": "4:25"
+        },
+        {
+          "position": "A2",
+          "title": "East 1999",
+          "duration": "4:21"
+        },
+        {
+          "position": "A3",
+          "title": "Eternal",
+          "duration": "4:03"
+        },
+        {
+          "position": "A4",
+          "title": "Crept And We Came",
+          "duration": "5:03"
+        },
+        {
+          "position": "B1",
+          "title": "Down '71 (The Getaway)",
+          "duration": "4:50"
+        },
+        {
+          "position": "B2",
+          "title": "Mr. Bill Collector",
+          "duration": "5:01"
+        },
+        {
+          "position": "B3",
+          "title": "Budsmokers Only",
+          "duration": "3:31"
+        },
+        {
+          "position": "B4",
+          "title": "Tha Crossroads",
+          "duration": "3:43"
+        },
+        {
+          "position": "C1",
+          "title": "Me Killa",
+          "duration": "0:55"
+        },
+        {
+          "position": "C2",
+          "title": "Land Of Tha Heartless",
+          "duration": "3:05"
+        },
+        {
+          "position": "C3",
+          "title": "No Shorts, No Losses",
+          "duration": "4:52"
+        },
+        {
+          "position": "C4",
+          "title": "1st Of Tha Month",
+          "duration": "5:14"
+        },
+        {
+          "position": "C5",
+          "title": "Buddah Lovaz",
+          "duration": "4:43"
+        },
+        {
+          "position": "D1",
+          "title": "Die Die Die",
+          "duration": "4:42"
+        },
+        {
+          "position": "D2",
+          "title": "Mr. Ouija 2",
+          "duration": "1:16"
+        },
+        {
+          "position": "D3",
+          "title": "Mo' Murda",
+          "duration": "5:44"
+        },
+        {
+          "position": "D4",
+          "title": "Shotz To Tha Double Glock",
+          "duration": "4:42"
+        }
+      ]
+    }
   },
   {
     "artist": "D12",
@@ -492,16 +5061,166 @@
     "release_id": 4876919,
     "first_released": "unknown",
     "date_added": "2022-11-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2000,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Shady Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Shit On You (Street)",
+          "duration": "5:28"
+        },
+        {
+          "position": "A2",
+          "title": "Shit On You (Clean)",
+          "duration": "5:28"
+        },
+        {
+          "position": "A3",
+          "title": "Shit On You (Acapella)",
+          "duration": "5:28"
+        },
+        {
+          "position": "B1",
+          "title": "I Remember - Dedication To Whitey Ford (Street)",
+          "duration": "5:43"
+        },
+        {
+          "position": "B2",
+          "title": "Shit On You (Instrumental)",
+          "duration": "5:28"
+        },
+        {
+          "position": "B3",
+          "title": "I Remember (Instrumental)",
+          "duration": "5:40"
+        }
+      ]
+    }
   },
   {
     "artist": "D12",
     "title": "Devils Night",
     "format": "Vinyl",
     "release_id": 521571,
-    "first_released": "unknown",
+    "first_released": "2001",
     "date_added": "2025-04-14",
-    "favourite": true
+    "favourite": true,
+    "discogsData": {
+      "year": 2001,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Shady Records",
+        "Interscope Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Another Public Service Announcement",
+          "duration": "0:49"
+        },
+        {
+          "position": "A2",
+          "title": "Shit Can Happen",
+          "duration": "4:52"
+        },
+        {
+          "position": "A3",
+          "title": "Pistol Pistol",
+          "duration": "5:23"
+        },
+        {
+          "position": "A4",
+          "title": "Bizarre (Skit)",
+          "duration": "1:12"
+        },
+        {
+          "position": "A5",
+          "title": "Nasty Mind",
+          "duration": "4:43"
+        },
+        {
+          "position": "A6",
+          "title": "Ain't Nuttin' But Music",
+          "duration": "5:11"
+        },
+        {
+          "position": "B1",
+          "title": "American Psycho",
+          "duration": "4:36"
+        },
+        {
+          "position": "B2",
+          "title": "That's How (Skit)",
+          "duration": "0:37"
+        },
+        {
+          "position": "B3",
+          "title": "That's How",
+          "duration": "4:49"
+        },
+        {
+          "position": "B4",
+          "title": "Purple Pills",
+          "duration": "5:05"
+        },
+        {
+          "position": "B5",
+          "title": "Fight Music",
+          "duration": "4:22"
+        },
+        {
+          "position": "C1",
+          "title": "Instigator",
+          "duration": "4:58"
+        },
+        {
+          "position": "C2",
+          "title": "Pimp Like Me",
+          "duration": "5:57"
+        },
+        {
+          "position": "C3",
+          "title": "Blow My Buzz",
+          "duration": "5:10"
+        },
+        {
+          "position": "C4",
+          "title": "Obie Trice (Skit)",
+          "duration": "1:07"
+        },
+        {
+          "position": "D1",
+          "title": "Devils Night",
+          "duration": "4:19"
+        },
+        {
+          "position": "D2",
+          "title": "Steve Berman (Skit)",
+          "duration": "0:50"
+        },
+        {
+          "position": "D3",
+          "title": "Revelation",
+          "duration": "5:48"
+        },
+        {
+          "position": "D4",
+          "title": "Girls",
+          "duration": "5:35"
+        }
+      ]
+    }
   },
   {
     "artist": "D12",
@@ -510,7 +5229,37 @@
     "release_id": 1396129,
     "first_released": "unknown",
     "date_added": "2022-11-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2001,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "Shady Records",
+        "Interscope Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Fight Music",
+          "duration": "4:22"
+        },
+        {
+          "position": "A2",
+          "title": "Words Are Weapons",
+          "duration": "4:37"
+        },
+        {
+          "position": "B1",
+          "title": "Freestyle",
+          "duration": "4:59"
+        }
+      ]
+    }
   },
   {
     "artist": "D12",
@@ -519,7 +5268,60 @@
     "release_id": 599703,
     "first_released": "unknown",
     "date_added": "2023-05-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2004,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Shady Records",
+        "Interscope Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "How Come (Clean)",
+          "duration": "4:09"
+        },
+        {
+          "position": "A2",
+          "title": "How Come (Dirty)",
+          "duration": "4:09"
+        },
+        {
+          "position": "A3",
+          "title": "How Come (Extended Verses Clean)",
+          "duration": "4:46"
+        },
+        {
+          "position": "A4",
+          "title": "How Come (Extended Verses Dirty)",
+          "duration": "4:46"
+        },
+        {
+          "position": "B1",
+          "title": "American Psycho (Clean)",
+          "duration": "3:44"
+        },
+        {
+          "position": "B2",
+          "title": "American Psycho (Dirty)",
+          "duration": "3:44"
+        },
+        {
+          "position": "B3",
+          "title": "American Psycho (Instrumental)",
+          "duration": "3:44"
+        },
+        {
+          "position": "B4",
+          "title": "How Come (Instrumental)",
+          "duration": "4:09"
+        }
+      ]
+    }
   },
   {
     "artist": "Czarface",
@@ -528,7 +5330,79 @@
     "release_id": 14493566,
     "first_released": "2019-12-06",
     "date_added": "2022-05-05",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2019,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Silver Age"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Bizarro",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Call Me",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "The Gift That Keeps On...",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Me's Company",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Dear Computer",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Burrito",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Brother Czarquis",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Couch",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Double Dragon",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "The Problem With Frank",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Dog",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Czartis Gilmore (The Cool Down)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Czarface, MF Doom",
@@ -537,7 +5411,71 @@
     "release_id": 18616576,
     "first_released": "unknown",
     "date_added": "2022-07-19",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Boom Bap"
+      ],
+      "labels": [
+        "Silver Age"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "The King And Eye",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Czarwyn's Theory Of People Getting Loose",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Mando Carlrissian",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "DOOM Unto Others",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Jason & The Czargonauts",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Break In The Action",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "A Name To The Face",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "This Is Canon Now",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "So Strange",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Young World",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Czarface",
@@ -546,7 +5484,79 @@
     "release_id": 22970630,
     "first_released": "2022-04-23",
     "date_added": "2022-04-25",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Silver Age"
+      ],
+      "tracklist": [
+        {
+          "position": "A01",
+          "title": "Damien's Dinner Time",
+          "duration": "2:24"
+        },
+        {
+          "position": "A02",
+          "title": "The Czarlaac Pit",
+          "duration": "2:38"
+        },
+        {
+          "position": "A03",
+          "title": "Can It Be?",
+          "duration": "2:18"
+        },
+        {
+          "position": "A04",
+          "title": "Walk Thru Walls",
+          "duration": "3:27"
+        },
+        {
+          "position": "A05",
+          "title": "Splash Page",
+          "duration": "1:59"
+        },
+        {
+          "position": "A06",
+          "title": "Bob Laczar",
+          "duration": "2:54"
+        },
+        {
+          "position": "B07",
+          "title": "Big Em Up",
+          "duration": "3:12"
+        },
+        {
+          "position": "B08",
+          "title": "Nu Mutantes",
+          "duration": "2:20"
+        },
+        {
+          "position": "B09",
+          "title": "Fearless & Inventive",
+          "duration": "2:30"
+        },
+        {
+          "position": "B10",
+          "title": "Boogie Defmix",
+          "duration": "2:18"
+        },
+        {
+          "position": "B11",
+          "title": "Czarv Wolfman",
+          "duration": "3:04"
+        },
+        {
+          "position": "B12",
+          "title": "Logan-5",
+          "duration": "2:38"
+        }
+      ]
+    }
   },
   {
     "artist": "Czarface, Ghostface Killah",
@@ -555,7 +5565,82 @@
     "release_id": 13201706,
     "first_released": "unknown",
     "date_added": "2022-04-28",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2019,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "Silver Age",
+        "Urban Iconz"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Back at Ringside",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Face Off",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Iron Claw",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Czarrcade '84",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Powers and Stuff",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Masked Superstars",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Morning Ritual",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Super Soldier Serum",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "The King Heard Voices",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Listen to the Color",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Mongolian Beef",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "(Post Credits Scene)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Che Fu",
@@ -564,7 +5649,82 @@
     "release_id": 21032785,
     "first_released": "2021-11-01",
     "date_added": "2022-03-15",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Pop Rap",
+        "Conscious"
+      ],
+      "labels": [
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Misty Frequencies",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Catch One",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Random",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Share The Info",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "The Abyss",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Interlude 1",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Top Floor",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Hold Tight",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "He Kotahi (As One)",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Full Immersion",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "The Mish (2)",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Fade–Away",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Dam Native",
@@ -573,7 +5733,100 @@
     "release_id": 31777736,
     "first_released": "unknown",
     "date_added": "2024-12-13",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2024,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Hardcore Hip-Hop",
+        "Conscious",
+        "Pacific"
+      ],
+      "labels": [
+        "Sony Music",
+        "Tangata Records",
+        "Tautoko Maori"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "4 Realms Intro",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Behold My Kool Style",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Extremities",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "No Formal Training",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Battle Styles",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Think About It Interlude",
+          "duration": ""
+        },
+        {
+          "position": "A7",
+          "title": "Travelling",
+          "duration": ""
+        },
+        {
+          "position": "A8",
+          "title": "Rise And Shine Interlude",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "The Horrified One",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Revolution",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "4 Realms Of Existence",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "The Son",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "K.D.R.U. Interlude",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Provoke Reactions",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "4 Realms Outro",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Fat Freddy's Drop",
@@ -582,7 +5835,73 @@
     "release_id": 598712,
     "first_released": "2005-05-02",
     "date_added": "2022-11-23",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2005,
+      "genres": [
+        "Electronic"
+      ],
+      "styles": [
+        "Broken Beat",
+        "Downtempo",
+        "Dub"
+      ],
+      "labels": [
+        "The Drop"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Ernie",
+          "duration": "7:17"
+        },
+        {
+          "position": "A2",
+          "title": "Cay's Crays",
+          "duration": "7:07"
+        },
+        {
+          "position": "A3",
+          "title": "This Room",
+          "duration": "5:00"
+        },
+        {
+          "position": "B1",
+          "title": "Ray Ray",
+          "duration": "7:38"
+        },
+        {
+          "position": "B2",
+          "title": "Flashback",
+          "duration": "6:40"
+        },
+        {
+          "position": "C1",
+          "title": "Dark Days",
+          "duration": "9:49"
+        },
+        {
+          "position": "C2",
+          "title": "Del Fuego",
+          "duration": "5:24"
+        },
+        {
+          "position": "C3",
+          "title": "Hope",
+          "duration": "7:19"
+        },
+        {
+          "position": "D1",
+          "title": "Wandering Eye",
+          "duration": "6:30"
+        },
+        {
+          "position": "D2",
+          "title": "Roady",
+          "duration": "7:08"
+        }
+      ]
+    }
   },
   {
     "artist": "Fat Freddy's Drop",
@@ -591,7 +5910,60 @@
     "release_id": 21019102,
     "first_released": "unknown",
     "date_added": "2022-05-05",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Electronic",
+        "Jazz",
+        "Reggae",
+        "Funk / Soul"
+      ],
+      "styles": [
+        "Dub",
+        "Soul-Jazz"
+      ],
+      "labels": [
+        "The Drop"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Coffee Black",
+          "duration": "8:10"
+        },
+        {
+          "position": "A2",
+          "title": "Bones",
+          "duration": "8:22"
+        },
+        {
+          "position": "B1",
+          "title": "Shady",
+          "duration": "7:09"
+        },
+        {
+          "position": "B2",
+          "title": "Wairunga Blues",
+          "duration": "5:29"
+        },
+        {
+          "position": "C1",
+          "title": "Bush Telegraph",
+          "duration": "6:55"
+        },
+        {
+          "position": "C2",
+          "title": "Leave Your Window Open",
+          "duration": "11:29"
+        },
+        {
+          "position": "D1",
+          "title": "Dig Deep",
+          "duration": "10:30"
+        }
+      ]
+    }
   },
   {
     "artist": "Elemeno P",
@@ -600,7 +5972,82 @@
     "release_id": 17263561,
     "first_released": "unknown",
     "date_added": "2022-03-14",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2021,
+      "genres": [
+        "Rock"
+      ],
+      "styles": [
+        "Pop Rock",
+        "Indie Rock"
+      ],
+      "labels": [
+        "Universal Music New Zealand"
+      ],
+      "tracklist": [
+        {
+          "position": "1",
+          "title": "Nirvana",
+          "duration": "2:29"
+        },
+        {
+          "position": "2",
+          "title": "Verona",
+          "duration": "2:47"
+        },
+        {
+          "position": "3",
+          "title": "Goodbye",
+          "duration": "2:33"
+        },
+        {
+          "position": "4",
+          "title": "Urban Getaway",
+          "duration": "2:11"
+        },
+        {
+          "position": "5",
+          "title": "The Benjamins",
+          "duration": "3:01"
+        },
+        {
+          "position": "6",
+          "title": "Fast Times In Tahoe",
+          "duration": "3:10"
+        },
+        {
+          "position": "7",
+          "title": "Claim To Fame",
+          "duration": "3:22"
+        },
+        {
+          "position": "8",
+          "title": "I Don't Know",
+          "duration": "3:17"
+        },
+        {
+          "position": "9",
+          "title": "Hold On",
+          "duration": "2:02"
+        },
+        {
+          "position": "10",
+          "title": "On My Balcony",
+          "duration": "3:25"
+        },
+        {
+          "position": "11",
+          "title": "Every Day's A Saturday",
+          "duration": "2:51"
+        },
+        {
+          "position": "12",
+          "title": "Weed Out",
+          "duration": "4:46"
+        }
+      ]
+    }
   },
   {
     "artist": "Mac Miller",
@@ -609,7 +6056,37 @@
     "release_id": 27897450,
     "first_released": "unknown",
     "date_added": "2023-10-26",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Jazzy Hip-Hop"
+      ],
+      "labels": [
+        "Warner Records",
+        "REMember Music (2)"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Small Worlds",
+          "duration": "5:37"
+        },
+        {
+          "position": "A2",
+          "title": "What's the Use?",
+          "duration": "7:11"
+        },
+        {
+          "position": "A3",
+          "title": "2009",
+          "duration": "5:47"
+        }
+      ]
+    }
   },
   {
     "artist": "Mac Miller",
@@ -619,7 +6096,86 @@
     "first_released": "unknown",
     "year": "2018",
     "date_added": "2023-12-07",
-    "favourite": true
+    "favourite": true,
+    "discogsData": {
+      "year": 0,
+      "genres": [
+        "Hip Hop",
+        "Funk / Soul"
+      ],
+      "styles": [],
+      "labels": [
+        "Warner Records",
+        "REMember Music (2)"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Come Back To Earth",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Hurt Feelings",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "What's The Use?",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Perfecto",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Self Care",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Wings",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Ladders",
+          "duration": ""
+        },
+        {
+          "position": "C1",
+          "title": "Small Worlds",
+          "duration": ""
+        },
+        {
+          "position": "C2",
+          "title": "Conversation Pt.1",
+          "duration": ""
+        },
+        {
+          "position": "C3",
+          "title": "Dunno",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Jet Fuel",
+          "duration": ""
+        },
+        {
+          "position": "D2",
+          "title": "2009",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "So It Goes",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Everything Is Recorded",
@@ -628,7 +6184,82 @@
     "release_id": 15079320,
     "first_released": "unknown",
     "date_added": "2022-04-15",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2020,
+      "genres": [
+        "Electronic",
+        "Hip Hop"
+      ],
+      "styles": [
+        "Downtempo"
+      ],
+      "labels": [
+        "XL Recordings"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "09:46 PM / Every Friday Thereafter",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "10:51 PM / The Night",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "12:12 AM / Patients",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "01:32 AM / Walk Alone",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "02:56 AM / I Don't Want This Feeling To Stop",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "03:15 AM / Caviar",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "04:21 AM / That Sky",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "05:10 AM / Dream I Never Had",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "09:34 AM / Pretending Nothing's Wrong",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "10:02 AM / Burnt Toast",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "11:55 AM / This World",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "11:59 AM / Circles",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Avantdale Bowling Club",
@@ -637,7 +6268,83 @@
     "release_id": 13549812,
     "first_released": "2018-11-00",
     "date_added": "2024-02-11",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2018,
+      "genres": [
+        "Hip Hop",
+        "Jazz"
+      ],
+      "styles": [
+        "Conscious",
+        "Jazzy Hip-Hop"
+      ],
+      "labels": [
+        "Years Gone By"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Years Gone By",
+          "duration": "6:52"
+        },
+        {
+          "position": "A2",
+          "title": "Pocket Lint",
+          "duration": "4:03"
+        },
+        {
+          "position": "A3",
+          "title": "F(r)iends",
+          "duration": "6:11"
+        },
+        {
+          "position": "B1",
+          "title": "Water (Medley)",
+          "duration": "9:16"
+        },
+        {
+          "position": "B2",
+          "title": "Old Dogs",
+          "duration": "5:29"
+        },
+        {
+          "position": "C1",
+          "title": "Home",
+          "duration": "7:34"
+        },
+        {
+          "position": "C2",
+          "title": "Quincy's March",
+          "duration": "7:33"
+        },
+        {
+          "position": "C3",
+          "title": "Tea Break",
+          "duration": "4:47"
+        },
+        {
+          "position": "",
+          "title": "Leftovers",
+          "duration": ""
+        },
+        {
+          "position": "D1",
+          "title": "Afternoon Tea",
+          "duration": "5:35"
+        },
+        {
+          "position": "D2",
+          "title": "Train Wreck",
+          "duration": "8:32"
+        },
+        {
+          "position": "D3",
+          "title": "Mt Roskill Interlude",
+          "duration": "0:58"
+        }
+      ]
+    }
   },
   {
     "artist": "Avantdale Bowling Club",
@@ -646,7 +6353,72 @@
     "release_id": 24662387,
     "first_released": "unknown",
     "date_added": "2024-02-11",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2022,
+      "genres": [
+        "Hip Hop",
+        "Jazz"
+      ],
+      "styles": [
+        "Jazzy Hip-Hop"
+      ],
+      "labels": [
+        "Years Gone By"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Trees",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Rent 2 High",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Twenty Eight",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Flying Pigs",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Friday Night @ The Liquor Store",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Going Through It",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Still Feel Broke",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Remember, I Really Am Asleep?",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Without You",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Outro?",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Home Brew",
@@ -655,7 +6427,77 @@
     "release_id": 29139553,
     "first_released": "unknown",
     "date_added": "2023-12-20",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Conscious",
+        "Pacific"
+      ],
+      "labels": [
+        "Years Gone By"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Run It Back",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Drinking In The Morning",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Mum’s Stash",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Holding On",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Dole Day Interlude",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Probably",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "80 Down Scenic",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Questions",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Dragons & Rhinoceroses",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Tears Gone Dry",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Run It Back Again (Bonus Track)",
+          "duration": ""
+        }
+      ]
+    }
   },
   {
     "artist": "Home Brew",
@@ -664,6 +6506,120 @@
     "release_id": 28420666,
     "first_released": "unknown",
     "date_added": "2024-02-11",
-    "favourite": false
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Conscious"
+      ],
+      "labels": [
+        "Young Gifted & Broke"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Dedicated To (Intro)",
+          "duration": "5:00"
+        },
+        {
+          "position": "A2",
+          "title": "Benefit",
+          "duration": "4:38"
+        },
+        {
+          "position": "A3",
+          "title": "Alcoholic",
+          "duration": "4:44"
+        },
+        {
+          "position": "A4",
+          "title": "Yellow Snot Funk",
+          "duration": "3:06"
+        },
+        {
+          "position": "A5",
+          "title": "Datura / White Flowers",
+          "duration": "3:28"
+        },
+        {
+          "position": "B1",
+          "title": "Everybody",
+          "duration": "4:08"
+        },
+        {
+          "position": "B2",
+          "title": "Time Don't Wait",
+          "duration": "2:52"
+        },
+        {
+          "position": "B3",
+          "title": "Basketball Court",
+          "duration": "5:52"
+        },
+        {
+          "position": "B4",
+          "title": "Radio",
+          "duration": "4:04"
+        },
+        {
+          "position": "B5",
+          "title": "Radio (Outro)",
+          "duration": "4:21"
+        },
+        {
+          "position": "C1",
+          "title": "Dark (Intro)",
+          "duration": "2:12"
+        },
+        {
+          "position": "C2",
+          "title": "State Of Mind",
+          "duration": "3:39"
+        },
+        {
+          "position": "C3",
+          "title": "Plastic Magic",
+          "duration": "5:20"
+        },
+        {
+          "position": "C4",
+          "title": "The Truth Is Ugly",
+          "duration": "3:31"
+        },
+        {
+          "position": "C5",
+          "title": "55 Stories",
+          "duration": "4:47"
+        },
+        {
+          "position": "D1",
+          "title": "Listen To Us",
+          "duration": "5:54"
+        },
+        {
+          "position": "D2",
+          "title": "Good God",
+          "duration": ""
+        },
+        {
+          "position": "D3",
+          "title": "Bourbon & Coke",
+          "duration": ""
+        },
+        {
+          "position": "D4",
+          "title": "Fungi / Absence",
+          "duration": ""
+        },
+        {
+          "position": "D5",
+          "title": "Space",
+          "duration": ""
+        }
+      ]
+    }
   }
 ]

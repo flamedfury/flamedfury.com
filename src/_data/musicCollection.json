@@ -1,0 +1,669 @@
+[
+  {
+    "artist": "The Game",
+    "title": "The Documentary",
+    "format": "Vinyl",
+    "release_id": 24476186,
+    "first_released": "2022-09-00",
+    "date_added": "2023-08-22",
+    "favourite": false
+  },
+  {
+    "artist": "Eminem",
+    "title": "The Eminem Show",
+    "format": "Vinyl",
+    "release_id": 5191929,
+    "first_released": "unknown",
+    "date_added": "2022-06-28",
+    "favourite": false
+  },
+  {
+    "artist": "Eminem",
+    "title": "The Marshall Mathers LP",
+    "format": "Vinyl",
+    "release_id": 5252470,
+    "first_released": "2000-05-23",
+    "date_added": "2021-09-28",
+    "favourite": true
+  },
+  {
+    "artist": "Eminem",
+    "title": "The Death Of Slim Shady (Coup De Grâce)",
+    "format": "Vinyl",
+    "release_id": 32092962,
+    "first_released": "2024-10-25",
+    "date_added": "2024-11-04",
+    "favourite": false
+  },
+  {
+    "artist": "Eminem",
+    "title": "Kamikaze",
+    "format": "Vinyl",
+    "release_id": 12896745,
+    "first_released": "unknown",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "Eminem",
+    "title": "Music To Be Murdered By",
+    "format": "Vinyl",
+    "release_id": 15143735,
+    "first_released": "2020-04-00",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "Gangrene",
+    "title": "Heads I Win, Tails You Lose",
+    "format": "Vinyl",
+    "release_id": 31466909,
+    "first_released": "unknown",
+    "date_added": "2024-09-02",
+    "favourite": false
+  },
+  {
+    "artist": "Conway The Machine, Alchemist",
+    "title": "LULU",
+    "format": "Vinyl",
+    "release_id": 16317756,
+    "first_released": "unknown",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "Cardi B, Megan Thee Stallion",
+    "title": "WAP",
+    "format": "Vinyl",
+    "release_id": 16961280,
+    "first_released": "unknown",
+    "date_added": "2023-01-23",
+    "favourite": false
+  },
+  {
+    "artist": "Machine Gun Kelly",
+    "title": "Tickets To My Downfall",
+    "format": "Vinyl",
+    "release_id": 16154867,
+    "first_released": "2020-11-06",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "Czarface",
+    "title": "Czarface",
+    "format": "Vinyl",
+    "release_id": 4295837,
+    "first_released": "2013-02-19",
+    "date_added": "2022-07-19",
+    "favourite": false
+  },
+  {
+    "artist": "Czarface",
+    "title": "Every Hero Needs A Villain",
+    "format": "Vinyl",
+    "release_id": 7117669,
+    "first_released": "unknown",
+    "date_added": "2022-06-28",
+    "favourite": false
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Endless Summer Vacation",
+    "format": "Vinyl",
+    "release_id": 26330912,
+    "first_released": "2023-03-10",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Mariah Carey",
+    "title": "#1's",
+    "format": "Vinyl",
+    "release_id": 22969166,
+    "first_released": "unknown",
+    "date_added": "2022-04-28",
+    "favourite": false
+  },
+  {
+    "artist": "Conway The Machine, Big Ghost LTD",
+    "title": "If It Bleeds It Can Be Killed",
+    "format": "Vinyl",
+    "release_id": 17972656,
+    "first_released": "2021",
+    "date_added": "2022-05-05",
+    "favourite": false
+  },
+  {
+    "artist": "Conway The Machine",
+    "title": "La Maquina",
+    "format": "Vinyl",
+    "release_id": 19441717,
+    "first_released": "unknown",
+    "date_added": "2022-05-05",
+    "favourite": false
+  },
+  {
+    "artist": "Conway The Machine",
+    "title": "The Missing Bricks",
+    "format": "Vinyl",
+    "release_id": 21467713,
+    "first_released": "unknown",
+    "date_added": "2022-05-05",
+    "favourite": false
+  },
+  {
+    "artist": "Conway The Machine, Big Ghost LTD",
+    "title": "What Has Been Blessed Cannot Be Cursed",
+    "format": "Vinyl",
+    "release_id": 24869249,
+    "first_released": "2022",
+    "date_added": "2022-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "Rome Streetz",
+    "title": "Wasn't Built In A Day",
+    "format": "Vinyl",
+    "release_id": 27234162,
+    "first_released": "unknown",
+    "date_added": "2023-10-10",
+    "favourite": false
+  },
+  {
+    "artist": "Benny The Butcher",
+    "title": "The Plugs I Met",
+    "format": "Vinyl",
+    "release_id": 14206657,
+    "first_released": "2019",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "Conway The Machine, Big Ghost LTD",
+    "title": "No One Mourns The Wicked",
+    "format": "Vinyl",
+    "release_id": 15573541,
+    "first_released": "2020-06-29",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "DMX",
+    "title": "The Legacy",
+    "format": "Vinyl",
+    "release_id": 16279217,
+    "first_released": "unknown",
+    "date_added": "2021-05-15",
+    "favourite": false
+  },
+  {
+    "artist": "Method Man",
+    "title": "Tical",
+    "format": "Vinyl",
+    "release_id": 13859189,
+    "first_released": "unknown",
+    "date_added": "2023-08-22",
+    "favourite": false
+  },
+  {
+    "artist": "Nirvana",
+    "title": "In Utero",
+    "format": "Vinyl",
+    "release_id": 28714897,
+    "first_released": "unknown",
+    "date_added": "2024-02-11",
+    "favourite": false
+  },
+  {
+    "artist": "The Offspring",
+    "title": "Smash",
+    "format": "Vinyl",
+    "release_id": 10243726,
+    "first_released": "2016",
+    "date_added": "2024-04-26",
+    "favourite": false
+  },
+  {
+    "artist": "Limp Bizkit",
+    "title": "Significant Other",
+    "format": "Vinyl",
+    "release_id": 27520260,
+    "first_released": "2023-06-00",
+    "date_added": "2024-04-26",
+    "favourite": false
+  },
+  {
+    "artist": "Blink-182",
+    "title": "Enema Of The State",
+    "format": "Vinyl",
+    "release_id": 27332361,
+    "first_released": "2023-06-09",
+    "date_added": "2023-07-31",
+    "favourite": false
+  },
+  {
+    "artist": "The Genius, GZA",
+    "title": "Liquid Swords",
+    "format": "Vinyl",
+    "release_id": 14240785,
+    "first_released": "unknown",
+    "date_added": "2023-06-29",
+    "favourite": false
+  },
+  {
+    "artist": "Raekwon",
+    "title": "Only Built 4 Cuban Linx...",
+    "format": "Vinyl",
+    "release_id": 24908474,
+    "first_released": "2022",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "The Time Of Our Lives",
+    "format": "Vinyl",
+    "release_id": 19921147,
+    "first_released": "2021-08-00",
+    "date_added": "2022-03-22",
+    "favourite": false
+  },
+  {
+    "artist": "Eminem",
+    "title": "Sing For The Moment",
+    "format": "Vinyl",
+    "release_id": 404245,
+    "first_released": "2003",
+    "date_added": "2022-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "title": "Good Kid, M.A.A.D City",
+    "format": "Vinyl",
+    "release_id": 24901052,
+    "first_released": "unknown",
+    "date_added": "2022-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "Proof",
+    "title": "M.A.D.",
+    "format": "Vinyl",
+    "release_id": 1824895,
+    "first_released": "2005",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "The Beths",
+    "title": "Expert In A Dying Field",
+    "format": "Vinyl",
+    "release_id": 24527939,
+    "first_released": "unknown",
+    "date_added": "2022-09-25",
+    "favourite": false
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Britney",
+    "format": "Vinyl",
+    "release_id": 26602088,
+    "first_released": "2023-03-31",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "In The Zone",
+    "format": "Vinyl",
+    "release_id": 26900960,
+    "first_released": "2023-04-28",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Greatest Hits: My Prerogative",
+    "format": "Vinyl",
+    "release_id": 27186291,
+    "first_released": "unknown",
+    "date_added": "2023-06-29",
+    "favourite": false
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Oops!...I Did It Again",
+    "format": "Vinyl",
+    "release_id": 26602001,
+    "first_released": "unknown",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Fly My Pretties",
+    "title": "The Studio Recordings Part 1",
+    "format": "Vinyl",
+    "release_id": 14328582,
+    "first_released": "unknown",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "Fly My Pretties",
+    "title": "The Studio Recordings Part 2",
+    "format": "Vinyl",
+    "release_id": 15641400,
+    "first_released": "2020-07-10",
+    "date_added": "2021-09-28",
+    "favourite": false
+  },
+  {
+    "artist": "Inspectah Deck",
+    "title": "Uncontrolled Substance",
+    "format": "Vinyl",
+    "release_id": 25896430,
+    "first_released": "unknown",
+    "date_added": "2023-08-22",
+    "favourite": false
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "title": "Wu-Tang Forever",
+    "format": "Vinyl",
+    "release_id": 10403050,
+    "first_released": "2017",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Ghostface Killah",
+    "title": "Ironman",
+    "format": "Vinyl",
+    "release_id": 22335604,
+    "first_released": "2022-03-04",
+    "date_added": "2022-04-19",
+    "favourite": false
+  },
+  {
+    "artist": "Ainslie Allen",
+    "title": "Betty",
+    "format": "Vinyl",
+    "release_id": 25254286,
+    "first_released": "2021-11-19",
+    "date_added": "2022-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "Kendrick Lamar",
+    "title": "GNX",
+    "format": "Vinyl",
+    "release_id": 33067563,
+    "first_released": "unknown",
+    "date_added": "2025-02-20",
+    "favourite": false
+  },
+  {
+    "artist": "Mark Ronson, Miley Cyrus",
+    "title": "Nothing Breaks Like A Heart",
+    "format": "Vinyl",
+    "release_id": 13493873,
+    "first_released": "2019-04-13",
+    "date_added": "2021-10-02",
+    "favourite": true
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Plastic Hearts",
+    "format": "Vinyl",
+    "release_id": 19570501,
+    "first_released": "unknown",
+    "date_added": "2021-09-28",
+    "favourite": true
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Bangerz",
+    "format": "Vinyl",
+    "release_id": 28422217,
+    "first_released": "2015",
+    "date_added": "2023-10-15",
+    "favourite": false
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "title": "Enter The Wu-Tang (36 Chambers)",
+    "format": "Vinyl",
+    "release_id": 8154672,
+    "first_released": "unknown",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Taylor Swift",
+    "title": "Speak Now (Taylor's Version)",
+    "format": "Vinyl",
+    "release_id": 27604608,
+    "first_released": "unknown",
+    "date_added": "2023-07-31",
+    "favourite": false
+  },
+  {
+    "artist": "Taylor Swift",
+    "title": "Fearless (Taylor's Version)",
+    "format": "Vinyl",
+    "release_id": 20415259,
+    "first_released": "unknown",
+    "date_added": "2021-10-16",
+    "favourite": false
+  },
+  {
+    "artist": "Ol' Dirty Bastard",
+    "title": "Return To The 36 Chambers: The Dirty Version",
+    "format": "Vinyl",
+    "release_id": 26841434,
+    "first_released": "unknown",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Cypress Hill",
+    "title": "III - Temples Of Boom",
+    "format": "Vinyl",
+    "release_id": 11079090,
+    "first_released": "unknown",
+    "date_added": "2023-02-18",
+    "favourite": false
+  },
+  {
+    "artist": "Bone Thugs-N-Harmony",
+    "title": "E. 1999 Eternal",
+    "format": "Vinyl",
+    "release_id": 27928278,
+    "first_released": "2023-08-00",
+    "date_added": "2023-08-22",
+    "favourite": true
+  },
+  {
+    "artist": "D12",
+    "title": "Shit On You",
+    "format": "Vinyl",
+    "release_id": 4876919,
+    "first_released": "unknown",
+    "date_added": "2022-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "D12",
+    "title": "Devils Night",
+    "format": "Vinyl",
+    "release_id": 521571,
+    "first_released": "2001",
+    "date_added": "2025-04-14",
+    "favourite": true
+  },
+  {
+    "artist": "D12",
+    "title": "Fight Music",
+    "format": "Vinyl",
+    "release_id": 1396129,
+    "first_released": "unknown",
+    "date_added": "2022-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "D12",
+    "title": "How Come",
+    "format": "Vinyl",
+    "release_id": 599703,
+    "first_released": "unknown",
+    "date_added": "2023-05-19",
+    "favourite": false
+  },
+  {
+    "artist": "Czarface",
+    "title": "The Odd Czar Against Us",
+    "format": "Vinyl",
+    "release_id": 14493566,
+    "first_released": "2019-12-06",
+    "date_added": "2022-05-05",
+    "favourite": false
+  },
+  {
+    "artist": "Czarface, MF Doom",
+    "title": "Super What?",
+    "format": "Vinyl",
+    "release_id": 18616576,
+    "first_released": "unknown",
+    "date_added": "2022-07-19",
+    "favourite": false
+  },
+  {
+    "artist": "Czarface",
+    "title": "Czarmageddon!",
+    "format": "Vinyl",
+    "release_id": 22970630,
+    "first_released": "2022-04-23",
+    "date_added": "2022-04-25",
+    "favourite": false
+  },
+  {
+    "artist": "Czarface, Ghostface Killah",
+    "title": "Czarface Meets Ghostface",
+    "format": "Vinyl",
+    "release_id": 13201706,
+    "first_released": "unknown",
+    "date_added": "2022-04-28",
+    "favourite": false
+  },
+  {
+    "artist": "Che Fu",
+    "title": "Navigator",
+    "format": "Vinyl",
+    "release_id": 21032785,
+    "first_released": "2021-11-01",
+    "date_added": "2022-03-15",
+    "favourite": false
+  },
+  {
+    "artist": "Dam Native",
+    "title": "Kaupapa Driven Rhymes Uplifted",
+    "format": "Vinyl",
+    "release_id": 31777736,
+    "first_released": "unknown",
+    "date_added": "2024-12-13",
+    "favourite": false
+  },
+  {
+    "artist": "Fat Freddy's Drop",
+    "title": "Based On A True Story",
+    "format": "Vinyl",
+    "release_id": 598712,
+    "first_released": "2005-05-02",
+    "date_added": "2022-11-23",
+    "favourite": false
+  },
+  {
+    "artist": "Fat Freddy's Drop",
+    "title": "Wairunga",
+    "format": "Vinyl",
+    "release_id": 21019102,
+    "first_released": "unknown",
+    "date_added": "2022-05-05",
+    "favourite": false
+  },
+  {
+    "artist": "Elemeno P",
+    "title": "Love & Disrespect",
+    "format": "Vinyl",
+    "release_id": 17263561,
+    "first_released": "unknown",
+    "date_added": "2022-03-14",
+    "favourite": false
+  },
+  {
+    "artist": "Mac Miller",
+    "title": "NPR Music Tiny Desk Concert",
+    "format": "Vinyl",
+    "release_id": 27897450,
+    "first_released": "unknown",
+    "date_added": "2023-10-26",
+    "favourite": false
+  },
+  {
+    "artist": "Mac Miller",
+    "title": "Swimming",
+    "format": "Vinyl",
+    "release_id": 27765078,
+    "first_released": "unknown",
+    "year": "2018",
+    "date_added": "2023-12-07",
+    "favourite": true
+  },
+  {
+    "artist": "Everything Is Recorded",
+    "title": "Friday Forever",
+    "format": "Vinyl",
+    "release_id": 15079320,
+    "first_released": "unknown",
+    "date_added": "2022-04-15",
+    "favourite": false
+  },
+  {
+    "artist": "Avantdale Bowling Club",
+    "title": "Avantdale Bowling Club",
+    "format": "Vinyl",
+    "release_id": 13549812,
+    "first_released": "2018-11-00",
+    "date_added": "2024-02-11",
+    "favourite": false
+  },
+  {
+    "artist": "Avantdale Bowling Club",
+    "title": "Trees",
+    "format": "Vinyl",
+    "release_id": 24662387,
+    "first_released": "unknown",
+    "date_added": "2024-02-11",
+    "favourite": false
+  },
+  {
+    "artist": "Home Brew",
+    "title": "Run It Back",
+    "format": "Vinyl",
+    "release_id": 29139553,
+    "first_released": "unknown",
+    "date_added": "2023-12-20",
+    "favourite": false
+  },
+  {
+    "artist": "Home Brew",
+    "title": "Home Brew (11th Anniversary Edition)",
+    "format": "Vinyl",
+    "release_id": 28420666,
+    "first_released": "unknown",
+    "date_added": "2024-02-11",
+    "favourite": false
+  }
+]
