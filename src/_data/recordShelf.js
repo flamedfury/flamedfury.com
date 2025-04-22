@@ -5,10 +5,13 @@ import { promises as fs } from 'fs';
 const DISCOGS_TOKEN = process.env.DISCOGS_TOKEN;
 const DISCOGS_USER_AGENT = process.env.USER_AGENT;
 
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+const releases = [];
+for (const release of myCollection) {
+  releases.push(await fetchReleaseDetails(release));
+}
 
 async function fetchWithRateLimit(url) {
-  await delay(5000);
+  await delay(1200);
   return EleventyFetch(url, {
     duration: "1d",
     type: "json",
