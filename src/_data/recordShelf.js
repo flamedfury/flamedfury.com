@@ -7,23 +7,18 @@ const DISCOGS_USER_AGENT = process.env.USER_AGENT;
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-async function fetchWithRateLimit(url, attempt = 1) {
-  try {
-    await delay(1500 * attempt);
-    return await EleventyFetch(url, {
-      duration: "1d",
-      type: "json",
-      fetchOptions: { headers }
-    });
-  } catch (error) {
-    if (error.cause?.status === 429 && attempt < 3) {
-      const waitTime = 1500 * Math.pow(2, attempt);
-      console.warn(`Retrying ${url} in ${waitTime}ms`);
-      await delay(waitTime);
-      return fetchWithRateLimit(url, attempt + 1);
+async function fetchWithRateLimit(url) {
+  await delay(1500);
+  return EleventyFetch(url, {
+    duration: "1d",
+    type: "json",
+    fetchOptions: {
+      headers: {
+        'Authorization': `Discogs token=${DISCOGS_TOKEN}`,
+        'User-Agent': DISCOGS_USER_AGENT,
+      },
     }
-    throw error;
-  }
+  });
 }
 
 async function fetchReleaseDetails(release) {
@@ -31,10 +26,13 @@ async function fetchReleaseDetails(release) {
     console.error('No Discogs ID provided for release:', release.title);
     return release;
   }
+
   const releaseUrl = `https://api.discogs.com/releases/${release.release_id}`;
+
   try {
     const releaseDetails = await fetchWithRateLimit(releaseUrl);
     const uniqueFormats = new Set();
+
     return {
       ...release,
       label: releaseDetails.labels[0]?.name.replace(/\s*\(\d+\)\s*$/, '') || '',
@@ -65,7 +63,11 @@ async function fetchReleaseDetails(release) {
       }))
     };
   } catch (error) {
-    console.error(`Headers:`, error.cause?.headers);
+    console.error(`Error for ${release.title}:`, {
+      status: error.cause?.status,
+      headers: error.cause?.headers,
+      url: error.cause?.url
+    });
     throw error;
   }
 }
