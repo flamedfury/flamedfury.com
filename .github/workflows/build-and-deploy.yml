@@ -54,6 +54,8 @@ jobs:
           TVDB_API_KEY: ${{ secrets.TVDB_API_KEY }}
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
           LISTENBRAINZ_USER: ${{ secrets.LISTENBRAINZ_USER }}
+          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
+          DISCOGS_USER_AGENT: ${{ secrets.USER_AGENT }}
 
       - name: Deploy website to server
         uses: easingthemes/ssh-deploy@v5.0.3
