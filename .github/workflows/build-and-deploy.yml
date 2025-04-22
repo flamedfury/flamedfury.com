@@ -67,7 +67,7 @@ jobs:
           SOURCE: "dist/"
           TARGET: ${{ secrets.CPANEL_TARGET }}
           EXCLUDE: ".git*, .github*, node_modules*, src*"
-          ARGS: "-avzr --delete"
+          ARGS: "-avzr --delete --size-only --dry-run"
 
       - name: Cache Eleventy image output
         uses: actions/cache@v4
