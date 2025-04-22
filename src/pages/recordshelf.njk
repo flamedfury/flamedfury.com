@@ -155,7 +155,7 @@ layout: page
             <div class="record-card__meta">
               <h3>{{ release.title }}</h3>
               <p>{{ release.artist }}</p>
-              {% if release.year %}<p>{{ release.year }}</p>{% endif %}
+              {% if release.discogsData.year %}<p>{{ release.discogsData.year }}</p>{% endif %}
               {% if release.favourite %}<span class="record-card__favourite">★</span>{% endif %}
               {% if release.date_added %}
                 <time class="record-card__date" datetime="{{ release.date_added | formatDate('YYYY-MM-DD') }}">

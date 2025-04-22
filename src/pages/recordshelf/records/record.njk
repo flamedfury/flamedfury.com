@@ -40,13 +40,13 @@ layout: base
         <dd class="recordshelf-detail">{{ release.artist }}</dd>
 
         <dt class="recordshelf-label">Year</dt>
-        <dd class="recordshelf-detail">{{ release.year }}</dd>
+        <dd class="recordshelf-detail">{{ release.discogsData.year | default('Unknown') }}</dd>
 
         <dt class="recordshelf-label">Genre</dt>
-        <dd class="recordshelf-detail">{{ release.genres | join(', ') }}</dd>
+        <dd class="recordshelf-detail">{{ release.discogsData.genres | default([]) | join(', ') }}</dd>
 
         <dt class="recordshelf-label">Label</dt>
-        <dd class="recordshelf-detail">{{ release.label }}</dd>
+        <dd class="recordshelf-detail">{{ release.discogsData.labels | default('') }}</dd>
 
         <dt class="recordshelf-label">Format</dt>
         <dd class="recordshelf-detail">
@@ -83,7 +83,7 @@ layout: base
     <div class="section__inner wrapper">
       <h2>Tracklist</h2>
       <ol class="tracklist">
-        {% for track in release.tracklist %}
+        {% for track in release.discogsData.tracklist %}
           <li class="tracklist__item">
             <span class="tracklist__position">{{ track.position }}</span>
             <span class="tracklist__title">{{ track.title }}</span>

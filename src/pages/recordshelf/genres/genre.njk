@@ -21,7 +21,7 @@ layout: base
   </nav>
 
   <section class="full section" style="--spot-color: var(--color-bg-accent)">
-    <div class="section__inner wrapper">
+    {% svg "divider/soft-top", null, "seperator" %}    <div class="section__inner wrapper">
       <header class="cluster" style="--gutter: var(--space-s)">
         <h2>Releases</h2>
         <p class="counter">{{ genreData.releases.length }} record{% if genreData.releases.length != 1 %}s{% endif %}</p>
@@ -47,6 +47,7 @@ layout: base
         {% endfor %}
       </div>
     </div>
+    {% svg "divider/soft-bottom", null, "seperator" %}
   </section>
 </article>
 

@@ -1,4 +1,6 @@
 import _ from 'lodash'; /** For postsByYear */
+import * as fs from 'node:fs';
+import * as path from 'node:path';
 
 /** All blog posts as a collection. */
 export const getAllPosts = collection => {
@@ -57,7 +59,6 @@ export const filterFeedPosts = collection => {
 /** Collection to group posts by year */
 export const postsByYear = collection => {
   const posts = collection.getFilteredByGlob('./src/posts/**/*.md');
-
   const groupedPosts = posts.reduce((acc, post) => {
     const year = new Date(post.date).getFullYear();
     if (!acc[year]) {
@@ -96,104 +97,143 @@ export const booksByYear = collection => {
 
 /** Collections for the Recordshelf https://damianwalsh.co.uk/posts/creating-connections-with-music-and-technology/ */
 
-/** All releases as a collection. */
-export const releasesCollection = collectionApi => {
-  const musicData = collectionApi.getAll()[0]?.data?.recordShelf;
-  if (!musicData || !musicData.releases) {
-    console.warn("Music data not found or invalid");
+/**
+ * Path to the record shelf data file.
+ */
+const recordShelfDataPath = path.join(process.cwd(), 'src/_data/recordShelf.json');
+
+/**
+ * All releases as a collection.
+ * @param {object} collectionApi - Eleventy's collection API.
+ * @returns {Promise<Array<any>>} - A promise that resolves to an array of all releases.
+ */
+export const releasesCollection = async (collectionApi) => {
+  try {
+    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
+    const recordShelf = JSON.parse(fileContent);
+    return recordShelf || [];
+  } catch (error) {
+    console.error("Error in releasesCollection:", error);
     return [];
   }
-  return musicData.releases;
 };
 
-export const artistsCollection = collectionApi => {
-  const musicData = collectionApi.getAll()[0]?.data?.recordShelf;
-  if (!musicData || !musicData.releases) {
-    console.warn("Music data not found or invalid for artists collection");
-    return [];
-  }
-  const releases = musicData.releases;
-  const artistMap = new Map();
+/**
+ * Artists grouped by their releases.
+ * @param {object} collectionApi - Eleventy's collection API.
+ * @returns {Promise<Array<{artist: string, releases: Array<any>}>>} - A promise that resolves to an array of artists and their releases.
+ */
+export const artistsCollection = async (collectionApi) => {
+  try {
+    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
+    const recordShelf = JSON.parse(fileContent);
+    if (!recordShelf) return [];
 
-  releases.forEach(release => {
-    // Split the artist string into individual names
-    splitArtists(release.artist).forEach(artistName => {
-      if (!artistMap.has(artistName)) {
-        artistMap.set(artistName, []);
-      }
-      artistMap.get(artistName).push(release);
+    const artistMap = new Map();
+
+    recordShelf.forEach(release => {
+      // Split the artist string into individual names
+      splitArtists(release.artist).forEach(artistName => {
+        if (!artistMap.has(artistName)) {
+          artistMap.set(artistName, []);
+        }
+        artistMap.get(artistName).push(release);
+      });
     });
-  });
 
-  // Convert map to array of { artist, releases }
-  return Array.from(artistMap.entries()).map(([artist, releases]) => ({
-    artist,
-    releases
-  }));
+    // Convert map to array of { artist, releases }
+    return Array.from(artistMap.entries()).map(([artist, releases]) => ({
+      artist,
+      releases
+    }));
+  } catch (error) {
+    console.error("Error in artistsCollection:", error);
+    return [];
+  }
 };
 
-// Helper function (place above or import)
+/**
+ * Helper function to split an artist string into individual artist names.
+ * @param {string} artistString - The string containing one or more artist names.
+ * @returns {Array<string>} - An array of individual artist names.
+ */
 function splitArtists(artistString) {
   return artistString.split(/,|&|feat\.|featuring|with|and/i).map(s => s.trim()).filter(Boolean);
 }
 
-/** Genres grouped by their releases. */
-export const genresCollection = collectionApi => {
-  const musicData = collectionApi.getAll()[0]?.data?.recordShelf;
-  if (!musicData || !musicData.releases) {
-    console.warn("Music data not found or invalid for genres collection");
+/** Genres grouped by their releases */
+export const genresCollection = async (collectionApi) => {
+  try {
+    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
+    const recordShelf = JSON.parse(fileContent);
+    if (!recordShelf) return [];
+
+    const genres = [...new Set(recordShelf.flatMap(release => release.discogsData?.genres || []))];
+    return genres.map(genre => ({
+      genre,
+      releases: recordShelf.filter(r => r.discogsData?.genres && r.discogsData.genres.includes(genre))
+    }));
+  } catch (error) {
+    console.error("Error in genresCollection:", error);
     return [];
   }
-  const releases = musicData.releases;
-  const genres = [...new Set(releases.flatMap(release => release.genres || []))];
-  return genres.map(genre => ({
-    genre,
-    releases: releases.filter(r => r.genres && r.genres.includes(genre))
-  }));
 };
 
-/** Formats grouped by their releases. */
-export const formatsCollection = collectionApi => {
-  const musicData = collectionApi.getAll()[0]?.data?.recordShelf;
-  if (!musicData || !musicData.releases) {
-    console.warn("Music data not found or invalid for formats collection");
+/**
+ * Formats grouped by their releases.
+ * @param {object} collectionApi - Eleventy's collection API.
+ * @returns {Promise<Array<{format: string, releases: Array<any>}>>} - A promise that resolves to an array of formats and their releases.
+ */
+export const formatsCollection = async (collectionApi) => {
+  try {
+    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
+    const recordShelf = JSON.parse(fileContent);
+    if (!recordShelf) return [];
+
+    const formats = [...new Set(recordShelf.flatMap(release =>
+      release.formats?.map(f => f.name) || []
+    ))];
+    return formats.map(format => ({
+      format,
+      releases: recordShelf.filter(r =>
+        r.formats && r.formats.some(f => f.name.toLowerCase() === format.toLowerCase())
+      )
+    }));
+  } catch (error) {
+    console.error("Error in formatsCollection:", error);
     return [];
   }
-  const releases = musicData.releases;
-  const formats = [...new Set(releases.flatMap(release =>
-    release.formats?.map(f => f.name) || []
-  ))];
-  return formats.map(format => ({
-    format,
-    releases: releases.filter(r =>
-      r.formats && r.formats.some(f => f.name.toLowerCase() === format.toLowerCase())
-    )
-  }));
 };
 
-/** Releases grouped by release year. */
-/** Releases grouped by release year. */
-export const releaseYearsCollection = collectionApi => {
-  const musicData = collectionApi.getAll()[0]?.data?.recordShelf;
-  if (!musicData?.releases) return [];
+/** Releases grouped by release year */
+export const releaseYearsCollection = async (collectionApi) => {
+  try {
+    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
+    const recordShelf = JSON.parse(fileContent);
+    if (!recordShelf) return [];
 
-  const grouped = musicData.releases.reduce((acc, release) => {
-    const year = release.year || 'Unknown';
-    acc[year] = acc[year] || [];
-    acc[year].push(release);
-    return acc;
-  }, {});
+    const grouped = recordShelf.reduce((acc, release) => {
+      // Prioritize top-level year, then discogsData.year, then 'Unknown'
+      const year = release.year || release.discogsData?.year || 'Unknown';
+      acc[year] = acc[year] || [];
+      acc[year].push(release);
+      return acc;
+    }, {});
 
-  return Object.entries(grouped)
-    .map(([year, releases]) => ({
-      year: year === 'Unknown' ? year : parseInt(year),
-      releases
-    }))
-    .sort((a, b) => {
-      if (a.year === 'Unknown') return 1;  // Push unknown to end
-      if (b.year === 'Unknown') return -1;
-      return b.year - a.year; // Descending order (newest first)
-    });
+    return Object.entries(grouped)
+      .map(([year, releases]) => ({
+        year: year === 'Unknown' ? year : parseInt(year),
+        releases
+      }))
+      .sort((a, b) => {
+        if (a.year === 'Unknown') return 1;
+        if (b.year === 'Unknown') return -1;
+        return b.year - a.year;
+      });
+  } catch (error) {
+    console.error("Error in releaseYearsCollection:", error);
+    return [];
+  }
 };
 
 export default {
