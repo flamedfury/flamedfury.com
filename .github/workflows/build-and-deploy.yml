@@ -27,17 +27,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Verify secrets availability
-        run: |
-          if [ -n "$DISCOGS_TOKEN" ]; then
-            echo "DISCOGS_TOKEN is set (value hidden by GitHub)"
-          else
-            echo "DISCOGS_TOKEN is NOT set"
-            exit 1
-          fi
-        env:
-          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
-
       - name: Cache Eleventy
         uses: actions/cache@v4
         with:
