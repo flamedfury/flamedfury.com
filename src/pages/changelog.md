@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- May 04, 2025
+- Added [Fuel](/recordshelf/records/fuel/) to the [Recordshelf](/recordshelf/)
+
 - March 21, 2025
 - Complete revamp of the [Recordshelf](/recordshelf/). Let me know what you think.
 

@@ -665,5 +665,14 @@
     "first_released": "unknown",
     "date_added": "2024-02-11",
     "favourite": false
+  },
+  {
+    "artist": "Eminem",
+    "title": "Fuel",
+    "format": "Vinyl",
+    "release_id": 34063963,
+    "first_released": "2024-11-11",
+    "date_added": "2025-06-04",
+    "favourite": false
   }
 ]

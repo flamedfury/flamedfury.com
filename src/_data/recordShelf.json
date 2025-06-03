@@ -1834,9 +1834,7 @@
       "genres": [
         "Hip Hop"
       ],
-      "styles": [
-        "Thug Rap"
-      ],
+      "styles": [],
       "labels": [
         "de Rap Winkel Records"
       ],
@@ -1902,7 +1900,9 @@
       "genres": [
         "Hip Hop"
       ],
-      "styles": [],
+      "styles": [
+        "Hardcore Hip-Hop"
+      ],
       "labels": [
         "Def Jam Recordings",
         "UMe"
@@ -5980,69 +5980,70 @@
       ],
       "styles": [
         "Pop Rock",
-        "Indie Rock"
+        "Indie Rock",
+        "Pop Punk"
       ],
       "labels": [
         "Universal Music New Zealand"
       ],
       "tracklist": [
         {
-          "position": "1",
+          "position": "A1",
           "title": "Nirvana",
           "duration": "2:29"
         },
         {
-          "position": "2",
+          "position": "A2",
           "title": "Verona",
           "duration": "2:47"
         },
         {
-          "position": "3",
+          "position": "A3",
           "title": "Goodbye",
           "duration": "2:33"
         },
         {
-          "position": "4",
+          "position": "A4",
           "title": "Urban Getaway",
           "duration": "2:11"
         },
         {
-          "position": "5",
+          "position": "AA5",
           "title": "The Benjamins",
           "duration": "3:01"
         },
         {
-          "position": "6",
+          "position": "A6",
           "title": "Fast Times In Tahoe",
           "duration": "3:10"
         },
         {
-          "position": "7",
+          "position": "B1",
           "title": "Claim To Fame",
           "duration": "3:22"
         },
         {
-          "position": "8",
+          "position": "B2",
           "title": "I Don't Know",
           "duration": "3:17"
         },
         {
-          "position": "9",
+          "position": "B3",
           "title": "Hold On",
           "duration": "2:02"
         },
         {
-          "position": "10",
+          "position": "B4",
           "title": "On My Balcony",
           "duration": "3:25"
         },
         {
-          "position": "11",
+          "position": "B5",
           "title": "Every Day's A Saturday",
           "duration": "2:51"
         },
         {
-          "position": "12",
+          "position": "B6",
           "title": "Weed Out",
           "duration": "4:46"
         }
@@ -6617,6 +6618,37 @@
         {
           "position": "D5",
           "title": "Space",
+          "duration": ""
+        }
+      ]
+    }
+  },
+  {
+    "artist": "Eminem",
+    "title": "Fuel",
+    "format": "Vinyl",
+    "release_id": 34063963,
+    "first_released": "2024-11-11",
+    "date_added": "2025-06-04",
+    "favourite": false,
+    "discogsData": {
+      "year": 2024,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Shady/Aftermath/Interscope"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Fuel",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Fuel - Shady Edition",
           "duration": ""
         }
       ]
