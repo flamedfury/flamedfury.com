@@ -673,6 +673,34 @@
     "release_id": 34063963,
     "first_released": "2024-11-11",
     "date_added": "2025-06-04",
+    "favourite": true
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Femme Fatale",
+    "format": "Vinyl",
+    "release_id": 27190659,
+    "first_released": "2011-03-25",
+    "date_added": "2025-06-04",
     "favourite": false
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Something Beautiful",
+    "format": "Vinyl",
+    "release_id": 34125373,
+    "first_released": "2025-05-30",
+    "date_added": "2025-06-04",
+    "favourite": false
+  },
+  {
+    "artist": "Eminem",
+    "title": "Godzilla",
+    "format": "Vinyl",
+    "release_id": 34143259,
+    "first_released": "2024-11-11",
+    "date_added": "2025-06-10",
+    "favourite": false,
+    "note": "5th anniversary special edition on clear w/ black, white and yellow splatter. A pity that there is no b-side!"
   }
 ]

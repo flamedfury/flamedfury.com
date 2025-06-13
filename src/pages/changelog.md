@@ -10,8 +10,11 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
-- May 04, 2025
-- Added [Fuel](/recordshelf/records/fuel/) to the [Recordshelf](/recordshelf/)
+- June 13, 2025
+- Added [Femme Fatale](/recordshelf/records/femme-fatale/), [Something Beautiful](/recordshelf/records/something-beautiful/), and [Godzilla](/recordshelf/records/godzilla/) to the [Recordshelf](/recordshelf/).
+
+- June 04, 2025
+- Added [Fuel](/recordshelf/records/fuel/) to the [Recordshelf](/recordshelf/).
 
 - March 21, 2025
 - Complete revamp of the [Recordshelf](/recordshelf/). Let me know what you think.

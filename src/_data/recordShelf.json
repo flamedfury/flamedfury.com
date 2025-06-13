@@ -6630,7 +6630,7 @@
     "release_id": 34063963,
     "first_released": "2024-11-11",
     "date_added": "2025-06-04",
-    "favourite": false,
+    "favourite": true,
     "discogsData": {
       "year": 2024,
       "genres": [
@@ -6649,6 +6649,222 @@
         {
           "position": "B1",
           "title": "Fuel - Shady Edition",
+          "duration": ""
+        }
+      ]
+    }
+  },
+  {
+    "artist": "Britney Spears",
+    "title": "Femme Fatale",
+    "format": "Vinyl",
+    "release_id": 27190659,
+    "first_released": "2011-03-25",
+    "date_added": "2025-06-04",
+    "favourite": false,
+    "discogsData": {
+      "year": 2023,
+      "genres": [
+        "Electronic",
+        "Pop"
+      ],
+      "styles": [
+        "Dance-pop"
+      ],
+      "labels": [
+        "Jive",
+        "Legacy",
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Till The World Ends",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Hold It Against Me",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Inside Out",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "I Wanna Go",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "How I Roll",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "(Drop Dead) Beautiful",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Seal It With A Kiss",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Big Fat Bass",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Trouble For Me",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Trip To Your Heart",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Gasoline",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "Criminal",
+          "duration": ""
+        }
+      ]
+    }
+  },
+  {
+    "artist": "Miley Cyrus",
+    "title": "Something Beautiful",
+    "format": "Vinyl",
+    "release_id": 34125373,
+    "first_released": "2025-05-30",
+    "date_added": "2025-06-04",
+    "favourite": false,
+    "discogsData": {
+      "year": 2025,
+      "genres": [
+        "Electronic",
+        "Rock",
+        "Pop"
+      ],
+      "styles": [
+        "Art Rock",
+        "Dance-pop"
+      ],
+      "labels": [
+        "Columbia",
+        "Sony Music"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Prelude",
+          "duration": "2:35"
+        },
+        {
+          "position": "A2",
+          "title": "Something Beautiful",
+          "duration": "4:31"
+        },
+        {
+          "position": "A3",
+          "title": "End Of The World",
+          "duration": "4:10"
+        },
+        {
+          "position": "A4",
+          "title": "More To Lose",
+          "duration": "4:35"
+        },
+        {
+          "position": "A5",
+          "title": "Interlude 1",
+          "duration": "1:14"
+        },
+        {
+          "position": "A6",
+          "title": "Easy Lover",
+          "duration": "3:06"
+        },
+        {
+          "position": "A7",
+          "title": "Interlude 2",
+          "duration": "1:30"
+        },
+        {
+          "position": "A8",
+          "title": "Golden Burning Sun",
+          "duration": "4:54"
+        },
+        {
+          "position": "B1",
+          "title": "Walk Of Fame",
+          "duration": "6:00"
+        },
+        {
+          "position": "B2",
+          "title": "Pretend You're God",
+          "duration": "4:39"
+        },
+        {
+          "position": "B3",
+          "title": "Every Girl You've Ever Loved",
+          "duration": "5:18"
+        },
+        {
+          "position": "B4",
+          "title": "Reborn",
+          "duration": "5:42"
+        },
+        {
+          "position": "B5",
+          "title": "Give Me Love",
+          "duration": "3:51"
+        }
+      ]
+    }
+  },
+  {
+    "artist": "Eminem",
+    "title": "Godzilla",
+    "format": "Vinyl",
+    "release_id": 34143259,
+    "first_released": "2024-11-11",
+    "date_added": "2025-06-10",
+    "favourite": false,
+    "note": "5th anniversary special edition on clear w/ black, white and yellow splatter. A pity that there is no b-side!",
+    "discogsData": {
+      "year": 2025,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [
+        "Pop Rap",
+        "Hardcore Hip-Hop"
+      ],
+      "labels": [
+        "Aftermath Entertainment",
+        "Shady Records",
+        "UMe",
+        "Interscope Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A",
+          "title": "Godzilla",
+          "duration": ""
+        },
+        {
+          "position": "B",
+          "title": "Godzilla (Instrumental)",
           "duration": ""
         }
       ]
