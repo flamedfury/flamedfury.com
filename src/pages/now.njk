@@ -16,7 +16,10 @@ permalink: /now/index.html
   {% svg "divider/soft-top", null, "seperator" %}
   <section class="section__inner wrapper">
     <article class="region wrapper flow prose" style="--region-space-top: var(--space-l)">
-      {{ latestNow.content | safe }}
+      {% set latestRecap = collections['monthly recap'] | last %}
+
+        {{ latestRecap | latestNowUpdate | safe }}
+
     </article>
   </section>
 

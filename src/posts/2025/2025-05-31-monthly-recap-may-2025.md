@@ -8,6 +8,8 @@ date: 2025-05-31
 timestamp: 2025-06-01T05:12:36.444Z
 ---
 
+<!-- blank space -->
+
 What's going on, Internet? I've been missing in action again across April and March so I'll use this post as a way to catch you two up on everything that's been going on while I sit at the airport waiting for my flight back home(?) after a week in Sydney for work.
 
 Since the last update back in March I shared the news that we were on the move to Tāmaki Makaurau (Auckland). We've since moved the kids and my wife up there with the intention of me having moved up last weekend, but have been unable to due to working arrangement circumstances that have left me staying behind in Te Awa Kairangi (Lower Hutt) a bit longer. This isn't the ideal situation but is what we have to do in the mean time to make this move work.

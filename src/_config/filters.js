@@ -17,6 +17,7 @@ import { slice } from './filters/slice.js';
 import { dictsort } from './filters/dictsort.js';
 import { setAttribute } from './filters/set-attribute.js';
 import { groupItems } from './filters/group-items.js';
+import { latestNowUpdate } from './filters/latest-now-update.js';
 
 export default {
   toISOString,
@@ -38,5 +39,6 @@ export default {
   slice,
   dictsort,
   setAttribute,
-  groupItems
+  groupItems,
+  latestNowUpdate
 };
