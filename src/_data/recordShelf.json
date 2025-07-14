@@ -6869,5 +6869,88 @@
         }
       ]
     }
+  },
+  {
+    "artist": "Lorde",
+    "title": "Virgin",
+    "format": "Vinyl",
+    "release_id": 34385971,
+    "first_released": "2025-06-27",
+    "date_added": "2025-06-27",
+    "favourite": false,
+    "note": "Bathwater coloured vinyl, lol",
+    "discogsData": {
+      "year": 2025,
+      "genres": [
+        "Electronic",
+        "Pop"
+      ],
+      "styles": [
+        "Indie Pop",
+        "Alt-Pop",
+        "Synth-pop"
+      ],
+      "labels": [
+        "Universal Music New Zealand",
+        "Crush Music (2)"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Hammer",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "What Was That",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Shapeshifter",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Man Of The Year",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Favourite Daughter ",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Current Affairs",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Clearblue",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "GRWM",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Broken Glass",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "If She Could See Me Now",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "David",
+          "duration": ""
+        }
+      ]
+    }
   }
 ]
