@@ -15,6 +15,13 @@ timestamp: 2025-06-27T10:30:28.260Z
 
 What's going on, Internet? I've been a happy Kagi user since early 2023 and have spent a bit of time curating my ideal Internet search experience using the tools Kagi offers.
 
+**July 2025:** After this post got picked up on the [Kagi Change Log](https://kagi.com/changelog#7674) and even made its way to [Hacker News](https://news.ycombinator.com/item?id=44594475), I decided to give my block list a bit of a tidy-up. Off the back of some solid feedback from visitors, I’ve now split it into three more manageable parts:
+- [16 Companies](https://paste.flamedfury.com/flamedfury-kagi-block-list-16-companies) – Based on Bobby Hiltz’s excellent filter list.
+- [Top Blocked](https://paste.flamedfury.com/flamedfury-kagi-block-list-top-blocked) – Pulled from Kagi’s most commonly blocked domains.
+- [Combined](https://paste.flamedfury.com/flamedfury-kagi-block-list) – A mash-up of both lists, ready to import.
+
+I’ve kept my personal domain blocks out of these so you’re just getting the broadly useful stuff. Feel free to copy and use them however you like.
+
 {% aside "Kagi is a premium search engine that puts you first. Unlike traditional search engines that monetise your attention through ads and data tracking, Kagi delivers clean, accurate results while maintaining complete privacy. Kagi is built on a simple principle, you're our customer, not our product." %}
 
 The main selling point for me is that Kagi isn't powered by AdTech and allows us who have the money to pay a monthly fee for a pleasant search experience. I'm paying $14 USD/month for the Duo Family plan that gives me and my wife a Professional Plan each. That alone would make me happy, nice ad free web searching. A subscription worth having.
@@ -37,7 +44,7 @@ This led him to [create and share a set of filters](https://codeberg.org/bbbhltz
 
 I've taken those and added them to my existing list of domains to block within Kagi, you can find the list here, [Flamed Fury Kagi Blog List](https://paste.flamedfury.com/flamedfury-kagi-block-list). You can copy and paste these directly into the Kagi blocked domains in your settings page.
 
-## My Kagi Lesnes
+## My Kagi Lenses
 
 Lenses are a fun way to search and surf the web. One of the default Lenses provided by Kagi is Small Web which allows you to search through all the websites listed on the [Kagi Small Web repo](https://github.com/kagisearch/smallweb).
 
