@@ -10,6 +10,8 @@ date: 2025-07-14
 timestamp: 2025-07-14T08:17:42.179Z
 ---
 
+<!-- blank space -->
+
 What's going on, Internet? It's been two weeks since the final move and drive up the North Island of Aotearoa. I'm finally reunited with my family and settled in Tāmaki Makaurau and settling back into the family routine, all the while in a new city in our temporary accommodation. Lots of learning and getting familiar with a new space for everyone.
 
 The move was such a drawn out process but it's done.
