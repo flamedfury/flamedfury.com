@@ -30,7 +30,8 @@ layout: base
              alt="{{ release.artist }} - {{ release.title }} album cover"
              loading="lazy"
              decoding="async"
-             class="recordshelf-cover__image">
+             class="recordshelf-cover__image"
+             onerror="this.src='/assets/images/vinyl-placeholder.jpg'; this.classList.add('placeholder');">
       </picture>
     </div>
 
@@ -63,18 +64,50 @@ layout: base
           {% endif %}
         </dd>
 
-        <dt class="recordshelf-label">Released</dt>
-        <dd class="recordshelf-detail">{{ release.first_released | formatDate("MMMM D, YYYY") }}</dd>
+        <!-- Conditional date display: both dates if different, single date if same -->
+        {% if release.discogsData.originalYear and release.discogsData.originalYear != release.discogsData.pressingYear %}
+          <dt class="recordshelf-label">Original Release</dt>
+          <dd class="recordshelf-detail">{{ release.discogsData.originalYear }}</dd>
+
+          <dt class="recordshelf-label">This Pressing</dt>
+          <dd class="recordshelf-detail">
+            {% if release.discogsData.released and release.discogsData.released != "unknown" %}
+              {{ release.discogsData.released | formatDate("MMMM D, YYYY") }}
+            {% elif release.discogsData.pressingYear %}
+              {{ release.discogsData.pressingYear }}
+            {% else %}
+              Unknown
+            {% endif %}
+          </dd>
+        {% else %}
+          <!-- Single date display for original pressings -->
+          <dt class="recordshelf-label">Released</dt>
+          <dd class="recordshelf-detail">
+            {% if release.discogsData.released and release.discogsData.released != "unknown" %}
+              {{ release.discogsData.released | formatDate("MMMM D, YYYY") }}
+            {% elif release.discogsData.originalYear %}
+              {{ release.discogsData.originalYear }}
+            {% else %}
+              Unknown
+            {% endif %}
+          </dd>
+        {% endif %}
 
         <dt class="recordshelf-label">Added</dt>
         <dd class="recordshelf-detail">{{ release.date_added | formatDate("MMMM D, YYYY") }}</dd>
+
+        {% if release.favourite %}
+        <dt class="recordshelf-label">Favourite</dt>
+        <dd class="recordshelf-detail">★ Yes</dd>
+        {% endif %}
+
+        {% if release.note %}
+        <dt class="recordshelf-label">Note</dt>
+        <dd class="recordshelf-detail">{{ release.note }}</dd>
+        {% endif %}
       </dl>
 
-      {% if release.notes %}
-        <p class="recordshelf-comment">
-          {{ release.notes }}
-        </p>
-      {% endif %}
+
     </div>
   </div>
 
@@ -82,19 +115,23 @@ layout: base
     {% svg "divider/soft-top", null, "seperator" %}
     <div class="section__inner wrapper">
       <h2>Tracklist</h2>
-      <ol class="tracklist">
-        {% for track in release.discogsData.tracklist %}
-          <li class="tracklist__item">
-            <span class="tracklist__position">{{ track.position }}</span>
-            <span class="tracklist__title">{{ track.title }}</span>
-            {% if track.duration and track.duration.length > 0 %}
-              <span class="duration">{{ track.duration }}</span>
-            {% else %}
-              <span class="duration">--:--</span>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ol>
+      {% if release.discogsData.tracklist and release.discogsData.tracklist.length > 0 %}
+        <ol class="tracklist">
+          {% for track in release.discogsData.tracklist %}
+            <li class="tracklist__item">
+              <span class="tracklist__position">{{ track.position }}</span>
+              <span class="tracklist__title">{{ track.title }}</span>
+              {% if track.duration and track.duration.length > 0 %}
+                <span class="duration">{{ track.duration }}</span>
+              {% else %}
+                <span class="duration">--:--</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ol>
+      {% else %}
+        <p>No tracklist available.</p>
+      {% endif %}
     </div>
     {% svg "divider/soft-bottom", null, "seperator" %}
   </section>

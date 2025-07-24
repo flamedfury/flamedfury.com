@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- July 24, 2025
+- Updated the dates for individual records on the [Recordshelf](/recordshelf/). For re-releases and re-issues the page will show the original release year, and the re-issue date.
+
 - June 13, 2025
 - Added [Femme Fatale](/recordshelf/records/femme-fatale/), [Something Beautiful](/recordshelf/records/something-beautiful/), and [Godzilla](/recordshelf/records/godzilla/) to the [Recordshelf](/recordshelf/).
 

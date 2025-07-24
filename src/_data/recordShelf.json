@@ -7,8 +7,14 @@
     "first_released": "2022-09-00",
     "date_added": "2023-08-22",
     "favourite": false,
+    "note": "2022 VMP reissue, remastered. Comes with listening notes by Paul Thompson. These Dre beats sound so good when loud!",
     "discogsData": {
       "year": 2022,
+      "originalYear": 2005,
+      "originalTitle": "The Documentary",
+      "released": "2022-09-00",
+      "releaseDate": "2022-09-10T15:30:22-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop"
       ],
@@ -112,6 +118,30 @@
           "title": "Like Father, Like Son",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Club Edition",
+            "Reissue",
+            "Remastered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/97650",
+      "masterId": 97650,
+      "catno": "VMP-RH061",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Gangsta"
       ]
     }
   },
@@ -123,8 +153,14 @@
     "first_released": "unknown",
     "date_added": "2022-06-28",
     "favourite": false,
+    "note": "Certified classic. Reissue. Double LP, insert includes lyrics and linear notes.",
     "discogsData": {
       "year": 2013,
+      "originalYear": 2002,
+      "originalTitle": "The Eminem Show",
+      "released": "2013-12-09",
+      "releaseDate": "2013-12-14T07:23:03-08:00",
+      "pressingYear": 2013,
       "genres": [
         "Hip Hop"
       ],
@@ -240,6 +276,29 @@
           "title": "Curtains Close (Skit)",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/12344",
+      "masterId": 12344,
+      "catno": "606949329013",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop",
+        "Pop Rap"
       ]
     }
   },
@@ -251,8 +310,14 @@
     "first_released": "2000-05-23",
     "date_added": "2021-09-28",
     "favourite": true,
+    "note": "Certified classic. 180 gram reissue.",
     "discogsData": {
       "year": 2013,
+      "originalYear": 2000,
+      "originalTitle": "The Marshall Mathers LP",
+      "released": "2013-12-05",
+      "releaseDate": "2014-01-03T12:51:36-08:00",
+      "pressingYear": 2013,
       "genres": [
         "Hip Hop"
       ],
@@ -356,6 +421,29 @@
           "title": "Criminal",
           "duration": "5:19"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/12236",
+      "masterId": 12236,
+      "catno": "606949062910",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop",
+        "Horrorcore"
       ]
     }
   },
@@ -367,8 +455,14 @@
     "first_released": "2024-10-25",
     "date_added": "2024-11-04",
     "favourite": false,
+    "note": "Couldn't help myself.",
     "discogsData": {
       "year": 2024,
+      "originalYear": 2024,
+      "originalTitle": "The Death Of Slim Shady (Coup De Grâce)",
+      "released": "2024-10-25",
+      "releaseDate": "2024-10-24T07:33:01-07:00",
+      "pressingYear": 2024,
       "genres": [
         "Hip Hop"
       ],
@@ -478,6 +572,44 @@
           "title": "Somebody Save Me",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP"
+          ]
+        },
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP"
+          ]
+        },
+        {
+          "name": "All Media",
+          "qty": "1",
+          "descriptions": [
+            "Album",
+            "Limited Edition",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3540523",
+      "masterId": 3540523,
+      "catno": "00602468081425",
+      "masterGenres": [
+        "Hip Hop",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Conscious",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -489,8 +621,14 @@
     "first_released": "unknown",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "They sent me two copies. One to enjoy, one to collect.",
     "discogsData": {
       "year": 2018,
+      "originalYear": 2018,
+      "originalTitle": "Kamikaze",
+      "released": "2018-11-30",
+      "releaseDate": "2018-12-05T17:03:07-08:00",
+      "pressingYear": 2018,
       "genres": [
         "Hip Hop"
       ],
@@ -566,7 +704,28 @@
           "title": "Venom (Music From The Motion Picture)",
           "duration": "4:29"
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Picture Disc"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1416558",
+      "masterId": 1416558,
+      "catno": "B0029279-01",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -577,8 +736,14 @@
     "first_released": "2020-04-00",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "Pre-ordered on release day. This is an alternate cover splatter vinyl that was available exclusively on his website for a limited time. Lock It Up goes hard.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "Music To Be Murdered By",
+      "released": "2020-04-00",
+      "releaseDate": "2020-04-18T12:30:48-07:00",
+      "pressingYear": 2020,
       "genres": [
         "Hip Hop"
       ],
@@ -693,6 +858,30 @@
           "title": "Alfred (Outro)",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1669732",
+      "masterId": 1669732,
+      "catno": "B0031748-01",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop",
+        "Horrorcore",
+        "Pop Rap"
       ]
     }
   },
@@ -704,8 +893,14 @@
     "first_released": "unknown",
     "date_added": "2024-09-02",
     "favourite": false,
+    "note": "Gangrene is a group made up by rapper/producers The Alchemist and Oh No. This album has sick artwork, and bangs.",
     "discogsData": {
       "year": 2024,
+      "originalYear": 2024,
+      "originalTitle": "Heads I Win, Tails You Lose",
+      "released": "2024-08-00",
+      "releaseDate": "2024-08-12T19:08:53-07:00",
+      "pressingYear": 2024,
       "genres": [
         "Hip Hop"
       ],
@@ -779,7 +974,28 @@
           "title": "Muffler Lung",
           "duration": ""
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3493194",
+      "masterId": 3493194,
+      "catno": "ALC-5056",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -790,8 +1006,14 @@
     "first_released": "unknown",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "ALC Records varient. Includes original album + instrumentals.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "LULU",
+      "released": "2020-11-13",
+      "releaseDate": "2020-12-03T12:11:47-08:00",
+      "pressingYear": 2020,
       "genres": [
         "Hip Hop"
       ],
@@ -874,6 +1096,29 @@
           "title": "Gold BBS's Instrumental",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1846641",
+      "masterId": 1846641,
+      "catno": "ALC5024",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Gangsta",
+        "Boom Bap"
       ]
     }
   },
@@ -885,8 +1130,14 @@
     "first_released": "unknown",
     "date_added": "2023-01-23",
     "favourite": false,
+    "note": "Vinyl is the best due to its warm sound and the smooth way it conveys analog recordings. The subtle imperfections such as crackling and popping add to the listening experience, making it my preferred medium for listening to Wet Ass Pussy.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "WAP",
+      "released": "2020",
+      "releaseDate": "2021-01-16T12:30:22-08:00",
+      "pressingYear": 2020,
       "genres": [
         "Hip Hop"
       ],
@@ -916,6 +1167,29 @@
           "title": "WAP (Instrumental)",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "45 RPM",
+            "Single",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1808659",
+      "masterId": 1808659,
+      "catno": "1-643703",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Trap"
       ]
     }
   },
@@ -927,8 +1201,14 @@
     "first_released": "2020-11-06",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "Original album cover varient. What a bop. I exercise my right to seperate the music from the artist in the context of listen to this record. Part of the Travis Barker Pop Punk revival movement.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "Tickets To My Downfall",
+      "released": "2020-11-06",
+      "releaseDate": "2020-11-02T15:39:37-08:00",
+      "pressingYear": 2020,
       "genres": [
         "Hip Hop",
         "Rock",
@@ -1018,6 +1298,29 @@
           "title": "Play This When I'm Gone",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1811143",
+      "masterId": 1811143,
+      "catno": "B0032437-01",
+      "masterGenres": [
+        "Rock"
+      ],
+      "masterStyles": [
+        "Pop Punk",
+        "Alternative Rock"
       ]
     }
   },
@@ -1031,6 +1334,11 @@
     "favourite": false,
     "discogsData": {
       "year": 2013,
+      "originalYear": 2013,
+      "originalTitle": "Czarface",
+      "released": "2013-02-19",
+      "releaseDate": "2013-02-16T04:43:16-08:00",
+      "pressingYear": 2013,
       "genres": [
         "Hip Hop"
       ],
@@ -1109,7 +1417,27 @@
           "title": "Hazmat Rap",
           "duration": ""
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/525234",
+      "masterId": 525234,
+      "catno": "BRK-132",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -1120,8 +1448,14 @@
     "first_released": "unknown",
     "date_added": "2022-06-28",
     "favourite": false,
+    "note": "Great second album from Czarface. Dope artwork by Lamour Supreme.",
     "discogsData": {
       "year": 2015,
+      "originalYear": 2015,
+      "originalTitle": "Every Hero Needs A Villain",
+      "released": "2015-06-16",
+      "releaseDate": "2015-06-12T05:05:08-07:00",
+      "pressingYear": 2015,
       "genres": [
         "Hip Hop"
       ],
@@ -1206,7 +1540,27 @@
           "title": "Good Villains Go Last",
           "duration": ""
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1083631",
+      "masterId": 1083631,
+      "catno": "BRK-153-LP",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -1217,8 +1571,14 @@
     "first_released": "2023-03-10",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "Like a sucker I picked up each variation of this record. Three from the Miley store and one from a local for their \"Limited Edition\" variant.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "Endless Summer Vacation",
+      "released": "2023-03-10",
+      "releaseDate": "2023-03-06T18:07:00-08:00",
+      "pressingYear": 2023,
       "genres": [
         "Rock",
         "Pop"
@@ -1293,6 +1653,32 @@
           "title": "Wonder Woman",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3009836",
+      "masterId": 3009836,
+      "catno": "19658781341",
+      "masterGenres": [
+        "Rock",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Alt-Pop",
+        "Pop Rock",
+        "Dance-pop",
+        "Psychedelic"
       ]
     }
   },
@@ -1306,6 +1692,11 @@
     "favourite": false,
     "discogsData": {
       "year": 2022,
+      "originalYear": 1998,
+      "originalTitle": "#1's",
+      "released": "2022-04-23",
+      "releaseDate": "2022-04-22T05:59:01-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop",
         "Funk / Soul",
@@ -1406,6 +1797,34 @@
           "title": "I Still Believe",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Record Store Day",
+            "Compilation",
+            "Limited Edition",
+            "Reissue",
+            "Remastered",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/77959",
+      "masterId": 77959,
+      "catno": "119439944241",
+      "masterGenres": [
+        "Funk / Soul",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Contemporary R&B",
+        "Ballad"
       ]
     }
   },
@@ -1417,8 +1836,14 @@
     "first_released": "2021",
     "date_added": "2022-05-05",
     "favourite": false,
+    "note": "Limited Edition, Numbered. Second collab between Conway & Big Ghost. Red Beams goes hard.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2021,
+      "originalTitle": "If It Bleeds It Can Be Killed",
+      "released": "2021",
+      "releaseDate": "2021-03-23T05:34:19-07:00",
+      "pressingYear": 2021,
       "genres": [
         "Hip Hop"
       ],
@@ -1480,6 +1905,30 @@
           "title": "Forever Ago\t",
           "duration": ""
         }
+      ],
+      "country": "Netherlands",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Numbered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2039755",
+      "masterId": 2039755,
+      "catno": "DRW 095",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop",
+        "Gangsta"
       ]
     }
   },
@@ -1491,8 +1940,14 @@
     "first_released": "unknown",
     "date_added": "2022-05-05",
     "favourite": false,
+    "note": "Limited to 1000 copies on Lila coloured vinyl.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2021,
+      "originalTitle": "La Maquina",
+      "released": "2021",
+      "releaseDate": "2021-07-10T03:30:27-07:00",
+      "pressingYear": 2021,
       "genres": [
         "Hip Hop"
       ],
@@ -1556,7 +2011,28 @@
           "title": "S.E. Gang",
           "duration": "5:01"
         }
-      ]
+      ],
+      "country": "Netherlands",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Numbered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2206819",
+      "masterId": 2206819,
+      "catno": "DRW 105",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -1567,8 +2043,14 @@
     "first_released": "unknown",
     "date_added": "2022-05-05",
     "favourite": false,
+    "note": "Collection of records that were unable to have samples cleared for Conway's official releases.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2021,
+      "originalTitle": "The Missing Bricks",
+      "released": "2021",
+      "releaseDate": "2021-12-24T02:26:19-08:00",
+      "pressingYear": 2021,
       "genres": [
         "Hip Hop"
       ],
@@ -1609,6 +2091,29 @@
           "title": "Fifty Cent Razor",
           "duration": ""
         }
+      ],
+      "country": "Netherlands",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "EP",
+            "Limited Edition",
+            "Numbered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2433949",
+      "masterId": 2433949,
+      "catno": "DRW 109",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -1620,8 +2125,14 @@
     "first_released": "2022",
     "date_added": "2022-11-23",
     "favourite": false,
+    "note": "In My Soul variant limited to 500 copies. The third collab between Conway & Big Ghost. Red Beams goes hard.",
     "discogsData": {
       "year": 2022,
+      "originalYear": 2022,
+      "originalTitle": "What Has Been Blessed Cannot Be Cursed",
+      "released": "2022",
+      "releaseDate": "2022-10-18T17:32:27-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop"
       ],
@@ -1683,6 +2194,30 @@
           "title": "Dog Food",
           "duration": "1:41"
         }
+      ],
+      "country": "Netherlands",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Numbered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2803301",
+      "masterId": 2803301,
+      "catno": "DRW 133",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Boom Bap",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -1694,8 +2229,14 @@
     "first_released": "unknown",
     "date_added": "2023-10-10",
     "favourite": false,
+    "note": "Limited to 750 copies on black vinyl.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "Wasn't Built In A Day",
+      "released": "2023",
+      "releaseDate": "2023-05-30T05:18:54-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop"
       ],
@@ -1759,7 +2300,28 @@
           "title": "U Mad Huh?",
           "duration": ""
         }
-      ]
+      ],
+      "country": "Netherlands",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Numbered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3115290",
+      "masterId": 3115290,
+      "catno": "DRW 149",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -1770,8 +2332,14 @@
     "first_released": "2019",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "The album was released in July 2019 while I was travelling Europe. The vinyl pre-sale went on the De Rap Winkel website while I was at the Glastonbury music festival 2019, sitting by the Glastonbury sign and looking over the festival. It was great that I was in the correct time zone when a Griselda project went up for sale.",
     "discogsData": {
       "year": 2019,
+      "originalYear": 2019,
+      "originalTitle": "The Plugs I Met",
+      "released": "2019",
+      "releaseDate": "2019-09-30T07:41:53-07:00",
+      "pressingYear": 2019,
       "genres": [
         "Hip Hop"
       ],
@@ -1818,6 +2386,31 @@
           "title": "5 To 50 ",
           "duration": "3:53"
         }
+      ],
+      "country": "Netherlands",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "33 ⅓ RPM",
+            "EP",
+            "Limited Edition",
+            "Numbered",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1581477",
+      "masterId": 1581477,
+      "catno": "DRW041",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -1829,8 +2422,14 @@
     "first_released": "2020-06-29",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "Black record, limited Edition, numbered. First collab between Conway & Big Ghost. Red Beams goes hard.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "No One Mourns The Wicked",
+      "released": "2020-06-29",
+      "releaseDate": "2020-07-04T04:56:32-07:00",
+      "pressingYear": 2020,
       "genres": [
         "Hip Hop"
       ],
@@ -1884,7 +2483,28 @@
           "title": "Sicarios",
           "duration": ""
         }
-      ]
+      ],
+      "country": "Netherlands",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Numbered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1764497",
+      "masterId": 1764497,
+      "catno": "DRW076",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -1895,8 +2515,14 @@
     "first_released": "unknown",
     "date_added": "2021-05-15",
     "favourite": false,
+    "note": "Compilation, Limited Edition, Red Vinyl. Black Friday RSD exclusive; first time on vinyl. Includes censored version of Slippin'.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "The Legacy",
+      "released": "2020-11-27",
+      "releaseDate": "2020-11-27T05:07:56-08:00",
+      "pressingYear": 2020,
       "genres": [
         "Hip Hop"
       ],
@@ -1968,6 +2594,29 @@
           "title": "Grand Finale",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Compilation",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1847617",
+      "masterId": 1847617,
+      "catno": "00602435072524",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Gangsta",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -1979,8 +2628,14 @@
     "first_released": "unknown",
     "date_added": "2023-08-22",
     "favourite": false,
+    "note": "2019 VPM reissue, remastered. Crisp and clear quality.",
     "discogsData": {
       "year": 2019,
+      "originalYear": 1994,
+      "originalTitle": "Tical",
+      "released": "2019-07-00",
+      "releaseDate": "2019-07-09T19:56:50-07:00",
+      "pressingYear": 2019,
       "genres": [
         "Hip Hop"
       ],
@@ -2057,6 +2712,30 @@
           "title": "Method Man (Remix)",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Club Edition",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/25504",
+      "masterId": 25504,
+      "catno": "B0030387-01",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Boom Bap",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -2068,8 +2747,14 @@
     "first_released": "unknown",
     "date_added": "2024-02-11",
     "favourite": false,
+    "note": "Remastered, 30th Anniversary re-issue. Beautiful packaging. Heavy cardboard gatefold sleeve. 12\" main record, 10\" demo disk and a lyric sheet.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 1993,
+      "originalTitle": "In Utero",
+      "released": "2023-10-27",
+      "releaseDate": "2023-10-26T19:50:09-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Rock"
       ],
@@ -2170,6 +2855,48 @@
           "title": "I Hate Myself And Want To Die",
           "duration": ""
         }
+      ],
+      "country": "Worldwide",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue",
+            "Remastered",
+            "Stereo"
+          ]
+        },
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "10\"",
+            "33 ⅓ RPM",
+            "Compilation",
+            "Remastered"
+          ]
+        },
+        {
+          "name": "All Media",
+          "qty": "1",
+          "descriptions": [
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/13859",
+      "masterId": 13859,
+      "catno": "5517820",
+      "masterGenres": [
+        "Rock"
+      ],
+      "masterStyles": [
+        "Grunge",
+        "Alternative Rock"
       ]
     }
   },
@@ -2181,8 +2908,14 @@
     "first_released": "2016",
     "date_added": "2024-04-26",
     "favourite": false,
+    "note": "Smash is my favourite Offspring album. Reports indicate that this album sounds horrible on vinyl. I'll let you know when I get a chance to open it up to play.",
     "discogsData": {
       "year": 2016,
+      "originalYear": 1994,
+      "originalTitle": "Smash",
+      "released": "2016",
+      "releaseDate": "2017-05-05T13:05:38-07:00",
+      "pressingYear": 2016,
       "genres": [
         "Rock"
       ],
@@ -2265,6 +2998,31 @@
           "title": "Smash",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue",
+            "Remastered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/77217",
+      "masterId": 77217,
+      "catno": "86868-1",
+      "masterGenres": [
+        "Rock"
+      ],
+      "masterStyles": [
+        "Alternative Rock",
+        "Hard Rock",
+        "Punk"
       ]
     }
   },
@@ -2276,8 +3034,14 @@
     "first_released": "2023-06-00",
     "date_added": "2024-04-26",
     "favourite": false,
+    "note": "One of my absolute favourites from when I was growing up. Took a while, but I finally have a copy.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 1999,
+      "originalTitle": "Significant Other",
+      "released": "2023-06-00",
+      "releaseDate": "2023-06-28T11:39:50-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop",
         "Rock"
@@ -2366,6 +3130,29 @@
           "title": "Outro",
           "duration": ""
         }
+      ],
+      "country": "USA & Canada",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/66028",
+      "masterId": 66028,
+      "catno": "B0026803-01",
+      "masterGenres": [
+        "Hip Hop",
+        "Rock"
+      ],
+      "masterStyles": [
+        "Nu Metal"
       ]
     }
   },
@@ -2377,8 +3164,14 @@
     "first_released": "2023-06-09",
     "date_added": "2023-07-31",
     "favourite": false,
+    "note": "Limited edition clear vinyl part of the 'HMV 1921 2021 100th Anniversary' celebration. A classic album to have in the collection.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 1999,
+      "originalTitle": "Enema Of The State",
+      "released": "2023-06-09",
+      "releaseDate": "2023-06-09T05:21:27-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Rock"
       ],
@@ -2450,6 +3243,31 @@
           "title": "Anthem",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/38033",
+      "masterId": 38033,
+      "catno": "00602455437471",
+      "masterGenres": [
+        "Rock"
+      ],
+      "masterStyles": [
+        "Alternative Rock",
+        "Pop Rock",
+        "Punk"
       ]
     }
   },
@@ -2461,8 +3279,14 @@
     "first_released": "unknown",
     "date_added": "2023-06-29",
     "favourite": false,
+    "note": "Reissue. I've been after a copy of Liquid Swords for a long time. This is my favourite of the Wu solo releases.",
     "discogsData": {
       "year": 2015,
+      "originalYear": 1995,
+      "originalTitle": "Liquid Swords",
+      "released": "2015",
+      "releaseDate": "2019-10-08T06:00:43-07:00",
+      "pressingYear": 2015,
       "genres": [
         "Hip Hop"
       ],
@@ -2541,6 +3365,28 @@
           "title": "I Gotcha Back",
           "duration": "4:58"
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/25167",
+      "masterId": 25167,
+      "catno": "B0023742-01",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -2552,8 +3398,14 @@
     "first_released": "2022",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "2022 Release with two different purple vinyl LPs.",
     "discogsData": {
       "year": 2022,
+      "originalYear": 1995,
+      "originalTitle": "Only Built 4 Cuban Linx...",
+      "released": "2022",
+      "releaseDate": "2022-10-22T07:36:49-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop"
       ],
@@ -2652,6 +3504,31 @@
           "title": "North Star (Jewels)",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue",
+            "Remastered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/36531",
+      "masterId": 36531,
+      "catno": "GET51295",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop",
+        "Boom Bap",
+        "Gangsta"
       ]
     }
   },
@@ -2663,8 +3540,14 @@
     "first_released": "2021-08-00",
     "date_added": "2022-03-22",
     "favourite": false,
+    "note": "Urban Outfitters exclusive release. Limited edition puriple splattered white vinyl.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2009,
+      "originalTitle": "The Time Of Our Lives",
+      "released": "2021-08-00",
+      "releaseDate": "2021-08-19T12:22:34-07:00",
+      "pressingYear": 2021,
       "genres": [
         "Rock",
         "Pop"
@@ -2711,6 +3594,31 @@
           "title": "Before The Storm (Live)",
           "duration": "4:35"
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "45 RPM",
+            "EP",
+            "Limited Edition",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/253923",
+      "masterId": 253923,
+      "catno": "D003819801",
+      "masterGenres": [
+        "Rock",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Pop Rock"
       ]
     }
   },
@@ -2722,8 +3630,14 @@
     "first_released": "2003",
     "date_added": "2022-11-23",
     "favourite": false,
+    "note": "Includes the track Rabbit Run. Has instructions for how to get polyphonic ringtons of the track on the back cover.",
     "discogsData": {
       "year": 2003,
+      "originalYear": 2003,
+      "originalTitle": "Sing For The Moment",
+      "released": "2003",
+      "releaseDate": "2005-03-21T12:59:19-08:00",
+      "pressingYear": 2003,
       "genres": [
         "Hip Hop"
       ],
@@ -2756,6 +3670,27 @@
           "title": "Sing For The Moment (Instrumental Version)",
           "duration": ""
         }
+      ],
+      "country": "UK",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "45 RPM"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/19936",
+      "masterId": 19936,
+      "catno": "497 871-1",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Pop Rap"
       ]
     }
   },
@@ -2767,8 +3702,14 @@
     "first_released": "unknown",
     "date_added": "2022-11-23",
     "favourite": false,
+    "note": "180g, 10th Anniversary Edition. A short film by Kendrick Lamar.",
     "discogsData": {
       "year": 2022,
+      "originalYear": 2012,
+      "originalTitle": "Good Kid, M.A.A.D City",
+      "released": "2022-10-21",
+      "releaseDate": "2022-10-21T13:24:39-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop"
       ],
@@ -2846,6 +3787,28 @@
           "title": "Compton",
           "duration": "4:07"
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/484590",
+      "masterId": 484590,
+      "catno": "B0036419-01",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Conscious"
       ]
     }
   },
@@ -2859,6 +3822,11 @@
     "favourite": false,
     "discogsData": {
       "year": 2005,
+      "originalYear": 2005,
+      "originalTitle": "M.A.D.",
+      "released": "2005",
+      "releaseDate": "2009-06-24T10:03:23-07:00",
+      "pressingYear": 2005,
       "genres": [
         "Hip Hop"
       ],
@@ -2899,7 +3867,24 @@
           "title": "Pimp Likeness (Clean)",
           "duration": "5:16"
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "Promo"
+          ]
+        }
+      ],
+      "masterUrl": null,
+      "masterId": null,
+      "catno": "IRFT60299",
+      "masterGenres": [],
+      "masterStyles": []
     }
   },
   {
@@ -2910,8 +3895,14 @@
     "first_released": "unknown",
     "date_added": "2022-09-25",
     "favourite": false,
+    "note": "Purchased at their September show at the Opera House, Wellington.",
     "discogsData": {
       "year": 2022,
+      "originalYear": 2022,
+      "originalTitle": "Expert In A Dying Field",
+      "released": "2022-09-16",
+      "releaseDate": "2022-09-15T19:56:56-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Rock"
       ],
@@ -2982,6 +3973,27 @@
           "title": "2am",
           "duration": ""
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2782454",
+      "masterId": 2782454,
+      "catno": "IVY831",
+      "masterGenres": [
+        "Rock"
+      ],
+      "masterStyles": [
+        "Indie Rock"
       ]
     }
   },
@@ -2993,8 +4005,14 @@
     "first_released": "2023-03-31",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "Limited Edition, Reissue, Yellow.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2001,
+      "originalTitle": "Britney",
+      "released": "2023-03-31",
+      "releaseDate": "2023-03-31T02:57:45-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Electronic",
         "Funk / Soul",
@@ -3071,6 +4089,36 @@
           "title": "What It's Like To Be Me",
           "duration": "2:52"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Reissue",
+            "Repress"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/27460",
+      "masterId": 27460,
+      "catno": "19658779141",
+      "masterGenres": [
+        "Electronic",
+        "Rock",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Contemporary R&B",
+        "Pop Rock",
+        "Leftfield",
+        "Ballad"
       ]
     }
   },
@@ -3082,8 +4130,14 @@
     "first_released": "2023-04-28",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "Limited Edition, Reissue, Blue.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2003,
+      "originalTitle": "In The Zone",
+      "released": "2023-04-28",
+      "releaseDate": "2023-04-27T08:28:33-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Electronic",
         "Funk / Soul",
@@ -3171,6 +4225,36 @@
           "title": "Me Against The Music (Rishi Rich's Desi Kulcha Remix)",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Reissue",
+            "Repress"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/29427",
+      "masterId": 29427,
+      "catno": "19658779161",
+      "masterGenres": [
+        "Electronic",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Contemporary R&B",
+        "Dance-pop",
+        "Downtempo",
+        "Trip Hop",
+        "Ballad"
       ]
     }
   },
@@ -3182,8 +4266,14 @@
     "first_released": "unknown",
     "date_added": "2023-06-29",
     "favourite": false,
+    "note": "Limited Edition, Reissue, Cream.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2004,
+      "originalTitle": "Greatest Hits: My Prerogative",
+      "released": "2023-05-26",
+      "releaseDate": "2023-05-25T06:27:52-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Electronic",
         "Funk / Soul",
@@ -3312,6 +4402,34 @@
           "title": "Chris Cox Megamix",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Compilation",
+            "Limited Edition",
+            "Reissue",
+            "Repress"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/29740",
+      "masterId": 29740,
+      "catno": "19658779201",
+      "masterGenres": [
+        "Electronic",
+        "Funk / Soul",
+        "Pop"
+      ],
+      "masterStyles": [
+        "House",
+        "Ballad",
+        "Contemporary R&B"
       ]
     }
   },
@@ -3323,8 +4441,14 @@
     "first_released": "unknown",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "Limited Edition, Reissue, Purple.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2000,
+      "originalTitle": "Oops!...I Did It Again",
+      "released": "2023-03-31",
+      "releaseDate": "2023-03-31T02:49:31-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Pop"
       ],
@@ -3375,30 +4499,58 @@
           "duration": "3:25"
         },
         {
-          "position": "B1",
+          "position": "B8",
           "title": "One Kiss From You",
           "duration": "3:23"
         },
         {
-          "position": "B2",
+          "position": "B9",
           "title": "Where Are You Now",
           "duration": "4:39"
         },
         {
-          "position": "B3",
+          "position": "B10",
           "title": "Can't Make You Love Me",
           "duration": "3:16"
         },
         {
-          "position": "B4",
+          "position": "B11",
           "title": "When Your Eyes Say It",
           "duration": "4:06"
         },
         {
-          "position": "B5",
+          "position": "B12",
           "title": "Dear Diary",
           "duration": "2:46"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Reissue",
+            "Repress"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/27443",
+      "masterId": 27443,
+      "catno": "19658779131",
+      "masterGenres": [
+        "Funk / Soul",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Contemporary R&B",
+        "Europop",
+        "Ballad",
+        "Bubblegum"
       ]
     }
   },
@@ -3410,8 +4562,14 @@
     "first_released": "unknown",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "Fly My Pretties is a collaboration of musicians originally from Wellington, New Zealand who are known for coming together to record live albums, in various locations in New Zealand. Purchased this at one of their live shows in 2020.",
     "discogsData": {
       "year": 2019,
+      "originalYear": 2019,
+      "originalTitle": "The Studio Recordings Part 1",
+      "released": "2019",
+      "releaseDate": "2019-10-28T22:08:25-07:00",
+      "pressingYear": 2019,
       "genres": [
         "Rock",
         "Pop"
@@ -3471,7 +4629,24 @@
           "title": "Angels",
           "duration": ""
         }
-      ]
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": null,
+      "masterId": null,
+      "catno": "LPV089",
+      "masterGenres": [],
+      "masterStyles": []
     }
   },
   {
@@ -3482,8 +4657,14 @@
     "first_released": "2020-07-10",
     "date_added": "2021-09-28",
     "favourite": false,
+    "note": "Fly My Pretties is a collaboration of musicians originally from Wellington, New Zealand who are known for coming together to record live albums, in various locations in New Zealand. Purchased this at one of their live shows in 2020.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "The Studio Recordings Part 2",
+      "released": "2020-07-10",
+      "releaseDate": "2020-07-18T03:05:37-07:00",
+      "pressingYear": 2020,
       "genres": [
         "Rock",
         "Pop"
@@ -3538,7 +4719,24 @@
           "title": "Hit the Hay",
           "duration": "4:58"
         }
-      ]
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": null,
+      "masterId": null,
+      "catno": "LPV092",
+      "masterGenres": [],
+      "masterStyles": []
     }
   },
   {
@@ -3549,8 +4747,14 @@
     "first_released": "unknown",
     "date_added": "2023-08-22",
     "favourite": false,
+    "note": "2023 VMP reissue, remastered. Comes with record commentary by Stephen Potter. Gorgeous cover, gorgeous record, great album!",
     "discogsData": {
       "year": 2023,
+      "originalYear": 1999,
+      "originalTitle": "Uncontrolled Substance",
+      "released": "2023-01-00",
+      "releaseDate": "2023-01-26T13:28:59-08:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop"
       ],
@@ -3644,7 +4848,29 @@
           "title": "The Cause",
           "duration": "4:35"
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Club Edition",
+            "Reissue",
+            "Remastered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/38045",
+      "masterId": 38045,
+      "catno": "19658739391",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -3655,8 +4881,14 @@
     "first_released": "2017",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "4 x Vinyl, LP, Album, Reissue, Repress, 180g.",
     "discogsData": {
       "year": 2017,
+      "originalYear": 1997,
+      "originalTitle": "Wu-Tang Forever",
+      "released": "2017",
+      "releaseDate": "2017-06-06T04:16:30-07:00",
+      "pressingYear": 2017,
       "genres": [
         "Hip Hop"
       ],
@@ -3803,6 +5035,30 @@
           "title": "The Closing",
           "duration": "2:43"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "4",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue",
+            "Repress"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/36731",
+      "masterId": 36731,
+      "catno": "88985417941",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Boom Bap",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -3814,8 +5070,14 @@
     "first_released": "2022-03-04",
     "date_added": "2022-04-19",
     "favourite": false,
+    "note": "Classic album. 180 gram audiophile vinyl. Deluxe heavyweight gatefold sleeve with leather laminate. 25th Anniversary edition of 4000 numbered copies.",
     "discogsData": {
       "year": 2022,
+      "originalYear": 1996,
+      "originalTitle": "Ironman",
+      "released": "2022-03-04",
+      "releaseDate": "2022-02-28T06:40:59-08:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop"
       ],
@@ -3904,7 +5166,43 @@
           "title": "The Soul Controller",
           "duration": "6:49"
         }
-      ]
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP"
+          ]
+        },
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP"
+          ]
+        },
+        {
+          "name": "All Media",
+          "qty": "1",
+          "descriptions": [
+            "Album",
+            "Limited Edition",
+            "Numbered",
+            "Reissue",
+            "Repress"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/24813",
+      "masterId": 24813,
+      "catno": "MOVLP1451",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -3915,8 +5213,14 @@
     "first_released": "2021-11-19",
     "date_added": "2022-11-23",
     "favourite": false,
+    "note": "Local artist, lovely album.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2021,
+      "originalTitle": "Betty",
+      "released": "2021-11-19",
+      "releaseDate": "2022-11-22T23:58:51-08:00",
+      "pressingYear": 2021,
       "genres": [
         "Folk, World, & Country"
       ],
@@ -3995,7 +5299,23 @@
           "title": "Taku Māmā - Bonus Track",
           "duration": ""
         }
-      ]
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP"
+          ]
+        }
+      ],
+      "masterUrl": null,
+      "masterId": null,
+      "catno": "001",
+      "masterGenres": [],
+      "masterStyles": []
     }
   },
   {
@@ -4006,8 +5326,14 @@
     "first_released": "unknown",
     "date_added": "2025-02-20",
     "favourite": false,
+    "note": "MUSTAAAAAAAAAAAAAAAARD!!",
     "discogsData": {
       "year": 2025,
+      "originalYear": 2024,
+      "originalTitle": "GNX",
+      "released": "2025-02-07",
+      "releaseDate": "2025-02-06T19:03:52-08:00",
+      "pressingYear": 2025,
       "genres": [
         "Hip Hop",
         "Funk / Soul"
@@ -4082,6 +5408,31 @@
           "title": "Gloria",
           "duration": "4:48"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3664443",
+      "masterId": 3664443,
+      "catno": "00602475686750",
+      "masterGenres": [
+        "Hip Hop",
+        "Funk / Soul"
+      ],
+      "masterStyles": [
+        "Conscious",
+        "Contemporary R&B",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -4093,8 +5444,14 @@
     "first_released": "2019-04-13",
     "date_added": "2021-10-02",
     "favourite": true,
+    "note": "ABSOLUTE BANGER. Record Store Day 2019. Limited to 1500 copies.",
     "discogsData": {
       "year": 2019,
+      "originalYear": 2018,
+      "originalTitle": "Nothing Breaks Like A Heart",
+      "released": "2019-04-13",
+      "releaseDate": "2019-04-14T07:42:21-07:00",
+      "pressingYear": 2019,
       "genres": [
         "Electronic",
         "Pop"
@@ -4121,7 +5478,28 @@
           "title": "Nothing Breaks Like A Heart (Boston Bun Remix)",
           "duration": ""
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "45 RPM",
+            "Record Store Day",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1463388",
+      "masterId": 1463388,
+      "catno": "19075-93767-1",
+      "masterGenres": [
+        "Pop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -4132,8 +5510,14 @@
     "first_released": "unknown",
     "date_added": "2021-09-28",
     "favourite": true,
+    "note": "ABSOLUTE BANGER. My most listened to album from 2020-2022.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2020,
+      "originalTitle": "Plastic Hearts",
+      "released": "2021-07-00",
+      "releaseDate": "2021-07-21T02:49:34-07:00",
+      "pressingYear": 2021,
       "genres": [
         "Rock",
         "Pop"
@@ -4226,6 +5610,34 @@
           "title": "Zombie (Live From The NIVA Save Our Stages Festival)",
           "duration": "4:50"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1847448",
+      "masterId": 1847448,
+      "catno": "19439-83735-1",
+      "masterGenres": [
+        "Rock",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Arena Rock",
+        "Power Pop",
+        "New Wave",
+        "Soft Rock",
+        "Pop Rock",
+        "Ballad",
+        "Glam"
       ]
     }
   },
@@ -4237,8 +5649,14 @@
     "first_released": "2015",
     "date_added": "2023-10-15",
     "favourite": false,
+    "note": "Limited Edition, Reissue, Sea Glass. 10th anniversary edition with updated packaging featuring never before seen photos and the bonus track \"23\"",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2013,
+      "originalTitle": "Bangerz",
+      "released": "2023-09-29",
+      "releaseDate": "2023-09-28T02:42:07-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop",
         "Pop"
@@ -4339,7 +5757,28 @@
           "title": "23",
           "duration": "4:12"
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/605084",
+      "masterId": 605084,
+      "catno": "19658764381",
+      "masterGenres": [
+        "Hip Hop",
+        "Pop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -4350,8 +5789,14 @@
     "first_released": "unknown",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "2016, 180 gram reissue.",
     "discogsData": {
       "year": 2016,
+      "originalYear": 1993,
+      "originalTitle": "Enter The Wu-Tang (36 Chambers)",
+      "released": "2016",
+      "releaseDate": "2016-02-22T08:19:24-08:00",
+      "pressingYear": 2016,
       "genres": [
         "Hip Hop"
       ],
@@ -4436,6 +5881,30 @@
           "title": "Wu-Tang: 7th Chamber - Part II",
           "duration": "5:08"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/25303",
+      "masterId": 25303,
+      "catno": "88875169851",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Boom Bap",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -4447,8 +5916,14 @@
     "first_released": "unknown",
     "date_added": "2023-07-31",
     "favourite": false,
+    "note": "Was supposed to be the Orchid Marbled version but ended up with Violet Marbeled. Oh well.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "Speak Now (Taylor's Version)",
+      "released": "2023-07-07",
+      "releaseDate": "2023-07-07T01:51:44-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Pop",
         "Folk, World, & Country"
@@ -4577,7 +6052,27 @@
           "title": "Timeless (Taylor's Version) (From The Vault)",
           "duration": ""
         }
-      ]
+      ],
+      "country": "Worldwide",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "3",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3159312",
+      "masterId": 3159312,
+      "catno": "2448438065",
+      "masterGenres": [
+        "Pop",
+        "Folk, World, & Country"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -4588,8 +6083,14 @@
     "first_released": "unknown",
     "date_added": "2021-10-16",
     "favourite": false,
+    "note": "Heavy. 6 panel, triple gatefold jacket with 3 gold coloured records. Lots of music.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2021,
+      "originalTitle": "Fearless (Taylor's Version)",
+      "released": "2021-10-01",
+      "releaseDate": "2021-09-29T13:31:34-07:00",
+      "pressingYear": 2021,
       "genres": [
         "Pop",
         "Folk, World, & Country"
@@ -4742,6 +6243,29 @@
           "title": "Love Story (Taylor’s Version) - Elvira Remix",
           "duration": ""
         }
+      ],
+      "country": "Worldwide",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "3",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2071156",
+      "masterId": 2071156,
+      "catno": "B0033579-01",
+      "masterGenres": [
+        "Pop",
+        "Folk, World, & Country"
+      ],
+      "masterStyles": [
+        "Country",
+        "Vocal"
       ]
     }
   },
@@ -4753,8 +6277,14 @@
     "first_released": "unknown",
     "date_added": "2023-05-19",
     "favourite": false,
+    "note": "Record Store Day, Limited Edition, Picture Disc, Reissue, Remastered.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 1995,
+      "originalTitle": "Return To The 36 Chambers: The Dirty Version",
+      "released": "2023-04-22",
+      "releaseDate": "2023-04-22T02:50:08-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop"
       ],
@@ -4842,6 +6372,31 @@
           "title": "Cuttin' Headz",
           "duration": "2:28"
         }
+      ],
+      "country": "UK & US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Record Store Day",
+            "Limited Edition",
+            "Picture Disc",
+            "Reissue",
+            "Remastered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/61996",
+      "masterId": 61996,
+      "catno": "RPD1 706205 / 603497835379",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -4853,8 +6408,14 @@
     "first_released": "unknown",
     "date_added": "2023-02-18",
     "favourite": false,
+    "note": "2017, 180 gram reissue.",
     "discogsData": {
       "year": 2017,
+      "originalYear": 1995,
+      "originalTitle": "III - Temples Of Boom",
+      "released": "2017-11-03",
+      "releaseDate": "2017-10-31T07:59:27-07:00",
+      "pressingYear": 2017,
       "genres": [
         "Hip Hop"
       ],
@@ -4943,6 +6504,28 @@
           "title": "Everybody Must Get Stoned",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/16855",
+      "masterId": 16855,
+      "catno": "88985434411",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -4954,8 +6537,14 @@
     "first_released": "2023-08-00",
     "date_added": "2023-08-22",
     "favourite": true,
+    "note": "2023 VMP reissue, remastered. Exclusive art print and listening notes book. So excited to have a copy of this brilliant album, it sounds stunning!",
     "discogsData": {
       "year": 2023,
+      "originalYear": 1995,
+      "originalTitle": "E. 1999 Eternal",
+      "released": "2023-08-00",
+      "releaseDate": "2023-08-09T14:05:37-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop"
       ],
@@ -5051,6 +6640,31 @@
           "title": "Shotz To Tha Double Glock",
           "duration": "4:42"
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Club Edition",
+            "Reissue",
+            "Remastered",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/122350",
+      "masterId": 122350,
+      "catno": "RUTHE1999",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Gangsta"
       ]
     }
   },
@@ -5062,8 +6676,14 @@
     "first_released": "unknown",
     "date_added": "2022-11-23",
     "favourite": false,
+    "note": "Includes I Remember - Dedication To Whitey Ford, an absolute banger diss track. Cover artwork by Skam.",
     "discogsData": {
       "year": 2000,
+      "originalYear": 2000,
+      "originalTitle": "S#!* On You",
+      "released": "2000",
+      "releaseDate": "2013-09-03T12:07:10-07:00",
+      "pressingYear": 2000,
       "genres": [
         "Hip Hop"
       ],
@@ -5102,7 +6722,27 @@
           "title": "I Remember (Instrumental)",
           "duration": "5:40"
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "33 ⅓ RPM",
+            "Maxi-Single"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/202060",
+      "masterId": 202060,
+      "catno": "RWK 292",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -5115,6 +6755,11 @@
     "favourite": true,
     "discogsData": {
       "year": 2001,
+      "originalYear": 2001,
+      "originalTitle": "Devils Night",
+      "released": "2001",
+      "releaseDate": "2005-11-08T08:33:36-08:00",
+      "pressingYear": 2001,
       "genres": [
         "Hip Hop"
       ],
@@ -5219,6 +6864,28 @@
           "title": "Girls",
           "duration": "5:35"
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/71995",
+      "masterId": 71995,
+      "catno": "0694930671",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Gangsta",
+        "Pop Rap"
       ]
     }
   },
@@ -5230,8 +6897,14 @@
     "first_released": "unknown",
     "date_added": "2022-11-23",
     "favourite": false,
+    "note": "Lifted from the debut album 'Devils Night'. Includes the track Words Are Weapons and a D12 Freestyle.",
     "discogsData": {
       "year": 2001,
+      "originalYear": 2001,
+      "originalTitle": "Fight Music",
+      "released": "2001",
+      "releaseDate": "2008-07-14T15:26:05-07:00",
+      "pressingYear": 2001,
       "genres": [
         "Hip Hop"
       ],
@@ -5258,7 +6931,27 @@
           "title": "Freestyle",
           "duration": "4:59"
         }
-      ]
+      ],
+      "country": "UK",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "33 ⅓ RPM",
+            "Single"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/202405",
+      "masterId": 202405,
+      "catno": "497 652-1",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -5271,6 +6964,11 @@
     "favourite": false,
     "discogsData": {
       "year": 2004,
+      "originalYear": 2004,
+      "originalTitle": "How Come",
+      "released": "2004",
+      "releaseDate": "2006-01-23T12:40:36-08:00",
+      "pressingYear": 2004,
       "genres": [
         "Hip Hop"
       ],
@@ -5320,6 +7018,29 @@
           "title": "How Come (Instrumental)",
           "duration": "4:09"
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "33 ⅓ RPM",
+            "Single"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/202408",
+      "masterId": 202408,
+      "catno": "B0003270-11",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Gangsta",
+        "Pop Rap"
       ]
     }
   },
@@ -5331,8 +7052,14 @@
     "first_released": "2019-12-06",
     "date_added": "2022-05-05",
     "favourite": false,
+    "note": "Standard black release. Dope artwork by Lamour Supreme.",
     "discogsData": {
       "year": 2019,
+      "originalYear": 2019,
+      "originalTitle": "The Odd Czar Against Us",
+      "released": "2019-12-06",
+      "releaseDate": "2019-12-06T13:36:06-08:00",
+      "pressingYear": 2019,
       "genres": [
         "Hip Hop"
       ],
@@ -5401,7 +7128,26 @@
           "title": "Czartis Gilmore (The Cool Down)",
           "duration": ""
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1642596",
+      "masterId": 1642596,
+      "catno": "SIL 013-LP",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -5412,8 +7158,14 @@
     "first_released": "unknown",
     "date_added": "2022-07-19",
     "favourite": false,
+    "note": "Iconic team up. Dope artwork by Lamour Supreme.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2021,
+      "originalTitle": "Super What?",
+      "released": "2021-05-07",
+      "releaseDate": "2021-05-06T11:08:04-07:00",
+      "pressingYear": 2021,
       "genres": [
         "Hip Hop"
       ],
@@ -5474,6 +7226,27 @@
           "title": "Young World",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2125414",
+      "masterId": 2125414,
+      "catno": "SIL 015-LP",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Boom Bap"
       ]
     }
   },
@@ -5485,8 +7258,14 @@
     "first_released": "2022-04-23",
     "date_added": "2022-04-25",
     "favourite": false,
+    "note": "Released on Record Store Day 2022.",
     "discogsData": {
       "year": 2022,
+      "originalYear": 2022,
+      "originalTitle": "Czarmageddon!",
+      "released": "2022-04-23",
+      "releaseDate": "2022-04-22T08:12:58-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop"
       ],
@@ -5555,7 +7334,28 @@
           "title": "Logan-5",
           "duration": "2:38"
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Record Store Day",
+            "Limited Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2610431",
+      "masterId": 2610431,
+      "catno": "SIL 022-LP",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -5568,6 +7368,11 @@
     "favourite": false,
     "discogsData": {
       "year": 2019,
+      "originalYear": 2019,
+      "originalTitle": "Czarface Meets Ghostface",
+      "released": "2019-02-15",
+      "releaseDate": "2019-02-10T13:21:06-08:00",
+      "pressingYear": 2019,
       "genres": [
         "Hip Hop"
       ],
@@ -5639,7 +7444,27 @@
           "title": "(Post Credits Scene)",
           "duration": ""
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1500940",
+      "masterId": 1500940,
+      "catno": "SIL007-LP",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
     }
   },
   {
@@ -5650,8 +7475,14 @@
     "first_released": "2021-11-01",
     "date_added": "2022-03-15",
     "favourite": false,
+    "note": "A pioneer of Aotearoa Hip Hop. 20th Anniversary Pounamu Green Vinyl version. Features only 12 of the original 15 from the CD release. Missing Rootsman, Interlude 2, and The Natural.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2001,
+      "originalTitle": "Navigator",
+      "released": "2021-11-01",
+      "releaseDate": "2021-11-18T12:35:31-08:00",
+      "pressingYear": 2021,
       "genres": [
         "Hip Hop"
       ],
@@ -5723,6 +7554,30 @@
           "title": "Fade–Away",
           "duration": ""
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue",
+            "Special Edition"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/202044",
+      "masterId": 202044,
+      "catno": "19439939801",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Pop Rap",
+        "Conscious"
       ]
     }
   },
@@ -5734,8 +7589,14 @@
     "first_released": "unknown",
     "date_added": "2024-12-13",
     "favourite": false,
+    "note": "Aotearoa's lost hip hop classic, reissued years after going out of print.",
     "discogsData": {
       "year": 2024,
+      "originalYear": 1997,
+      "originalTitle": "Kaupapa Driven Rhymes Uplifted",
+      "released": "2024-09-20",
+      "releaseDate": "2024-09-19T17:19:50-07:00",
+      "pressingYear": 2024,
       "genres": [
         "Hip Hop"
       ],
@@ -5825,6 +7686,29 @@
           "title": "4 Realms Outro",
           "duration": ""
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3614368",
+      "masterId": 3614368,
+      "catno": "198202835101",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Hardcore Hip-Hop",
+        "Conscious"
       ]
     }
   },
@@ -5836,8 +7720,14 @@
     "first_released": "2005-05-02",
     "date_added": "2022-11-23",
     "favourite": false,
+    "note": "A certified Aotearoa classic. Listening to the album front to back takes you on a journey. Enjoy it.",
     "discogsData": {
       "year": 2005,
+      "originalYear": 2005,
+      "originalTitle": "Based On A True Story",
+      "released": "2005-05-02",
+      "releaseDate": "2006-01-10T20:14:04-08:00",
+      "pressingYear": 2005,
       "genres": [
         "Electronic"
       ],
@@ -5900,6 +7790,29 @@
           "title": "Roady",
           "duration": "7:08"
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/98946",
+      "masterId": 98946,
+      "catno": "DRP 007",
+      "masterGenres": [
+        "Electronic"
+      ],
+      "masterStyles": [
+        "Broken Beat",
+        "Downtempo",
+        "Dub"
       ]
     }
   },
@@ -5911,8 +7824,14 @@
     "first_released": "unknown",
     "date_added": "2022-05-05",
     "favourite": false,
+    "note": "180 grams. A beautiful album. Recorded live in Maraetotara at Wairunga on 16 March 2021.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2021,
+      "originalTitle": "Wairunga",
+      "released": "2021-11-15",
+      "releaseDate": "2021-11-17T11:35:20-08:00",
+      "pressingYear": 2021,
       "genres": [
         "Electronic",
         "Jazz",
@@ -5962,6 +7881,31 @@
           "title": "Dig Deep",
           "duration": "10:30"
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2383930",
+      "masterId": 2383930,
+      "catno": "DRP030",
+      "masterGenres": [
+        "Electronic",
+        "Jazz",
+        "Reggae",
+        "Funk / Soul"
+      ],
+      "masterStyles": [
+        "Dub",
+        "Soul-Jazz"
       ]
     }
   },
@@ -5973,8 +7917,14 @@
     "first_released": "unknown",
     "date_added": "2022-03-14",
     "favourite": false,
+    "note": "Top local band from my youth. Their music was never released on vinyl at the time so 3 of their albums were pressed and released in 2021. Includes insert with lyrics and notes from the band members.",
     "discogsData": {
       "year": 2021,
+      "originalYear": 2003,
+      "originalTitle": "Love & Disrespect",
+      "released": "2021-02-05",
+      "releaseDate": "2021-02-04T21:46:00-08:00",
+      "pressingYear": 2021,
       "genres": [
         "Rock"
       ],
@@ -6047,6 +7997,29 @@
           "title": "Weed Out",
           "duration": "4:46"
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/604835",
+      "masterId": 604835,
+      "catno": "7793063",
+      "masterGenres": [
+        "Rock"
+      ],
+      "masterStyles": [
+        "Pop Rock",
+        "Indie Rock"
       ]
     }
   },
@@ -6058,8 +8031,14 @@
     "first_released": "unknown",
     "date_added": "2023-10-26",
     "favourite": false,
+    "note": "Translucent blue LP with B-side etching.  NPR Music Tiny Desk Concert vinyl, featuring the live recording of the 2018 performance from NPR Headquarters in Washington, D.C. ",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "NPR Music Tiny Desk Concert",
+      "released": "2023-08-03",
+      "releaseDate": "2023-08-06T12:13:48-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop"
       ],
@@ -6086,7 +8065,26 @@
           "title": "2009",
           "duration": "5:47"
         }
-      ]
+      ],
+      "country": "USA & Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Single Sided",
+            "EP",
+            "Etched"
+          ]
+        }
+      ],
+      "masterUrl": null,
+      "masterId": null,
+      "catno": "093624855958",
+      "masterGenres": [],
+      "masterStyles": []
     }
   },
   {
@@ -6098,8 +8096,14 @@
     "year": "2018",
     "date_added": "2023-12-07",
     "favourite": true,
+    "note": "What an amazing album. RIP Mac Miller. ",
     "discogsData": {
       "year": 0,
+      "originalYear": 2018,
+      "originalTitle": "Swimming",
+      "released": null,
+      "releaseDate": "2023-07-23T16:28:11-07:00",
+      "pressingYear": 0,
       "genres": [
         "Hip Hop",
         "Funk / Soul"
@@ -6175,6 +8179,31 @@
           "title": "So It Goes",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1403861",
+      "masterId": 1403861,
+      "catno": "093624904236",
+      "masterGenres": [
+        "Hip Hop",
+        "Funk / Soul"
+      ],
+      "masterStyles": [
+        "Jazzy Hip-Hop",
+        "Disco",
+        "Trap"
       ]
     }
   },
@@ -6186,8 +8215,14 @@
     "first_released": "unknown",
     "date_added": "2022-04-15",
     "favourite": false,
+    "note": "Dope album. 03:15 AM / Caviar goes hard.",
     "discogsData": {
       "year": 2020,
+      "originalYear": 2020,
+      "originalTitle": "Friday Forever",
+      "released": "2020-04-03",
+      "releaseDate": "2020-04-09T02:48:04-07:00",
+      "pressingYear": 2020,
       "genres": [
         "Electronic",
         "Hip Hop"
@@ -6259,6 +8294,28 @@
           "title": "11:59 AM / Circles",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1717637",
+      "masterId": 1717637,
+      "catno": "XL1016LP",
+      "masterGenres": [
+        "Electronic",
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Downtempo"
       ]
     }
   },
@@ -6270,8 +8327,14 @@
     "first_released": "2018-11-00",
     "date_added": "2024-02-11",
     "favourite": false,
+    "note": "New project by Tom Scott (Home Brew). Gatefold cover includes download card. Tracks D1, D2, and D3 are vinyl exclusive bonus tracks.",
     "discogsData": {
       "year": 2018,
+      "originalYear": 2018,
+      "originalTitle": "Avantdale Bowling Club",
+      "released": "2018-11-00",
+      "releaseDate": "2019-04-26T19:45:41-07:00",
+      "pressingYear": 2018,
       "genres": [
         "Hip Hop",
         "Jazz"
@@ -6344,6 +8407,30 @@
           "title": "Mt Roskill Interlude",
           "duration": "0:58"
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Repress"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1458945",
+      "masterId": 1458945,
+      "catno": "YGB001",
+      "masterGenres": [
+        "Hip Hop",
+        "Jazz"
+      ],
+      "masterStyles": [
+        "Conscious",
+        "Jazzy Hip-Hop"
       ]
     }
   },
@@ -6355,8 +8442,14 @@
     "first_released": "unknown",
     "date_added": "2024-02-11",
     "favourite": false,
+    "note": "Second Avantdale Bowling Club project. Solid rap album. Aotearoa music rules.",
     "discogsData": {
       "year": 2022,
+      "originalYear": 2022,
+      "originalTitle": "Trees",
+      "released": "2022-09-30",
+      "releaseDate": "2022-09-28T18:53:28-07:00",
+      "pressingYear": 2022,
       "genres": [
         "Hip Hop",
         "Jazz"
@@ -6418,6 +8511,29 @@
           "title": "Outro?",
           "duration": ""
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2803046",
+      "masterId": 2803046,
+      "catno": "YGB006",
+      "masterGenres": [
+        "Hip Hop",
+        "Jazz"
+      ],
+      "masterStyles": [
+        "Jazzy Hip-Hop"
       ]
     }
   },
@@ -6429,8 +8545,14 @@
     "first_released": "unknown",
     "date_added": "2023-12-20",
     "favourite": false,
+    "note": "The last Home Brew album was eleven years ago. This one is great, lots of retrospect, lots of the same living.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "Run It Back",
+      "released": "2023-12-08",
+      "releaseDate": "2023-12-07T14:41:21-08:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop"
       ],
@@ -6497,7 +8619,24 @@
           "title": "Run It Back Again (Bonus Track)",
           "duration": ""
         }
-      ]
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": null,
+      "masterId": null,
+      "catno": "YGB007",
+      "masterGenres": [],
+      "masterStyles": []
     }
   },
   {
@@ -6508,8 +8647,14 @@
     "first_released": "unknown",
     "date_added": "2024-02-11",
     "favourite": false,
+    "note": "Re-issue for the 11th anniversary. \"Last Day\" found on all other releases was dropped to fit vinyl time constraints, 3000 made.",
     "discogsData": {
       "year": 2023,
+      "originalYear": 2012,
+      "originalTitle": "*Home Brew (Special Edition)",
+      "released": "2023-09-28",
+      "releaseDate": "2023-09-27T21:34:52-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Hip Hop"
       ],
@@ -6620,6 +8765,27 @@
           "title": "Space",
           "duration": ""
         }
+      ],
+      "country": "New Zealand",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Remastered"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/658833",
+      "masterId": 658833,
+      "catno": "YGB000",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Conscious"
       ]
     }
   },
@@ -6633,25 +8799,51 @@
     "favourite": true,
     "discogsData": {
       "year": 2024,
+      "originalYear": 2024,
+      "originalTitle": "Fuel",
+      "released": "2024",
+      "releaseDate": "2025-05-23T10:48:29-07:00",
+      "pressingYear": 2024,
       "genres": [
         "Hip Hop"
       ],
       "styles": [],
       "labels": [
-        "Shady/Aftermath/Interscope"
+        "Aftermath Entertainment",
+        "Shady Records",
+        "Interscope Records"
       ],
       "tracklist": [
         {
-          "position": "A1",
+          "position": "A",
           "title": "Fuel",
           "duration": ""
         },
         {
-          "position": "B1",
+          "position": "B",
           "title": "Fuel - Shady Edition",
           "duration": ""
         }
-      ]
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "7\"",
+            "45 RPM",
+            "Single",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": null,
+      "masterId": null,
+      "catno": "602475492771",
+      "masterGenres": [],
+      "masterStyles": []
     }
   },
   {
@@ -6664,6 +8856,11 @@
     "favourite": false,
     "discogsData": {
       "year": 2023,
+      "originalYear": 2011,
+      "originalTitle": "Femme Fatale",
+      "released": "2023-05-26",
+      "releaseDate": "2023-05-25T14:37:05-07:00",
+      "pressingYear": 2023,
       "genres": [
         "Electronic",
         "Pop"
@@ -6737,6 +8934,32 @@
           "title": "Criminal",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/321973",
+      "masterId": 321973,
+      "catno": "19658779191",
+      "masterGenres": [
+        "Electronic",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Electro",
+        "Dance-pop",
+        "Dubstep"
       ]
     }
   },
@@ -6750,6 +8973,11 @@
     "favourite": false,
     "discogsData": {
       "year": 2025,
+      "originalYear": 2025,
+      "originalTitle": "Something Beautiful",
+      "released": "2025-05-30",
+      "releaseDate": "2025-05-30T01:02:35-07:00",
+      "pressingYear": 2025,
       "genres": [
         "Electronic",
         "Rock",
@@ -6761,6 +8989,12 @@
       ],
       "labels": [
         "Columbia",
+        "Columbia",
+        "Columbia",
+        "Columbia",
+        "Sony Music",
+        "Sony Music",
+        "Sony Music",
         "Sony Music"
       ],
       "tracklist": [
@@ -6777,12 +9011,12 @@
         {
           "position": "A3",
           "title": "End Of The World",
-          "duration": "4:10"
+          "duration": "4:21"
         },
         {
           "position": "A4",
           "title": "More To Lose",
-          "duration": "4:35"
+          "duration": "4:49"
         },
         {
           "position": "A5",
@@ -6802,12 +9036,12 @@
         {
           "position": "A8",
           "title": "Golden Burning Sun",
-          "duration": "4:54"
+          "duration": "5:13"
         },
         {
           "position": "B1",
           "title": "Walk Of Fame",
-          "duration": "6:00"
+          "duration": "6:02"
         },
         {
           "position": "B2",
@@ -6817,18 +9051,41 @@
         {
           "position": "B3",
           "title": "Every Girl You've Ever Loved",
-          "duration": "5:18"
+          "duration": "5:20"
         },
         {
           "position": "B4",
           "title": "Reborn",
-          "duration": "5:42"
+          "duration": "5:44"
         },
         {
           "position": "B5",
           "title": "Give Me Love",
-          "duration": "3:51"
+          "duration": "3:52"
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3854392",
+      "masterId": 3854392,
+      "catno": "19802924051",
+      "masterGenres": [
+        "Rock",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Art Rock",
+        "Dance-pop"
       ]
     }
   },
@@ -6843,6 +9100,11 @@
     "note": "5th anniversary special edition on clear w/ black, white and yellow splatter. A pity that there is no b-side!",
     "discogsData": {
       "year": 2025,
+      "originalYear": 2025,
+      "originalTitle": "Godzilla",
+      "released": "2025",
+      "releaseDate": "2025-05-31T23:32:40-07:00",
+      "pressingYear": 2025,
       "genres": [
         "Hip Hop"
       ],
@@ -6867,6 +9129,31 @@
           "title": "Godzilla (Instrumental)",
           "duration": ""
         }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "7\"",
+            "45 RPM",
+            "Single",
+            "Special Edition",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/1808522",
+      "masterId": 1808522,
+      "catno": "602475843580",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Pop Rap",
+        "Hardcore Hip-Hop"
       ]
     }
   },
@@ -6881,6 +9168,11 @@
     "note": "Bathwater coloured vinyl, lol",
     "discogsData": {
       "year": 2025,
+      "originalYear": 2025,
+      "originalTitle": "Virgin",
+      "released": "2025-06-27",
+      "releaseDate": "2025-06-27T04:19:14-07:00",
+      "pressingYear": 2025,
       "genres": [
         "Electronic",
         "Pop"
@@ -6950,6 +9242,30 @@
           "title": "David",
           "duration": ""
         }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3891772",
+      "masterId": 3891772,
+      "catno": "00602478121180",
+      "masterGenres": [
+        "Electronic",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Indie Pop",
+        "Alt-Pop",
+        "Synth-pop"
       ]
     }
   }

@@ -103,30 +103,75 @@ export const booksByYear = collection => {
 const recordShelfDataPath = path.join(process.cwd(), 'src/_data/recordShelf.json');
 
 /**
- * All releases as a collection.
- * @param {object} collectionApi - Eleventy's collection API.
- * @returns {Promise<Array<any>>} - A promise that resolves to an array of all releases.
+ * Cached data to avoid reading file multiple times
  */
-export const releasesCollection = async (collectionApi) => {
+let cachedRecordShelfData = null;
+let dataLastModified = null;
+
+/**
+ * Get record shelf data with caching
+ */
+async function getRecordShelfData() {
   try {
-    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
-    const recordShelf = JSON.parse(fileContent);
-    return recordShelf || [];
+    const stats = await fs.promises.stat(recordShelfDataPath);
+
+    // Check if we need to reload the cache
+    if (!cachedRecordShelfData || !dataLastModified || stats.mtime > dataLastModified) {
+      console.log('Loading recordShelf data...');
+      const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
+      cachedRecordShelfData = JSON.parse(fileContent);
+      dataLastModified = stats.mtime;
+    }
+
+    return cachedRecordShelfData || [];
   } catch (error) {
-    console.error("Error in releasesCollection:", error);
+    console.error("Error reading recordShelf data:", error);
     return [];
   }
+}
+
+/**
+ * All releases as a collection.
+ */
+export const releasesCollection = async (collectionApi) => {
+  return await getRecordShelfData();
 };
 
 /**
+ * Helper function to split an artist string into individual artist names.
+ */
+function splitArtists(artistString) {
+  if (!artistString) return [];
+
+  const separators = [
+    /\s*,\s*/,
+    /\s*&\s*/,
+    /\s*feat\.?\s*/i,
+    /\s*featuring\s*/i,
+    /\s*with\s*/i,
+    /\s*and\s*/i,
+    /\s*vs\.?\s*/i,
+    /\s*x\s*/i
+  ];
+
+  let artists = [artistString];
+
+  separators.forEach(separator => {
+    artists = artists.flatMap(artist => artist.split(separator));
+  });
+
+  return artists
+    .map(artist => artist.trim())
+    .filter(artist => artist.length > 0)
+    .filter(artist => !['the', 'various', 'various artists'].includes(artist.toLowerCase()));
+}
+
+/**
  * Artists grouped by their releases.
- * @param {object} collectionApi - Eleventy's collection API.
- * @returns {Promise<Array<{artist: string, releases: Array<any>}>>} - A promise that resolves to an array of artists and their releases.
  */
 export const artistsCollection = async (collectionApi) => {
   try {
-    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
-    const recordShelf = JSON.parse(fileContent);
+    const recordShelf = await getRecordShelfData();
     if (!recordShelf) return [];
 
     const artistMap = new Map();
@@ -152,20 +197,10 @@ export const artistsCollection = async (collectionApi) => {
   }
 };
 
-/**
- * Helper function to split an artist string into individual artist names.
- * @param {string} artistString - The string containing one or more artist names.
- * @returns {Array<string>} - An array of individual artist names.
- */
-function splitArtists(artistString) {
-  return artistString.split(/,|&|feat\.|featuring|with|and/i).map(s => s.trim()).filter(Boolean);
-}
-
 /** Genres grouped by their releases */
 export const genresCollection = async (collectionApi) => {
   try {
-    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
-    const recordShelf = JSON.parse(fileContent);
+    const recordShelf = await getRecordShelfData();
     if (!recordShelf) return [];
 
     const genres = [...new Set(recordShelf.flatMap(release => release.discogsData?.genres || []))];
@@ -181,13 +216,10 @@ export const genresCollection = async (collectionApi) => {
 
 /**
  * Formats grouped by their releases.
- * @param {object} collectionApi - Eleventy's collection API.
- * @returns {Promise<Array<{format: string, releases: Array<any>}>>} - A promise that resolves to an array of formats and their releases.
  */
 export const formatsCollection = async (collectionApi) => {
   try {
-    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
-    const recordShelf = JSON.parse(fileContent);
+    const recordShelf = await getRecordShelfData();
     if (!recordShelf) return [];
 
     const formats = [...new Set(recordShelf.flatMap(release =>
@@ -208,8 +240,7 @@ export const formatsCollection = async (collectionApi) => {
 /** Releases grouped by release year */
 export const releaseYearsCollection = async (collectionApi) => {
   try {
-    const fileContent = await fs.promises.readFile(recordShelfDataPath, 'utf8');
-    const recordShelf = JSON.parse(fileContent);
+    const recordShelf = await getRecordShelfData();
     if (!recordShelf) return [];
 
     const grouped = recordShelf.reduce((acc, release) => {
@@ -236,6 +267,90 @@ export const releaseYearsCollection = async (collectionApi) => {
   }
 };
 
+/**
+ * Pre-computed statistics for the homepage to improve performance
+ */
+export const homePageStats = async (collectionApi) => {
+  try {
+    const recordShelf = await getRecordShelfData();
+    if (!recordShelf || recordShelf.length === 0) {
+      return {
+        totalRecords: 0,
+        topArtists: [],
+        favorites: [],
+        recentAdditions: [],
+        topGenres: [],
+        topYears: []
+      };
+    }
+
+    // Get artists data
+    const artists = await artistsCollection();
+    const topArtists = artists
+      .sort((a, b) => b.releases.length - a.releases.length)
+      .slice(0, 5);
+
+    // Get favorites
+    const favorites = recordShelf
+      .filter(release => release.favourite)
+      .slice(0, 8);
+
+    // Get recent additions - sort by date_added
+    const recentAdditions = recordShelf
+      .filter(release => release.date_added) // Only items with dates
+      .sort((a, b) => new Date(b.date_added) - new Date(a.date_added))
+      .slice(0, 8);
+
+    // Calculate top genres
+    const genreCount = {};
+    recordShelf.forEach(release => {
+      if (release.discogsData?.genres) {
+        release.discogsData.genres.forEach(genre => {
+          genreCount[genre] = (genreCount[genre] || 0) + 1;
+        });
+      }
+    });
+
+    const topGenres = Object.entries(genreCount)
+      .sort(([,a], [,b]) => b - a)
+      .slice(0, 5)
+      .map(([genre, count]) => ({ genre, count }));
+
+    // Calculate top years
+    const yearCount = {};
+    recordShelf.forEach(release => {
+      const year = release.year || release.discogsData?.year || 'Unknown';
+      yearCount[year] = (yearCount[year] || 0) + 1;
+    });
+
+    const topYears = Object.entries(yearCount)
+      .filter(([year]) => year !== 'Unknown') // Filter out unknown years for top list
+      .sort(([,a], [,b]) => b - a)
+      .slice(0, 5)
+      .map(([year, count]) => ({ year: parseInt(year), count }));
+
+    return {
+      totalRecords: recordShelf.length,
+      favoriteCount: favorites.length,
+      topArtists,
+      favorites,
+      recentAdditions,
+      topGenres,
+      topYears
+    };
+  } catch (error) {
+    console.error("Error in homePageStats:", error);
+    return {
+      totalRecords: 0,
+      topArtists: [],
+      favorites: [],
+      recentAdditions: [],
+      topGenres: [],
+      topYears: []
+    };
+  }
+};
+
 export default {
   getAllPosts,
   onlyMarkdown,
@@ -250,5 +365,6 @@ export default {
   artistsCollection,
   genresCollection,
   formatsCollection,
-  releaseYearsCollection
+  releaseYearsCollection,
+  homePageStats
 };

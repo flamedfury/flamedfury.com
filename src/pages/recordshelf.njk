@@ -37,39 +37,39 @@ layout: page
       <h2>Quick Stats</h2>
       <div class="grid">
         <!-- Top Artists -->
-        {% set sortedArtists = collections.artists | sort(true, false, 'releases.length') | slice(5) %}
         <section class="stats-card">
           <h3 class="stats-card__title">Top Artists</h3>
-          <ul class="stats-list" role="list">
-            {% for artistData in sortedArtists %}
-            <li class="stats-list__item">
-              <a href="/recordshelf/artists/{{ artistData.artist | slugify }}" class="stats-list__label">
-                {{ artistData.artist }}
-              </a>
-              <span class="stats-list__value">{{ artistData.releases | length }}</span>
-            </li>
-            {% endfor %}
-          </ul>
+          {% if collections.homePageStats.topArtists | length > 0 %}
+            <ul class="stats-list" role="list">
+              {% for artistData in collections.homePageStats.topArtists %}
+              <li class="stats-list__item">
+                <a href="/recordshelf/artists/{{ artistData.artist | slugify }}" class="stats-list__label">
+                  {{ artistData.artist }}
+                </a>
+                <span class="stats-list__value" title="{{ artistData.releases.length }} records">
+                  {{ artistData.releases.length }}
+                </span>
+              </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p class="stats-card__empty">No artist data available</p>
+          {% endif %}
           <div class="stats-card__footer">
-            <a href="/recordshelf/artists/" class="button">All artists</a>
+            <a href="/recordshelf/artists/" class="button">All artists →</a>
           </div>
         </section>
 
         <!-- Top Genres -->
-        {% set genreCounts = {} %}
-        {% for genreItem in collections.genres %}
-        {% set genreCounts = genreCounts | setAttribute(genreItem.genre, genreItem.releases.length) %}
-        {% endfor %}
-        {% set sortedGenres = genreCounts | dictsort | slice(5) %}
         <section class="stats-card">
           <h3 class="stats-card__title">Top Genres</h3>
           <ul class="stats-list" role="list">
-            {% for genre, count in sortedGenres %}
+            {% for genreData in collections.homePageStats.topGenres %}
             <li class="stats-list__item">
-              <a href="/recordshelf/genres/{{ genre | slugify }}" class="stats-list__label">
-                {{ genre }}
+              <a href="/recordshelf/genres/{{ genreData.genre | slugify }}" class="stats-list__label">
+                {{ genreData.genre }}
               </a>
-              <span class="stats-list__value">{{ count }}</span>
+              <span class="stats-list__value">{{ genreData.count }}</span>
             </li>
             {% endfor %}
           </ul>
@@ -79,21 +79,26 @@ layout: page
         </section>
 
         <!-- Top Years -->
-        {% set sortedYears = collections.releaseYears | sort(true, false, 'releases.length') | slice(5) %}
         <section class="stats-card">
           <h3 class="stats-card__title">Top Years</h3>
-          <ul class="stats-list" role="list">
-            {% for item in sortedYears %}
-            <li class="stats-list__item">
-              <a href="/recordshelf/years/{{ item.year }}/" class="stats-list__label">
-                {{ item.year }}
-              </a>
-              <span class="stats-list__value">{{ item.releases.length }}</span>
-            </li>
-            {% endfor %}
-          </ul>
+          {% if collections.homePageStats.topYears | length > 0 %}
+            <ul class="stats-list" role="list">
+              {% for yearData in collections.homePageStats.topYears %}
+              <li class="stats-list__item">
+                <a href="/recordshelf/years/{{ yearData.year }}/" class="stats-list__label">
+                  {{ yearData.year }}
+                </a>
+                <span class="stats-list__value" title="{{ yearData.count }} records">
+                  {{ yearData.count }}
+                </span>
+              </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p class="stats-card__empty">No year data available</p>
+          {% endif %}
           <div class="stats-card__footer">
-            <a href="/recordshelf/years/" class="button">All years</a>
+            <a href="/recordshelf/years/" class="button">All years →</a>
           </div>
         </section>
       </div>
@@ -102,71 +107,78 @@ layout: page
   </section>
 
   <!-- Favourites Section -->
-  {% set favoriteReleases = collections.releases | selectattr("favourite", "equalto", true) | slice(8) %}
-  {% set favoriteCount = collections.releases | selectattr("favourite", "equalto", true) | length %}
   <section class="section flow" style="--flow-space: var(--space-l);">
     <header class="cluster" style="--gutter: var(--space-s)">
       <h2>Favourites</h2>
-      <p class="counter">{{ favoriteCount }} record{% if favoriteCount != 1 %}s{% endif %}</p>
+      <p class="counter">{{ collections.homePageStats.favoriteCount }} record{% if collections.homePageStats.favoriteCount != 1 %}s{% endif %}</p>
     </header>
 
-    <div class="grid" style="--grid-min-item-size: 12rem;">
-      {% for release in favoriteReleases %}
-        <article class="record-card">
-          <a href="/recordshelf/records/{{ release.title | slugify }}" class="record-card__link">
-            <img
-              src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
-              alt="{{ release.title }} album cover"
-              class="record-card__image"
-              loading="lazy"
-              width="400"
-              height="400">
+    {% if collections.homePageStats.favorites | length > 0 %}
+      <div class="grid" style="--grid-min-item-size: 12rem;">
+        {% for release in collections.homePageStats.favorites %}
+          <article class="record-card">
+            <a href="/recordshelf/records/{{ release.title | slugify }}" class="record-card__link">
+              <img
+                src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
+                alt="{{ release.artist }} - {{ release.title }} album cover"
+                class="record-card__image"
+                loading="lazy"
+                width="400"
+                height="400"
+                onerror="this.src='/assets/images/vinyl-placeholder.jpg'; this.classList.add('placeholder');">
 
-            <div class="record-card__meta">
-              <h3>{{ release.title }}</h3>
-              <p>{{ release.artist }}</p>
-            </div>
-          </a>
-        </article>
-      {% endfor %}
-    </div>
+              <div class="record-card__meta">
+                <h3>{{ release.title }}</h3>
+                <p>{{ release.artist }}</p>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No favorite records selected yet.</p>
+    {% endif %}
   </section>
 
   <!-- Collection Section -->
   <section class="section flow" style="--flow-space: var(--space-l);">
     <header class="cluster" style="--gutter: var(--space-s)">
-      <h2>The Collection</h2>
-      <p class="counter">{{ collections.releases.length }} records</p>
+      <h2>Recent Additions</h2>
+      <p class="counter">{{ collections.homePageStats.totalRecords }} total records</p>
     </header>
 
-    <div class="grid" style="--grid-min-item-size: 12rem;">
-      {% set sortedReleases = collections.releases | sortByDateAdded | reverse | slice(8) %}
-      {% for release in sortedReleases %}
-        <article class="record-card">
-          <a href="/recordshelf/records/{{ release.title | slugify }}" class="record-card__link">
-            <img
-              src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
-              alt="{{ release.title }} album cover"
-              class="record-card__image"
-              loading="lazy"
-              width="400"
-              height="400">
+    {% if collections.homePageStats.recentAdditions | length > 0 %}
+      <div class="grid" style="--grid-min-item-size: 12rem;">
+        {% for release in collections.homePageStats.recentAdditions %}
+          <article class="record-card">
+            <a href="/recordshelf/records/{{ release.title | slugify }}" class="record-card__link">
+              <img
+                src="/assets/images/vinyl/{{ release.title | slugify }}.jpg"
+                alt="{{ release.artist }} - {{ release.title }} album cover"
+                class="record-card__image"
+                loading="lazy"
+                width="400"
+                height="400"
+                onerror="this.src='/assets/images/vinyl-placeholder.jpg'; this.classList.add('placeholder');">
 
-            <div class="record-card__meta">
-              <h3>{{ release.title }}</h3>
-              <p>{{ release.artist }}</p>
-              {% if release.discogsData.year %}<p>{{ release.discogsData.year }}</p>{% endif %}
-              {% if release.favourite %}<span class="record-card__favourite">★</span>{% endif %}
-              {% if release.date_added %}
-                <time class="record-card__date" datetime="{{ release.date_added | formatDate('YYYY-MM-DD') }}">
-                  Added {{ release.date_added | formatDate("MMMM D, YYYY") }}
-                </time>
-              {% endif %}
-            </div>
-          </a>
-        </article>
-      {% endfor %}
-    </div>
+              <div class="record-card__meta">
+                <h3>{{ release.title }}</h3>
+                <p>{{ release.artist }}</p>
+                {% if release.discogsData.year %}<p>{{ release.discogsData.year }}</p>{% endif %}
+                {% if release.favourite %}<span class="record-card__favourite">★</span>{% endif %}
+                {% if release.date_added %}
+                  <time class="record-card__date" datetime="{{ release.date_added | formatDate('YYYY-MM-DD') }}">
+                    Added {{ release.date_added | formatDate("MMMM D, YYYY") }}
+                  </time>
+                {% endif %}
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No recent additions found.</p>
+    {% endif %}
 
     <a href="/recordshelf/records/" class="button">View Full Collection</a>
   </section>
