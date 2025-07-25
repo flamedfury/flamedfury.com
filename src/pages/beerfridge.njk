@@ -1,0 +1,302 @@
+---
+title: Beer Fridge
+description: My Untappd beer journey through craft beer. It includes photos, ratings, and commentary on my thoughts on the brews and brewing process.
+permalink: 'beerfridge/{% if pagination.pageNumber >= 1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+date: 2025-01-24
+updated: 2025-01-24
+layout: page
+pagination:
+  data: collections.beers
+  size: 24
+  alias: pagedBeers
+---
+
+<div class="flow" style="--flow-space: var(--space-m);">
+  <p>
+    Alright, I'm a big fan of beer. I don't preach about craft beer. Good beer is good beer to me.
+    Below you can follow my beer journey from the last twelve years. My love for beer started much
+    earlier than that, but around this time is when things started getting interesting in Aotearoa.
+  </p>
+
+  <p>
+    In my younger years, your choice of beer was limited, it was either the local draft in cans or
+    stubbies, or Euro lager long necks. Once independent brewers started popping up again, and I was
+    around people who were into it, I started trying as many styles as possible. I quickly refined my
+    taste and knew exactly what I wanted to drink. The most painful thing about trying new beer was
+    spending $11 to $15 on a 440ml can or 500ml bottle, only to pour it down the sink after one sip
+    because it was nothing like what you'd expected.
+  </p>
+
+  <p>
+    This was common early on with the independent breweries. There was very little quality control
+    between batches, even with the good stuff. One week it could be a top-tier beer, the next it'd
+    taste like crap. That was one thing the mainstream breweries had going for them: they could make
+    the same tasting beer, over and over, at scale, with precise quality control.
+  </p>
+
+  <p>
+    I also had a problem with dark beer, or anything that wasn't a standard amber colour. I soon
+    settled on Pale Ales, American Pale Ales, and India Pale Ales — and all the variants. Stouts,
+    Porters, Wheat, Bitter… sure, I tried them, but they just weren't for me. These days I'm happy
+    with a solid APA, IPA, Bright APA, or a kick-your-teeth-in WCIPA.
+  </p>
+
+  <p>
+    At the end of the day, I love a good beer — even a mainstream beer has its place for the right
+    occasion. Looking back over the last twelve years, it's crazy to see which breweries and beers
+    no longer exist, which ones still do, and which have changed entirely. No matter what, I'm a
+    sucker for cracking open a cold one, sitting back, and listening to some music.
+  </p>
+
+  <p>Enjoy the fridge.</p>
+</div>
+
+<!-- Enhanced Stats Dashboard -->
+<section class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "seperator" %}
+  <div class="section__inner wrapper flow" style="--flow-space: var(--space-l);">
+    <h2>Quick Stats</h2>
+
+    <!-- Main Stats Grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">{{ collections.beers | length }}</div>
+        <div class="stat-label">Unique Beers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">
+          {% set totalCheckins = 0 %}
+          {% for beer in collections.beers %}
+            {% set totalCheckins = totalCheckins + beer.checkinsCount %}
+          {% endfor %}
+          {{ totalCheckins }}
+        </div>
+        <div class="stat-label">Total Check-ins</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">{{ collections.breweries | length }}</div>
+        <div class="stat-label">Breweries</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">
+          {% set allRatings = [] %}
+          {% for beer in collections.beers %}
+            {% if beer.averageRating %}
+              {% set allRatings = (allRatings.push(beer.averageRating), allRatings) %}
+            {% endif %}
+          {% endfor %}
+          {% if allRatings.length > 0 %}
+            {{ ((allRatings | sum) / allRatings.length) | formatRating }}
+          {% else %}
+            N/A
+          {% endif %}
+        </div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+    </div>
+
+    <!-- Additional Fun Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">
+          {% set topStyle = collections.beerStyles | first %}
+          {{ topStyle.beers | length }}
+        </div>
+        <div class="stat-label">Top Style</div>
+        <div class="stat-subtitle">{{ topStyle.name }}</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">
+          {% set currentYear = "2025" %}
+          {% set thisYearBreweries = {} %}
+          {% for beer in collections.beers %}
+            {% if beer.firstTried | formatDate("YYYY") == currentYear %}
+              {% if thisYearBreweries[beer.brewery_name] %}
+                {% set existing = thisYearBreweries[beer.brewery_name] %}
+                {% set newRating = beer.averageRating or 0 %}
+                {% set bestRating = existing.highestRating %}
+                {% if newRating > bestRating %}
+                  {% set bestRating = newRating %}
+                {% endif %}
+                {% set thisYearBreweries = thisYearBreweries | setAttribute(beer.brewery_name, {
+                  checkins: existing.checkins + beer.checkinsCount,
+                  highestRating: bestRating
+                }) %}
+              {% else %}
+                {% set thisYearBreweries = thisYearBreweries | setAttribute(beer.brewery_name, {
+                  checkins: beer.checkinsCount,
+                  highestRating: beer.averageRating or 0
+                }) %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          {% set topThisYearBrewery = null %}
+          {% set maxCheckins = 0 %}
+          {% set maxRating = 0 %}
+          {% for breweryName, data in thisYearBreweries %}
+            {% if data.checkins > maxCheckins or (data.checkins == maxCheckins and data.highestRating > maxRating) %}
+              {% set topThisYearBrewery = [breweryName, data.checkins] %}
+              {% set maxCheckins = data.checkins %}
+              {% set maxRating = data.highestRating %}
+            {% endif %}
+          {% endfor %}
+
+          {% if topThisYearBrewery %}
+            {{ topThisYearBrewery[1] }}
+          {% else %}
+            0
+          {% endif %}
+        </div>
+        <div class="stat-label">Top Brewery</div>
+        <div class="stat-subtitle">
+          {% if topThisYearBrewery %}
+            {{ topThisYearBrewery[0] }} ({{ currentYear }})
+          {% else %}
+            None this year
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">
+          {% set fiveStarBeers = collections.beers | selectattr('averageRating', '>=', 5) %}
+          {{ fiveStarBeers | length }}
+        </div>
+        <div class="stat-label">5-Star Beers</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-number">
+          {% set currentYear = "2025" %}
+          {% set thisYearBeers = [] %}
+          {% for beer in collections.beers %}
+            {% if beer.firstTried | formatDate("YYYY") == currentYear %}
+              {% set thisYearBeers = (thisYearBeers.push(beer), thisYearBeers) %}
+            {% endif %}
+          {% endfor %}
+          {{ thisYearBeers | length }}
+        </div>
+        <div class="stat-label">New This Year</div>
+      </div>
+    </div>
+
+    <!-- ABV Distribution -->
+    <div class="stats-section">
+      <h3>ABV Distribution</h3>
+      <div class="abv-chart">
+        {% set abvRanges = {
+          "0-3%": 0,
+          "3-5%": 0,
+          "5-7%": 0,
+          "7-10%": 0,
+          "10%+": 0
+        } %}
+
+        {% set totalBeers = collections.beers | length %}
+
+        {% for beer in collections.beers %}
+          {% set abv = beer.beer_abv | float %}
+          {% if abv < 3 %}
+            {% set abvRanges = abvRanges | setAttribute("0-3%", abvRanges["0-3%"] + 1) %}
+          {% elif abv < 5 %}
+            {% set abvRanges = abvRanges | setAttribute("3-5%", abvRanges["3-5%"] + 1) %}
+          {% elif abv < 7 %}
+            {% set abvRanges = abvRanges | setAttribute("5-7%", abvRanges["5-7%"] + 1) %}
+          {% elif abv < 10 %}
+            {% set abvRanges = abvRanges | setAttribute("7-10%", abvRanges["7-10%"] + 1) %}
+          {% else %}
+            {% set abvRanges = abvRanges | setAttribute("10%+", abvRanges["10%+"] + 1) %}
+          {% endif %}
+        {% endfor %}
+
+        {% for range, count in abvRanges %}
+        {% set percentage = ((count / totalBeers) * 100) | round %}
+        <div class="abv-bar">
+          <span class="abv-label">{{ range }}</span>
+          <div class="abv-progress">
+            <div class="abv-fill" style="width: {{ percentage }}%"></div>
+          </div>
+          <span class="abv-count">{{ count }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% svg "divider/soft-bottom", null, "seperator" %}
+</section>
+
+<!-- Beer Collection -->
+<section class="section flow" style="--flow-space: var(--space-l);">
+  <header class="cluster" style="--gutter: var(--space-s)">
+    <h2>The Collection</h2>
+    <p class="counter">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages | length }} • {{ pagination.items | length }} beers on this page</p>
+  </header>
+
+  <div class="beer-grid">
+    {% for beer in pagedBeers %}
+    <article class="beer-card">
+      <div class="beer-link">
+        <div class="beer-image">
+          {% set mostRecentPhoto = null %}
+          {% for checkin in beer.checkins | reverse %}
+            {% if checkin.photo_url and not mostRecentPhoto %}
+              {% set mostRecentPhoto = checkin.photo_url %}
+            {% endif %}
+          {% endfor %}
+
+          {% if mostRecentPhoto %}
+            <img src="{{ mostRecentPhoto }}"
+                 alt="{{ beer.beer_name }}"
+                 loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          {% endif %}
+          <div class="beer-placeholder" {% if mostRecentPhoto %}style="display:none"{% endif %}>
+            🍺
+          </div>
+        </div>
+
+        <div class="beer-info">
+          <h3 class="beer-name">{{ beer.beer_name }}</h3>
+          <p class="brewery-name">{{ beer.brewery_name }}</p>
+
+          <div class="beer-meta">
+            <span class="beer-style">{{ beer.beer_type }}</span>
+            <span class="beer-abv">{{ beer.beer_abv }}% ABV</span>
+          </div>
+
+          <div class="beer-rating">
+            <span class="stars">{{ beer.averageRating | renderStars }}</span>
+            <span class="rating-value">{{ beer.averageRating | formatRating }}</span>
+            {% if beer.checkinsCount > 1 %}
+              <span class="checkin-count">{{ beer.checkinsCount }}×</span>
+            {% endif %}
+          </div>
+
+          {% if beer.latestCheckin %}
+          <div class="beer-latest">
+            <time class="beer-date">Last: {{ beer.latestCheckin.created_at | formatDate("MMM D, YYYY") }}</time>
+            {% if beer.latestCheckin.venue_name and beer.latestCheckin.venue_name != "Untappd at Home" %}
+              <span class="beer-venue">at {{ beer.latestCheckin.venue_name }}</span>
+            {% else %}
+              <span class="beer-venue">at home</span>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <!-- Pagination -->
+  {% set metaKey = "beerfridge" %}
+  {% if collections.beers.length > pagination.size %}
+    {% include 'partials/pagination.njk' %}
+  {% endif %}
+</section>
+
+{% css "local" %}
+  {% include "css/beers.css" %}
+{% endcss %}

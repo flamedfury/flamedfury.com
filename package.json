@@ -18,7 +18,8 @@
     "build:11ty": "eleventy",
     "start": "npm run dev:11ty",
     "build": "npm run clean && npm run build:11ty",
-    "fetch-records": "dotenv -e .env node ./src/_config/setup/fetchDiscogs.js"
+    "fetch-records": "dotenv -e .env node ./src/_config/setup/fetchDiscogs.js",
+    "fetch-beers": "node ./src/_config/setup/fetchBeers.js"
   },
   "keywords": [],
   "repository": {

@@ -351,6 +351,153 @@ export const homePageStats = async (collectionApi) => {
   }
 };
 
+
+/**
+ * Beer Fridge Filters
+ */
+const beerDataPath = path.join(process.cwd(), 'src/_data/beers.json');
+
+/**
+ * Cached beer data to avoid reading file multiple times
+ */
+let cachedBeerData = null;
+let beerDataLastModified = null;
+
+/**
+ * Get beer data with caching (similar to your record shelf pattern)
+ */
+async function getBeerData() {
+  try {
+    const stats = await fs.promises.stat(beerDataPath);
+
+    // Check if we need to reload the cache
+    if (!cachedBeerData || !beerDataLastModified || stats.mtime > beerDataLastModified) {
+      console.log('Loading beer data...');
+      const fileContent = await fs.promises.readFile(beerDataPath, 'utf8');
+      cachedBeerData = JSON.parse(fileContent);
+      beerDataLastModified = stats.mtime;
+    }
+
+    return cachedBeerData || [];
+  } catch (error) {
+    console.error("Error reading beer data:", error);
+    return [];
+  }
+}
+
+/**
+* All unique beers as a collection.
+*/
+export const beersCollection = async (collectionApi) => {
+  try {
+    const beerData = await getBeerData();
+    if (!beerData || beerData.length === 0) return [];
+
+    // Group check-ins by unique beer (bid)
+    const beerMap = new Map();
+
+    beerData.forEach(checkin => {
+      const key = checkin.bid;
+      if (!beerMap.has(key)) {
+        beerMap.set(key, {
+          ...checkin,
+          checkins: [],
+          slug: `${checkin.beer_name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${checkin.bid}`
+        });
+      }
+      beerMap.get(key).checkins.push(checkin);
+    });
+
+    // Process each unique beer
+    return Array.from(beerMap.values()).map(beer => {
+      const ratings = beer.checkins
+        .filter(c => c.rating_score && c.rating_score !== "")
+        .map(c => parseFloat(c.rating_score));
+
+      return {
+        ...beer,
+        checkinsCount: beer.checkins.length,
+        averageRating: ratings.length > 0 ?
+          ratings.reduce((sum, r) => sum + r, 0) / ratings.length : null,
+        latestCheckin: beer.checkins.sort((a, b) =>
+          new Date(b.created_at) - new Date(a.created_at))[0],
+        firstTried: beer.checkins.sort((a, b) =>
+          new Date(a.created_at) - new Date(b.created_at))[0].created_at
+      };
+    }).sort((a, b) => new Date(b.latestCheckin.created_at) - new Date(a.latestCheckin.created_at));
+
+  } catch (error) {
+    console.error('Error in beersCollection:', error);
+    return [];
+  }
+};
+
+/**
+ * All unique breweries as a collection
+ */
+export const breweriesCollection = async (collectionApi) => {
+  try {
+    const beers = await beersCollection();
+    if (!beers || beers.length === 0) return [];
+
+    const breweryMap = new Map();
+
+    beers.forEach(beer => {
+      const breweryName = beer.brewery_name;
+      if (!breweryMap.has(breweryName)) {
+        breweryMap.set(breweryName, {
+          name: breweryName,
+          beers: [],
+          totalCheckins: 0
+        });
+      }
+      const brewery = breweryMap.get(breweryName);
+      brewery.beers.push(beer);
+      brewery.totalCheckins += beer.checkinsCount;
+    });
+
+    return Array.from(breweryMap.values())
+      .sort((a, b) => b.totalCheckins - a.totalCheckins);
+
+  } catch (error) {
+    console.error('Error in breweriesCollection:', error);
+    return [];
+  }
+};
+
+/**
+ * All unique beer styles as a collection
+ */
+export const beerStylesCollection = async (collectionApi) => {
+  try {
+    const beers = await beersCollection();
+    if (!beers || beers.length === 0) return [];
+
+    const styleMap = new Map();
+
+    beers.forEach(beer => {
+      const styleName = beer.beer_type;
+      if (!styleMap.has(styleName)) {
+        styleMap.set(styleName, {
+          name: styleName,
+          beers: [],
+          totalCheckins: 0
+        });
+      }
+      const style = styleMap.get(styleName);
+      style.beers.push(beer);
+      style.totalCheckins += beer.checkinsCount;
+    });
+
+    return Array.from(styleMap.values())
+      .sort((a, b) => b.totalCheckins - a.totalCheckins);
+
+  } catch (error) {
+    console.error('Error in beerStylesCollection:', error);
+    return [];
+  }
+};
+
 export default {
   getAllPosts,
   onlyMarkdown,
@@ -366,5 +513,9 @@ export default {
   genresCollection,
   formatsCollection,
   releaseYearsCollection,
-  homePageStats
+  homePageStats,
+  // beer collections
+  beersCollection,
+  breweriesCollection,
+  beerStylesCollection
 };

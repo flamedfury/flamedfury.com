@@ -18,6 +18,8 @@ import { dictsort } from './filters/dictsort.js';
 import { setAttribute } from './filters/set-attribute.js';
 import { groupItems } from './filters/group-items.js';
 import { latestNowUpdate } from './filters/latest-now-update.js';
+import { formatRating } from './filters/format-rating.js';
+import { renderStars } from './filters/render-stars.js';
 
 export default {
   toISOString,
@@ -40,5 +42,7 @@ export default {
   dictsort,
   setAttribute,
   groupItems,
-  latestNowUpdate
+  latestNowUpdate,
+  formatRating,
+  renderStars
 };

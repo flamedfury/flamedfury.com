@@ -54,6 +54,13 @@ export const bookmarks = {
   paginationNext: "Next",
   paginationNumbers: true
 }
+export const beerfridge = {
+  paginationLabel: "Beer Fridge",
+  paginationPage: "Page",
+  paginationPrevious: "Previous",
+  paginationNext: "Next",
+  paginationNumbers: true
+};
 export const details = {
   aria: 'section controls',
   expand: 'expand all',

@@ -10,7 +10,7 @@ dotenv.config();
 import yaml from 'js-yaml';
 
 //  config import
-import {getAllPosts, onlyMarkdown, tagList, tagCollections, allBookmarks, filterFeedPosts, postsByYear, booksByYear, releasesCollection, artistsCollection, genresCollection, formatsCollection, releaseYearsCollection, homePageStats} from './src/_config/collections.js';
+import {getAllPosts, onlyMarkdown, tagList, tagCollections, allBookmarks, filterFeedPosts, postsByYear, booksByYear, releasesCollection, artistsCollection, genresCollection, formatsCollection, releaseYearsCollection, homePageStats, beersCollection, breweriesCollection, beerStylesCollection} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
@@ -43,6 +43,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection("formats", formatsCollection);
   eleventyConfig.addCollection("releaseYears", releaseYearsCollection);
   eleventyConfig.addCollection("homePageStats", homePageStats);
+  eleventyConfig.addCollection("beers", beersCollection);
+  eleventyConfig.addCollection("breweries", breweriesCollection);
+  eleventyConfig.addCollection("beerStyles", beerStylesCollection);
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
@@ -117,9 +120,8 @@ export default async function (eleventyConfig) {
       callback(err);
     }
   });
-
-
-
+  eleventyConfig.addFilter('formatRating', filters.formatRating);
+  eleventyConfig.addFilter('renderStars', filters.renderStars);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
