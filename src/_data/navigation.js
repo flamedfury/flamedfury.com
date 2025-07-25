@@ -4,12 +4,16 @@ export const top = [
     url: '/posts/'
   },
   {
-    text: 'Bookshelf',
+    text: 'Books',
     url: '/bookshelf/'
   },
   {
-    text: 'Recordshelf',
+    text: 'Records',
     url: '/recordshelf/'
+  },
+  {
+    text: 'Beers',
+    url: '/beerfridge/'
   },
   {
     text: 'Bookmarks',
@@ -80,6 +84,10 @@ export const surfShelves = [
   {
     text: 'The Garage',
     url: '/garage/'
+  },
+  {
+    text: 'Beer Fridge',
+    url: '/beerfridge/'
   }
 ];
 
