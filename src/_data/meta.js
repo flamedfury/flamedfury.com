@@ -1,6 +1,6 @@
 export const url = process.env.URL || 'https://flamedfury.com';
 export const siteName = 'fLaMEd fury'
-export const siteDescription = 'What\'s going on Internet? fLaMEd fury is the personal website of fLaMEd.';
+export const siteDescription = 'What\'s going on Internet?';
 export const siteType = 'Person'; // schema
 export const locale = 'en_EN';
 export const lang = 'en';
@@ -27,8 +27,8 @@ export const opengraph_default_alt =
   'Visible content: another website by fLaMed';
 export const blog = {
   // RSS
-  name: 'The Weblog of fLaMEd',
-  description: 'I write about the web and other stuff.',
+  name: 'fLaMEd fury',
+  description: 'What\'s going on Internet?',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     { title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml' },
