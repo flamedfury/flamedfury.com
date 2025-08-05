@@ -1,0 +1,24 @@
+<h3>📝 Blog Posts</h3>
+
+<div class="posts-section">
+  <h4>Latest</h4>
+  <ul class="posts-list">
+    {%- set itemList = collections.allPosts -%}
+    {%- for item in itemList.slice(0, 3) -%}
+    <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+<div class="posts-section">
+  <h4>Worth Reading</h4>
+  <ul class="posts-list">
+    <li><a href="/posts/i-love-the-web/">I Love The Web</a></li>
+    <li><a href="/posts/build-personal-websites/">Build Personal Websites</a></li>
+    <li><a href="/posts/making-websites-should-be-easy/">Making Websites Should Be Easy</a></li>
+  </ul>
+</div>
+
+<p class="posts-footer">
+  <a href="/posts/">All posts →</a>
+</p>

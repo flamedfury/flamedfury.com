@@ -1,0 +1,112 @@
+<h3>🌊 Recent Activity</h3>
+<div class="activity-feed">
+
+  <!-- Latest Blog Post -->
+  {%- set latestPost = collections.allPosts[0] -%}
+  {%- if latestPost -%}
+  <div class="activity-item">
+    <span class="activity-emoji">✍️</span>
+    <div class="activity-content">
+      <small class="activity-type">Posted</small>
+      <strong><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></strong>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <!-- Current Movie with TMDb link -->
+  {%- if movies and movies.length > 0 -%}
+  <div class="activity-item">
+    <span class="activity-emoji">🍿</span>
+    <div class="activity-content">
+      <small class="activity-type">Watched</small>
+      <strong><a href="{{ movies[0].tmdbUrl }}" target="_blank">{{ movies[0].movie.title }} ({{ movies[0].movie.year }})</a></strong>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <!-- Current TV Show with TMDb link -->
+  {%- if tv and tv.length > 0 -%}
+  <div class="activity-item">
+    <span class="activity-emoji">📺</span>
+    <div class="activity-content">
+      <small class="activity-type">Binge-watching</small>
+      <strong><a href="{{ tv[0].tmdbUrl }}" target="_blank">{{ tv[0].show.title }}</a></strong>
+      <small>{{ tv[0].episodeRange }}</small>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <!-- Currently Playing Music with Last.fm integration -->
+  <div class="activity-item">
+    <span class="activity-emoji">🎵</span>
+    <div class="activity-content">
+      <small class="activity-type">Listening</small>
+      <div id="lastfm-track">
+        <script src="https://recentfm.rknight.me/now.js?u=xkx9t6bb"></script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Current Book with internal link (using title slug like bookshelf.njk) -->
+  {%- set started_books = bookshelf | filterByProperty("status", "started") -%}
+  {%- if started_books.length > 0 -%}
+    {%- for book in started_books | reverse -%}
+  <div class="activity-item">
+    <span class="activity-emoji">📚</span>
+    <div class="activity-content">
+      <small class="activity-type">Reading</small>
+      <strong><a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">{{ book.title }}</a></strong>
+    </div>
+  </div>
+    {%- endfor -%}
+  {%- else -%}
+    {%- set recentBook = bookshelf | getMostRecentFinishedBook -%}
+    {%- if recentBook -%}
+  <div class="activity-item">
+    <span class="activity-emoji">✅</span>
+    <div class="activity-content">
+      <small class="activity-type">Just finished</small>
+      <strong><a href="{{ '/bookshelf/' | url }}{{ recentBook.title | slugify }}/">{{ recentBook.title }}</a></strong>
+    </div>
+  </div>
+    {%- endif -%}
+  {%- endif -%}
+
+  <!-- Latest Record from musicCollection with proper link -->
+  {%- if musicCollection and musicCollection.length > 0 -%}
+  {%- set latestRecord = musicCollection | sort(attribute="date_added") | reverse | first -%}
+  <div class="activity-item">
+    <span class="activity-emoji">💿</span>
+    <div class="activity-content">
+      <small class="activity-type">Added to collection</small>
+      <strong><a href="/recordshelf/records/{{ latestRecord.title | slugify }}/">{{ latestRecord.artist }} - {{ latestRecord.title }}</a></strong>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <!-- Latest Beer from beers collection -->
+  {%- if collections.beers and collections.beers.length > 0 -%}
+  {%- set latestBeer = collections.beers[0] -%}
+  <div class="activity-item">
+    <span class="activity-emoji">🍺</span>
+    <div class="activity-content">
+      <small class="activity-type">Drank</small>
+      <strong><a href="/beerfridge/">{{ latestBeer.beer_name }}</a></strong>
+      <small>{{ latestBeer.brewery_name }}</small>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <!-- Latest Bookmark -->
+  {%- if bookmarks and bookmarks.length > 0 -%}
+  {%- set latestBookmark = bookmarks | sort(attribute="date") | reverse | first -%}
+  <div class="activity-item">
+    <span class="activity-emoji">🔖</span>
+    <div class="activity-content">
+      <small class="activity-type">Bookmarked</small>
+      <strong><a href="{{ latestBookmark.url }}" target="_blank">{{ latestBookmark.title }}</a></strong>
+    </div>
+  </div>
+  {%- endif -%}
+
+</div>

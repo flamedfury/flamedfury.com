@@ -1,7 +1,7 @@
 ---
 title: fLaMEd fury
 permalink: /index.html
-description: What's going on Internet? This is my homepage. I write about the web and stuff.
+description: What's going on Internet?
 layout: base
 ---
 
@@ -18,37 +18,57 @@ layout: base
       </div>
 
       <div class="homepage-grid | region homepage-content">
+        <!--] what's going on, internet? [-->
         <div class="homepage-card welcome | flow featured">
           {% include "components/homepage/welcome.njk" %}
         </div>
-        <div class="homepage-card posts | flow">
-          {% include "components/homepage/posts.njk" %}
+
+        <!--] i sometimes write, lol [-->
+        <div class="homepage-card blog-posts | flow">
+          {% include "components/homepage/recent-posts.njk" %}
         </div>
-        <div class="homepage-card featured-posts | flow">
-          {% include "components/homepage/featured-posts.njk" %}
+
+        <!--] what's up? [-->
+        <div class="homepage-card activity | flow">
+          {% include "components/homepage/activity.njk" %}
         </div>
-        <div class="homepage-card now | flow">
-          {% include "components/homepage/now.njk" %}
+
+        <!--] crack a cold one [-->
+        <div class="homepage-card beer-photos | flow">
+          {% include "components/homepage/beers.njk" %}
         </div>
-        <div class="homepage-card contact | flow">
-          {% include "components/homepage/contact.njk" %}
+
+        <!--] where i'm at [-->
+        <div class="homepage-card corner | flow">
+          {% include "components/homepage/corner.njk" %}
         </div>
-        <div class="homepage-card ondeck | flow">
-          {% include "components/homepage/ondeck.njk" %}
-        </div>
-        <div class="homepage-card webrings | flow">
-          {% include "components/homepage/webrings.njk" %}
-        </div>
-        <div class="homepage-card records | flow">
-          {% include "components/homepage/record.njk" %}
-        </div>
-        <!-- <div class="homepage-card somepics | flow">
-          {% include "components/homepage/somepics.njk" %}
-        </div> -->
-        <div class="homepage-card status | flow">
-          {% include "components/homepage/status.njk" %}
+
+        <!--] awww yeah [-->
+        <div class="homepage-card collections | flow">
+          {% include "components/homepage/collections.njk" %}
         </div>
       </div>
+
+      <!--] relics of the web [-->
+      <section class="webrings-section | region">
+        <div class="wrapper">
+          <h2>Webrings</h2>
+          <div class="cluster">
+            <!--] cs.sjoy.lol [-->
+            <p>
+              <a href="https://webri.ng/webring/cssjoy/previous?via=https://flamedfury.com"><< </a>
+              <a href="https://cs.sjoy.lol">CS.Sjoy.lol</a>
+              <a href="https://webri.ng/webring/cssjoy/next?via=https://flamedfury.com">>></a>
+            </p>
+
+            <!--] neossg.neocities.org [-->
+            <p id="neossg">
+              <script src="https://neossg.neocities.org/onionring-variables.js"></script>
+              <script src="https://neossg.neocities.org/onionring-widget.js"></script>
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section class="full section" style="--spot-color: var(--color-bg-accent)">
         {% svg "divider/soft-top", null, "seperator" %}

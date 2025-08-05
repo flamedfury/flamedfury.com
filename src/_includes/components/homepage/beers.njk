@@ -1,0 +1,41 @@
+<h3>🍺 Latest Brews</h3>
+
+<div class="beer-photos-grid">
+  {%- if collections.beers and collections.beers.length > 0 -%}
+    {%- for beer in collections.beers.slice(0, 3) -%}
+    <div class="beer-photo-item">
+        {%- set mostRecentPhoto = null -%}
+        {%- for checkin in beer.checkins | reverse -%}
+          {%- if checkin.photo_url and not mostRecentPhoto -%}
+            {%- set mostRecentPhoto = checkin.photo_url -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if mostRecentPhoto -%}
+        <img src="{{ mostRecentPhoto }}"
+             alt="{{ beer.beer_name }}"
+             class="beer-photo"
+             loading="lazy" />
+        {%- else -%}
+        <div class="beer-photo-placeholder">
+          🍺
+        </div>
+        {%- endif -%}
+
+        <div class="beer-photo-overlay">
+          <span class="beer-photo-name">{{ beer.beer_name | truncate(15) }}</span>
+          <span class="beer-photo-brewery">{{ beer.brewery_name | truncate(12) }}</span>
+        </div>
+    </div>
+    {%- endfor -%}
+  {%- else -%}
+    <div class="beer-photos-empty">
+      <p>🍺 No beer data available</p>
+      <p><small>Check collections.beers</small></p>
+    </div>
+  {%- endif -%}
+</div>
+
+<p class="beer-photos-footer">
+  <a href="/beerfridge/">Check out the fridge →</a>
+</p>
