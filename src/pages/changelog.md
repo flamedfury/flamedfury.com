@@ -10,8 +10,11 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 05, 2025
+-- New homepage layout, leaning into the grid.
+
 - July 25, 2025
-- New page, [Beer Fridge](/beerfridge) to collect my beer history from the past twelve years.
+-- New page, [Beer Fridge](/beerfridge) to collect my beer history from the past twelve years.
 
 - July 24, 2025
 -- Updated the dates for individual records on the [Recordshelf](/recordshelf/). For re-releases and re-issues the page will show the original release year, and the re-issue date.
