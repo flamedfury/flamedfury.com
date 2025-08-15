@@ -6,7 +6,7 @@ tags:
 hashtags:
   - indieweb
   - books
-date: 2025-08-01
+date: 2025-07-30
 timestamp: 2025-07-30T21:20:52.818Z
 image: './src/assets/images/posts/2025/2025-07-26-hairy-maclary-show.jpeg'
 alt: "Orchestra performs on stage, musicians play various instruments; a screen displays \"Hairy Maclary from Donaldson's Dairy\" by Lynley Dodd. Children in black stand nearby, engaging with the performance."
