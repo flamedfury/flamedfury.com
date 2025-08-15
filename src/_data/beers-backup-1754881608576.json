@@ -1,82 +1,5 @@
 [
   {
-    "bid": 6257505,
-    "beer_name": "Tallboy IPA",
-    "brewery_name": "8 Wired",
-    "beer_type": "IPA - Other",
-    "beer_abv": 5.5,
-    "rating_score": 3.5,
-    "created_at": "2025-08-09 18:39:10",
-    "venue_name": "Untappd at Home",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_09/fe0ed45dfc4c121542126ee45d7c7951_c_1503775406_raw.jpg"
-  },
-  {
-    "bid": 6269624,
-    "beer_name": "Saturation of Simcoe",
-    "brewery_name": "Behemoth Brewing Company",
-    "beer_type": "IPA - American",
-    "beer_abv": 6,
-    "rating_score": 3.7,
-    "created_at": "2025-08-09 18:19:55",
-    "venue_name": "Untappd at Home",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_09/e026651e1a8f33383da6fe7002da0ff7_c_1503774472_raw.jpg"
-  },
-  {
-    "bid": 6172475,
-    "beer_name": "Copycat",
-    "brewery_name": "Lakeman Brewing Co",
-    "beer_type": "IPA - American",
-    "beer_abv": 6.7,
-    "rating_score": 3.8,
-    "created_at": "2025-08-09 17:08:53",
-    "venue_name": "Untappd at Home",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_09/aca6b752fba379917c6fc8b48c945b56_c_1503770553_raw.jpg"
-  },
-  {
-    "bid": 6312024,
-    "beer_name": "Nelson - Nuff Said",
-    "brewery_name": "Garage Project",
-    "beer_type": "IPA - New Zealand",
-    "beer_abv": 6.5,
-    "rating_score": 3,
-    "created_at": "2025-08-09 10:38:03",
-    "venue_name": "Untappd at Home",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_08/31142d3845df433b72f42c73eec95d45_c_1503676948_raw.jpg"
-  },
-  {
-    "bid": 5995527,
-    "beer_name": "Limited Release 30 - Hazy IPA",
-    "brewery_name": "Parrotdog",
-    "beer_type": "IPA - New England / Hazy",
-    "beer_abv": 7,
-    "rating_score": 3,
-    "created_at": "2025-08-08 17:18:50",
-    "venue_name": "Untappd at Home",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_08/2b20c929d81e10e36b44a64f66e35ced_c_1503372420_raw.jpg"
-  },
-  {
-    "bid": 6349613,
-    "beer_name": "Limited Release 31 - Bright IPA",
-    "brewery_name": "Parrotdog",
-    "beer_type": "IPA - American",
-    "beer_abv": 6.8,
-    "rating_score": 4,
-    "created_at": "2025-08-01 18:10:59",
-    "venue_name": "Untappd at Home",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_01/5e1c427f0bde6ca628faf6f329ad07ab_c_1501273376_raw.jpg"
-  },
-  {
-    "bid": 6350564,
-    "beer_name": "Devourer of Souls",
-    "brewery_name": "Garage Project",
-    "beer_type": "IPA - American",
-    "beer_abv": 7.3,
-    "rating_score": 4.2,
-    "created_at": "2025-08-01 18:06:00",
-    "venue_name": "Untappd at Home",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_05/1c1e1a5486c7cc5de82bc960e10d89e0_c_1502667294_raw.jpg"
-  },
-  {
     "bid": 6281332,
     "beer_name": "Tsunami Warning",
     "brewery_name": "McLeod's Brewery",
@@ -6785,7 +6708,7 @@
     "beer_type": "IPA - Session",
     "beer_abv": 5.9,
     "created_at": "2019-08-24 18:43:55",
-    "venue_name": "Whistling Sisters Beer",
+    "venue_name": "Whistling Sisters Brewery and Fermentery",
     "photo_url": "https://untappd.s3.amazonaws.com/photos/2019_08_24/9b590db08a902daa4f1d2e378ef6ed71_raw.jpg"
   },
   {
@@ -8026,7 +7949,7 @@
     "beer_type": "Pale Ale - American",
     "beer_abv": 6,
     "created_at": "2019-01-05 14:38:21",
-    "venue_name": "Brew | Craft Beer Pub",
+    "venue_name": "BREW | Craft Beer Pub",
     "photo_url": "https://untappd.s3.amazonaws.com/photos/2019_01_05/6ef65a2944280d9ce938c6596970d41e_raw.jpg"
   },
   {
@@ -8450,7 +8373,7 @@
     "beer_type": "Pale Ale - American",
     "beer_abv": 5.7,
     "created_at": "2018-09-28 12:31:27",
-    "venue_name": "Dr Rudi's Rooftop Brewing",
+    "venue_name": "Dr Rudi's Rooftop Brewing Co.",
     "photo_url": "https://untappd.s3.amazonaws.com/photos/2018_09_28/c099d2a7afec4032dd55cd86c08d77ac_raw.jpg"
   },
   {
@@ -8469,7 +8392,7 @@
     "beer_type": "Pale Ale - Other",
     "beer_abv": 5.3,
     "created_at": "2018-09-28 12:14:25",
-    "venue_name": "Dr Rudi's Rooftop Brewing",
+    "venue_name": "Dr Rudi's Rooftop Brewing Co.",
     "photo_url": "https://untappd.s3.amazonaws.com/photos/2018_09_28/7a6407f7618952946256973864f8aefa_raw.jpg"
   },
   {
@@ -8479,7 +8402,7 @@
     "beer_type": "Lager - Pale",
     "beer_abv": 5,
     "created_at": "2018-09-28 12:04:27",
-    "venue_name": "Dr Rudi's Rooftop Brewing",
+    "venue_name": "Dr Rudi's Rooftop Brewing Co.",
     "photo_url": "https://untappd.s3.amazonaws.com/photos/2018_09_28/5bb758a348cbd26c67d77e386ea5e7b6_raw.jpg"
   },
   {
@@ -8712,16 +8635,6 @@
     "created_at": "2018-08-11 12:27:48",
     "venue_name": "Beervana",
     "photo_url": "https://untappd.s3.amazonaws.com/photos/2018_08_11/6f2e6155b82c64cf89fc4d5056a707b9_raw.jpg"
-  },
-  {
-    "bid": 1119569,
-    "beer_name": "Citrusinensis",
-    "brewery_name": "Lagunitas Brewing Company",
-    "beer_type": "Pale Ale - Fruited",
-    "beer_abv": 7.7,
-    "created_at": "2018-08-11 12:05:01",
-    "venue_name": "Beervana",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2018_08_11/472c5464817f521006fe799562cf5b40_raw.jpg"
   },
   {
     "bid": 2592428,
