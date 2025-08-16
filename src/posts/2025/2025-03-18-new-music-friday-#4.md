@@ -16,7 +16,7 @@ I'd been adding albums and singles to my cart since last December just waiting f
 
 [RESISTANCE](https://talimusic.bandcamp.com/album/resistance) by TALI is her latest album/EP featuring five new tracks produced by herself. Released as a celebration of the 20 year anniversary of her first single
 
-[Bright Black(https://mysterywaitress.bandcamp.com/album/bright-black-night)] Night by Mystery Waitress. I found this while browsing other peoples lists and picked it up. Not bad after a couple listens.
+[Bright Black](https://mysterywaitress.bandcamp.com/album/bright-black-night) Night by Mystery Waitress. I found this while browsing other peoples lists and picked it up. Not bad after a couple listens.
 
 [Revulva](https://regardingvulva.bandcamp.com/album/revulva) by Revulva. This is another that I found browsing other peoples lists. Loved it after listening during preparing dinner with the kids last Saturday evening.
 
