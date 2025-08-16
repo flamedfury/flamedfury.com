@@ -23,6 +23,6 @@ To me, MySpace marked the start of a shift, away from close knit interaction and
 
 That said, I’ll give MySpace this: it introduced a whole generation to HTML and CSS. For a lot of people, that was their first experience modifying code, breaking things, fixing them, learning by doing. That part was cool. A tiny spark of the personal web still lived in all that chaos.
 
-But the rest? You can keep it. I’ll be over here waiting for someone to message me on XMPP (yes, I still use it, [here’s how](/instant-messaging-on-xmpp/)), or idle quietly in IRC.
+But the rest? You can keep it. I’ll be over here waiting for someone to message me on XMPP (yes, I still use it, [here’s how](/posts/instant-messaging-on-xmpp/)), or idle quietly in IRC.
 
 Awww who am I kidding — I miss IRC, but it’s all Discord these days, isn’t it? Fuck.
