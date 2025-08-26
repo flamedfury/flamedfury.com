@@ -780,5 +780,25 @@
     "date_added": "2025-06-27",
     "favourite": false,
     "note": "Bathwater coloured vinyl, lol"
+  },
+  {
+    "artist": "Eminem",
+    "title": "8 Mile",
+    "format": "Vinyl",
+    "release_id": 5252364,
+    "first_released": "2002-10-29",
+    "date_added": "2025-08-16",
+    "favourite": false,
+    "note": "I've been looking for this at a decent price for ages."
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "title": "Gravel Pit",
+    "format": "Vinyl",
+    "release_id": 315850,
+    "first_released": "2000-11-21",
+    "date_added": "2025-08-16",
+    "favourite": false,
+    "note": "I have no idea why, but I've always associated this track with the Flinestones movie. Yeah, I know, right?"
   }
 ]

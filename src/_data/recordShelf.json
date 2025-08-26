@@ -9268,5 +9268,223 @@
         "Synth-pop"
       ]
     }
+  },
+  {
+    "artist": "Eminem",
+    "title": "8 Mile",
+    "format": "Vinyl",
+    "release_id": 5252364,
+    "first_released": "2002-10-29",
+    "date_added": "2025-08-16",
+    "favourite": false,
+    "note": "I've been looking for this at a decent price for ages.",
+    "discogsData": {
+      "year": 2013,
+      "originalYear": 2002,
+      "originalTitle": "Music From And Inspired By The Motion Picture 8 Mile",
+      "released": "2013-12-05",
+      "releaseDate": "2014-01-03T12:34:43-08:00",
+      "pressingYear": 2013,
+      "genres": [
+        "Hip Hop",
+        "Stage & Screen"
+      ],
+      "styles": [
+        "Gangsta",
+        "Soundtrack"
+      ],
+      "labels": [
+        "Shady Records",
+        "Interscope Records",
+        "UMG Soundtracks"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Lose Yourself",
+          "duration": "5:20"
+        },
+        {
+          "position": "A2",
+          "title": "Love Me",
+          "duration": "4:30"
+        },
+        {
+          "position": "A3",
+          "title": "8 Mile",
+          "duration": "6:00"
+        },
+        {
+          "position": "A4",
+          "title": "Adrenaline Rush",
+          "duration": "3:48"
+        },
+        {
+          "position": "B1",
+          "title": "Places To Go",
+          "duration": "4:15"
+        },
+        {
+          "position": "B2",
+          "title": "Rap Game",
+          "duration": "5:53"
+        },
+        {
+          "position": "B3",
+          "title": "8 Miles And Runnin'",
+          "duration": "4:08"
+        },
+        {
+          "position": "B4",
+          "title": "Spit Shine",
+          "duration": "3:39"
+        },
+        {
+          "position": "C1",
+          "title": "Time Of My Life",
+          "duration": "4:21"
+        },
+        {
+          "position": "C2",
+          "title": "U Wanna Be Me",
+          "duration": "3:50"
+        },
+        {
+          "position": "C3",
+          "title": "Wanksta",
+          "duration": "3:38"
+        },
+        {
+          "position": "C4",
+          "title": "Wasting My Time",
+          "duration": "3:37"
+        },
+        {
+          "position": "D1",
+          "title": "R.A.K.I.M.",
+          "duration": "4:23"
+        },
+        {
+          "position": "D2",
+          "title": "That's My N**** Fo' Real",
+          "duration": "4:45"
+        },
+        {
+          "position": "D3",
+          "title": "Battle",
+          "duration": "2:56"
+        },
+        {
+          "position": "D4",
+          "title": "Rabbit Run",
+          "duration": "3:10"
+        }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "2",
+          "descriptions": [
+            "LP",
+            "Compilation",
+            "Reissue"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/114474",
+      "masterId": 114474,
+      "catno": "606949350819",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": [
+        "Gangsta",
+        "Pop Rap"
+      ]
+    }
+  },
+  {
+    "artist": "Wu-Tang Clan",
+    "title": "Gravel Pit",
+    "format": "Vinyl",
+    "release_id": 315850,
+    "first_released": "2000-11-21",
+    "date_added": "2025-08-16",
+    "favourite": false,
+    "note": "I have no idea why, but I've always associated this track with the Flinestones movie. Yeah, I know, right?",
+    "discogsData": {
+      "year": 2000,
+      "originalYear": 2000,
+      "originalTitle": "Gravel Pit",
+      "released": "2000",
+      "releaseDate": "2004-08-30T16:50:02-07:00",
+      "pressingYear": 2000,
+      "genres": [
+        "Hip Hop"
+      ],
+      "styles": [],
+      "labels": [
+        "Loud Records"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Gravel Pit (Radio Version)",
+          "duration": "3:52"
+        },
+        {
+          "position": "A2",
+          "title": "Gravel Pit (LP Version Clean)",
+          "duration": "4:17"
+        },
+        {
+          "position": "A3",
+          "title": "Gravel Pit (LP Version Dirty)",
+          "duration": "4:33"
+        },
+        {
+          "position": "A4",
+          "title": "Gravel Pit (Instrumental)",
+          "duration": "4:34"
+        },
+        {
+          "position": "B1",
+          "title": "Careful (Click, Click) (Radio Version)",
+          "duration": "4:25"
+        },
+        {
+          "position": "B2",
+          "title": "Careful (Click, Click) (LP Version)",
+          "duration": "4:26"
+        },
+        {
+          "position": "B3",
+          "title": "Careful (Click, Click) (Instrumental)",
+          "duration": "4:26"
+        }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "33 ⅓ RPM",
+            "Single"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/36752",
+      "masterId": 36752,
+      "catno": "44 79530",
+      "masterGenres": [
+        "Hip Hop"
+      ],
+      "masterStyles": []
+    }
   }
 ]
