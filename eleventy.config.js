@@ -17,7 +17,11 @@ import shortcodes from './src/_config/shortcodes.js';
 import filters from './src/_config/filters.js';
 
 export default async function (eleventyConfig) {
-  eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
+  eleventyConfig.addWatchTarget('./src/assets/**/*.css');
+  eleventyConfig.addWatchTarget('./src/assets/**/*.js');
+  eleventyConfig.addWatchTarget('./src/assets/**/*.svg');
+  eleventyConfig.addWatchTarget('./src/assets/**/*.png');
+  eleventyConfig.addWatchTarget('./src/assets/**/*.jpeg');
 
   // --------------------- layout aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk');
@@ -57,8 +61,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
   eleventyConfig.addPlugin(plugins.musicThread);
   eleventyConfig.addPlugin(plugins.pluginWebmentions, plugins.configWebmentions);
-    eleventyConfig.addPlugin(plugins.webc, {
-    components: ['./src/_includes/webc/*.webc'],
+  eleventyConfig.addPlugin(plugins.webc, {
+    components: './src/_includes/webc/*.webc',
     useTransform: true
   });
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
