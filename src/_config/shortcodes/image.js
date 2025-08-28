@@ -17,8 +17,9 @@ export const imageShortcode = async (
   loading = 'lazy',
   containerClass,
   imageClass,
-  widths = [650, 960, 1200],
-  sizes = 'auto',
+  // Updated to match transform plugin widths for consistency
+  widths = [480, 800, 1200],
+  sizes = '(max-width: 480px) 100vw, (max-width: 800px) 80vw, 1200px',
   formats = ['webp', 'jpeg']
 ) => {
   // Prepend "./src" if not present
@@ -30,6 +31,13 @@ export const imageShortcode = async (
     formats: [...formats],
     urlPath: '/assets/images/',
     outputDir: './dist/assets/images/',
+    
+    // Add consistent quality settings with transform plugin
+    formatOptions: {
+      jpeg: { quality: 85 },
+      webp: { quality: 85 }
+    },
+    
     filenameFormat: (id, src, width, format, options) => {
       const extension = path.extname(src);
       const name = path.basename(src, extension);

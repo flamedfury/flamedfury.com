@@ -67,12 +67,38 @@ export default async function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     formats: ['webp', 'jpeg'],
-    widths: ['auto'],
+    // Optimized responsive widths - removed 'auto' to eliminate uncompressed originals
+    widths: [480, 800, 1200],
+    
+    // Add quality settings for compression while maintaining readability
+    formatOptions: {
+      jpeg: { quality: 85 },
+      webp: { quality: 85 }
+    },
+    
+    urlPath: '/assets/images/',
+    outputDir: './dist/assets/images/',
+    
+    // Exclude directories that don't need heavy processing
+    excludeURLs: [
+      '/assets/images/favicon/',
+      '/assets/images/buttons/',
+      '/assets/images/template/',
+      '/assets/svg/',
+      // Exclude small experiment images and badges
+      '/assets/images/experiments/untappd/bdg_',
+      '/assets/images/experiments/untappd/venue_',
+      '/assets/images/experiments/untappd/pub_bg',
+      '/assets/images/experiments/untappd/stadium_bg',
+      '/assets/images/experiments/untappd/*_mask.png'
+    ],
+    
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
         decoding: 'async',
-        sizes: 'auto'
+        // Updated sizes for new width breakpoints
+        sizes: '(max-width: 480px) 100vw, (max-width: 800px) 80vw, 1200px'
       },
       pictureAttributes: {}
     }
@@ -145,10 +171,15 @@ export default async function (eleventyConfig) {
 
   // --------------------- Passthrough File Copy
 
-  // -- same path
-  ['src/assets/fonts/', 'src/assets/images/', 'src/assets/og-images', 'src/assets/static', 'src/assets/svg'].forEach(path =>
+  // -- same path (removed 'src/assets/images/' to avoid duplicating optimized images)
+  ['src/assets/fonts/', 'src/assets/og-images', 'src/assets/static', 'src/assets/svg'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
+  
+  // Selectively copy images that shouldn't be processed by the transform plugin
+  eleventyConfig.addPassthroughCopy('src/assets/images/favicon/');
+  eleventyConfig.addPassthroughCopy('src/assets/images/buttons/');
+  eleventyConfig.addPassthroughCopy('src/assets/images/template/');
 
   eleventyConfig.addPassthroughCopy({
     // -- to root
