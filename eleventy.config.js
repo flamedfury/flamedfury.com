@@ -142,14 +142,7 @@ export default async function (eleventyConfig) {
       return new Date(aDate) - new Date(bDate);
     });
   });
-  eleventyConfig.addNunjucksAsyncFilter('latestNowUpdate', async (item, callback) => {
-    try {
-      const result = await filters.latestNowUpdate(item);
-      callback(null, result);
-    } catch (err) {
-      callback(err);
-    }
-  });
+  eleventyConfig.addNunjucksAsyncFilter('latestNowUpdate', filters.latestNowUpdateAsync);
   eleventyConfig.addFilter('formatRating', filters.formatRating);
   eleventyConfig.addFilter('renderStars', filters.renderStars);
 

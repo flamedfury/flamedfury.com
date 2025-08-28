@@ -18,6 +18,7 @@ import { dictsort } from './filters/dictsort.js';
 import { setAttribute } from './filters/set-attribute.js';
 import { groupItems } from './filters/group-items.js';
 import { latestNowUpdate } from './filters/latest-now-update.js';
+import { createAsyncWrapper } from './filters/async-wrapper.js';
 import { formatRating } from './filters/format-rating.js';
 import { renderStars } from './filters/render-stars.js';
 
@@ -43,6 +44,7 @@ export default {
   setAttribute,
   groupItems,
   latestNowUpdate,
+  latestNowUpdateAsync: createAsyncWrapper(latestNowUpdate),
   formatRating,
   renderStars
 };
