@@ -14,8 +14,15 @@ export default async function () {
 
     console.log('API Response:', res);
 
-    if (!res || !res.response || (!Array.isArray(res.response.games) || res.response.games.length === 0)) {
-      throw new Error('No recently played games found.');
+    // Handle case where no games have been played recently
+    if (!res || !res.response) {
+      console.log('No Steam API response data available');
+      return [];
+    }
+    
+    if (!res.response.games || res.response.games.length === 0) {
+      console.log('No recently played games found - returning empty array');
+      return [];
     }
 
     const games = res.response.games;
