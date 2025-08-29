@@ -250,6 +250,7 @@ pagination:
             <img src="{{ mostRecentPhoto }}"
                  alt="{{ beer.beer_name }}"
                  loading="lazy"
+                 eleventy:ignore
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           {% endif %}
           <div class="beer-placeholder" {% if mostRecentPhoto %}style="display:none"{% endif %}>

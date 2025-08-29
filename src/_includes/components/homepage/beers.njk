@@ -15,7 +15,8 @@
         <img src="{{ mostRecentPhoto }}"
              alt="{{ beer.beer_name }}"
              class="beer-photo"
-             loading="lazy" />
+             loading="lazy"
+             eleventy:ignore />
         {%- else -%}
         <div class="beer-photo-placeholder">
           🍺

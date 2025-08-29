@@ -100,12 +100,6 @@ export default async function (eleventyConfig) {
         sizes: '(max-width: 480px) 100vw, (max-width: 800px) 80vw, 1200px'
       },
       pictureAttributes: {}
-    },
-    
-    // Skip processing external URLs to dramatically improve build performance
-    dryRun: (src, outputFormat) => {
-      // Skip all external images (Untappd, ComicGeeks CDNs are already optimized)
-      return src.startsWith('http://') || src.startsWith('https://');
     }
   });
 
