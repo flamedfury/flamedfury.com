@@ -82,8 +82,7 @@ export default async function (eleventyConfig) {
     // Exclude directories that don't need heavy processing
     excludeURLs: [
       '/assets/images/favicon/',
-      '/assets/images/buttons/',
-      '/assets/images/template/',
+      '/assets/images/buttons/', 
       '/assets/svg/',
       // Exclude small experiment images and badges
       '/assets/images/experiments/untappd/bdg_',
@@ -101,6 +100,12 @@ export default async function (eleventyConfig) {
         sizes: '(max-width: 480px) 100vw, (max-width: 800px) 80vw, 1200px'
       },
       pictureAttributes: {}
+    },
+    
+    // Skip processing external URLs to dramatically improve build performance
+    dryRun: (src, outputFormat) => {
+      // Skip all external images (Untappd, ComicGeeks CDNs are already optimized)
+      return src.startsWith('http://') || src.startsWith('https://');
     }
   });
 
@@ -172,7 +177,6 @@ export default async function (eleventyConfig) {
   // Selectively copy images that shouldn't be processed by the transform plugin
   eleventyConfig.addPassthroughCopy('src/assets/images/favicon/');
   eleventyConfig.addPassthroughCopy('src/assets/images/buttons/');
-  eleventyConfig.addPassthroughCopy('src/assets/images/template/');
 
   eleventyConfig.addPassthroughCopy({
     // -- to root

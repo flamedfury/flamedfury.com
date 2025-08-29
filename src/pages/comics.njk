@@ -12,7 +12,7 @@ updated: 2023-05-29
 <div class="grid mt-l-xl" style="--grid-min-item-size: 12rem">
     {% for comic in (comics.data.concat(comics.single)) %}
     <div class="comics">
-        <img src="{{ comic.cover }}" alt="Cover Image for {{ comic.name }}" load="lazy">
+        <img src="{{ comic.cover_medium }}" alt="Cover Image for {{ comic.name }}" load="lazy">
         <p class="comics-title">{{ comic.name }}</p>
         <p class="comics-date">{{ comic.date }}</p>
         <p class="comics-collection"><a href="{{ comic.url }}">View issues</a></p>
