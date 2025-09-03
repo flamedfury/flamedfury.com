@@ -1,82 +1,5 @@
 [
   {
-    "bid": 6187706,
-    "beer_name": "Weapons Boss",
-    "brewery_name": "Baylands Brewery",
-    "beer_type": "IPA - Other",
-    "beer_abv": 6,
-    "rating_score": 4,
-    "created_at": "2025-08-23 16:42:32",
-    "venue_name": "Baylands Brewery Taproom",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_23/001709d43e64d656dfb0e3aff0f9fcd1_c_1507658749_raw.jpg"
-  },
-  {
-    "bid": 6374133,
-    "beer_name": "Toa (Warrior III)",
-    "brewery_name": "Saint Leonards",
-    "beer_type": "IPA - American",
-    "beer_abv": 6.8,
-    "rating_score": 4.3,
-    "created_at": "2025-08-22 13:09:35",
-    "venue_name": "Sky Stadium",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_22/6000a7081e258ebc97beed1a7d9ff708_c_1507251905_raw.jpg"
-  },
-  {
-    "bid": 6350544,
-    "beer_name": "Loki Doki",
-    "brewery_name": "Brave Brewing Co.",
-    "beer_type": "IPA - American",
-    "beer_abv": 7.2,
-    "rating_score": 4,
-    "created_at": "2025-08-22 12:14:38",
-    "venue_name": "Sky Stadium",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_22/29aba7a1c4a6135b22486c6ec3d97c8f_c_1507240551_raw.jpg"
-  },
-  {
-    "bid": 1424034,
-    "beer_name": "Tigermilk - IPA",
-    "brewery_name": "Brave Brewing Co.",
-    "beer_type": "IPA - American",
-    "beer_abv": 6.6,
-    "rating_score": 4,
-    "created_at": "2025-08-22 11:46:43",
-    "venue_name": "Sky Stadium",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_21/a9de39c89aee79b500cccd1fd9dd58cf_c_1507234007_raw.jpg"
-  },
-  {
-    "bid": 6366451,
-    "beer_name": "Funhouse",
-    "brewery_name": "Mean Doses",
-    "beer_type": "IPA - Fruited",
-    "beer_abv": 6.9,
-    "rating_score": 2.8,
-    "created_at": "2025-08-22 11:04:29",
-    "venue_name": "Sky Stadium",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_21/04b822f95befd9fc6bcd49d2a140c906_c_1507223650_raw.jpg"
-  },
-  {
-    "bid": 6350716,
-    "beer_name": "July IPA Series - Challenge Edition WCIPA",
-    "brewery_name": "Mount Brewing Co ",
-    "beer_type": "IPA - Other",
-    "beer_abv": 7.2,
-    "rating_score": 4,
-    "created_at": "2025-08-22 10:50:32",
-    "venue_name": "Sky Stadium",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_21/0ff8a7302b2ac4a70637efbf20256fdd_c_1507220038_raw.jpg"
-  },
-  {
-    "bid": 6382954,
-    "beer_name": "H.O.P.",
-    "brewery_name": "Fortune Favours ",
-    "beer_type": "IPA - New Zealand",
-    "beer_abv": 5.9,
-    "rating_score": 4.2,
-    "created_at": "2025-08-22 10:46:07",
-    "venue_name": "Sky Stadium",
-    "photo_url": "https://untappd.s3.amazonaws.com/photos/2025_08_21/e23a676645db4a8dba6b3eefdf66818c_c_1507218876_raw.jpg"
-  },
-  {
     "bid": 6257505,
     "beer_name": "Tallboy IPA",
     "brewery_name": "8 Wired",
@@ -12457,7 +12380,7 @@
     "beer_type": "Pale Ale - New Zealand",
     "beer_abv": 4.7,
     "created_at": "2016-02-07 15:54:49",
-    "venue_name": "Air Nz Domestic Koru Lounge",
+    "venue_name": "Air NZ Domestic Koru Lounge",
     "photo_url": "https://untappd.s3.amazonaws.com/photo/2016_02_07/e0f9dde7112bac8bf95eaaf8dca1d73d_raw.jpg"
   },
   {
@@ -20935,7 +20858,7 @@
     "beer_abv": 5,
     "rating_score": 2.5,
     "created_at": "2013-10-24 18:41:39",
-    "venue_name": "Air Nz Domestic Koru Lounge"
+    "venue_name": "Air NZ Domestic Koru Lounge"
   },
   {
     "bid": 5992,
@@ -21388,7 +21311,7 @@
     "beer_type": "Spiced / Herbed Beer",
     "beer_abv": 6.3,
     "created_at": "2013-10-04 20:50:17",
-    "venue_name": "Cumulus",
+    "venue_name": "Cumulus Inc.",
     "photo_url": "https://untappd.s3.amazonaws.com/photo/2013_10_04/78fefca2976081fdefde76b28f4e7b83_raw.jpg"
   },
   {
@@ -21399,7 +21322,7 @@
     "beer_abv": 6.2,
     "rating_score": 3.5,
     "created_at": "2013-10-04 20:11:30",
-    "venue_name": "Cumulus",
+    "venue_name": "Cumulus Inc.",
     "photo_url": "https://untappd.s3.amazonaws.com/photo/2013_10_04/c9d5d0292f8a69c601b0341e8de1b540_raw.jpg"
   },
   {

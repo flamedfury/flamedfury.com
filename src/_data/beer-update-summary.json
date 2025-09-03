@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2025-08-11T03:06:48.579Z",
-  "totalCheckins": 2421,
-  "uniqueBeers": 1569,
-  "uniqueBreweries": 324,
+  "lastUpdated": "2025-09-03T07:51:59.655Z",
+  "totalCheckins": 2428,
+  "uniqueBeers": 1575,
+  "uniqueBreweries": 325,
   "updateStats": {
-    "newCount": 8,
-    "updatedCount": 5,
-    "duplicateCount": 2407,
+    "newCount": 7,
+    "updatedCount": 4,
+    "duplicateCount": 2416,
     "skippedCount": 0,
-    "total": 2421
+    "total": 2428
   }
 }
