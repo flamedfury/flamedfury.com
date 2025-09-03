@@ -32,8 +32,8 @@ jobs:
         with:
           path: |
             .cache
-            dist/img
-          key: ${{ runner.os }}-eleventy-${{ hashFiles('src/**/*.{js,json,md}') }}
+            dist/assets/images
+          key: ${{ runner.os }}-eleventy-${{ hashFiles('src/**/*.{js,json,md,njk}', 'package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-eleventy-
 
@@ -60,17 +60,10 @@ jobs:
       - name: Deploy website to server
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-          rsync -avzr --delete --size-only -e "ssh -p ${{ secrets.SSH_PORT }}" ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/flamedfury.com/
+          # Test SSH connection first
+          ssh -p ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no -i ~/.ssh/id_ed25519 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'SSH connection successful'"
+          rsync -avzr --delete --size-only -e "ssh -p ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no -i ~/.ssh/id_ed25519" ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/flamedfury.com/
 
-      - name: Cache Eleventy image output
-        uses: actions/cache@v4
-        with:
-          path: |
-            .cache
-            dist/assets/images
-          key: eleventy-img-${{ runner.os }}-${{ hashFiles('src/assets/images/**/*') }}
-          restore-keys: |
-            eleventy-img-${{ runner.os }}-
