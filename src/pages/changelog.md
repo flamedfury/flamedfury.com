@@ -10,6 +10,10 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- August 31, 2025
+-- Major performance improvements: build times reduced by optimising the image processing process
+-- Fixed Steam games error handling when no recent games have been played.
+
 - August 05, 2025
 -- New homepage layout, leaning into the grid.
 
