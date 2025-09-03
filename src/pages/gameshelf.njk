@@ -4,101 +4,212 @@ description: Where I collect the games that I'm playing, want to play or have fi
 layout: page
 permalink: /gameshelf/index.html
 date: 2021-02-22
-updated: 2024-01-15
+updated: 2025-08-29
 ---
 
-<p>🚧 Under construction 🚧</p>
+<div class="flow" style="--flow-space: var(--space-m);">
+  <p>
+    I've always been into computer games and have played them for as long as I can remember.
+    You can read more about that over here,
+    <a href="/posts/video-games-and-me/">Video Games And Me</a>.
+  </p>
 
-<p>
-  I've always been into computer games and have played them for as long as I can remember.
-  You can read more about that over here,
-  <a href="/posts/video-games-and-me/">Video Games And Me</a>.
-</p>
+  <p>
+    This page showcases what I'm currently playing, games I want to finish, and some favorites from over the years. I drew inspiration from these game pages when building this section.
+  </p>
+  <ul>
+    <li><a href="https://chriskirknielsen.com/games/">CKN Games</a></li>
+    <li><a href="https://localghost.dev/games/">localghost Games</a></li>
+    <li><a href="https://tylersticka.com/journal/favorite-games/">Tyler Sticka Favourite Games</a></li>
+    <li><a href="https://alistairshepherd.uk/games/">Alistair Shepherd Games</a></li>
+  </ul>
+</div>
 
-<p>
-  This page has been a list of game titles for almost four years. I drew inspiration from
-  these game pages to start working on my page.
-</p>
-<ul>
-  <li><a href="https://chriskirknielsen.com/games/">CKN Games</a></li>
-  <li><a href="https://localghost.dev/games/">localghost Games</a></li>
-  <li><a href="https://tylersticka.com/journal/favorite-games/">Tyler Sticka Favourite Games</a></li>
-  <li><a href="https://alistairshepherd.uk/games/">Alistair Shepherd Games</a></li>
-</ul>
-
-<article class="full section" style="--spot-color: var(--color-bg-accent)">
+<!-- Currently Playing Section with Divider -->
+<section class="full section" style="--spot-color: var(--color-bg-accent)">
   {% svg "divider/soft-top", null, "seperator" %}
-  <section class="section__inner wrapper">
-    <div class="flow">
-      <h3>Simcity 2000</h3>
-      <p>1993 | Maxis | City Building | PC</p>
-      <p>
-        Simcity 2000 was a game I spent many hours playing at other peoples houses. Around
-        the time of its release we either still had the Commodore 64 and a Sega Master
-        System so it wasn't an option to play at home. When we got our first PC at home a
-        family friend loaded this and Dune II with a bunch of shareware and demo games and
-        I was set. I'd continue playing on and off for years.
-      </p>
+  <div class="section__inner wrapper flow" style="--flow-space: var(--space-l);">
+    <h2>Currently Playing</h2>
+
+    <!-- World of Warcraft - Always Playing -->
+    <div class="sidebar flow">
+      <div class="game-info">
+        <h3>World of Warcraft</h3>
+        <p class="game-meta">2004 • Blizzard Entertainment • MMORPG • PC</p>
+        <p class="game-status">The War Within (Expansion) • Season 3 • Heroic Rading • Mythic+ • Patch 11.2</p>
+        <p>
+          My main MMO that I've been playing on and off since 2005. Currently enjoying the latest expansion
+          with its renewed focus on storytelling and dungeon content. Always excited for new seasons and raids.
+        </p>
+      </div>
     </div>
-    <div class="flow | mt-xl">
-      <h3>Dune II</h3>
-      <p>1992 | Westwood Studios | Real-time Strategy | PC</p>
-      <p>
-        Dune II was my introduction to real-time strategy games and the concept of Dune.
-        This game set the standard of what RTS games would become and had heavy influences
-        on games like Command & Conquer. I spent hours playing this game. The craziest
-        thing I remember was having to keep an eye on your spice harvestors as they were
-        at risk of being swallowed by the sand worms. Super fustrating losing your last
-        harvester to a worm and having to start a mission all over again.
-      </p>
-    </div>
-    <div class="flow | mt-xl">
-      <h3>Command & Conquer</h3>
-      <p>1995 | Westwood Studios | Real-time Strategy | PC</p>
-      <p>
-        One of the first games we got on CD-ROM once we had our own PC at home running
-        Windows 95. I don't remember how we found out about C&C. We spent a lot of time at
-        an Internet Cafe playing C&C multiplayer (for $20 an hour) but can't remember if
-        that came before or after getting the PC at home. Anyway I either spent hours
-        playing through the campaign by myself or multiplayer with my brother and friends
-        at the Internet Cafe. We didn't have Internet during 1995 but the first thing I
-        remember downloading from the Internet at a family friend's house was a `.bat`
-        file that allowed me to edit the unit properties. In the end it destroyed the fun
-        of playing the game at home. My last memory of this was my save point on the last
-        GDI mission that was right before I lost. I never did end up finishing...
-      </p>
-    </div>
-    <div class="flow | mt-xl">
-      <h3>Theme Park</h3>
-      <p>
-        1994 | Bullfrog Productions | Real-time Strategy | Construction and Management Sim
-        | PC
-      </p>
-      <p>
-        This must have been the second game along side Command & Conquer...
-      </p>
-    </div>
-  </section>
+
+    <!-- Steam Recent Games -->
+    {% if games and games.length > 0 %}
+      <h3>Recent Steam Activity</h3>
+      <div class="grid" style="--grid-min-item-size: 16rem;">
+        {% for game in games %}
+        <div class="game-card flow">
+          <h4>{{ game.name }}</h4>
+          <p class="game-meta">
+            {% if game.developers %}{{ game.developers }}{% endif %}
+            {% if game.publishers and game.publishers != game.developers %} • {{ game.publishers }}{% endif %}
+            • PC (Steam)
+          </p>
+          <p class="game-playtime">{{ (game.playtime_2weeks / 60) | round(1) }} hours in last 2 weeks</p>
+          {% if game.short_description %}
+            <p>{{ game.short_description | truncate(120) }}</p>
+          {% endif %}
+          {% if game.steamUrl %}
+            <p><a href="{{ game.steamUrl }}" target="_blank" rel="noopener">View on Steam →</a></p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p><em>No recent Steam activity - probably deep in World of Warcraft!</em></p>
+    {% endif %}
+  </div>
   {% svg "divider/soft-bottom", null, "seperator" %}
-</article>
+</section>
 
-<details>
-  <summary>games for reference</summary>
+ <section class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "seperator" %}
+  <div class="section__inner wrapper flow" style="--flow-space: var(--space-l);">
+    <h3>1990s <span class="era-subtitle">The Foundation</span></h3>
 
-  ### Need to finish Games that I've started, but never ended up finishing: - Assassian's
-  Creed IV Black Flag - Assassin's Creed Odyssey - Mass Effect Andromeda - Path of Exile -
-  Pillars of Eternity - Warhammer 40,000: Dawn of War - Warhammer 40,000: Dawn of War II -
-  Watch_Dogs2 - Marvel's Guardians of the Galaxy (PC) - Need For Speed (2015) (PC) -
-  Kingdoms of Amalur: Re-Reckoning Review (Steam Deck) ### Games I loved Games that I've
-  played, finished and loved playing: #### PC - Assassin's Creed II - Assassin's Creed III
-  - Bioshock Inifinite - Borderlands 2 - Darksiders II - Diablo III - The Elder Scrolls V:
-  Skyrim - Grand Theft Auto IV - Kingdom's of Amalur: Reckoning - Mass Effect - Mass
-  Effect 2 - Mass Effect 3 - Max Payne 3 - Saints Row: The Third - Saints Row IV - Tomb
-  Raider - Rise of the Tomb Raider - Shadow of the Tomb Raider - Star Wars: Knights of the
-  Old Republic - The Witcher: Enhanced Edition - The Witcher 2: Assassins of Kings Edition
-  - The Witcher 3: Wild Hunt - Grand Theft Auto V - Cities: Skylines #### PS3 -
-  Darksiders: Wrath of War - Grand Theft Auto IV - Red Dead Redepmtion - Uncharted:
-  Drake's Fortune - Uncharted 2: Among Thieves - Uncharted 3: Drake's Deception #### Xbox
-  - Grand Theft Auto: San Andreas - Halo - Max Payne - Max Payne 2 - Need for Speed
-  Underground
-</details>
+    <div class="sidebar flow">
+      <div>
+        <h4>Theme Park (1994)</h4>
+        <p class="game-meta">Bullfrog Productions • Construction and Management Sim • PC</p>
+      </div>
+      <div>
+        <p>
+          Another classic from the CD-ROM era alongside Command & Conquer. Building and managing
+          theme parks was endlessly entertaining, with its colorful graphics and quirky British humor.
+          The depth of management simulation was incredible for its time.
+        </p>
+      </div>
+    </div>
+
+    <div class="sidebar flow">
+      <div>
+        <h4>Command & Conquer (1995)</h4>
+        <p class="game-meta">Westwood Studios • Real-time Strategy • PC</p>
+      </div>
+      <div>
+        <p>
+          One of the first games we got on CD-ROM once we had our own PC at home running
+          Windows 95. I don't remember how we found out about C&C. We spent a lot of time at
+          an Internet Cafe playing C&C multiplayer (for $20 an hour) but can't remember if
+          that came before or after getting the PC at home. Anyway I either spent hours
+          playing through the campaign by myself or multiplayer with my brother and friends
+          at the Internet Cafe. We didn't have Internet during 1995 but the first thing I
+          remember downloading from the Internet at a family friend's house was a `.bat`
+          file that allowed me to edit the unit properties. In the end it destroyed the fun
+          of playing the game at home. My last memory of this was my save point on the last
+          GDI mission that was right before I lost. I never did end up finishing...
+        </p>
+      </div>
+    </div>
+
+    <div class="sidebar flow">
+      <div>
+        <h4>SimCity 2000 (1993)</h4>
+        <p class="game-meta">Maxis • City Building • PC</p>
+      </div>
+      <div>
+        <p>
+          SimCity 2000 was a game I spent many hours playing at other people's houses. Around
+          the time of its release we either still had the Commodore 64 and a Sega Master
+          System so it wasn't an option to play at home. When we got our first PC at home a
+          family friend loaded this and Dune II with a bunch of shareware and demo games and
+          I was set. I'd continue playing on and off for years.
+        </p>
+      </div>
+    </div>
+
+    <div class="sidebar flow">
+      <div>
+        <h4>Dune II (1992)</h4>
+        <p class="game-meta">Westwood Studios • Real-time Strategy • PC</p>
+      </div>
+      <div>
+        <p>
+          Dune II was my introduction to real-time strategy games and the concept of Dune.
+          This game set the standard of what RTS games would become and had heavy influences
+          on games like Command & Conquer. I spent hours playing this game. The craziest
+          thing I remember was having to keep an eye on your spice harvestors as they were
+          at risk of being swallowed by the sand worms. Super frustrating losing your last
+          harvester to a worm and having to start a mission all over again.
+        </p>
+      </div>
+    </div>
+  </div>
+  {% svg "divider/soft-bottom", null, "seperator" %}
+</section>
+
+{% css "local" %}
+  .game-card {
+    padding: var(--space-s);
+    background: var(--color-bg-surface);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--spot-color, var(--color-primary));
+  }
+
+  .game-meta {
+    color: var(--color-text-accent);
+    font-size: var(--size-step-min-1);
+    margin: var(--space-2xs) 0;
+  }
+
+  .game-status {
+    background: var(--color-bg-accent);
+    padding: var(--space-2xs) var(--space-xs);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-sm);
+    margin: var(--space-xs) 0;
+  }
+
+  .game-playtime {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .game-item {
+    background: var(--color-bg-surface);
+    padding: var(--space-xs) var(--space-s);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+    font-size: var(--font-size-sm);
+    text-align: center;
+  }
+
+  .game-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-xs);
+  }
+
+  .game-list li {
+    background: var(--color-bg-surface);
+    padding: var(--space-xs) var(--space-s);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-primary);
+    font-size: var(--font-size-sm);
+  }
+
+  .era-subtitle {
+    color: var(--color-text-muted);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
+  }
+
+  .game-info h3 {
+    margin-bottom: var(--space-2xs);
+  }
+{% endcss %}
