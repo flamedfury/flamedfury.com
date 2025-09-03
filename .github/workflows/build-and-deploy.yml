@@ -58,16 +58,12 @@ jobs:
           DISCOGS_USER_AGENT: ${{ secrets.USER_AGENT }}
 
       - name: Deploy website to server
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.CPANEL_HOST }}
-          REMOTE_PORT: ${{ secrets.CPANEL_PORT }}
-          REMOTE_USER: ${{ secrets.CPANEL_USER }}
-          SOURCE: "dist/"
-          TARGET: ${{ secrets.CPANEL_TARGET }}
-          EXCLUDE: ".git*, .github*, node_modules*, src*"
-          ARGS: "-avzr --delete --size-only"
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+          rsync -avzr --delete --size-only -e "ssh -p ${{ secrets.SSH_PORT }}" ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/flamedfury.com/
 
       - name: Cache Eleventy image output
         uses: actions/cache@v4
