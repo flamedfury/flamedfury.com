@@ -800,5 +800,35 @@
     "date_added": "2025-08-16",
     "favourite": false,
     "note": "I have no idea why, but I've always associated this track with the Flinestones movie. Yeah, I know, right?"
+  },
+  {
+    "artist": "Christina Perri",
+    "title": "A Lighter Shade Of Blue",
+    "format": "Vinyl",
+    "release_id": 26372639,
+    "first_released": "2022-07-15",
+    "date_added": "2025-09-04",
+    "favourite": false,
+    "note": "Never heard of her but it sounded nice"
+  },
+  {
+    "artist": "Zara Larsson",
+    "title": "Honor The Light",
+    "format": "Vinyl",
+    "release_id": 29094670,
+    "first_released": "2023-12-01",
+    "date_added": "2025-09-04",
+    "favourite": false,
+    "note": ""
+  },
+  {
+    "artist": "Mimi Webb",
+    "title": "Amelia",
+    "format": "Vinyl",
+    "release_id": 26302661,
+    "first_released": "2023-03-03",
+    "date_added": "2025-09-04",
+    "favourite": false,
+    "note": ""
   }
 ]

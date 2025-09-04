@@ -1926,10 +1926,7 @@
       "masterGenres": [
         "Hip Hop"
       ],
-      "masterStyles": [
-        "Hardcore Hip-Hop",
-        "Gangsta"
-      ]
+      "masterStyles": []
     }
   },
   {
@@ -8991,8 +8988,6 @@
         "Columbia",
         "Columbia",
         "Columbia",
-        "Columbia",
-        "Sony Music",
         "Sony Music",
         "Sony Music",
         "Sony Music"
@@ -9485,6 +9480,322 @@
         "Hip Hop"
       ],
       "masterStyles": []
+    }
+  },
+  {
+    "artist": "Christina Perri",
+    "title": "A Lighter Shade Of Blue",
+    "format": "Vinyl",
+    "release_id": 26372639,
+    "first_released": "2022-07-15",
+    "date_added": "2025-09-04",
+    "favourite": false,
+    "note": "Never heard of her but it sounded nice",
+    "discogsData": {
+      "year": 2022,
+      "originalYear": 2022,
+      "originalTitle": "A Lighter Shade Of Blue",
+      "released": "2022",
+      "releaseDate": "2023-03-10T09:04:35-08:00",
+      "pressingYear": 2022,
+      "genres": [
+        "Rock"
+      ],
+      "styles": [],
+      "labels": [
+        "Elektra"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Surrender",
+          "duration": "2:50"
+        },
+        {
+          "position": "A2",
+          "title": "Hurt",
+          "duration": "3:47"
+        },
+        {
+          "position": "A3",
+          "title": "Evergone",
+          "duration": "3:29"
+        },
+        {
+          "position": "A4",
+          "title": "Back In Time",
+          "duration": "3:56"
+        },
+        {
+          "position": "A5",
+          "title": "Home",
+          "duration": "3:39"
+        },
+        {
+          "position": "A6",
+          "title": "People Like You",
+          "duration": "3:32"
+        },
+        {
+          "position": "A7",
+          "title": "Fever",
+          "duration": "3:31"
+        },
+        {
+          "position": "B1",
+          "title": "Blue",
+          "duration": "3:34"
+        },
+        {
+          "position": "B2",
+          "title": "I Do It For You",
+          "duration": "2:54"
+        },
+        {
+          "position": "B3",
+          "title": "Mothers",
+          "duration": "2:54"
+        },
+        {
+          "position": "B4",
+          "title": "Fighter",
+          "duration": "3:46"
+        },
+        {
+          "position": "B5",
+          "title": "Tiny Victories",
+          "duration": "3:24"
+        },
+        {
+          "position": "B6",
+          "title": "Time Of Our Lives",
+          "duration": "3:24"
+        },
+        {
+          "position": "B7",
+          "title": "Roses In The Rain",
+          "duration": "2:36"
+        }
+      ],
+      "country": "US",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Limited Edition",
+            "Special Edition",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/2761058",
+      "masterId": 2761058,
+      "catno": "075678637971",
+      "masterGenres": [
+        "Rock"
+      ],
+      "masterStyles": []
+    }
+  },
+  {
+    "artist": "Zara Larsson",
+    "title": "Honor The Light",
+    "format": "Vinyl",
+    "release_id": 29094670,
+    "first_released": "2023-12-01",
+    "date_added": "2025-09-04",
+    "favourite": false,
+    "note": "",
+    "discogsData": {
+      "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "Honor The Light",
+      "released": "2023-12-01",
+      "releaseDate": "2023-12-02T20:25:21-08:00",
+      "pressingYear": 2023,
+      "genres": [
+        "Pop"
+      ],
+      "styles": [
+        "Holiday"
+      ],
+      "labels": [
+        "Sommer House",
+        "Epic"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Memory Lane",
+          "duration": "3:12"
+        },
+        {
+          "position": "A2",
+          "title": "Winter Song",
+          "duration": "3:05"
+        },
+        {
+          "position": "A3",
+          "title": "Silent Night",
+          "duration": "1:41"
+        },
+        {
+          "position": "B1",
+          "title": "Light A Candle",
+          "duration": "3:10"
+        },
+        {
+          "position": "B2",
+          "title": "Tänd Ett Ljus",
+          "duration": "3:09"
+        },
+        {
+          "position": "B3",
+          "title": "Sankta Lucia",
+          "duration": "1:22"
+        }
+      ],
+      "country": "Europe",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "12\"",
+            "EP"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3324808",
+      "masterId": 3324808,
+      "catno": "19658869441",
+      "masterGenres": [
+        "Pop"
+      ],
+      "masterStyles": [
+        "Holiday"
+      ]
+    }
+  },
+  {
+    "artist": "Mimi Webb",
+    "title": "Amelia",
+    "format": "Vinyl",
+    "release_id": 26302661,
+    "first_released": "2023-03-03",
+    "date_added": "2025-09-04",
+    "favourite": false,
+    "note": "",
+    "discogsData": {
+      "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "Amelia",
+      "released": "2023-03-03",
+      "releaseDate": "2023-03-04T08:53:09-08:00",
+      "pressingYear": 2023,
+      "genres": [
+        "Electronic",
+        "Pop"
+      ],
+      "styles": [
+        "Bubblegum",
+        "Europop",
+        "Dance-pop"
+      ],
+      "labels": [
+        "Epic"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "The Other Side",
+          "duration": "2:46"
+        },
+        {
+          "position": "A2",
+          "title": "Red Flags",
+          "duration": "2:22"
+        },
+        {
+          "position": "A3",
+          "title": "Roles Reversed",
+          "duration": "3:45"
+        },
+        {
+          "position": "A4",
+          "title": "House On Fire",
+          "duration": "2:19"
+        },
+        {
+          "position": "A5",
+          "title": "Both Of Us",
+          "duration": "2:47"
+        },
+        {
+          "position": "A6",
+          "title": "Freezing",
+          "duration": "2:57"
+        },
+        {
+          "position": "B1",
+          "title": "Last Train To London",
+          "duration": "3:48"
+        },
+        {
+          "position": "B2",
+          "title": "Ghost Of You",
+          "duration": "2:37"
+        },
+        {
+          "position": "B3",
+          "title": "Is It Possible",
+          "duration": "3:33"
+        },
+        {
+          "position": "B4",
+          "title": "Remind You",
+          "duration": "2:56"
+        },
+        {
+          "position": "B5",
+          "title": "See You Soon",
+          "duration": "2:39"
+        },
+        {
+          "position": "B6",
+          "title": "Amelia",
+          "duration": "2:12"
+        }
+      ],
+      "country": "Worldwide",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album",
+            "Stereo"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3003470",
+      "masterId": 3003470,
+      "catno": "196587644512",
+      "masterGenres": [
+        "Electronic",
+        "Pop"
+      ],
+      "masterStyles": [
+        "Bubblegum",
+        "Europop",
+        "Dance-pop"
+      ]
     }
   }
 ]
