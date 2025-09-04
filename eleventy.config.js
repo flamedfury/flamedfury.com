@@ -71,20 +71,20 @@ export default async function (eleventyConfig) {
     formats: ['webp', 'jpeg'],
     // Optimized responsive widths - removed 'auto' to eliminate uncompressed originals
     widths: [480, 800, 1200],
-    
+
     // Add quality settings for compression while maintaining readability
     formatOptions: {
       jpeg: { quality: 85 },
       webp: { quality: 85 }
     },
-    
+
     urlPath: '/assets/images/',
     outputDir: './dist/assets/images/',
-    
+
     // Exclude directories that don't need heavy processing
     excludeURLs: [
       '/assets/images/favicon/',
-      '/assets/images/buttons/', 
+      '/assets/images/buttons/',
       '/assets/svg/',
       // Exclude small experiment images and badges
       '/assets/images/experiments/untappd/bdg_',
@@ -93,7 +93,7 @@ export default async function (eleventyConfig) {
       '/assets/images/experiments/untappd/stadium_bg',
       '/assets/images/experiments/untappd/*_mask.png'
     ],
-    
+
     htmlOptions: {
       imgAttributes: {
         loading: 'lazy',
@@ -169,7 +169,10 @@ export default async function (eleventyConfig) {
   ['src/assets/fonts/', 'src/assets/og-images', 'src/assets/static', 'src/assets/svg'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
-  
+
+  // Copy bundle directory containing CSS and JS bundles
+  eleventyConfig.addBundle('css', {hoist: true});
+
   // Selectively copy images that shouldn't be processed by the transform plugin
   eleventyConfig.addPassthroughCopy('src/assets/images/favicon/');
   eleventyConfig.addPassthroughCopy('src/assets/images/buttons/');
