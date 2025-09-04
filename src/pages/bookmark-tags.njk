@@ -1,0 +1,53 @@
+---
+layout: tags
+pagination:
+  data: collections.bookmarkTagCollections
+  size: 1
+  alias: tag
+permalink: /bookmarks/tags/{{ tag[0] | slugify | urlencode }}/
+eleventyComputed:
+  title: "Bookmarks tagged \"{{ tag[0] }}\""
+---
+
+<ul class="flow region" role="list">
+  {% for bookmark in tag[1] %}
+  <li>
+    <h3>
+      <a href="{{ bookmark.url }}" target="_blank" rel="noopener">{{ bookmark.title | safe }}</a>
+    </h3>
+    <div class="cluster">
+      <span class="text-step-min-1">
+        {% set definedDate = bookmark.date %}
+        {% include "partials/date.njk" %}
+      </span>
+      {% if bookmark.tags %}
+        {% for tagName in bookmark.tags %}
+        <a href="/bookmarks/tags/{{ tagName | slugify | urlencode }}/" class="button" data-small-button data-button-variant="primary">{{ tagName }}</a>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <p>{{ bookmark.notes | safe }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="text-step-2">More bookmark tags</h2>
+
+<ul class="taglist | my-s-m cluster gutter-s" role="list">
+  {% for tagName in collections.bookmarkTagList %}
+ <li><a
+    href="/bookmarks/tags/{{ tagName | slugify | urlencode }}/"
+    class="button"
+    data-button-variant="primary"
+    {{
+    helpers.getLinkActiveState('/bookmarks/tags/' + (tagName | slugify | urlencode) + '/',
+    page.url)
+    |
+    safe
+    }}
+  >
+    {{ tagName }}
+  </a></li>
+  {% endfor %}
+</ul>
+

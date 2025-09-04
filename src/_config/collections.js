@@ -44,8 +44,65 @@ export const tagCollections = collection => {
 
 /** All bookmarks as a collection */
 export const allBookmarks = collection => {
-  const bookmarks = collection.getAll().filter(item => item.data.isBookmark);
-  return bookmarks;
+  // Find the bookmarks data from the global data
+  const bookmarksData = collection.getAll().find(item => item.data && item.data.bookmarks);
+  const bookmarks = bookmarksData?.data?.bookmarks || [];
+  
+  // Transform bookmarks to look like regular collection items for compatibility
+  return bookmarks.map(bookmark => ({
+    url: bookmark.url,
+    data: {
+      title: bookmark.title,
+      notes: bookmark.notes,
+      date: bookmark.date,
+      tags: bookmark.tags,
+      description: bookmark.description || bookmark.notes,
+      site: bookmark.site,
+      author: bookmark.author,
+      type: bookmark.type
+    }
+  })); // Let pagination handle sorting
+};
+
+/** All bookmark tags as a collection */
+export const bookmarkTagList = collection => {
+  // Find the bookmarks data from the global data
+  const bookmarksData = collection.getAll().find(item => item.data && item.data.bookmarks);
+  const bookmarks = bookmarksData?.data?.bookmarks || [];
+  
+  const tagsSet = new Set();
+  bookmarks.forEach(bookmark => {
+    if (bookmark.tags && Array.isArray(bookmark.tags)) {
+      bookmark.tags.forEach(tag => tagsSet.add(tag));
+    }
+  });
+  return Array.from(tagsSet).sort();
+};
+
+/** Bookmark collections grouped by tag */
+export const bookmarkTagCollections = collection => {
+  // Find the bookmarks data from the global data
+  const bookmarksData = collection.getAll().find(item => item.data && item.data.bookmarks);
+  const bookmarks = bookmarksData?.data?.bookmarks || [];
+  
+  const tags = {};
+  
+  bookmarks.forEach(bookmark => {
+    if (bookmark.tags && Array.isArray(bookmark.tags)) {
+      bookmark.tags.forEach(tag => {
+        if (!tags[tag]) {
+          tags[tag] = [];
+        }
+        tags[tag].push(bookmark);
+      });
+    }
+  });
+  
+  // Sort bookmarks within each tag by date (most recent first) and convert to array
+  return Object.entries(tags).map(([tagName, bookmarks]) => [
+    tagName,
+    bookmarks.sort((a, b) => new Date(b.date) - new Date(a.date))
+  ]);
 };
 
 //** Function to filter posts for the feed based on date */

@@ -7,27 +7,48 @@ pagination:
   size: 20
   reverse: true
 permalink: 'bookmarks/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+redirectFrom:
+  - /bookmarks/tags/
 ---
 
 <div class="region flow prose" style="--region-space-top: var(--space-l)">
-  <p>Interesting links from around the web! These bookmarks are also available as a <a href="/feeds/">feed</a>.</p>
+  <p>A curated collection of links, articles, and resources I've found worth sharing. Browse by topic using the tags below, or follow along via <a href="/feeds/">RSS</a>.</p>
 </div>
 
-<ul class="blogcards feature | grid" role="list" data-rows="masonry" data-layout="50-50">
-  {% for bookmark in pagination.items %}
-  <li class="card">
-    <div class="flow">
-      <h2>
-        <a href="{{ bookmark.url }}">{{ bookmark.data.title | safe }}</a>
-      </h2>
-      <div class="cluster">
-        <span class="text-step-min-1">
-          {% set definedDate = bookmark.data.date %}
-          {% include "partials/date.njk" %}
-        </span>
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "seperator" %}
+  <section class="section__inner wrapper">
+    <div class="region flow" style="--region-space-top: var(--space-m); --region-space-bottom: var(--space-m)">
+      <div class="taglist | cluster">
+        {% for tag in collections.bookmarkTagList %}
+        <a href="/bookmarks/tags/{{ tag | slugify | urlencode }}/" class="button" data-button-variant="primary">
+          {{ tag }}
+        </a>
+        {% endfor %}
       </div>
-      <p>{{ bookmark.data.notes | truncate(100) | safe }}</p>
     </div>
+  </section>
+  {% svg "divider/soft-bottom", null, "seperator" %}
+</article>
+
+<ul class="flow region" role="list">
+  {% for bookmark in pagination.items %}
+  <li>
+    <h3>
+      <a href="{{ bookmark.url }}" target="_blank" rel="noopener">{{ bookmark.data.title | safe }}</a>
+    </h3>
+    <div class="cluster">
+      <span class="text-step-min-1">
+        {% set definedDate = bookmark.data.date %}
+        {% include "partials/date.njk" %}
+      </span>
+      {% if bookmark.data.tags %}
+        {% for tag in bookmark.data.tags %}
+        <a href="/bookmarks/tags/{{ tag | slugify | urlencode }}/" class="button" data-small-button data-button-variant="primary">{{ tag }}</a>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <p>{{ bookmark.data.notes | safe }}</p>
   </li>
   {% endfor %}
 </ul>
@@ -41,11 +62,3 @@ permalink: 'bookmarks/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageN
 <!-- include pagination -->
 {% include 'partials/pagination.njk' %}
 {% endif %}
-
-{% css "local" %}
-  {% include "css/card.css" %}
-{% endcss %}
-
-{% js "inline" %}
-  {% include "scripts/masonry.js" %}
-{% endjs %}

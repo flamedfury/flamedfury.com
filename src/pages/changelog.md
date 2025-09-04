@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- September 04, 2025
+-- Revamped the bookmarks pages and added tagging
+
 - August 31, 2025
 -- Major performance improvements: build times reduced by optimising the image processing process
 -- Fixed Steam games error handling when no recent games have been played.

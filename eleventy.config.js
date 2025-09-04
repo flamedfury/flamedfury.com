@@ -10,7 +10,7 @@ dotenv.config();
 import yaml from 'js-yaml';
 
 //  config import
-import {getAllPosts, onlyMarkdown, tagList, tagCollections, allBookmarks, filterFeedPosts, postsByYear, booksByYear, releasesCollection, artistsCollection, genresCollection, formatsCollection, releaseYearsCollection, homePageStats, beersCollection, breweriesCollection, beerStylesCollection} from './src/_config/collections.js';
+import {getAllPosts, onlyMarkdown, tagList, tagCollections, allBookmarks, bookmarkTagList, bookmarkTagCollections, filterFeedPosts, postsByYear, booksByYear, releasesCollection, artistsCollection, genresCollection, formatsCollection, releaseYearsCollection, homePageStats, beersCollection, breweriesCollection, beerStylesCollection} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
@@ -38,6 +38,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('tagList', tagList);
   eleventyConfig.addCollection('tagCollections', tagCollections);
   eleventyConfig.addCollection('allBookmarks', allBookmarks);
+  eleventyConfig.addCollection('bookmarkTagList', bookmarkTagList);
+  eleventyConfig.addCollection('bookmarkTagCollections', bookmarkTagCollections);
   eleventyConfig.addCollection('filterFeedPosts', filterFeedPosts);
   eleventyConfig.addCollection('postsByYear', postsByYear);
   eleventyConfig.addCollection('booksByYear', booksByYear);
