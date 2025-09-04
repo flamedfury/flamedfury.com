@@ -7,8 +7,6 @@ pagination:
   size: 20
   reverse: true
 permalink: 'bookmarks/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
-redirectFrom:
-  - /bookmarks/tags/
 ---
 
 <div class="region flow prose" style="--region-space-top: var(--space-l)">
