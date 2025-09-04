@@ -1,24 +1,30 @@
-<li id="{{ link.name }}" class="links-card | flow">
-    <h3>
-      {{ link.name }}
+<li class="link-item | sidebar" style="--sidebar-target-width: 280px; --sidebar-content-min-width: 35%;">
+  <div class="link-meta">
+    <h3 class="link-title">
+      <img
+        eleventy:ignore
+        alt="{{ link.name }} favicon"
+        src="https://v1.indieweb-avatar.11ty.dev/{{ link.url | urlencode }}"
+        width="20"
+        height="20"
+        loading="lazy"
+        decoding="async"
+        class="link-favicon"
+      />
+      <a href="{{ link.url | url }}" class="no-indicator">{{ link.name }}</a>
     </h3>
-    <p class="blog-url">
-        <img
-          eleventy:ignore
-          alt="{{ link.name }} favicon"
-          src="https://v1.indieweb-avatar.11ty.dev/{{ link.url | urlencode }}"
-          width="24px"
-          height="24px"
-          loading="lazy"
-          decoding="async"
-          style="display: inline;"
-        />
-      <a href="{{ link.url | url }}" class="no-indicator">{{ link.url | normalizeUrl }}</a>
+    <p class="link-url">
+      {{ link.url | normalizeUrl }}
+      {% if link.feed %}
+        <a href="{{ link.feed }}" class="rss-link" title="RSS Feed">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248S0 22.546 0 20.752s1.456-3.248 3.252-3.248 3.251 1.454 3.251 3.248zM18.75 24h-6.024c0-4.42-1.793-8.434-4.687-11.334C5.037 9.761 1.025 7.972 0 7.972V1.945c9.965 0 18.75 8.809 18.75 18.75zM24 24h-5.999c0-11.028-8.967-19.995-19.996-19.995V0C10.032 0 24 13.966 24 24z"/>
+          </svg>
+        </a>
+      {% endif %}
     </p>
-    <p class="blog-note">{{ link.note }}</p>
-    {% if link.feed %}
-      <p class="blog-feed">
-        <a href="{{ link.feed }}">RSS Feed</a>
-      </p>
-    {% endif %}
+  </div>
+  <div class="link-content">
+    <p class="link-note">{{ link.note }}</p>
+  </div>
 </li>

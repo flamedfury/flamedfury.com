@@ -1,0 +1,25 @@
+---
+title: Blogroll
+description: Personal websites and cool sites that I follow and recommend.
+layout: page
+permalink: /blogroll/index.html
+---
+
+{% from "partials/linksSection.njk" import renderSection %}
+
+<p>A collection of personal websites and cool sites from across the web. These are places I regularly visit and think you might enjoy too.</p>
+
+<p>Looking for web development tools, newsletters, or other resources? Check out my <a href="/links/">links page</a>.</p>
+
+<ul class="links-list | popout" role="list">
+  {% for link in links.blogroll %}
+    {% include 'partials/links.njk' %}
+  {% endfor %}
+  {% for link in links.coolSites %}
+    {% include 'partials/links.njk' %}
+  {% endfor %}
+</ul>
+
+{% css %}
+  {% include "../assets/css/local/links.css" %}
+{% endcss %}

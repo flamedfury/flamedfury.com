@@ -4,14 +4,6 @@ description: A collection of links for websites and services that I find useful.
 layout: page
 permalink: /links/index.html
 sections:
-  - id: blogroll
-    title: Blogroll
-    description: Interesting websites with blogs that I subscribe to.
-    linksKey: blogroll
-  - id: coolSites
-    title: Cool Sites
-    description: Cool websites that aren't blogs that have interesting pages to get lost in.
-    linksKey: coolSites
   - id: webdev
     title: Web Development
     description: Website useful for learning or keeping up with web development.
@@ -48,7 +40,7 @@ sections:
 
 {% from "partials/linksSection.njk" import renderSection %}
 
-<p>I hope you find what you're looking for.</p>
+<p>I hope you find what you're looking for. Looking for personal websites and blogs? Check out my <a href="/blogroll/">blogroll</a>.</p>
 
 <div class="taglist | my-s-m cluster">
   {% for section in sections %}
@@ -60,10 +52,7 @@ sections:
 {{ renderSection(section.id, section.title, section.description, links[section.linksKey]) }}
 {% endfor %}
 
-{% css "local" %}
-  {% include "css/links.css" %}
+{% css %}
+  {% include "../assets/css/local/links.css" %}
 {% endcss %}
 
-{% js "inline" %}
-  {% include "scripts/masonry.js" %}
-{% endjs %}

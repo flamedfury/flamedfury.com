@@ -12,6 +12,8 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 - September 04, 2025
 -- Revamped the bookmarks pages and added tagging
+-- Seperated the [Blogroll](/blogroll) from the [Links](/links/) page into it's own page
+-- New vinyls added to the [Recordshelf](/recordshelf/)
 
 - August 31, 2025
 -- Major performance improvements: build times reduced by optimising the image processing process

@@ -1,3 +1,90 @@
+/* Links list styling using existing sidebar composition */
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-m) 0 0 0;
+}
+
+.link-item {
+  margin-bottom: var(--space-l);
+  padding-bottom: var(--space-m);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Sidebar styling when used with existing sidebar composition */
+.link-item.sidebar > :first-child {
+  padding-right: var(--space-m);
+  border-right: 3px dashed var(--color-primary);
+  opacity: 0.7;
+}
+
+.link-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.link-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin: 0 0 var(--space-3xs) 0;
+  font-size: var(--size-step-0);
+  font-weight: 600;
+  font-family: var(--font-base);
+  line-height: 1.3;
+}
+
+.link-title a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.link-title a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.link-favicon {
+  flex-shrink: 0;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+.link-url {
+  font-size: var(--size-step--1);
+  color: var(--color-text-muted);
+  margin: 0;
+  font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  word-break: break-all;
+}
+
+.rss-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: var(--space-3xs);
+  border-radius: var(--border-radius);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rss-link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-bg-accent);
+}
+
+.link-note {
+  font-size: var(--size-step-0);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Legacy card styles - keeping for backwards compatibility */
 .links-card {
   background-color: var(--color-bg-accent);
   border: 4px solid var(--color-bg-accent);
@@ -5,6 +92,7 @@
   padding: var(--space-s-m);
   border-radius: var(--border-radius);
   max-inline-size: unset;
+  --gutter: var(--space-l);
 }
 
 .links-card ::selection {
@@ -12,11 +100,7 @@
   background-color: var(--color-secondary);
 }
 
-.links-card h2 {
-  font-family: var(--font-base);
-  font-size: var(--size-step-2);
-}
-
+.links-card h2,
 .links-card h3 {
   font-family: var(--font-base);
   font-size: var(--size-step-2);
@@ -31,8 +115,4 @@
 .links-card a,
 .links-card li {
   font-size: var(--size-step-0);
-}
-
-.links-card {
-  --gutter: var(--space-l);
 }

@@ -20,6 +20,10 @@ export const top = [
     url: '/bookmarks/'
   },
   {
+    text: 'Blogroll',
+    url: '/blogroll/'
+  },
+  {
     text: 'Links',
     url: '/links/'
   },
