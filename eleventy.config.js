@@ -176,6 +176,7 @@ export default async function (eleventyConfig) {
   // Selectively copy images that shouldn't be processed by the transform plugin
   eleventyConfig.addPassthroughCopy('src/assets/images/favicon/');
   eleventyConfig.addPassthroughCopy('src/assets/images/buttons/');
+  eleventyConfig.addPassthroughCopy('src/assets/images/template/');
 
   eleventyConfig.addPassthroughCopy({
     // -- to root
