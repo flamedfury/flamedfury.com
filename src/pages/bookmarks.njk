@@ -37,8 +37,10 @@ permalink: 'bookmarks/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageN
     </h3>
     <div class="cluster">
       <span class="text-step-min-1">
-        {% set definedDate = bookmark.data.date %}
-        {% include "partials/date.njk" %}
+        <a href="/bookmarks/{{ bookmark.data.title | slugify }}/">
+          {% set definedDate = bookmark.data.date %}
+          {% include "partials/date.njk" %}
+        </a>
       </span>
       {% if bookmark.data.tags %}
         {% for tag in bookmark.data.tags %}
