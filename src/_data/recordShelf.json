@@ -9797,5 +9797,124 @@
         "Dance-pop"
       ]
     }
+  },
+  {
+    "artist": "Anne-Marie",
+    "title": "Unhealthy",
+    "format": "Vinyl",
+    "release_id": 31652132,
+    "first_released": "2023-03-09",
+    "date_added": "2025-09-07",
+    "favourite": false,
+    "note": "I saw Anne-Marie perform at Glastonbury 2019!",
+    "discogsData": {
+      "year": 2023,
+      "originalYear": 2023,
+      "originalTitle": "Unhealthy",
+      "released": "2023-07-28",
+      "releaseDate": "2024-09-04T09:01:45-07:00",
+      "pressingYear": 2023,
+      "genres": [
+        "Pop",
+        "Folk, World, & Country"
+      ],
+      "styles": [
+        "Alt-Pop",
+        "Country",
+        "Indie Pop",
+        "Future Pop"
+      ],
+      "labels": [
+        "Atlantic"
+      ],
+      "tracklist": [
+        {
+          "position": "A1",
+          "title": "Sucks To Be You",
+          "duration": ""
+        },
+        {
+          "position": "A2",
+          "title": "Sad B!tch",
+          "duration": ""
+        },
+        {
+          "position": "A3",
+          "title": "Psycho",
+          "duration": ""
+        },
+        {
+          "position": "A4",
+          "title": "Haunt You",
+          "duration": ""
+        },
+        {
+          "position": "A5",
+          "title": "Trainwreck",
+          "duration": ""
+        },
+        {
+          "position": "A6",
+          "title": "Grudge",
+          "duration": ""
+        },
+        {
+          "position": "B1",
+          "title": "Obsessed",
+          "duration": ""
+        },
+        {
+          "position": "B2",
+          "title": "Kills Me To Love You",
+          "duration": ""
+        },
+        {
+          "position": "B3",
+          "title": "Unhealthy",
+          "duration": ""
+        },
+        {
+          "position": "B4",
+          "title": "Irish Goodbye",
+          "duration": ""
+        },
+        {
+          "position": "B5",
+          "title": "Cuckoo",
+          "duration": ""
+        },
+        {
+          "position": "B6",
+          "title": "You & I",
+          "duration": ""
+        },
+        {
+          "position": "B7",
+          "title": "Never Loved Anyone Before",
+          "duration": ""
+        }
+      ],
+      "country": "USA & Canada",
+      "format": "Vinyl",
+      "formatDetails": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": [
+            "LP",
+            "Album"
+          ]
+        }
+      ],
+      "masterUrl": "https://api.discogs.com/masters/3183855",
+      "masterId": 3183855,
+      "catno": "5054197534140",
+      "masterGenres": [
+        "Pop"
+      ],
+      "masterStyles": [
+        "Indie Pop"
+      ]
+    }
   }
 ]

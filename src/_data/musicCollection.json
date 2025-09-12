@@ -830,5 +830,15 @@
     "date_added": "2025-09-04",
     "favourite": false,
     "note": ""
+  },
+  {
+    "artist": "Anne-Marie",
+    "title": "Unhealthy",
+    "format": "Vinyl",
+    "release_id": 31652132,
+    "first_released": "2023-03-09",
+    "date_added": "2025-09-07",
+    "favourite": false,
+    "note": "I saw Anne-Marie perform at Glastonbury 2019!"
   }
 ]
