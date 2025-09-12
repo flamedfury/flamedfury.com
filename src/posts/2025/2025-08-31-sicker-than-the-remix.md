@@ -1,6 +1,6 @@
 ---
 title: Sicker Than The Remix
-description:
+description: Monthly recap for August, family life in Auckland, Bandcamp Friday purchases, trips back home, Beervana, golf, books, and website updates.
 tags:
   - monthly recap
   - now
