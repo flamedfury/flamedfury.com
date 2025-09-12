@@ -10,23 +10,25 @@
   "home_page_url": "{{ meta.url }}/",
   "feed_url": "{{ meta.url }}/bookmarks-feed.json",
   "description": "A collection of links from across the world wide web",
-  "author": {
+  "authors": [{
     "name": "{{ meta.author.name }}",
     "url": "{{ meta.url }}",
-    "avatar": "{{ meta.author.avatar }}",
-    "email": "{{ meta.author.email }}"
-  },
+    "avatar": "{{ meta.url }}{{ meta.author.avatar }}"
+  }],
   "items": [
-    {% for bookmark in collections.allBookmarks | reverse %}
+    {%- set bookmarkslist = collections.allBookmarks -%}
+    {%- for bookmark in bookmarkslist | reverse -%}
       {
-        "id": "{{ meta.url }}{{ bookmark.url }}",
-        "url": "{{ meta.url }}{{ bookmark.url }}",
+        "id": "{{ meta.url }}/bookmarks/{{ bookmark.data.title | slugify }}/",
+        "url": "{{ meta.url }}/bookmarks/{{ bookmark.data.title | slugify }}/",
         "title": "{{ bookmark.data.title }}",
-        "content_html": "{{ bookmark.templateContent | replace('\n', '') | replace('    ', '') | replace('"', '\\"') | safe }}",
+        "content_html": "<p>🔖 Bookmarked <a href=\"{{ bookmark.url }}\">{{ bookmark.data.title | escape }}</a></p>{% if bookmark.data.notes %}<p>{{ bookmark.data.notes | escape }}</p>{% endif %}",
+        "summary": "{{ bookmark.data.notes | escape }}",
         "date_published": "{{ bookmark.data.date }}",
-        "external_url": "{{ bookmark.data.sourceurl }}",
-        "tags": [{% if bookmark.data.hashtags %}{% for tag in bookmark.data.hashtags | split(',') %}"{{ tag.trim() }}"{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]
-      }{% if not loop.last %},{% endif %}
-    {% endfor %}
+        "external_url": "{{ bookmark.url }}",
+        "tags": [{% if bookmark.data.tags %}{% for tag in bookmark.data.tags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}]
+      }
+      {%- if not loop.last -%},{%- endif -%}
+    {%- endfor -%}
   ]
 }
