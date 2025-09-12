@@ -1,36 +1,94 @@
----
-title: Monthly Generator
-layout: page
-permalink: /monthly/index.html
-eleventyExcludeFromCollections: true
-excludeFromSitemap: true
+---js
+{
+  title: "Monthly Generator",
+  layout: "page",
+  permalink: "/monthly/index.html",
+  eleventyExcludeFromCollections: true,
+  excludeFromSitemap: true,
+  draft: true,
+  currentDate: new Date().toISOString(),
+  previousMonth: new Date(new Date().getFullYear(), new Date().getMonth() - 1, 1).toISOString()
+}
 ---
 
-{% set currentMonth = "2025-07" %}
+{% set currentMonth = currentDate | formatDate("YYYY-MM") %}
+{% set prevMonth = previousMonth | formatDate("YYYY-MM") %}
 
-<h2>Blog Posts from {{ currentMonth | formatDate("MMMM YYYY") }}</h2>
-<ul>
+<div style="margin-bottom: 2rem;">
+  <p><strong>Month Navigation:</strong></p>
+  <p>
+    <a href="/monthly/">Current Month ({{ currentMonth | formatDate("MMMM YYYY") }})</a> | 
+    <a href="/monthly/?month={{ prevMonth }}">Previous Month ({{ prevMonth | formatDate("MMMM YYYY") }})</a> | 
+    <a href="#" onclick="const month = prompt('Enter month (YYYY-MM):', '{{ prevMonth }}'); if(month && /^\\d{4}-\\d{2}$/.test(month)) window.location.href='/monthly/?month=' + month;">Custom Month...</a>
+  </p>
+</div>
+
+<div id="content">
+<h2>Blog Posts from <span id="currentMonthDisplay">{{ currentMonth | formatDate("MMMM YYYY") }}</span></h2>
+<ul id="postsList">
 {%- for post in collections.posts | sort(attribute='date') %}
-  {% if post.date | formatDate("YYYY-MM") == currentMonth %}
-    <li><a href="{{ post.url | url }}">{{ post.data.title }}</a>, {{ post.data.description }}</li>
-  {% endif %}
+  <li data-date="{{ post.date | formatDate('YYYY-MM') }}" style="display: {% if post.date | formatDate('YYYY-MM') == currentMonth %}list-item{% else %}none{% endif %}">
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>, {{ post.data.description }}
+  </li>
 {% endfor -%}
 </ul>
 
-<h2>Books Finished in {{ currentMonth | formatDate("MMMM YYYY") }}</h2>
-<ul>
+<h2>Books Finished in <span id="booksMonthDisplay">{{ currentMonth | formatDate("MMMM YYYY") }}</span></h2>
+<ul id="booksList">
 {%- for book in bookshelf | sort(attribute='dateFinished') %}
-  {% if book.dateFinished | formatDate("YYYY-MM") == currentMonth %}
-    <li><a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">{{ book.title }}</a> by {{ book.authors | join(', ') }}</li>
-  {% endif %}
+  <li data-date="{{ book.dateFinished | formatDate('YYYY-MM') }}" style="display: {% if book.dateFinished | formatDate('YYYY-MM') == currentMonth %}list-item{% else %}none{% endif %}">
+    <a href="{{ '/bookshelf/' | url }}{{ book.title | slugify }}/">{{ book.title }}</a> by {{ book.authors | join(', ') }}
+  </li>
 {% endfor -%}
 </ul>
 
-<h2>Bookmarks from {{ currentMonth | formatDate("MMMM YYYY") }}</h2>
-<ul>
+<h2>Bookmarks from <span id="bookmarksMonthDisplay">{{ currentMonth | formatDate("MMMM YYYY") }}</span></h2>
+<ul id="bookmarksList">
   {%- for bookmark in bookmarks | sort(attribute='date') %}
-    {% if bookmark.date | formatDate("YYYY-MM") == currentMonth %}
-      <li><a href="{{ bookmark.url }}">{{ bookmark.title }}</a> {{ bookmark.notes }}</li>
-    {% endif %}
+    <li data-date="{{ bookmark.date | formatDate('YYYY-MM') }}" style="display: {% if bookmark.date | formatDate('YYYY-MM') == currentMonth %}list-item{% else %}none{% endif %}">
+      <a href="{{ bookmark.url }}">{{ bookmark.title }}</a> {{ bookmark.notes }}
+    </li>
   {% endfor -%}
 </ul>
+
+<h2>Vinyls Added to Collection in <span id="vinylsMonthDisplay">{{ currentMonth | formatDate("MMMM YYYY") }}</span></h2>
+<ul id="vinylsList">
+{%- for record in recordShelf | sort(attribute='date_added') %}
+  <li data-date="{{ record.date_added | formatDate('YYYY-MM') }}" style="display: {% if record.date_added | formatDate('YYYY-MM') == currentMonth %}list-item{% else %}none{% endif %}">
+    <a href="{{ '/recordshelf/' | url }}{{ record.artist | slugify }}/{{ record.title | slugify }}/">{{ record.artist }} - {{ record.title }}</a>
+  </li>
+{% endfor -%}
+</ul>
+</div>
+
+<script>
+// Check for month parameter in URL and filter content
+const urlParams = new URLSearchParams(window.location.search);
+const monthParam = urlParams.get('month');
+
+if (monthParam && /^\d{4}-\d{2}$/.test(monthParam)) {
+  document.addEventListener('DOMContentLoaded', function() {
+    // Update month displays
+    const monthDisplays = ['currentMonthDisplay', 'booksMonthDisplay', 'bookmarksMonthDisplay', 'vinylsMonthDisplay'];
+    const monthName = new Date(monthParam + '-01').toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    
+    monthDisplays.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) element.textContent = monthName;
+    });
+    
+    // Filter all lists including posts
+    const lists = ['postsList', 'booksList', 'bookmarksList', 'vinylsList'];
+    lists.forEach(listId => {
+      const list = document.getElementById(listId);
+      if (list) {
+        const items = list.querySelectorAll('li[data-date]');
+        items.forEach(item => {
+          const itemDate = item.getAttribute('data-date');
+          item.style.display = itemDate === monthParam ? 'list-item' : 'none';
+        });
+      }
+    });
+  });
+}
+</script>
