@@ -9,27 +9,26 @@ excludeFromSitemap: true
   <subtitle>{{ meta.feeds.bookmarks.description | escapeXml }}</subtitle>
   <link href="{{ meta.url }}/bookmarks-feed.xml" rel="self" />
   <link href="{{ meta.url }}/" />
-  {% set postslist = collections.posts %}
-  <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>2025-09-13T00:00:00Z</updated>
   <id>{{ meta.url }}/</id>
   <author>
     <name>{{ meta.author.name | escapeXml }}</name>
     <email>{{ meta.author.email | escapeXml }}</email>
   </author>
   {% for bookmark in collections.allBookmarks | reverse %}
-    {% set absolutePostUrl = bookmark.url | absoluteUrl(metadata.url) %}
+    {% set absolutePostUrl = bookmark.url | absoluteUrl(meta.url) %}
     <entry>
       <title>{{ bookmark.data.title | escapeXml }}</title>
-      <link href="{{ meta.url }}{{ absolutePostUrl }}" />
-      <updated>{{ bookmark.data.date }}</updated>
-      <id>{{ meta.author.website }}{{ absolutePostUrl }}</id>
-      <content xml:lang="{{ meta.locale }}" type="html">
-        {{ '<p>🔖 Bookmarked <a href="' + bookmark.data.sourceurl | escapeXml + '">' + bookmark.data.title | escapeXml + '</a></p>
-           <blockquote>' + bookmark.data.quote | escapeXml + '</blockquote>
-           <p>' + bookmark.data.notes | escapeXml + '</p>
-           <hr />
-           <p>Hey, thanks for reading this post in your feed reader! Want to chat? <a href="mailto:hello@flamedfury.com?subject=RE Bookmark: ' + bookmark.data.title | escapeXml + '">Reply by email</a> or add me on <a href="xmpp:flamed@omg.lol">XMPP</a>. Check out the <a href="https://flamedfury.com/bookmarks/">bookmarks archive</a> on the website.</p>' | escapeXml | safe }}
-      </content>
+      <link href="{{ absolutePostUrl }}" />
+      <updated>{% if bookmark.data.date %}{{ bookmark.data.date }}{% else %}2025-09-13T00:00:00Z{% endif %}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <content xml:lang="{{ meta.locale }}" type="html"><![CDATA[
+        <p>🔖 Bookmarked <a href="{{ bookmark.url }}">{{ bookmark.data.title }}</a></p>
+        {% if bookmark.data.quote %}<blockquote>{{ bookmark.data.quote }}</blockquote>{% endif %}
+        <p>{{ bookmark.data.notes }}</p>
+        <hr />
+        <p>Hey, thanks for reading this post in your feed reader! Want to chat? <a href="mailto:hello@flamedfury.com?subject=RE Bookmark: {{ bookmark.data.title }}">Reply by email</a> or add me on <a href="xmpp:flamed@omg.lol">XMPP</a>. Check out the <a href="https://flamedfury.com/bookmarks/">bookmarks archive</a> on the website.</p>
+      ]]></content>
     </entry>
   {% endfor %}
 </feed>

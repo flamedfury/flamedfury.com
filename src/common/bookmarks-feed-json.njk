@@ -19,8 +19,8 @@
     {%- set bookmarkslist = collections.allBookmarks -%}
     {%- for bookmark in bookmarkslist | reverse -%}
       {
-        "id": "{{ meta.url }}/bookmarks/{{ bookmark.data.title | slugify }}/",
-        "url": "{{ meta.url }}/bookmarks/{{ bookmark.data.title | slugify }}/",
+        "id": "{{ meta.url }}/bookmarks/{% if bookmark.data.title %}{{ bookmark.data.title | slugify }}{% else %}bookmark-{{ loop.index }}{% endif %}/",
+        "url": "{{ meta.url }}/bookmarks/{% if bookmark.data.title %}{{ bookmark.data.title | slugify }}{% else %}bookmark-{{ loop.index }}{% endif %}/",
         "title": "{{ bookmark.data.title }}",
         "content_html": "<p>🔖 Bookmarked <a href=\"{{ bookmark.url }}\">{{ bookmark.data.title | escape }}</a></p>{% if bookmark.data.notes %}<p>{{ bookmark.data.notes | escape }}</p>{% endif %}",
         "summary": "{{ bookmark.data.notes | escape }}",

@@ -47,6 +47,12 @@ export const blog = {
   paginationNext: 'Next',
   paginationNumbers: true
 };
+export const feeds = {
+  bookmarks: {
+    name: "fLaMEd fury's bookmarks",
+    description: "A collection of links from across the world wide web"
+  }
+};
 export const bookmarks = {
   paginationLabel: "Bookmarks",
   paginationPage: "Page",
