@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- September 13, 2025
+-- Added a [Blog Stats](/blogstats/) page that uses [PostGraph](https://postgraph.rknight.me/) by Robb Knight to visualise posting frequency
+
 - September 04, 2025
 -- Revamped the bookmarks pages and added tagging
 -- Seperated the [Blogroll](/blogroll) from the [Links](/links/) page into it's own page

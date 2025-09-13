@@ -40,6 +40,7 @@
   "devDependencies": {
     "@chrisburnell/eleventy-cache-webmentions": "^2.1.5",
     "@csstools/postcss-relative-color-syntax": "^3.0.2",
+    "@rknightuk/eleventy-plugin-post-graph": "^1.0.8",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "axios": "^1.7.2",

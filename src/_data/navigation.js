@@ -105,6 +105,10 @@ export const surfSite = [
     url: '/buttons/'
   },
   {
+    text: 'Blog Stats',
+    url: '/blogstats/'
+  },
+  {
     text: 'Changelog',
     url: '/changelog/'
   },

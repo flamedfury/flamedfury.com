@@ -11,6 +11,7 @@ import {drafts} from './plugins/drafts.js';
 import musicThread from './plugins/musicthread.js';
 import pluginWebmentions from "@chrisburnell/eleventy-cache-webmentions";
 import configWebmentions from "../_data/webmentions.js";
+import postGraph from "@rknightuk/eleventy-plugin-post-graph";
 
 // Custom transforms
 
@@ -31,6 +32,7 @@ export default {
   musicThread,
   pluginWebmentions,
   configWebmentions,
+  postGraph,
   htmlConfig,
   cssConfig,
   jsConfig

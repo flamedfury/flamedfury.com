@@ -62,6 +62,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
   eleventyConfig.addPlugin(plugins.musicThread);
+  eleventyConfig.addPlugin(plugins.postGraph);
   eleventyConfig.addPlugin(plugins.pluginWebmentions, plugins.configWebmentions);
   eleventyConfig.addPlugin(plugins.webc, {
     components: './src/_includes/webc/*.webc',
