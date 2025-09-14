@@ -1,0 +1,168 @@
+/* Feed Styling using fLaMEd fury design system */
+/* Global CSS is loaded first and provides all design tokens, aside styles, and button styles */
+
+body.feed {
+  margin: 0;
+  padding: var(--space-m-l);
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+.feed-nav {
+  margin-bottom: var(--space-l-xl);
+}
+
+/* Extend aside styling to work in feeds context */
+.feed aside {
+  --border-width: 0.2rem;
+  --border: var(--border-width) solid #999;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding-inline: var(--space-s-m);
+  position: relative;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding-inline-start: var(--space-l-xl);
+  padding-block: var(--space-s-m);
+  margin-block: var(--space-m-l);
+}
+
+.feed aside:before {
+  --size: 2.25em;
+  border-radius: 100%;
+  content: '';
+  display: flex;
+  font-size: 1.15em;
+  block-size: 2.15em;
+  inset-inline-start: calc(var(--size) / -2 - var(--border-width) / 2);
+  line-height: 1;
+  position: absolute;
+  inset-block-start: 1em;
+  inline-size: var(--size);
+  background-color: var(--color-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.feed aside.skateboard:before {
+  background-image: url('/assets/svg/misc/skateboard.svg');
+}
+
+.feed aside p {
+  margin-bottom: var(--space-s-m);
+}
+
+.feed aside p:last-child {
+  margin-bottom: 0;
+}
+
+.feed-url {
+  background-color: var(--color-bg-accent);
+  color: var(--color-text);
+  padding: var(--space-2xs) var(--space-xs);
+  border-radius: var(--border-radius-small);
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: var(--size-step--1);
+  word-break: break-all;
+  display: inline-block;
+  border: 1px solid var(--color-bg-accent-2);
+  margin: var(--space-s-m) 0;
+}
+
+.feed-content {
+  color: var(--color-text);
+}
+
+.feed-header {
+  margin-bottom: var(--space-l-xl);
+  padding-bottom: var(--space-m-l);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.feed-header h1 {
+  font-size: var(--size-step-3);
+  margin: 0 0 var(--space-s) 0;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.feed-header h2 {
+  font-size: var(--size-step-1);
+  margin: 0 0 var(--space-xs) 0;
+  color: var(--color-text);
+  font-weight: var(--font-bold);
+}
+
+.feed-description {
+  font-size: var(--size-step-0);
+  color: var(--color-text-accent);
+  margin: var(--space-xs) 0 var(--space-m) 0;
+  font-style: italic;
+}
+
+.feed-content > h2 {
+  font-size: var(--size-step-3);
+  margin: var(--space-l-xl) 0 var(--space-m) 0;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-bg-accent-2);
+  padding-bottom: var(--space-xs);
+  font-weight: var(--font-bold);
+}
+
+.feed-item {
+  margin-bottom: var(--space-l-xl);
+  padding-bottom: var(--space-m-l);
+  border-bottom: 1px solid var(--color-bg-accent);
+}
+
+.feed-item:last-child {
+  border-bottom: none;
+}
+
+.feed-item h3 {
+  margin: 0 0 var(--space-xs) 0;
+}
+
+.feed-item h3 a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.feed-item h3 a:hover {
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+.feed-date {
+  font-size: var(--size-step-min-1);
+  margin-bottom: var(--space-xs);
+}
+
+.feed-summary {
+  margin: var(--space-xs) 0 0 0;
+  color: var(--color-text-accent);
+  font-style: italic;
+  line-height: var(--line-height-body);
+}
+
+/* Mobile responsiveness using design system spacing */
+@media (max-width: 768px) {
+  body.feed {
+    padding: var(--space-s-m);
+  }
+
+  .feed-header h1 {
+    font-size: var(--size-step-2);
+  }
+
+  .feed-header h2 {
+    font-size: var(--size-step-0);
+  }
+
+  .feed-url {
+    font-size: var(--size-step--2);
+  }
+}

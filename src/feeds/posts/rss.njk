@@ -1,0 +1,33 @@
+---
+permalink: /feeds/posts/rss.xml
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/assets/feeds.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ meta.blog.name }}</title>
+    <link>{{ meta.url | addPathPrefixToFullUrl }}</link>
+    <description>{{ meta.blog.description }}</description>
+    <language>{{ meta.lang or page.lang or 'en' }}</language>
+    <lastBuildDate>Fri, 13 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="{{ meta.url }}/feeds/posts/rss.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>{{ meta.author.email }} ({{ meta.author.name }})</managingEditor>
+    <webMaster>{{ meta.author.email }} ({{ meta.author.name }})</webMaster>
+    {% set itemslist = collections.posts | reverse %}
+    {% for item in itemslist | limit(10) %}
+    {% set absoluteItemUrl %}{{ item.url | url | absoluteUrl(meta.url) }}{% endset %}
+    <item>
+      <title>{{ item.data.title | escapeXml }}</title>
+      <link>{{ absoluteItemUrl }}</link>
+      <pubDate>Fri, 13 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>{{ absoluteItemUrl }}</guid>
+      {% if item.data.description %}<description><![CDATA[{{ item.data.description }}]]></description>{% endif %}
+      <content:encoded><![CDATA[{{ item.templateContent | htmlToAbsoluteUrls(absoluteItemUrl) | safe }}
+        <p>Hey, thanks for reading this post in your feed reader! Want to chat? <a href="mailto:hello@flamedfury.com?subject=RE: {{ item.data.title }}">Reply by email</a> or add me on <a href="xmpp:flamed@omg.lol">XMPP</a>, or send a <a href="{{ absoluteItemUrl }}#webmention">webmention</a>. Check out the <a href="https://flamedfury.com/posts/">posts archive</a> on the website.</p>
+      ]]></content:encoded>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -31,10 +31,18 @@ export const blog = {
   description: 'What\'s going on Internet?',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
-    { title: 'Atom Feed', url: '/feed.xml', type: 'application/atom+xml' },
-    { title: 'JSON Feed', url: '/feed.json', type: 'application/json' },
-    { title: 'Atom Feed', url: '/bookmarks-feed.xml', type: 'application/atom+xml' },
-    { title: 'JSON Feed', url: '/bookmarks-feed.json', type: 'application/json' }
+    // New organised feeds
+    { title: 'Posts - Atom', url: '/feeds/posts/atom.xml', type: 'application/atom+xml' },
+    { title: 'Posts - RSS', url: '/feeds/posts/rss.xml', type: 'application/rss+xml' },
+    { title: 'Posts - JSON', url: '/feeds/posts/feed.json', type: 'application/json' },
+    { title: 'Bookmarks - Atom', url: '/feeds/bookmarks/atom.xml', type: 'application/atom+xml' },
+    { title: 'Bookmarks - RSS', url: '/feeds/bookmarks/rss.xml', type: 'application/rss+xml' },
+    { title: 'Bookmarks - JSON', url: '/feeds/bookmarks/feed.json', type: 'application/json' },
+    // Legacy feeds (for backward compatibility)
+    { title: 'Posts - Atom (Legacy)', url: '/feed.xml', type: 'application/atom+xml' },
+    { title: 'Posts - JSON (Legacy)', url: '/feed.json', type: 'application/json' },
+    { title: 'Bookmarks - Atom (Legacy)', url: '/bookmarks-feed.xml', type: 'application/atom+xml' },
+    { title: 'Bookmarks - JSON (Legacy)', url: '/bookmarks-feed.json', type: 'application/json' }
   ],
   // Tags
   tagSingle: 'Tag',

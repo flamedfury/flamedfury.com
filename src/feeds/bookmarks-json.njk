@@ -1,0 +1,33 @@
+---
+permalink: /bookmarks-feed.json
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ meta.feeds.bookmarks.name }}",
+  "description": "{{ meta.feeds.bookmarks.description }}",
+  "home_page_url": "{{ meta.url | addPathPrefixToFullUrl }}",
+  "feed_url": "{{ meta.url }}/bookmarks-feed.json",
+  "icon": "{{ meta.url }}/favicon.ico",
+  "favicon": "{{ meta.url }}/favicon.ico",
+  "author": {
+    "name": "{{ meta.author.name }}"{% if meta.author.email %},
+    "url": "{{ meta.url | addPathPrefixToFullUrl }}"{% endif %}
+  },
+  "items": [
+    {% set itemslist = collections.allBookmarks | reverse -%}
+    {%- for item in itemslist | limit(20) -%}
+      {%- set absoluteItemUrl %}{{ item.url | url | absoluteUrl(meta.url) }}{% endset -%}
+      {
+        "id": "{{ absoluteItemUrl }}",
+        "title": "{{ item.data.title | replace('"', '\\"') }}",
+        "url": "{{ absoluteItemUrl }}",
+        "external_url": "{{ item.url }}",
+        "content_html": "🔖 Bookmarked <a href=\"{{ item.url }}\">{{ item.data.title | replace('"', '\\"') }}</a>{% if item.data.quote %}<blockquote>{{ item.data.quote | replace('"', '\\"') | replace('\n', '\\n') | replace('\r', '\\r') }}</blockquote>{% endif %}{% if item.data.notes %}<p>{{ item.data.notes | replace('"', '\\"') | replace('\n', '\\n') | replace('\r', '\\r') }}</p>{% endif %}<hr /><p>Hey, thanks for reading this post in your feed reader! Want to chat? <a href=\"mailto:hello@flamedfury.com?subject=RE Bookmark: {{ item.data.title | replace('"', '\\"') }}\">Reply by email</a> or add me on <a href=\"xmpp:flamed@omg.lol\">XMPP</a>. Check out the <a href=\"https://flamedfury.com/bookmarks/\">bookmarks archive</a> on the website.</p>",
+        "date_published": "2025-09-13T00:00:00Z"{% if item.data.description %},
+        "summary": "{{ item.data.description | replace('"', '\\"') | replace('\n', '\\n') | replace('\r', '\\r') }}"{% endif %}
+      }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}

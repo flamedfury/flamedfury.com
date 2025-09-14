@@ -171,6 +171,9 @@ export default async function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy(path)
   );
 
+  // Copy XSL file for feed styling
+  eleventyConfig.addPassthroughCopy('src/assets/feeds.xsl');
+
   // Copy bundle directory containing CSS and JS bundles
   eleventyConfig.addBundle('css', {hoist: true});
 

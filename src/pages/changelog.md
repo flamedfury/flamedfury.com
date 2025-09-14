@@ -10,6 +10,9 @@ This <span class="gradient-text">fLaMEd fury</span>'s changelog — it details c
 
 ## Changes
 
+- September 14, 2025
+-- Added styled RSS/Atom feeds with XSL transformation and fLaMEd fury design system integration and updated the [feeds](/feeds/) page based on [Robb's](https://rknight.me/subscribe/)
+
 - September 13, 2025
 -- Added a [Blog Stats](/blogstats/) page that uses [PostGraph](https://postgraph.rknight.me/) by Robb Knight to visualise posting frequency
 

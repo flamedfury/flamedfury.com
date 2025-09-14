@@ -1,0 +1,32 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ feedData.title }}",
+  {% if meta.lang or page.lang %}"language": "{{ meta.lang or page.lang }}",{% endif %}
+  "home_page_url": "{{ meta.url | addPathPrefixToFullUrl }}",
+  "feed_url": "{{ permalink | htmlBaseUrl(meta.url) }}",
+  "description": "{{ feedData.description }}",
+  "authors": [
+    {
+      "name": "{{ meta.author.name }}"{% if meta.author.url %},
+      "url": "{{ meta.author.url }}"{% endif %}{% if meta.author.avatar %},
+      "avatar": "{{ meta.url }}{{ meta.author.avatar }}"{% endif %}
+    }
+  ],
+  "items": [
+    {%- set itemslist = feedData.collection -%}
+    {%- for item in itemslist | reverse | limit(feedData.limit or 20) -%}
+    {%- set absoluteItemUrl = item.url | absoluteUrl(meta.url) -%}
+    {
+      "id": "{% if feedData.type == 'bookmarks' %}{{ meta.url }}/bookmarks/{% if item.data.title %}{{ item.data.title | slugify }}{% else %}bookmark-{{ loop.index }}{% endif %}/{% else %}{{ absoluteItemUrl }}{% endif %}",
+      "url": "{% if feedData.type == 'bookmarks' %}{{ meta.url }}/bookmarks/{% if item.data.title %}{{ item.data.title | slugify }}{% else %}bookmark-{{ loop.index }}{% endif %}/{% else %}{{ absoluteItemUrl }}{% endif %}",
+      "title": "{{ item.data.title | escape }}",
+      {% if item.data.description %}"summary": "{{ item.data.description | escape }}",{% elif item.data.notes %}"summary": "{{ item.data.notes | escape }}",{% endif %}
+      "date_published": "{% if item.data.date and item.data.date != null %}{{ item.data.date }}{% elif item.data.timestamp %}{{ item.data.timestamp | dateToRfc3339 }}{% else %}{{ item.date | dateToRfc3339 }}{% endif %}",
+      {% if feedData.type == 'bookmarks' %}"external_url": "{{ item.url }}",{% endif %}
+      {% if item.data.tags %}"tags": [{% for tag in item.data.tags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}],{% elif item.data.hashtags %}"tags": [{% for tag in item.data.hashtags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}],{% endif %}
+      {% if feedData.type == 'bookmarks' %}"content_html": "<p>🔖 Bookmarked <a href=\"{{ item.url }}\">{{ item.data.title | escape }}</a></p>{% if item.data.notes %}<p>{{ item.data.notes | escape }}</p>{% endif %}"{% else %}"content_html": {% if item.content %}{{ item.content | renderTransforms(item.data.page, metadata.base) | dump | safe }}{% else %}""{% endif %}{% endif %}
+    }
+    {% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}

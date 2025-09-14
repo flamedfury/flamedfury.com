@@ -1,0 +1,37 @@
+---
+permalink: /feeds/bookmarks/atom.xml
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/assets/feeds.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ meta.lang or page.lang }}" xml:base="{{ meta.url }}/">
+  <title>{{ meta.feeds.bookmarks.name }}</title>
+  <subtitle>{{ meta.feeds.bookmarks.description }}</subtitle>
+  <link href="{{ meta.url }}/feeds/bookmarks/atom.xml" rel="self" />
+  <link href="{{ meta.url | addPathPrefixToFullUrl }}" />
+  <updated>2025-09-13T00:00:00Z</updated>
+  <id>{{ meta.url | addPathPrefixToFullUrl }}</id>
+  <author>
+    <name>{{ meta.author.name }}</name>
+    {% if meta.author.email %}<email>{{ meta.author.email }}</email>{% endif %}
+  </author>
+  {% set itemslist = collections.allBookmarks | reverse %}
+  {% for item in itemslist | limit(20) %}
+    {% set absoluteItemUrl %}{{ item.url | url | absoluteUrl(meta.url) }}{% endset %}
+    <entry>
+      <title>{{ item.data.title | escapeXml }}</title>
+      <link href="{{ absoluteItemUrl }}"/>
+      <updated>2025-09-13T00:00:00Z</updated>
+      <id>{{ absoluteItemUrl }}</id>
+      {% if item.data.description %}<summary>{{ item.data.description | escapeXml }}</summary>{% endif %}
+      <content xml:lang="{{ meta.locale or 'en' }}" type="html"><![CDATA[
+        <p>🔖 Bookmarked <a href="{{ item.url }}">{{ item.data.title }}</a></p>
+        {% if item.data.quote %}<blockquote>{{ item.data.quote }}</blockquote>{% endif %}
+        {% if item.data.notes %}<p>{{ item.data.notes }}</p>{% endif %}
+        <hr />
+        <p>Hey, thanks for reading this post in your feed reader! Want to chat? <a href="mailto:hello@flamedfury.com?subject=RE Bookmark: {{ item.data.title }}">Reply by email</a> or add me on <a href="xmpp:flamed@omg.lol">XMPP</a>. Check out the <a href="https://flamedfury.com/bookmarks/">bookmarks archive</a> on the website.</p>
+      ]]></content>
+    </entry>
+  {% endfor %}
+</feed>
